@@ -1,0 +1,22 @@
+{
+  "start" : 0,
+  "length" : 1,
+  "available" : 1,
+  "results" : [ {
+    "uuid" : "88f2b6ee-895e-89df-d4b1-bd6168900ae3",
+    "version" : 1,
+    "name" : "Comments test <script>alert(1)</script>",
+    "nameStrings" : {
+      "en_US" : "Comments test <script>alert(1)</script>"
+    },
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum consequat dui. Mauris commodo, justo vitae consectetur ornare, ligula elit ullamcorper nibh, ut pellentesque leo dui at orci. Vestibulum sit amet ultrices sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla ac purus leo, ac sollicitudin nibh.",
+    "descriptionStrings" : {
+      "en_US" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum consequat dui. Mauris commodo, justo vitae consectetur ornare, ligula elit ullamcorper nibh, ut pellentesque leo dui at orci. Vestibulum sit amet ultrices sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla ac purus leo, ac sollicitudin nibh."
+    },
+    "metadata" : "<xml><name>Comments test &lt;script&gt;alert(1)&lt;/script&gt;</name><description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum consequat dui. Mauris commodo, justo vitae consectetur ornare, ligula elit ullamcorper nibh, ut pellentesque leo dui at orci. Vestibulum sit amet ultrices sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla ac purus leo, ac sollicitudin nibh.</description></xml>",
+    "links" : {
+      "self" : "http://lappy:8080/test/api/item/88f2b6ee-895e-89df-d4b1-bd6168900ae3/1/",
+      "view" : "http://lappy:8080/test/items/88f2b6ee-895e-89df-d4b1-bd6168900ae3/1/"
+    }
+  } ]
+}
