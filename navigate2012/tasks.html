@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tasks demo</title>
+		<meta charset="utf-8" />
+		<xlink rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<h1>My tasks</h1>
+		<div id="mydiv">Loading...</div>
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript">
+
+			var equellaUrl = 'http://beta.equella.com/navigate2012';
+			var clientId = 'tasksdemo';
+			var redirectUri = 'http://lappy/navigate2012/tasks.html';
+
+
+			//ajax(equellaUrl + '/api/tasks')
+
+			//.pipe(displayTasks);
+
+			//.pipe(gatherItemNames)
+
+
+			/*
+			 * Makes a JSON request back to the API. Redirects to the OAuth screen if there is
+			 * no access token or it is invalid.
+			 */
+			function ajax(url) {
+				var token = getToken();
+
+				// No existing token - redirect them to the login page
+				if( token == undefined )
+				{
+					tokenInvalid();
+				}
+
+				// We have a token, so try and get our tasks
+				return $.ajax({
+					url: url,
+					dataType: 'json',
+					beforeSend: function(xhr) {
+						xhr.setRequestHeader('X-Authorization', 'access_token=' + token);
+					},
+					error: tokenInvalid
+				});
+
+	    		/*
+	    		 * This function should be called if the token is invalid and you need a new one.
+	    		 */
+				function tokenInvalid() {
+				    alert('Not authenticated with EQUELLA, taking you to the login page');
+					document.location = equellaUrl
+						+ '/oauth/authorise?response_type=token&client_id='
+						+ escape(clientId)
+						+ '&redirect_uri='
+						+ escape(redirectUri);
+				}
+			}
+
+			/*
+			 * Checks the current URL to see if there is an access_token. Use it if there is,
+			 * otherwise check the persistent storage.
+			 */
+			function getToken() {
+				var match = document.location.hash.match(/access_token=([a-z0-9\-]+)/);
+          		if( !!match && match[1] ) {
+          			localStorage.tasksdemotoken = match[1];
+          			return match[1];
+          		} else {
+          			return localStorage.tasksdemotoken;
+          		}
+    		}
+
+			/*
+			 * Takes the JSON from /api/tasks and updates the display.
+			 */
+    		function displayTasks(json) {
+				var $block = $('#mydiv');
+				$block.empty();
+				$block.html('<p>There are ' + json.available + ' tasks</p>');
+
+				var $ul = $('<ul></ul>').appendTo($block);
+				$.each(json.results, function(i, result) {
+					var result = json.results[i];
+
+					var $link = $('<a></a>');
+					$link.attr('href', makeItSSO(result.links['web-moderate']));
+					$link.text(result.item.name ? result.item.name : result.item.uuid);
+
+					$ul.append(
+						$('<li></li>').append($link).append(
+							$('<span></span>').text(result.task.name)
+						)
+					);
+				});
+    		}
+
+    		/*
+    		 * Takes the JSON from /api/tasks and enhances it with the names of the items.
+    		 * Returns a promise with the updated JSON.
+    		 */
+    		function gatherItemNames(json) {
+    			var $ps = [];
+				$.each(json.results, function(i, result) {
+					var item = result.item;
+					$ps.push(
+						ajax(item.links.self).pipe(function(itemJson) {
+							item.name = itemJson.name;
+						})
+					);
+				});
+    			return $.when.apply($, $ps).pipe(function() {
+    				return json;
+    			});
+			}
+
+			/*
+			 * Append the OAuth2 access_token to a URL for SSO
+			 */
+			function makeItSSO(url) {
+				return url
+				    + (url.indexOf('?') > -1 ? '&' : '?')
+				    + 'access_token='
+				    + escape(getToken());
+			}
+		</script>
+	</body>
+</html>
