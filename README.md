@@ -14,6 +14,10 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Equella Installer](EquellaInstaller.md)
 * [Hibernate Best Practices](EquellaHibernateBestPractices.md)
 
+## Administrative Guides
+* [Installation and Administration Guide](guides/InstallationAdminGuide.md)
+* [Managing Institutions](guides/ManageInstitutions.md)
+
 
 ## Join the Community
 * Join our Apereo Equella google group and our Apereo Slack channel
