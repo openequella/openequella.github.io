@@ -1,36 +1,36 @@
 # Open Source EQUELLA® Installation and Administration Guide
 
-[Installation Prerequisities](#Installation-prerequisites)
+[Installation Prerequisities](#installation-prerequisites)
 
-[Install a Database](#Install-a-Database)
+[Install a Database](#install-a-database)
 
-[Install the Oracle Java SDK](#Install-the-Oracle-Java-SDK)
+[Install the Oracle Java SDK](#install-the-oracle-java-sdk)
 
-[Install ImageMagick](#Install-ImageMagick)
+[Install ImageMagick](#install-imagemagick)
 
-[Install Libav](#Install-Libav)
+[Install Libav](#install-libav)
 
-[Install EQUELLA](#Install-EQUELLA)
+[Install EQUELLA](#install-equella)
 
-[Stop the EQUELLA server](#Stop-the-EQUELLA-server)
+[Stop the EQUELLA server](#Stop-the-equella-server)
 
-[EQUELLA Server Adminstration Account](#EQUELLA-Server-Administration-Account)
+[EQUELLA Server Adminstration Account](#equella-server-administration-account)
 
-[Import a New Institution ](#Import-a-New-Institution)
+[Import a New Institution ](#import-a-new-institution)
 
-[Manage Databases](#Manage-Databases)
+[Manage Databases](#manage-databases)
 
-[Use a reverse proxy server](#Use-a-reverse-proxy-server)
+[Use a reverse proxy server](#use-a-reverse-proxy-server)
 
-[Customize the EQUELLA Digital Repository](#Customize-the-EQUELLA-Digital-Repository)
+[Customize the EQUELLA Digital Repository](#customize-the-equella-digital-repository)
 
-[Use Log Files](#Use-Log-Files)
+[Use Log Files](#use-log-files)
 
-[Thread Dump](#Thread-Dump)
+[Thread Dump](#thread-dump)
 
-[Health Check](#Health-check)
+[Health Check](#health-check)
 
-[Uninstall EQUELLA](#Uninstall-EQUELLA)
+[Uninstall EQUELLA](#uninstall-equella)
 
 
 
@@ -108,7 +108,7 @@ For a full list of image file types supported by Imagemagick, go to <http://imag
 
 Install the program, taking note of the name and location of the folder in which ImageMagick is installed as the EQUELLA installation will require these details to properly configure and run EQUELLA. 
 
-## Installation Libav
+## Install Libav
 
 Install the program, taking note of the name and location of the folder in which the avconv and avprobe executable files have been installed, as the EQUELLA installation will require these details to properly configure and run EQUELLA.
 
@@ -120,7 +120,7 @@ Install the program, taking note of the name and location of the folder in which
 libvo_aacenc and libx264 dependencies are also required for video previews to be generated correctly. Take note of the name and location of the folder in which the avconv and avprobe executables have been installed, as the EQUELLA installation will require these details to properly configure and run EQUELLA.
 
 
-[Install EQUELLA](#Install-EQUELLA)
+## Install EQUELLA
 
 When installing EQUELLA, a wizard is provided that gathers information for the installation and initiates the installation process once sufficient information has been provided. If the installation fails to complete due to inappropriate initialization of the wizard, all partially installed components are removed and the wizard closes leaving the system as it was, prior to the installation attempt. 
 
@@ -238,7 +238,7 @@ Once the server has been started, the success of the installation can be checked
 ## Stop the EQUELLA server
 
 
-#### To stop the EQUELLA server using Windows
+### To stop the EQUELLA server using Windows
 1. Go to the Start menu, Control Panel, Administrative Tools then double click Services. 
 2. Find EQUELLA in the list of services (by default, the names are EQUELLA App Server and EQUELLA  Manager), right click and select Stop. 
 
@@ -255,7 +255,7 @@ Once the server has been started, the success of the installation can be checked
 
 The EQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL created from the server’s base URL. 
 
-#### To open the Server administration account page
+### To open the Server administration account page
 1. Open a browser and enter the EQUELLA address of the hosting server with 
 ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’).
 2. The Server administration - Welcome page displays
@@ -294,14 +294,14 @@ Installation of the EQUELLA server is now complete. Login to the institution as 
 
 EQUELLA provides the ability to use multiple databases, allowing each institution to have its own database. This improves both security and performance.
 
-#### Add a new database to EQUELLA procedure
+### Add a new database to EQUELLA procedure
 Configuring multiple databases involves the following steps:
 1. Install a new database. 
 NOTE: When using multiple databases, only databases from one vendor may be used. For example, two Microsoft SQL Server databases could be used, but NOT a Microsoft SQL Server and a PostgreSQL Server database. The database vendor is selected when the EQUELLA system is first installed.
 2. Configure the new database in EQUELLA. (See Add a database to EQUELLA below.)
 3. Clone or import an institution, specifying the new database. 
 
-#### Add a database to EQUELLA
+### Add a database to EQUELLA
 Databases are managed through the Databases function, accessed from the Server Administration page.
 
 To add a new database:
@@ -320,7 +320,7 @@ Change the <database_name> to the new database name. For example, jdbc:postgresq
 5. Enter the database Username and Password. 
 6. Click Add and bring online to save the Main connection details. The Database page displays, and the new database starts an automatic initialization process with a progress bar. Once completed, the new database displays with a status of Online.
 
-#### Reporting connection
+### Reporting connection
 
 The reporting connection section allows a separate database login for users who have reporting/read-only privileges.
 
@@ -330,30 +330,30 @@ NOTE: This would only be different from the Main connection JDBC URL if data was
 2. Enter the Username and Password.
 3. Click Save to save the details.
 
-#### Take a database offline
+### Take a database offline
 
 Databases can be taken offline if required. For example, for database maintenance or to take down a group of institutions.
 1. From the Databases page, click Take Offline. A warning/confirmation dialog displays.
 2. Click OK  to confirm. The database Status is now Offline
 
-#### Bring a database online
+### Bring a database online
 
 If a database has been taken off-line, it must then be brought back online for use.
 1. From the Databases page, click Bring Online. The database Status is now Online. 
 
-#### Edit database settings
+### Edit database settings
 Database settings can be accessed for editing. Generally settings won’t be changed, but a Reporting connection or description might be added at a later date. The database must be Offline for the settings to be edited. 
 1. From the Databases page, click the drop-down in the relevant database’s Actions column to view menu options.
 2. Select the Edit database settings link to display the Edit database page.
 3. Make the relevant changes, then click Save.
 
-#### Delete a database
+### Delete a database
 On rare occasions, it may be required to delete a database that may no longer be used. The database must be Offline before it can be deleted. 
 1. From the Databases page, click the drop-down in the relevant database’s Actions column to view menu options.
 2. Select the Remove this database link. A warning/confirmation dialog displays.
 3. Click OK to confirm.
 
-#### Reload database state
+### Reload database state
 The Reload database state function checks the database state and reloads if required. This function might be used if changes had been made to a database, or if a database had become unavailable to EQUELLA due to technical issues, but is again available.
 1. From the Databases page, click the drop-down in the relevant database’s Actions column to view menu options.
 2. Select the Reload database state link.
@@ -371,7 +371,7 @@ A reverse proxy is a gateway for servers enabling one web server to provide tran
 
 The following section provides an example installation using Apache. This is indicative of the process required for other web servers.
 
-#### Configure a reverse proxy
+### Configure a reverse proxy
 1. Ensure the Apache modules mod_proxy and mod_proxy_http have been installed.
 2. Open the Apache httpd.conf file and add a ‘ProxyPass’ directive to the VirtualHost element:
 ```
@@ -395,7 +395,7 @@ ProxyPreserveHost On
 </VirtualHost>
 ```
 
-#### Configure EQUELLA with SSL
+### Configure EQUELLA with SSL
 1. Open mandatory-config.properties and ensure the https.port is enabled (uncommented).
 2. Ensure the Apache modules mod_proxy and mod_proxy_http have been installed.
 3. Open the Apache httpd.conf file and add a ‘ProxyPass’ directive to the VirtualHost element, and the additional SSL directives:
@@ -449,8 +449,7 @@ To access EQUELLA:
 5. To access the EQUELLA Digital Repository, users, roles and groups will need to be defined. 
 
 
-
-[Use Log Files](#Use-Log-Files)
+## Use Log Files
 
 EQUELLA writes an extensive series of log files for events including the resource center, EQUELLA services and the EQUELLA conversion service. All log files can be found in directories bearing the date of the log file. Each directory contains one log file containing entries for all events logged on that date. A new log directory is created for every day the logged services are run. Log files may need to be archived from time to time to recover disk space.
 
@@ -489,7 +488,7 @@ Uninstalling EQUELLA is a three-stage process on Windows and two-stage process o
 2. Windows only: Run the Unregister service command to deregister the services manager.
 3. Delete the directory that holds the EQUELLA installation.
 
-#### Stop the EQUELLA server
+### Stop the EQUELLA server
 Using Windows
 1. Navigate to the Start menu and find Settings, then Control Panel. 
 2. Open the Administrative Tools panel and then Services. 
@@ -503,7 +502,7 @@ On other platforms
 ```
 The services have now stopped. 
 
-#### De-register the services manager (Windows only)
+### De-register the services manager (Windows only)
 
 The Windows service must be removed before deleting the installation.
 1. Choose Run from the Start menu then enter:
@@ -513,7 +512,7 @@ The Windows service must be removed before deleting the installation.
 ```
 Now the installation directory can be deleted.
 
-#### Delete the installation directory
+### Delete the installation directory
 To delete the installation directory:
 1. Navigate to and select the installation directory for your installation. (The default installation is C:\equella.)
 2. Press the Delete key.
