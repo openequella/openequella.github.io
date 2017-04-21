@@ -1,26 +1,26 @@
 # Manage EQUELLA institutions
 
-[Access the Server Administration Account](#Access-the-Server-Administration-Account)
+[Access the Server Administration Account](#access-the-server-administration-account)
 
-[Passwords](#Passwords)
+[Passwords](#passwords)
 
-[Import an Institution](#Import-an-Institution)
+[Import an Institution](#import-an-institution)
 
-[Clone an Institution](#Clone-an-Institution)
+[Clone an Institution](#clone-an-institution)
 
-[Edit an Institution](#Edit-an-Institution)
+[Edit an Institution](#edit-an-institution)
 
-[Export an Institution](#Export-an-Institution)
+[Export an Institution](#export-an-institution)
 
-[Delete an Institution](#Delete-an-Institution)
+[Delete an Institution](#delete-an-institution)
 
-[Disable an Institution](#Disable-an-Institution)
+[Disable an Institution](#disable-an-institution)
 
-[Set a filestore size limit](#Set-a-filestore-size-limit)
+[Set a filestore size limit](#set-a-filestore-size-limit)
 
-[Display Server Message](#Display-Server-Message)
+[Display Server Message](#display-server-message)
 
-[System Password](#System-Password)
+[System Password](#system-password)
 
 ## Access the Server Administration Account
 
