@@ -44,7 +44,7 @@ Configuration and reference guides for system and content administrators
 * [EQUELLA 6.3 LTI Consumer Configuration Guide](EQUELLA6.3LTIConsumerConfigurationGuide.pdf) 
 * [EQUELLA 6.4 Integration Interface Guide](EQUELLA6.4IntegrationInterfaceGuide.pdf)
 * [EQUELLA 6.2 Integration Interface Guide](EQUELLA6.2IntegrationInterfaceGuide.pdf) 
- 
+* [EQUELLA Bulk Importer User Manual](ebi_manual.pdf) 
 
 ## Tutorials
 * [EQUELLA 6.4 Java REST Tutorial](EQUELLA6.4JavaRESTTutorial.pdf)
@@ -66,6 +66,8 @@ Configuration and reference guides for system and content administrators
 * [EQUELLA 6.4 Moodle User Guide](EQUELLA6.4MoodleUserGuide.pdf)
 * [EQUELLA 6.4 Canvas User Guide](EQUELLA6.4CanvasUserGuide.pdf)
 * [EQUELLA 6.4 Searching User Guide](EQUELLA6.4SearchingUserGuide.pdf)
+* [EQUELLA Metadata Utility User Guide](EMUUserGuide.pdf)
+
   
 
 ## Knowledge Base Articles
