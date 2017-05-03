@@ -23,14 +23,23 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Collection Definitions Editor Configuration Guide](guides/CollectionDefinitionsEditorConfigurationGuide.md)
 * [Contribution User Guide](guides/ContributionUserGuide.md)
 * [Reporting Guide](guides/ReportingGuide.md)
+* [Wizard Controls Reference Guide](guides/WizardControlsReferenceGuide.md)
 
 ## Integration Guides
 * [Integration Downloads](IntegrationDownloads.md)
+* [Integration Interface Guide](guides/IntegrationInterfaceGuide.md)
+* [LTI Consumer Configuration Guide](guides/LTIConsumerConfigurationGuide.md)
 * [Blackboard Learn Integration Guide](guides/BlackboardLearnIntegrationGuide.md)
-* [Brightspace Integration Guide](guides/BrightspaceIntegrationGuide)
+* [Brightspace Integration Guide](guides/BrightspaceIntegrationGuide.md)
 * [Canvas Integration Guide](guides/CanvasIntegrationGuide.md)
 * [Moodle Integration Guide](guides/MoodleIntegrationGuide.md)
+* [ECHO360 Integration Guide](guides/ECHOIntegrationGuide.md)
 
+## Tutorials
+* [Java REST Tutorial](guides/JavaRESTTutorial.md)
+* [Java SOAP Tutorial](guides/JavaSOAPTutorial.md)
+* [PHP SOAP Tutorial](guides/PHPSOAPTutorial.md)
+* [C# SOAP Tutorial](guides/CPlusSOAPTutorial.md)
 
 ## Join the Community
 * Join our Apereo Equella google group and our Apereo Slack channel
