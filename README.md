@@ -24,6 +24,11 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Contribution User Guide](guides/ContributionUserGuide.md)
 * [Reporting Guide](guides/ReportingGuide.md)
 * [Wizard Controls Reference Guide](guides/WizardControlsReferenceGuide.md)
+* [Advanced Scripting Guide](guides/AdvancedScriptingGuide.md)
+* [Discoverability Guide](guides/DiscoverabilityGuide.md)
+* [Harvester Profile Configuration Guide](guides/HarvesterProfileConfigurationGuide.md)
+* [HTML Editor Plug-in Guide](guides/HTMLEditorPluginGuide.md)
+* [Remote Repositories Configuration Guide](guides/RemoteRepositoriesConfigurationGuide.md)
 
 ## Integration Guides
 * [Integration Downloads](IntegrationDownloads.md)
