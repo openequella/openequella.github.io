@@ -130,7 +130,7 @@ You need to install our Eclipse plugin to generate project classpaths from the p
 
 2. Extract the zip file to the local file system.
 3. Open Eclipse and navigate to Help > Install New Software…
-![alt text](eclipse.png "Java EE Eclipse")
+![alt text](eclipse2.png "Java EE Eclipse")
 
 
 4. Click Add
@@ -159,7 +159,7 @@ a. Click File > Import…
 
 b. Select General > Existing Projects into Workspace
 
-![alt text](chooseimportsource.png "Choose Import Source")
+![alt text](chooseimportsource2.png "Choose Import Source")
 
 c. Click Browse
 
@@ -183,11 +183,11 @@ More details on the eclipse plugin can be found here <http://download.eclipse.or
 
     a. To import the project, click File > Import...
     
-    ![alt text](Import2.png "Import")
+    ![alt text](import2.png "Import")
     
     b. Select General > Existing Projects into Workspace
     
-    ![alt text](ChooseImportSourceGeneral.png "Choose Import Source") "
+    ![alt text](chooseimportsourcegeneral2.png "Choose Import Source")
     
     c. Click Browse
     
@@ -197,7 +197,7 @@ More details on the eclipse plugin can be found here <http://download.eclipse.or
     
     f. Check the learningedge-config project
     
-    ![alt text](importprojects.png "Import Projects") "
+    ![alt text](importprojects.png "Import Projects")
     
     g. Click Finish
 
