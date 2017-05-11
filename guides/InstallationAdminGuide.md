@@ -1,3 +1,5 @@
+[Home](https://equella.github.io/)
+
 # Open Source EQUELLA® Installation and Administration Guide
 
 [Installation Prerequisities](#installation-prerequisites)
@@ -12,7 +14,7 @@
 
 [Install EQUELLA](#install-equella)
 
-[Stop the EQUELLA server](#Stop-the-equella-server)
+[Stop the EQUELLA server](#stop-the-equella-server)
 
 [EQUELLA Server Adminstration Account](#equella-server-administration-account)
 

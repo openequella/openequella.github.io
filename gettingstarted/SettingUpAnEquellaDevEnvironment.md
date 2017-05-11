@@ -1,13 +1,15 @@
+[Home](https://equella.github.io/)
+
 # Setting Up an Equella Dev Environment 
 
 
-* [Download required software](download-required-software)
-* [Get the code](get-the-code)
-* [Install software into Eclipse](install-software-into-eclipse)
-* [learningedge-config](learningedge-config)
-* [Generate dynamic source code](generate-dynamic-source-code)
-* [Tomcat VM arguments](tomcat-vm-arguments)
-* [Installation of the Vanilla institution](installation-of-the-vanilla-institution)
+* [Download required software](#download-required-software)
+* [Get the code](#get-the-code)
+* [Install software into Eclipse](#install-software-into-eclipse)
+* [learningedge-config](#learningedge-config)
+* [Generate dynamic source code](#generate-dynamic-source-code)
+* [Tomcat VM arguments](#tomcat-vm-arguments)
+* [Installation of the Vanilla institution](#installation-of-the-vanilla-institution)
 
 
 ## Download required software

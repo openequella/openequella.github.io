@@ -1,6 +1,6 @@
 # Equella Web and Documentation
 
->Work in progress.  Please feel free to contribution
+>Work in progress.  Please feel free to contribute
 
 EQUELLA is a digital repository that provides a single platform to house your teaching and learning, research, media, and library content. 
 
