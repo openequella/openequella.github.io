@@ -1,16 +1,18 @@
+[Home](https://equella.github.io/)
+
 # Blackboard Learn Configuration Guide
 
 
 Table of Contents
 
-* [EQUELLA Blackboard Learn integration overview](equella-blackboard-learn-integration)  
-* [Prerequisites](prerequisites)  
-* [Integration procedure](integration-procedure)  
-* [Configure EQUELLA](configure-equella)  
-* [Register an LTI consumer](register-an-lti-consumer)  
-* [Configure Blackboard](configure-blackboard)
-* [EQUELLA portal](equella-portal)  
-* [Troubleshoot an unsuccessful integration](troubleshoot-an-unsuccessful-integration)  
+* [EQUELLA Blackboard Learn integration overview](#equella-blackboard-learn-integration)  
+* [Prerequisites](#prerequisites)  
+* [Integration procedure](#integration-procedure)  
+* [Configure EQUELLA](#configure-equella)  
+* [Register an LTI consumer](#register-an-lti-consumer)  
+* [Configure Blackboard](#configure-blackboard)
+* [EQUELLA portal](#equella-portal)  
+* [Troubleshoot an unsuccessful integration](#troubleshoot-an-unsuccessful-integration)  
 
 
 ## EQUELLA Blackboard Learn integration overview

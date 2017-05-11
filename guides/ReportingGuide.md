@@ -1,17 +1,19 @@
+[Home](https://equella.github.io/)
+
 # Reporting User Guide
 
 Table of Contents
-* [Report Designer overview](report-designer-overview)  
-* [Installation](installation)
-* [EQUELLA reporting](equella-reporting)
-* [Create a report](create-a-report)
-* [Upload a report](upload-a-report)
-* [Run a report](run-a-report)
-* [Data sets](data-sets)
-* [Freetext](freetext)
-* [Joint data set example usage](joint-data-set-example-usage)
-* [User management](user-management)
-* [Scenarios](scenarios)
+* [Report Designer overview](#report-designer-overview)  
+* [Installation](#installation)
+* [EQUELLA reporting](#equella-reporting)
+* [Create a report](#create-a-report)
+* [Upload a report](#upload-a-report)
+* [Run a report](#run-a-report)
+* [Data sets](#data-sets)
+* [Freetext](#freetext)
+* [Joint data set example usage](#joint-data-set-example-usage)
+* [User management](#user-management)
+* [Scenarios](#scenarios)
 
 ## Report Designer overview 
 

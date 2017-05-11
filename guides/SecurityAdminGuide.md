@@ -1,15 +1,17 @@
+[Home](https://equella.github.io/)
+
 # Security Administration Guide
 
 Table of Contents
 
-* [Security overview](security-overview)
-* [Access control lists](access-control-lists)  
-* [Security Manager reference](security-manager-reference)  
-* [Security hierarchy reference](security-hierarchy-reference)  
-* [Access Control reference](access-control-reference)  
-* [Administration Console objects](administration-console-objects)  
-* [Collections Security tab](collections-security-tab)  
-* [Privileges](privileges)  
+* [Security overview](#security-overview)
+* [Access control lists](#access-control-lists)  
+* [Security Manager reference](#security-manager-reference)  
+* [Security hierarchy reference](#security-hierarchy-reference)  
+* [Access Control reference](#access-control-reference)  
+* [Administration Console objects](#administration-console-objects)  
+* [Collections Security tab](#collections-security-tab)  
+* [Privileges](#privileges)  
 
 ## Security overview
 

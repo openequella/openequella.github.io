@@ -1,3 +1,5 @@
+[Home](https://equella.github.io/)
+
 # Open Source EQUELLA® REST API Guide
 
 Table of Contents

@@ -1,11 +1,12 @@
+[Home](https://equella.github.io/)
+
 # HTML Editor Plug-In Guide
 
 Table of Contents
-* [EQUELLA HTML editor plugins](equella-html-editor-plugins)
-* [Introduction](introduction)
-* [Structure of the plugin](structure-of-the-plugins)   
-* [Scripting](scripting)  
-* [Uploading plugins to EQUELLA](uploading-plugins-to-equella)
+* [Introduction](#introduction)
+* [Structure of the plugin](#structure-of-the-plugins)   
+* [Scripting](#scripting)  
+* [Uploading plugins to EQUELLA](#uploading-plugins-to-equella)
 
 
 ## EQUELLA HTML editor plug-ins

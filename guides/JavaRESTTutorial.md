@@ -1,11 +1,13 @@
+[Home](https://equella.github.io/)
+
 # EQUELLA Java REST Tutorial
 
 Table of Contents
-* [EQUELLA Java REST Tutorial](equella-java-rest-tutorial)
-* [Login](login)
-* [Search](search)
-* [View](view)
-* [Contribute](contribute)
+* [EQUELLA Java REST Tutorial](#equella-java-rest-tutorial)
+* [Login](#login)
+* [Search](#search)
+* [View](#view)
+* [Contribute](#contribute)
 
 ## EQUELLA Java REST Tutorial
 This document covers an example Java REST client (hereafter "the client") which is a J2EE web application and can be deployed into any J2EE servlet container, e.g. Tomcat ( http://tomcat.apache.org/download-70.cgi)

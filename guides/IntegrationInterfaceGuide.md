@@ -1,9 +1,11 @@
+[Home](https://equella.github.io/)
+
 # Integration Interface Guide
 
-* [Integration overview]()
-* [Single sign-on authentication]()  
-* [Integration hook URL]()  
-* [Integration hook actions]() 
+* [Integration overview](#integration-overview)
+* [Single sign-on authentication](#single-sign-on-authenication)  
+* [Integration hook URL](#integration-hook-url)  
+* [Integration hook actions](#integration-hook-actions) 
 
 
 ## Integration overview  

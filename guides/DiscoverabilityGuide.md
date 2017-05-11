@@ -1,12 +1,14 @@
+[Home](https://equella.github.io/)
+
 # Discoverability Guide
 
 
 Table of Contents
-* [Search Engine Optimization](search-engine-optimization)
-* [EQUELLA Configuration](equella-configuration)  
-* [Increasing Discoverability](increasing-discoverability)
-* [Google Scholar](google-scholar)
-* [References](references)  
+* [Search Engine Optimization](#search-engine-optimization)
+* [EQUELLA Configuration](#equella-configuration)  
+* [Increasing Discoverability](#increasing-discoverability)
+* [Google Scholar](#google-scholar)
+* [References](#references)  
 
 ## Search Engine Optimization
 

@@ -1,3 +1,5 @@
+[Home](https://equella.github.io/)
+
 # Manage EQUELLA institutions
 
 [Access the Server Administration Account](#access-the-server-administration-account)

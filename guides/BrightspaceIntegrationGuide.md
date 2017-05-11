@@ -1,14 +1,16 @@
+[Home](https://equella.github.io/)
+
 # Brightspace Integration Guide
 
 Table of Contents
-* [Brightspace™ integration overview](brightspace-integration-overview) 
-* [Prerequisite](prerequisite) 
-* [Integration procedure](integration-procedure)
-* [Configure Brightspace EQUELLA App](configure-brightspace-equella-app) 
-* [Configure EQUELLA](configure-equella)
-* [Configure Brightspace Plugins](configure-brightspace-plugins) 
-* [Manage external resources and Find uses](manage-external-resources-and-find-uses) 
-* [Bulk actions](bulk-actions) 
+* [Brightspace™ integration overview](#brightspace-integration-overview) 
+* [Prerequisite](#prerequisite) 
+* [Integration procedure](#integration-procedure)
+* [Configure Brightspace EQUELLA App](#configure-brightspace-equella-app) 
+* [Configure EQUELLA](#configure-equella)
+* [Configure Brightspace Plugins](#configure-brightspace-plugins) 
+* [Manage external resources and Find uses](#manage-external-resources-and-find-uses) 
+* [Bulk actions](#bulk-actions) 
  
 
 
@@ -341,4 +343,4 @@ Click X next to a resource to remove that resource from the list.
 2. Select Move from the drop-down list, then click Next. The Bulk actions—Select the locations to add to dialog displays.
 3. Click to expand courses and select the required location to move the selected resources to. Select Show inactive courses to display Brightspace courses marked as ‘inactive’.
 4. Click Execute. A confirmation dialog displays. 
-5. Click OK. In the case of an unsuccessful action, an error message displays with an explanation of the failed action.5. 
+5. Click OK. In the case of an unsuccessful action, an error message displays with an explanation of the failed action.5. 5. 

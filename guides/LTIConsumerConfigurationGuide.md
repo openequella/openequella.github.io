@@ -1,12 +1,14 @@
+[Home](https://equella.github.io/)
+
 # LTI Consumer Configuration Guide
 
 Table of Contents
-* [Overview](overview)
-* [LTI consumer ACLs](lti-consumer-acls)
-* [Create LTI consumer](create-lti-consumer)
-* [Edit LTI consumer](edit-lti-consumer)
-* [Disable or enable LTI consumer](disable-or-enable-lti-consumer)
-* [Delete LTI consumer](delete-lti-consumer)
+* [Overview](#overview)
+* [LTI consumer ACLs](#lti-consumer-acls)
+* [Create LTI consumer](#create-lti-consumer)
+* [Edit LTI consumer](#edit-lti-consumer)
+* [Disable or enable LTI consumer](#disable-or-enable-lti-consumer)
+* [Delete LTI consumer](#delete-lti-consumer)
 
 
 ## Overview
@@ -108,3 +110,4 @@ To delete an LTI consumer
 2.  Select the Disable link beside the LTI consumer to be deleted. The LTI consumer is disabled, and the Disable link changes to Enable, and a Delete link displays.
 3.  Select the Delete link beside the LTI consumer to be deleted. A confirmation box displays.
 4.  Click OK.
+5. 

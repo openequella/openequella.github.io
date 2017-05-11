@@ -1,10 +1,12 @@
-# EQUELLA Java REST Tutorial
+[Home](https://equella.github.io/)
+
+# EQUELLA Java SOAP Tutorial
 
 Table of Contents
-* [Java SOAP tutorial](java-soap-tutorial)
-* [Running the examples](running-the-examples)
-* [Guide to the example code](guide-to-the-example-code)
-* [Writing your own code](writing-your-own-code)
+* [Java SOAP tutorial](#java-soap-tutorial)
+* [Running the examples](#running-the-examples)
+* [Guide to the example code](#guide-to-the-example-code)
+* [Writing your own code](#writing-your-own-code)
 
 ## Java SOAP tutorial
 

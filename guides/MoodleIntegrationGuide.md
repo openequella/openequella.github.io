@@ -1,17 +1,19 @@
+[Home](https://equella.github.io/)
+
 # Moodle Configuration Guide  
 
 
-* [Integration overview](integration-overview)
-* [Open source](open-source)
-* [Prerequisites](prerequisites)
-* [Integration procedure](integration-procedure)
-* [Configure EQUELLA](configure-equella)
-* [Configure Moodle](configure-moodle)
-* [Enable Moodle drag and drop auto add to EQUELLA function](enable-moodle-drag-and-drop-auto-add-to-equella-function)
-* [QTI 2.1 with Moodle EQUELLA integrations](qti-2.1.-with-moodle-equella-integrations)  
-* [Troubleshoot an unsuccessful integration](troubleshoot-an-unsuccessful-integration)
-* [Upgrade the EQUELLA Moodle Module](Upgrade-the-equella-moodle-module)
-* [Viewing the EQUELLA Moodle Module change log](viewing-the-equella-moodle-module-change-log)
+* [Integration overview](#integration-overview)
+* [Open source](#open-source)
+* [Prerequisites](#prerequisites)
+* [Integration procedure](#integration-procedure)
+* [Configure EQUELLA](#configure-equella)
+* [Configure Moodle](#configure-moodle)
+* [Enable Moodle drag and drop auto add to EQUELLA function](#enable-moodle-drag-and-drop-auto-add-to-equella-function)
+* [QTI 2.1 with Moodle EQUELLA integrations](#qti-2.1.-with-moodle-equella-integrations)  
+* [Troubleshoot an unsuccessful integration](#troubleshoot-an-unsuccessful-integration)
+* [Upgrade the EQUELLA Moodle Module](#upgrade-the-equella-moodle-module)
+* [Viewing the EQUELLA Moodle Module change log](#viewing-the-equella-moodle-module-change-log)
 
 
 
@@ -312,4 +314,4 @@ To view the EQUELLA Moodle Module change log
 1.  Log in to Moodle as an administrative user.
 2.  Select Site administration from the Administration menu. 
 3.  Select Plugins, Activity modules then EQUELLA Resource. 
-4.  Click the View change log link at the top of the page to open the change log in a new browser tab and view the Moodle Module information.
+4.  Click the View change log link at the top of the page to open the change log in a new browser tab and view the Moodle Module information.4. 

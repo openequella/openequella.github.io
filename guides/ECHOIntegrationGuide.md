@@ -1,20 +1,22 @@
+[Home](https://equella.github.io/)
+
 # ECHO360 Integration Guide
 
 Table of Contents
-* [Echo360 Integration overview](echo360-integration-overview)
-* [Prerequisites](prerequisites)
-* [Restrictions](Restrictions)
-* [Echo360 privileges](echo360-privleges)
-* [Integration process](integration-process)
-* [Deployment recommendations](deployment-recommendations)
-* [Configure an EQUELLA Schema](configure-an-equella-schema)
-* [Configure an EQUELLA Collection](configure-an-equella-collection)
-* [Configure an EQUELLA OAuth client](configure-an-equella-oauth-client)
-* [Configure an EQUELLA Trusted System](configure-an-equella-trusted-system)
-* [Configure EQUELLA EchoSystem Servers](configure-equella-echosystem-servers)
-* [Echo360’s EQUELLA Publisher installation](echo360-equella-publisher-installation) 
-* [Enable EQUELLA Publisher plugin](enable-equella-publisher-plugin)
-* [Configure EQUELLA Echo360 viewer](configure-equella-echo360-viewer)
+* [Echo360 Integration overview](#echo360-integration-overview)
+* [Prerequisites](#prerequisites)
+* [Restrictions](#Restrictions)
+* [Echo360 privileges](#echo360-privleges)
+* [Integration process](#integration-process)
+* [Deployment recommendations](#deployment-recommendations)
+* [Configure an EQUELLA Schema](#configure-an-equella-schema)
+* [Configure an EQUELLA Collection](#configure-an-equella-collection)
+* [Configure an EQUELLA OAuth client](#configure-an-equella-oauth-client)
+* [Configure an EQUELLA Trusted System](#configure-an-equella-trusted-system)
+* [Configure EQUELLA EchoSystem Servers](#configure-equella-echosystem-servers)
+* [Echo360’s EQUELLA Publisher installation](#echo360-equella-publisher-installation) 
+* [Enable EQUELLA Publisher plugin](#enable-equella-publisher-plugin)
+* [Configure EQUELLA Echo360 viewer](#configure-equella-echo360-viewer)
 
 
 ## Echo360 Integration overview

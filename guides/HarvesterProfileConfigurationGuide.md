@@ -1,10 +1,12 @@
+[Home](https://equella.github.io/)
+
 # Harvester Profile Configuration Guide
 
-* [Harvesting guide](harvesting-guide) 
-* [Harvester profile tool](harvester-profile-tool)  
-* [Harvester types](harvester-types)  
-* [Harvester profiles scheduled task](haverster-profiles-scheduled-task) 
-* [Harvester system settings](harvester-system-settings)  
+* [Harvesting guide](#harvesting-guide) 
+* [Harvester profile tool](#harvester-profile-tool)  
+* [Harvester types](#harvester-types)  
+* [Harvester profiles scheduled task](#haverster-profiles-scheduled-task) 
+* [Harvester system settings](#harvester-system-settings)  
 
 
 ## Harvesting guide  

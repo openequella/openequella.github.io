@@ -1,15 +1,17 @@
+[Home](https://equella.github.io/)
+
 # Canvas Configuration Guide
 
 Table of Contents
-* [Integration overview](integration-overview)  
-* [Prerequisites](prerequistes)  
-* [Integration procedure](integration-procedure)  
-* [Register an LTI consumer in EQUELLA](register-an-lti-consumer-in-equella)  
-* [Configure Canvas](configure-canvas)  
-* [Configure EQUELLA External connector](configure-equella-external-connector)  
-* [Test the installation](test-the-installation)  
-* [EQUELLA Selection session options](equella-selection-session-options)  
-* [EQUELLA Canvas user login plug-in](equella-canvas-user-login-plug-in)  
+* [Integration overview](#integration-overview)  
+* [Prerequisites](#prerequistes)  
+* [Integration procedure](#integration-procedure)  
+* [Register an LTI consumer in EQUELLA](#register-an-lti-consumer-in-equella)  
+* [Configure Canvas](#configure-canvas)  
+* [Configure EQUELLA External connector](#configure-equella-external-connector)  
+* [Test the installation](#test-the-installation)  
+* [EQUELLA Selection session options](#equella-selection-session-options)  
+* [EQUELLA Canvas user login plug-in](#equella-canvas-user-login-plug-in)  
 
 
 ## Integration overview

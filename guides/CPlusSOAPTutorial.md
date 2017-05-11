@@ -1,12 +1,13 @@
-C# Soap Tutorial
+[Home](https://equella.github.io/)
+
+# C# Soap Tutorial
 
 Table of Contents
-* [C# SOAP tutorial](C#-soap-tutorial)  
-* [Running the examples](running-the-examples)
-* [Guide to the example code](guide-to-the-example-code)
-* [Writing your own code](writing-your-own-code)
+* [Running the examples](#running-the-examples)
+* [Guide to the example code](#guide-to-the-example-code)
+* [Writing your own code](#writing-your-own-code)
 
-## C# SOAP tutorial
+
 ## Running the examples
 Visual Studio Express 2013 for Web is a free IDE for developing C# web applications and is available at <http://www.visualstudio.com/downloads/download-visual-studio-vs#d-express-web>
 

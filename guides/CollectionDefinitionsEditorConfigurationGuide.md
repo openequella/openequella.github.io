@@ -1,3 +1,5 @@
+[Home](https://equella.github.io/)
+
 # Collection Definitions Editor Configuration Guide
 
 Table of contents

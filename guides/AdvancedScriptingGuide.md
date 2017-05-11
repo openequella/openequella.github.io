@@ -1,10 +1,12 @@
+[Home](https://equella.github.io/)
+
 # Advanced Scripting Guide
 
-* [Scripting overview](scripting-overview)
-* [Advanced Scripting control](advanced-scripting-control)
-* [Available script objects](available-script-objects)
-* [Advanced scripting control examples](advanced-scripting-control-examples)
-* [Redirection servlet](redirection-servlet)
+* [Scripting overview](#scripting-overview)
+* [Advanced Scripting control](#advanced-scripting-control)
+* [Available script objects](#available-script-objects)
+* [Advanced scripting control examples](#advanced-scripting-control-examples)
+* [Redirection servlet](#redirection-servlet)
 
 
 ## Scripting overview

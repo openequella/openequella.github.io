@@ -1,11 +1,13 @@
-PHP SOAP Tutorial
+[Home](https://equella.github.io/)
+
+# PHP SOAP Tutorial
 
  
 Table of Contents
-* [PHP SOAP tutorial](php-soap-tutorial)
-* [Running the examples](running-the-examples)
-* [Guide to the example code](guide-to-the-example-code)
-* [Writing your own code](writing-your-own-code)
+* [PHP SOAP tutorial](#php-soap-tutorial)
+* [Running the examples](#running-the-examples)
+* [Guide to the example code](#guide-to-the-example-code)
+* [Writing your own code](#writing-your-own-code)
 
 ## PHP SOAP tutorial
 

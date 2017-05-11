@@ -1,11 +1,13 @@
+[Home](https://equella.github.io/)
+
 # Contribution User Guide
 
 Table of Contents
 
-* [Item contribution overview](item-contribution-overview)  
-* [Digital Repository](digital-repository)  
-* [Contribute resources to collections](contribute-resources-to-collections)
-* [Wizard controls reference](wizard-controls-reference)  
+* [Item contribution overview](#item-contribution-overview)  
+* [Digital Repository](#digital-repository)  
+* [Contribute resources to collections](#contribute-resources-to-collections)
+* [Wizard controls reference](#wizard-controls-reference)  
 * [DRM](#drm)  
 * [Navigation builder](#navigation-builder)  
 * [Attachments](#attachments)  

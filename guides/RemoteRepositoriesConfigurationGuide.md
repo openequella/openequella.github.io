@@ -1,12 +1,14 @@
+[Home](https://equella.github.io/)
+
 # Remote Repositories Configuration Guide
 
 Table of Contents
-* [Remote repositories overview](remote-repositories-overview)
-* [Remote repository searches](remote-repository-searches)
-* [Configure a remote repository search](configure-a-remote-repository-search)
-* [Search types](search-types)
-* [Restricting contribution to imported Remote repository results](restricting-contribution-to-imported-remote-repository-results)
-* [Security](security)
+* [Remote repositories overview](#remote-repositories-overview)
+* [Remote repository searches](#remote-repository-searches)
+* [Configure a remote repository search](#configure-a-remote-repository-search)
+* [Search types](#search-types)
+* [Restricting contribution to imported Remote repository results](#restricting-contribution-to-imported-remote-repository-results)
+* [Security](#security)
 
 ## Remote repositories overview
 
