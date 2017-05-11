@@ -1,5 +1,6 @@
-#Equella Web and Documentation
->Work in progress.
+# Equella Web and Documentation
+
+>Work in progress.  Please feel free to contribution
 
 EQUELLA is a digital repository that provides a single platform to house your teaching and learning, research, media, and library content. 
 
@@ -9,16 +10,16 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 
 ## Getting Started
-* Setting up a Development Environment (Placeholder Link Coming Soon)
+* [Setting up a Development Environment](gettingstarted/SettingUpAnEquellaDevEnvironment.md)
 * [Setting up a Test Environment](gettingstarted/SettingUpATestEnvironment.md)
-* [Equella Installer](EquellaInstaller.md)
-* [Hibernate Best Practices](EquellaHibernateBestPractices.md)
+* [Equella Installer](gettingstarted/EquellaInstaller.md)
+* [Hibernate Best Practices](gettingstarted/EquellaHibernateBestPractices.md)
 
 ## Administrative and User Guides
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
 * [Managing Institutions](guides/ManageInstitutions.md)
 * [Administration Overview Guide](guides/AdministrationOverviewGuide.md)
-* [Securitry Administration Guide](guides/c)
+* [Security Administration Guide](guides/SecurityAdminGuide.md)
 * [REST API Guide](guides/RestAPIGuide.md)
 * [Collection Definitions Editor Configuration Guide](guides/CollectionDefinitionsEditorConfigurationGuide.md)
 * [Contribution User Guide](guides/ContributionUserGuide.md)
