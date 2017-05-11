@@ -376,13 +376,7 @@ The following section provides an example installation using Apache. This is ind
 ### Configure a reverse proxy
 1. Ensure the Apache modules mod_proxy and mod_proxy_http have been installed.
 2. Open the Apache httpd.conf file and add a ‘ProxyPass’ directive to the VirtualHost element:
-```
-<VirtualHost *:80>
-  ServerName <external-server-name>
-  ProxyPass / http://<equellahost>:<http.port>/ nocanon
-ProxyPreserveHost On
- </VirtualHost>
-```
+![alt text](Step2ConfigureReverseProxy.png "Configure Reverse Proxy")
 Where:
 * ‘external-server-name’ must be either the hostname of an institution, or the hostname in mandatory-config.properties.
 * ‘equellahost’ is the host with the EQUELLA installation (if it is on the same machine as the apache server, this would normally be localhost).
@@ -390,30 +384,16 @@ Where:
 * ‘nocanon’ ensures URLs are passed through to the host without processing.
 
 An example directive is:
-``` <VirtualHost *:80>
-  ServerName www.equella.com
-  ProxyPass / http://equellahost:80/ nocanon
-ProxyPreserveHost On
-</VirtualHost>
-```
+
+![alt text](ExampleDirective.png "Example Directive")
 
 ### Configure EQUELLA with SSL
 1. Open mandatory-config.properties and ensure the https.port is enabled (uncommented).
 2. Ensure the Apache modules mod_proxy and mod_proxy_http have been installed.
 3. Open the Apache httpd.conf file and add a ‘ProxyPass’ directive to the VirtualHost element, and the additional SSL directives:
-``` 
-<VirtualHost *:443>
-  ServerName <external-server-name>
-  ProxyPass / http://<equellahost>:<https.port>/ nocanon
-ProxyPreserveHost On
 
-##SSL
-  SSLEngine on
-  SSLProxyEngine on
-  SSLCertificateFile  <path-to-cert.pem>
-SSLCertificateKeyFile <path-to-cert.key>
-</VirtualHost>
-```
+![alt text](Step3ConfigureEquellawithSSL.png "Configure with SSL")
+
 Where:
 *‘external-server-name’ must be either the hostname of an institution, or the hostname in mandatory-config.properties.
 * ‘equellahost’ is the host with the EQUELLA installation (if it is on the same machine as the apache server, this would normally be localhost).
@@ -421,19 +401,7 @@ Where:
 * ‘nocanon’ ensures URLs are passed through to the host without processing.
 
 An example directive is:
-```
-<VirtualHost *:443>
-  ServerName www.equella.com
-  ProxyPass / http://equellahost:8443/ nocanon
-ProxyPreserveHost On
-
-##SSL
-  SSLEngine on
-  SSLProxyEngine on
-  SSLCertificateFile  <path-to-cert.pem>
-SSLCertificateKeyFile <path-to-cert.key>
-</VirtualHost>
-```
+![alt text](ExampleDirectiveSSL.png "Example Directive SSL")
 
 5. Update the institution URL for https://... (e.g. https://equella.com).
 
