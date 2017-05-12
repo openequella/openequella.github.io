@@ -10,7 +10,7 @@
 * [Configure EQUELLA](#configure-equella)
 * [Configure Moodle](#configure-moodle)
 * [Enable Moodle drag and drop auto add to EQUELLA function](#enable-moodle-drag-and-drop-auto-add-to-equella-function)
-* [QTI 2.1 with Moodle EQUELLA integrations](#qti-2.1.-with-moodle-equella-integrations)  
+* [QTI 2.1 with Moodle EQUELLA integrations](#qti-2.1-with-moodle-equella-integrations)  
 * [Troubleshoot an unsuccessful integration](#troubleshoot-an-unsuccessful-integration)
 * [Upgrade the EQUELLA Moodle Module](#upgrade-the-equella-moodle-module)
 * [Viewing the EQUELLA Moodle Module change log](#viewing-the-equella-moodle-module-change-log)
@@ -28,14 +28,15 @@ Please note that this guide has been developed for Moodle version 2.9 and, as su
 
 ## Open source  
 
-he Moodle module, blocks and legacy repository plug-in are available under the GPLv3 license. The source code for these projects can be found at https://github.com/equella/.
+he Moodle module, blocks and legacy repository plug-in are available under the GPLv3 license. The source code for these projects can be found at <https://github.com/equella/>.
 
 ## Prerequisites 
 
 To successfully complete this installation the system administrator will require:
-•  sufficient privileges to access the Moodle system integration functionality;
-•  sufficient privileges to access the EQUELLA User Management functionality; and
-•  privileges to unzip and create files on the Moodle file system.
+* sufficient privileges to access the Moodle system integration functionality;
+* sufficient privileges to access the EQUELLA User Management functionality; and
+* privileges to unzip and create files on the Moodle file system.
+
 #### System prerequisites for integration
 •  EQUELLA opens source and Moodle version 2.6, 2.7 or 2.8 must be installed and running. Further information on installing EQUELLA is provided in the EQUELLA Installation and Administration Guide.
 •  Ensure the time settings of the servers are set correctly, including DST, for the relevant time zone.
@@ -71,9 +72,9 @@ Other options can be enabled as required.
 When logging into Moodle, users are assigned a Moodle role which can be Teacher or another role. Moodle’s Teacher role is translated as Instructor for LTI purposes, and all other roles as Other. LTI ‘Instructor’ and ‘Other’ roles need to be mapped to the relevant EQUELLA roles for EQUELLA permissions to apply. Additionally, it is wise to map Unknown roles that may be sent to EQUELLA. This is done from the LTI/LIS Role Mappings section of the Add new LTI consumer or Edit LTI consumer pages. 
 
 The LTI/LIS Role Mappings section has three areas:
-•  Instructor role – map the Moodle ‘Teacher’ role to EQUELLA role/s.
-•  Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied, of which ‘Other’ is one. 
-•  Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is sent to EQUELLA. 
+* Instructor role – map the Moodle ‘Teacher’ role to EQUELLA role/s.
+* Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied, of which ‘Other’ is one. 
+* Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is sent to EQUELLA. 
 
 #### Mapping the Instructor and Unknown roles
 In the Instructor and Unknown roles fields, the Add roles link is used to select the EQUELLA roles to be used in the mappings. An example using the Instructor role is shown below:
@@ -99,7 +100,7 @@ To map the ‘Other’ role
 Shared secrets are configured in the EQUELLA Administration Console.
 
 To open the Administration Console
-1.  Open a browser and enter your EQUELLA URL (e.g. ‘http://equella.myequellainstitution.edu’).
+1.  Open a browser and enter your EQUELLA URL (e.g. ‘<http://equella.myequellainstitution.edu>’).
 2.  Log in to EQUELLA as an administrator, select Settings then Administration console. 
 3. The Administration console displays. Select User Management to display a list of plug-ins. 
 4.  Highlight the Shared Secrets user management plug-in, then click Configure. The Shared Secrets dialog displays. 
@@ -147,7 +148,7 @@ For complete installation the contents of each zip file need to be extracted to 
 
 ### Activate the EQUELLA Resource module
 To access Moodle
-1.  Open a browser and enter your Moodle URL (e.g. ‘http://moodle.myequellainstitution.edu’).
+1.  Open a browser and enter your Moodle URL (e.g. ‘<http://moodle.myequellainstitution.edu>’).
 2.  Log in to Moodle as an administrative user.
 3.  Select Site administration from the Settings menu. Then click Notifications
 4.  Look over the Plugins list. Note the presence of the EQUELLA modules.
@@ -156,7 +157,7 @@ To access Moodle
 7.  Click Continue to move onto the EQUELLA resource configuration page.
 8.  Enter the details of your EQUELLA server into the configuration pane. 
 
-a.  Enter the complete EQUELLA URL to your institution with ‘/signon.do’ appended to the URL (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitution.edu/signon.do’).
+a.  Enter the complete EQUELLA URL to your institution with ‘/signon.do’ appended to the URL (e.g. ‘<http://equella.myinstitution.edu/logon.do>’ would become ‘<http://equella.myinstitution.edu/signon.do>’).
 
 b.  Enter the EQUELLA Action (e.g. structured). The ‘structured’ action activates the latest EQUELLA Integration page where users can search the EQUELLA Digital Repository for existing content, contribute new items and select EQUELLA content to link to a course. 
 
@@ -191,12 +192,12 @@ h.  Enter EQUELLA Shared Secret details. These must exist in EQUELLA. In this ca
    a.  Enter EQUELLA Shared Secret ID.
 
    b.  Enter EQUELLA Shared Secret.
-
-9.  Click Save Changes to save the configuration details and complete the EQUELLA Moodle Module setup.
+   
+9. Click Save Changes to save the configuration details and complete the EQUELLA Moodle Module setup.
 
 ### Test the module installation
 To access Moodle
-1.  Open a browser and enter your Moodle URL (e.g. ‘http://moodle.myequellainstitution.edu’).
+1.  Open a browser and enter your Moodle URL (e.g. ‘<http://moodle.myequellainstitution.edu>’).
 2.  Log in to Moodle as an administrator user.
 3.  Select a course (e.g. EQ101 – EQUELLA 101) from the My Courses pane to display the Course Weekly outline page. 
 4.  Click Turn editing on to display the Add an activity or a resource link. The Add an activity or resource dialog displays. 
@@ -206,7 +207,7 @@ To access Moodle
 There are two blocks to add as part of the EQUELLA integration. The first is a search block that will allow users to search the EQUELLA repository from inside Moodle and view the results. The other provides users with a summary of their EQUELLA task list from inside Moodle. Access to the tasks in EQUELLA can be made by simply clicking the relevant link.
 
 To access Moodle
-1.  Open a browser and enter your Moodle URL (e.g. ‘http://moodle.myequellainstitution.edu’).
+1.  Open a browser and enter your Moodle URL (e.g. ‘<http://moodle.myequellainstitution.edu>’).
 2.  Log in to Moodle as an administrator user.
 3.  Select a course (e.g. Science - Physiology) from the My Courses pane to display the course Weekly outline page. 
 4.  Click Turn editing on to display the Add a block drop-down list
@@ -217,7 +218,7 @@ Note that the EQUELLA Tasks block can also be added on the Moodle front page.
 
 ### Test the blocks installation
 To access Moodle
-1.  Open a browser and enter your Moodle URL (e.g. ‘http://moodle.myequellainstitution.edu’).
+1.  Open a browser and enter your Moodle URL (e.g. ‘<http://moodle.myequellainstitution.edu>’).
 2.  Log in to Moodle as an administrator user.
 3.  Select a course (e.g. Science - Physiology) from the My Courses pane to display the course Weekly outline page. 
 4.  In the EQUELLA Search block, click the Search EQUELLA link.
@@ -229,7 +230,7 @@ To access Moodle
 
 Activate the EQUELLA repository plug-in to enable searching of the EQUELLA repository to find and retrieve files from when using a file picker from inside Moodle. 
 
-1.  Open a browser and enter your Moodle URL (e.g. ‘http://moodle.myequellainstitution.edu’).
+1.  Open a browser and enter your Moodle URL (e.g. ‘<http://moodle.myequellainstitution.edu>’).
 2.  Log in to Moodle as an administrator user.
 3.  From the Moodle home page expand the Site administration menu folder. 
 4.  Expand the Plugins menu folder, and then the Repositories menu folder
@@ -240,7 +241,7 @@ Activate the EQUELLA repository plug-in to enable searching of the EQUELLA repos
 9.  Scroll down to EQUELLA Repository once again, and select the Settings link. The Configuration for EQUELLA repository page displays.
 10.  Click Create a Repository Instance. The Create a repository instance page displays. 
 11.  Enter a Name for the EQUELLA repository (e.g. EQUELLA). This name displays in the file picker. If multiple EQUELLA repositories are to be configured, using a descriptive name is useful (e.g. University of Tas, RMIT etc.).
-12.  Enter the complete EQUELLA URL for the relevant institution with ‘/signon.do’ appended to the URL (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitution.edu/signon.do’).
+12.  Enter the complete EQUELLA URL for the relevant institution with ‘/signon.do’ appended to the URL (e.g. ‘<http://equella.myinstitution.edu/logon.do>’ would become ‘<http://equella.myinstitution.edu/signon.do>’).
 13.  Enter the EQUELLA Options (optional). This string is used to specifically override some built-in actions to restrict the search and contribution options available on the EQUELLA Integration page. 
 14.  Enter the Default role settings, Shared secret ID and Shared secret that have been set in the EQUELLA instance. 
 15.  Enter the Shared secret IDs and Shared secrets for Manager role settings, Teacher role settings and/or EQUELLA Web Service Role settings if relevant.
@@ -248,7 +249,7 @@ Activate the EQUELLA repository plug-in to enable searching of the EQUELLA repos
 
 ### Test the Repository installation
 To access Moodle
-1.  Open a browser and enter your Moodle URL (e.g. ‘http://moodle.myequellainstitution.edu’).
+1.  Open a browser and enter your Moodle URL (e.g. ‘<http://moodle.myequellainstitution.edu>’).
 2.  Log in to Moodle as an administrator user.
 3.  Select a course (e.g. DOC1 - Documentation) from the My Courses pane to display the course Weekly outline page. 
 4.  Click Turn editing on to enable the editing options. 
@@ -270,7 +271,8 @@ To configure Moodle for drag and drop/auto add to EQUELLA
 3.  Make sure there is a Shared secret ID and Shared secret for Default role settings. This would have been configured during the initial integration configuration process.
 4.  Select the required Intercept drag and drop files option:
 * Don’t intercept files – always adds files as file resources locally in Moodle.
-* Display file destination dialog – displays a confirmation dialog asking the user to select where the file should be saved. Options are:
+* Display file destination dialog – displays a confirmation dialog asking the user to select where the file should be saved. 
+* Options are:
     * Contribute to EQUELLA – automatically contributes the file to EQUELLA, with the file name as the Title and Description, and adds a link to that EQUELLA record in Moodle.
     * Add image to course page - shows the full sized image on the course page instead of a link. This option only displays for image files.
     * Create file resource – saves the file locally in Moodle as a file resource.
@@ -314,4 +316,4 @@ To view the EQUELLA Moodle Module change log
 1.  Log in to Moodle as an administrative user.
 2.  Select Site administration from the Administration menu. 
 3.  Select Plugins, Activity modules then EQUELLA Resource. 
-4.  Click the View change log link at the top of the page to open the change log in a new browser tab and view the Moodle Module information.4. 
+4.  Click the View change log link at the top of the page to open the change log in a new browser tab and view the Moodle Module information.4. 4. 

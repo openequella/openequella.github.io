@@ -1,3 +1,5 @@
+[Home](https://equella.github.io/)
+
 # EQUELLA Installer
 
 1. Run `ant release` in root directory

@@ -30,7 +30,7 @@ Table of Contents
 * [Selection sessions](#selection-sessions)
 * [Shortcut URLs](#shortcut-urls)
 * [User scripts](#user-scripts)
-* [Recipient selector](#recipient-selectors)
+* [Recipient selector](#recipient-selector)
 
 ## Administration Overview
 

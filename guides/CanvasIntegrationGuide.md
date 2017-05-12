@@ -4,7 +4,7 @@
 
 Table of Contents
 * [Integration overview](#integration-overview)  
-* [Prerequisites](#prerequistes)  
+* [Prerequisites](#prerequisites)  
 * [Integration procedure](#integration-procedure)  
 * [Register an LTI consumer in EQUELLA](#register-an-lti-consumer-in-equella)  
 * [Configure Canvas](#configure-canvas)  
@@ -24,13 +24,16 @@ Please note that this guide has been developed using the latest Canvas as of Spr
 
 
 ## Prerequisites  
+
 #### To successfully complete this installation the system administrator will require:
-•  Sufficient privileges to access the Canvas system integration functionality.
-•  Sufficient privileges to access the EQUELLA User Management functionality 
+* Sufficient privileges to access the Canvas system integration functionality.
+* Sufficient privileges to access the EQUELLA User Management functionality 
+
 #### System prerequisites for integration
-•  EQUELLA and Canvas must be installed and running. 
-•  Ensure the time settings of the servers have the correct time and time zone for their location. This way both will report to Greenwich Mean Time (GMT) and synchronize correctly.
-•  To access EQUELLA from Canvas at least one course must have been created in Canvas. 
+* EQUELLA and Canvas must be installed and running. 
+* Ensure the time settings of the servers have the correct time and time zone for their location. This way both will report to Greenwich Mean Time (GMT) and synchronize correctly.
+* To access EQUELLA from Canvas at least one course must have been created in Canvas. 
+
 ## Integration procedure
 
 EQUELLA Canvas integration can be broken into the following steps:
@@ -52,18 +55,20 @@ LTI consumer client registrations are registered from the Settings page in EQUEL
 4.  A default Consumer key displays. This can be changed as desired (e.g. canvas). Take note as the Consumer key is entered in Canvas during integration configuration.
 5.  A default Consumer secret displays. This can be changed as desired. Take note as the Client secret is entered in Canvas during integration configuration.
 Other options can be enabled as required. Further information on LTI consumers is provided in the EQUELLA LTI Consumer Configuration Guide.
+
 ### LTI/LIS Role Mappings
 Canvas roles sent through to EQUELLA via the LTI integration need to be mapped to equivalent EQUELLA roles so that relevant privileges can be applied. This is done from the LTI/LIS Role Mappings section of the Add new LTI consumer or Edit LTI consumer pages. 
 
 The LTI/LIS Role Mappings section has three areas:
-•  Instructor role – map the ‘Teacher’ role to EQUELLA role/s.
-•  Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied. 
-•  Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is sent to EQUELLA. 
+* Instructor role – map the ‘Teacher’ role to EQUELLA role/s.
+* Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied. 
+* Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is sent to EQUELLA. 
 
 ### Mapping the Instructor and Unknown roles
 In the Instructor and Unknown roles fields, the Add roles link is used to select the EQUELLA roles to be used in the mappings. An example using the Instructor role is used below:
 
 To map to EQUELLA role/s
+
 1.  Click the Add roles link under the Instructor role field. The Select role(s) dialog displays. 
 2.  Enter a search query then click Search . Matching results display. 
 3.  Select the required role/s, then click Select these roles. The mapping/s displays in the Instructor role field. 
@@ -97,10 +102,10 @@ b.  a specific course from the My Courses section to open the Canvas course page
 5.  Select the Configuration Type from the drop-down list. 
 * For web-accessible EQUELLA instances:
 a.  Select By URL.
-b.  Enter the Config URL at the bottom of the Add App dialog box in the format http://myinstitution.equella.com/institution/lti/autoconfig. 
+b.  Enter the Config URL at the bottom of the Add App dialog box in the format <http://myinstitution.equella.com/institution/lti/autoconfig>. 
 * For EQUELLA instances not freely available
 a.  Select Paste XML.
-b.  Open a new browser window and enter the Configuration URL in the format http://myinstitution.equella.com/institution/lti/autoconfig and press Enter. XML displays on the page.
+b.  Open a new browser window and enter the Configuration URL in the format <http://myinstitution.equella.com/institution/lti/autoconfig> and press Enter. XML displays on the page.
 c.  Right click and select View page source from the menu. Copy all of the resulting XML displayed and paste it into the XML Configuration text box at the bottom of Add App dialog box. 
 6.  Enter a Name (e.g. EQUELLA). 
 7.  Enter the Consumer key (e.g. canvas). This must be the same as previously configured in the Register an LTI OAuth Client section on page 4.
@@ -133,7 +138,7 @@ NOTE: The user must have sufficient Canvas permissions to add and view content w
 2.  Select the Add new connector link to display the Create new connector page. 
 3.  From the Select a connector type drop-down, select Canvas. The Create new connector page displays with Canvas-specific options.
 4. Enter a Connector name (e.g. Canvas) and Description (optional).
-5.  Enter the institution’s Canvas URL (e.g. http://myinstitution.instructure.com).
+5.  Enter the institution’s Canvas URL (e.g. <http://myinstitution.instructure.com>).
 6.  Click Test URL to make sure the entered URL is valid. A Connection successful message displays. 
 If an error occurs, check the URL and try again.
 7.  Enter or paste the Manually generated token generated in Canvas. 
@@ -167,12 +172,9 @@ Note that when EQUELLA content links are pushed to the Canvas course module/s, t
 
 ### Accessing EQUELLA from the Canvas Module page
 1.  Select Modules from the course navigation menu. A list of course modules display on the screen. 
-2.  Click the + button beside the module the resource is to be added to.
-
-The Add item to Module name dialog opens.
+2.  Click the + button beside the module the resource is to be added to. The Add item to Module name dialog opens.
 3.  Select External Tool from the Add drop-down list. A list of available external tools displays. 
-
-3.  Locate and select EQUELLA from the list. The EQUELLA Select page displays. 
+4.  Locate and select EQUELLA from the list. The EQUELLA Select page displays. 
 
 Note that when EQUELLA content links are saved to the Canvas course module/s using this method, the logged-in Canvas user is stored against that transaction in Canvas.
 
@@ -239,12 +241,12 @@ NOTE: Matching user records must exist in both Canvas and EQUELLA. An error disp
 
 #### To use Canvas login for EQUELLA
 
-NOTE: A Canvas Dev Key is required to successfully configure this functionality. Go to http://instructure.github.io/ and follow the instructions in the Dev Key Signup section to apply for one.
+NOTE: A Canvas Dev Key is required to successfully configure this functionality. Go to <http://instructure.github.io/> and follow the instructions in the Dev Key Signup section to apply for one.
 
 1.  From the EQUELLA navigation menu, go the Settings, Administration Console. The Administration console displays.
 2.  Select User management to display user management options.
 3.  Highlight Canvas then click Configure. The Canvas configuration dialog displays. 
-4.  Enter the institution’s Canvas URL (e.g. https://mystitution.canvas.com).
+4.  Enter the institution’s Canvas URL (e.g. <https://mystitution.canvas.com>).
 5.  Enter the Dev Key ID as supplied by Canvas.
 6.  Enter the Key as supplied by Canvas.
 7.  Select the Bypass the EQUELLA logon page. I.e. don’t show link to login to Canvas to go straight to the Canvas login page when EQUELLA is accessed (or straight into EQUELLA if the user has previously logged in to Canvas).

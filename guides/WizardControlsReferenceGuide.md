@@ -51,18 +51,18 @@ Wizard controls are configured in the Administration Console. A choice of contro
 * Advanced search wizards—created in the Advanced Searches Editor. Refer to the EQUELLA Advanced Search Configuration Guide for information on the editor.
 
 All wizard controls can be added to a contribution wizard while an Advanced search wizard can contain only the following controls:
-    •  Calendar
-    •  Check Box Group
-    •  Edit Box
-    •  Group Selector
-    •  List Box
-    •  Radio Button Group
-    •  Raw HTML
-    •  Role Selector
-    •  Shuffle Box
-    •  Shuffle List
-    •  Term Selector
-    •  User Selector
+   * Calendar
+   * Check Box Group
+   * Edit Box
+   * Group Selector
+   * List Box
+   * Radio Button Group
+   * Raw HTML
+   * Role Selector
+   * Shuffle Box
+   * Shuffle List
+   * Term Selector
+   * User Selector
 
 The Collection Definition Editor and the Advanced Search Editor contain common configuration elements such as the Hierarchy pane (also known as the Control list pane in the Advanced Search Editor) and the Control Editor pane. 
 
@@ -102,8 +102,8 @@ Enter a brief instruction or explanation in the Description field if the functio
 #### Scripting button
 Click Scripting to display the Script Editor. Scripting can be used to modify controls based on resource metadata, user roles or resource status. For example, a control could be hidden or displayed based on previous data entered. (NOTE: When a control has a script, a red dot appears beside the control name in the list in the left-hand pane.)
 The Script Editor provides two options:
-•  Basic—for simple and quick script creation.
-•  Advanced—for users who are more familiar with EQUELLA and JavaScript™. 
+* Basic—for simple and quick script creation.
+* Advanced—for users who are more familiar with EQUELLA and JavaScript™. 
 
 #### This control is mandatory
 Check the This control is mandatory checkbox to enforce that data must be entered in the associated control before the wizard can be completed. A red asterisk displays beside mandatory controls in the contribution wizard.
@@ -114,8 +114,8 @@ When a user attempts to submit a resource without entering data into a mandatory
 Most controls require schema elements to be designated as the storage area for entered data. These schema elements are called metadata targets. Multiple metadata targets can be selected for controls. 
 
 The elements of this section are:
-• Add—click to display a Choose a schema element? dialog box. 
-• Remove—click the button to remove the currently selected metadata target.
+* Add—click to display a Choose a schema element? dialog box. 
+* Remove—click the button to remove the currently selected metadata target.
 
 Select a schema element (e.g. ‘xml/item/itembody/name’) then click OK to display it as the selected metadata target on the control page.
 
@@ -128,8 +128,8 @@ This section describes the controls that can be added to a contribution wizard i
 Customized wizard controls and content can be created using an Advanced Scripting control in a contribution wizard. 
 
 The Advanced Scripting control: 
-•  uses JavaScript™, FreeMarker and HTML.
-•  is shareable, with import and export options.
+* uses JavaScript™, FreeMarker and HTML
+* is shareable, with import and export options
 
 The Advanced Scripting control requires advanced knowledge of scripting languages. 
 
@@ -142,7 +142,7 @@ The attachments control has the following elements:
 * Allow multiple attachments—select to allow more than one attachment to be added to the resource.
     * Maximum number of attachments allowed for this attachment control – select this checkbox to select the maximum number of attachments that can be linked or uploaded during contribution for this attachment control This includes all attachment types enabled for the control (e.g. files, URLs, YouTube videos)   
 * Select metadata target(s) for the control:—click Add to open the Choose a schema element? dialog and select the required metadata node.
-•  Allow the following attachment types:—the following attachment types covered in the sections below are supported and can be enabled or disabled using the checkboxes on the Attachments control page. The user’s view of this control on a contribution wizard remains unchanged irrespective of the enabled attachment types. 
+* Allow the following attachment types:—the following attachment types covered in the sections below are supported and can be enabled or disabled using the checkboxes on the Attachments control page. The user’s view of this control on a contribution wizard remains unchanged irrespective of the enabled attachment types. 
 
 When the Add a resource link is clicked, and there is more than one attachment type enabled, the Select type page displays. 
 
@@ -157,12 +157,12 @@ The EQUELLA Resources attachment type enables users to search for and link to ot
 The attachment type can be configured to allow searching within the entire repository and other repositories, or searches can be restricted to particular collections and sources. 
 
 The EQUELLA Resources control elements are:
-•  Selected resources are—select from Not specified (all resources, regardless of copyright status), CLA Holdings (in the UK) or CAL Holdings (in Australia).
-•  Allow selection of—select from Resources or Attachments to allow both resources and attachments, Resources only, or Attachments only. This option is only available when Not specified is selected in the Selected resources are drop-down.
-•  Restrict searching to the following collection:—check to select the collections that can be searched. Move required collections to the right-hand pane of the shuffle box using the > button. The >> button moves all collections at once. To remove a selected collection, use the < button, or to remove all collections, use the << button.
-•  Restrict advanced search usage to the following:—check to limit the advanced searches that can be searched. Move required advanced searches to the right-hand pane of the shuffle box using the > button. The   >> button moves all advanced searches at once. To remove a selected advanced search, use the   < button, or to remove all advanced searched, use the  << button.
-•  Restrict searching to the following dynamic collections:—check to limit the dynamic collections that can be searched. Move required dynamic collections to the right-hand pane of the shuffle box using the > button. The >> button moves all dynamic collections at once. To remove a selected dynamic collection, use the < button, or to remove all dynamic collections, use the <<  button.
-•  Restrict contribution to the collections—check to limit the collections available for contribution. This refers to the functionality provided by the Contribute button on the Select page during contribution. Select collections that can be contributed to by using the > button. The >> button moves all collections at once. To remove a selected collection, use the <  button, or to remove all collections, use the   << button. NOTE: For the Quick Contribute feature to be enabled on the Select page the collection must be selected in this option and in the Settings page Selection sessions function.
+* Selected resources are—select from Not specified (all resources, regardless of copyright status), CLA Holdings (in the UK) or CAL Holdings (in Australia).
+* Allow selection of—select from Resources or Attachments to allow both resources and attachments, Resources only, or Attachments only. This option is only available when Not specified is selected in the Selected resources are drop-down.
+* Restrict searching to the following collection:—check to select the collections that can be searched. Move required collections to the right-hand pane of the shuffle box using the > button. The >> button moves all collections at once. To remove a selected collection, use the < button, or to remove all collections, use the << button.
+* Restrict advanced search usage to the following:—check to limit the advanced searches that can be searched. Move required advanced searches to the right-hand pane of the shuffle box using the > button. The   >> button moves all advanced searches at once. To remove a selected advanced search, use the   < button, or to remove all advanced searched, use the  << button.
+* Restrict searching to the following dynamic collections:—check to limit the dynamic collections that can be searched. Move required dynamic collections to the right-hand pane of the shuffle box using the > button. The >> button moves all dynamic collections at once. To remove a selected dynamic collection, use the < button, or to remove all dynamic collections, use the <<  button.
+* Restrict contribution to the collections—check to limit the collections available for contribution. This refers to the functionality provided by the Contribute button on the Select page during contribution. Select collections that can be contributed to by using the > button. The >> button moves all collections at once. To remove a selected collection, use the <  button, or to remove all collections, use the   << button. NOTE: For the Quick Contribute feature to be enabled on the Select page the collection must be selected in this option and in the Settings page Selection sessions function.
 
 If a search or contribution option has been restricted (checked) but no collections, searches or sources have been selected and moved to the right-hand pane, that option will not be available from the Select or Search page. For example, if the Restrict contribution to the collections: checkbox has been selected, but no collections have been moved to the right hand pane, the Contribute portlet does not display on the Select page.
 
@@ -199,7 +199,7 @@ Selecting the Google Books attachment type enables users to search for Google Bo
 #### iTunes U Tracks
 Selecting the iTunes U Tracks attachment type enables users to add iTunes U™ tracks to a resource during contribution. The iTunes U Tracks section allows the user to configure channel definitions, if required. 
 The iTunes U Tracks configuration element is:
-•  iTunes U Institution ID—enter the site address without the http prefix and slashes (e.g. <https://deimos.apple.com/WebObjects/Core.woa/API/ShowTree/utm.edu> becomes deimos.apple.com/WebObjects/Core.woa/API/ShowTree/utm.edu). A list of public iTunes U sites can be found at <http://itunesu.pbwiki.com/>.
+* iTunes U Institution ID—enter the site address without the http prefix and slashes (e.g. <https://deimos.apple.com/WebObjects/Core.woa/API/ShowTree/utm.edu> becomes deimos.apple.com/WebObjects/Core.woa/API/ShowTree/utm.edu). A list of public iTunes U sites can be found at <http://itunesu.pbwiki.com/>.
 
 #### Kaltura streaming media
 Selecting the Kaltura streaming media attachment type enables users to search for Kaltura streaming media items to be added as links to a resource during contribution. Additionally, new media can be uploaded to the Kaltura server during contribution. 
@@ -348,7 +348,7 @@ The Group Selector control elements are:
 * Restrict group selection by parent groups—check to restrict group selection to the selected parent groups. When using a restricted group selector during contribution, the user is notified of the available parent groups. Any ‘child’ groups belonging to those parent groups can be selected. 
 
 Select group(s)
-•   Search..—click the button to display a Selected group(s) dialog. Enter search terms (e.g. content) in the search field and click Search. Matching results are returned. Leave blank to view all groups. 
+* Search.. —click the button to display a Selected group(s) dialog. Enter search terms (e.g. content) in the search field and click Search. Matching results are returned. Leave blank to view all groups. 
 
 Select the parent groups that users can select using the group selector during contribution.
 
@@ -356,7 +356,7 @@ Select the parent groups that users can select using the group selector during c
 The HTML Edit Box control provides an inline editor within the contribution wizard that allows users to create web page content during contribution. 
 
 The HTML Edit Box control elements are: 
-•  Only load this editor on-demand—check to display the HTML Editor as read-only. Selecting this option can save page-loading time.
+* Only load this editor on-demand—check to display the HTML Editor as read-only. Selecting this option can save page-loading time.
 
 Select the [Click here to edit] link to enable the HTML Editor. 
 
@@ -368,7 +368,7 @@ The Insert EQUELLA Content button can be configured to allow searching within th
 
 The Insert EQUELLA Content control elements are:
 * Restrict searching to the following collection:—check to select the collections that can be searched. Move required collections to the right-hand pane of the shuffle box using the > button. The >> button moves all collections at once. To remove a selected collection, use the < button, or to remove all collections, use the << button.
-* Restrict advanced search usage to the following:—check to limit the advanced searches that can be searched. Move required advanced searches to the right-hand pane of the shuffle box using the > button. The >>   button moves all advanced searches at once. To remove a selected advanced search, use the <   button, or to remove all advanced searched, use the << button.
+* Restrict advanced search usage to the following:—check to limit the advanced searches that can be searched. Move required advanced searches to the right-hand pane of the shuffle box using the > button. The >>   button moves all advanced searches at once. To remove a selected advanced search, use the < button, or to remove all advanced searched, use the << button.
 * Restrict searching to the following dynamic collections:—check to limit the dynamic collections that can be searched. Move required dynamic collections to the right-hand pane of the shuffle box using the   > button. The >> button moves all dynamic collections at once. To remove a selected dynamic collection, use the < button, or to remove all dynamic collections, use the <<   button.
 * Restrict contribution to the following collections—check to limit the collections available for contribution. This refers to the functionality provided by the Contribute button on the Select page during contribution. Select collections that can be contributed to by using the > button. The   >> button moves all collections at once. To remove a selected collection, use the   < button, or to remove all collections, use the   << button. NOTE: For the Quick Contribute feature to be enabled on the Select page the collection must be selected in this option and in the Settings page Selection sessions function.
 

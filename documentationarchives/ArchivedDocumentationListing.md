@@ -1,3 +1,6 @@
+[Home](https://equella.github.io/)
+
+
 # Archived Documentation
 
 The documents linked below were created by Pearson for the commercial instance of the Equella Product.

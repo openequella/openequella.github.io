@@ -1,3 +1,5 @@
+[Home](https://equella.github.io/)
+
 # Hibernate best practices
 
 ## Indexes
@@ -31,12 +33,15 @@ private Item item;
 
 Some collection types (@CollectionOfElements and @ManyToMany) can't be annotated with @Index however, and need special attention. There is a call on HibernateMigrationHelper which allows indexes to be created on arbitrary tables and columns:
 
-```getAddIndexesRaw(String tableName, String[]... indexes);```
+```
+getAddIndexesRaw(String tableName, String[]... indexes);
+```
 
 **tableName** is the raw table name
 each entry in **indexes** is an array which has the name of the index as the first element and all following elements are columns to be included in the index (just 1 column in the case of foreign keys).
 
-```helper.getAddIndexesRaw("power_search_itemdefs",
+```
+helper.getAddIndexesRaw("power_search_itemdefs",
 new String[]{"psid_search", "power_search_id"},
 new String[]{"psid_itemdef", "itemdefs_id"}
 )
@@ -45,7 +50,8 @@ There is also an overloaded version of getAddIndexesRaw() which takes a single i
 
 In addition to this call you need a way of specifying these indexes for the initial schema, which is where the "index" parameter comes in handy, it's fairly self explanatory:
 
-```<extension-point id="initialSchema">
+```
+<extension-point id="initialSchema">
 <parameter-def id="class" multiplicity="one-or-more" />
 <parameter-def id="index" multiplicity="any">
 <parameter-def id="table" multiplicity="one" />
@@ -67,7 +73,8 @@ You'd like to be able to manipulate the list of attachments via the Item. E.g. r
 
 Use the following annotations:
 
-```public class Item
+```
+public class Item
 {
 @Id
 private long id;
@@ -93,7 +100,8 @@ private Item item;
 
 This will allow the following code to work as expected:
 
-```List<Attachment> attachments = item.getAttachments();
+```
+List<Attachment> attachments = item.getAttachments();
 attachments.remove(0);
 attachments.add(new Attachment());
 ```
@@ -106,7 +114,8 @@ Benefits of this approach:
 
 Sometimes you don't want the parent class to be the "owner" of the relationship. For example if you didn't want the Item to be responsible for deleting, adding and saving attachments, and the order of the List didn't matter.
 
-```public class Item
+```
+public class Item
 {
 @Id
 private long id;
@@ -128,7 +137,8 @@ private Item item;
 
 The previous example code will not work as expected:
 
-```List<Attachment> attachments = item.getAttachments();
+```
+List<Attachment> attachments = item.getAttachments();
 attachments.remove(0); // does nothing
 attachments.add(new Attachment()); // does nothing
 

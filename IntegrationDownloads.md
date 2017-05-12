@@ -1,3 +1,5 @@
+[Home](https://equella.github.io/)
+
 # Integration Downloads
 
 The following connectors and tools are provided to help you to integrate EQUELLA with other systems.
@@ -6,7 +8,7 @@ The following connectors and tools are provided to help you to integrate EQUELLA
 The Blackboard Academic SuiteTM is a comprehensive engagement and assessment solution that grows as your institution grows. EQUELLA provides a Building Block that allows Blackboard users to search for content in EQUELLA and easily link it back to a course. This Building Block works with Blackboard Learn 9.1 SP14 and above.
 Download the EQUELLA Building Block for Blackboard Learn 9.1 SP14 and higher **PLACEHOLDER FOR NEW LINK IN GITHUB**
 
-[Blackboard Integration Guide](guides/BlackboardIntegrationGuide.md)
+[Blackboard Integration Guide](guides/BlackboardLearnIntegrationGuide.md)
 
 ## Moodle Module
 Moodle is a course management system (CMS) - a free, Open Source software package designed using sound pedagogical principles, to help educators create effective online learning communities. EQUELLA provides extensions to Moodle that allows users to search for content in EQUELLA and easily link it back to a course.

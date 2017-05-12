@@ -48,9 +48,9 @@ To create a new LTI consumer
 Standard LTI/LIS roles that are supplied to EQUELLA from the LMS/LTI tool can be mapped to EQUELLA using the LTI/LIS Role Mappings section on the Create new LTI consumer and Edit LTI consumer pages. Additionally, custom roles can also be mapped to EQUELLA roles. 
 
 The LTI/LIS Role Mappings section has three areas:
-•  Instructor role – commonly used LTI role within LMSs. Use this area to map to relevant EQUELLA role/s.
-•  Other roles – use this area to map all other roles used in the integration. A list of the standard LTI/LIS roles is supplied. Custom roles can also be added and mapped in this area.
-•  Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is supplied to EQUELLA.
+* Instructor role – commonly used LTI role within LMSs. Use this area to map to relevant EQUELLA role/s.
+* Other roles – use this area to map all other roles used in the integration. A list of the standard LTI/LIS roles is supplied. Custom roles can also be added and mapped in this area.
+* Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is supplied to EQUELLA.
 
 #### Mapping the Instructor and Unknown roles
 In the Instructor and Unknown roles fields, the Add roles link is used to select the EQUELLA roles to be used in the mappings. An example using the Instructor role is used below:
@@ -110,4 +110,3 @@ To delete an LTI consumer
 2.  Select the Disable link beside the LTI consumer to be deleted. The LTI consumer is disabled, and the Disable link changes to Enable, and a Delete link displays.
 3.  Select the Delete link beside the LTI consumer to be deleted. A confirmation box displays.
 4.  Click OK.
-5. 

@@ -1,3 +1,5 @@
+[Home](https://equella.github.io/)
+
 # Release checklist
 
 ## Tasks
@@ -41,4 +43,4 @@ git push --tags
 4. Report designers
 5. Sample reports
 6. Blank (or vanilla) institution
-* Post on Aperero Website and Equella Google Group
+* Post on Aperero Website and Equella Google Group7. 

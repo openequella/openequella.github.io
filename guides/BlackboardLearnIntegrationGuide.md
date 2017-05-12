@@ -5,7 +5,7 @@
 
 Table of Contents
 
-* [EQUELLA Blackboard Learn integration overview](#equella-blackboard-learn-integration)  
+* [EQUELLA Blackboard Learn integration overview](#equella-blackboard-learn-integration-overview)  
 * [Prerequisites](#prerequisites)  
 * [Integration procedure](#integration-procedure)  
 * [Configure EQUELLA](#configure-equella)  
@@ -24,13 +24,13 @@ Please note that this guide has been developed for Blackboard version 9.1 (SP16)
 
 ## Prerequisites
 To successfully complete this installation the system administrator will require:
-•  Sufficient privileges to access the Blackboard system integration functionality.
-•  Sufficient privileges to access the EQUELLA User Management functionality 
+* Sufficient privileges to access the Blackboard system integration functionality.
+* Sufficient privileges to access the EQUELLA User Management functionality 
 
 System prerequisites for integration
-•  EQUELLA version 6.4 and Blackboard version 9.1 (SP16) must be installed and running. 
-•  Ensure the time settings of the servers have the correct time and time zone for their location. This way both will report to Greenwich Mean Time (GMT) and synchronise correctly.
-•  To access the EQUELLA Home page at least one course must have been created in Blackboard. Refer to the Blackboard documentation for more information. 
+* EQUELLA version 6.4 and Blackboard version 9.1 (SP16) must be installed and running.
+* Ensure the time settings of the servers have the correct time and time zone for their location. This way both will report to Greenwich Mean Time (GMT) and synchronize correctly.
+* To access the EQUELLA Home page at least one course must have been created in Blackboard. Refer to the Blackboard documentation for more information. 
 
 ## Integration procedure
 EQUELLA Blackboard integration can be broken into the following steps:
@@ -58,9 +58,9 @@ To create a new LTI consumer
 Canvas roles sent through to EQUELLA via the LTI integration need to be mapped to equivalent EQUELLA roles so that relevant privileges can be applied. This is done from the LTI/LIS Role Mappings section of the Add new LTI consumer or Edit LTI consumer pages. 
 
 The LTI/LIS Role Mappings section has three areas:
-•  Instructor role – map the ‘Teacher’ role to EQUELLA role/s.
-•  Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied.
-•  Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is sent to EQUELLA. 
+* Instructor role – map the ‘Teacher’ role to EQUELLA role/s.
+* Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied.
+* Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is sent to EQUELLA. 
 
 ### Mapping the Instructor and Unknown roles
 In the Instructor and Unknown roles fields, the Add roles link is used to select the EQUELLA roles to be used in the mappings. An example using the Instructor role is used below:
@@ -114,7 +114,7 @@ This section describes the required configuration changes to Blackboard to suppo
 The Blackboard Building Block is available from the Downloads page accessed from the EQUELLA Server administration page.
 
 To open the Server administration page
-1.  Open a browser and enter the complete EQUELLA admin.url URL (as set in the mandatory-config.properties file in the learningedge-config directory of your EQUELLA install) with ‘/institutions.do?method=admin’ appended (e.g. where your admin.url URL is set as ‘http://equella.myinstitution.edu/’ the Institution Manager URL would become ‘http://equella.myinstitution.edu/institutions.do?method=admin’). 
+1.  Open a browser and enter the complete EQUELLA admin.url URL (as set in the mandatory-config.properties file in the learningedge-config directory of your EQUELLA install) with ‘/institutions.do?method=admin’ appended (e.g. where your admin.url URL is set as ‘<http://equella.myinstitution.edu/>’ the Institution Manager URL would become ‘<http://equella.myinstitution.edu/institutions.do?method=admin>’). 
 2.  Enter the password used by the EQUELLA server administrator (this is set during installation) to display the Server administration - Institutions page. 
 
 To download the Blackboard Building Block:
@@ -168,7 +168,7 @@ To enable the EQUELLA Object option in the drop-down
 ### Test the installation
 To access Blackboard
 
-1. Open a browser and enter your Blackboard URL (e.g. ‘http://blackboard.myequellainstitution.edu’).
+1. Open a browser and enter your Blackboard URL (e.g. ‘<http://blackboard.myequellainstitution.edu>’).
 2. Log in to Blackboard as a user with contribution or administration privileges.
 3. Select the relevant course (e.g. Physiology 101) from the My Courses pane to display the Course home page.
 4. Select either the Content or the Information link from the course menu.  (NOTE: The pages represented by these links are different although they contain the same features. For the purposes of this guide they are interchangeable, and the Information page has been used.) The course Information documents page will display.
@@ -180,7 +180,7 @@ To access Blackboard
 The EQUELLA portal can be displayed on the My Institution page in Blackboard, and provides links to EQUELLA functions, including workflow tasks and notifications. 
 
 To add the EQUELLA portal
-1.  Open a browser window and enter your Blackboard URL (e.g. ‘http://blackboard.myequellainstitution.edu’).
+1.  Open a browser window and enter your Blackboard URL (e.g. ‘<http://blackboard.myequellainstitution.edu>’).
 2.  Log in to Blackboard as a system administrator to display the Blackboard My Institution page.
 3.  Select the System Admin tab to display the System Administration page. 
 4.  Select the Tabs and Modules link from the Communities portlet. The Tabs and Modules page displays. 
@@ -201,3 +201,4 @@ If the integration is unsuccessful, these are the points to check first:
 3.  Check that the EQUELLA Blackboard Building Block file is installed.
 4.  Check that the EQUELLA Plugin is available in Blackboard.
 5.  Check the configuration data in Blackboard.
+6. 

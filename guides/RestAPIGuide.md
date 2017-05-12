@@ -1019,39 +1019,10 @@ which will immediately archive the item (permissions and current item status per
 #### Format
 ##### Item
 Note that the name and description fields are read-only.  If you post an item object to the server, the name and description will be extracted from the metadata XML, not the name and description fields.
-```
-{
-  "uuid" : <uuid>,
-  "version" : <int>,
-  ‡ "name" : <string>,
-  ‡ "nameStrings" : [ 
-      {
-       (language key)<string> : <string>
-      },
-       ...],
-  ‡ "description" : <string>,
-  ‡ "descriptionStrings" : [ 
-      {
-       (language key)<string> : <string>
-      },
-       ...],
-  "metadata" : <string>,
-  ‡ "status" : <string>
-  ‡ "createdDate" : <date>,
-  ‡ "modifiedDate" : <date>,
-  "owner" : <User>,
-  "collaborators" : [ <User>, ... ],
-  * "collection" : <Collection>,
-  ‡ "rating" : <float>,
-  "attachments" : [ <Attachment>, ... ],
-  "navigation" : <Navigation>,
-  "drm" : <DRM>,
-  "links" : { 
-    "self" : ".../api/item/[uuid]/[version]/",
-    "view" : ".../items/[uuid]/[version]/"
-  }
-}
-```
+
+![alt text](ExtendedActionItem.png "Item")
+
+
 ##### Attachment
 ```
 {
@@ -1062,6 +1033,7 @@ Note that the name and description fields are read-only.  If you post an item ob
   "preview" : <boolean>
 }
 ```
+
 NOTE: An attachment object may contain additional fields based on the value of the 'type' field.
 The most common attachment type is 'file'.
 
@@ -2003,7 +1975,8 @@ Note that the Search Results type is used on several endpoints and the results a
 ```
 
 
-## Internal REST API References 
+## Internal REST API Reference
+
 An internal REST API reference page displays information about all available REST endpoints and the operations and parameters supported for each endpoint. It also displays a link to the EQUELLA REST API Guide.
 ### Open the REST API reference
 1. Open a browser and enter the EQUELLA address of the hosting server including the institution name with ‘/apidocs.do’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/institution/logon.do’ would become ‘http://equella.myinstitute.edu/institution/apidocs.do’). The EQUELLA REST API page displays.

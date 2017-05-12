@@ -5,9 +5,8 @@
 * [Harvesting guide](#harvesting-guide) 
 * [Harvester profile tool](#harvester-profile-tool)  
 * [Harvester types](#harvester-types)  
-* [Harvester profiles scheduled task](#haverster-profiles-scheduled-task) 
+* [Harvester profiles scheduled task](#harvester-profiles-scheduled-task) 
 * [Harvester system settings](#harvester-system-settings)  
-
 
 ## Harvesting guide  
 
@@ -47,17 +46,21 @@ Click Add to display the Harvester Profiles Editor and create a new profile.
 Select a profile then click Edit (or double-click on a profile) to display the Harvester Profiles Editor and modify the selected profile.
 
 If the selected profile is being edited by another user a Locked dialog is displayed, providing the following options:
-* Open as read-only—disables the Save button so that no changes can be made.
-* Forcefully unlock—unlocks the entity from the previous owner. Editing is possible but changes by other users may be lost.
-* Do not open—the profile configuration screen will not be opened. 
+  * Open as read-only—disables the Save button so that no changes can be made.
+  * Forcefully unlock—unlocks the entity from the previous owner. Editing is possible but changes by other users may be lost.
+  * Do not open—the profile configuration screen will not be opened. 
+
 #### Remove
 Click the Remove button to delete the selected profile. 
+
 #### Clone
 Click the Clone button to copy an existing profile. The cloned profile can then be modified by selecting the Edit button.
+
 #### Import
 Click the Import button to import a harvester profile that has previously been exported from the Administration Console. A warning dialog is displayed.
 
 *Note: Only ZIP files that have been exported from the Administration Console should be imported—other ZIP files may adversely affect the stability of the system.*
+
 #### Export
 Click the Export button to export a profile as a ZIP file. 
 
@@ -156,6 +159,7 @@ The Actions page elements include:
     b.  Once a harvest has been run, is not easily undone. Make sure you definitely want to run it before clicking Yes. A message dialog replaces the confirmation dialog, informing you that the harvester is now running in the background.
     
     c.  The harvester is now running in the background and will not require further user input. Harvester actions are logged in the resource-centre logs and can be viewed by accessing the file:
+    
         ```
         C:\<path-to-equella-install-directory>\logs\resource-centre\<date>\application.html
         ```
@@ -199,7 +203,7 @@ When all elements have been configured for a profile:
 1.  Click Save to save the harvester profile details.
 2.  Click Close to close the Harvester Profile Editor.
 
-## Harvester profiles scheduled task 
+## Harvester profiles scheduled task
 
 Harvesters run with other EQUELLA schedules tasks. Scheduled tasks are configured from the Settings page.
 

@@ -4,7 +4,7 @@
 
 Table of Contents
 * [Brightspace™ integration overview](#brightspace-integration-overview) 
-* [Prerequisite](#prerequisite) 
+* [Prerequisites](#prerequisites) 
 * [Integration procedure](#integration-procedure)
 * [Configure Brightspace EQUELLA App](#configure-brightspace-equella-app) 
 * [Configure EQUELLA](#configure-equella)
@@ -14,7 +14,7 @@ Table of Contents
  
 
 
-## EQUELLA Brightspace integration overview
+## Brightspace integration overview
 
 EQUELLA integrates with Brightspace using LTI to create a seamless system for users. The purpose of this guide is to provide system administrators with an understanding of the EQUELLA Brightspace integration process to enable successful integration.
 
@@ -22,13 +22,13 @@ Please note that this guide has been developed for Brightspace version 10.5.3 an
 
 ## Prerequisites
 To successfully complete this installation the system administrator will require:
-• sufficient privileges to access the Brightspace system integration functionality
-• sufficient privileges to access the EQUELLA User Management functionality 
+* sufficient privileges to access the Brightspace system integration functionality
+* sufficient privileges to access the EQUELLA User Management functionality 
 
 ### System prerequisites for integration
-• Open Source EQUELLA and Brightspace version 10.5.3 must be installed and running. 
-• Ensure the time settings of the servers have the correct time and time zone for their location. This way both will report to Greenwich Mean Time (GMT) and synchronize correctly.
-• To access EQUELLA from Brightspace at least one course must have been created in Brightspace. 
+* Open Source EQUELLA and Brightspace version 10.5.3 must be installed and running. 
+* Ensure the time settings of the servers have the correct time and time zone for their location. This way both will report to Greenwich Mean Time (GMT) and synchronize correctly.
+* To access EQUELLA from Brightspace at least one course must have been created in Brightspace. 
 
 ## Integration procedure
 EQUELLA Brightspace integration can be broken into the following steps:
@@ -46,7 +46,7 @@ To configure an EQUELLA App in Brightspace
 2. The Administration menu displays. Select the Manage Extensibility link from the menu. 3. The Extensibility Management page displays. Select Register an App.
 3. The Register an application page displays. 
 4. Enter an Application Name (e.g. EQUELLA).
-5. Enter the Trusted URL. This is the EQUELLA URL, including the institution name, appended with brightspaceauth. For example, https://alphabeta.equella.com/documentation/brightspaceauth.
+5. Enter the Trusted URL. This is the EQUELLA URL, including the institution name, appended with brightspaceauth. For example, <https://alphabeta.equella.com/documentation/brightspaceauth>
 NOTE: The URL must be SSL (i.e. https).
 7. Enter the Major Version (e.g. 6) and Minor Version (e.g. 4).
 8. Select I accept the Non-Commercial Developer Agreement.
@@ -100,9 +100,9 @@ If the third option is selected, click the Add groups link open the Select group
 Brightspace roles sent through to EQUELLA via the LTI integration need to be mapped to equivalent EQUELLA roles so that relevant privileges can be applied. This is done from the LTI/LIS Role Mappings section of the Create new LTI consumer or Edit LTI consumer pages.
 
 The LTI/LIS Role Mappings section has three areas:
-• Instructor role – map the Brightspace ‘Instructor’ role to EQUELLA role/s.
-• Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied, of which ‘Other’ is one. 
-• Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is sent to EQUELLA. 
+* Instructor role – map the Brightspace ‘Instructor’ role to EQUELLA role/s.
+* Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied, of which ‘Other’ is one.
+* Unknown roles – use this area to select the EQUELLA roles to default to when an unknown role is sent to EQUELLA. 
 
 ####  Mapping the Instructor and Unknown roles
 In the Instructor and Unknown roles fields, the Add roles link is used to select the EQUELLA roles to be used in the mappings. An example using the Instructor role is shown below:
@@ -113,6 +113,8 @@ The Select role(s) dialog displays.
 2. Enter a search query then click Search. Matching results display.
 3. Select the required role/s, then click Select these roles. The mapping/s displays in the Instructor role field. 
 Select the Add roles link to add more mappings.
+
+
 #### Mapping the ‘Other’ role
 The Other roles section is used to map LTI/LIS standard roles (including the role ‘Other’ which is used in the Brightspace integration) to EQUELLA roles.
 
@@ -139,7 +141,7 @@ The Manage Remote Plugins page displays.
 3. Click New Remote Plugin. The Create a new Remote Plugin page displays.e Plugin page
 4. Select Course Builder from the Plugin Type drop-down.
 5. Enter a Name for the Course Builder item (e.g. EQUELLA Content).
-6. Enter the Launch Point URL in the form: https://yourinstitution.com/institution/brightspace/coursebuilder.do
+6. Enter the Launch Point URL in the form: <https://yourinstitution.com/institution/brightspace/coursebuilder.do>
 7. Enter the LTI Key and LTI Secret from the Brightspace LTI consumer configured in EQUELLA 
 8. If desired, enter an Icon URL. 
 9. Click Add Org Units. The Add Org Units page displays. 
@@ -168,9 +170,9 @@ To configure an EQUELLA Insert Stuff link
 The Manage Remote Plugins page displays. 
 3. Click New Remote Plugin. The Create a new Remote Plugin page displays4. Select Insert Stuff from the Plugin Type drop-down.
 5. Enter a Name for the Insert Stuff link (e.g. EQUELLA Content).
-6. Enter the Launch Point URL in the form: https://yourinstitution.com/institution/brightspace/insertstuff.do
+6. Enter the Launch Point URL in the form: <https://yourinstitution.com/institution/brightspace/insertstuff.do>
 7. Enter the LTI Key and LTI Secret from the Brightspace LTI consumer configured in EQUELLA 
-8. If desired, enter an Icon URL. A small EQUELLA logo can be found at https://yourinstitution.com/institution/images/equella.gif.
+8. If desired, enter an Icon URL. A small EQUELLA logo can be found at <https://yourinstitution.com/institution/images/equella.gif>
 9. Click Add Org Units. The Add Org Units page displays. 
 10. Select the courses (and descendant options) in which the Insert Stuff link should be available, then click Insert.The selections display on the Create a new Remote Plugin page.
 11. Click Save. The Manage Remote Plugins page displays with the new Insert Stuff link listed.
@@ -199,9 +201,9 @@ To configure an EQUELLA Navbar link
 4. Select Navbar from the Plugin Type drop-down.
 5. Select a Target option from the drop-down. Same frame is recommended.
 6. Enter a Name for the Navbar link (e.g. EQUELLA Content).
-7. Enter the Launch Point URL in the form: https://yourinstitution.com/institution/brightspace/navbar.do
+7. Enter the Launch Point URL in the form: <https://yourinstitution.com/institution/brightspace/navbar.do>
 8. Enter the LTI Key and LTI Secret from the Brightspace LTI consumer configured in EQUELLA 
-9. If desired, enter an Icon URL. A small EQUELLA logo can be found at https://yourinstitution.com/institution/images/equella.gif.
+9. If desired, enter an Icon URL. A small EQUELLA logo can be found at <https://yourinstitution.com/institution/images/equella.gif>
 10. Click Add Org Units. The Add Org Units page displays. 
 11. Select the courses (and descendant options) in which the Navbar link should be available, then click Insert .The selections display on the Create a new Remote Plugin page. 
 12. Click Save. The Manage Remote Plugins page displays with the new Navbar link listed.
@@ -235,9 +237,9 @@ To configure an EQUELLA Quicklink
 3. Click New Remote Plugin. The Create a new Remote Plugin page displays. 
 4. Select Quicklink from the Plugin Type drop-down.
 5. Enter a Name (e.g. EQUELLA Content).
-6. Enter the Launch Point URL in the form: https://yourinstitution.com/institution/brightspace/quicklink.do
+6. Enter the Launch Point URL in the form: <https://yourinstitution.com/institution/brightspace/quicklink.do>
 7. Enter the LTI Key and LTI Secret from the Brightspace LTI consumer configured in EQUELLA.
-8. If desired, enter an Icon URL. A small EQUELLA logo can be found at https://yourinstitution.com/institution/images/equella.gif.
+8. If desired, enter an Icon URL. A small EQUELLA logo can be found at <https://yourinstitution.com/institution/images/equella.gif>
 9. Click Add Org Units. The Add Org Units page displays. 
 10. Select the courses (and descendant options) in which the Quicklink should be available, then click Insert. The selections display on the Create a new Remote Plugin page. 
 11. Click Save. The Manage Remote Plugins page displays with the new Quicklink listed.
@@ -266,7 +268,7 @@ To configure Brightspace for Manage external resources and Find uses
 1. Log in to Brightspace then click the Customization Configuration link in the Navbar. The Customization Configuration Settings page displays.
 2. Select the Equella Domain Match link in the Equella APIs section. The Equella Domain Match page displays. 
 3. Click the Edit icon in the Org Value field to open edit mode. 
-4. Enter the Org Value in the fields. The Org Value is the institution and path URL (http://myinstitution.com/path/), the institution going in the first field, and the path in the second. The second field is left blank if no path is used in the URL (for example, if your institution URL is just http://myinstitution.com). For example, if the EQUELLA URL is http://eqinstitute/equella/, http://eqinstitute would be entered in the first field, and the path /equella/ in the second.
+4. Enter the Org Value in the fields. The Org Value is the institution and path URL (<http://myinstitution.com/path/>), the institution going in the first field, and the path in the second. The second field is left blank if no path is used in the URL (for example, if your institution URL is just <http://myinstitution.com>). For example, if the EQUELLA URL is <http://eqinstitute/equella/>, <http://eqinstitute> would be entered in the first field, and the path /equella/ in the second.
 NOTE: This is not to be confused with your EQUELLA institution instance, which is not included in this URL.
 5. Click Save.
 
@@ -282,21 +284,22 @@ The Brightspace Manage external resources page displays EQUELLA resources and re
 Click Screen Options to display the screen options at the top of the page. One screen option is available from this page, Number of results per page. Select the required option from the drop-down list. Options available are Minimum (10), Medium (50) or Maximum (100). 
 
 ####  Search pane
-• Search—enter a search term and click the search icon. Matching results are displayed. • Within—select the required external connector (LMS) to show matching results. If only one connector is configured on the system, this option does not display.
+* Search—enter a search term and click the search icon. Matching results are displayed.
+* Within—select the required external connector (LMS) to show matching results. If only one connector is configured on the system, this option does not display.
 
 #### Search results
 Results can be displayed in groups of 10, 50 or 100 per page, with paging displayed at the end of the search results page. Information displayed for each matching result can include:
-• Title—the Brightspace name for the resource or resource attachment. Select this link to display the EQUELLA resource summary page.
-• EQUELLA resource—the name of the resource in EQUELLA.
-• EQUELLA attachment—the name of the attachment in EQUELLA. (Only displays if the Brightspace resource is an EQUELLA attachment.)
-• Course—the Brightspace course the resource or resource attachment is associated with.
-• Module—the module within the selected Brightspace course.
-• Date added—the date and time the resource was added to the course module. Mouse-over to see the approximate time in minutes, hours, days or months since the resource or resource attachment was added to the Brightspace system.
-• Status—displays the EQUELLA resource status and when it was last updated. Statuses displayed can be live, archived, deleted, suspended, review, moderating, rejected or draft.
-• Last updated—the last time the status was updated.
-• Edit—click to edit the name shown in the Brightspace module. 
-• Remove—click to remove the resource or resource attachment from the Brightspace course module.
-• Select—click to add the current resource or resource attachment to the Select panel. 
+* Title—the Brightspace name for the resource or resource attachment. Select this link to display the EQUELLA resource summary page.
+* EQUELLA resource—the name of the resource in EQUELLA.
+* EQUELLA attachment—the name of the attachment in EQUELLA. (Only displays if the Brightspace resource is an EQUELLA attachment.)
+* Course—the Brightspace course the resource or resource attachment is associated with.
+* Module—the module within the selected Brightspace course.
+* Date added—the date and time the resource was added to the course module. Mouse-over to see the approximate time in minutes, hours, days or months since the resource or resource attachment was added to the Brightspace system.
+* Status—displays the EQUELLA resource status and when it was last updated. Statuses displayed can be live, archived, deleted, suspended, review, moderating, rejected or draft.
+* Last updated—the last time the status was updated.
+* Edit—click to edit the name shown in the Brightspace module. 
+* Remove—click to remove the resource or resource attachment from the Brightspace course module.
+* Select—click to add the current resource or resource attachment to the Select panel. 
 
 #### Edit
 The names that display in Brightspace for resource and resource attachments can be edited from the Manage external resources page. This does not affect the EQUELLA names.
@@ -308,13 +311,13 @@ To edit names
 #### Sort and filter
 The Sort and Filter tabs on the Manage external resources results page (Brightspace) display options relevant to Brightspace resources. 
 The sort options are:
-• Date added—sorts the results by the date the resource was added to its Brightspace location.
-• Name—sorts the results by the Brightspace name of the resource.
-• Course—sorts the results by Brightspace course name.
+* Date added—sorts the results by the date the resource was added to its Brightspace location.
+* Name—sorts the results by the Brightspace name of the resource.
+* Course—sorts the results by Brightspace course name.
 
 From the Manage external resources results page (Brightspace), the following filter options are available:
-• Filter by status—select this option to include results from courses set as ‘inactive’ in Brightspace.
-• Filter by LMS course—select a Brightspace course from the drop down list to show only results from the selected course.
+* Filter by status—select this option to include results from courses set as ‘inactive’ in Brightspace.
+* Filter by LMS course—select a Brightspace course from the drop down list to show only results from the selected course.
 
 ## Bulk actions
 Administrators can remove or move individual or multiple external resources in a single operation using the Perform an action button to the right-hand side of the Manage external resources page. 
@@ -327,6 +330,7 @@ The selection pane displays the current number of selected resources, as well as
 * Select all external resources—click to select all external resources listed in the Manage external resources results pages.
 
 ### Actions
+
 #### Remove
 Selecting this action removes the selected resources from their location within the associated LMS. They are also removed from the Manage external resources results page.
 
@@ -335,12 +339,14 @@ To remove external resources
 Click X next to a resource to remove that resource from the list.
 2. Select Remove from the Choose an action to perform: drop-down list then click Execute. A confirmation dialog displays. 
 3. Click OK. An information dialog displays, confirming the action was successful. In the case of an unsuccessful action, an error message displays with an explanation of the failed action.
+
 #### Move
 The Move action moves the selected resources from their current locations within the associated LMS to the one selected on the Move dialog.
+
 To move selected resources
 1. With the required resources selected, click Perform an action to display the Bulk actions page. 
 Click X next to a resource to remove that resource from the list.
 2. Select Move from the drop-down list, then click Next. The Bulk actions—Select the locations to add to dialog displays.
 3. Click to expand courses and select the required location to move the selected resources to. Select Show inactive courses to display Brightspace courses marked as ‘inactive’.
 4. Click Execute. A confirmation dialog displays. 
-5. Click OK. In the case of an unsuccessful action, an error message displays with an explanation of the failed action.5. 5. 
+5. Click OK. In the case of an unsuccessful action, an error message displays with an explanation of the failed action.

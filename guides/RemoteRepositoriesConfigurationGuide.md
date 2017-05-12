@@ -15,11 +15,11 @@ Table of Contents
 The Remote repository search allows users to search multiple external sources, including other EQUELLA repositories, for content using a single search query. The results display and can be imported directly into a contribution wizard. 
 
 Remote repository searches can be configured to return results from internet search engines, university library databases and online course management systems using the following search types:
-•  EQUELLA
-•  Multimedia Educational Resource for Learning and Online Teaching (MERLOT)
-•  Search/Retrieval via URL (SRU)
-•  Search/Retrieve Web service (SRW)
-•  Z39.50
+* EQUELLA
+* Multimedia Educational Resource for Learning and Online Teaching (MERLOT)
+* Search/Retrieval via URL (SRU)
+* Search/Retrieve Web service (SRW)
+* Z39.50
 
 The purpose of this guide is to provide administrators with an overview of the various remote repository search types available and an understanding of their configuration and use. 
 
@@ -58,9 +58,9 @@ Click + Add to display the Repository Types dialog where a repository type can b
 Select a search then click -Edit (or double-click on a search) to display the Remote Repository Search Editor for modifying the selected search.
 
 If the selected search is being edited by another user a Locked dialog is displayed, providing the following options:
-•  Open as read-only—disables the Save button so that no changes can be committed.
-•  Forcefully unlock—unlocks the entity from the previous editor. Editing is possible but changes by other users may be lost.
-•  Do not open—the search configuration screen will not be opened. 
+* Open as read-only—disables the Save button so that no changes can be committed.
+* Forcefully unlock—unlocks the entity from the previous editor. Editing is possible but changes by other users may be lost.
+* Do not open—the search configuration screen will not be opened. 
 
 ##### Remove
 Click -Remove to delete the selected search. 
@@ -68,18 +68,20 @@ Click -Remove to delete the selected search.
 ##### Clone
 Click Clone to copy an existing search. The cloned search can then be modified by selecting the Edit button.
 ##### Import
-Click Import to import a remote repository search that has previously been exported from the Administration Console. A warning dialog will be displayed. (NOTE: Only ZIP files that have been exported from the Administration Console should be imported—other ZIP files may adversely affect the stability of the system.)
+Click Import to import a remote repository search that has previously been exported from the Administration Console. A warning dialog will be displayed. 
+
+*NOTE: Only ZIP files that have been exported from the Administration Console should be imported—other ZIP files may adversely affect the stability of the system.*
  
 ##### Export
 Click Export to export a remote repository search as a ZIP file. 
 
 ## Search types  
 Each remote repository search type can be configured to display results that can be contributed to a collection using the user process described above. Available search types include:
-•  EQUELLA
-•  MERLOT
-•  SRU
-•  SRW
-•  Z3950
+* EQUELLA
+* MERLOT
+* SRU
+* SRW
+* Z3950
 
 ### Add a search
 
@@ -87,18 +89,18 @@ To select a search
 1.  Click + Add on the Administration Console to display a Repository Types dialog listing the available search types.
 2.  Select a repository type from the list.
 3.  Click OK to display the Remote Repository Editor—Details tab. 
-4
+
 The Remote Repository Editor—Details page comprises configurable elements specific to the selected search type and elements that are common to all search types.
 
 The common Details page elements are:
-•  Name – enter the display name of the repository.
-•  Description – enter the search description for display on the Remote repositories page.
-•  Timeout – select the response time (in seconds) before a search is terminated. The default time is 30 seconds.
-•  Owner – Click the Search button to change the owner of the search; by default this is the search’s creator.
-•  Contribute to this collection – select the collection to receive the imported results.
-•  Use this import transform – select an XSLT that transforms the metadata of the imported result from the Import record format to the collection XML. The list contains XSL transformations that are added to the metadata schema for the associated collection.
-•  Display XSLT – upload an XSLT for transforming metadata XML into the display format.
-•  Disable this remote repository—check this box to disable the repository link displayed on the Contribute page. Uncheck the box to enable the repository.
+* Name – enter the display name of the repository.
+* Description – enter the search description for display on the Remote repositories page.
+* Timeout – select the response time (in seconds) before a search is terminated. The default time is 30 seconds.
+* Owner – Click the Search button to change the owner of the search; by default this is the search’s creator.
+* Contribute to this collection – select the collection to receive the imported results.
+* Use this import transform – select an XSLT that transforms the metadata of the imported result from the Import record format to the collection XML. The list contains XSL transformations that are added to the metadata schema for the associated collection.
+* Display XSLT – upload an XSLT for transforming metadata XML into the display format.
+* Disable this remote repository—check this box to disable the repository link displayed on the Contribute page. Uncheck the box to enable the repository.
 
 The search specific elements are described in the sections detailing the individual search types, as follows:
 
@@ -106,10 +108,10 @@ The search specific elements are described in the sections detailing the individ
 The EQUELLA search allows for the searching of other EQUELLA repositories. 
 
 The configurable elements for the EQUELLA—Details page are:
-•  Institution URL – enter the address of the EQUELLA institution to search.
-•  Shared secret ID – enter the shared secret ID for authentication of search requests.
-•  Shared secret value – enter the shared secret value for authentication of search requests.
-•  Sign-in option – select to sign-in as the current user, or specify another user based on your institution configuration.
+* Institution URL – enter the address of the EQUELLA institution to search.
+* Shared secret ID – enter the shared secret ID for authentication of search requests.
+* Shared secret value – enter the shared secret value for authentication of search requests.
+* Sign-in option – select to sign-in as the current user, or specify another user based on your institution configuration.
 
 ### MERLOT
 MERLOT (Multimedia Educational Resource for Learning and Online Teaching) is an open online community of resources designed so higher education members can share learning materials.
@@ -123,35 +125,34 @@ Select Allow advanced searching (requires license key to have appropriate privil
 SRU (Search/Retrieval via URL) is a standard XML-focused search protocol for Internet search queries, utilizing CQL (Contextual Query Language), a standard syntax for representing queries. 
 
 The configurable elements for the SRU—Details page are:
-•  URL – connects to the required search engine.
-•  Schema Name – for the type of metadata schema to be searched.
+* URL – connects to the required search engine.
+* Schema Name – for the type of metadata schema to be searched.
 
 ### SRW
 SRW (Search/Retrieve Web service) is a protocol designed to support interaction over a network such as the Internet. This type of web service promotes interoperability between distributed databases. 
 
 The configurable elements for the SRW—Details page are:
-•  URL – enter the URL to connect to the required search engine.
-•  Schema Name – enter the name of the metadata schema to be searched.
+* URL – enter the URL to connect to the required search engine.
+* Schema Name – enter the name of the metadata schema to be searched.
 
 ### Z39.50
 Z39.50 is a client/server protocol for locating information from remote computer databases (a university library title database, for example). 
 
 The configurable elements for the Z39.50—Details page are:
-•  Host – enter the address of the search gateway. This can be either a host name or an IP address.
-•  Port – set the access port. The default port is 210.
-•  Database – enter the name of the database to be searched.
-•  Username – enter the username for remote repository authentication.
-•  Password – enter the password for remote repository authentication.
-•  Import record format – select from the drop-down list of record formats.
-•  Load default attributes – click Select to choose the default advanced search field values to use on the Z39.50 search page. Once selected, the search field values display in the Advanced search fields table at the bottom of the page. The options available are:
+* Host – enter the address of the search gateway. This can be either a host name or an IP address.
+* Port – set the access port. The default port is 210.
+* Database – enter the name of the database to be searched.
+* Username – enter the username for remote repository authentication.
+* Password – enter the password for remote repository authentication.
+* Import record format – select from the drop-down list of record formats.
+* Load default attributes – click Select to choose the default advanced search field values to use on the Z39.50 search page. Once selected, the search field values display in the Advanced search fields table at the bottom of the page. The options available are:
     * EQUELLA Default – loads the default EQUELLA values (this is the default value).
     * Bath level 0 – loads the Bath level 0 values.
     * Bath level 1 – loads the Bath level 1 values.
     * To learn more about the Bath Profile, go to <http://www.ukoln.ac.uk/interop-focus/activities/z3950/int_profile/bath/draft/stable1.html>.
-•  Standard query attributes – the values for Any field for the selected default search field values display by default but can be edited. For information regarding Z39.50 attributes, see <http://www.loc.gov/z3950/agency/defns/bib1.html>.
-•  Allow Advanced Searching – check this box to provide the user with a selection of specific search fields in a library search query rather than one general field. (NOTE: The Z39.50 host must support advanced searching for this option to be utilized.). The advanced search fields available display in the Advanced search fields table at the bottom of the page.
-•  Advanced search fields – this table lists the search fields that belong to the selected default attributes selected in the Load default attributes field. Additional search fields can be added. 
-
+* Standard query attributes – the values for Any field for the selected default search field values display by default but can be edited. For information regarding Z39.50 attributes, see <http://www.loc.gov/z3950/agency/defns/bib1.html>.
+* Allow Advanced Searching – check this box to provide the user with a selection of specific search fields in a library search query rather than one general field. (NOTE: The Z39.50 host must support advanced searching for this option to be utilized.). The advanced search fields available display in the Advanced search fields table at the bottom of the page.
+* Advanced search fields – this table lists the search fields that belong to the selected default attributes selected in the Load default attributes field. Additional search fields can be added. 
 
 ### Adding additional search fields
 Additional search fields and their attributes can be added to the table then used when searching the repository from the Search page (when Allow advanced searching is enabled).
@@ -174,11 +175,11 @@ This configures the contribution wizard to be accessible only through a remote r
 
 Along with the Details tab, each search type features an Access Control tab. This allows the administrator to configure user access to the selected search. 
 
-There are four privileges that are associated with the remote repositories: 
-•  CREATE_FEDERATED_SEARCH
-•  DELETE_FEDERATED_SEARCH
-•  EDIT_FEDERATED_SEARCH
-•  SEARCH_FEDERATED_SEARCH.
+There are four privileges that are associated with the remote repositories:
+* CREATE_FEDERATED_SEARCH
+* DELETE_FEDERATED_SEARCH
+* EDIT_FEDERATED_SEARCH
+* SEARCH_FEDERATED_SEARCH.
 
 These privileges can be configured for all remote repository searches using the security manager, or all but CREATE_FEDERATED_SEARCH can be configured for each search using the Access Control tab. 
 

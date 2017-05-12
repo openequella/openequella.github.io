@@ -5,8 +5,8 @@
 Table of Contents
 * [Echo360 Integration overview](#echo360-integration-overview)
 * [Prerequisites](#prerequisites)
-* [Restrictions](#Restrictions)
-* [Echo360 privileges](#echo360-privleges)
+* [Restrictions](#Restrictions) 
+* [Echo360 privileges](#echo360-privileges)
 * [Integration process](#integration-process)
 * [Deployment recommendations](#deployment-recommendations)
 * [Configure an EQUELLA Schema](#configure-an-equella-schema)
@@ -28,34 +28,34 @@ The purpose of this guide is to provide administrators with an understanding of 
 
 ## Prerequisites
 To successfully complete an integration the system administrator will require:
-•  sufficient privileges to access the EchoSystem servers setting 
+* sufficient privileges to access the EchoSystem servers setting 
 
 System prerequisites for integration:
-•  EQUELLA open source and Echo360 5.1 (or later) must be installed and running. 
-•  Ensure that the servers have the same UTC (formerly GMT) time. As long as the UTC time is synchronized on all servers, different times and time zones can be set on each server.
+* EQUELLA open source and Echo360 5.1 (or later) must be installed and running. 
+* Ensure that the servers have the same UTC (formerly GMT) time. As long as the UTC time is synchronized on all servers, different times and time zones can be set on each server.
 
 ## Restrictions
 Please note that the Echo360 EQUELLA Publisher plugin currently supports integrations with EQUELLA running with HTTP only.
 
 ## Echo360 privileges
 There are three privileges associated with the configuration of the Echo360 integration. They can be found in the Security Manager under EchoSystem servers and are:
-•  CREATE_ECHO – allows new EchoSystem servers to be configured.
-•  DELETE_ECHO – allows existing EchoSystem servers to be deleted.
-•  EDIT_ECHO – allows existing EchoSystem servers to be edited.
+* CREATE_ECHO – allows new EchoSystem servers to be configured.
+* DELETE_ECHO – allows existing EchoSystem servers to be deleted.
+* EDIT_ECHO – allows existing EchoSystem servers to be edited.
 
 ## Integration process
 The process to complete a full integration includes:
-•  Configuration of the EQUELLA schema to be used for the Echo360 collection.
-•  Configuration of the EQUELLA collection in which Echo360 resources will be stored.
-•  Installation to the filesystem of the EchoSystem Server’s host and configuration in EchoSystem of Echo360’s EQUELLA Publisher.
-•  Configuration in EQUELLA of an EchoSystem Server.
-•  Enabling of the EQUELLA Publisher plugin.
-•  EQUELLA Viewer configuration.
+* Configuration of the EQUELLA schema to be used for the Echo360 collection.
+* Configuration of the EQUELLA collection in which Echo360 resources will be stored.
+* Installation to the filesystem of the EchoSystem Server’s host and configuration in EchoSystem of Echo360’s EQUELLA Publisher.
+* Configuration in EQUELLA of an EchoSystem Server.
+* Enabling of the EQUELLA Publisher plugin.
+* EQUELLA Viewer configuration.
 
 ## Deployment recommendations
-•  Configure EQUELLA's User Management with the same LDAP source as EchoSystem.
-•  Optionally add the EQUELLA Publisher to the root organization or sub organization in the ESS.
-•  Security Module should be either "Seamless Only" or "Authentication Required" or an LDAP authentication retrieving user's credentials from the same LDAP server as the EQUELLA installation this ESS will integrate with.
+* Configure EQUELLA's User Management with the same LDAP source as EchoSystem.
+* Optionally add the EQUELLA Publisher to the root organization or sub organization in the ESS.
+* Security Module should be either "Seamless Only" or "Authentication Required" or an LDAP authentication retrieving user's credentials from the same LDAP server as the EQUELLA installation this ESS will integrate with.
 
 ## Configure an EQUELLA Schema
 An EQUELLA schema needs to be created (or edited if using existing schema) for Echo360 resources. 
@@ -100,15 +100,14 @@ When an Echo360 item is published into EQUELLA, there is standard metadata store
 
 ## Configure an EQUELLA Collection
 An EQUELLA collection is nominated in the EchoSystem’s EQUELLA Publisher plugin’s configuration to be used for all Echo360 resources. This collection should have the following configuration:
-•  It must be pointing to the relevant metadata schema 
+* It must be pointing to the relevant metadata schema 
 NOTE: For a dedicated Echo360 collection, manual contributions of Echo360 resources are not supported at this time, therefore selecting NONE in the Select wizard category will prevent the collection from displaying on the contribution page.
-•  An Attachment control should be added to the wizard if editing of Echo360 resources is required. This control must have the attachment type of Echo360 Presentations selected. 
-•  The collection must have a ‘Save Script’ configured which extracts the relevant metadata from the Echo attachment to use for the title and description.
+* An Attachment control should be added to the wizard if editing of Echo360 resources is required. This control must have the attachment type of Echo360 Presentations selected. 
+* The collection must have a ‘Save Script’ configured which extracts the relevant metadata from the Echo attachment to use for the title and description.
 
 #### To configure the Save Script
 1.  From the Collection Definition Editor, edit the collection to be used for Echo360 resources and go to the Expert Scripting tab.
 2. Enter the required script in the Save Script area.
-
 An example of an Echo Save Script is shown below:
 ```
 if(xml.exists("echo360/presentation"))
@@ -153,7 +152,7 @@ The Echo360 EQUELLA Publisher plugin contributes items using REST and as such wi
 ## Configure an EQUELLA Trusted System
 #### To add EQUELLA as a trusted system in ESS
 1.  Log in to Echo360 ESS server using an account with system administration privileges.
-2.  Select the System tab, then Trusted Systems from the sub tabs. e
+2.  Select the System tab, then Trusted Systems from the sub tabs. 
 3.  Click Add. The Add Trusted System page displays. 
 4.  Enter a System Name, Description (optional) and Consumer Key.
 5.  Click Save. The Trusted System displays with a generated Consumer Secret. 
@@ -176,9 +175,7 @@ The Echo360 EchoSystem servers settings page allows the user to configure EchoSy
 * Consumer key
 * Consumer secret
 * System ID
-4.  Click Tool URLs. A Connection successful message displays beside the button. 
-
-If an error message displays, check and correct the entered values, then retest the URLs.
+4.  Click Tool URLs. A Connection successful message displays beside the button.  If an error message displays, check and correct the entered values, then retest the URLs.
 5.  Click Save.
 
 ## Echo360 EQUELLA Publisher installation
@@ -234,10 +231,10 @@ NOTE: Publishers can be added to individual Echos. Please refer to the Echo360 d
 
 ## Configure EQUELLA Echo360 viewer
 An Echo Presentation attachment consists of a number of links (up to 4) that can include:
-•  EchoCenter link – Links to a particular Echo within the EchoCenter which provides an overview of all Echos for a particular Course section. This is the default option.
-•  Echo Player link – Links directly to an Echo played using Echo360’s Echo Player.
-•  Vodcast link – Links to the raw video cast of the Echo Presentation.
-•  Podcast link – Links to the raw audio of the Echo Presentation.
+* EchoCenter link – Links to a particular Echo within the EchoCenter which provides an overview of all Echos for a particular Course section. This is the default option.
+* Echo Player link – Links directly to an Echo played using Echo360’s Echo Player.
+* Vodcast link – Links to the raw video cast of the Echo Presentation.
+* Podcast link – Links to the raw audio of the Echo Presentation.
 
 *NOTE: The only guaranteed link on an Echo attachment is the EchoCentre link. The others may or may not be present depending on your EchoSystem Server (ESS) configuration.*
 

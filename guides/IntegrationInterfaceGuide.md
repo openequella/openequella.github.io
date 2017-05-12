@@ -14,7 +14,7 @@ The purpose of this guide is to provide system administrators with a method for 
 
 EQUELLA provides a URL that is a hook into the content discovery engine. Once at this URL (typically displayed within a frameset of the third party system), the user can search, create, manage and share content that they have access to within EQUELLA. The hook is designed to provide seamless single sign-on access and can be customized to present a look-and-feel similar to the integrating system.
 
-## Single sign-on authentication
+## Single sign on authentication
 When single sign-on (SSO) to EQUELLA is required, an authentication token should be included in the URL. Including a token in the URL logs the user nominated in the token into EQUELLA, providing access to all EQUELLA pages the user has privileges for, and ensures the security and auditing integrity are maintained.
 
 ### Token generation
@@ -57,9 +57,9 @@ The integration hook URL comprises several parameters that include methods, acti
 An integration must forward to your EQUELLA institution with ‘signon.do’ appended to the hosting server URL where a selection session will be started. All selection sessions provide a means for performing tasks in the EQUELLA Digital Repository that result in the selection of an item or attachment by the user. 
 
 As an example the following URL:
-‘http://equella.myinstitute.edu/institution/logon.do’ 
+‘<http://equella.myinstitute.edu/institution/logon.do>’ 
 would become the hook URL 
-‘http://equella.myinstitute.edu/institution/signon.do’.
+‘<http://equella.myinstitute.edu/institution/signon.do>’.
 
 ### Input parameters
 The following parameters can be appended to the URL:
@@ -145,14 +145,14 @@ session=47f23cd29&course=3&folder=1
 
 **action**  structured
 ```
-http://equella.myinstitute.edu/signon.do?
-method=lms
-&token=demouser%3AsharedSecretID%3A1115854854000%3A4Qw4nf92EV6ev%2F1O 
-CYlI2Q%3D%3D
-&returnurl=http%3A%2F%2Flms.institution.edu%2Fmodule%2Fmod.do
-%3Fsession%3D47f23cd29%26course%3D3%26folder%3D1
-&cancelurl=http%3A%2F%2Flms.institution.edu%2Fmodule%2Fcancelled.do
-&returnprefix=xxx
+http://equella.myinstitute.edu/signon.do?
+method=lms
+&token=demouser%3AsharedSecretID%3A1115854854000%3A4Qw4nf92EV6ev%2F1O 
+CYlI2Q%3D%3D
+&returnurl=http%3A%2F%2Flms.institution.edu%2Fmodule%2Fmod.do
+%3Fsession%3D47f23cd29%26course%3D3%26folder%3D1
+&cancelurl=http%3A%2F%2Flms.institution.edu%2Fmodule%2Fcancelled.do
+&returnprefix=xxx
 &action=selectOrAdd
 ```
 
@@ -199,21 +199,21 @@ itemdefuuid  Persistent identifier for the collection for the item.
 **version**  Persistent identifier for version of the item.
 result  “success” | “cancelled” | “failed”     Note: this is still supported but deprecated. If possible, integrations should not rely on this value.
 
-**type**  “resource” | “plan”    Note: this is still supported but deprecated. If possible, integrations should not rely on this value.
+**type**  “resource”  “plan”    Note: this is still supported but deprecated. If possible, integrations should not rely on this value.
 
 Using the example of returning from a Moodle™ integration, the user will be redirected to: 
 ```
 http://lms.institution.edu/module/mod.do?
-session=47f23cd29
-&course=3
-&folder=1
-&xxxresult=success
-&xxxname=Sample%20item
-&xxxdescription=Very%20interesting%20description
-&xxxurl=http%3A%2F%2Fequella.myinstitute.edu%2Fitem%2Ftlf
-%2Fc7f6e44d-4101-c1dd-f936-0195cb51403a%2F1%2F
-&xxxuuid=c7f6e44d-4101-c1dd-f936-0195cb51403a
-&xxxtemdefuuid=1ed3feb1-2e04-1bad-cfbb-7e6168c4a8ca
+session=47f23cd29
+&course=3
+&folder=1
+&xxxresult=success
+&xxxname=Sample%20item
+&xxxdescription=Very%20interesting%20description
+&xxxurl=http%3A%2F%2Fequella.myinstitute.edu%2Fitem%2Ftlf
+%2Fc7f6e44d-4101-c1dd-f936-0195cb51403a%2F1%2F
+&xxxuuid=c7f6e44d-4101-c1dd-f936-0195cb51403a
+&xxxtemdefuuid=1ed3feb1-2e04-1bad-cfbb-7e6168c4a8ca
 &xxxversion=1
 ```
 where the module on the integration at ‘/module/mod.do’ can interpret these parameters to add a link to the EQUELLA item.(Note: the parameters added by EQUELLA are prefixed with ‘xxx’ as specified in the returnprefix parameter.)
@@ -222,11 +222,11 @@ If a "structured" action is used, or if either selectMultiple=true or forcePost=
 
 The fields of each link object are:
 
-**name**  String representing the name of the item or attachment selected.
+**name**   String representing the name of the item or attachment selected.
 
-**description**  Will be blank if an attachment was selected, otherwise it will be the description of the selected item.
+**description**   Will be blank if an attachment was selected, otherwise it will be the description of the selected item.
 
-**url** The absolute URL to the item found. Do not rely on the format of the URL being an integ/gen style URL. This is not part of the integration interface and may change depending on the type of attachment or item selected, or in future versions of EQUELLA.
+**url**  The absolute URL to the item found. Do not rely on the format of the URL being an integ/gen style URL. This is not part of the integration interface and may change depending on the type of attachment or item selected, or in future versions of EQUELLA.
 
 **uuid**  Persistent identifier for the item.
 
@@ -236,11 +236,11 @@ The fields of each link object are:
 
 **thumbnail**  The URL for the thumbnail image representing this item or attachment.
 
-**datecreated**  Date that the item was created in Unix time. (http://en.wikipedia.org/wiki/Unix_time).
+**datecreated**   Date that the item was created in Unix time. (<http://en.wikipedia.org/wiki/Unix_time>).
 
-**datemodified**  Date that the item was last modified in Unix time (http://en.wikipedia.org/wiki/Unix_time).
+**datemodified**   Date that the item was last modified in Unix time (<http://en.wikipedia.org/wiki/Unix_time>).
 
-**owner** The owner of the item (friendly name, not the user ID)
+**owner**  The owner of the item (friendly name, not the user ID)
 
 **itemName**  The name of the item. This will match the name parameter if an item was selected, otherwise it is the name of the item that contains the selected attachment.
 

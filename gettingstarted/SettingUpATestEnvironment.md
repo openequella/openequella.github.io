@@ -1,10 +1,12 @@
+[Home](https://equella.github.io/)
+
 # Setting up a test environment
 
 Web tests can be performed automatically after any successful build.
 
 The web testing architecture has the following components:
 
-* Jenkins Build Server (http://dev-builds.equella.com/)
+* Jenkins Build Server (<http://dev-builds.equella.com/>)
 * Test Server with EQUELLA install to run the tests against (tle-autotest)
 * Ant script to deploy latest build and run tests
 * Institution archive files to import onto Test Install
@@ -38,4 +40,4 @@ The latest Eclipse is recommended. New versions of eclipse have the EGit plugin 
 3. Run MoodleTest.java as TestNG test
 
 ## Notes
-Watch out for this bug: https://code.google.com/p/selenium/issues/detail?id=3280
+Watch out for this bug: <https://code.google.com/p/selenium/issues/detail?id=3280>
