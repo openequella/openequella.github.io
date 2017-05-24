@@ -31,6 +31,9 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [HTML Editor Plug-in Guide](guides/HTMLEditorPluginGuide.md)
 * [Remote Repositories Configuration Guide](guides/RemoteRepositoriesConfigurationGuide.md)
 
+## Tests
+* [Test Enabling Kaltura](tests/migration/64QA3-to-OS/TestEnablingKaltura.md)
+
 ## Integration Guides
 * [Integration Downloads](IntegrationDownloads.md)
 * [Integration Interface Guide](guides/IntegrationInterfaceGuide.md)
