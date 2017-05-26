@@ -15,6 +15,9 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Equella Installer](gettingstarted/EquellaInstaller.md)
 * [Hibernate Best Practices](gettingstarted/EquellaHibernateBestPractices.md)
 
+## Optional Functionality
+* [Kaltura](optional-functionality/Kaltura.md)
+
 ## Administrative and User Guides
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
 * [Managing Institutions](guides/ManageInstitutions.md)
