@@ -22,9 +22,24 @@ This guide assumes you have SSH capabilities.  Be sure to add your public SSH ke
 
 <http://www.scala-sbt.org/>
 
+In ubuntu:
+
+```
+sudo apt-get install git
+```
+
 **Download and install Java 8 JDK**
 
 <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
+
+Oracle is the recommended and historically the supported vendor of Java to run Equella with.
+
+In ubuntu:
+```
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```
 
 **Download and install Image Magick binaries** 
 
