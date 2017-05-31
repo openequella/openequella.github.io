@@ -11,6 +11,7 @@ To check if your Equella institution has any METS attachments, query your db.att
 
 ## Build
 Before running ```sbt compile``` on the core Equella code base, do the following
+1. Ensure you have the edu.harvard.hul.mets 1.0 dependency in your local Maven repo. 
 1. git clone the [Equella-METS](https://github.com/equella/Equella-METS) repo.
 1. Copy the com.tle.mets directory from the {Equella-METS} clone into your core Equella clone: ```{Equella-METS}/Source/Plugins/Server/com.tle.mets > {Equella}/Source/Plugins/Server/com.tle.mets ```
 1. Copy the MyPagesMetsAttachmentImporterExporter.java file from the {Equella-METS} clone into your core Equella clone: ```{Equella-METS}/mets/MyPagesMetsAttachmentImporterExporter.java > {Equella}/Source/Plugins/Server/com.tle.mypages/src/com/tle/mypages/mets/MyPagesMetsAttachmentImporterExporter.java```
