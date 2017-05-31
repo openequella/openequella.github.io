@@ -17,7 +17,7 @@
 In ubuntu:
 
 ```
-sudo apt-get install git
+~$ sudo apt-get install git
 ```
 
 **SSH**
@@ -45,9 +45,9 @@ Oracle is the recommended and historically the supported vendor of Java to run E
 
 In ubuntu:
 ```
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
+~$ sudo add-apt-repository ppa:webupd8team/java
+~$ sudo apt-get update
+~$ sudo apt-get install oracle-java8-installer
 ```
 
 **Download and install Image Magick binaries** 
@@ -59,7 +59,7 @@ sudo apt-get install oracle-java8-installer
 
 To confirm the installation directory in Ubuntu for the Equella installer, run the command:
 ```
-whereis convert
+~$ whereis convert
 ```
 
 When installing in Windows, check “Install Legacy Utilities (e.g. convert)”.
@@ -69,12 +69,12 @@ When installing in Windows, check “Install Legacy Utilities (e.g. convert)”.
 In ubuntu:
 
 ```
-sudo apt-get install libav-tools
+~$ sudo apt-get install libav-tools
 ```
 
 To confirm the installation directory in Ubuntu for the Equella installer, run the command:
 ```
-whereis avconv
+~$ whereis avconv
 ```
 
 
@@ -88,8 +88,9 @@ Once SBT and Java are installed, you may need to set a JAVA_HOME environment var
 
 ### Base code
 **Git Clone** 
-
-git clone git@github.com:equella/Equella.git
+```
+~$ git clone git@github.com:equella/Equella.git
+```
 
 ### Optional code
 There is functionality that could not be included into the core Equella code repository, but based on your business needs, may be appropriate to include.
@@ -126,8 +127,8 @@ ${user.home}/.java/deployment/security/exception.sites
 ## Building the code
 
 ```bash
-cd to the {Equella repo}/ directory
-sbt compile
+cd to the {Equella repo} directory
+~$ sbt compile
 ```
 
 ### Equella Configuration
@@ -143,7 +144,7 @@ Under the {Equella repo}/Dev/learningedge-config folder, you'll need several art
 Ensure you have your `Dev/learningedge-config` setup.  See [Equella Configuration](#equella-configuration).
 
 ```bash
-sbt compile equellaserver/run
+~$ sbt compile equellaserver/run
 ```
 
 ### Running a dev instance of the admin tool
@@ -151,7 +152,7 @@ sbt compile equellaserver/run
 Ensure you have your `Dev/learningedge-config` setup.  See [Equella Configuration](#equella-configuration).
 
 ```bash
-sbt compile adminTool/run
+~$ sbt compile adminTool/run
 ```
 
 ## Installation of the Vanilla institution
