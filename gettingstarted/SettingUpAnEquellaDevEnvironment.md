@@ -86,6 +86,9 @@ Once SBT and Java are installed, you may need to set a JAVA_HOME environment var
 
 ## Get the code 
 
+### Maven Local
+Pull down the maven local repo and place it in your home directory.
+
 ### Base code
 **Git Clone** 
 ```
