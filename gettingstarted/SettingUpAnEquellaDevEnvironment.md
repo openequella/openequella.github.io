@@ -15,6 +15,7 @@
 <https://git-scm.com/downloads>
 
 ** SSH **
+
 This guide assumes you have SSH capabilities.  Be sure to add your public SSH key into the you git profile to access the code repos.
 
 **Download and install SBT** 
