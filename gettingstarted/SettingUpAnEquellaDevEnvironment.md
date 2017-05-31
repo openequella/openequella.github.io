@@ -48,7 +48,10 @@ sudo apt-get install oracle-java8-installer
 *Note: For ubuntu follow the install from Unix Source instructions:*
 <https://www.imagemagick.org/script/install-source.php>
 
-They are installed in /usr/local/lib
+To confirm the installation directory in Ubuntu for the Equella installer, run the command:
+```
+whereis convert
+```
 
 When installing in Windows, check “Install Legacy Utilities (e.g. convert)”.
 
@@ -60,7 +63,10 @@ In ubuntu:
 sudo apt-get install libav-tools
 ```
 
-They are installed in /usr/lib
+To confirm the installation directory in Ubuntu for the Equella installer, run the command:
+```
+whereis avconv
+```
 
 
 Once SBT and Java are installed, you may need to set a JAVA_HOME environment variable.
