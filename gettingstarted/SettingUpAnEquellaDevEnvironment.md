@@ -128,6 +128,7 @@ It can be done with the Java Control Panel or directly adding the domain in a ne
 ${user.home}/.java/deployment/security/exception.sites 
 
 ## Building the code
+This guide runs sbt in non-interactive mode.  You can run in interactive mode to save rebuild time by first running 'sbt', and the another command such as 'compile'.
 
 ```bash
 cd to the {Equella repo} directory
