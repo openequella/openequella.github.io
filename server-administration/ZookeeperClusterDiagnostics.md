@@ -6,7 +6,7 @@ Table of Contents
 * [EQUELLA Network Failure](#equella-network-failure) 
 * [Unique IDs for EQUELLA Nodes](#unique-ids-for-equella-nodes)
 * [EQUELLA Session Failover](#equella-session-failover)
-* [Failure to Connect to Zookeeper](#failure-to-connect-to-zookeeper)
+* [Failure to Connect to Zookeeper on Startup](#failure-to-connect-to-zookeeper-on-startup)
 * [Rolling Restart of EQUELLA](#rolling-restart-of-equella)
 * [Rolling Restart of Zookeeper](#rolling-restart-of-zookeeper)
 * [Running Zookeeper in a Degraded State](#running-zookeeper-in-a-degraded-state)
