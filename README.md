@@ -35,6 +35,10 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [HTML Editor Plug-in Guide](guides/HTMLEditorPluginGuide.md)
 * [Remote Repositories Configuration Guide](guides/RemoteRepositoriesConfigurationGuide.md)
 
+## Server Administration
+* [Zookeeper / Equella Clustering Diagnostics](server-administration/ZookeeperClusterDiagnostics.md)
+
+
 ## Tests
 * [Test Enabling Kaltura](tests/migration/64QA3-to-OS/TestEnablingKaltura.md)
 
