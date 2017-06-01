@@ -34,6 +34,8 @@ You'll need to know where you've installed imagemagick, libav, java, and your da
 - Imagemagick in Ubuntu, run ```~$ whereis convert```.
 - Libav in Ubuntu, run ```~$ whereis avconv```.
 
+The 'Institution Administration URL' for local testing can be as simple as ```http://localhost:8080/admin/```
+
 ### \*nix Install
 Ensure that the manager and scripts are executable:
 ```bash
