@@ -190,6 +190,17 @@ The root plugin manually defines the sub-project location and their inter-projec
 * `allPlugins` - an aggregate project which can be used for building all the JPF plugins
 * `adminTool` - contains the admin console client launcher
 
+### Misc
+if you get a deduplicate dependencies on commons logging, SLF4J has a moonlighting jar that says it's commons logging.  Use the build.sbt directive of exclude dependencies like the adminConsole does.
+
+### Speeding up the build during dev
+
+If you are editing the build files you can temporarily disable all the non-essential plugins to speed up your dev/reload/test process by editing (or creating) the `project/build.conf` file to have the setting:
+
+```
+plugin.whitelist = []
+```
+
 ## IntelliJ
 Building Equella with SBT does not require an IDE to run, and while not a particular IDE is not recommended / required, IntelliJ has been proven to work with the Equella SBT build process.
 
@@ -198,11 +209,3 @@ Due to the enourmous number of projects, when importing into IntelliJ the requir
 You will also need to increase the default maximum memory allocation for SBT when doing the import: (`Build Tools -> SBT -> Maximum Heap size`)
 
 4096MB should be enough.
-
-## Speeding up the build during dev
-
-If you are editing the build files you can temporarily disable all the non-essential plugins to speed up your dev/reload/test process by editing (or creating) the `project/build.conf` file to have the setting:
-
-```
-plugin.whitelist = []
-```
