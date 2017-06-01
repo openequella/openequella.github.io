@@ -67,5 +67,7 @@ The installation process will need to be completed in the server admin pages.  P
 At this point, Equella is 'running', but still needs an institution to be useful.
 
 ## Import an Institution
-... todo
+- Download the [6.4 vanilla](https://github.com/equella/equella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz) institution.
+- Using the server admin pages, import the institution
+
 
