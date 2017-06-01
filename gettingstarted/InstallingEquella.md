@@ -21,7 +21,7 @@ If you don't have / don't want to use a pre-built binary, building Equella yours
 1. Pull down the local Maven repo.
 1. If you want to include any Optional Functionalities, please review the associated [documentation](https://github.com/equella/equella.github.io/tree/master/optional-functionality).
 1. Git checkout the branch / tag you want to build off of.
-1. Run ``` ~$ sbt installerZip ``` in the Equella root directory.  This produces an installer zip binary in the {Equella}/Installer/target directory.
+1. Run ``` ~$ sbt compile installerZip ``` in the Equella root directory.  This produces an installer zip binary in the {Equella}/Installer/target directory.
 
 ## Install Equella
 1. Unzip the equella install zip binary.
