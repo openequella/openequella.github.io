@@ -27,12 +27,13 @@ If you don't have / don't want to use a pre-built binary, building Equella yours
 1. Unzip the equella install zip binary.
 1. Run the GUI installer:
     ```bash
-    cd ~/equella-installer-{VERSION}
-    java -jar enterprise-install.jar
+    ~$ cd ~/equella-installer-{VERSION}
+    ~$ java -jar enterprise-install.jar
     ```
-1.1. You'll need to know where you've installed imagemagick, libav, java, and your database.
-1.1.1. Imagemagick in Ubuntu, run ```~$ whereis convert```.
-1.1.1. Libav in Ubuntu, run ```~$ whereis avconv```.
+You'll need to know where you've installed imagemagick, libav, java, and your database.
+- Imagemagick in Ubuntu, run ```~$ whereis convert```.
+- Libav in Ubuntu, run ```~$ whereis avconv```.
+
 ### \*nix Install
 Ensure that the manager and scripts are executable:
 ```bash
