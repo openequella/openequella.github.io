@@ -46,6 +46,8 @@ Ensure that the manager and scripts are executable:
 Using the equellaserver and manager bat scripts, configure and install as Windows services.
 
 ## Starting Equella
+The primary log to watch is located under ```{install_location}/logs/resource-centre/{current_date}/application.{X.}html```
+
 ### \*nix
 ```bash
 ~$ cd {install_location}/manager
