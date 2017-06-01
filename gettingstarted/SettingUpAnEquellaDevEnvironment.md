@@ -99,7 +99,6 @@ Pull down the maven local repo and place it in your home directory.
 There is functionality that could not be included into the core Equella code repository, but based on your business needs, may be appropriate to include.
 * Oracle DB Driver
 * [Kaltura](https://equella.github.io/optional-functionality/Kaltura.html)
-* [METS](https://equella.github.io/optional-functionality/mets.html)
 
 ## Build configuration
 
