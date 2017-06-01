@@ -1,6 +1,6 @@
 [Home](https://equella.github.io/)
 
-# EQUELLA Installer
+# Installing Equella
 
 ## Environment setup
 Assuming you are building and installing Equella in the same environment, the following should be setup.  Details can be found in the [Equella Dev Setup](http://equella.github.io/gettingstarted/SettingUpAnEquellaDevEnvironment.html#download-required-software) guide.
