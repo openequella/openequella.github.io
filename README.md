@@ -17,7 +17,6 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 ## Optional Functionality
 * [Kaltura](optional-functionality/Kaltura.md)
-* [METS](optional-functionality/mets.md)
 
 ## Administrative and User Guides
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
