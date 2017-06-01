@@ -73,5 +73,9 @@ At this point, Equella is 'running', but still needs an institution to be useful
 ## Import an Institution
 - Download the [6.4 vanilla](https://github.com/equella/equella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz) institution.
 - Using the server admin pages, import the institution
+- After the import completes, click 'Return to Institution Management'
+- Your newly imported institution should be enabled on the 'Institutions' page.  Click 'Login' under 'Actions'
+- Login with the Equella super user ```TLE_ADMINISTRATOR```, and use the institution password you set when configuring the institution import.
+
 
 
