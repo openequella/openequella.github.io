@@ -54,7 +54,7 @@ and/or
 To stop Equella or the manager, run the same command to start the application, but pass in 'stop' instead of 'start'.
 
 ### Windows
-Assuming Equella and the Equella Manager have been installed as services, navigate to your install services, and select Equella to start.
+Assuming Equella and the Equella Manager have been installed as services, navigate to your services, and select Equella to start.
 
 ## Accessing Equella / Finish Setup
 Use your browser to login to the EQUELLA manager (default is <http://localhost:3000>)
