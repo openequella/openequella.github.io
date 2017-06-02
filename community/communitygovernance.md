@@ -13,7 +13,7 @@
 
 ## Roles and Responsibilities
 
-## PMC chair
+## PMC Chair
 
 The Project Management Committee (PMC) chair is elected by a simple majority vote of the membership. The chair shall hold office for a period of one year or until his or her successor is elected and qualified or until his or her earlier resignation or removal.  If the chair resigns or is removed the vice-chair will succeed to the chair and serve out the remainder of the former chair's term.  If an election results in a tie between candidates for the position of chair, successive run-off elections will be held until a candidate is elected by a simple majority vote of the membership.
 
@@ -65,7 +65,7 @@ Responsibilities:
 * Contribute actively to Equella Open Source planning, design, development, testing, release, etc.
 * Help maintain PMC documentation.
 
-## PMC Member emeritus
+## PMC Member Emeritus
 PMC members who fail to participate actively in the work of the PMC over a 12 month period or who are unable to participate in PMC work due to other responsibilities will be accorded "emeritus" (inactive) status and their binding vote will be suspended.
 
 Changes in status from active to emeritus and from emeritus to active will be determined by a simple majority of active PMC members. Status changes can be initiated by request of the PMC member concerned at any time.
@@ -75,7 +75,7 @@ A PMC member, whether active or emeritus, may resign at any time for any reason.
 
 A PMC chair or vice-chair can be removed at any time, with or without cause, by a vote of no confidence comprising a simple majority of active PMC members.
 
-# Voting
+## Voting
 In general, voting is by lazy consensus:
 
 **Vote: Meaning**
