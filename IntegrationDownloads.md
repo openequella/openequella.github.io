@@ -5,10 +5,8 @@
 The following connectors and tools are provided to help you to integrate EQUELLA with other systems.
 
 ## Blackboard Building Block 9.1 SP14+
-The Blackboard Academic SuiteTM is a comprehensive engagement and assessment solution that grows as your institution grows. EQUELLA provides a Building Block that allows Blackboard users to search for content in EQUELLA and easily link it back to a course. This Building Block works with Blackboard Learn 9.1 SP14 and above.
+The Blackboard Academic SuiteTM is a comprehensive engagement and assessment solution that grows as your institution grows. EQUELLA provides a [building block](https://github.com/equella/equella-blackboard-integration) that allows Blackboard users to search for content in EQUELLA and easily link it back to a course. This Building Block works with Blackboard Learn 9.1 SP14 and above.
 Download the EQUELLA Building Block for Blackboard Learn 9.1 SP14 and higher.  
-
-[EQUELLA Blackboard building block](https://github.com/equella/equella-blackboard-integration)
 
 [Blackboard Integration Guide](guides/BlackboardLearnIntegrationGuide.md)
 
