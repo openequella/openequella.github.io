@@ -184,7 +184,7 @@ Located in the "project" folder is a series of SBT AutoPlugins which are respons
 The root plugin manually defines the sub-project location and their inter-project dependencies:
 
 * `equellaserver` - contains the server bootstrap code and contains the dependency list for the server, produces the upgrade zip
-* `Installer` - produces the installer zip
+* `InstallerZip` - produces the installer zip
 * `UpgradeZip` - produces the upgrade zip
 * `UpgradeInstallation` - the installation upgrader which is part of the upgrade zip
 * `UpgradeManager` - the upgrade manager web app
