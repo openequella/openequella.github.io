@@ -87,7 +87,9 @@ Once SBT and Java are installed, you may need to set a JAVA_HOME environment var
 ## Get the code 
 
 ### Maven Local
-Pull down the maven local repo and place it in your home directory.
+*_NOTE:  Currently the build process requires a 'local maven' repo of 'equella-deps' that is not yet available to the community.  We are preparing those dependencies to be available to the community and the work should be completed soon._*
+
+Pull down the maven local repo 'equella-deps' and place it in your home directory.
 
 ### Base code
 **Git Clone** 
