@@ -30,7 +30,7 @@ To create an EQUELLA report the following tasks must be completed:
 * A report design is developed and tested.
 * The report design is then uploaded to the EQUELLA server.
 
-Once created and uploaded, any user with suitable privileges can run the report by selecting the Generate Reports link from the EQUELLA Digital Repository.
+Once created and uploaded, any user with suitable privileges can run the report by selecting the 'Reports' link from the EQUELLA Digital Repository.
 
 ### Prerequisites
 Knowledge of SQL is an absolute requirement for generating reports with the Report Designer.
