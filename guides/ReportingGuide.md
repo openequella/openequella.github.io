@@ -14,6 +14,7 @@ Table of Contents
 * [Joint data set example usage](#joint-data-set-example-usage)
 * [User management](#user-management)
 * [Scenarios](#scenarios)
+* [Creating an Equella-Enabled BIRT Report Designer Binary](#creating-an-equella-enabled-birt-report-designer-binary)
 
 ## Report Designer overview 
 
@@ -41,12 +42,12 @@ Additionally it is strongly recommended that training start with the online Ecli
 
 ## Installation
 
-Versions of the EQUELLA Report Designer  are available for download from the open source community. These versions are supported by EQUELLA and use BIRT 2.6.1.
+Versions of the EQUELLA Report Designer are available for download from the open source community [here](https://github.com/equella/Equella/releases/tag/v6.4). These versions are supported by EQUELLA and use BIRT 2.6.1.
 
 ### Install the EQUELLA Report Designer
-#### Download the Report Designer files
+Download the Report Designer files
 
-Install the Report Designer on Windows
+#### Install the Report Designer on Windows
 1. After downloading the archive file appropriate to your operating system. 
 2. Unzip the contents of the archive file to a suitable location on a local machine. 
 3. Run BIRT.exe to open the BIRT Report Designer
@@ -60,8 +61,6 @@ The Linux/Mac Report Designer files are versions of Eclipse with Business Intell
 4. Once inside Eclipse, select New, then Other, from the File menu, or press Ctrl+N to display the New dialog.
 5. Expand the Business Intelligence and Reporting Tools folder and select Report.
 You are ready to design your report.
-
-
 
 ## EQUELLA reporting
 
@@ -597,3 +596,6 @@ The report is complete.
 Typically EQUELLA reports would require improved formatting before being uploaded to EQUELLA. Formatting is beyond the scope of this document, further information is available in the BIRT Report Developer Guide in the Report Designer Help.
 ## Notes
 User and Group information queries require careful implementation as each record of the JDBC data set causes a search of the User Management system. When the returned JDBC data set is large, the time to run the report can be great as each record causes a request to EQUELLA. When EQUELLA is using the internal user management plug-in the TLEUSER and TLEGROUP tables can be joined to improve query reporting.
+
+# Creating an Equella-Enabled BIRT Report Designer Binary
+A given BIRT RD Equella release binary is comprised of a standard binary of BIRT RD, along with the Equella plugins from [equella/equella-reporting-plugin](https://github.com/equella/equella-reporting-plugin).  These plugins are the same plugins used in the Equella application to receive requests from BIRT RD, and to run the reports that have been added to Equella.
