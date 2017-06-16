@@ -6,6 +6,7 @@ Table of Contents
 * [Report Designer overview](#report-designer-overview)  
 * [Installation](#installation)
 * [EQUELLA reporting](#equella-reporting)
+* [Example reports](#example-reports)
 * [Create a report](#create-a-report)
 * [Upload a report](#upload-a-report)
 * [Run a report](#run-a-report)
@@ -75,6 +76,10 @@ The following tasks must be completed to create a report that can be used with E
 * Upload the report design to EQUELLA using the Administration Console Reporting plug-in.
 
 A single instance of the Report Designer can be used to create reports for multiple institutions, as each report design has a distinct database connection.
+
+## Example reports
+
+The standard example reports can be found [here](https://github.com/equella/Equella/tree/master/Source/Reporting/reports).  Community 'open source' example reports can be found (TBD).
 
 ## Create a report
 
