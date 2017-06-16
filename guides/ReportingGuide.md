@@ -42,7 +42,7 @@ Additionally it is strongly recommended that training start with the online Ecli
 
 ## Installation
 
-Versions of the EQUELLA Report Designer are available for download from the open source community [here](https://github.com/equella/Equella/releases/tag/v6.4). These versions are supported by EQUELLA and use BIRT 2.6.1.
+Versions of the EQUELLA Report Designer are available for download from the open source community [here](https://github.com/equella/equella-reporting-plugin/releases/tag/v6.4). These versions are supported by EQUELLA and use BIRT 2.6.1.
 
 ### Install the EQUELLA Report Designer
 Download the Report Designer files
