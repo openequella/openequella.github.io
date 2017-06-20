@@ -144,7 +144,7 @@ Under the {Equella repo}/Dev/learningedge-config folder, you'll need several art
 * optional-config.properties
 * ...
 
-For the plugins folder in learningedge-config, you can pull an example from an existing Equella install of the same version or build it yourself.  The directory tree should look like the following, rooted in <<dev equella config>>/learningedge-config/plugins/:
+For the plugins folder in learningedge-config, you can pull an example from an existing Equella install of the same version or build it yourself.  The directory tree should look like the following, rooted in << dev equella config >>/learningedge-config/plugins/:
 ```
 com.tle.core.freetext
 -- optional.properties
@@ -157,6 +157,7 @@ com.tle.web.viewitem.largeimageviewer
 ```
 
 **The contents of the files:**
+
 *com.tle.core.freetext/optional.properties*
 ```java
 # Synchronisation Timer. The number of minutes between synchronisation attempts.
