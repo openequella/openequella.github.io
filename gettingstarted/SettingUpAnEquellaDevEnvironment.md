@@ -140,9 +140,73 @@ cd to the {Equella repo} directory
 Under the {Equella repo}/Dev/learningedge-config folder, you'll need several artifacts:
 * Plugins folder
 * mandatory-config.properties
-** the plugins.location needs to point to your source tree.
+..* the plugins.location needs to point to your source tree.
 * optional-config.properties
 * ...
+
+For the plugins folder in learningedge-config, you can pull an example from an existing Equella install of the same version or build it yourself.  The directory tree should look like the following, rooted in <<dev equella config>>/learningedge-config/plugins/:
+```
+com.tle.core.freetext
+-- optional.properties
+com.tle.core.imagemagick
+-- config.properties
+com.tle.web.viewitem
+-- mandatory.properties
+com.tle.web.viewitem.largeimageviewer
+-- optional.properties
+```
+
+**The contents of the files:**
+*com.tle.core.freetext/optional.properties*
+```java
+# Synchronisation Timer. The number of minutes between synchronisation attempts.
+#freetextIndex.synchroiseMinutes = 5
+
+# Index item attachments (defaults to true)
+#textExtracter.indexAttachments = true
+
+# Index IMS package contents (defaults to true)
+#textExtracter.indexImsPackages = true
+
+# Indicates if default search terms should be performed with an implicit AND or OR.
+# Defaults to AND
+#freetextIndex.defaultOperator = AND
+```
+*com.tle.core.imagemagick/config.properties*
+```java
+# ImageMagick is a set of different programs, and EQUELLA needs to know the directory that
+# contains these programs.  For example, running 'which convert' on a unix-like system may
+# return '/usr/bin/convert' so you should enter '/usr/bin'.  On a Windows system, you may
+# have installed to 'C:\ImageMagick6.4', then the programs can be found directly inside that
+# path.
+
+imageMagick.path = /usr/bin
+```
+*com.tle.web.viewitem/mandatory.properties*
+```java
+# Auditing level can be one of NONE, NORMAL or SMART.
+#
+#   NONE
+#      No audit trail
+#
+#   NORMAL
+#      Logs the every viewing of an item summary page or downloading of an attachment.
+#      This setting may create a very large number of audit log entries.
+#
+#   SMART
+#      Logs the viewing of an item or it's attachments only once per user session.
+#      This setting will increase the amount of memory required for each user session.
+#
+audit.level = NONE
+```
+*com.tle.web.viewitem.largeimageviewer/optional.properties*
+```java
+# Tile after contribution mode. Specifies how images should be handled
+# after contribution.  Valid values are AUTO_TILE_AFTER_CONTRIBUTION, 
+# PROMPT_AFTER_CONTRIBUTION and PROMPT_ONLY_WHEN_VIEWING
+
+#tileAfterContribution.mode = PROMPT_AFTER_CONTRIBUTION
+```
 
 ### Running a dev instance
 
