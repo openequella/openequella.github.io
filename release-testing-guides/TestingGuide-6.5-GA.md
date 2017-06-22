@@ -196,3 +196,87 @@ The Kaltura Java client API is not Apache-license-friendly.  It was moved into i
   * Ensure Equella runs without asking for a license
 * Performance testing: TBD
 * Regression testing: TBD
+
+### Fixes arising from cherry pick
+https://github.com/equella/Equella/commit/64e85c2b4560580e517474c302b3d543ce79c34f
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### Upgrade javax.servlet, flickr, datatools, sqlserver jdbc, kalturaclient
+https://github.com/equella/Equella/commit/2b18a3707c31a5c643803560570073db445e8d3c
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### Upgrade srw servlet
+https://github.com/equella/Equella/commit/e2ab5bd7a6574b77b3abddd91b2802574dd9ad71
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### Update hikaricp
+https://github.com/equella/Equella/commit/ec46ea0b0eedd814e308cf5239b092f10a0d8111
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### Use latest jna
+https://github.com/equella/Equella/commit/be29f0e80e8db106216301aac21b7563e8ddbaa1
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### Option to self-generate a keystore when building or use a previously
+https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888d7
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### "Use a custom param for the course ID" in Canvas
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### EQ-31 ensure IMS/SCORM resources containing query strings will work
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### EQ-32 batched audit log removal 
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### EQ-33 don't use the public bookmark, use the actual params 
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### EQ-34 use string URLs instead of URL URLs 
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: 
+  * Access the file manager, and perform CRUD operations.
+
+### EQ-2045 use LIST_COURSE_INFO priv, not LIST_COURSE 
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### EQ-2038 course API refactor 
+Activation, Course,
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### EQ-1045 (et al) refactors of entity rest services
+One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### EQ-2026 Do some validation on entities. don't let entity editing be a free-for-all
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
