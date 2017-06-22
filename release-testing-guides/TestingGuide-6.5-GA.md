@@ -135,3 +135,64 @@ The Kaltura Java client API is not Apache-license-friendly.  It was moved into i
 * Regression testing
   * Start with Equella 6.4-QA3 (which has Kaltura enabled), upgrade to Equella without Kaltura, and then upgrade to Equella with Kaltura, following the guide here:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
 * Performance testing - N/A
+
+### #54 ( Make Oracle DB driver optional )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### #53 ( Make Blackboard dependencies optional )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### #52 ( Hibernate classloading issues )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### #51 ( Jafer z3950 / SRW library conflict )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### #44 / #46 ( Installer / Upgrader built via SBT )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: 
+  * Installer works
+  * Upgrade manager testing from pre 6.5-GA to 6.5-GA+ upgrades
+
+### #42 ( Don't try to download reference-language-pack.zip from maestro.equella )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### #41 ( Remove eCommerce )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: TBD
+
+### #37 ( Create a "learningedge-config" eclipse project and ant task for easier dev config setup )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing:  TBD
+
+### #33 ( Upgrade ROME )
+* Functional testing:  TBD
+* Performance testing: TBD
+* Regression testing: 
+  * Test RSS and ATOM feeds
+
+### #27 ( Work out what to do about hardcoded SHA256 hash salt )
+* Functional testing: 
+  * Set the equella.salt property to various values and test
+* Performance testing: TBD
+* Regression testing: 
+  * Ensure the default salt property is the original hardcoded salt.
+
+### #5 ( Remove license validation components )
+* Functional testing:  
+  * Ensure Equella runs without asking for a license
+* Performance testing: TBD
+* Regression testing: TBD
