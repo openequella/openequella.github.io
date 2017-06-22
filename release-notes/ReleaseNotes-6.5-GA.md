@@ -10,7 +10,7 @@ This is meant to detail the functional changes exposed to the user experience.  
 Tracked in issues #98 and #102.  Equella has the ability integrate with Microsoft Office products to enable a smoother editing experience.  Due to licensing issues, and the inherit issues of using an older interop DLL on more modern installs of Office, the download of the Office Integration msi package has been removed from the Equella Web UI, and the DLLs in question have been removed from the git repo.  The functionality is still useful, so documentation has been provided for users to build and access this functionality as needed.
 
 ### Centralized Documentation
-Tracked partially in issue #101 and #104.  All documentation for Equella and Equella-related applications (anything under the 'equella' github project) has been moved into the equella.github.io repo.  This includes the integration / scripting pack historically available from the Server Admin Download page.  
+Tracked partially in issues #25, #101, and #104.  All documentation for Equella and Equella-related applications (anything under the 'equella' github project) has been moved into the equella.github.io repo.  This includes the integration / scripting pack historically available from the Server Admin Download page.  
 
 ### #100 HTML Editor Plugins
 Tracked in issue #100. ....Working pending...
