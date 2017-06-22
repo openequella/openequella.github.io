@@ -36,14 +36,14 @@ Tracked in issue #71.  When an LTI attachment that added to an item, at times it
 ### Kaltura Turned into an Optional Dependency
 Tracked in issue #55.  The Kaltura Java client API is not Apache-license-friendly.  It was moved into it's own repo, but can easily be integrated back into Equella per client.  Additional effort is noted to turn this into truly a 'drop in' plugin.
 
-# Oracle DB Driver is Optional
+### Oracle DB Driver is Optional
 Due to licensing issues, the Oracle DB Driver cannot be included in the standard build process.  Use of an Oracle DB can be achieved by editing the build configuration, and then generating a new set of Equella binaries.
 
-# Equella No Longer Supports eCommerce
+### Equella No Longer Supports eCommerce
 eCommerce has been removed from Equella.
 
-# Custom Salt for Passwords
+### Custom Salt for Passwords
 Equella now supports passing in the equella.salt property to salt passwords with.  The default is the original, hardcoded salt.
 
-# No License Needed
+### No License Needed
 Equella no longer requires an 'Equella License Key' to run.
