@@ -12,7 +12,7 @@ Tracked in issues #98 and #102.  Equella has the ability integrate with Microsof
 ### Centralized Documentation
 Tracked partially in issues #25, #101, and #104.  All documentation for Equella and Equella-related applications (anything under the 'equella' github project) has been moved into the equella.github.io repo.  This includes the integration / scripting pack historically available from the Server Admin Download page.  
 
-### #100 HTML Editor Plugins
+### HTML Editor Plugins
 Tracked in issue #100. ....Working pending...
 
 ### Start Scripts are by Default, Executable
