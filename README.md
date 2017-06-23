@@ -56,7 +56,7 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Canvas Integration Guide](guides/CanvasIntegrationGuide.md)
 * [Moodle Integration Guide](guides/MoodleIntegrationGuide.md)
 * [ECHO360 Integration Guide](guides/ECHOIntegrationGuide.md)
-* [SOAP API](https://github.com/equella/equella.github.io/blob/master/api-docs/Script/api%20reference.html)
+* [SOAP API](api-docs/Script/api%20reference.html)
 
 ## Tutorials
 * [Java REST Tutorial](guides/JavaRESTTutorial.md)
