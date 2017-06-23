@@ -75,6 +75,9 @@ A PMC member, whether active or emeritus, may resign at any time for any reason.
 
 A PMC chair or vice-chair can be removed at any time, with or without cause, by a vote of no confidence comprising a simple majority of active PMC members.
 
+A PMC chair, PMC vice-chair or the entire PMC can be removed by the Apereo Board with or without cause by a vote of no confidence. 
+
+
 ## Voting
 In general, voting is by lazy consensus:
 

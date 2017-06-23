@@ -21,6 +21,7 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Setting up a Development Environment](gettingstarted/SettingUpAnEquellaDevEnvironment.md)
 * [Setting up a Test Environment](gettingstarted/SettingUpATestEnvironment.md)
 * [Hibernate Best Practices](gettingstarted/EquellaHibernateBestPractices.md)
+* [Reporting Methodology](gettingstarted/ReportingMethodology.md)
 
 ## Optional Functionality
 * [Kaltura](optional-functionality/Kaltura.md)
