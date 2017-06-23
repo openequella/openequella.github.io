@@ -13,6 +13,10 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 * [Community Governance Model](community/communitygovernance.md)
 
+## Release Notes
+* [6.5-GA](release-notes/ReleaseNotes-6.5-GA.md)
+* [6.5-QA1](release-notes/ReleaseNotes-6.5-QA1.md)
+
 ## Getting Started
 * [Installing Equella](gettingstarted/InstallingEquella.md)
 * [Setting up a Development Environment](gettingstarted/SettingUpAnEquellaDevEnvironment.md)
@@ -21,6 +25,8 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 ## Optional Functionality
 * [Kaltura](optional-functionality/Kaltura.md)
+* Oracle DB
+* Office Integration
 
 ## Administrative and User Guides
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
@@ -29,7 +35,6 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
   * [Reference Language Pack](guides/reference-language-pack.zip)
 * [Managing Institutions](guides/ManageInstitutions.md)
 * [Security Administration Guide](guides/SecurityAdminGuide.md)
-* [REST API Guide](guides/RestAPIGuide.md)
 * [Collection Definitions Editor Configuration Guide](guides/CollectionDefinitionsEditorConfigurationGuide.md)
 * [Contribution User Guide](guides/ContributionUserGuide.md)
 * [Reporting Guide](guides/ReportingGuide.md)
@@ -43,9 +48,12 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 ## Server Administration
 * [Zookeeper / Equella Clustering Diagnostics](server-administration/ZookeeperClusterDiagnostics.md)
 
-
 ## Tests
 * [Test Enabling Kaltura](tests/migration/64QA3-to-OS/TestEnablingKaltura.md)
+
+## Release Testing Guides
+* [6.5-GA](release-testing-guides/ReleaseTestingGuide-6.5-GA.md)
+* 6.5-QA1 >>> coming soon!
 
 ## Integration Guides
 * [Integration Downloads](IntegrationDownloads.md)
@@ -56,18 +64,23 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Canvas Integration Guide](guides/CanvasIntegrationGuide.md)
 * [Moodle Integration Guide](guides/MoodleIntegrationGuide.md)
 * [ECHO360 Integration Guide](guides/ECHOIntegrationGuide.md)
+
+## APIs
+* REST API can be found at {{your Equella institution}}/apidocs.do
 * [SOAP API](api-docs/Script/api%20reference.html)
+* [Script API](api-docs/Script/api%20reference.html)
 
-## Tutorials
-* [Java REST Tutorial](guides/JavaRESTTutorial.md)
-* [Java SOAP Tutorial](guides/JavaSOAPTutorial.md)
-* [PHP SOAP Tutorial](guides/PHPSOAPTutorial.md)
-* [C# SOAP Tutorial](guides/CPlusSOAPTutorial.md)
-
+## API Guides / Tutorials
+* Example code for REST, SOAP, and Advanced Scripting can be found [here](https://github.com/equella/equella.github.io/tree/master/example-scripts)
+* [Java SOAP Guide](guides/JavaSOAPTutorial.md)
+* [C# SOAP Guide](guides/CPlusSOAPTutorial.md)
+* [PHP SOAP Guide](guides/PHPSOAPTutorial.md)
+* [Scripting Guide](guides/AdvancedScriptingGuide.md)
+* [REST API Guide](guides/RestAPIGuide.md)
+* [Java REST API Guide](guides/JavaRESTTutorial.md)
 
 ## Documentation Archives
-
-[Documentation Archives from the commercial EQUELLA Product](documentationarchives/ArchivedDocumentationListing.md)
+* [Documentation Archives from the commercial EQUELLA Product](documentationarchives/ArchivedDocumentationListing.md)
 
 
 
