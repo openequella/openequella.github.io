@@ -28,13 +28,21 @@ Configuration and reference guides for system and content administrators
 * [EQUELLA 6.4 Harvester Profile Configuration Guide](EQUELLA6.4HarvesterProfileConfigurationGuide.pdf)
 * [EQUELLA 6.2 Harvester Profile Configuration Guide](EQUELLA6.2HarvesterProfileConfigurationGuide.pdf)   
 * [EQUELLA 6.4 Remote Repositories Configuration Guide](EQUELLA6.4RemoteRepositoriesConfigurationGuide.pdf)
-* [EQUELLA 6.3 Copyright CAL and CLA Enhancements](EQUELLA6.3CopyrightCALandCLAEnhancements.pdf) 
-* [EQUELLA 6.3 Metadata Schema Configuration Guide](EQUELLA6.3EmbeddedMetadataExtractionUserGuide.pdf) 
+* [EQUELLA 6.3 Copyright CAL and CLA Enhancements](EQUELLA6.3CopyrightCALandCLAEnhancements.pdf)
+* [EQUELLA 6.4 Copyright CA and CLNZ Configuration Guide](EQUELLA6.4CopyrightCAandCLNZConfigurationGuide.pdf)
+* [EQUELLA 6.3 Metadata Schema Configuration Guide](EQUELLA6.3MetadataSchemaConfigurationGuide.pdf) 
 * [EQUELLA 6.2 Hierarchy Configuration User Guide](EQUELLA6.2HierarchyConfigurationGuide.pdf)   
 * [EQUELLA 6.0 Theming Guide](EQUELLA6.0ThemingGuide.pdf) 
 * [EQUELLA Bulk Uploading of Kaltura Videos](BulkUploadingKalturaVideostoEQUELLA.pdf)
 * [EQUELLA 6.4 Clustering Configuration Guide](EQUELLA6.4ClusteringConfigurationGuide.pdf)
-
+* [EQUELLA 6.0 Workflow Configuration Guide](EQUELLA6.0WorkflowConfigurationGuide.pdf)
+* [EQUELLA 6.0 Mobile App Configuration Guide](EQUELLA6.0MobileAppConfigurationGuide.pdf)
+* [EQUELLA 6.0 Advanced Search Configuration Guide](EQUELLA6.0AdvancedSearchConfigurationGuide.pdf)
+* [EQUELLA 6.0 Dynamic Collections Guide](EQUELLA6.0DynamicCollectionsGuide.pdf)
+* [EQUELLA 6.0 LDAP Configuration Guide](EQUELLA6.0LDAPConfigurationGuide.pdf)
+* [EQUELLA 6.1 Push to LMS Guide](EQUELLA6.1PushtoLMSGuide.pdf)
+* [EQUELLA 6.0 Language Settings Configuration Guide](EQUELLA6.0LanguageSettingsConfigurationGuide.pdf)
+* [EQUELLA 6.0 Taxonomies Guide ](EQUELLA6.0TaxonomiesGuide.pdf)
 
 ## Integration Guides
 
@@ -62,6 +70,7 @@ Configuration and reference guides for system and content administrators
 * [EQUELLA Glossary of Terms](EQUELLAGlossaryofTerms.pdf)
 * [EQUELLA 6.4 Contribution User Guide](EQUELLA6.4ContributionUserGuide.pdf)
 * [EQUELLA 6.3 Embedded Metadata Extraction User Guide](EQUELLA6.3EmbeddedMetadataExtractionUserGuide.pdf) 
+* [EQUELLA Metadata Utility User Guide](EMUUserGuide.pdf)
 * [EQUELLA 6.0 Store User Guide](EQUELLA6.0StoreUserGuide.pdf) 
 * [EQELLA 6.0 Store Front User Guide](EQUELLA6.0StoreFrontUserGuide.pdf)
 * [EQUELLA 6.4 Brightspace User Guide](EQUELLA6.4BrightspaceUserGuide.pdf)
@@ -69,13 +78,27 @@ Configuration and reference guides for system and content administrators
 * [EQUELLA 6.4 Moodle User Guide](EQUELLA6.4MoodleUserGuide.pdf)
 * [EQUELLA 6.4 Canvas User Guide](EQUELLA6.4CanvasUserGuide.pdf)
 * [EQUELLA 6.4 Searching User Guide](EQUELLA6.4SearchingUserGuide.pdf)
-* [EQUELLA Metadata Utility User Guide](EMUUserGuide.pdf)
+* [EQUELLA 6.1 Manage Resources User Guide](EQUELLA6.1ManageResourcesUserGuide.pdf)
+* [EQUELLA 6.0 Workflow Moderation User Guide](EQUELLA6.0WorkflowModerationUserGuide.pdf)
+* [EQUELLA 6.0 Content Without Borders User Guide](EQUELLA6.0ContentWithoutBordersUserGuide.pdf)
+* [EQUELLA 6.1 HTML Editor User Guide](EQUELLA6.1HTMLEditorUserGuide.pdf)
+* [EQUELLA 6.4 Copyright Resource Management CA and CLNZ User Guide](EQUELLA6.4CopyrightResourceManagementCAandCLNZUserGuide.pdf)
 
   
 
 ## Knowledge Base Articles
 * [Pearson Support Knowledge Base Articles](PearsonSupportKnowledgeBaseArticles.zip)
 
+
+## EQUELLA Release Notes
+* [EQUELLA 6.2 Release Notes](EQUELLA6.2ReleaseNotes.pdf)
+* [EQUELLA 6.3 Release Notes](EQUELLA6.3ReleaseNotes.pdf)
+* [EQUELLA 6.3 QA1 Release Notes](EQUELLA6.3QA1ReleaseNotes.pdf)
+* [EQUELLA 6.3 QA3 Release Notes](EQUELLA6.3QA3ReleaseNotes.pdf)
+* [EQUELLA 6.3 QA4 Release Notes](EQUELLA6.3QA4ReleaseNotes.pdf)
+* [EQUELLA 6.4 Release Notes](EQUELLA6.4ReleaseNotes.pdf)
+* [EQUELLA 6.4 QA1 Release Notes](EQUELLA6.4QA1ReleaseNotes.pdf)
+* [EQUELLA 6.4 QA2 Release Notes](EQUELLA6.4QA2ReleaseNotes.pdf) 
 
 ## Standards CVS Files and Taxonomy Exports
 * [Next Generation Science Standards Posted 2016](Next_Gen_Sci_CSV_and_Tax_files.zip)
