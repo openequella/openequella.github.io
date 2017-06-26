@@ -10,7 +10,6 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 ## Join the Community
 * Join our Apereo Equella google groups, mailing lists and our [Apereo Slack channel](https://apereo.slack.com)
-
 * [Community Governance Model](community/communitygovernance.md)
 
 ## Release Notes
@@ -47,37 +46,15 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 ## Server Administration
 * [Zookeeper / Equella Clustering Diagnostics](server-administration/ZookeeperClusterDiagnostics.md)
 
-## Tests
-* [Test Enabling Kaltura](tests/migration/64QA3-to-OS/TestEnablingKaltura.md)
-
 ## Release Testing Guides
 * [6.5-GA](release-testing-guides/ReleaseTestingGuide-6.5-GA.md)
 * 6.5-QA1 >>> coming soon!
 
-## Integration Guides
-* [Integration Downloads](IntegrationDownloads.md)
-* [Integration Interface Guide](guides/IntegrationInterfaceGuide.md)
-* [LTI Consumer Configuration Guide](guides/LTIConsumerConfigurationGuide.md)
-* [Blackboard Learn Integration Guide](guides/BlackboardLearnIntegrationGuide.md)
-* [Brightspace Integration Guide](guides/BrightspaceIntegrationGuide.md)
-* [Canvas Integration Guide](guides/CanvasIntegrationGuide.md)
-* [Moodle Integration Guide](guides/MoodleIntegrationGuide.md)
-* [ECHO360 Integration Guide](guides/ECHOIntegrationGuide.md)
-* [Office Integration](guides/OfficeIntegrationGuide.md)
+## Integrations
+* [Integrations](Integrations.md) landing page
 
-## APIs
-* REST API can be found at {{your Equella institution}}/apidocs.do
-* [SOAP API](api-docs/Script/api%20reference.html)
-* [Script API](api-docs/Script/api%20reference.html)
-
-## API Guides / Tutorials
-* Example code for REST, SOAP, and Advanced Scripting can be found [here](https://github.com/equella/equella.github.io/tree/master/example-scripts)
-* [Java SOAP Guide](guides/JavaSOAPTutorial.md)
-* [C# SOAP Guide](guides/CPlusSOAPTutorial.md)
-* [PHP SOAP Guide](guides/PHPSOAPTutorial.md)
-* [Scripting Guide](guides/AdvancedScriptingGuide.md)
-* [REST API Guide](guides/RestAPIGuide.md)
-* [Java REST API Guide](guides/JavaRESTTutorial.md)
+## Tests
+* [Test Enabling Kaltura](tests/migration/64QA3-to-OS/TestEnablingKaltura.md)
 
 ## Documentation Archives
 * [Documentation Archives from the commercial EQUELLA Product](documentationarchives/ArchivedDocumentationListing.md)
