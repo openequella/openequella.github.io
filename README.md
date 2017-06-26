@@ -26,7 +26,6 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 ## Optional Functionality
 * [Kaltura](optional-functionality/Kaltura.md)
 * Oracle DB
-* Office Integration
 
 ## Administrative and User Guides
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
@@ -64,6 +63,7 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Canvas Integration Guide](guides/CanvasIntegrationGuide.md)
 * [Moodle Integration Guide](guides/MoodleIntegrationGuide.md)
 * [ECHO360 Integration Guide](guides/ECHOIntegrationGuide.md)
+* [Office Integration](guides/OfficeIntegrationGuide.md)
 
 ## APIs
 * REST API can be found at {{your Equella institution}}/apidocs.do
