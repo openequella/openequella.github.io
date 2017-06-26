@@ -7,29 +7,29 @@ Equella has a number of ways to integrate with 3rd party systems
 
 ## Integration Guides
 * [Integration Interface Guide](../guides/IntegrationInterfaceGuide.md)
-* [LTI Consumer Configuration Guide](guides/LTIConsumerConfigurationGuide.md)
-* [Blackboard Learn Integration Guide](guides/BlackboardLearnIntegrationGuide.md)
-* [Brightspace Integration Guide](guides/BrightspaceIntegrationGuide.md)
-* [Canvas Integration Guide](guides/CanvasIntegrationGuide.md)
-* [Moodle Integration Guide](guides/MoodleIntegrationGuide.md)
-* [ECHO360 Integration Guide](guides/ECHOIntegrationGuide.md)
-* [Office Integration](guides/OfficeIntegrationGuide.md)
+* [LTI Consumer Configuration Guide](../guides/LTIConsumerConfigurationGuide.md)
+* [Blackboard Learn Integration Guide](../guides/BlackboardLearnIntegrationGuide.md)
+* [Brightspace Integration Guide](../guides/BrightspaceIntegrationGuide.md)
+* [Canvas Integration Guide](../guides/CanvasIntegrationGuide.md)
+* [Moodle Integration Guide](../guides/MoodleIntegrationGuide.md)
+* [ECHO360 Integration Guide](../guides/ECHOIntegrationGuide.md)
+* [Office Integration](../guides/OfficeIntegrationGuide.md)
 
 # APIs
 
 ## APIs
 * REST API can be found at {{your Equella institution}}/apidocs.do
-* [SOAP API](api-docs/Script/api%20reference.html)
-* [Script API](api-docs/Script/api%20reference.html)
+* [SOAP API](../api-docs/Script/api%20reference.html)
+* [Script API](../api-docs/Script/api%20reference.html)
 
 ## API Guides / Tutorials
 * Example code for REST, SOAP, and Advanced Scripting can be found [here](https://github.com/equella/equella.github.io/tree/master/example-scripts)
-* [Java SOAP Guide](guides/JavaSOAPTutorial.md)
-* [C# SOAP Guide](guides/CPlusSOAPTutorial.md)
-* [PHP SOAP Guide](guides/PHPSOAPTutorial.md)
-* [Scripting Guide](guides/AdvancedScriptingGuide.md)
-* [REST API Guide](guides/RestAPIGuide.md)
-* [Java REST API Guide](guides/JavaRESTTutorial.md)
+* [Java SOAP Guide](../guides/JavaSOAPTutorial.md)
+* [C# SOAP Guide](../guides/CPlusSOAPTutorial.md)
+* [PHP SOAP Guide](../guides/PHPSOAPTutorial.md)
+* [Scripting Guide](../guides/AdvancedScriptingGuide.md)
+* [REST API Guide](../guides/RestAPIGuide.md)
+* [Java REST API Guide](../guides/JavaRESTTutorial.md)
 
 # LMS - Blackboard
 
@@ -37,7 +37,7 @@ Equella has a number of ways to integrate with 3rd party systems
 The Blackboard Academic SuiteTM is a comprehensive engagement and assessment solution that grows as your institution grows. EQUELLA provides a [building block](https://github.com/equella/equella-blackboard-integration) that allows Blackboard users to search for content in EQUELLA and easily link it back to a course. This Building Block works with Blackboard Learn 9.1 SP14 and above.
 Download the EQUELLA Building Block for Blackboard Learn 9.1 SP14 and higher.  
 
-[Blackboard Integration Guide](guides/BlackboardLearnIntegrationGuide.md)
+[Blackboard Integration Guide](../guides/BlackboardLearnIntegrationGuide.md)
 
 # LMS - Moodle
 
