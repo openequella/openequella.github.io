@@ -51,7 +51,7 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * 6.5-QA1 >>> coming soon!
 
 ## Integrations
-* [Integrations](Integrations.md) landing page
+* [Integrations](integrations/Integrations.md) landing page
 
 ## Tests
 * [Test Enabling Kaltura](tests/migration/64QA3-to-OS/TestEnablingKaltura.md)
