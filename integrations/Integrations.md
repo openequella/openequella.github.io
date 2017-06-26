@@ -6,7 +6,7 @@ Equella has a number of ways to integrate with 3rd party systems
 # Guides
 
 ## Integration Guides
-* [Integration Interface Guide](guides/IntegrationInterfaceGuide.md)
+* [Integration Interface Guide](../guides/IntegrationInterfaceGuide.md)
 * [LTI Consumer Configuration Guide](guides/LTIConsumerConfigurationGuide.md)
 * [Blackboard Learn Integration Guide](guides/BlackboardLearnIntegrationGuide.md)
 * [Brightspace Integration Guide](guides/BrightspaceIntegrationGuide.md)
