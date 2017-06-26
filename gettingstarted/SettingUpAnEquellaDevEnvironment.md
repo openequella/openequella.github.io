@@ -87,9 +87,9 @@ Once SBT and Java are installed, you may need to set a JAVA_HOME environment var
 ## Get the code 
 
 ### Maven Local
-*_NOTE:  Currently the build process requires a 'local maven' repo of 'equella-deps' that is not yet available to the community.  We are preparing those dependencies to be available to the community and the work should be completed soon._*
+Currently the build process requires a 'local maven' repo of 'equella-deps', available [here](https://github.com/equella/Equella/releases/tag/6.4-Beta).
 
-Pull down the maven local repo 'equella-deps' and place it in your home directory.
+Pull down the maven local repo 'equella-deps', unzip, and place it in your home directory.
 
 ### Base code
 **Git Clone** 
@@ -140,11 +140,11 @@ cd to the {Equella repo} directory
 Under the {Equella repo}/Dev/learningedge-config folder, you'll need several artifacts:
 * Plugins folder
 * mandatory-config.properties
-..* the plugins.location needs to point to your source tree.
+..* the plugins.location needs to point to your equellaserver manifest file in the source tree.
 * optional-config.properties
 * ...
 
-For the plugins folder in learningedge-config, you can pull an example from an existing Equella install of the same version or build it yourself.  The directory tree should look like the following, rooted in << dev equella config >>/learningedge-config/plugins/:
+You can pull an example set of configs from an existing Equella install of the same version (an example 6.4-Beta version is [here](https://github.com/equella/Equella/releases/tag/6.4-Beta) or you can build it yourself.  The directory tree should look like the following, rooted in << dev equella config >>/learningedge-config/plugins/:
 ```
 com.tle.core.freetext
 -- optional.properties
