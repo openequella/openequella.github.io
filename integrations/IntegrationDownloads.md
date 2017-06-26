@@ -1,6 +1,30 @@
 [Home](https://equella.github.io/)
 
-# Integration Downloads
+# Integrations
+
+## Integration Guides
+* [Integration Interface Guide](guides/IntegrationInterfaceGuide.md)
+* [LTI Consumer Configuration Guide](guides/LTIConsumerConfigurationGuide.md)
+* [Blackboard Learn Integration Guide](guides/BlackboardLearnIntegrationGuide.md)
+* [Brightspace Integration Guide](guides/BrightspaceIntegrationGuide.md)
+* [Canvas Integration Guide](guides/CanvasIntegrationGuide.md)
+* [Moodle Integration Guide](guides/MoodleIntegrationGuide.md)
+* [ECHO360 Integration Guide](guides/ECHOIntegrationGuide.md)
+* [Office Integration](guides/OfficeIntegrationGuide.md)
+
+## APIs
+* REST API can be found at {{your Equella institution}}/apidocs.do
+* [SOAP API](api-docs/Script/api%20reference.html)
+* [Script API](api-docs/Script/api%20reference.html)
+
+## API Guides / Tutorials
+* Example code for REST, SOAP, and Advanced Scripting can be found [here](https://github.com/equella/equella.github.io/tree/master/example-scripts)
+* [Java SOAP Guide](guides/JavaSOAPTutorial.md)
+* [C# SOAP Guide](guides/CPlusSOAPTutorial.md)
+* [PHP SOAP Guide](guides/PHPSOAPTutorial.md)
+* [Scripting Guide](guides/AdvancedScriptingGuide.md)
+* [REST API Guide](guides/RestAPIGuide.md)
+* [Java REST API Guide](guides/JavaRESTTutorial.md)
 
 The following connectors and tools are provided to help you to integrate EQUELLA with other systems.
 
