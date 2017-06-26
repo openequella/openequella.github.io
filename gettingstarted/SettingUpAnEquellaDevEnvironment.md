@@ -144,7 +144,7 @@ Under the {Equella repo}/Dev/learningedge-config folder, you'll need several art
 * optional-config.properties
 * ...
 
-You can pull an example set of configs from an existing Equella install of the same version (an example 6.4-Beta version is [here](https://github.com/equella/Equella/releases/tag/6.4-Beta) or you can build it yourself.  The directory tree should look like the following, rooted in << dev equella config >>/learningedge-config/plugins/:
+You can pull an example set of configs from an existing Equella install of the same version (an example 6.4-Beta version is [here](https://github.com/equella/Equella/releases/tag/6.4-Beta)) or you can build it yourself.  The directory tree should look like the following, rooted in << dev equella config >>/learningedge-config/plugins/:
 ```
 com.tle.core.freetext
 -- optional.properties
