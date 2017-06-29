@@ -1,8 +1,8 @@
-# Release Notes for Equella 6.5-QA1
-
+# Release Notes for the historically '6.5' changes of Equella
+## PLEASE NOTE:  The major.minor version number for the '6.5' changes release of Equella has not been decided yet.
 *_In Progress_*
 
-6.5-QA1 will be the second 'Open Source' version of Equella, and is tentatively targeted for 2017 Q4 or 2018 Q1.  It will contain more features and bug fixes then might be typically expected due to the timelines of 6.4-QA3 and 6.5-GA being affected by the open sourcing efforts around Equella.
+This is targeted for 2017 Q4 or 2018 Q1. 
 
 * Canvas integration now uses Canvas content item placements which allows Equella links to open in a new window
 * Users can edit the names of selected resources that will be added to the LMS in a selection session
