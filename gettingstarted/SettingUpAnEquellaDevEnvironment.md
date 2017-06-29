@@ -1,6 +1,6 @@
 [Home](https://equella.github.io/)
 
-# Setting Up an Equella Dev Environment 
+# Setting Up an Equella Dev Environment
 
 * [Download required software](#download-required-software)
 * [Get the code](#get-the-code)
@@ -24,7 +24,7 @@ In ubuntu:
 
 This guide assumes you have SSH capabilities.  Be sure to add your public SSH key into the you git profile to access the code repos.
 
-**Download and install SBT** 
+**Download and install SBT**
 
 <http://www.scala-sbt.org/>
 
@@ -50,7 +50,7 @@ In ubuntu:
 ~$ sudo apt-get install oracle-java8-installer
 ```
 
-**Download and install Image Magick binaries** 
+**Download and install Image Magick binaries**
 
 <http://www.imagemagick.org/script/binary-releases.php>
 
@@ -84,7 +84,7 @@ Once SBT and Java are installed, you may need to set a JAVA_HOME environment var
 
 * Either [PostgreSQL](https://www.postgresql.org/), SQLServer, or Oracle database.
 
-## Get the code 
+## Get the code
 
 ### Maven Local
 Currently the build process requires a 'local maven' repo of 'equella-deps', available [here](https://github.com/equella/Equella/releases/tag/6.4-Beta).
@@ -92,7 +92,7 @@ Currently the build process requires a 'local maven' repo of 'equella-deps', ava
 Pull down the maven local repo 'equella-deps', unzip, and place it in your home directory.
 
 ### Base code
-**Git Clone** 
+**Git Clone**
 ```
 ~$ git clone git@github.com:equella/Equella.git
 ```
@@ -126,7 +126,7 @@ signer {
 **IMPORTANT**: A self registered certificate implies that the jars won't be secured and a security exception will appear when trying to launch the jars.
 To avoid this it is needed to add the domain you want to trust as a security exception in your java configuration.
 It can be done with the Java Control Panel or directly adding the domain in a new line in this file:
-${user.home}/.java/deployment/security/exception.sites 
+${user.home}/.java/deployment/security/exception.sites
 
 ## Building the code
 This guide runs sbt in non-interactive mode.  You can run in interactive mode to save rebuild time by first running 'sbt', and the another command such as 'compile'.
@@ -137,77 +137,17 @@ cd to the {Equella repo} directory
 ```
 
 ### Equella Configuration
-Under the {Equella repo}/Dev/learningedge-config folder, you'll need several artifacts:
-* Plugins folder
-* mandatory-config.properties
-..* the plugins.location needs to point to your equellaserver manifest file in the source tree.
-* optional-config.properties
-* ...
 
-You can pull an example set of configs from an existing Equella install of the same version (an example 6.4-Beta version is [here](https://github.com/equella/Equella/releases/tag/6.4-Beta)) or you can build it yourself.  The directory tree should look like the following, rooted in << dev equella config >>/learningedge-config/plugins/:
-```
-com.tle.core.freetext
--- optional.properties
-com.tle.core.imagemagick
--- config.properties
-com.tle.web.viewitem
--- mandatory.properties
-com.tle.web.viewitem.largeimageviewer
--- optional.properties
+EQUELLA requires a configuration folder (`learningedge-config`) in order to start and there
+is an sbt task which will generate configuration files suitable for running with your dev environment:
+
+```bash
+sbt prepareDevConfig
 ```
 
-**The contents of the files:**
-
-*com.tle.core.freetext/optional.properties*
-```java
-# Synchronisation Timer. The number of minutes between synchronisation attempts.
-#freetextIndex.synchroiseMinutes = 5
-
-# Index item attachments (defaults to true)
-#textExtracter.indexAttachments = true
-
-# Index IMS package contents (defaults to true)
-#textExtracter.indexImsPackages = true
-
-# Indicates if default search terms should be performed with an implicit AND or OR.
-# Defaults to AND
-#freetextIndex.defaultOperator = AND
-```
-*com.tle.core.imagemagick/config.properties*
-```java
-# ImageMagick is a set of different programs, and EQUELLA needs to know the directory that
-# contains these programs.  For example, running 'which convert' on a unix-like system may
-# return '/usr/bin/convert' so you should enter '/usr/bin'.  On a Windows system, you may
-# have installed to 'C:\ImageMagick6.4', then the programs can be found directly inside that
-# path.
-
-imageMagick.path = /usr/bin
-```
-*com.tle.web.viewitem/mandatory.properties*
-```java
-# Auditing level can be one of NONE, NORMAL or SMART.
-#
-#   NONE
-#      No audit trail
-#
-#   NORMAL
-#      Logs the every viewing of an item summary page or downloading of an attachment.
-#      This setting may create a very large number of audit log entries.
-#
-#   SMART
-#      Logs the viewing of an item or it's attachments only once per user session.
-#      This setting will increase the amount of memory required for each user session.
-#
-audit.level = NONE
-```
-*com.tle.web.viewitem.largeimageviewer/optional.properties*
-```java
-# Tile after contribution mode. Specifies how images should be handled
-# after contribution.  Valid values are AUTO_TILE_AFTER_CONTRIBUTION, 
-# PROMPT_AFTER_CONTRIBUTION and PROMPT_ONLY_WHEN_VIEWING
-
-#tileAfterContribution.mode = PROMPT_AFTER_CONTRIBUTION
-```
+This will create a configuration in the `{Equella repo}/Dev/learningedge-config` folder which you can
+modify for your needs, in particular you will need to configure `hibernate.properties` to point to
+the database that you have created for EQUELLA.
 
 ### Running a dev instance
 
