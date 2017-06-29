@@ -1,4 +1,5 @@
-# Release Notes for Equella 6.5-GA
+# Release Notes for the open source version of Equella
+## PLEASE NOTE:  The major.minor version number for the 'open source' version of Equella has not been decided yet.
 
 *_In Progress_*
 
