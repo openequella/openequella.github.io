@@ -1,4 +1,5 @@
-# Testing Guide for Equella 6.5-GA
+# Testing Guide for first open source release of Equella
+## PLEASE NOTE:  The major.minor version number for the 'open source' version of Equella has not been decided yet.
 
 *_In Progress_*
 
