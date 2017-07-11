@@ -257,25 +257,26 @@ The EQUELLA Server administration account is hidden from casual users and is dis
 1. Open a browser and enter the EQUELLA address of the hosting server with 
 ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’).
 2. The Server administration - Welcome page displays
-3. Enter a System password, then Confirm password. This password is used to access the Server administration function in future.
+2. Enter Email addresses, SMTP, No reply mail, User, SMTP password, and Confirm SMTP password.
+3. Enter a System password, then Confirm password. This password is used to access the Server administration function in the future.
 4. Click Install. The Databases page displays, with the system database listed.
 5. Click the Initialize link to start the database initialization process. The progress percentage displays on the page.  During the initialization process, the button changes to Progress. Click this button to view the progress dialog.
 6.  When the initialization process is complete, the database status changes to ‘Online’. 
 
 ## Import a New Institution
 1. Select Import institution from the navigation menu to display the Import new institution page
-2. Click Browse to select the institution zip file to import (e.g. institution-6.4-20XX-XX-XX.tar.bz2). 
-3. Click to start the importation. The Import new institution page displays. 
+2. Click Browse to select the institution zip file to import (e.g. institution-....tgz). 
+3. Click to start the import. The Import new institution page displays. 
 The Import New Institution page allows for arbitrary base URLs and the renaming of the institution.
 4. To continue the importation, if multiple databases have been configured, click Select Database and select the required database in the Target database field. Otherwise the system defaults to the database set up during installation.
 5. Enter an Institution name for the institution. The institution name must be unique for the EQUELLA server.
 6. Enter an Institution URL for the institution. 
 Server administrators are able to give institutions an arbitrary base URL. This URL may contain a base URL context. For example, the following base URLs would be valid for institutions on the same server: 
-* http://some.host.com/ 
-* http://another.host.com/ 
-* http://another.host.com/with/a/context/ 
-* http://another.host.com/with/another/context/ 
-* http://on.a.different.port:8080/ 
+  * http://some.host.com/ 
+  * http://another.host.com/ 
+  * http://another.host.com/with/a/context/ 
+  * http://another.host.com/with/another/context/ 
+  * http://on.a.different.port:8080/ 
 
 The arbitrary base URL can be entered in the Institution URL edit box. The Institution URL should be fully qualified. It is not possible to overwrite the other institution’s URL space, for example: ‘http://equella.myinstitution:4012/doco/qa2/’ will conflict with  ‘http://equella.myinstitution:4012/doco/’. This will be disallowed and will result in the following message:
 **‘URL must not 'overwrite' an existing institution's URL space, in this case http://equella.myinstitution:4012/doco/qa2/. This may cause this institution to work incorrectly’.**
@@ -283,7 +284,7 @@ The arbitrary base URL can be entered in the Institution URL edit box. The Insti
 7. Enter a unique Filestore folder name. This is optional; if a name is not entered a folder with a randomly generated name will be automatically generated for the institution in the path-to-equella\filestore\Institutions folder.
 8. Enter a new Admin password for the institution administrator. If left blank, the institution will inherit the password from the imported institution. (NOTE: This password is used to log in to the Institution using the TLE_ADMINISTRATOR login.)
 9. Confirm the password.
-10. Click Import new institution then click OK to confirm. An Importing… progress dialog that indicates the importation progress is displayed. When importation is complete the Return of Institution Management button becomes active.
+10. Click Import new institution then click OK to confirm. An Importing… progress dialog that indicates the import progress is displayed. When the import is complete the Return of Institution Management button becomes active.
 11. Click Return to Institution Management to view the new institution on the Institutions page.
 
 Installation of the EQUELLA server is now complete. Login to the institution as the TLE_ADMINISTRATOR to administer and configure the institution.
