@@ -149,14 +149,14 @@ This information is required to successfully install EQUELLA. Incomplete details
 
 ### PLACEHOLDER FOR INSTRUCTIONS ON CREATING/OBTAINING INSTALLATION FILES FOR OPEN EQUELLA VIA APEREO
 
-1.  Insert Steps required to get install files 
+1.  ... In Progress...  Need to insert steps required to get install files 
 
 ### Begin EQUELLA Installation 
 
 This procedure describes installing EQUELLA using a graphical interface. The examples shown are using Windows although other GUIs such as X-windows will be similar. The wizard pages provide information on the required details. Read each page before entering information.
 
 1. PLACEHOLDER FOR WHERE THE INDIVIDUAL CAN DOWNLOAD THE equella-6.4-GAx Installer file.
-2. Extract the equella-6.4 -installer-20XXxxxx.zip file to a temporary directory.
+2. Extract the equella-installer-xxxx.zip file to a temporary directory.
 3. Navigate to the installer temporary directory and double-click on the enterprise-install file to start the installation. 
 4. Click Next to display the Java Development Kit page.
 5. Click Browse and navigate to the directory in which the JDK is installed.
@@ -165,30 +165,31 @@ This procedure describes installing EQUELLA using a graphical interface. The exa
 8. Click Next to display the Database Server page.  The database server group and database type must be entered to configure EQUELLA with an empty database ready for use. 
 9. Select the database type from the drop-down list (e.g. ‘SQL Server’). 
 10. Select a Database Server from the following options:
-* This machine—select this option if the database server is on the local machine.
-* A different server—select this option if the database server is not on this machine and enter the IP address or hostname of the server. 
-11. Click Next  to display the Database Authentication page. 
+* This machine — select this option if the database server is on the local machine.
+* A different server — select this option if the database server is not on this machine and enter the IP address or hostname of the server. 
+11. Click Next to display the Database Authentication page. 
 12. Enter the EQUELLA Database Name (the default value is ‘equella’).
 13. Enter the Database Username (the default value is ‘equellauser’). 
 (NOTE: For Oracle the database username must start with an alphabetic character.)
 14. Enter the Database Password used to access the database. This is the password used to set up the database. A confirmation dialog is displayed.
 15. Re-enter the password to confirm the password is correct. 
 16. Click Next to display the Web Server Settings page.  The web server settings are used to allow web access to EQUELLA.
-17. Enter the Institution Administration URL—enter the DNS name or IP address and port 
+17. Enter the Institution Administration URL — enter the DNS name or IP address and port 
 18. Select an Address Binding from the following options:
-* Bind to all network interfaces—select this option if EQUELLA is the only web server running on the machine.
-* Restrict to given hostname or IP address—select this option if EQUELLA is sharing the machine with other web servers.
+* Bind to all network interfaces — select this option if EQUELLA is the only web server running on the machine.
+* Restrict to given hostname or IP address — select this option if EQUELLA is sharing the machine with other web servers.
 19. Click Next to display the EQUELLA Manager page. The EQUELLA Manager is a separate service with its own authentication and port number.
-20. Enter the password for the EQUELLA Manager website—choose a password to secure the EQUELLA Manager and note the password for future upgrades.
-21. Enter the EQUELLA Manager website port number—3000 is the default value. If this port is currently used set the port value to any unused port number.
+20. Enter the password for the EQUELLA Manager website — choose a password to secure the EQUELLA Manager and note the password for future upgrades.
+21. Enter the EQUELLA Manager website port number — 3000 is the default value. If this port is currently used set the port value to any unused port number.
 22. Click Next to display the Proxy Server Settings page
 23. Specify whether the EQUELLA server uses a proxy server to provide external access. Select from the following options:
-* Direct Connection—select if no proxy server is used then select the Next button to skip the Proxy Server Configuration page and display the Memory Management page
-* Proxy Server—select then select the Next button to display the Proxy Server Settings page
-24. To entry Proxy Server Settings
+* Direct Connection — select if no proxy server is used then select the Next button to skip the Proxy Server Configuration page and display the Memory Management page
+* Proxy Server — select then select the Next button to display the Proxy Server Settings page
+24. Proxy Server Settings
 * Enter the Proxy Host and Proxy Port.
 * Enter the Proxy Username and Proxy Password for proxy authentication. Leave blank if there is none.
-* Click Next to display the Memory Management page. The memory usage of EQUELLA can be set on this page. It is recommended that the default settings Minimum Memory Usage: 96m (MB) and Maximum Memory Usage: 512m (MB) are used. These provide suitable settings for machines with 1024 MB of memory where EQUELLA is the only application running. The Minimum Memory Usage should never be less than 96 MB nor should the Maximum Memory exceed the amount of physical RAM available on the server. Memory should be allocated to allow sufficient memory for all applications being run on the server.
+* Click Next to display the Memory Management page. 
+24. Memory Management page - The memory usage of EQUELLA can be set on this page. It is recommended that the default settings Minimum Memory Usage: 96m (MB) and Maximum Memory Usage: 512m (MB) are used. These provide suitable settings for machines with 1024 MB of memory where EQUELLA is the only application running. The Minimum Memory Usage should never be less than 96 MB nor should the Maximum Memory exceed the amount of physical RAM available on the server (the RAM used for the OS should be taken into consideration as well). Memory should be allocated to allow sufficient memory for all applications being run on the server.
 (NOTE: For 32-bit systems, Java processes on Windows are limited to 1536 MB.)
 25. Click Next to display the ImageMagick page.
 26. Click Browse and navigate to the directory that contains the ImageMagick files. 
@@ -225,12 +226,7 @@ The EQUELLA server is now started but may take a few minutes to be operational.
 Once the server has been registered and started, the success of the installation can be checked by opening the Server administration account. 
 
 #### Linux Installations
-1. To change directory to the installation directory, open a command prompt and run the following commands:
-```
-cd <path-to-equella>/manager
-chmod 755 manager jsvc equellaserver
-```
-2. To start the service, navigate to the EQUELLA install directory, then the manager folder (e.g. path-to-equella/manager). From this folder, the server can be started by running the commands:
+1. To start the service, navigate to the EQUELLA install directory, then the manager folder (e.g. path-to-equella/manager). From this folder, the server can be started by running the commands:
 ```
 ./manager start
 ./equellaserver start
