@@ -83,6 +83,7 @@ Configuration and reference guides for system and content administrators
 * [EQUELLA 6.0 Content Without Borders User Guide](EQUELLA6.0ContentWithoutBordersUserGuide.pdf)
 * [EQUELLA 6.1 HTML Editor User Guide](EQUELLA6.1HTMLEditorUserGuide.pdf)
 * [EQUELLA 6.4 Copyright Resource Management CA and CLNZ User Guide](EQUELLA6.4CopyrightResourceManagementCAandCLNZUserGuide.pdf)
+* [EQUELLA Bulk Importer Overview](ebiOverview.md)
 * [EQUELLA Bulk Importer](ebi_manual.pdf)
 
   
