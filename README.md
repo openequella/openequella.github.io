@@ -17,7 +17,7 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [6.5-QA1](release-notes/ReleaseNotes-6.5-QA1.md)
 
 ## Getting Started
-* [Installing Equella](gettingstarted/InstallingEquella.md)
+* [Installing Equella - Quick Start Guide](gettingstarted/InstallingEquella.md) 
 * [Setting up a Development Environment](gettingstarted/SettingUpAnEquellaDevEnvironment.md)
 * [Setting up a Test Environment](gettingstarted/SettingUpATestEnvironment.md)
 * [Hibernate Best Practices](gettingstarted/EquellaHibernateBestPractices.md)
