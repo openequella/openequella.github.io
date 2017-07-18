@@ -6,6 +6,7 @@ This script is part of a suite of performance tests that can be used as a basis 
 This particular JMeter script uses an Equella OAuth implicit grant to make various REST API calls to 'walk' an item through various stages in Equella.  The key feature is the 'Flow Control' of the JMeter properties file.  It allows you to enable/disable certain actions the script will take against a created Equella item.
 
 Assuming 1 user thread:
+* Download the jmx and properties files from the github repo.
 * Create a test user starting at 1 (mytestuser1)
 * Give that user the Equella permissions to CREATE_ITEM, DISCOVER_ITEM, EDIT_ITEM, DELETE_ITEM, CREATE_COMMENT, VIEW_COMMENT, DELETE_COMMENT, NEW_VERSION_ITEM
 * Use this user in the jmx properties file for username (ie you'd specify 'mytestuser', without the '1').
@@ -19,4 +20,5 @@ Assuming 1 user thread:
   * eqTestPdf.PDF
   * eqTestTxt.TXT
 * Specify the attachment details in the properties file via ```attachment.*```
+* Besides the highlighted properties / setup note, review / configure the properties file to match your instituion.
 * Test drive the script!
