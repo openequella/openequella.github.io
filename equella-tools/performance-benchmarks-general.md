@@ -1,7 +1,12 @@
 # Performance Benchmarks > General Guide
 Disclaimer:  The performance benchmark scripts are provided as-is and without warrenty, and meant for an enviroment without client / user data (ie some of the scripts are invasive / destructive).  That being said, the scripts use standard Equella APIs and Equella web UI screens and efforts have been made to externalize the scripts that can change across institutions.
 
-## Test platform
+* [Test Platform]()
+* [Test Institution]()
+* [Test Assets]()
+* [Performing Tests]()
+
+## Test Platform
 All scripts utilize JMeter and were developed on a Ubuntu enviroment with JMeter 2.10 and Oracle Java 7u25.  I haven't found an issue running with later versions of JMeter or Java, but some of the file handling gets wierd when run on Windows.
 
 ### Enable PUTing an Attachment
