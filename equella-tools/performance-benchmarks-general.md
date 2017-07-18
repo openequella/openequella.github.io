@@ -56,3 +56,10 @@ Github repo folder:  [Test Assets](https://github.com/equella/Equella-Tools/tree
   * Rebuilt and in the repo
 * toycom13.mpeg
   * About 6.3 MB
+
+## Performing Tests
+JMeter needs to be invoked with the JMX script file and the associated, configured, properties file.  If developing tests, or smoke testing an institution, you can safely run JMeter in GUI mode.  Larger test efforts will create memory issues in the JMeter GUI, and it's best to run them in JMeter headless mode.  An example JMeter GUI invocation is below (to run in headless mode, add ```--nongui```):
+```
+/path/to/my/jmeter --addprop myCustomSetup.properties --logfile myTestResults.jtl --testfile myPerfTest.jmx
+```
+
