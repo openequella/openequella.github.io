@@ -9,7 +9,7 @@ Assuming 1 user thread:
 * Download the jmx and properties files from the github repo.
 * Create a test user starting at 1 (mytestuser1)
 * Give that user the Equella permissions to CREATE_ITEM, DISCOVER_ITEM, EDIT_ITEM, DELETE_ITEM, CREATE_COMMENT, VIEW_COMMENT, DELETE_COMMENT, NEW_VERSION_ITEM
-* Use this user in the jmx properties file for username (ie you'd specify 'mytestuser', without the '1').
+* Use this user in the jmx properties file for username and password (ie you'd specify 'mytestuser', without the '1').
 * Setup an OAuth implicit grant and specify the ID in the properties file
 * Modify the ```oauth.client.app.confirmation``` property to reference the name of your OAuth implicit grant
 * Ensure a schema / collection is setup that matches the metadata presented in the script samplers.  Specify the uuid of the collection in the properties file via ```collection.uuid```.
