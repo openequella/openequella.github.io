@@ -5,7 +5,7 @@ Equella has a number of ways to integrate with 3rd party systems
 
 # Guides
 
-## Integration Guides
+## Integration Configuration Guides
 * [Integration Interface Guide](../guides/IntegrationInterfaceGuide.md)
 * [LTI Consumer Configuration Guide](../guides/LTIConsumerConfigurationGuide.md)
 * [Blackboard Learn Integration Guide](../guides/BlackboardLearnIntegrationGuide.md)
@@ -14,6 +14,14 @@ Equella has a number of ways to integrate with 3rd party systems
 * [Moodle Integration Guide](../guides/MoodleIntegrationGuide.md)
 * [ECHO360 Integration Guide](../guides/ECHOIntegrationGuide.md)
 * [Office Integration](../guides/OfficeIntegrationGuide.md)
+
+## Integration User Guides
+* [Integrated LMS User Guide](../guides/IntegratedLMSUserGuide.md)
+* [Blackboard Learn User Guide](../guides/BlackboardLearnUserGuide.md)
+* [Brightspace User Guide](../guides/BrightspaceUserGuide.md)
+* [Canvas User Guide](../guides/CanvasUserGuide.md)
+* [Moodle User Guide](../guides/MoodleUserGuide.md)
+
 
 # APIs
 
