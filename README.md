@@ -43,6 +43,10 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Harvester Profile Configuration Guide](guides/HarvesterProfileConfigurationGuide.md)
 * [HTML Editor Plug-in Guide](guides/HTMLEditorPluginGuide.md)
 * [Remote Repositories Configuration Guide](guides/RemoteRepositoriesConfigurationGuide.md)
+* [Clustering Configuration Guide](guide/ClusteringConfigurationGuide.md)
+* [Embedded Metadata Extraction User Guide](guide/EmbeddedMetadataExtractionUserGuide.md)
+* [Metadata Schema Configuration Guide](guide/metadataSchemaConfigurationGuide.md) 
+* [Glossary of Terms](guides/GlossaryOfTerms.md)
 
 ## Server Administration
 * [Zookeeper / Equella Clustering Diagnostics](server-administration/ZookeeperClusterDiagnostics.md)
@@ -56,9 +60,6 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 ## Tests
 * [Test Enabling Kaltura](tests/migration/64QA3-to-OS/TestEnablingKaltura.md)
-
-## Documentation Archives
-* [Documentation Archives from the commercial EQUELLA Product](documentationarchives/ArchivedDocumentationListing.md)
 
 
 
