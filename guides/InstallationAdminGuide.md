@@ -115,12 +115,90 @@ Install the program, taking note of the name and location of the folder in which
 Install the program, taking note of the name and location of the folder in which the avconv and avprobe executable files have been installed, as the EQUELLA installation will require these details to properly configure and run EQUELLA.
 
 ### To install Libav for Windows
-1. Go to <http://builds.libav.org/windows/release-gpl/> and download the relevant release build. 
+1. Go to <http://builds.libav.org/windows/release-gpl/> and download the relevant release build. (e.g. libav-11.3-win64.7z)
 2. Unzip to a directory of choice (e.g. Program Files) taking note of the name and location of the folder in which the avconv.exe and avprobe.exe files have been installed, as the EQUELLA installation will require these details to properly configure and run EQUELLA.
-### To install and configure Libav for Linux
+3. You will use that folder location plus "win64/usr/bin/ to direct Equella to that version of libav (either via the installer or in optional-config.properties). Note: Make sure the path you enter in the installation contains the following avconv.exe and avprobe.exe
+
+### To install and configure Libav for Linux - Ubuntu
 1. Install Libav from <https://libav.org/download.html>
 libvo_aacenc and libx264 dependencies are also required for video previews to be generated correctly. Take note of the name and location of the folder in which the avconv and avprobe executables have been installed, as the EQUELLA installation will require these details to properly configure and run EQUELLA.
 
+To install:
+1. run 'sudo apt-get install yasm'
+2. run 'sudo apt-get install libvo-aacenc-dev' (that's the audio codec we need)
+3. run 'sudo apt-get install libx264-dev' (that's the video codec we encode with)
+4. cd to the directory you want to download libav into.
+5. download the tar.gz file (e.g. <https://libav.org/releases/libav-11.3.tar.gz>)
+6. run 'tar -zxf libav-11.3.tar.gz'
+7. cd into libav-11.3
+8. run './configure --enable-libvo-aacenc --enable-version3 --enable-libx264 --enable-gpl'
+9. run 'make'
+10. run 'sudo make install'
+
+To remove:
+1. cd in the libav-11.3 directory:
+2. run 'sudo make uninstall'
+3. run 'sudo apt-get remove libx264-dev'
+4. run 'sudo apt-get remove libvo-aacenc-dev'
+5. run 'sudo apt-get remove yasm'
+6. delete the libav-11.3 directory and libav-11.3.tar.gz file.
+
+### To install and configure Libav for Linux - CentOS 7
+
+You should ensure compatibility of your
+specific operating system and adherence to any applicable laws and regulations before downloading the packages outlined here. 
+
+To install the prerequisites for Equella  on CentOS:
+* sudo yum update
+* sudo yum install wget from "http://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/#"
+  * cd /opt/
+  * wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F;
+  oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz"
+  * tar -xzf jdk-8u91-linux-x64.tar.gz
+* From "https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-centos-7"
+  * sudo yum install postgresql-server postgresql-contrib
+  * sudo postgresql-setup initdb
+  * via sudo vi /var/lib/pgsql/data/pg_hba.conf, change 'ident' to 'md5'
+  * sudo systemctl start postgresql
+  * sudo systemctl enable postgresql
+  * change the postgres password
+  * Create a user for equella (I did a superuser), and an empty database.
+* sudo yum install ImageMagick
+* Drop an existing 6.4-QA1 install of Equella into the OS, and confirm Equella runs.
+* Open your port for tomcat:
+  * firewall-cmd --permanent --add-port=8641/tcp
+  * firewall-cmd --reload
+
+Note: At this point, check your Equella install that it works and images can be thumbed.
+
+To install Libav:
+* Confirm the 'extras' repo is enabled (sudo yum repolist)
+* sudo yum install epel-release
+* sudo yum install yasm
+* Install aacenc (from https://underhost.com/blog/install-ffmpeg-on-centos/)
+  * wget http://downloads.sourceforge.net/opencore-amr/vo-aacenc-0.1.3.tar.gz (md5 b574da1d92d75fc40b0b75aa16f24ac4)
+  * tar xzvf vo-aacenc-0.1.3.tar.gz
+  * cd vo-aacenc-0.1.3
+  * ./configure –disable-shared
+  * make
+  * make install
+* Install X264 (from https://underhost.com/blog/install-ffmpeg-on-centos/)
+* git clone git://git.videolan.org/x264.git
+* cd x264
+* git checkout stable
+* ./configure –enable-static
+* make
+* make install
+* Download libav (For Example: 11.3 - libav-11.3.tar.gz, md5: 1a2eb461b98e0f1d1d6c4d892d51ac9b)
+* Extract the tar ball, and cd to the directory
+* Run
+* Run 'avconv' from your home directory to ensure it's installed
+* Tie in the libav install path to Equella via optional-config.properties > libav.path
+
+Note:
+* If you get an error about gcc not being able to make an executable file, run 'sudo yum install gcc'.
+* If you get an error about x264 not found, make sure you have x264.pc install directory (mine was /usr/local/lib/pkgconfig) set in your
+PKG_CONFIG_PATH environment variable. You  may have to explicitly export the path at the top of the configure script for libav to find x264.
 
 ## Install EQUELLA
 
