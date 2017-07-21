@@ -1,5 +1,4 @@
-# Testing Guide for first open source release of Equella
-## PLEASE NOTE:  The major.minor version number for the 'open source' version of Equella has not been decided yet.
+# Testing Guide for Equella 6.5-GA
 
 *_In Progress_*
 
@@ -281,3 +280,19 @@ One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
 * Functional testing:  TBD
 * Performance testing: TBD
 * Regression testing: TBD
+
+### Still need to document...
+* Canvas integration now uses Canvas content item placements which allows Equella links to open in a new window
+* Users can edit the names of selected resources that will be added to the LMS in a selection session
+* A new checkbox "Select all attachments" has been added to the "Add to External System" page.
+* Links to content on the Find Uses page will open in a new window.
+* Within the Course Builder in Brightspace, the user must select a module to edit before launching the integration 
+session in Equella. Equella did not automatically select the module selected in Brightspace in the Equella selection session.
+* A new permission is required to start an integration selection session in Equella (still buggy).  This permission will be granted to logged in users by default.
+* Admins can alter the number of attempts the URL checker task will make before it marks a URL as disabled. urlChecker.triesUntilDisabled = 1000 in optional config properties.
+* Fix concurrency issue when importing an institution (primarily an issue with SQL Server).  This has been in release notes as fixed before, but it was still an issue.
+* The TLE_ADMINISTRATOR account is not required to accept DRM agreements.
+* Users were able to access inactive copyright attachments via using a direct URL (e.g. a link was obtained when the attachment was active -> that link still works for the user when the attachment becomes inactive)
+* The item moderation REST API would return a random workflow node status each time it was invoked.
+* On the DRM acceptance page, links to item history and item versions no longer show.
+
