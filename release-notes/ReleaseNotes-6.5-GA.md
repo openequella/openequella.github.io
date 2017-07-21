@@ -1,9 +1,8 @@
-# Release Notes for the open source version of Equella
-## PLEASE NOTE:  The major.minor version number for the 'open source' version of Equella has not been decided yet.
+# Release Notes for Equella 6.5-GA
 
 *_In Progress_*
 
-6.5-GA is the initial Open Source version of Equella.  Changes have focused on scrubbing the code to align with open source licensing.  The build process was also overhauled to use sbt (Simple Build Tool) and not require an IDE (Integrated Development Environment) to build / develop code.  No new features or bug fixes were included.
+6.5-GA is the initial Open Source version of Equella, coupled with features and bug fixes that have been worked on over the past year.  Open Source changes have focused on scrubbing the code to align with open source licensing.  The build process was also overhauled to use sbt (Simple Build Tool) and not require an IDE (Integrated Development Environment) to build / develop code. 
 
 This is meant to detail the functional changes exposed to the user experience.  Backend changes and testing notes are in the release-testing-guides for this release.
 
