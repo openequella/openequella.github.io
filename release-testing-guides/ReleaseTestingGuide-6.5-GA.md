@@ -33,14 +33,15 @@ Please refer to the 6.5-GA release notes for more details.
   * Ensure the admin console launches and basic CRUD ops on entities (ie collections) work
   * Functional testing:  Confirm the reporting suite of tests to ensure all Data Source and Data Source types can be run, both from the BIRT Report Designer and directly from Equella.
 * Performance testing: N/A
-  * Confirm no lag in running reports 
+  * Confirm no lag in running reports
 * Regression testing: N/A
 
 ### #84 Re-implement file upload features
-* In #80 the code was fixed to not require the special commons upload jar, which is working but it now lacks a couple of features which we need to be re-implemented, most likely in javascript.  Changes to functionality include:
-  * File upload progress bars
-  * Fast failure for invalid uploads (invalid mime type)
-* Also the multipart parsing is now handled by tomcat which has some maximum sizes which need configuring somewhere. <<<< Need to review.
+File uploads were re-implemented using AJAX instead of multipart and client side progress instead of server side.
+* Regression testing:
+  * Ensure progress bars still work
+  * Make sure drag and drop still works
+  * Ensure that any restrictions on file size and mime type still work (wizard control)
 
 ### #83 (Upgrade commons-beanutils)
 Need to review for testing impact.  No UI / functionality changes
@@ -116,17 +117,13 @@ Work on jar signing, in place editor applet, BIRT, dev config setup, and ant to 
 * Performance testing - N/A
 
 ### #59 ( Replace use of hibernate-beanlib )
-We use beanlib-hibernate for cloning a tree of interconnected hibernate objects, in particular it's used in two particular places:
-* Attachments and Navigation tree nodes
-* Workflow nodes
+`beanlib-hibernate` was used for cloning a whole hibernate object tree but it had code which we no longer
+had the source too, so it was replaced with the use of xstream + special hibernate converters.
 
-The library was patched by us but we don't have the source for our patches + the it doesn't play nicely with the new flat classpath because it uses an incompatible version of cglib.
-* Functional testing
-  * CRUD operations in the navigation tree nodes
-  * CRUD operations in the workflow editor
-  * ??? other test cases for Navigation trees, workflow, others?
-* Regression testing - N/A
-* Performance testing - N/A
+* Regression testing:
+  * Clone a workflow
+  * Clone an item (attachments and navigation tree in particular)
+  * Import/Export/Clone institution
 
 ### #55 ( Research need for Kaltura and replace/remove )
 The Kaltura Java client API is not Apache-license-friendly.  It was moved into it's own repo, but can easily be integrated back into Equella per client.  Additional effort is noted to turn this into truly a 'drop in' plugin.
@@ -159,7 +156,7 @@ The Kaltura Java client API is not Apache-license-friendly.  It was moved into i
 ### #44 / #46 ( Installer / Upgrader built via SBT )
 * Functional testing:  TBD
 * Performance testing: TBD
-* Regression testing: 
+* Regression testing:
   * Installer works
   * Upgrade manager testing from pre 6.5-GA to 6.5-GA+ upgrades
 
@@ -169,7 +166,8 @@ The Kaltura Java client API is not Apache-license-friendly.  It was moved into i
 * Regression testing: TBD
 
 ### #41 ( Remove eCommerce )
-* Functional testing:  TBD
+* Functional testing:
+  * Upgrade/Import from an EQUELLA which had some eCommerce data
 * Performance testing: TBD
 * Regression testing: TBD
 
@@ -181,14 +179,14 @@ The Kaltura Java client API is not Apache-license-friendly.  It was moved into i
 ### #33 ( Upgrade ROME )
 * Functional testing:  TBD
 * Performance testing: TBD
-* Regression testing: 
+* Regression testing:
   * Test RSS and ATOM feeds
 
 ### #27 ( Work out what to do about hardcoded SHA256 hash salt )
-* Functional testing: 
+* Functional testing:
   * Set the equella.salt property to various values and test
 * Performance testing: TBD
-* Regression testing: 
+* Regression testing:
   * Ensure the default salt property is the original hardcoded salt.
 
 ### #5 ( Remove license validation components )
@@ -243,28 +241,28 @@ https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888
 * Performance testing: TBD
 * Regression testing: TBD
 
-### EQ-32 batched audit log removal 
+### EQ-32 batched audit log removal
 * Functional testing:  TBD
 * Performance testing: TBD
 * Regression testing: TBD
 
-### EQ-33 don't use the public bookmark, use the actual params 
+### EQ-33 don't use the public bookmark, use the actual params
 * Functional testing:  TBD
 * Performance testing: TBD
 * Regression testing: TBD
 
-### EQ-34 use string URLs instead of URL URLs 
+### EQ-34 use string URLs instead of URL URLs
 * Functional testing:  TBD
 * Performance testing: TBD
-* Regression testing: 
+* Regression testing:
   * Access the file manager, and perform CRUD operations.
 
-### EQ-2045 use LIST_COURSE_INFO priv, not LIST_COURSE 
+### EQ-2045 use LIST_COURSE_INFO priv, not LIST_COURSE
 * Functional testing:  TBD
 * Performance testing: TBD
 * Regression testing: TBD
 
-### EQ-2038 course API refactor 
+### EQ-2038 course API refactor
 Activation, Course,
 * Functional testing:  TBD
 * Performance testing: TBD
@@ -286,7 +284,7 @@ One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
 * Users can edit the names of selected resources that will be added to the LMS in a selection session
 * A new checkbox "Select all attachments" has been added to the "Add to External System" page.
 * Links to content on the Find Uses page will open in a new window.
-* Within the Course Builder in Brightspace, the user must select a module to edit before launching the integration 
+* Within the Course Builder in Brightspace, the user must select a module to edit before launching the integration
 session in Equella. Equella did not automatically select the module selected in Brightspace in the Equella selection session.
 * A new permission is required to start an integration selection session in Equella (still buggy).  This permission will be granted to logged in users by default.
 * Admins can alter the number of attempts the URL checker task will make before it marks a URL as disabled. urlChecker.triesUntilDisabled = 1000 in optional config properties.
@@ -295,4 +293,3 @@ session in Equella. Equella did not automatically select the module selected in 
 * Users were able to access inactive copyright attachments via using a direct URL (e.g. a link was obtained when the attachment was active -> that link still works for the user when the attachment becomes inactive)
 * The item moderation REST API would return a random workflow node status each time it was invoked.
 * On the DRM acceptance page, links to item history and item versions no longer show.
-
