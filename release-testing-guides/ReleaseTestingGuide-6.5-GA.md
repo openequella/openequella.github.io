@@ -291,17 +291,61 @@ One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
 * Performance testing: N/A
 * Regression testing: TBD
 
-### Still need to document...
-* Canvas integration now uses Canvas content item placements which allows Equella links to open in a new window
-* Users can edit the names of selected resources that will be added to the LMS in a selection session
-* A new checkbox "Select all attachments" has been added to the "Add to External System" page.
-* Links to content on the Find Uses page will open in a new window.
-* Within the Course Builder in Brightspace, the user must select a module to edit before launching the integration
-session in Equella. Equella did not automatically select the module selected in Brightspace in the Equella selection session.
-* A new permission is required to start an integration selection session in Equella (still buggy).  This permission will be granted to logged in users by default.
-* Admins can alter the number of attempts the URL checker task will make before it marks a URL as disabled. urlChecker.triesUntilDisabled = 1000 in optional config properties.
-* Fix concurrency issue when importing an institution (primarily an issue with SQL Server).  This has been in release notes as fixed before, but it was still an issue.
-* The TLE_ADMINISTRATOR account is not required to accept DRM agreements.
-* Users were able to access inactive copyright attachments via using a direct URL (e.g. a link was obtained when the attachment was active -> that link still works for the user when the attachment becomes inactive)
-* The item moderation REST API would return a random workflow node status each time it was invoked.
-* On the DRM acceptance page, links to item history and item versions no longer show.
+### Canvas integration now uses Canvas content item placements which allows Equella links to open in a new window
+* Functional testing: 
+  * Add content to Canvas (from all available methods: push from Equella, navigation menu, resource selection, html editor button) and ensure the opened content opens up in a new browser tab
+
+### Users can edit the names of selected resources that will be added to the LMS in a selection session
+* Functional testing: 
+  * Edalex has already begun testing.  Need to test with Blackboard, Canvas, Brightspace, Moodle.  When adding content to the LMS (NOT via push from Equella method) the user is given the option to edit the names of the selected items and attachments that will appear in the LMS. For Moodle, the two main integration types should be tested (selectOrAdd and structured).
+
+### A new checkbox "Select all attachments" has been added to the "Add to External System" page.
+* Functional testing:
+  * On the "add to external system" item page there is a new checkbox to select all of the attachments on the item for pushing. Any LMS will do as it's just a client side script to check the boxes.
+
+### Links to content on the Find Uses page will open in a new window.
+* Functional testing:
+  * Doesn't matter about which LMS is selected, just make sure that clicking on the link to the LMS content appears in a new tab.
+
+### Course builder in brightspace not using selected module
+* Functional testing:
+  * Using the course builder in Brightspace, select a module/folder other than the top one.  When you launch the Equella tool, the folder list on the RHS should have the appropriate folder selected by default.
+
+### New permission for selection sessions
+* Functional testing:
+  * Using an LMS (should probably try all of them...) try to add content into the LMS without the INTEGRATION\_SELECTION\_SESSION permission granted. (it's actually granted by default when you upgrade to 6.5) -> should be presented with an error screen that does *not* include the Equella LHS menu.
+  * Ensure that users with the permission can select and add Equella content into the LMS.
+ * Regression testing:
+   * After successfully adding content to the LMS, try to view the content in the LMS as a user that does *not* have the INTEGRATION\_SELECTION\_SESSION privilege (but does have relevant item viewing privs) -> Should succeed
+
+### URL checker number of attempts
+URL checker will disable links to external sites (e.g. Link attachments) if the URL check fails 10 times, and will send email notifications to item owners if the check fails 5 times.  This hard coded settings are now configurable in optional-config.properties
+```
+urlChecker.triesUntilWarning = 3
+urlChecker.triesUntilDisabled = 5
+```
+* Functional testing:
+  * Set the values to a low number and run the URL checker task several times (scheduledtasksdebug.do page).  Note that after each run you need to hack the database to set the last checked date of the URL (referenced\_url table) to something old as otherwise it will refuse to re-check. -> Ensure links are disabled and notifications are sent after the relevant number of tries.  Note that to send email notifications another task must be run to send the emails (CheckEmailsTask (?))
+
+### SQL Server concurrency issue
+* Functional testing:
+  * Import institution containing referenced URLs (that don't already exist) but occur multiple times in the imported items into an Equella using a SQL Server database. -> Should succeed and not throw an error about deadlocks or stale URL objects etc
+* Performance testing:
+  * Unfortunately the only possible fix was to remove the concurrent import of 4 items at a time, so performance will be affected.  An institution import is not exactly something the user will sit an watch, but it should not blow out to take several hours. (unless it was already doing so...)
+
+### The TLE\_ADMINISTRATOR account is not required to accept DRM agreements
+* Functional testing:
+  * When logged into Equella as TLE\_ADMINISTRATOR the user should never see a DRM agreement page on DRM protected items.
+
+### Bypass copyright activation via direct URL bug
+Users were able to access inactive copyright attachments via using a direct URL
+* Functional testing:
+  * Obtained a link to a copyright (e.g. CAL) protected attachment when it activated.  Then delete that activation and paste in the link copied earlier into the browser -> should receive an error saying that the attachment is not activated.
+
+### The item moderation REST API would return a random workflow node status each time it was invoked
+* Functional testing:
+  * Using an item in moderation, visit the REST moderation endpoint (/api/item/[uuid]/[version]/moderation) and click the browser refresh several times ->  The returned content should stay the same and should be a valid representation of the item's current moderation status.
+  
+### On the DRM acceptance page, links to item history and item versions no longer show
+* Functional testing:
+  * Visit a DRM protected item in Equella and ensure there are no links on the RHS to view the item history and other similar links.
