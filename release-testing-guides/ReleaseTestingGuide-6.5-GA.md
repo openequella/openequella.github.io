@@ -197,15 +197,18 @@ The Kaltura Java client API is not Apache-license-friendly.  It was moved into i
 
 ### Fixes arising from cherry pick
 https://github.com/equella/Equella/commit/64e85c2b4560580e517474c302b3d543ce79c34f
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+* Functional testing:  N/A
+* Performance testing: N/A
+* Regression testing: 
+  * Ensure Course and Activation REST endpoints are available and a simple request works on either.
+  * Ensure the "self" link on an activation is correct.
 
 ### Upgrade javax.servlet, flickr, datatools, sqlserver jdbc, kalturaclient
 https://github.com/equella/Equella/commit/2b18a3707c31a5c643803560570073db445e8d3c
 * Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+* Performance testing: N/A
+* Regression testing: 
+  * Very high level Reporting, Kaltura and SQL Server testing (ie. ensure they work at all)
 
 ### Upgrade srw servlet
 https://github.com/equella/Equella/commit/e2ab5bd7a6574b77b3abddd91b2802574dd9ad71
@@ -232,9 +235,10 @@ https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888
 * Regression testing: TBD
 
 ### "Use a custom param for the course ID" in Canvas
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+* Functional testing:  
+  * Canvas integration using activations in Equella.  Ensure both the "course label" and "SIS ID" fields on the Canvas course are passed through to Equella (you will need to test one at a time since one overrides the other).  When activating an attachment the course will already be selected.
+* Performance testing: N/A
+* Regression testing: N/A
 
 ### EQ-31 ensure IMS/SCORM resources containing query strings will work
 * Functional testing:  TBD
@@ -242,14 +246,15 @@ https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888
 * Regression testing: TBD
 
 ### EQ-32 batched audit log removal
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+* Functional testing:  N/A
+* Performance testing: Generate a massive audit\_log\_entry table of old entries in 6.4 and run "delete audit logs" task.  See how responsive the login for other users is (login auditing must be turned on).  Do the same on 6.5.
+* Regression testing:  Make sure it works :)  (ie audit log table is cleared of old entries)
 
 ### EQ-33 don't use the public bookmark, use the actual params
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+* Functional testing:  
+  * Ensure permissions are setup so users must login to see search page.  Use Share functionality on a search page (try various filtering and advanced search options to generate a URL with many query string parameters).  Copy the URL, logout of Equella and paste the URL into the browser -> User is forced to login before being directed to search page with all the parameters maintained.
+* Performance testing: N/A
+* Regression testing: N/A
 
 ### EQ-34 use string URLs instead of URL URLs
 * Functional testing:  TBD
@@ -258,25 +263,32 @@ https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888
   * Access the file manager, and perform CRUD operations.
 
 ### EQ-2045 use LIST_COURSE_INFO priv, not LIST_COURSE
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+* Functional testing:  
+  * On the Course REST endpoint, provide a "code" query string parameter and sure the relevant course is returned.  e.g. /api/Course/?code=EQ101  (user must have LIST\_COURSE\_INFO privilege)
+* Performance testing: N/A
+* Regression testing: N/A
 
 ### EQ-2038 course API refactor
 Activation, Course,
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+* Functional testing:  N/A
+* Performance testing: N/A
+* Regression testing: 
+  * General Course and Activation REST endpoint testing (covered by "Fixes arising from cherry pick" already)
 
 ### EQ-1045 (et al) refactors of entity rest services
 One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+* Functional testing:  
+  * Pick an entity type (e.g. Collection) and test that error strings are being returned correctly on the REST endpoint.  Errors to test are: 404 on a collection, 404 on a collection lock, attempt to edit a locked collection, edit security on a collection and leave the "who" field on a permission blank.
+* Performance testing: N/A
+* Regression testing: N/A
 
 ### EQ-2026 Do some validation on entities. don't let entity editing be a free-for-all
-* Functional testing:  TBD
-* Performance testing: TBD
+* Functional testing:  
+  * Pick an entity type (e.g. Collection) and try to change its UUID via the REST API -> Should error
+  * Create an entity and try to set the owner, createdDate and modifiedDate fields. -> Creation should succeed, but when retrieving the collection again it should not show the values for those fields that you passed in (they should be the actual owner, modified date etc)
+  * Do the same again, but pass in a parameter ?import=true (note: you need to be logged in as TLE\_ADMINISTRATOR to do this) ->  Fields should be set to the values you passed in.
+  * Edit/create a course via the REST API but leave the code field blank. ->  Should receive a 400 response
+* Performance testing: N/A
 * Regression testing: TBD
 
 ### Still need to document...
