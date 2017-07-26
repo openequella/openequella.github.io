@@ -5,18 +5,28 @@
 Please refer to the 6.5-GA release notes for more details.
 
 ### #104 Scripting pack
+
 * Now in the master docs repo.
 * self-creation of the javadoc in issues #105 and #106 (still pending)
+* Testing:  Ensure the [documentation](https://github.com/equella/equella.github.io/tree/master/example-scripts) is available and makes sense.
 
 ### #98 / #102 Office Integration
 
 * Equella has the ability integrate with Microsoft Office products to enable a smoother editing experience.  Due to licensing issues, and the inherit issues of using an older interop DLL on more modern installs of Office, the download of the Office Integration msi package has been removed from the Equella Web UI, and the DLLs in question have been removed from the git repo.  The functionality is still useful, so documentation has been provided for users to access this functionality.
+* Testing:  Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/guides/OfficeIntegrationGuide.md) is available and makes sense.
 
 ### #101 / Documentation / example files moved to the master docs repo
 
+* Testing:  Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/README.md) is linked in the main readme and makes sense.
+
 ### #100 HTML Editor Plugins
 
-* Working pending...
+* Another documentation shift to the main docs repo.  Ensure the HTML plugins below are documented [here](https://github.com/equella/equella.github.io/tree/master/example-scripts/HTML-editor-plugin).
+  * after the deadline
+  * ice
+  * wiris
+  * example plugin
+
 
 ### #96 (Make installer set executable bit for files that need it)
 
@@ -89,7 +99,7 @@ had the source too, so it was replaced with the use of xstream + special hiberna
   * Clone an item (attachments and navigation tree in particular)
   * Import/Export/Clone institution
 
-### #55 ( Research need for Kaltura and replace/remove )
+### #55 / #107 ( Kaltura licensing issues )
 The Kaltura Java client API is not Apache-license-friendly.  It was moved into it's own repo, but can easily be integrated back into Equella per client.  Additional effort is noted to turn this into truly a 'drop in' plugin.
 * Functional testing
   * Follow the tests here for Equella with and without Kaltura:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
@@ -121,14 +131,9 @@ The Kaltura Java client API is not Apache-license-friendly.  It was moved into i
 
 ### #41 ( Remove eCommerce )
 * Functional testing:
-  * Upgrade/Import from an EQUELLA which had some eCommerce data
+  * Upgrade/Import from an EQUELLA which had some eCommerce data.  Make sure all eCommerce data is removed from the database, and no eCommerce controls is shown to the user.
 * Performance testing: TBD
 * Regression testing: TBD
-
-### #37 ( Create a "learningedge-config" eclipse project and ant task for easier dev config setup )
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing:  TBD
 
 ### #33 ( Upgrade ROME )
 * Functional testing:  TBD
@@ -305,6 +310,7 @@ Users were able to access inactive copyright attachments via using a direct URL
   * Visit a DRM protected item in Equella and ensure there are no links on the RHS to view the item history and other similar links.
 
 ### Issues Covered in General Regression Test
+
 * #95 (Scrub equella-deps)
 * #83 (Upgrade commons-beanutils)
 * #67 ( Guice recipes library changes )
@@ -312,3 +318,4 @@ Users were able to access inactive copyright attachments via using a direct URL
 * #52 ( Hibernate classloading issues )
 * #51 ( Jafer z3950 / SRW library conflict )
 * #64 ( Remove image processing from conversion service ) - dead code removal
+* #37 ( Create a "learningedge-config" eclipse project and ant task for easier dev config setup )
