@@ -25,26 +25,12 @@ Please refer to the 6.5-GA release notes for more details.
 * Performance testing: N/A
 * Regression testing:  install Equella, and then ensure you can start / stop the equellaserver and manager with your typical 'Equella' user.
 
-### #95 (Scrub equella-deps)
-* Several dependencies had to be changed / removed
-  * jnlp (admin console launcher) was included in a different way
-  * reporting - an older 6.2 reporting-common dependency was removed.  
-* Functional testing:  
-  * Ensure the admin console launches and basic CRUD ops on entities (ie collections) work
-  * Functional testing:  Confirm the reporting suite of tests to ensure all Data Source and Data Source types can be run, both from the BIRT Report Designer and directly from Equella.
-* Performance testing: N/A
-  * Confirm no lag in running reports
-* Regression testing: N/A
-
 ### #84 Re-implement file upload features
 File uploads were re-implemented using AJAX instead of multipart and client side progress instead of server side.
 * Regression testing:
   * Ensure progress bars still work
   * Make sure drag and drop still works
   * Ensure that any restrictions on file size and mime type still work (wizard control)
-
-### #83 (Upgrade commons-beanutils)
-Need to review for testing impact.  No UI / functionality changes
 
 ### #56 (Remove dhfjava dependency)
 The functionality was changed to not rely on dhfjava.  Instead it uses a Tika open source library.  The results are not as clean as dhfjava, so enhancements are welcome!
@@ -86,33 +72,11 @@ When an LTI attachment that added to an item, at times it's considered 'default'
   * Ensure previously configured 'default' LTI attachments have the expected consumer  contact email when being edited.
 * Performance testing - N/A
 
-### #67 ( Guice recipes library changes )
-Looks like a Jsr250Module was added.  ??? What impact does this have?
-* Functional testing - N/A
-* Regression testing - N/A
-* Performance testing - N/A
-
-### #64 ( Remove image processing from conversion service )
-??? What impact, if any, does this have?
-* Functional testing - N/A
-* Regression testing - N/A
-* Performance testing - N/A
-
 ### #62 ( Upgrade flamingo )
 Flamingo was upgraded to streamline dependencies from Maven.
 * Functional testing
   * CRUD operations in the File Manager applet
   * ??? Specific browsers or other test cases?
-* Regression testing - N/A
-* Performance testing - N/A
-
-### #61 ( SBT build loose ends )
-Work on jar signing, in place editor applet, BIRT, dev config setup, and ant to sbt build process.
-* Functional testing
-  * CRUD operations in the Admin Console
-  * BIRT testing is handled via #95.  No other changes in functionality.
-  * Ensure a new commit bumps the rXYZ version number and can upgrade to that version.
-  * ??? other test cases?
 * Regression testing - N/A
 * Performance testing - N/A
 
@@ -139,16 +103,6 @@ The Kaltura Java client API is not Apache-license-friendly.  It was moved into i
 * Regression testing: TBD
 
 ### #53 ( Make Blackboard dependencies optional )
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
-
-### #52 ( Hibernate classloading issues )
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
-
-### #51 ( Jafer z3950 / SRW library conflict )
 * Functional testing:  TBD
 * Performance testing: TBD
 * Regression testing: TBD
@@ -349,3 +303,12 @@ Users were able to access inactive copyright attachments via using a direct URL
 ### On the DRM acceptance page, links to item history and item versions no longer show
 * Functional testing:
   * Visit a DRM protected item in Equella and ensure there are no links on the RHS to view the item history and other similar links.
+
+### Issues Covered in General Regression Test
+* #95 (Scrub equella-deps)
+* #83 (Upgrade commons-beanutils)
+* #67 ( Guice recipes library changes )
+* #61 ( SBT build loose ends )
+* #52 ( Hibernate classloading issues )
+* #51 ( Jafer z3950 / SRW library conflict )
+* #64 ( Remove image processing from conversion service ) - dead code removal
