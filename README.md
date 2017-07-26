@@ -14,7 +14,6 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 ## Release Notes
 * [6.5-GA](release-notes/ReleaseNotes-6.5-GA.md)
-* [6.5-QA1](release-notes/ReleaseNotes-6.5-QA1.md)
 
 ## Getting Started
 * [Installing Equella - Quick Start Guide](gettingstarted/InstallingEquella.md) 
@@ -53,7 +52,6 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 ## Release Testing Guides
 * [6.5-GA](release-testing-guides/ReleaseTestingGuide-6.5-GA.md)
-* 6.5-QA1 >>> coming soon!
 
 ## Integrations
 * [Integrations](integrations/Integrations.md) landing page
