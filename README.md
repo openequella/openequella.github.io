@@ -9,7 +9,7 @@ EQUELLA has been deployed for copyright resource collections, research materials
 With over 10 years of history, EQUELLA is a mature solution written for the Java platform.  In its recent history, EQUELLA was proprietary software licensed to adopters by Pearson.  Currently EQUELLA is in the process of becoming open source software, led by contributors from Unicon and Edalex Solutions.
 
 ## Join the Community
-* Join our Apereo Equella google groups, mailing lists and our [Apereo Slack channel](https://apereo.slack.com)
+* Join our [Apereo Slack channel](https://apereo.slack.com)
 * [Community Governance Model](community/communitygovernance.md)
 
 ## Release Notes
