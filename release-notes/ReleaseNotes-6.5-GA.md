@@ -4,7 +4,7 @@
 
 6.5-GA is the initial Open Source version of Equella, coupled with features and bug fixes that have been worked on over the past year.  Open Source changes have focused on scrubbing the code to align with open source licensing.  The build process was also overhauled to use sbt (Simple Build Tool) and not require an IDE (Integrated Development Environment) to build / develop code. 
 
-This document is meant to detail the functional changes exposed to the user experience.  Backend changes and testing notes are in the release-testing-guides for this release.
+This document is meant to detail the functional changes exposed to the user experience.  Backend changes and testing notes are in the release-testing-guides for this release - see [6.5-GA Release Testing Guide](https://github.com/equella/equella.github.io/blob/master/release-testing-guides/ReleaseTestingGuide-6.5-GA.md).
 
 ### Office Integration Download Removed
 Tracked in issues #98 and #102.  Equella has the ability integrate with Microsoft Office products to enable a smoother editing experience.  Due to licensing issues, and the inherit issues of using an older interop DLL on more modern installs of Office, the download of the Office Integration ```msi``` package has been removed from the Equella Web UI, and the DLL in question have been removed from the git repo.  The functionality is still useful, so conceptual documentation has been provided for users to build and access this functionality as needed.
