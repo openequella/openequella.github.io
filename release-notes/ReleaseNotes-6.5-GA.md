@@ -1,6 +1,6 @@
 # Release Notes for Equella 6.5-GA
 
-*_In Progress_*
+*_DRAFT_*
 
 6.5-GA is the initial Open Source version of Equella, coupled with features and bug fixes that have been worked on over the past year.  Open Source changes have focused on scrubbing the code to align with open source licensing.  The build process was also overhauled to use sbt (Simple Build Tool) and not require an IDE (Integrated Development Environment) to build / develop code. 
 
