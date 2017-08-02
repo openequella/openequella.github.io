@@ -1,197 +1,223 @@
 # Testing Guide for Equella 6.5-GA
 
-*_In Progress_*
+*_DRAFT_*
 
-Please refer to the 6.5-GA release notes for more details.
+Please refer to the [6.5-GA Release Notes](https://github.com/equella/equella.github.io/blob/master/release-notes/ReleaseNotes-6.5-GA.md) for more details.
 
 ### #104 Scripting pack
 
-* Now in the master docs repo.
-* self-creation of the javadoc in issues #105 and #106 (still pending)
-* Testing:  Ensure the [documentation](https://github.com/equella/equella.github.io/tree/master/example-scripts) is available and makes sense.
+Now in the master docs repo.  Self-creation of the javadoc in issues #105 and #106 (still pending)
+
+__Testing:__
+* Ensure the [documentation](https://github.com/equella/equella.github.io/tree/master/example-scripts) is available and makes sense.
 
 ### #98 / #102 Office Integration
 
-* Equella has the ability integrate with Microsoft Office products to enable a smoother editing experience.  Due to licensing issues, and the inherit issues of using an older interop DLL on more modern installs of Office, the download of the Office Integration msi package has been removed from the Equella Web UI, and the DLLs in question have been removed from the git repo.  The functionality is still useful, so documentation has been provided for users to access this functionality.
-* Testing:  Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/guides/OfficeIntegrationGuide.md) is available and makes sense.
+Equella has the ability integrate with Microsoft Office products to enable a smoother editing experience.  Due to licensing issues, and the inherit issues of using an older interop DLL on more modern installs of Office, the download of the Office Integration msi package has been removed from the Equella Web UI, and the DLLs in question have been removed from the git repo.  The functionality is still useful, so conceptual documentation has been provided for users to build this functionality.
+
+__Testing:__
+* Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/guides/OfficeIntegrationGuide.md) is available and makes sense.
+* Ensure the download link has been removed from the Scrapbook > Upload files > 'blue pulldown' screen, and the new language makes sense.
 
 ### #101 / Documentation / example files moved to the master docs repo
 
-* Testing:  Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/README.md) is linked in the main readme and makes sense.
+__Testing:__
+* Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/README.md) is linked in the main readme guides and makes sense.
 
 ### #100 HTML Editor Plugins
 
-* Another documentation shift to the main docs repo.  Ensure the HTML plugins below are documented [here](https://github.com/equella/equella.github.io/tree/master/example-scripts/HTML-editor-plugin).
+Another documentation shift to the main docs repo.  
+
+__Testing:__
+* Ensure the HTML plugins below are documented [here](https://github.com/equella/equella.github.io/tree/master/example-scripts/HTML-editor-plugin).
   * after the deadline
   * ice
   * wiris
   * example plugin
 
-
 ### #96 (Make installer set executable bit for files that need it)
 
-* After a Linux install, the sys admin no longer needs to chmod the jsvc, manager, and equellaserver scripts
-* Functional testing:  N/A
-* Performance testing: N/A
-* Regression testing:  install Equella, and then ensure you can start / stop the equellaserver and manager with your typical 'Equella' user.
+After a Linux install, the sys admin no longer needs to chmod the jsvc, manager, and equellaserver scripts
+
+__Regression testing:__
+* Install a fresh Equella instance, and then ensure you can start / stop the equellaserver and manager with your typical 'Equella' user without needing to run chmod.
 
 ### #84 Re-implement file upload features
+
 File uploads were re-implemented using AJAX instead of multipart and client side progress instead of server side.
-* Regression testing:
-  * Ensure progress bars still work
-  * Make sure drag and drop still works
-  * Ensure that any restrictions on file size and mime type still work (wizard control)
+
+__Regression testing:__
+* Ensure progress bars still work
+* Make sure drag and drop still works
+* Ensure that any restrictions on file size and mime type still work (wizard control)
 
 ### #56 (Remove dhfjava dependency)
+
 The functionality was changed to not rely on dhfjava.  Instead it uses a Tika open source library.  The results are not as clean as dhfjava, so enhancements are welcome!
-* Functional testing
-  * Confirm the conversion service can be disabled
-  * Confirm the conversion service can be enabled, and is usable
-* Regression testing - N/A
-* Performance testing
-  * Try converting a 10 MB file on 6.4-QA3, and the same file on 6.5-GA.  
+
+__Functional testing:__
+* Confirm the conversion service can be disabled
+* Confirm the conversion service can be enabled, and is usable
+
+__Performance testing:__
+* Try converting a 10 MB file on 6.4-QA3, and compare the speed of the same file converted on 6.5-GA.  
 
 ### #72 (Allow configuration of the historically hardcoded donotreply@equella.com email address)
-System admins now configure the 'do not reply' email address via the Server admin pages
-* Functionality testing:
-  * Confirm the email address can be changed, and when an email is sent from Equella, the 'do not reply' sender field is set to the custom / configured email address.
-* Regression testing - N/A
-* Performance testing - N/A
+
+System admins now configure the 'do not reply' email address via the Server admin pages.
+
+__Functional testing:__
+* Confirm the email address can be changed, and when an email is sent from Equella, the 'do not reply' sender field is set to the custom / configured email address.
 
 ### #74 (Remove the UpgradeProxyWeb python server)
-The functionality point the Equella Manager at a server that provides the latest Equella update has been removed
-* Functional testing
-  * Ensure the Equella Manager has no mention of an 'upgrade server'
-* Regression testing
-  * Ensure the Equella Manager can still perform updates from a local upgrade binary.
-* Performance testing - N/A
+
+The functionality point the Equella Manager at a server that provides the latest Equella update has been removed.
+
+__Functional testing:__
+* Ensure the Equella Manager has no mention of an 'upgrade server'
+
+__Regression testing:__
+* Ensure the Equella Manager can still perform updates from a local upgrade binary.
 
 ### #73 / #60 General build changes / scrubbing of commercial terminology
-Hard-coded words denoting the last commercial owner and last commercial website of Equella were removed.  Generally, resources (lang bundles and images) functionally haven't changed, but how they are bundled into Equella did change.  
-* Functional testing
-  * Ensure 'Pearson', and 'equella.com' don't show up, and instead have been replaced by meaningful alternatives for the open source community.
-* Regression testing
-  * Ideally, review all places strings and images are presented to the user, and ensure no missing language strings (???my.lang.string???) or errors finding images occur.
-* Performance testing - N/A
+
+Hard-coded words denoting the last commercial owner and last commercial website of Equella were removed.  Generally, resources (lang bundles and images) functionally haven't changed, but how they are bundled into Equella did change.
+
+__Functional testing:__
+* Ensure 'Pearson', and 'equella.com' don't show up anywhere in the Equella application, and instead have been replaced by meaningful alternatives for the open source community.
+
+__Regression testing:__
+* Ideally, review all places strings and images are presented to the user, and ensure no missing language strings (???my.lang.string???) or errors finding images occur.
 
 ### #71 ( Allow configuration of LTI external tool contact for Equella )
-When an LTI attachment that added to an item, at times it's considered 'default', and historically, a default consumer contact email of support@equella.com was used.  Now, you can configure this behavior by adding external.tool.contact.email into optional-config.properties.
-* Functional testing
-  * Ensure absent, blank, malformed email, and good email configured values work as expected in this userflow.
-* Regression testing
-  * Ensure previously configured 'default' LTI attachments have the expected consumer  contact email when being edited.
-* Performance testing - N/A
+
+When an LTI attachment was added to an item, at times it's considered 'default', and historically, a default consumer contact email of _support@equella.com_ was used.  Now, you can configure this behavior by adding external.tool.contact.email into _optional-config.properties_.
+
+__Functional testing:__
+* Ensure absent, blank, malformed email, and good email configured values work as expected in this userflow.
+
+__Regression testing:__
+* Ensure previously configured 'default' LTI attachments have the expected consumer contact email when being edited.
 
 ### #62 ( Upgrade flamingo )
+
 Flamingo was upgraded to streamline dependencies from Maven.
-* Functional testing
-  * CRUD operations in the File Manager applet
-  * ??? Specific browsers or other test cases?
-* Regression testing - N/A
-* Performance testing - N/A
+
+__Functional testing:__
+* CRUD operations in the File Manager applet
 
 ### #59 ( Replace use of hibernate-beanlib )
-`beanlib-hibernate` was used for cloning a whole hibernate object tree but it had code which we no longer
+
+```beanlib-hibernate``` was used for cloning a whole hibernate object tree but it had code which we no longer
 had the source too, so it was replaced with the use of xstream + special hibernate converters.
 
-* Regression testing:
-  * Clone a workflow
-  * Clone an item (attachments and navigation tree in particular)
-  * Import/Export/Clone institution
+__Regression testing:__
+* Clone a workflow
+* Clone an item (attachments and navigation tree in particular)
+* Import/Export/Clone an institution
 
 ### #55 / #107 ( Kaltura licensing issues )
-The Kaltura Java client API is not Apache-license-friendly.  It was moved into it's own repo, but can easily be integrated back into Equella per client.  Additional effort is noted to turn this into truly a 'drop in' plugin.
-* Functional testing
-  * Follow the tests here for Equella with and without Kaltura:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
-* Regression testing
-  * Start with Equella 6.4-QA3 (which has Kaltura enabled), upgrade to Equella without Kaltura, and then upgrade to Equella with Kaltura, following the guide here:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
-* Performance testing - N/A
+
+The Kaltura Java client API is not Apache-license-friendly.  It was moved into it's own repo, but can be integrated back into Equella per client by building the Equella and Kaltura source repos together into an upgrade binary.
+
+__Functional testing:__
+* Follow the tests here for Equella with and without Kaltura:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
+  * Note:  You'll need to rebuild Equella with the Kaltura code included
+
+__Regression testing:__
+* Start with Equella 6.4-QA3 (which has Kaltura enabled), upgrade to Equella without Kaltura, and then upgrade to Equella with Kaltura, following the guide here:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
 
 ### #54 ( Make Oracle DB driver optional )
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+
+Oracle DB driver is no longer included by default.  To run these tests, you'll need a build of Equella with Oracle drivers included.
+
+__Regression testing:__
+* Ensure all DB operations using Oracle work.  These include:  CRUD operations for items, DB migrations, taking DBs offline, adding secondary DBs / reporting DBs, running reports in BIRT and in Equella.
 
 ### #53 ( Make Blackboard dependencies optional )
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+
+Need to fill in...
 
 ### #44 / #46 ( Installer / Upgrader built via SBT )
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing:
-  * Installer works
-  * Upgrade manager testing from pre 6.5-GA to 6.5-GA+ upgrades
+
+Installers and upgraders are all built via SBT.  
+
+__Regression testing:__
+* Run the installer on each supported operating system.  Ensure you can launch Equella.
+* Upgrade Equella from a previous (commercial) release to this release.  
 
 ### #42 ( Don't try to download reference-language-pack.zip from maestro.equella )
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+
+Need to fill in...
 
 ### #41 ( Remove eCommerce )
-* Functional testing:
-  * Upgrade/Import from an EQUELLA which had some eCommerce data.  Make sure all eCommerce data is removed from the database, and no eCommerce controls is shown to the user.
-* Performance testing: TBD
-* Regression testing: TBD
+
+eCommerce was never used by clients in Equella (since it was an option when generating commercial licenses).  
+
+__Regression testing:__
+* Ensure there is no mention of eCommerce features in the collection definition editors, Settings page, Admin Console, or ACLs; and all associated database tables have been removed.
 
 ### #33 ( Upgrade ROME )
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing:
-  * Test RSS and ATOM feeds
+
+__Regression testing:__
+* Test RSS and ATOM feeds
 
 ### #27 ( Work out what to do about hardcoded SHA256 hash salt )
-* Functional testing:
-  * Set the equella.salt property to various values and test
-* Performance testing: TBD
-* Regression testing:
-  * Ensure the default salt property is the original hardcoded salt.
+
+__Functional testing:__
+* Set the ```equella.salt``` property to various values and test <... need to expand>
+
+__Regression testing:__
+* Ensure the default salt property is the original hardcoded salt. <... how? >
 
 ### #5 ( Remove license validation components )
-* Functional testing:  
-  * Ensure Equella runs without asking for a license
-* Performance testing: TBD
-* Regression testing: TBD
+
+__Functional testing:__
+* Ensure Equella runs without asking for a license
+* Ensure no mention of licensing is in the Server Admin pages
 
 ### Fixes arising from cherry pick
+
 https://github.com/equella/Equella/commit/64e85c2b4560580e517474c302b3d543ce79c34f
-* Functional testing:  N/A
-* Performance testing: N/A
-* Regression testing: 
-  * Ensure Course and Activation REST endpoints are available and a simple request works on either.
-  * Ensure the "self" link on an activation is correct.
+
+__Regression testing:__
+* Ensure Course and Activation REST endpoints are available and a simple request works on either.
+* Ensure the "self" link on an activation is correct.
 
 ### Upgrade javax.servlet, flickr, datatools, sqlserver jdbc, kalturaclient
+
 https://github.com/equella/Equella/commit/2b18a3707c31a5c643803560570073db445e8d3c
-* Functional testing:  TBD
-* Performance testing: N/A
-* Regression testing: 
-  * Very high level Reporting, Kaltura and SQL Server testing (ie. ensure they work at all)
+
+__Regression testing:__
+* Ensure the following work (can be at a high level):  Reporting, Flickr, Kaltura and SQL Server
 
 ### Upgrade srw servlet
+
 https://github.com/equella/Equella/commit/e2ab5bd7a6574b77b3abddd91b2802574dd9ad71
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+
+* Functional testing:  <... Need to fill in>
+* Regression testing:  <... Need to fill in>
 
 ### Update hikaricp
+
 https://github.com/equella/Equella/commit/ec46ea0b0eedd814e308cf5239b092f10a0d8111
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+
+* Functional testing:  <... Need to fill in>
+* Regression testing:  <... Need to fill in>
 
 ### Use latest jna
+
 https://github.com/equella/Equella/commit/be29f0e80e8db106216301aac21b7563e8ddbaa1
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+
+* Functional testing:  <... Need to fill in>
+* Regression testing:  <... Need to fill in>
 
 ### Option to self-generate a keystore when building or use a previously
+
 https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888d7
-* Functional testing:  TBD
-* Performance testing: TBD
-* Regression testing: TBD
+
+* Functional testing:  <... Need to fill in>
+* Regression testing:  <... Need to fill in>
 
 ### "Use a custom param for the course ID" in Canvas
 * Functional testing:  
