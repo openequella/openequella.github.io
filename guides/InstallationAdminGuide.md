@@ -22,6 +22,8 @@
 
 [Manage Databases](#manage-databases)
 
+[Equella Configs](#equella-configs)
+
 [Use a reverse proxy server](#use-a-reverse-proxy-server)
 
 [Customize the EQUELLA Digital Repository](#customize-the-equella-digital-repository)
@@ -366,6 +368,63 @@ The arbitrary base URL can be entered in the Institution URL edit box. The Insti
 11. Click Return to Institution Management to view the new institution on the Institutions page.
 
 Installation of the EQUELLA server is now complete. Login to the institution as the TLE_ADMINISTRATOR to administer and configure the institution.
+
+## Equella Configs
+
+Note: When using Equella on Windows and changing the equellaserver or equellaserver-config properties, you'll need to reinstall the service.
+
+### Available Equella Configs
+
+* Config: freetextIndex.defaultOperator = AND
+  * Release(s) Valid: 5.2? - 6.3+ 
+  * Location: optional.properties in /plugins/com.tle.core.freetext
+  * Comments: Indicates if default search terms should be performed with an implicit AND or OR. Defaults to AND
+
+* Config: can.access.internet = true 
+  * Release(s) Valid: 6.1-QA2 - 6.3+
+  * Location: optional-config.properties
+  * Comments: Allows the URL checker to run. Defaults to true.
+
+* Config: com.tle.core.tasks.RemoveOldAuditLogs.daysBeforeRemoval = 120
+  * Release(s) Valid: At least 6.0-QA3,6.1-QA2, 6.2-GA+
+  * Location: optional-config.properties 
+  * Comments: Set the number of days to keep audit logs in Equella before the scheduled task truncates them. Default is 120 days (~4 months). 
+  *
+### Internal Equella Configs
+
+These configurations should be used only with the utmost care.  
+
+* Config: tomcat.useBio = false
+  * Release(s) Valid: 6.4-GA + 
+  * Location: optional-config 
+  * Comments: Default is false (Tomcat will by default use the NIO connectors). 
+
+* Config: tomcat.maxThreads = 100
+  * Release(s) 6.2-GA + 
+  * Location: optional-config 
+  * Comments: Default is 100.
+
+* Config: sessions.neverPersist = false
+  * Release(s) Valid: 6.3-GA +, 6.2-QA1 +
+  * Location: optional-config 
+  * Comments: Default is 'false'. In 6.2-QA1 that setting this config to true will stop Equella from inserting data into tomcat_sessions.
+
+### Equella URLs
+
+* equella inst url/language/download/refresh : *Refreshes the language caches, but you'll have to hit it on each node*
+
+* equella inst url/access/sched
+uledtasksdebug.do: *Landing page of the scheduled tasks in Equella allows the tasks to be manually kicked off by clicking on the task link.*
+
+* equella inst url/some
+equella tree?$DEBUG$ : *Displays the supported and unsupported parameters. Also displays the section tree structure*
+
+* equella inst url/logon.do?NO_AUTO_LOGIN : *Bypasses auth redirections, for example, for CAS, and presents the normal Equella login page. The =true is optional - the key just needs to be present.*
+
+* equella inst url/logon.do?NO_IP_LOGIN : *Bypasses IP login and presents the normal Equella login page. The =true is optional - the key just needs to be present.*
+
+* equella inst url/logon.do?logout=true  : *Forces a user to log out.*
+
 
 ## Manage Databases
 

@@ -29,10 +29,13 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 ## Administrative and User Guides
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
     * [Equella Schema Info](guides/equella_schema.zip)
+    * [Additional General Info and Help](guides/AdditionalGeneralInfoHelp.md)
+    
 * [Administration Overview Guide](guides/AdministrationOverviewGuide.md)
   * [Reference Language Pack](guides/reference-language-pack.zip)
 * [Managing Institutions](guides/ManageInstitutions.md)
 * [Security Administration Guide](guides/SecurityAdminGuide.md)
+* [Features Guide Version 6.4](guides/FeaturesGuide.md)
 * [Collection Definitions Editor Configuration Guide](guides/CollectionDefinitionsEditorConfigurationGuide.md)
 * [Contribution User Guide](guides/ContributionUserGuide.md)
 * [Reporting Guide](guides/ReportingGuide.md)
@@ -45,6 +48,9 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Clustering Configuration Guide](guide/ClusteringConfigurationGuide.md)
 * [Embedded Metadata Extraction User Guide](guide/EmbeddedMetadataExtractionUserGuide.md)
 * [Metadata Schema Configuration Guide](guide/metadataSchemaConfigurationGuide.md) 
+* [Copyright Configuration Guide](guide/CopyrightConfigurationGuides.md)
+* [Copyright Resources Management User Guide](#CopyrightResourcesManagementUserGuide.md)
+* [Searching User Guide](guides/SearchingUserGuide.md) 
 * [Glossary of Terms](guides/GlossaryOfTerms.md)
 
 ## Server Administration
