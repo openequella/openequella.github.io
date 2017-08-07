@@ -10,7 +10,8 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 
 ## Join the Community
 * Join our Apereo Equella google groups, mailing lists and our [Apereo Slack channel](https://apereo.slack.com)
-* [Community Governance Model](community/communitygovernance.md)
+* [Community Governance Model](community/CommunityGovernance.md)
+* [Documentation Guidelines](https://github.com/equella/equella.github.io/blob/master/community/DocumentationGuidelines.md)
 
 ## Release Notes
 * [6.5-GA](release-notes/ReleaseNotes-6.5-GA.md)
