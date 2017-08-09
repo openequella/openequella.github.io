@@ -27,8 +27,6 @@ Responsibilities:
 5.  Ensure that outstanding issues/proposals are not forgotten or ignored.
 6.  Serve as the PMC's initial contact point with the outside world.
 * Provide regular, monthly updates to the list of accomplishments on PMC Home page.
-* Schedule regular monthly teleconferences with Apereo Executive Director (Ian Dolphin).
-* Occasional attendance (via teleconference) at Apereo board meetings.
 10.  Serve as a the list owner and moderator for Equella Open Source mail lists.
 11.  Provide summary reports of PMC proposals and decisions.
 12.  Oversee PMC documentation in github.
@@ -74,8 +72,6 @@ Changes in status from active to emeritus and from emeritus to active will be de
 A PMC member, whether active or emeritus, may resign at any time for any reason.
 
 A PMC chair or vice-chair can be removed at any time, with or without cause, by a vote of no confidence comprising a simple majority of active PMC members.
-
-A PMC chair, PMC vice-chair or the entire PMC can be removed by the Apereo Board with or without cause by a vote of no confidence. 
 
 
 ## Voting
