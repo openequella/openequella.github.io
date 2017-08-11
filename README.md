@@ -9,7 +9,6 @@ EQUELLA has been deployed for copyright resource collections, research materials
 With over 10 years of history, EQUELLA is a mature solution written for the Java platform.  In its recent history, EQUELLA was proprietary software licensed to adopters by Pearson.  Currently EQUELLA is in the process of becoming open source software, led by contributors from Unicon and Edalex Solutions.
 
 ## Join the Community
-* Join our [Apereo Slack channel](https://apereo.slack.com)
 * [Community Governance Model](community/CommunityGovernance.md)
 * [Documentation Guidelines](https://github.com/equella/equella.github.io/blob/master/community/DocumentationGuidelines.md)
 
@@ -31,14 +30,20 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
     * [Equella Schema Info](guides/equella_schema.zip)
     * [Additional General Info and Help](guides/AdditionalGeneralInfoHelp.md)
+    * [Theming Guide](guides/ThemingGuide.md)
+    * [Workflow Configuration Guide](guides/WorkflowConfigurationGuide.md)
+    * [Workflow Moderation Guide](guides/WorkflowModerationGuide)
     
 * [Administration Overview Guide](guides/AdministrationOverviewGuide.md)
   * [Reference Language Pack](guides/reference-language-pack.zip)
 * [Managing Institutions](guides/ManageInstitutions.md)
 * [Security Administration Guide](guides/SecurityAdminGuide.md)
+* [LDAP Configuration Guide](guides/LDAPConfigurationGuide.md)
+* [Mobile App Configuration Guide](guides/MobileAppConfigurationGuide.md)
 * [Features Guide Version 6.4](guides/FeaturesGuide.md)
 * [Collection Definitions Editor Configuration Guide](guides/CollectionDefinitionsEditorConfigurationGuide.md)
 * [Contribution User Guide](guides/ContributionUserGuide.md)
+* [Manage Resources User Guide](guides/ManageResourcesUserGuide.md)
 * [Reporting Guide](guides/ReportingGuide.md)
 * [Wizard Controls Reference Guide](guides/WizardControlsReferenceGuide.md)
 * [Advanced Scripting Guide](guides/AdvancedScriptingGuide.md)
@@ -49,9 +54,13 @@ With over 10 years of history, EQUELLA is a mature solution written for the Java
 * [Clustering Configuration Guide](guide/ClusteringConfigurationGuide.md)
 * [Embedded Metadata Extraction User Guide](guide/EmbeddedMetadataExtractionUserGuide.md)
 * [Metadata Schema Configuration Guide](guide/metadataSchemaConfigurationGuide.md) 
+* [Hierarchy Configuration Guide](guides/HierarchyConfigurationGuide.md)
+* [Language Settings Configuration Guide](guides/LanguageSettingsConfigurationGuide.md)
 * [Copyright Configuration Guide](guide/CopyrightConfigurationGuides.md)
 * [Copyright Resources Management User Guide](#CopyrightResourcesManagementUserGuide.md)
+* [Dynamic Collections Guide](guides/DynamicCollectionsGuide.md)
 * [Searching User Guide](guides/SearchingUserGuide.md) 
+* [Advanced Search Configuration](guides/AdvancedSearchConfiguration.md)
 * [Glossary of Terms](guides/GlossaryOfTerms.md)
 
 ## Server Administration

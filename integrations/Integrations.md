@@ -14,6 +14,7 @@ Equella has a number of ways to integrate with 3rd party systems
 * [Moodle Integration Guide](../guides/MoodleIntegrationGuide.md)
 * [ECHO360 Integration Guide](../guides/ECHOIntegrationGuide.md)
 * [Office Integration](../guides/OfficeIntegrationGuide.md)
+* [Push to LMS](../guides/PushToLMS.md)
 
 ## Integration User Guides
 * [Integrated LMS User Guide](../guides/IntegratedLMSUserGuide.md)

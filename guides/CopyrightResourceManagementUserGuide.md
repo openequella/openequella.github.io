@@ -12,6 +12,8 @@ Table of Contents
 
 [CAL Reports](#cal-reports)
 
+[Copyright Enhancements](#copyright-enhancements)
+
 ## Copyright compliance overview
 
 The EQUELLA copyright compliance features do not restrict the amount of copyright material
@@ -394,5 +396,126 @@ dialog displays.
 5. Click Execute Report to display the report listing all activation details. 
 
 
-The reports are presented using the EUS layout in HTML, Word, Excel or PDF format and
-can be copied into a spreadsheet application.
+The reports are presented using the EUS layout in HTML, Word, Excel or PDF format and can be copied into a spreadsheet application.
+
+
+## Copyright Enhancements
+
+A number of changes and additions were added to the CAL module for the EQUELLA 6.3 release. These features are documented below.
+
+### Set Part VB book percentage (CAL only)
+
+Administrators now have the ability to set the Part VB book percentage at a book collection level for their Books collection/s. The default is 10%.
+
+The new option is found on the CAL Licensing page, which is accessed from the Admin Console, Collection Definition Editor. Select the required holding collection (e.g. Books), then click on the Extensions tab. Select the CAL Licensing Configure button.
+
+NOTE: This option must be selected on the holding collection (e.g. Books) CAL licensing page. Setting this on the portion collection (e.g. eReserve articles) won’t affect the percentage.
+
+Note that using the arrows will increase and decrease the current value by one whole number (e.g. 10 to 11) but one decimal place can be manually entered (e.g. 10.5, 12.2 etc.).
+
+### Override CAL book percentage rule at time of activation (CAL only)
+
+A new ACL (COPYRIGHT_OVERRIDE) is available which, when granted to users, allows those users to override the copyright warning which would cause a possible breach of the copyright rule and prevent an activation from proceeding.
+
+When granted, the user is able to choose to ignore the warning and proceed with the activation after entering text to explain the reason for the override. The warning informs the user what the total percentage of activations for the book will be if the user proceeds.
+
+Note that the Continue button is disabled at this point. Once the reason for overriding the copyright restriction is entered, the Continue button is enabled. An example is shown in Figure 3.
+
+### Edit activation details
+
+A new ACL (EDIT_ACTIVATION_ITEM) is available which, when granted to users, allows those users to edit Activation details. The following list shows which properties can be edited per activation status:
+
+* Status: Pending,  Course=Yes, Activate from = Yes, Activate Until = Yes
+* Status: Active, Course=No, Activate from = No, Activate Until = Yes
+
+The Edit activation page is accessed from the Activations link found in the Details section on the Resource summary page. It can be accessed from the Book or Journal (holding) record summary page, which lists all the Chapter, Excerpt or Article activations for that holding record, or it can be accessed from the portion record summary page, which will only show activations for that portion. 
+
+
+Click the Activations link to open the Activations page. 
+
+When the EDIT_ACTIVATION_ITEM ACL is granted, users see a new Edit link beside Active and Pending activations. Click the Edit link to open the Edit Activation page. 
+
+Note that the Course, Activate from and Activate until fields can all be edited for a Pending activation.
+
+Only the Activate until field can be edited for an Active activation.
+
+### New course selector on Activation dialog
+
+The Course drop-down list has been replaced with a Course search on the Activate attachments page. 
+
+Click the Select Course button to open the Select a course dialog. 
+
+Enter one or more characters of the Course name then click Search. Matching results display and one can be selected. Wildcards are not necessary. For example, entering ogy will return any results that contain that string in their name. Similarly, entering one letter (e.g. c) will return any courses containing the letter ‘c’ anywhere in their name.
+
+### Activation details displayed in XML (CAL only)
+
+Activation details are now stored in the portion item’s unified xml, as listed below:
+* activation status
+* portion UUID
+* attachment UUID
+* course name
+* course code
+* activation start date
+* activation end date
+* citation
+
+### Citation display options (CAL only)
+The citation can now be displayed on the resource summary page for a portion, in addition to the search results page. Additionally, administration users can choose to use the citation as the attachment display link both on the summary page and in the LMS as an alternative to the attachment display name.
+
+### Display citation on Resource summary page
+A new option on the Resource Summary Display Template tab of the Display tab in the Collection Definition Editor for the appropriate collection (e.g. eReserve articles) allows users to add the CAL citation to the Resource summary page. 
+
+Once the CAL citation for this resource section has been added, it can be reordered to appear in the appropriate place on the Resource summary page using the reorder buttons.
+
+### Display citation as attachment display link
+Administration users can now choose to use the citation as the portion attachment display name instead of the attachment title. The citation will then display as the attachment link both on the Resource summary page and in the LMS Course.
+
+The new option is found on the CAL Licensing page, which is accessed from the Admin Console, Collection Definition Editor. Select the required portion collection (e.g. eReserve articles), then click on the Extensions tab. Select the CAL Licensing Configure button.
+
+This option must be selected on the portion collection (e.g. eReserve articles) CAL licensing page. Setting this on the holding collection (e.g. Books) won’t change the display format.
+
+### Restrict ‘View linked portions’ section
+A new ACL is available (VIEW_LINKED_PORTIONS) that allows administrators to restrict who has access to the Links to other Portions section displayed on the portion record Resource summary page. 
+
+When upgrading to EQUELLA 6.3, this ACL will default to be granted to all users (as per current functionality). Revoking this ACL for users results in those users no longer seeing that section on the portion summary page. 
+
+Additionally, when this ACL is revoked, users will no longer see the (View portion) link for each portion from the holding record Resource summary page.
+
+### View inactive attachments
+A new ACL is available (VIEW_INACTIVE_PORTIONS) that allows administrators to grant the ability to view portion attachments that are not active.
+
+As a standard, only activated attachments can be clicked on to open and view the content. Other portion attachments for a holding record don’t show as a link, and can’t be opened and viewed. 
+
+Granting the VIEW_INACTIVE_PORTIONS ACL to users allows those users to open and view all portion attachments regardless of their status (Inactive, Pending and Active) by always displaying them as clickable links.
+
+### Remaining number of pages available for activation
+
+A new statistic (Pages available for activation) has been added to the holding record summary page which indicates how many pages could be activated before the Part VB percentage had been reached. 
+
+### Autocreate courses
+A new ACL is available (AUTO_CREATE_COURSE) that allows administrators to grant users the ability to create a course automatically in EQUELLA when activating items for a course through a Moodle or Blackboard integration selection session.
+
+When a user opens the integration screen selection session from a course section, goes to a portion summary page and selects the Activate and add button, EQUELLA looks at the course code from the LMS, then matches it with a course code in EQUELLA. If there is no matching course code in EQUELLA, a message displays conveying this information, and the user can’t proceed with the activation and addition to the course section. When users are granted the AUTO_CREATE_COURSE ACL, the system will automatically add a course record to EQUELLA, using the course code from the LMS as the Course Name and Code.
+
+NOTE: When using this feature, Administrators will need to monitor Courses to update automatically created records with required details.
+
+A record is added to the Course table in EQUELLA with the Course Name and Code being the Course ID from the LMS. 
+
+### Rollover enhancements
+EQUELLA 6.3 introduces enhancements to the activation rollover functionality accessed from Manage Activations.
+
+On the Bulk actions, Rollover activations dialog, there is a new option (Use activation’s current course code) in the Course to roll-over to drop-down box. By selecting this option, all activations selected in the session will be rolled-over to the current course stored in the selected activations. 
+
+Additionally, the new option Use dates 12 months from current start and end dates has been added. Selecting this option will rollover the selected activations using the same dates stored in the activations, but in the following year. Once the checkbox is selected, the Start date and End date fields are no longer available for selection.
+
+### Filter by activation status
+A new filter (Filter by activation status) has been added to the Manage activations filter options, allowing users to filter by Active, Pending and Inactive activations. 
+
+### Extra fields added to Z39.50 search results
+The search results template for Z39.50 searches has been updated, and now shows the following fields, if available:
+* Title
+* Author/s
+* Edition – does not show for 1st editions
+* ISBN
+* Publisher
+* Publish date
