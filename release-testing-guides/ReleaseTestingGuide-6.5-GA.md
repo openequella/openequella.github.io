@@ -134,10 +134,6 @@ Oracle DB driver is no longer included by default.  To run these tests, you'll n
 __Regression testing:__
 * Ensure all DB operations using Oracle work.  These include:  CRUD operations for items, DB migrations, taking DBs offline, adding secondary DBs / reporting DBs, running reports in BIRT and in Equella.
 
-### #53 ( Make Blackboard dependencies optional )
-
-Need to fill in...
-
 ### #44 / #46 ( Installer / Upgrader built via SBT )
 
 Installers and upgraders are all built via SBT.  
@@ -145,10 +141,6 @@ Installers and upgraders are all built via SBT.
 __Regression testing:__
 * Run the installer on each supported operating system.  Ensure you can launch Equella.
 * Upgrade Equella from a previous (commercial) release to this release.  
-
-### #42 ( Don't try to download reference-language-pack.zip from maestro.equella )
-
-Need to fill in...
 
 ### #41 ( Remove eCommerce )
 
@@ -165,10 +157,12 @@ __Regression testing:__
 ### #27 ( Work out what to do about hardcoded SHA256 hash salt )
 
 __Functional testing:__
-* Set the ```equella.salt``` property to various values and test <... need to expand>
+* Set the ```equella.salt``` property to various values and test logging in with a
+password
 
 __Regression testing:__
-* Ensure the default salt property is the original hardcoded salt. <... how? >
+* Ensure the default salt property is the original hardcoded salt by importing an
+existing institution and logging in
 
 ### #5 ( Remove license validation components )
 
@@ -195,29 +189,22 @@ __Regression testing:__
 
 https://github.com/equella/Equella/commit/e2ab5bd7a6574b77b3abddd91b2802574dd9ad71
 
-* Functional testing:  <... Need to fill in>
-* Regression testing:  <... Need to fill in>
-
-### Update hikaricp
-
-https://github.com/equella/Equella/commit/ec46ea0b0eedd814e308cf5239b092f10a0d8111
-
-* Functional testing:  <... Need to fill in>
-* Regression testing:  <... Need to fill in>
+__Regression testing:__  
+* There is a known issue with SRW - https://github.com/equella/Equella/issues/115
 
 ### Use latest jna
 
 https://github.com/equella/Equella/commit/be29f0e80e8db106216301aac21b7563e8ddbaa1
 
-* Functional testing:  <... Need to fill in>
-* Regression testing:  <... Need to fill in>
+__Regression testing:__
+* Test inplace editor applet
 
 ### Option to self-generate a keystore when building or use a previously
 
 https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888d7
 
-* Functional testing:  <... Need to fill in>
-* Regression testing:  <... Need to fill in>
+__Regression testing:__
+* Ensure you can use the existing keystore to sign jars
 
 ### "Use a custom param for the course ID" in Canvas
 * Functional testing:  
@@ -257,7 +244,7 @@ https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888
 Activation, Course,
 * Functional testing:  N/A
 * Performance testing: N/A
-* Regression testing: 
+* Regression testing:
   * General Course and Activation REST endpoint testing (covered by "Fixes arising from cherry pick" already)
 
 ### EQ-1045 (et al) refactors of entity rest services
@@ -277,11 +264,11 @@ One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
 * Regression testing: TBD
 
 ### Canvas integration now uses Canvas content item placements which allows Equella links to open in a new window
-* Functional testing: 
+* Functional testing:
   * Add content to Canvas (from all available methods: push from Equella, navigation menu, resource selection, html editor button) and ensure the opened content opens up in a new browser tab
 
 ### Users can edit the names of selected resources that will be added to the LMS in a selection session
-* Functional testing: 
+* Functional testing:
   * Edalex has already begun testing.  Need to test with Blackboard, Canvas, Brightspace, Moodle.  When adding content to the LMS (NOT via push from Equella method) the user is given the option to edit the names of the selected items and attachments that will appear in the LMS. For Moodle, the two main integration types should be tested (selectOrAdd and structured).
 
 ### A new checkbox "Select all attachments" has been added to the "Add to External System" page.
@@ -330,7 +317,7 @@ Users were able to access inactive copyright attachments via using a direct URL
 ### The item moderation REST API would return a random workflow node status each time it was invoked
 * Functional testing:
   * Using an item in moderation, visit the REST moderation endpoint (/api/item/[uuid]/[version]/moderation) and click the browser refresh several times ->  The returned content should stay the same and should be a valid representation of the item's current moderation status.
-  
+
 ### On the DRM acceptance page, links to item history and item versions no longer show
 * Functional testing:
   * Visit a DRM protected item in Equella and ensure there are no links on the RHS to view the item history and other similar links.
