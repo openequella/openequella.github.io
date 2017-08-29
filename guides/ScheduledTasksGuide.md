@@ -1,8 +1,9 @@
 # Guide to Scheduled Tasks
 
-Task name|Frequency|Version(s)
-Check Institution Storage Quotas|IP|6.4-QA3 and later
-CheckEmailsTask|IP|6.4-QA3 and later
+Task name | Frequency | Version(s)
+--- | --- | --- 
+CheckInstitutionStorageQuotas | Daily | 6.4-QA3 and later
+CheckEmailsTask | Daily | 6.4-QA3 and later
 Check-URLs|IP|6.4-QA3 and later
 Remove-Staging-Areas|IP|6.4-QA3 and later
 Remove Expired Security|IP|6.4-QA3 and later
