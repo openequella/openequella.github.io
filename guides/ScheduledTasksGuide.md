@@ -20,4 +20,4 @@ Remove Deleted Items | Weekly | 6.4-QA3 and later | Institution
 CheckModerationTask| Daily | 6.4-QA3 and later | Institution
 CheckDeletedUsersTask | Weekly | 6.4-QA3 and later | Institution
 RemoveExpiredCacheEntries| Hourly |6.4-QA3 and later | Server
-CleanThumbQueue | Daily | 6.4-QA3 and later | Institution
+CleanThumbQueue | Daily | 6.4 and prior | Institution
