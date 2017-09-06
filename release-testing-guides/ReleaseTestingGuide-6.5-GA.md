@@ -17,12 +17,14 @@ __Testing:__
 Equella has the ability integrate with Microsoft Office products to enable a smoother editing experience.  Due to licensing issues, and the inherit issues of using an older interop DLL on more modern installs of Office, the download of the Office Integration msi package has been removed from the Equella Web UI, and the DLLs in question have been removed from the git repo.  The functionality is still useful, so conceptual documentation has been provided for users to build this functionality.
 
 __Testing:__
+* TestLink: eqos-1937, eqos-1938
 * Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/guides/OfficeIntegrationGuide.md) is available and makes sense.
 * Ensure the download link has been removed from the Scrapbook > Upload files > 'blue pulldown' screen, and the new language makes sense.
 
 ### #101 / Documentation / example files moved to the master docs repo
 
 __Testing:__
+* TestLink eqos-1939, eqos-1940
 * Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/README.md) is linked in the main readme guides and makes sense.
 
 ### #100 HTML Editor Plugins
@@ -30,6 +32,7 @@ __Testing:__
 Another documentation shift to the main docs repo.  
 
 __Testing:__
+* TestLink eqos-1941 + regression tests flagged
 * Ensure the HTML plugins below are documented [here](https://github.com/equella/equella.github.io/tree/master/example-scripts/HTML-editor-plugin).
   * after the deadline
   * ice
@@ -41,6 +44,7 @@ __Testing:__
 After a Linux install, the sys admin no longer needs to chmod the jsvc, manager, and equellaserver scripts
 
 __Regression testing:__
+* TestLink:  Regression test flagged.
 * Install a fresh Equella instance, and then ensure you can start / stop the equellaserver and manager with your typical 'Equella' user without needing to run chmod.
 
 ### #84 Re-implement file upload features
