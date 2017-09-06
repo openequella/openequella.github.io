@@ -9,6 +9,7 @@ Please refer to the [6.5-GA Release Notes](https://github.com/equella/equella.gi
 Now in the master docs repo.  Self-creation of the javadoc in issues #105 and #106 (still pending)
 
 __Testing:__
+* TestLink: eqos-1936
 * Ensure the [documentation](https://github.com/equella/equella.github.io/tree/master/example-scripts) is available and makes sense.
 
 ### #98 / #102 Office Integration
