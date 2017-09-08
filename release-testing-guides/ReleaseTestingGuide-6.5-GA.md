@@ -52,6 +52,7 @@ __Regression testing:__
 File uploads were re-implemented using AJAX instead of multipart and client side progress instead of server side.
 
 __Regression testing:__
+TestLink eqos-1687, eqos-1688, eqos-1689, eqos-1690, eqos-1691, eqos-1692, eqos-1693, eqos-1694, eqos-1695, eqos-1696, eqos-1697, eqos-1698 
 * Ensure progress bars still work
 * Make sure drag and drop still works
 * Ensure that any restrictions on file size and mime type still work (wizard control)
