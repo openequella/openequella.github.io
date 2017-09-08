@@ -291,12 +291,14 @@ One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
 
 ### New permission for selection sessions
 * Functional testing:
+TestLink eqos-1942
   * Using an LMS (should probably try all of them...) try to add content into the LMS without the INTEGRATION\_SELECTION\_SESSION permission granted. (it's actually granted by default when you upgrade to 6.5) -> should be presented with an error screen that does *not* include the Equella LHS menu.
   * Ensure that users with the permission can select and add Equella content into the LMS.
  * Regression testing:
    * After successfully adding content to the LMS, try to view the content in the LMS as a user that does *not* have the INTEGRATION\_SELECTION\_SESSION privilege (but does have relevant item viewing privs) -> Should succeed
 
 ### URL checker number of attempts
+TestLink eqos-1943 eqos-1944
 URL checker will disable links to external sites (e.g. Link attachments) if the URL check fails 10 times, and will send email notifications to item owners if the check fails 5 times.  This hard coded settings are now configurable in optional-config.properties
 ```
 urlChecker.triesUntilWarning = 3
