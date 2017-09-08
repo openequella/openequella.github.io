@@ -279,6 +279,7 @@ One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
 
 ### A new checkbox "Select all attachments" has been added to the "Add to External System" page.
 * Functional testing:
+TestLink eqos-1945
   * On the "add to external system" item page there is a new checkbox to select all of the attachments on the item for pushing. Any LMS will do as it's just a client side script to check the boxes.
 
 ### Links to content on the Find Uses page will open in a new window.
