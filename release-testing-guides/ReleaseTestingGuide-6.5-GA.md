@@ -136,7 +136,7 @@ __Regression testing:__
 * Start with Equella 6.4-QA3 (which has Kaltura enabled), upgrade to Equella without Kaltura, and then upgrade to Equella with Kaltura, following the guide here:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
 
 ### #54 ( Make Oracle DB driver optional )
-
+Regression test flagged
 Oracle DB driver is no longer included by default.  To run these tests, you'll need a build of Equella with Oracle drivers included.
 
 __Regression testing:__
@@ -147,6 +147,7 @@ __Regression testing:__
 Installers and upgraders are all built via SBT.  
 
 __Regression testing:__
+* TestLink: regression tests flagged
 * Run the installer on each supported operating system.  Ensure you can launch Equella.
 * Upgrade Equella from a previous (commercial) release to this release.  
 
@@ -160,6 +161,7 @@ __Regression testing:__
 ### #33 ( Upgrade ROME )
 
 __Regression testing:__
+* TestLink: regression tests flagged
 * Test RSS and ATOM feeds
 
 ### #27 ( Work out what to do about hardcoded SHA256 hash salt )
@@ -175,6 +177,7 @@ existing institution and logging in
 ### #5 ( Remove license validation components )
 
 __Functional testing:__
+TestLink eqos-5340
 * Ensure Equella runs without asking for a license
 * Ensure no mention of licensing is in the Server Admin pages
 
