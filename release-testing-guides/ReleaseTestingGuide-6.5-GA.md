@@ -110,6 +110,7 @@ __Regression testing:__
 Flamingo was upgraded to streamline dependencies from Maven.
 
 __Functional testing:__
+TestLink eqos-3813
 * CRUD operations in the File Manager applet
 
 ### #59 ( Replace use of hibernate-beanlib )
@@ -118,6 +119,7 @@ __Functional testing:__
 had the source too, so it was replaced with the use of xstream + special hibernate converters.
 
 __Regression testing:__
+Regression tests tagged in TestLink
 * Clone a workflow
 * Clone an item (attachments and navigation tree in particular)
 * Import/Export/Clone an institution
