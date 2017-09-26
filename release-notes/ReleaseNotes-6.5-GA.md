@@ -82,3 +82,12 @@ session in Equella. Equella did not automatically select the module selected in 
 
 ### Contribution
 * Contributors now have the ability to drag an drop attachments directly into the wizard without opening the multi-step dialog.
+
+
+### Security fixes
+* Deserialization of untrusted Java Objects - EQUELLA is vulnerable to a Java Deserialization attack allowing an authenticated remote attacker to execute arbitrary code on the affected servers with the privileges of the Tomcat servlet container.
+* Server-side Request Forgery - Server side request forgery occurs when an attacker can cause the vulnerable server to make requests to internal and/or external network addresses of their choosing. This can potentially allow an attacker to bypass firewalls, scan internal infrastructure and proxy attacks on internal services or other organisations. This issue allows an attacker to make requests to arbitrary internally accessible resources, fingerprint the internal network and access metadata and other internal resources which should not be exposed to the internet. In this circumstance, an attacker can also exploit this issue to target other application users with cross-site scripting.
+* Open Redirect - An open redirect occurs when an application uses user-supplied input as the URL destination of a page redirection. If the supplied input is not adequately validated, an attacker can create links to an external URL that appear to come from
+trusted domain.
+* XML DTD Entity Injection - The web application parses externally supplied malicious XML Document Type Definitions (DTD), which can be used to read the contents of local files, determine the existence of files and folders on the system, and cause denial of service.
+* Missing HTTP Strict Transport Security - Strict-Transport-Security is not used; this may allow an attacker to eavesdrop on or modify communication in transit.
