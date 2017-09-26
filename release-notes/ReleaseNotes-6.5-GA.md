@@ -21,6 +21,8 @@ Tracked in issue #96.  The Linux scripts to run Equella now automatically are se
 ### Backend changes to build process, dependencies, and commercial terminology
 In order to create a more streamlined application that is not tied to an IDE, the Equella build process has been changed from ANT to SBT.  In order to align with the open source model, several dependencies were removed or changed, as well as hard-coded words denoting the last commercial owner and last commercial website of Equella were removed.  Any functional differences have been called out in this document.
 
+
+
 ### Conversion Service Library Changed
 Tracked in issue #56.  The conversion service for Office MIME types has been switched to a different solution (Tika) to align with overall licensing goals.  The conversion results are not as clean as they used to be, so enhancements are welcome!
 
@@ -66,3 +68,17 @@ session in Equella. Equella did not automatically select the module selected in 
 * Users were able to access inactive copyright attachments via using a direct URL (e.g. a link was obtained when the attachment was active -> that link still works for the user when the attachment becomes inactive)
 * The item moderation REST API would return a random workflow node status each time it was invoked.
 * On the DRM acceptance page, links to item history and item versions no longer show.
+
+### Workflow
+* Change the My tasks UI to allow for selection of multiple items, then allow moderators with the correct (new) permissions the ability to approve and reject tasks in bulk, and sequentially process tasks without returning to the results page between each task.
+* Change the Manage tasks UI to allow for selection of multiple items, then allow admin users with the correct (new) permissions the ability to approve and reject tasks in bulk, and assign multiple tasks to a specific moderator.
+* Enhance the filtering and sorting capacity, and also make it easier for users to find the tasks they need to process by showing tasks assigned to them at the top, followed by tasks they could process then those assigned to others, also sorted in priority order.
+* Update both Manage tasks and My tasks pages to allow for complex filtering, including by assignment, collection, owner, date modified and assignee.
+* New bulk actions that can be performed against selected items including removing from workflow, moving from one workflow task to another and selecting live items not currenty in workflow and adding to a specific workflow task within the associated workflow.
+* Add ability to configure workflow notifications per task, and allow users to opt in or out of workflow notificaitons.
+* Add the ability to attach workflow related files during moderation approve/reject or comment, and when an item is first saved to moderation. The files can be viewed in the new comments section on the approve/reject task page.
+* Updated the Moderation page so that the Approve/Reject buttons appear in a more logical position, and the workflow comments can be easily viewed in a scrollable panel.
+* A new workflow task type, 'script task', allows users to write a script which will automatically run as part of the workflow and proceed to the next workflow step.
+
+### Contribution
+* Contributors now have the ability to drag an drop attachments directly into the wizard without opening the multi-step dialog.
