@@ -378,6 +378,21 @@ Users were able to access inactive copyright attachments via using a direct URL
 ### Contributors now have the ability to drag an drop attachments directly into the wizard without opening the multi-step dialog.
 * Functional testing: Testlink "Contribution" area
 
-### Security fix changes
-* Functional testing: ??
-* Regression testing: ??
+## Security fix changes
+### Deserialization of untrusted Java Objects
+* Functional testing: Try to create an app which takes advantage of ysoserial.  Not easy to describe how to do this.
+
+### Server-side Request Forgery
+* Functional testing: This is the servlet that allows scripts to avoid cross site scripting. e.g. http://[equella]/p/geturl?url=someexternalurl   It fetches content from the external site and serves it up as though it came from Equella.
+This is now turned OFF by default (you will get a 404 error if you attempt to go to http://[equella]/p/geturl ), and needs to be turned on in optional-config.properties -> httpProxyServlet.enabled=true
+
+### Open Redirect
+* Functional testing: Manipulate the URL in the logon.do page parameter.  E.g. http://localhost:8065/workflow/logon.do?.page=//www.google.com
+* Regression tesing: Make sure that standard Equella URLs still work.  E.g. logout of Equella and paste an Equella URL that requires login into the browser.  Make sure that the user is redirected to the proper URL once logged in.
+
+### XML DTD Entity Injection - The web application parses externally supplied malicious XML Document Type Definitions (DTD), which can be used to read the contents of local files, determine the existence of files and folders on the system, and cause denial of service.
+* Functional testing: This was acheived by using an external DTD and engineered RSS feed in an RSS portlet.  Difficult to reproduce without expert security testing knowledge.
+
+### Missing HTTP Strict Transport Security - Strict-Transport-Security is not used; this may allow an attacker to eavesdrop on or modify communication in transit.
+* Functional testing: Your whole Equella site needs to be covered by HTTPS, and you need to add the following to optional-config.properties -> strictTransportSecurity.maxage = {age in seconds}, where the age in seconds is typically something very very large.  Once this setting is in place, all requests to the Equella server will be made as HTTPS.
+* Regression testing: I guess make sure that partial HTTPS Equellas (ie. Equella instances where only the login page is HTTPS) still work as expected when the strictTransportSecurity.maxage is removed from the optional-config file.
