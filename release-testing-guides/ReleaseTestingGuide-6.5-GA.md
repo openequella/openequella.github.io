@@ -346,3 +346,38 @@ Users were able to access inactive copyright attachments via using a direct URL
 * #51 ( Jafer z3950 / SRW library conflict )
 * #64 ( Remove image processing from conversion service ) - dead code removal
 * #37 ( Create a "learningedge-config" eclipse project and ant task for easier dev config setup )
+
+
+### Change the My tasks UI to allow for selection of multiple items, then allow moderators with the correct (new) permissions the ability to approve and reject tasks in bulk, and sequentially process tasks without returning to the results page between each task.
+* Functional testing: Testlink ?
+
+### Change the Manage tasks UI to allow for selection of multiple items, then allow admin users with the correct (new) permissions the ability to approve and reject tasks in bulk, and assign multiple tasks to a specific moderator.
+* Functional testing: Testlink ?
+
+### Enhance the filtering and sorting capacity, and also make it easier for users to find the tasks they need to process by showing tasks assigned to them at the top, followed by tasks they could process then those assigned to others, also sorted in priority order.
+* Functional testing: Testlink ?
+
+### Update both Manage tasks and My tasks pages to allow for complex filtering, including by assignment, collection, owner, date modified and assignee.
+* Functional testing: Testlink ?
+
+### New bulk actions that can be performed against selected items including removing from workflow, moving from one workflow task to another and selecting live items not currenty in workflow and adding to a specific workflow task within the associated workflow.
+* Functional testing: Testlink eqos-1851, eqos-1852, eqos-1853, eqos-1871->1876
+
+### Add ability to configure workflow notifications per task, and allow users to opt in or out of workflow notificaitons.
+* Functional testing: Testlink eqos-1816->1834
+
+### Add the ability to attach workflow related files during moderation approve/reject or comment, and when an item is first saved to moderation. The files can be viewed in the new comments section on the approve/reject task page.
+* Functional testing: Testlink eqos-1900, eqos-1901, eqos-1902, eqos-1903, eqos-1904, eqos-1905
+
+### Updated the Moderation page so that the Approve/Reject buttons appear in a more logical position, and the workflow comments can be easily viewed in a scrollable panel.
+* Functional testing: Testlink ?
+
+### A new workflow task type, 'script task', allows users to write a script which will automatically run as part of the workflow and proceed to the next workflow step.
+* Functional testing: Testlink eqos-1835->1850
+
+### Contributors now have the ability to drag an drop attachments directly into the wizard without opening the multi-step dialog.
+* Functional testing: Testlink "Contribution" area
+
+### Security fix changes
+* Functional testing: ??
+* Regression testing: ??
