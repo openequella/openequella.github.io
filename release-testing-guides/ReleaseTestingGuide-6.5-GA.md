@@ -52,7 +52,7 @@ __Regression testing:__
 File uploads were re-implemented using AJAX instead of multipart and client side progress instead of server side.
 
 __Regression testing:__
-TestLink eqos-1687, eqos-1688, eqos-1689, eqos-1690, eqos-1691, eqos-1692, eqos-1693, eqos-1694, eqos-1695, eqos-1696, eqos-1697, eqos-1698 
+TestLink eqos-1687->eqos-1698 
 * Ensure progress bars still work
 * Make sure drag and drop still works
 * Ensure that any restrictions on file size and mime type still work (wizard control)
@@ -80,9 +80,11 @@ __Functional testing:__
 The functionality point the Equella Manager at a server that provides the latest Equella update has been removed.
 
 __Functional testing:__
+TestLink: eqos-5341
 * Ensure the Equella Manager has no mention of an 'upgrade server'
 
 __Regression testing:__
+TestLink: Regression tests flagged.
 * Ensure the Equella Manager can still perform updates from a local upgrade binary.
 
 ### #73 / #60 General build changes / scrubbing of commercial terminology
@@ -194,6 +196,7 @@ __Regression testing:__
 https://github.com/equella/Equella/commit/2b18a3707c31a5c643803560570073db445e8d3c
 
 __Regression testing:__
+TestLink: Regression tests flagged
 * Ensure the following work (can be at a high level):  Reporting, Flickr, Kaltura and SQL Server
 
 ### Upgrade srw servlet
@@ -201,13 +204,14 @@ __Regression testing:__
 https://github.com/equella/Equella/commit/e2ab5bd7a6574b77b3abddd91b2802574dd9ad71
 
 __Regression testing:__  
+TestLink: Regression Tests flagged
 * There is a known issue with SRW - https://github.com/equella/Equella/issues/115
 
 ### Use latest jna
-
 https://github.com/equella/Equella/commit/be29f0e80e8db106216301aac21b7563e8ddbaa1
 
 __Regression testing:__
+TestLink: Regression Tests flagged
 * Test inplace editor applet
 
 ### Option to self-generate a keystore when building or use a previously
