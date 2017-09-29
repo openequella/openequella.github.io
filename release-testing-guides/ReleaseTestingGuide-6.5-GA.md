@@ -73,6 +73,7 @@ __Performance testing:__
 System admins now configure the 'do not reply' email address via the Server admin pages.
 
 __Functional testing:__
+TetLink eqos-5343
 * Confirm the email address can be changed, and when an email is sent from Equella, the 'do not reply' sender field is set to the custom / configured email address.
 
 ### #74 (Remove the UpgradeProxyWeb python server)
@@ -353,16 +354,16 @@ Users were able to access inactive copyright attachments via using a direct URL
 
 
 ### Change the My tasks UI to allow for selection of multiple items, then allow moderators with the correct (new) permissions the ability to approve and reject tasks in bulk, and sequentially process tasks without returning to the results page between each task.
-* Functional testing: Testlink ?
+* Functional testing: Testlink eqos-1898
 
 ### Change the Manage tasks UI to allow for selection of multiple items, then allow admin users with the correct (new) permissions the ability to approve and reject tasks in bulk, and assign multiple tasks to a specific moderator.
-* Functional testing: Testlink ?
+* Functional testing: Testlink eqos-1885->eqos-1894
 
 ### Enhance the filtering and sorting capacity, and also make it easier for users to find the tasks they need to process by showing tasks assigned to them at the top, followed by tasks they could process then those assigned to others, also sorted in priority order.
-* Functional testing: Testlink ?
+* Functional testing: Testlink eqos-1880->eqos-1881
 
 ### Update both Manage tasks and My tasks pages to allow for complex filtering, including by assignment, collection, owner, date modified and assignee.
-* Functional testing: Testlink ?
+* Functional testing: Testlink eqos-1882->eqos-1884
 
 ### New bulk actions that can be performed against selected items including removing from workflow, moving from one workflow task to another and selecting live items not currenty in workflow and adding to a specific workflow task within the associated workflow.
 * Functional testing: Testlink eqos-1851, eqos-1852, eqos-1853, eqos-1871->1876
