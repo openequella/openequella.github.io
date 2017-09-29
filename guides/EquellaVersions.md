@@ -27,6 +27,7 @@ Major Minor Version ->  Release Build
 * 6.4-QA1 -> 6.4.r1330  Tomcat: 8.0.15
 * 6.4-QA2 -> 6.4-r1378
 * 6.4-QA3 -> 6.4.r1397
+* 6.4-QA4 -> 6.4.r1675
 
 
 Freemarker version can be found via the FTL script: 
