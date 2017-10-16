@@ -20,7 +20,7 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
 * [Hibernate Best Practices](gettingstarted/EquellaHibernateBestPractices.md)
 
 ## Optional Functionality
-* [Kaltura](optional-functionality/Kaltura.md)
+* [Kaltura](https://github.com/equella/Equella-Kaltura)
 * Oracle DB
 
 ## Administrative and User Guides
