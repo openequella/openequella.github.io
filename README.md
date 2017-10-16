@@ -50,7 +50,7 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
 * [Remote Repositories Configuration Guide](guides/RemoteRepositoriesConfigurationGuide.md)
 * [Clustering Configuration Guide](guides/ClusteringConfigurationGuide.md)
 * [Embedded Metadata Extraction User Guide](guides/EmbeddedMetadataExtractionUserGuide.md)
-* [Metadata Schema Configuration Guide](guides/metadataSchemaConfigurationGuide.md) 
+* [Metadata Schema Configuration Guide](guides/MetadataSchemaConfigurationGuide.md) 
 * [Hierarchy Configuration Guide](guides/HierarchyConfigurationGuide.md)
 * [Language Settings Configuration Guide](guides/LanguageSettingsConfigurationGuide.md)
 * [Copyright Configuration Guide](guides/CopyrightConfigurationGuides.md)
