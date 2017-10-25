@@ -4,9 +4,10 @@ EQUELLA is a digital repository that provides a single platform to house your te
 
 EQUELLA has been deployed for copyright resource collections, research materials, managing and exposing materials through websites and portals, content authoring, workflow, institutional policy and organizational resources. EQUELLA is currently in use in a wide range of schools, universities, colleges, TAFEs, departments of education, government agencies, and corporations worldwide.
 
-With over 15 years of history, EQUELLA is a mature solution written for the Java platform.  In its recent history, EQUELLA was proprietary software licensed to adopters by Pearson.  Currently EQUELLA is in the process of becoming open source software, led by contributors from Unicon and Edalex Solutions.
+With over 15 years of history, EQUELLA is a mature solution written for the Java platform.  In its recent history, EQUELLA was proprietary software licensed to adopters by Pearson.  EQUELLA is now available as open source software via Apereo. [Learn more about Equella and Apereo here.](https://www.apereo.org/projects/equella)
 
 ## Join the Community
+* [Join the Apereo Equella Google Group](https://groups.google.com/a/apereo.org/forum/#!forum/equella-users)
 * [Community Governance Model](community/CommunityGovernance.md)
 * [Documentation Guidelines](https://github.com/equella/equella.github.io/blob/master/community/DocumentationGuidelines.md)
 
