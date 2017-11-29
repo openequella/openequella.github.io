@@ -38,7 +38,7 @@ Please note that this guide has been developed using the latest Canvas as of Spr
 
 EQUELLA Canvas integration can be broken into the following steps:
 
-1.  Register an LTI OAuth Client in EQUELLA.
+1.  Register an LTI consumer in EQUELLA.
 2.  Add EQUELLA as an external tool in Canvas.
 3.  Add Canvas as an external tool in EQUELLA.
 4.  Test the installation.
