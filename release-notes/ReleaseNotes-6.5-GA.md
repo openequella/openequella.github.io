@@ -1,10 +1,8 @@
-# Release Notes for Equella 6.5-GA
+# Release Notes for Equella 6.5-Stable
 
-*_DRAFT_*
+`6.5-Stable` is the initial Open Source version of Equella, coupled with features and bug fixes that have been worked on over the past year.  Open Source changes have focused on scrubbing the code to align with open source licensing.  The build process was also overhauled to use sbt (Simple Build Tool) and not require an IDE (Integrated Development Environment) to build / develop code.
 
-6.5-GA is the initial Open Source version of Equella, coupled with features and bug fixes that have been worked on over the past year.  Open Source changes have focused on scrubbing the code to align with open source licensing.  The build process was also overhauled to use sbt (Simple Build Tool) and not require an IDE (Integrated Development Environment) to build / develop code. 
-
-This document is meant to detail the functional changes exposed to the user experience.  Backend changes and testing notes are in the release-testing-guides for this release - see [6.5-GA Release Testing Guide](https://github.com/equella/equella.github.io/blob/master/release-testing-guides/ReleaseTestingGuide-6.5-GA.md).
+This document is meant to detail the functional changes exposed to the user experience.  Backend changes and testing notes are in the release-testing-guides for this release - see [6.5-Stable Release Testing Guide](../release-testing-guides/ReleaseTestingGuide-6.5-GA.md).
 
 ### Office Integration Download Removed
 Tracked in issues #98 and #102.  Equella has the ability integrate with Microsoft Office products to enable a smoother editing experience.  Due to licensing issues, and the inherit issues of using an older interop DLL on more modern installs of Office, the download of the Office Integration ```msi``` package has been removed from the Equella Web UI, and the DLL in question have been removed from the git repo.  The functionality is still useful, so conceptual documentation has been provided for users to build and access this functionality as needed.
@@ -21,7 +19,8 @@ Tracked in issue #96.  The Linux scripts to run Equella now automatically are se
 ### Backend changes to build process, dependencies, and commercial terminology
 In order to create a more streamlined application that is not tied to an IDE, the Equella build process has been changed from ANT to SBT.  In order to align with the open source model, several dependencies were removed or changed, as well as hard-coded words denoting the last commercial owner and last commercial website of Equella were removed.  Any functional differences have been called out in this document.
 
-
+### Check for new EQUELLA versions
+The "Health" tab of the server administrator pages contains a check for newer versions of EQUELLA.
 
 ### Conversion Service Library Changed
 Tracked in issue #56.  The conversion service for Office MIME types has been switched to a different solution (Tika) to align with overall licensing goals.  The conversion results are not as clean as they used to be, so enhancements are welcome!
@@ -29,7 +28,7 @@ Tracked in issue #56.  The conversion service for Office MIME types has been swi
 ### The 'do not reply' Email Address of the Equella Mailer can now be Configured
 Tracked in issue #72.  System admins can now configure the 'do not reply' email address via the Server admin pages
 
-### Hosted Site for Upgrade Binaries Removed 
+### Hosted Site for Upgrade Binaries Removed
 Tracked in issue #74.  Historically, the Equella Manager had the option to pull Equella upgrade binaries from a centralized server.  This functionality has been removed.  Upgrade binaries will be tracked in the github Equella releases tab.
 
 ### Default LTI External Tool Contact for Equella is now Configurable
@@ -55,7 +54,7 @@ Equella no longer requires an 'Equella License Key' to run.
 * Users can edit the names of selected resources that will be added to the LMS in a selection session
 * A new checkbox _Select all attachments_ has been added to the _Add to External System_ page.
 * Links to content on the _Find Uses_ page will open in a new window.
-* Within the Course Builder in Brightspace, the user must select a module to edit before launching the integration 
+* Within the Course Builder in Brightspace, the user must select a module to edit before launching the integration
 session in Equella. Equella did not automatically select the module selected in Brightspace in the Equella selection session.
 * A new permission is required to start an integration selection session in Equella (still buggy).  This permission will be granted to logged in users by default.
 
@@ -79,6 +78,11 @@ session in Equella. Equella did not automatically select the module selected in 
 * Add the ability to attach workflow related files during moderation approve/reject or comment, and when an item is first saved to moderation. The files can be viewed in the new comments section on the approve/reject task page.
 * Updated the Moderation page so that the Approve/Reject buttons appear in a more logical position, and the workflow comments can be easily viewed in a scrollable panel.
 * A new workflow task type, 'script task', allows users to write a script which will automatically run as part of the workflow and proceed to the next workflow step.
+
+### Notifications
+
+* Split notifications into separate emails each with their own specific email subject.
+* Convert the email format to simple HTML to allow links and better layout.
 
 ### Contribution
 * Contributors now have the ability to drag an drop attachments directly into the wizard without opening the multi-step dialog.

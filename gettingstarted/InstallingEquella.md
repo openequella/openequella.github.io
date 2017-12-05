@@ -3,7 +3,7 @@
 # Installing Equella
 
 ## Environment setup
-Assuming you are building and installing Equella in the same environment, the following should be setup.  Details can be found in the [Equella Dev Setup](http://equella.github.io/gettingstarted/SettingUpAnEquellaDevEnvironment.html#download-required-software) guide.
+Assuming you are building and installing Equella in the same environment, the following should be setup.  Details can be found in the [Equella Dev Setup](https://github.com/equella/Equella#download-required-software) guide.
 
 - Java 8 (Oracle)
 - ImageMagick
@@ -12,16 +12,11 @@ Assuming you are building and installing Equella in the same environment, the fo
 
 Needed if you are building your own install binary:
 - GIT
-- SSH Key in Github
 - SBT
 
 ## Build the Installer
 
-If you don't have / don't want to use a pre-built binary, building Equella yourself is fairly straight forward:
-1. Clone the Equella core repo ``` ~$ git clone git@github.com:equella/Equella.git ```.
-1. If you want to include any Optional Functionalities, please review the associated [documentation](https://github.com/equella/equella.github.io/tree/master/optional-functionality).
-1. Git checkout the branch / tag you want to build off of.
-1. Run ``` ~$ sbt compile installerZip ``` in the Equella root directory.  This produces an installer zip binary in the {Equella}/Installer/target directory.
+If you don't have / don't want to use a pre-built binary, you can build EQUELLA from source yourself by following the instructions on the main [EQUELLA repo](https://github.com/equella/Equella).
 
 ## Install Equella
 1. Unzip the equella install zip binary.
@@ -36,12 +31,6 @@ You'll need to know where you've installed imagemagick, libav, java, and your da
 
 The 'Institution Administration URL' for local testing can be as simple as ```http://localhost:8080/admin/```
 
-### \*nix Install
-Ensure that the manager and scripts are executable:
-```bash
-~$ cd {install_location}/manager
-~$ chmod +x equellaserver manager jsvc
-```
 ### Windows Install
 Using the equellaserver and manager bat scripts, configure and install as Windows services.
 
@@ -62,7 +51,7 @@ Assuming Equella and the Equella Manager have been installed as services, naviga
 
 ## Accessing Equella / Finish Setup
 Use your browser to login to the EQUELLA manager (default is <http://localhost:3000>)
-From here you can click the "start" button to start the EQUELLA app server if not already done from a Windows service or \*nix start script. 
+From here you can click the "start" button to start the EQUELLA app server if not already done from a Windows service or \*nix start script.
 
 Once Equella has started you can log in to the server admin pages using the hostname and port you configured in the installer.
 
@@ -76,6 +65,3 @@ At this point, Equella is 'running', but still needs an institution to be useful
 1. After the import completes, click 'Return to Institution Management'
 1. Your newly imported institution should be enabled on the 'Institutions' page.  Click 'Login' under 'Actions'
 1. Login with the Equella super user ```TLE_ADMINISTRATOR```, and use the institution password you set when configuring the institution import.
-
-
-

@@ -1,8 +1,8 @@
-# Testing Guide for Equella 6.5-GA
+# Testing Guide for Equella 6.5-Stable
 
 *_DRAFT_*
 
-Please refer to the [6.5-GA Release Notes](https://github.com/equella/equella.github.io/blob/master/release-notes/ReleaseNotes-6.5-GA.md) for more details.
+Please refer to the [6.5-Stable Release Notes](https://github.com/equella/equella.github.io/blob/master/release-notes/ReleaseNotes-6.5-GA.md) for more details.
 
 ### #104 Scripting pack
 
@@ -29,7 +29,7 @@ __Testing:__
 
 ### #100 HTML Editor Plugins
 
-Another documentation shift to the main docs repo.  
+Another documentation shift to the main docs repo.
 
 __Testing:__
 * TestLink eqos-1941 + regression tests flagged
@@ -52,7 +52,7 @@ __Regression testing:__
 File uploads were re-implemented using AJAX instead of multipart and client side progress instead of server side.
 
 __Regression testing:__
-TestLink eqos-1687->eqos-1698 
+TestLink eqos-1687->eqos-1698
 * Ensure progress bars still work
 * Make sure drag and drop still works
 * Ensure that any restrictions on file size and mime type still work (wizard control)
@@ -66,7 +66,7 @@ __Functional testing:__
 * Confirm the conversion service can be enabled, and is usable
 
 __Performance testing:__
-* Try converting a 10 MB file on 6.4-QA3, and compare the speed of the same file converted on 6.5-GA.  
+* Try converting a 10 MB file on 6.4-QA3, and compare the speed of the same file converted on 6.5-GA.
 
 ### #72 (Allow configuration of the historically hardcoded donotreply@equella.com email address)
 
@@ -147,16 +147,16 @@ __Regression testing:__
 
 ### #44 / #46 ( Installer / Upgrader built via SBT )
 
-Installers and upgraders are all built via SBT.  
+Installers and upgraders are all built via SBT.
 
 __Regression testing:__
 * TestLink: regression tests flagged
 * Run the installer on each supported operating system.  Ensure you can launch Equella.
-* Upgrade Equella from a previous (commercial) release to this release.  
+* Upgrade Equella from a previous (commercial) release to this release.
 
 ### #41 ( Remove eCommerce )
 
-eCommerce was never used by clients in Equella (since it was an option when generating commercial licenses).  
+eCommerce was never used by clients in Equella (since it was an option when generating commercial licenses).
 
 __Regression testing:__
 * Ensure there is no mention of eCommerce features in the collection definition editors, Settings page, Admin Console, or ACLs; and all associated database tables have been removed.
@@ -204,7 +204,7 @@ TestLink: Regression tests flagged
 
 https://github.com/equella/Equella/commit/e2ab5bd7a6574b77b3abddd91b2802574dd9ad71
 
-__Regression testing:__  
+__Regression testing:__
 TestLink: Regression Tests flagged
 * There is a known issue with SRW - https://github.com/equella/Equella/issues/115
 
@@ -223,7 +223,7 @@ __Regression testing:__
 * Ensure you can use the existing keystore to sign jars
 
 ### "Use a custom param for the course ID" in Canvas
-* Functional testing:  
+* Functional testing:
   * Canvas integration using activations in Equella.  Ensure both the "course label" and "SIS ID" fields on the Canvas course are passed through to Equella (you will need to test one at a time since one overrides the other).  When activating an attachment the course will already be selected.
 * Performance testing: N/A
 * Regression testing: N/A
@@ -239,7 +239,7 @@ __Regression testing:__
 * Regression testing:  Make sure it works :)  (ie audit log table is cleared of old entries)
 
 ### EQ-33 don't use the public bookmark, use the actual params
-* Functional testing:  
+* Functional testing:
   * Ensure permissions are setup so users must login to see search page.  Use Share functionality on a search page (try various filtering and advanced search options to generate a URL with many query string parameters).  Copy the URL, logout of Equella and paste the URL into the browser -> User is forced to login before being directed to search page with all the parameters maintained.
 * Performance testing: N/A
 * Regression testing: N/A
@@ -251,7 +251,7 @@ __Regression testing:__
   * Access the file manager, and perform CRUD operations.
 
 ### EQ-2045 use LIST_COURSE_INFO priv, not LIST_COURSE
-* Functional testing:  
+* Functional testing:
   * On the Course REST endpoint, provide a "code" query string parameter and sure the relevant course is returned.  e.g. /api/Course/?code=EQ101  (user must have LIST\_COURSE\_INFO privilege)
 * Performance testing: N/A
 * Regression testing: N/A
@@ -265,13 +265,13 @@ Activation, Course,
 
 ### EQ-1045 (et al) refactors of entity rest services
 One of [VIEW_SECURITY_TREE, EDIT_SECURITY_TREE] is required
-* Functional testing:  
+* Functional testing:
   * Pick an entity type (e.g. Collection) and test that error strings are being returned correctly on the REST endpoint.  Errors to test are: 404 on a collection, 404 on a collection lock, attempt to edit a locked collection, edit security on a collection and leave the "who" field on a permission blank.
 * Performance testing: N/A
 * Regression testing: N/A
 
 ### EQ-2026 Do some validation on entities. don't let entity editing be a free-for-all
-* Functional testing:  
+* Functional testing:
   * Pick an entity type (e.g. Collection) and try to change its UUID via the REST API -> Should error
   * Create an entity and try to set the owner, createdDate and modifiedDate fields. -> Creation should succeed, but when retrieving the collection again it should not show the values for those fields that you passed in (they should be the actual owner, modified date etc)
   * Do the same again, but pass in a parameter ?import=true (note: you need to be logged in as TLE\_ADMINISTRATOR to do this) ->  Fields should be set to the values you passed in.
