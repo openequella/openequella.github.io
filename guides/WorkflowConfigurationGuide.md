@@ -222,7 +222,7 @@ To select users, groups or roles as moderators for the task, use the following b
 This section provides examples for creating a simple workflow and editing a complex workflow.
 Create a simple workflow
 
-![Example Workflow](WorkflowExample.png)
+<img src="http://github.com/equella/equella.github.io/guides/WorkflowTemplateEditor.png" height="20">
 
 The example ‘Documentation Workflow’ workflow template shown below, created in this section is a simple workflow intended to be used for reviewing documents.
 
