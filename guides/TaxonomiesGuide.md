@@ -100,11 +100,13 @@ The SQL Queries are associated with terms by mapping database queries to the tax
 
 The function and syntax of each query type is described according to the selected query type on the SQL Details page, above the query text area.
 
-**** Example setup:
+#### Example setup:
+
 Note 1: this is meant for demonstration / guidance purposes, not necessarily best practice. 
 Note 2:  The syntax is for Postgres.
 
-***** DB Tables:
+##### DB Tables:
+
 *TERM*
 ```
 CREATE TABLE term
@@ -136,7 +138,8 @@ CREATE TABLE term_data
 )
 ```
 
-***** Queries
+##### Queries
+
 *Get term*
 ```
 SELECT LEAF AS "term", UUID AS "uuid", FULL_PATH AS "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
