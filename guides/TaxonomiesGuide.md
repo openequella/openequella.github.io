@@ -100,7 +100,127 @@ The SQL Queries are associated with terms by mapping database queries to the tax
 
 The function and syntax of each query type is described according to the selected query type on the SQL Details page, above the query text area.
 
-Terms tab
+**** Example setup:
+Note 1: this is meant for demonstration / guidance purposes, not necessarily best practice. 
+Note 2:  The syntax is for Postgres.
+
+***** DB Tables:
+*TERM*
+```
+CREATE TABLE term
+(
+  term_id integer NOT NULL,
+  parent_term_id integer,
+  uuid text NOT NULL,
+  full_path text NOT NULL,
+  leaf text NOT NULL,
+  CONSTRAINT pk_term PRIMARY KEY (term_id),
+  CONSTRAINT fk_parent_term FOREIGN KEY (parent_term_id)
+      REFERENCES term (term_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT unique_leaf UNIQUE (leaf),
+  CONSTRAINT unique_uuid UNIQUE (uuid)
+)
+```
+*TERM_DATA*
+```
+CREATE TABLE term_data
+(
+  term_id integer NOT NULL,
+  key text NOT NULL,
+  value text NOT NULL,
+  CONSTRAINT pk_term_data PRIMARY KEY (term_id, key),
+  CONSTRAINT fk_term FOREIGN KEY (term_id)
+      REFERENCES term (term_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+```
+
+***** Queries
+*Get term*
+```
+SELECT LEAF AS "term", UUID AS "uuid", FULL_PATH AS "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
+FROM TERM t1
+WHERE FULL_PATH = :term
+```
+
+*Get child terms*
+```
+SELECT LEAF AS "term", UUID AS "uuid", FULL_PATH as "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
+FROM TERM t1
+WHERE ((:parentTerm IS NULL OR :parentTerm = '') AND PARENT_TERM_ID IS NULL) 
+UNION
+SELECT t1.LEAF AS "term", t1.UUID AS "uuid", t1.FULL_PATH as "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
+FROM TERM t1 
+INNER JOIN TERM parentTerm
+	ON t1.PARENT_TERM_ID = parentTerm.TERM_ID
+WHERE (:parentTerm IS NOT NULL AND parentTerm.FULL_PATH = :parentTerm)
+```
+*Get data for term*
+```
+SELECT td.VALUE
+FROM TERM_DATA td
+INNER JOIN TERM t
+	ON td.TERM_ID = t.TERM_ID
+WHERE t.FULL_PATH = :term 
+	AND td.KEY = :dataKey
+ ```
+ 
+ *Get all data for term*
+ ```
+SELECT td.KEY, td.VALUE
+FROM TERM_DATA td
+INNER JOIN Term t
+	ON td.TERM_ID = t.TERM_ID
+WHERE t.UUID = :uuid
+ ```
+
+*Search all terms*
+```
+SELECT LEAF AS "term", UUID AS "UUID", FULL_PATH AS "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
+FROM TERM t1
+WHERE FULL_PATH LIKE :searchQuery
+```
+
+*Count all terms*
+```
+SELECT COUNT (*)
+FROM TERM
+WHERE FULL_PATH LIKE :searchQuery
+```
+
+*Search leaf terms*
+```
+SELECT LEAF AS 'term', UUID as 'uuid', FULL_PATH AS 'fullterm', 1 AS 'isleaf'
+FROM TERM t1
+WHERE FULL_PATH LIKE :searchQuery
+	AND COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) = 1
+ ```
+ 
+ *Count leaf terms*
+```
+SELECT COUNT(*)
+FROM TERM t1
+WHERE FULL_PATH LIKE :searchQuery
+	AND COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) = 1
+ ```
+ 
+ *Search top-level terms*
+ ```
+ SELECT LEAF AS "term", UUID AS "UUID", FULL_PATH AS "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
+FROM TERM t1
+WHERE PARENT_TERM_ID IS NULL 
+	AND FULL_PATH LIKE :searchQuery
+ ```
+ 
+ *Count top-level terms*
+ ```
+ SELECT COUNT(*)
+FROM TERM
+WHERE PARENT_TERM_ID IS NULL
+```
+
+### Terms tab
 The Terms tab enables terms for the taxonomy to be defined and managed. 
 
 The configurable Terms page elements include:
