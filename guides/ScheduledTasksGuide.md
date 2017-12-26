@@ -4,7 +4,7 @@ Task | Frequency | Version(s) | Scope | Scheduling
 --- | --- | --- | --- | ---
 RemoveExpiredCacheEntries| Hourly |6.4-QA3 and later | Server |
 CheckCurrentOrdersTask| Hourly | 6.4 and prior | Institution |
-CleanThumbQueue | Daily | 6.4 and prior | Institution | ???
+CleanThumbQueue | Daily | Before 6.4-QA3 (if your DB has the thumbnail_request table, you won't have this task) | Institution | ???
 CheckInstitutionStorageQuotas | Daily | 6.4-QA3 and later | Institution | Runs at 23:00
 CheckEmailsTask | Daily | 6.4-QA3 and later | Institution | Runs at 23:00
 CheckURLsScheduledTask | Daily | 6.4-QA3 and later | Institution | Runs at 23:00
