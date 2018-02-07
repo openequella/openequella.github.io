@@ -389,7 +389,12 @@ Note: When using Equella on Windows and changing the equellaserver or equellaser
   * Release(s) Valid: At least 6.0-QA3,6.1-QA2, 6.2-GA+
   * Location: optional-config.properties 
   * Comments: Set the number of days to keep audit logs in Equella before the scheduled task truncates them. Default is 120 days (~4 months). 
-  *
+  
+* Config: com.tle.core.tasks.RemoveDeletedItems.daysBeforeRemoval = 7
+  * Release(s) Valid: At least 6.4-QA3+
+  * Location: optional-config.properties 
+  * Comments: Set the number of days to keep deleted items in Equella before the scheduled task purges them. Default is 7 days. 
+  
 ### Internal Equella Configs
 
 These configurations should be used only with the utmost care.  
