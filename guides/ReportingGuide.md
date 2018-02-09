@@ -16,7 +16,7 @@ Table of Contents
 * [User management](#user-management)
 * [Scenarios](#scenarios)
 * [Creating an Equella-Enabled BIRT Report Designer Binary](#creating-an-equella-enabled-birt-report-designer-binary)
-* [Equella Table Structures] (#equella-table-structures)
+* [Equella Table Structures](#equella-table-structures)
 
 ## Report Designer overview 
 
