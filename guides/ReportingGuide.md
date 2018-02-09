@@ -608,9 +608,9 @@ A given BIRT RD Equella release binary is comprised of a standard binary of BIRT
 
 ## Equella Table Structures
 
-[audit_log_entry table](EQUELLA Table Structures - audit_log_entry.pdf) – The contents of these columns changes based on the event_type and event_category
-[tleuser join item table structure](EQUELLA Table Structures - tleuser_join_item.pdf) – Often we want to generate a report that joins the tleuser table with the item table. The join is:tleuser.uuid = item.owner
-[tleuser__item__audit_log_entry__language_string structure](EQUELLA Table Structures - tleuser__item__audit_log_entry__language_string__.pdf) – Relationships between tleuser, audit_log_entry, language_string, item
+[audit_log_entry table](#EQUELLA Table Structures - audit_log_entry.pdf) – The contents of these columns changes based on the event_type and event_category
+[tleuser join item table structure](#EQUELLA Table Structures - tleuser_join_item.pdf) – Often we want to generate a report that joins the tleuser table with the item table. The join is:tleuser.uuid = item.owner
+[tleuser__item__audit_log_entry__language_string structure](#EQUELLA Table Structures - tleuser__item__audit_log_entry__language_string__.pdf) – Relationships between tleuser, audit_log_entry, language_string, item
 
 
 
