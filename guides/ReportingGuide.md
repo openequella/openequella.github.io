@@ -16,6 +16,7 @@ Table of Contents
 * [User management](#user-management)
 * [Scenarios](#scenarios)
 * [Creating an Equella-Enabled BIRT Report Designer Binary](#creating-an-equella-enabled-birt-report-designer-binary)
+* [Equella Table Structures] (#equella-table-structures)
 
 ## Report Designer overview 
 
@@ -604,3 +605,12 @@ User and Group information queries require careful implementation as each record
 
 # Creating an Equella-Enabled BIRT Report Designer Binary
 A given BIRT RD Equella release binary is comprised of a standard binary of BIRT RD, along with the Equella plugins from [equella/equella-reporting-plugin](https://github.com/equella/equella-reporting-plugin).  These plugins are the same plugins used in the Equella application to receive requests from BIRT RD, and to run the reports that have been added to Equella.
+
+## Table Structures
+
+[audit_log_entry table](EQUELLA Table Structures - audit_log_entry.pdf) – The contents of these columns changes based on the event_type and event_category
+[tleuser join item table structure](EQUELLA Table Structures - tleuser_join_item.pdf) – Often we want to generate a report that joins the tleuser table with the item table. The join is:tleuser.uuid = item.owner
+[tleuser__item__audit_log_entry__language_string structure](EQUELLA Table Structures - tleuser__item__audit_log_entry__language_string__.pdf) – Relationships between tleuser, audit_log_entry, language_string, item
+
+
+
