@@ -28,7 +28,8 @@ We do specific datasource integration with BIRT but [see here](WithoutBIRT.md) f
 alternatives to those integrations.
 
 You can see the results of the tutorials in action on the [betadev reporting](https://betadev.equella.net/reports/access/reports.do) 
-institution which contains example BIRT reports containing the queries discussed in these tutorials.   
+institution which contains example BIRT reports containing the queries discussed in 
+these tutorials.   
 
 1. [The basics - primary keys and UUIDs](TheBasics.md)
 1. [Querying strings](QueryingStrings.md)

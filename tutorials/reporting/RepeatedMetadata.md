@@ -33,20 +33,20 @@ control, for example:
 What if we'd like to report on each car separately? Thankfully the native XML support of 
 databases can easily handle this problem.
 
-## Selecting individual cars
+### Selecting individual cars
 
 **Report on each car**
 
 ```sql
 SELECT i.id AS item_id, i.uuid, i.version, 
-       ls_name.text as item_name, be_name.text as collection_name,
+       i_name.text as item_name, be_name.text as collection_name,
        (xpath('make/text()', ix.car))[1]::text as make,
        (xpath('model/text()', ix.car))[1]::text as model
 FROM item i 
 INNER JOIN (select id, unnest(xpath('item/cars/car', xml::xml)) as car from item_xml) ix 
            on i.item_xml_id = ix.id
 INNER JOIN base_entity be on be.id = i.item_definition_id
-LEFT JOIN language_string ls_name on i.name_id = ls_name.bundle_id
+LEFT JOIN language_string i_name on i.name_id = i_name.bundle_id
 LEFT JOIN language_string be_name on be.name_id = be_name.bundle_id
 WHERE i.institution_id = CURRENT_INSTITUTION
   AND be.uuid = '20d5d5eb-af16-43b0-a42b-962c57fe87f2'
