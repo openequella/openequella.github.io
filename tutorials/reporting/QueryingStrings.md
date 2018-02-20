@@ -30,8 +30,11 @@ So each language string lookup requires an LEFT JOIN on the `language_string` ta
 
 Here I've used the convention "&lt;table&gt;\_ls\_&lt;column&gt;" for naming of the `language_string` joins, just to keep some consistency. I'd recommend writing your queries with a naming strategy similar to this.
 
+
+**Next tutorial** : [Querying with the native XML type](QueryingXMLType.md)
+
 NOTES|
-----|
+:----|
 I've used LEFT JOIN here instead of INNER JOIN in case there is a null language string, in which case you will still get a row but with a null name.|
 The item's name and description are stored in the database, however they are actually generated from the item's XML and schema definition and aren't edited directly.|
 

@@ -18,6 +18,10 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
 ## Getting Started
 * [Installing Equella - Quick Start Guide](gettingstarted/InstallingEquella.md)
 
+## Tutorials
+
+* [Reporting wiki space](tutorials/reporting/README.md)
+
 ## Optional Functionality
 * [Kaltura](https://github.com/equella/Equella-Kaltura)
 * Oracle DB

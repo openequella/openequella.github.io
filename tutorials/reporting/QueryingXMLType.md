@@ -1,4 +1,4 @@
-## Querying using the native XML datatype
+## Querying with the native XML datatype
 
 All of our supported databases (Postgres, Oracle, MS SQL) have all had their own native XML 
 datatype for many years now, which allows query writers the ability to run fully fledged 
@@ -86,3 +86,5 @@ items with multiple cars.
 
 XPath queries are very powerful and they also unlock the power of treating different 
 parts of the Item metadata separately, as you will see in the next tutorial.
+
+**Next tutorial** : [Querying repeated metadata](RepeatedMetadata.md)

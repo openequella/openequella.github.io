@@ -43,7 +43,7 @@ UUIDs for collections, schemas, items etc.. are consider stable identifiers whic
 
 So we have some "name\_id" and "col\_name\_id" columns now but that's not particular useful to look at, so we need to learn how to get the text. 
 
-Next tutorial : [Querying strings](QueryingStrings.md)
+**Next tutorial** : [Querying strings](QueryingStrings.md)
 
 ### CURRENT_INSTITUTION
 
