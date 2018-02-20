@@ -18,6 +18,9 @@ It is intended to be the place to go to for:
 These tutorials are designed to be followed in order but more advanced 
 report writers might like to skip ahead. 
 
+For simplicity all items being reported on with these tutorials will use a 
+common [reporting tutorial schema](ReportingTutorialSchema.md).
+
 ### Querying using SQL
 
 The SQL demonstrated in these tutorials can be used with reporting tools other than BIRT. 
@@ -27,9 +30,8 @@ alternatives to those integrations.
 You can see the results of the tutorials in action on the [betadev reporting](https://betadev.equella.net/reports/access/reports.do) 
 institution which contains example BIRT reports containing the queries discussed in these tutorials.   
 
-1. [Reporting tutorial schema](ReportingTutorialSchema.md)
-2. [The basics - primary keys and UUIDs](TheBasics.md)
-3. [Querying strings](QueryingStrings.md)
-4. [Querying with the native XML type](QueryingXMLType.md)
-5. [Querying repeated metadata](RepeatedMetadata.md)
+1. [The basics - primary keys and UUIDs](TheBasics.md)
+1. [Querying strings](QueryingStrings.md)
+1. [Querying with the native XML type](QueryingXMLType.md)
+1. [Querying repeated metadata](RepeatedMetadata.md)
 
