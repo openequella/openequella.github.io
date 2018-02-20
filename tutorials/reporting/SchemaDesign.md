@@ -8,9 +8,9 @@ form that you see from the SQL perspective!
 
 The database schema is generated automatically from an Object Relation Mapping library 
 called [Hibernate](http://hibernate.org/orm/). Which hides a lot of the underlying schema 
-details and present you with more of a Java perspective of your data.
+details and presents you with more of a Java perspective of your data.
 
-The decision to use Hibernate has it's good and bad points:
+The decision to use Hibernate has its good and bad points:
 
 **Good:**
 
