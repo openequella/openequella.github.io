@@ -1,9 +1,13 @@
-The goal of this tutorial will be to create a query which queries the last 10 items by modification date in a
+## The basics - primary keys and UUIDs
 
-particular collection based on the UUID of the collection.
+The goal of each tutorial is to produce an SQL result set which retrieves the data we want. 
+These queries aren't specific to the BIRT JDBC dataset apart from the [CURRENT_INSTITUTION](#current_institution) 
+macro which you can easily replace if you aren't using BIRT.
 
-Step-by-step guide
-------------------
+The goal of this tutorial will be to create a query which queries the last 10 items by 
+modification date in a particular collection based on the UUID of the collection. 
+
+### Initial query
 
 To start with let's create a query which just gets the latest 10 items modified throughout the whole institution:
 
@@ -39,12 +43,11 @@ UUIDs for collections, schemas, items etc.. are consider stable identifiers whic
 
 So we have some "name\_id" and "col\_name\_id" columns now but that's not particular useful to look at, so we need to learn how to get the text. 
 
-Next tutorial : [Querying strings](Querying-strings_197722174.html)
+Next tutorial : [Querying strings](QueryingStrings.md)
 
-NOTE
+### CURRENT_INSTITUTION
 
-<span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
-CURRENT\_INSTITUTION is actually a special substitution made by our BIRT report extension (it replaces it with the ID of the current institution).
+`CURRENT_INSTITUTION` is actually a special substitution made by our BIRT report extension (it replaces it with the ID of the current institution).
 
 If you are executing the query outside of a BIRT dataset, you will need a different way of getting this ID.
 

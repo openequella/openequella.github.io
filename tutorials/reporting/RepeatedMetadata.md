@@ -1,8 +1,13 @@
-In the previous tutorial we learned how to use the `xpath` function to extract data from the item xml.
+## Querying repeated metadata nodes
 
-We did a simply query which returned a single value, however XPath queries are much more powerful than that, they can be used return multiple parts of the xml.
+In the previous tutorial we learned how to use the `xpath` function to extract data from 
+the item xml.
 
-A common pattern within EQUELLA is to collect multiple sets of data using the "Repeater" control, for example:
+We did a simply query which returned a single value, however XPath queries are much more 
+powerful than that, they can be used return multiple parts of the xml.
+
+A common pattern within EQUELLA is to collect multiple sets of data using the "Repeater" 
+control, for example:
 
 ```xml
 <xml>
@@ -25,10 +30,10 @@ A common pattern within EQUELLA is to collect multiple sets of data using the "R
 </xml>
 ```
 
-What if we'd like to report on each car separately? Thankfully the native XML support of databases can easily handle this problem.
+What if we'd like to report on each car separately? Thankfully the native XML support of 
+databases can easily handle this problem.
 
-Step-by-step guide
-------------------
+## Selecting individual cars
 
 **Report on each car**
 
@@ -52,10 +57,14 @@ Let's examine the inner query:
 
 `select id, unnest(xpath('item/cars/car', xml::xml)) as car from item_xml`
 
-The XPath "item/cars/car" is quite straight forward, it simply selects all the car elements. It's the `unnest()` call which turns each `<car>` element from the returned array into it's own row, naming the column "car".
+The XPath "item/cars/car" is quite straight forward, it simply selects all the car 
+elements. It's the `unnest()` call which turns each `<car>` element from the returned 
+array into it's own row, naming the column "car".
 
-Now that we have rows with individual &lt;car&gt; elements, it's a simple matter of extracting the data from the child nodes:
+Now that we have rows with individual &lt;car&gt; elements, it's a simple matter of 
+extracting the data from the child nodes:
 
 `(xpath('make/text()', ix.car))[1]::text as make, `
 
 `(xpath('model/text()', ix.car))[1]::text as model`
+

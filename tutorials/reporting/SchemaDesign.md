@@ -1,18 +1,26 @@
-Looking at the EQUELLA database schema can make someone who has to write queries against it shake their head and say "This doesn't make sense, why was it designed like this?".
+## EQUELLA schema *design*
 
-The short answer is that the EQUELLA schema *wasn't actually designed.* At least not in the form that you see from the SQL perspective!
+Looking at the EQUELLA database schema can make someone who has to write queries against it 
+shake their head and say "This doesn't make sense, why was it designed like this?".
 
-The database schema is generated automatically from an Object Relation Mapping library called <a href="http://hibernate.org/orm/" class="external-link">Hibernate</a>. Which hides a lot of the underlying schema details and present you with more of a Java perspective of your data.
+The short answer is that the EQUELLA schema *wasn't actually designed.* At least not in the 
+form that you see from the SQL perspective!
+
+The database schema is generated automatically from an Object Relation Mapping library 
+called [Hibernate](http://hibernate.org/orm/). Which hides a lot of the underlying schema 
+details and present you with more of a Java perspective of your data.
 
 The decision to use Hibernate has it's good and bad points:
 
 **Good:**
 
--   developers don't have to know much SQL - which makes it easier to write code and let Hibernate deal with the gory details, including easier support for multiple database types.
+-   Developers don't have to know much SQL - which makes it easier to write code and 
+let Hibernate deal with the gory details, including easier support for multiple database types.
 
 **Bad:**
 
--   developers don't have to know much SQL - which means the don't have to care about the physical SQL representation and can easily model data that is difficult to query by hand.
+-   Developers don't have to know much SQL - which means the don't have to care 
+about the physical SQL representation and can easily model data that is difficult to query by hand.
 
 EQUELLA schema peculiarities
 ============================
@@ -37,4 +45,5 @@ EQUELLA schema peculiarities
 Edalex Reporting database
 =========================
 
-Edalex have created a tool which addresses all of the issues listed above and gives you a much more intuitive view of your EQUELLA data. &lt;TODO how do they get it?&gt;
+Edalex have created a tool which addresses all of the issues listed above and gives you a 
+much more intuitive view of your EQUELLA data. 

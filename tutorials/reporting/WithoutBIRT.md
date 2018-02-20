@@ -1,6 +1,11 @@
-There is nothing stopping the use of other reporting tools instead of BIRT. You can create reports using any tool which can connect to an SQL database.
+## Alternatives to using BIRT
 
-Having said that we do provide BIRT extensions which give you additional querying capabilities which you won't get out of the box in another tool, however you may not need this functionality or can query it in a different way.
+There is nothing stopping the use of other reporting tools instead of BIRT. You can create 
+reports using any tool which can connect to an SQL database.
+
+Having said that we do provide BIRT extensions which give you additional querying capabilities 
+which you won't get out of the box in another tool, however you may not need this 
+functionality or can query it in a different way.
 
 | BIRT                   | Alternative                                                                                                                                                                  |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,4 +1,7 @@
-All tutorials in this wiki will be written against the same XML schema, which will be updated as needed for new tutorial topics.
+## Reporting tutorials EQUELLA schema
+
+All tutorials in this wiki will be written against the same XML schema, which will be 
+updated as needed for new tutorial topics.
 
 ```xml
 <xml>

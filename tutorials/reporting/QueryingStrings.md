@@ -1,11 +1,14 @@
-This tutorial continues on from - [The basics - primary keys and UUIDs](The-basics---primary-keys-and-UUIDs_197525607.html)
+## Querying strings
+
+This tutorial continues on from - [The basics - primary keys and UUIDs](TheBasics.md)
 
 Virtually all reports will require you to query the text stored in the `language_string` table.
 
-Despite the fact that this table is designed for storing multiple different text strings for different languages, we will be assuming that there is only going to be a single language specified (for 99.99% of clients this is a safe assumption).
+Despite the fact that this table is designed for storing multiple different text strings 
+for different languages, we will be assuming that there is only going to be a single 
+language specified (for 99.99% of clients this is a safe assumption).
 
-Step-by-step guide
-------------------
+### The query
 
 Let's modify the original "items by modification date" query to include `language_string` lookups:
 
@@ -27,9 +30,8 @@ So each language string lookup requires an LEFT JOIN on the `language_string` ta
 
 Here I've used the convention "&lt;table&gt;\_ls\_&lt;column&gt;" for naming of the `language_string` joins, just to keep some consistency. I'd recommend writing your queries with a naming strategy similar to this.
 
-<span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
-I've used LEFT JOIN here instead of INNER JOIN in case there is a null language string, in which case you will still get a row but with a null name.
-
-<span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
-The item's name and description are stored in the database, however they are actually generated from the item's XML and schema definition and aren't edited directly.
+NOTES|
+----|
+I've used LEFT JOIN here instead of INNER JOIN in case there is a null language string, in which case you will still get a row but with a null name.|
+The item's name and description are stored in the database, however they are actually generated from the item's XML and schema definition and aren't edited directly.|
 
