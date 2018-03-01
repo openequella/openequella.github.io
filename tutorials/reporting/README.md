@@ -31,8 +31,18 @@ You can see the results of the tutorials in action on the [betadev reporting](ht
 institution which contains example BIRT reports containing the queries discussed in 
 these tutorials.   
 
+# Simple SQL
+
 1. [The basics - primary keys and UUIDs](TheBasics.md)
 1. [Querying strings](QueryingStrings.md)
-1. [Querying with the native XML type](QueryingXMLType.md)
-1. [Querying repeated metadata](RepeatedMetadata.md)
+
+#### Database specific guides
+
+Postgres:
+1. [Querying with the native XML type](postgres/QueryingXMLType.md)
+1. [Querying repeated metadata](postgres/RepeatedMetadata.md)
+
+SQLServer:
+1. [Querying with the native XML type](sqlserver/QueryingXMLType.md)
+1. [Querying repeated metadata](sqlserver/RepeatedMetadata.md)
 

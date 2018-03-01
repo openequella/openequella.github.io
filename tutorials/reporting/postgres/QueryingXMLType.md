@@ -27,7 +27,7 @@ To query this using with XPath you can use:
 
 NOTE|
 ---|
-XPath queries will default to being relative to the root node, e.g. &lt;xml&gt; for our item xml. If you start your path with a '/' you would need to include the root node too: `/xml/item/cars/car`|
+On Postgres, XPath queries will default to being relative to the root node, e.g. &lt;xml&gt; for our item xml. If you start your path with a '/' you would need to include the root node too: `/xml/item/cars/car`|
 
 Let's put this into our query:
 
