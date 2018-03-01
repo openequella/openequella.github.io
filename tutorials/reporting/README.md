@@ -31,12 +31,12 @@ You can see the results of the tutorials in action on the [betadev reporting](ht
 institution which contains example BIRT reports containing the queries discussed in 
 these tutorials.   
 
-# Simple SQL
+### Cross platform SQL
 
 1. [The basics - primary keys and UUIDs](TheBasics.md)
 1. [Querying strings](QueryingStrings.md)
 
-#### Database specific guides
+### Database specific guides
 
 Postgres:
 1. [Querying with the native XML type](postgres/QueryingXMLType.md)
@@ -46,3 +46,6 @@ SQLServer:
 1. [Querying with the native XML type](sqlserver/QueryingXMLType.md)
 1. [Querying repeated metadata](sqlserver/RepeatedMetadata.md)
 
+Oracle:
+1. [Querying with the native XML type](oracle/QueryingXMLType.md)
+1. [Querying repeated metadata](oracle/RepeatedMetadata.md)

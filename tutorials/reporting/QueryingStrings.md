@@ -35,5 +35,5 @@ NOTES|
 :----|
 I've used LEFT JOIN here instead of INNER JOIN in case there is a null language string, in which case you will still get a row but with a null name.|
 The item's name and description are stored in the database, however they are actually generated from the item's XML and schema definition and aren't edited directly.|
-I've used `LIMIT 10` here which works on Postgres, if you're using using SQLServer or Oracle, you will need to use `SELECT TOP 10` instead.|  
+  
 

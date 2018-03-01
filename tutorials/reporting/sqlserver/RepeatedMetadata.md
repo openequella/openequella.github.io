@@ -44,10 +44,10 @@ SELECT TOP 10 i.id AS item_id, i.uuid, i.version,
        carxml.query('model/text()') as model
 FROM item i 
 INNER JOIN (select id, cast (xml AS XML) itemxml from item_xml) ix on i.item_xml_id = ix.id
+CROSS APPLY itemxml.nodes('/xml/item/cars/car') car(carxml)
 INNER JOIN base_entity be on be.id = i.item_definition_id
 LEFT JOIN language_string i_name on i.name_id = i_name.bundle_id
 LEFT JOIN language_string be_name on be.name_id = be_name.bundle_id
-CROSS APPLY itemxml.nodes('/xml/item/cars/car') car(carxml)
 WHERE i.institution_id = CURRENT_INSTITUTION
   AND be.uuid = '20d5d5eb-af16-43b0-a42b-962c57fe87f2'
 ```

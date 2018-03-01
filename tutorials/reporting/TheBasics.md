@@ -43,6 +43,15 @@ UUIDs for collections, schemas, items etc.. are consider stable identifiers whic
 
 So we have some "name\_id" and "col\_name\_id" columns now but that's not particular useful to look at, so we need to learn how to get the text. 
 
+**Limiting the number of results**
+
+I've used Postgres syntax for limiting the number of results but each database has a slightly syntax:
+ 
+
+Postgres|SQLServer|Oracle
+:----|---|---|
+`SELECT ... LIMIT 10`| `SELECT TOP 10 ...` | `SELECT ... WHERE ROWNUM <= 10`|
+
 **Next tutorial** : [Querying strings](QueryingStrings.md)
 
 ### CURRENT_INSTITUTION
