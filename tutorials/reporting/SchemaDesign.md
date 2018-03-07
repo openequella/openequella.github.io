@@ -42,8 +42,8 @@ EQUELLA schema peculiarities
     -   Postgres, Oracle and SQL Server all have native XML data types which enable you to do advanced XML queries using XPath.
     -   It is still possible to use these datatypes, however you must use casting to get access to them and this will be always be slower than direct usage.
 
-Edalex Reporting database
-=========================
+Edalex Reporting database schema
+================================
 
-Edalex have created a tool which addresses all of the issues listed above and gives you a 
-much more intuitive view of your EQUELLA data. 
+Edalex has  developed a separate reporting database schema and tool which addresses all of the issues listed above and gives you a much more intuitive view of your EQUELLA data. This tool is only available to Edalex clients. They can access it through their [support portal](http://support.edalexsolutions.com).
+
