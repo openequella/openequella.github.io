@@ -4,6 +4,7 @@ _Description:_ Lists all contents of the current item's staging folder
 
 _Disclaimer:_ Example scripts are provided as-is without any warrenty, and are meant as Proof-of-Concepts for various abilities of the Equella scripting engine. It is assumed thorough testing of any example script in this repository will be performed by the adopter before running on a Production institution.
 
+```
 var enableLogging = true;
 
 // List out the files in the staging folder
@@ -23,3 +24,4 @@ function log(msg) {
         logger.log(currentItem.getUuid() + "/" + currentItem.getVersion() + ": " + msg);
     }
 }
+```
