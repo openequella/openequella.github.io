@@ -1,5 +1,7 @@
 # Equella Ping Utility 
 
+Code:  [Equella-Tools/ping-utility](https://github.com/equella/Equella-Tools/tree/master/ping-equella)
+
 *Recommended for use only with a strong understanding of the system and the potential impact of the utility*
 
 This is a Java utility that loops through Equella items (optionally filtered by institution and/or collection), checking if the item's attachment exist.
