@@ -10,7 +10,7 @@ You are solely responsible for determining the appropriateness of using or redis
 Trainer Notes
 Core Principles Training Deck
 Core Principles Workbook
-Review
+[Review](EQ101%20Review%20EQ6.3%20Open%20Source.pptx)
 
 ### EQUELLA Content Administration (201)
 Content Administration Trainer Notes
