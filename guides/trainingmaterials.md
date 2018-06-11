@@ -11,7 +11,7 @@ You are solely responsible for determining the appropriateness of using or redis
 
 [Core Principles Training Deck](EQ101EQUELLA63CorePrinciplesPPTOpenSource.pptx)
 
-[Core Principles Workbook](EQ101EQUELLA63CorePrinciplesWorkbookOpenSource.pptx)
+[Core Principles Workbook](EQ101EQUELLA63CorePrinciplesWorkbookOpenSource.docx)
 
 [Review](EQ101%20Review%20EQ6.3%20Open%20Source.pptx)
 
@@ -20,7 +20,7 @@ You are solely responsible for determining the appropriateness of using or redis
 
 [Content Administration Training Deck](EQ201EQUELLA63ContentManagementSlidesOpenSource.pptx)
 
-[Content Administration Workbook](EQ201EQUELLA63ContentAdministratorWorkbookOpenSource.pptx)
+[Content Administration Workbook](EQ201EQUELLA63ContentAdministratorWorkbookOpenSource.docx)
 
 
 ### EQUELLA Application Administration (301)
