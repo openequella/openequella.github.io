@@ -80,3 +80,6 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
 
 ## Tests
 * [Test Enabling Kaltura](tests/migration/64QA3-to-OS/TestEnablingKaltura.md)
+
+## Training Materials
+* [Historical Training Materials](guides/trainingmaterials)
