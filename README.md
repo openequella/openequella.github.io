@@ -13,6 +13,7 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
 * [Documentation Guidelines](https://github.com/equella/equella.github.io/blob/master/community/DocumentationGuidelines.md)
 
 ## Release Notes
+* [6.6 and above](https://version.equella.net/)
 * [6.5-Stable](release-notes/ReleaseNotes-6.5-GA.md)
 
 ## Getting Started
@@ -61,6 +62,10 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
 * [Searching User Guide](guides/SearchingUserGuide.md)
 * [Advanced Search Configuration](guides/AdvancedSearchConfiguration.md)
 * [Glossary of Terms](guides/GlossaryOfTerms.md)
+
+## 6.6 Release guides (PDF)
+
+* [Features Guide](guides/EQUELLA%206.6%20Features%20Guide.pdf)
 
 ## 6.5 Release guides (PDF)
 
