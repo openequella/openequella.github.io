@@ -34,6 +34,7 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
     * [Theming Guide](guides/ThemingGuide.md)
     * [Workflow Configuration Guide](guides/WorkflowConfigurationGuide.md)
     * [Workflow Moderation Guide](guides/WorkflowModerationGuide.md)
+* [Upgrade Guide](guides/UpgradeGuide.md)    
 
 * [Administration Overview Guide](guides/AdministrationOverviewGuide.md)
 * [Managing Institutions](guides/ManageInstitutions.md)
