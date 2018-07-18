@@ -1,7 +1,7 @@
 [Home](https://equella.github.io/)
 
 # Integrations
-Equella has a number of ways to integrate with 3rd party systems
+openEquella has a number of ways to integrate with 3rd party systems
 
 # Guides
 
@@ -43,32 +43,32 @@ Equella has a number of ways to integrate with 3rd party systems
 # LMS - Blackboard
 
 ## Blackboard Building Block 9.1 SP14+
-The Blackboard Academic SuiteTM is a comprehensive engagement and assessment solution that grows as your institution grows. EQUELLA provides a [building block](https://github.com/equella/equella-blackboard-integration) that allows Blackboard users to search for content in EQUELLA and easily link it back to a course. This Building Block works with Blackboard Learn 9.1 SP14 and above.
-Download the EQUELLA Building Block for Blackboard Learn 9.1 SP14 and higher.  
+The Blackboard Academic SuiteTM is a comprehensive engagement and assessment solution that grows as your institution grows. openEquella provides a [building block](https://github.com/equella/equella-blackboard-integration) that allows Blackboard users to search for content in openEquella and easily link it back to a course. This Building Block works with Blackboard Learn 9.1 SP14 and above.
+Download the openEquella Building Block for Blackboard Learn 9.1 SP14 and higher.  
 
 [Blackboard Integration Guide](../guides/BlackboardLearnIntegrationGuide.md)
 
 # LMS - Moodle
 
 ## Moodle Module
-Moodle is a course management system (CMS) - a free, Open Source software package designed using sound pedagogical principles, to help educators create effective online learning communities. EQUELLA provides extensions to Moodle that allows users to search for content in EQUELLA and easily link it back to a course.
+Moodle is a course management system (CMS) - a free, Open Source software package designed using sound pedagogical principles, to help educators create effective online learning communities. openEquella provides extensions to Moodle that allows users to search for content in openEquella and easily link it back to a course.
 #### Moodle 2.7 and above
-* [EQUELLA Module](https://github.com/equella/moodle-mod_equella) to add EQUELLA content as resources or activities - Moodle 2.7 and higher. 
+* [openEquella Module](https://github.com/equella/moodle-mod_equella) to add openEquella content as resources or activities - Moodle 2.7 and higher. 
 
-* [Search Block](https://github.com/equella/moodle-block_equella_search) for users to search EQUELLA directly. Requires the Module to also be installed.
+* [Search Block](https://github.com/equella/moodle-block_equella_search) for users to search openEquella directly. Requires the Module to also be installed.
 
-* [Task Block](https://github.com/equella/moodle-block_equella_tasks) for users to view their EQUELLA tasks and notifications. Requires the Module to also be installed.
+* [Task Block](https://github.com/equella/moodle-block_equella_tasks) for users to view their openEquella tasks and notifications. Requires the Module to also be installed.
 
-* [List Block](https://github.com/equella/moodle-block_equella_links) for users to create links into EQUELLA. Requires the Module to also be installed.
+* [List Block](https://github.com/equella/moodle-block_equella_links) for users to create links into openEquella. Requires the Module to also be installed.
 
-* [Diagnostics Block](https://github.com/equella/moodle-mod_equella-tools) for users to run extra EQUELLA diagnostics. Requires the Module to also be installed.
+* [Diagnostics Block](https://github.com/equella/moodle-mod_equella-tools) for users to run extra openEquella diagnostics. Requires the Module to also be installed.
 
 # Custom Tools
 
-## EQUELLA Active Cache tool
-The Active Cache tool helps to populate cache servers with EQUELLA content for improved responsiveness.
+## openEquella Active Cache tool
+The Active Cache tool helps to populate cache servers with openEquella content for improved responsiveness.
 * [Active Cache tool](https://github.com/equella/Equella/tree/master/Source/Tools/Cacher)
 
-# EQUELLA HTML Editor Plugins
-HTML Editor Plugins allow extension of the functionality of the basic HTML editor. These plugins are sourced from various third parties, and users are bound to observe such licensing and support as those parties may provide. You can also create your own plugins.   Example EQUELLA HTML Editor Plugins can be downloaded [here](https://github.com/equella/equella.github.io/tree/master/example-scripts/HTML-editor-plugin).
+# openEquella HTML Editor Plugins
+HTML Editor Plugins allow extension of the functionality of the basic HTML editor. These plugins are sourced from various third parties, and users are bound to observe such licensing and support as those parties may provide. You can also create your own plugins.   Example openEquella HTML Editor Plugins can be downloaded [here](https://github.com/equella/equella.github.io/tree/master/example-scripts/HTML-editor-plugin).
 

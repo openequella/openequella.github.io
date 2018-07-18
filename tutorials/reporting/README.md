@@ -1,15 +1,15 @@
 # Reporting wiki space
 
 This is a space dedicated to helping you get the most out of the data 
-contained in your EQUELLA institution(s).
+contained in your openEQUELLA institution(s).
 
 It is intended to be the place to go to for:
 
 -   Tutorials for writing a particular query
--   Help writing the most efficient query for your database and EQUELLA
+-   Help writing the most efficient query for your database and openEQUELLA
  instance
--   Understanding the intricacies of the EQUELLA SQL schema - 
-[Why does the EQUELLA schema make no sense?!](SchemaDesign.md)
+-   Understanding the intricacies of the openEQUELLA SQL schema - 
+[Why does the openEQUELLA schema make no sense?!](SchemaDesign.md)
 -   Learn about reports that other users  have created
 -   Picking the right dataset type for the job
 

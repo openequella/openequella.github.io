@@ -1,8 +1,8 @@
-# Additional Information on Equella in general, how-tos, guides, etc.
+# Additional Information on openEquella in general, how-tos, guides, etc.
 
-[Turning An Equella Institution Into An OAI Endpoint](#turning-an-equella-institution-into-an-oai-endpoint)
+[Turning An openEquella Institution Into An OAI Endpoint](#turning-an-equella-institution-into-an-oai-endpoint)
 
-[Using Equella to Harvest Another Equella Via OAI](#using-equella-to-harvest-another-equella-via-oai)
+[Using openEquella to Harvest Another openEquella Via OAI](#using-equella-to-harvest-another-equella-via-oai)
 
 [Bulk Update Of User Email Notification Option](#bulk-update-of-user-email-notification-option)
 
@@ -10,7 +10,7 @@
 
 [Reset the Server Admin Pages Password](#reset-the-server-admin-pages-password)
 
-[Reset the Equella Manager Password](#reset-the-equella-manager-password)
+[Reset the openEquella Manager Password](#reset-the-equella-manager-password)
 
 [Adding Collaborators In Bulk](#adding-collaborators-in-bulk)
 
@@ -18,15 +18,15 @@
 
 [Enable Remote Debugging via Eclipse](#enable-remote-debugging-via-eclipse)
 
-## Turning An Equella Institution Into An OAI Endpoint
+## Turning An openEquella Institution Into An OAI Endpoint
 
-While Equella can consume OAI_DC compliant resources from third party sites, we can also configure Equella to be an OAI_DC endpoint.
+While openEquella can consume OAI_DC compliant resources from third party sites, we can also configure openEquella to be an OAI_DC endpoint.
 
 Setting up an example endpoint in your institution
 1. Navigate to your metadata schema via the Admin Console, and click on the 'Transformations' tab.
 2. Add an Export Transformation and select a non-empty xsl file. Here is an example: oai_dc1.xslt. A very basic identity transform such as iden
 tity.xslt can also be used for testing purposes.
-4. To verify Equella is recognizing the new export, navigate to this link to list all Metadata Formats available on the site:
+4. To verify openEquella is recognizing the new export, navigate to this link to list all Metadata Formats available on the site:
 my equella institution/p/oai?verb=ListMetadataFormats
 5. Next, create a Dynamic Collection via the Admin Console. Allow the collection to be available through the OAI_PMH Set service (the
 Harvester Collection is not for the OAI harvesting setup).
@@ -44,7 +44,7 @@ Notes:
 ```HTTP Status 500 - <error code="cannotDisseminateFormat">"oai_dc" is not supported by the item or by the repository</error>```
 
 
-## Using Equella to Harvest Another Equella Via OAI
+## Using openEquella to Harvest Another openEquella Via OAI
 
 * The server url should be eqinstall /p/oai
 * OAI harvesting only brings over the metadata - attachments are not included.
@@ -120,18 +120,18 @@ update sys_system_config set value =
 'admin.password'
 ```
 
-Older versions of Equella have used the following DB query to the same effect:
+Older versions of openEquella have used the following DB query to the same effect:
 ```
 update configuration_property set value = '5f4dcc3b5aa765d61d8327deb882cf99' where
 property = 'admin.password' and institution_id = 0
 ```
-#### Reset the Equella Manager Password
+#### Reset the openEquella Manager Password
 
 Replace the contents of eq install/manager/users.properties with:
 ```
 admin = SHA256:c9cb02db972223b7d476c792f30c371b71cd0af9fb09c2d00e892ddf2b4d6729
 ```
-Restart the Equella Manager. Credentials are now:
+Restart the openEquella Manager. Credentials are now:
 username: admin
 password: equella
 
@@ -140,19 +140,19 @@ Disclaimer 1: This is NOT tested or guaranteed. Proceed at your own risk. No lif
 Disclaimer 2: Backup your filestore and DB - this is not a recommended operation.
 
 1. Verify access to a user that has notifications to view.
-2. Turn off Equella
+2. Turn off openEquella
 3. Run the following DB script:
 ```
 delete from notification;
 ```
 4. Delete the notifications index on all nodes in the cluster.
-5. Start Equella
+5. Start openEquella
 6. Confirm that the notifications have indeed been removed from the UI.
 
 ## Enable Remote Debugging via Eclipse
 **Setup**
-Ensure the you've imported and built the tagged Equella code base from GIT that is equal to the Equella version you want to debug.
-Enable remote debugging in Equella install by adding the following to JAVA_ARGS and restart Equella:
+Ensure the you've imported and built the tagged openEquella code base from GIT that is equal to the openEquella version you want to debug.
+Enable remote debugging in openEquella install by adding the following to JAVA_ARGS and restart openEquella:
 ```
 -Xdebug -Xrunjdwp:transport=dt_socket,address=1044,server=y,suspend=n
 ```
@@ -164,7 +164,7 @@ Such as:
 -XX:+UseParNewGC -XX:CMSInitiatingOccupancyFraction=70 -Xdebug
 -Xrunjdwp:transport=dt_socket,address=1044,server=y,suspend=n"
 ```
-To attach your local Eclipse Debugger to a given remote Equella process, navigate to the Eclipse Debug Configurations, and setup a new remote
+To attach your local Eclipse Debugger to a given remote openEquella process, navigate to the Eclipse Debug Configurations, and setup a new remote
 connection.
 
 If you run into problems connecting, here are some troubleshooting steps:

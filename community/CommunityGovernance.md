@@ -1,4 +1,4 @@
-# Equella Open Source Governance Rules
+# openEquella Open Source Governance Rules
 (Adopted June 2017)
 
 
@@ -45,13 +45,13 @@ Responsibilities:
 ## PMC Active Member
 Nominations (or self-nominations) to become members of the PMC should be made privately and directly to the PMC Chair for off-line discussion. Discussion prior to voting and the voting itself is done off-list, among the PMC membership. New members are elected by super majority (e.g., 2/3 of active PMC membership).  Announcement of new members is done on-list.
 
-Getting involved in the Equella Open Source community does not require PMC membership. However, involvement in the Equella Open Source community is required to be considered for PMC membership.
+Getting involved in the openEquella community does not require PMC membership. However, involvement in the openEquella community is required to be considered for PMC membership.
 
 Involvement includes:
-* Participate actively in the Equella Open Source email list discussions and deliberations on public and private PMC lists
+* Participate actively in the openEquella email list discussions and deliberations on public and private PMC lists
 * Participate actively in scheduled calls in areas of release management, maintenance, QA, Accessibility, etc.
-* Contribute actively to Equella Open Source planning, design, development, testing, release, etc.
-* Contribute actively to Equella Open Source software maintenance (contribute patches, QA testing, etc.)
+* Contribute actively to openEquella planning, design, development, testing, release, etc.
+* Contribute actively to openEquella software maintenance (contribute patches, QA testing, etc.)
 * Contribute actively to community documentation  (<https://equella.github.io/> )
 
 There is no set term ("merit never expires") for PMC members.
@@ -60,7 +60,7 @@ PMC Members possesses a binding vote on PMC decisions.
 
 Responsibilities:
 * Participate actively in PMC discussions and deliberations.
-* Contribute actively to Equella Open Source planning, design, development, testing, release, etc.
+* Contribute actively to openEquella planning, design, development, testing, release, etc.
 * Help maintain PMC documentation.
 
 ## PMC Member Emeritus

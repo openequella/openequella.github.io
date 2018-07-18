@@ -34,38 +34,38 @@ Table of Contents
 
 ## Administration Overview
 
-This guide provides system administrators with an understanding of the EQUELLA administration and management tools. 
+This guide provides system administrators with an understanding of the openEquella administration and management tools. 
 
 The tools described in this document include the:
-* Administration Console—for managing EQUELLA institution content, users and security.
-* Institution Manager—for managing multiple EQUELLA institutions on the same server.
-* Settings page—to manage various parts of the EQUELLA institution. 
+* Administration Console—for managing openEquella institution content, users and security.
+* Institution Manager—for managing multiple openEquella institutions on the same server.
+* Settings page—to manage various parts of the openEquella institution. 
 
 
 ## Administration Console
 
-The EQUELLA Administration Console provides a range of tools and plug-ins that simplify the management and configuration of EQUELLA.
+The openEquella Administration Console provides a range of tools and plug-ins that simplify the management and configuration of openEquella.
 
-To access EQUELLA and open the Administration Console
-1. Open a browser and enter your EQUELLA URL (e.g.‘http://equella.myequellainstitution.edu’).
-2. Log in to EQUELLA as an administrator, select Settings then Administration console
+To access openEquella and open the Administration Console
+1. Open a browser and enter your openEquella URL (e.g.‘http://equella.myequellainstitution.edu’).
+2. Log in to openEquella as an administrator, select Settings then Administration console
 The Administration console displays in a new window.
 
 ### Administration Console tools
-Each Administration Console tool provides an interface to edit or configure a series of EQUELLA properties. The following is an overview of the Administration Console tools:
+Each Administration Console tool provides an interface to edit or configure a series of openEquella properties. The following is an overview of the Administration Console tools:
 * **Metadata Schemas**—enables the creation of schemas that are used to hold the metadata for collections. One schema can be used in multiple collections. 
-* **Collection Definitions**—the type of resources stored in the EQUELLA Digital Repository. A collection represents a unique container to store resources within EQUELLA and provides information about the resource, assisting in activities such as searching, storage, collaboration and contribution.
+* **Collection Definitions**—the type of resources stored in the openEquella Digital Repository. A collection represents a unique container to store resources within openEquella and provides information about the resource, assisting in activities such as searching, storage, collaboration and contribution.
 * **Advanced Searches**—creates custom searches by searching specified metadata nodes and collections. 
 * **Taxonomies**—enables the creation and use of large taxonomies for improved resource classification.
-* **Dynamic Collections**—the EQUELLA implementation of OAI Sets based on collection resources from one or more collections. 
+* **Dynamic Collections**—the openEquella implementation of OAI Sets based on collection resources from one or more collections. 
 * **Workflow Templates**—allows content moderation and quality assurance processes to be customised and automated for each associated collection.
 * **Hierarchy Editor**—configures the display of resources in hierarchies to make them more discoverable to users.
-Reporting—manages EQUELLA Digital Repository report availability, import and export. 
+Reporting—manages openEquella Digital Repository report availability, import and export. 
 * **Harvester Profiles**—manages the configuration of Harvesters for harvesting of resources into selected collections. 
 * **Remote Repositories**—configures external repositories which allow users to search for external resources and import results directly into a contribution wizard.
 * **Courses**—configures a list of courses for use with a copyright or integrated third-party system. 
-* **User Management**—configures the plug-ins for user management in EQUELLA. 
-* **Security Manager**—manages the privileges associated with users and groups allowing fine-grained control of user privileges for all areas of EQUELLA. 
+* **User Management**—configures the plug-ins for user management in openEquella. 
+* **Security Manager**—manages the privileges associated with users and groups allowing fine-grained control of user privileges for all areas of openEquella. 
 #### Opening the Administration console tools
 The administration console tools behave in different ways when selected:
 * Hierarchy Editor and Security Manager display an editor. 
@@ -78,7 +78,7 @@ The administration console tools behave in different ways when selected:
 
 #### Administration Console buttons
 The following action buttons can be displayed:
-* **Add** - Click Add to display an editor and create a new object for the EQUELLA instance.
+* **Add** - Click Add to display an editor and create a new object for the openEquella instance.
 * **Edit**  - Select an object and click Edit  (or double-click the object) to open the editor and make changes.  If the selection is being edited by another user a Locked dialog displays.
 * **Open as read-only** — Disables the Save button so that no changes can be made. 
 * **Forcefully unlock** — Unlocks the entity from the previous owner. Editing can occur but changes can be lost from one or other user.
@@ -93,9 +93,9 @@ The following action buttons can be displayed:
 * **Configure** -  Click Configure to display the selected plug-in’s dialog.
 
 ### Courses
-Courses in EQUELLA are used for copyright license activation and for third-party integrations such as Blackboard™ or Moodle™. Courses can be archived for future use or multiple courses can be imported with a bulk upload.
+Courses in openEquella are used for copyright license activation and for third-party integrations such as Blackboard™ or Moodle™. Courses can be archived for future use or multiple courses can be imported with a bulk upload.
 
-To access an EQUELLA course
+To access an openEquella course
 1. Select Courses from the Administration Console to display a list of courses. 
 
 To import multiple courses
@@ -128,11 +128,11 @@ The Course Editor provides an interface for course configuration with the follow
 * Access Control—controls access to a course.
 ### Details tab
 The Details page elements include:
-* **Course Name**—enter an appropriate course name (e.g. EQUELLA 101). This name is displayed to users when activating and managing copyright resources.
+* **Course Name**—enter an appropriate course name (e.g. openEquella 101). This name is displayed to users when activating and managing copyright resources.
 * **Description**—enter an appropriate course description. This description is displayed on the resource’s Copyright tab when a resource is activated. An email address or URL can be entered and are displayed as a clickable link.
 * **Department**—enter the name of the department responsible for material (e.g. Sample Department).
 * **Course Owner**—defaults to the course creator. Clicking Search displays the Select Recipients... dialog where a new owner can be selected.
-* **Code**—enter an ID for linking the course to third-party integrations such as Blackboard™ or Moodle™. (NOTE: The EQUELLA course code should be exactly the same as the course code used in the integrated system.)
+* **Code**—enter an ID for linking the course to third-party integrations such as Blackboard™ or Moodle™. (NOTE: The openEquella course code should be exactly the same as the course code used in the integrated system.)
 * **Start Date**—selecting the course start date is optional. If this field is blank the course start date is determined by the System Settings Course Defaults.
 * **End Date**—selecting the course end date is optional. If this field is blank the course end date is determined by the System Settings Course Defaults.
 * **Unique Individuals**—enter the number of participants for the course (e.g. 25).
@@ -163,15 +163,15 @@ To save the course settings
 
 ## Institution Manager
 
-The Institution Manager allows hosting of EQUELLA institutions. Each institution can share the same database and parent filestore while being entirely independent of any other institution. Multiple databases can be installed so each institution can be associated with its own database. 
+The Institution Manager allows hosting of openEquella institutions. Each institution can share the same database and parent filestore while being entirely independent of any other institution. Multiple databases can be installed so each institution can be associated with its own database. 
 Institutions are created by cloning an existing server institution or importing an institution. Both processes create independent copies of the parent institution although initially the institutions may appear identical to the parent. Institutions can also be edited, exported, deleted or disabled. 
-1. Open a browser and enter the EQUELLA address of the hosting server with ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’) to display the Server administration Authentication page.,
-2. Enter the Password used by the EQUELLA server administrator. (This is set on the Server Settings page after installation) Then click Log In. The Institution Manager page displays. 
+1. Open a browser and enter the openEquella address of the hosting server with ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’) to display the Server administration Authentication page.,
+2. Enter the Password used by the openEquella server administrator. (This is set on the Server Settings page after installation) Then click Log In. The Institution Manager page displays. 
 
 ## Settings
-The EQUELLA Settings page allows suitably privileged users to setup, configure and edit a number of EQUELLA administration functions that affect the way EQUELLA behaves. It also has a link to the Administration console.
-1. Open a browser and enter your EQUELLA URL (e.g.‘http://equella.myequellainstitution.edu’).
-2. Log in to EQUELLA as an administrator then select Settings from the navigation menu. The Setting page displays. 
+The openEquella Settings page allows suitably privileged users to setup, configure and edit a number of openEquella administration functions that affect the way openEquella behaves. It also has a link to the Administration console.
+1. Open a browser and enter your openEquella URL (e.g.‘http://equella.myequellainstitution.edu’).
+2. Log in to openEquella as an administrator then select Settings from the navigation menu. The Setting page displays. 
 3. Enter the start of a search term in the Enter text to filter table rows edit box to show only Settings categories that contain the entered search term in the title or description.
 
 (NOTE: This edit box only displays if there are 10 or more Settings categories displayed).
@@ -179,10 +179,10 @@ The EQUELLA Settings page allows suitably privileged users to setup, configure a
 The Settings categories displayed depend on the privileges granted to the user, and can include:
 * **Active caching**—configures caching schedules.
 * **Administration console**—click the link to open the Administration console.
-* **Approvals and payments** – used with the EQUELLA Content Exchange – Store front functionality. 
+* **Approvals and payments** – used with the openEquella Content Exchange – Store front functionality. 
 * **Content restrictions and quotas** —manages the common virus-carrying files types banned from the repository and user upload limits. 
 * **Course defaults**—configures default start and end dates for courses.
-* **Custom links**—allows the setup of external links to be accessed from the EQUELLA system. 
+* **Custom links**—allows the setup of external links to be accessed from the openEquella system. 
 * **Dashboard**—enables the management and configuration of user Dashboard portlets. 
 * **Diagnostics** – gives access to basic tools including finding groups for a user and users for a group. 
 * **Display date format** – enables administration users to configure the default system display date format.
@@ -194,21 +194,21 @@ The Settings categories displayed depend on the privileges granted to the user, 
 * **Harvester**—configures the DRM acceptance setting for harvesters. 
 * **HTML editor** – provides the ability for users to customize the HTML Editor, including advanced customizations, adding and editing styles, customizing the toolbar and uploading third-party plug-ins. 
 * **Kaltura**—configures the Kaltura server settings. 
-* **Languages**—configures the languages used by EQUELLA. 
+* **Languages**—configures the languages used by openEquella. 
 * **Logged in users**—allows the user to view a list of all logged in users. 
 * **Login**—configures logins and authentication options. 
-* **LTI consumers** – enables the creation and maintenance of LTI consumers. Additionally, users can map LTI roles to EQUELLA roles. 
+* **LTI consumers** – enables the creation and maintenance of LTI consumers. Additionally, users can map LTI roles to openEquella roles. 
 * **Mail**—enables the configuration of email settings. 
-* **Manual data fixes**—provides access to data fix applications that may need to be run under instruction from EQUELLA support. 
-* **MIME types**—enables the adding, editing or deleting of MIME types within the EQUELLA system to control the way different file types are displayed. 
+* **Manual data fixes**—provides access to data fix applications that may need to be run under instruction from openEquella support. 
+* **MIME types**—enables the adding, editing or deleting of MIME types within the openEquella system to control the way different file types are displayed. 
 * **OAI identifier**—enables the editing of identifier attributes. 
 * **OAuth** —configures OAuth client applications and lists associated tokens. 
 * **Scheduled tasks** —configures the times scheduled tasks should be executed. 
 * **Searching and content indexing**—enables the configuration of options for searching, filtering and sorting as well as content indexing.
 * **Selection sessions**—configures the Quick Contribute control in integrated third-party systems and the document version defaults. 
 * **Shortcut URLs**—enables the creation of URL shortcuts. 
-* **Store front setup** - used with the EQUELLA Content Exchange – Store front functionality. 
-* **Themes**—enables the uploading of theme files to change the EQUELLA ‘look and feel’. 
+* **Store front setup** - used with the openEquella Content Exchange – Store front functionality. 
+* **Themes**—enables the uploading of theme files to change the openEquella ‘look and feel’. 
 * **User scripts** – allows users to create and save JavaScript and FreeMarker scripts for use in the system. 
 
 
@@ -255,7 +255,7 @@ To exclude collections from a group or user
 
 The Content restrictions and quotas page has two sections:
 * **Banned file extensions** —useful for prohibiting specific file types that are common virus carriers from being uploaded to the repository. Users are prevented from uploading file types listed in the Banned file extensions list.
-* **User content quotas** —configures the amount of storage available to EQUELLA users. The default value is to allow all users unlimited storage. Users with quotas will have all uploads monitored to ensure the quota is not exceeded. Any attempt to exceed the quota will cause the upload to fail. When a user is listed in more than one quotas group they will be allocated the larger amount.
+* **User content quotas** —configures the amount of storage available to openEquella users. The default value is to allow all users unlimited storage. Users with quotas will have all uploads monitored to ensure the quota is not exceeded. Any attempt to exceed the quota will cause the upload to fail. When a user is listed in more than one quotas group they will be allocated the larger amount.
 
 ### Configure Content restrictions and quotas
 1. Click the Content restrictions and quotas link from the Settings page. The Content restrictions and quotas page displays.
@@ -304,14 +304,14 @@ The Custom links function enables administrators to configure, reorder, assign v
 2. Click Add. The Create link page displays. 
 3. Enter the Display text to show as the menu item (e.g. Google search).
 4. Enter the URL of the required web page (e.g. http://google.com).
-5. Select Open in a new window to open the page in separate window, or leave unchecked to open in the EQUELLA window.
+5. Select Open in a new window to open the page in separate window, or leave unchecked to open in the openEquella window.
 6. Click Select User  to open the Select recipients dialog, and select the required users. 
 7. If required, click Browse  to open a stored icon file on the hard disk or network, then click Upload. Alternatively, click Download  for the system to attempt to find the logo from the entered web page. The icon is displayed beside the link name.
 8. Click Save.
 
 ## Dashboard
 
-The Dashboard function enables administrators to create, disable and delete portlets that display on the EQUELLA Dashboard page.
+The Dashboard function enables administrators to create, disable and delete portlets that display on the openEquella Dashboard page.
 
 Administrators can add portlets to users’ Dashboard pages. Portlets can be configured to show for all users, a group of users or a single user. Other properties, such as the ability for users to minimize or close the portlets, can also be set.
 
@@ -338,7 +338,7 @@ To edit a portlet
 The RSS or Atom feed portlet allows users to have the feed displayed on the Dashboard page for easy viewing. The RSS or Atom feed portlet editor enables the configuration of the selected feed, including the URL, Default number of results to show and Display options (Show the title and description or Show only the title).
 
 ##### Recent contributions
-The recent contributions portlet enables the user to view resources they have recently contributed to the EQUELLA repository. The Recent contributions portlet editor allows the user to configure viewing options, including specific collections, resources with a certain status, the maximum age in days and display options (Show the title and description or Show only the title). 
+The recent contributions portlet enables the user to view resources they have recently contributed to the openEquella repository. The Recent contributions portlet editor allows the user to configure viewing options, including specific collections, resources with a certain status, the maximum age in days and display options (Show the title and description or Show only the title). 
 
 ##### Formatted text
 The Formatted text portlet enables the administrator to create a portlet containing formatted text, which displays on the Dashboard page for the selected users. An example is a welcome message. The Edit Formatted text portlet page contains an HTML Editor in addition to the standard elements. 
@@ -402,10 +402,10 @@ Google Analytics is a free service offered by Google™ that is used to monitor 
 
 ### Setting up Google Analytics
 1. First you must register with Google Analytics by creating an account (e.g. googleanalytics@equella.com) at http://www.google.com/analytics/sign_up.html.
-2. Sign up for a new Google Analytics account using the URL of your EQUELLA institution (e.g. ‘http://equella.myinstitution1.edu’ or ‘http://equella.edu/myinstitution1’). 
+2. Sign up for a new Google Analytics account using the URL of your openEquella institution (e.g. ‘http://equella.myinstitution1.edu’ or ‘http://equella.edu/myinstitution1’). 
 3. Complete the google account setup form and click Create Account.
-4. An overview of your Analytics Account is provided with the Google Analytics Tracking ID (e.g. UA-123457678-1) in the Account ID field. This Account ID must be added to EQUELLA.
-5. Return to EQUELLA, select the Google analytics link from the Settings page. The Google Analytics page displays.
+4. An overview of your Analytics Account is provided with the Google Analytics Tracking ID (e.g. UA-123457678-1) in the Account ID field. This Account ID must be added to openEquella.
+5. Return to openEquella, select the Google analytics link from the Settings page. The Google Analytics page displays.
 6. Enter the Google Analytics Tracking ID (e.g. UA-12345678-1) created in the steps above. 
 7. Click Save to change the Tracking Status to Tracking Enabled. 
 
@@ -415,16 +415,16 @@ Google Analytics is a free service offered by Google™ that is used to monitor 
 ### To Track multiple institutions add a new profile
 1. Select the Add new profile link to display the Create New Website Profile page.
 2. Select the Add a Profile for a new domain radio button in the Choose Website Profile Type section.
-3. Enter the details using the URL of your EQUELLA institution (e.g. ‘http://equella.edu/myinstitution2’). 
+3. Enter the details using the URL of your openEquella institution (e.g. ‘http://equella.edu/myinstitution2’). 
 4. Click the Continue button to display the Tracking Status Information.
 5. Click the Save and Finish button to complete the setup.
 
 ## Google API
 
-The Google API option allows a Google API key (with the YouTube Data API (v3) enabled) to be stored in EQUELLA. This allows users to search and select YouTube content from an attachment control during contribution. 
+The Google API option allows a Google API key (with the YouTube Data API (v3) enabled) to be stored in openEquella. This allows users to search and select YouTube content from an attachment control during contribution. 
 
 
-NOTE: If the Google API key is not configured in EQUELLA, existing YouTube links will continue to open and play. However, searching for new YouTube content during contribution or editing of resources will result in the following message being displayed:  “Google API key not configured - There is no Google API key configured for the institution. Please contact your system administrator.”
+NOTE: If the Google API key is not configured in openEquella, existing YouTube links will continue to open and play. However, searching for new YouTube content during contribution or editing of resources will result in the following message being displayed:  “Google API key not configured - There is no Google API key configured for the institution. Please contact your system administrator.”
 
 1. Select the Google API from the Settings page. The Google API page displays. 
 2. Enter the Google API Key as provided by Google. API Keys can be obtained from the Developers Console  site after creating a project.
@@ -452,7 +452,7 @@ c. Enter your institution’s Partner ID, Sub partner ID (optional), Administrat
 
 d. Click Test Connection.  The Test status changes from Not tested to “Successfully connected to Kaltura”.  If the test is not successful, go back and check your Kaltura details. Settings canot be saved until they have been tested successfully.
 
-e. Once the connection is successful, Select default player for Kaltura resources accessed from this server from the drop-down list. The EQUELLA default player will always display in the list, along with other players that may be configured for your Kaltura instance.
+e. Once the connection is successful, Select default player for Kaltura resources accessed from this server from the drop-down list. The openEquella default player will always display in the list, along with other players that may be configured for your Kaltura instance.
 
 f. Click Save. The Kaltura server now displays in the list. 
 
@@ -471,19 +471,19 @@ To access Kaltura details
 1. Open a web browser and enter the Kaltura server address (e.g. http://www.kaltura.com for SaaS, or the local server address with /kmc appended. For example, http://myinstitution/equella/kalturaserver1/kmc.
 2. Login using your institution’s Kaltura KMC (Kaltura Management Console) details.
 3. Once successfully logged in, click the Settings tab, then the Integration Settings link. The Account Info displays. 
-4. Note the Partner ID, Sub Partner ID (not currently used), Administrator secret and User secret details, which are the fields required to set up the Kaltura server in the EQUELLA system.
+4. Note the Partner ID, Sub Partner ID (not currently used), Administrator secret and User secret details, which are the fields required to set up the Kaltura server in the openEquella system.
 
 ## Languages
 
-The Languages page enables the use of multiple languages within EQUELLA and provides customization of EQUELLA labels and text (e.g. display titles and error messages) to specific locales. It provides controls for managing Language packs and Contribution languages. 
+The Languages page enables the use of multiple languages within openEquella and provides customization of openEquella labels and text (e.g. display titles and error messages) to specific locales. It provides controls for managing Language packs and Contribution languages. 
 #### Language packs
-Language packs allow the default controls in EQUELLA to display institution-specific text such as display titles or error messages and allow users to select a preferred language for the user interface display. 
+Language packs allow the default controls in openEquella to display institution-specific text such as display titles or error messages and allow users to select a preferred language for the user interface display. 
 #### Contribution languages 
-Contribution languages are defined by country and locale to allow for variations in language or dialect in different regions, for example English (United States) (en-US), English (Australia) (en-AU) and English (United Kingdom) (en-GB). Selecting a contribution language allows the user to customize any content that is added or contributed to the EQUELLA Digital Repository.
+Contribution languages are defined by country and locale to allow for variations in language or dialect in different regions, for example English (United States) (en-US), English (Australia) (en-AU) and English (United Kingdom) (en-GB). Selecting a contribution language allows the user to customize any content that is added or contributed to the openEquella Digital Repository.
 ####  Display languages
-The default display language setting is that of the browser where the EQUELLA instance is being viewed. Languages imported as language packs can be selected in the EQUELLA Digital Repository as the preferred display language. Selecting a preferred display language will override the browser locale setting. 
+The default display language setting is that of the browser where the openEquella instance is being viewed. Languages imported as language packs can be selected in the openEquella Digital Repository as the preferred display language. Selecting a preferred display language will override the browser locale setting. 
 
-Users can select their preferred display language on the Profile page accessed by clicking on their username at the top of EQUELLA pages. 
+Users can select their preferred display language on the Profile page accessed by clicking on their username at the top of openEquella pages. 
 
 ## Logged in users
 
@@ -497,7 +497,7 @@ To display a list of users currently logged in to the institution
 
 The Login settings page comprises a series of controls for configuring login and authentication by IP address.
 
-If SSL connections are to be used, it is important to note that the EQUELLA server must be configured to allow SSL connections prior to enabling SSL for the institution. Otherwise the institution will not be able to receive connections, thus effectively locking out all users. Ensure the Administration Console remains open until connections have been tested after this option has been enabled, to allow the disabling of SSL in the event of an error.
+If SSL connections are to be used, it is important to note that the openEquella server must be configured to allow SSL connections prior to enabling SSL for the institution. Otherwise the institution will not be able to receive connections, thus effectively locking out all users. Ensure the Administration Console remains open until connections have been tested after this option has been enabled, to allow the disabling of SSL in the event of an error.
 
 #### To enable SSL login 
 1. Check the Enable SSL checkbox to enable SSL connections to the institution. Do not check this box unless SSL has been setup on the server.
@@ -522,7 +522,7 @@ c. Do not store DRM acceptances—select this checkbox to discard any acceptance
 7. Click OK to add the IP address to the list of addresses. 
 8. Click the Add IP address link to add another IP address if required. 
 9. To remove an IP address, click X beside the IP address to be removed
-10. To edit the login notice text that appears when users log in to EQUELLA.
+10. To edit the login notice text that appears when users log in to openEquella.
 
 a. Move the cursor to the position for the edit within the text editor
 
@@ -530,13 +530,13 @@ b. Enter, paste or delete the text as required
 
 c. Deleting all the text prevents the login notice being displayed to users.
 
-d. Users can conceal the login notice by checking the Hide login notice checkbox on the Profile page in the EQUELLA Digital Repository
+d. Users can conceal the login notice by checking the Hide login notice checkbox on the Profile page in the openEquella Digital Repository
 
 11. Click Save to save all changes.
 
 ## Mail
 
-The Mail settings page is where the mail server details are set up. EQUELLA uses the mail server to send internal emails, such as notifications.
+The Mail settings page is where the mail server details are set up. openEquella uses the mail server to send internal emails, such as notifications.
 To set up the mail server
 1. To set up the mail server, select the Mail settings link from the Settings page. The Mail settings page displays
 2. Enter the Email address to serve as the sender address.
@@ -606,7 +606,7 @@ d. Viewer lists the types of viewers available for the selected MIME type. These
 * File Viewer—displays the attachment in the current browser window or native application.
 * Large Image Viewer—displays all image types allowing the user to easily view very large, detailed images. 
 * Pretty Photo—displays image/jpeg, image/png and image/gif types in a gallery style allowing the user to iterate through the images. This viewer option is not available in the Navigation Builder control.
-* External Link Viewer—displays external links in EQUELLA. This option is only available for equella/link type.
+* External Link Viewer—displays external links in openEquella. This option is only available for equella/link type.
 * Embedded Movie Player—displays video/x-flv type in a flash video viewer.
 * IE Mov Popup Fix Viewer—displays all video/* types in a new IE6 or IE7 browser window. 
 * HTML Conversion—allows .doc, .xls or .ppt files to be converted to HTML. (Note: Office 2007 is not supported.)
@@ -634,7 +634,7 @@ The Text Extractors section elements include:
 The OAI identifier page enables the editing of identifier attributes.
 OAI (Open Archives Initiative) identifiers are persistent URN (Uniform Resource Name) identifiers, ensuring that OAI items can be uniquely identified.
 
-To access the identifier the /p/oai?verb=Identify must be appended to the EQUELLA institution URL. (Note: The /oai endpoint is available for backwards compatibility.)
+To access the identifier the /p/oai?verb=Identify must be appended to the openEquella institution URL. (Note: The /oai endpoint is available for backwards compatibility.)
 
 For example, the following URL:
 ‘http://equella.myinstitution.edu’ would become ‘http://equella.myinstitution.edu/p/oai?verb=Identify’
@@ -693,7 +693,7 @@ NOTE: Setting a boost value to Off will prevent the system from searching in tha
 2. Click Save.
 
 ### Gallery views
-In some cases, administrators may wish to disable the Images and/or Videos views on EQUELLA results pages. This will remove the Images and/or Videos links at the top left of the results box. Thumbnails for image and video files will still be created in the background, so if the views are enabled, thumbnails will display immediately.
+In some cases, administrators may wish to disable the Images and/or Videos views on openEquella results pages. This will remove the Images and/or Videos links at the top left of the results box. Thumbnails for image and video files will still be created in the background, so if the views are enabled, thumbnails will display immediately.
 
 Additionally, the file count that shows to the top left of image and video thumbnails when there are multiple files can also be disabled.
 
@@ -727,9 +727,9 @@ To configure Selection sessions
 ### Quick Contribute
 In integrated third-party systems such as Blackboard™ and Moodle™, the Integration screen Contribute page enables a Quick Contribute control. 
 
-Users can navigate to and select a file that is automatically contributed as an EQUELLA resource into the chosen EQUELLA collection and added to the integration’s course list.
+Users can navigate to and select a file that is automatically contributed as an openEquella resource into the chosen openEquella collection and added to the integration’s course list.
 
-The Quick Contribute control prevents duplicate files being uploaded into EQUELLA. 
+The Quick Contribute control prevents duplicate files being uploaded into openEquella. 
 To select a collection for Quick Contribute
 1. Select a collection from the Choose a collection drop-down list. 
 2. Click Save.
@@ -741,18 +741,18 @@ Version selection configuration is used to determine which version of a resource
 
 Selecting the latest live version options displays the latest version of the resource when the link is selected even if the saved link is for an older version; otherwise the version associated with the link is displayed.
 
-The options that allow a user to choose the version are enabled when adding an EQUELLA Resource to an item during contribution and when EQUELLA is integrated with a third party application such as Blackboard, Moodle or Canvas. 
+The options that allow a user to choose the version are enabled when adding an openEquella Resource to an item during contribution and when openEquella is integrated with a third party application such as Blackboard, Moodle or Canvas. 
 
 #### To configure version selection
 
 Select one of the following:
 * Force selection to be the resource version the user is viewing—(default option) displays the originally linked resource.
 * Force selection to always be the latest live resource version—displays the latest version of the originally linked resource.
-* Select the resource version the user is currently viewing—allows the user to choose between the selected resource version and the latest version of that resource during contribution when selecting existing EQUELLA resources as attachments. When this option is selected, a drop-down list displays on the My selections page and the user selects the required option. Fixed to v(x) is shown as the default when this option is selected. 
-* Always use the latest live resource version—allows the user to choose between the originally linked resource and the latest version of that resource during contribution when selecting existing EQUELLA resources as attachments. When this option is selected, a drop-down list displays on the My selections page and the user selects the required option. Latest available is shown as the default when this option is selected. 
+* Select the resource version the user is currently viewing—allows the user to choose between the selected resource version and the latest version of that resource during contribution when selecting existing openEquella resources as attachments. When this option is selected, a drop-down list displays on the My selections page and the user selects the required option. Fixed to v(x) is shown as the default when this option is selected. 
+* Always use the latest live resource version—allows the user to choose between the originally linked resource and the latest version of that resource during contribution when selecting existing openEquella resources as attachments. When this option is selected, a drop-down list displays on the My selections page and the user selects the required option. Latest available is shown as the default when this option is selected. 
 
 #### Selection options
-Select the Disable the ‘Select summary page’ button on results pages checkbox to stop the  +Select Summary Page button from displaying on the EQUELLA integration screen results pages. This prevents users from accidentally adding the summary page links whilst thinking they’re adding attachment links.
+Select the Disable the ‘Select summary page’ button on results pages checkbox to stop the  +Select Summary Page button from displaying on the openEquella integration screen results pages. This prevents users from accidentally adding the summary page links whilst thinking they’re adding attachment links.
 
 
 
@@ -775,7 +775,7 @@ Click X beside the Shortcut URL to be removed.
 
 ## User scripts
 
-The User scripts setting allows users to create and save FreeMarker and JavaScript scripts that can be run from various areas of EQUELLA.
+The User scripts setting allows users to create and save FreeMarker and JavaScript scripts that can be run from various areas of openEquella.
 Saved FreeMarker scripts can be accessed from Scripted portlets. 
 Saved Javascripts can be accessed from the Manage resources, Execute script function.
 
@@ -797,8 +797,8 @@ Saved JavaScript scripts can be accessed and run from the Execute script bulk ac
 
 ## Recipient selector
 
-The Recipient selector enables users to select users, groups and/or roles that can have access to areas in EQUELLA. It is used in the following functions:
-* Approvals and payments – select the users, groups and/or roles that are part of an approval or payment rule for EQUELLA instances set up with the EQUELLA Content Exchange Store Front capability. 
+The Recipient selector enables users to select users, groups and/or roles that can have access to areas in openEquella. It is used in the following functions:
+* Approvals and payments – select the users, groups and/or roles that are part of an approval or payment rule for openEquella instances set up with the openEquella Content Exchange Store Front capability. 
 * Content quotas – select the users, groups and/or roles to which a content quota applies.
 * Custom links – select the users, groups and/or roles that can view a custom link.
 * Create portlets – select the users, groups and/or roles that can view a portlet.
@@ -835,16 +835,16 @@ The Other tab provides alternative options for selecting users.
 The Other tab entities represent groupings that cannot be easily specified using the Home tab. The options are:
 
 ##### Everyone
-Represents everyone who can access this instance of EQUELLA. This group includes everyone who can access an EQUELLA URL and includes Guest and Logged in users. 
+Represents everyone who can access this instance of openEquella. This group includes everyone who can access an openEquella URL and includes Guest and Logged in users. 
 
 ##### The owner of the targeted object
 Represents object owners, typically object creators. 
 
 ##### Logged in users
-Represents users who are logged in to this instance of EQUELLA. 
+Represents users who are logged in to this instance of openEquella. 
 
 ##### Guest users
-Represents users who can access the EQUELLA URL without logging in. 
+Represents users who can access the openEquella URL without logging in. 
 
 ##### Single signed on with identifier
 Represents users who are logged on using the Shared Secrets plug-in. This option is mainly for use with third-party integrations.

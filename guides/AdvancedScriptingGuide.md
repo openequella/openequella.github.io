@@ -11,12 +11,12 @@
 
 ## Scripting overview
 
-EQUELLA provides scripting to enable system administrators to exercise fine grain control over processes within EQUELLA. 
+openEquella provides scripting to enable system administrators to exercise fine grain control over processes within openEquella. 
 
 This guide is intended for administrators familiar with JavaScript™, FreeMarker and HTML and describes the Advanced Scripting control and other script-related information. 
-While this guide describes advanced scripting, EQUELLA also provides basic script editors that are easy to use and provides sophisticated management of items, controls and security allowing the construction of scripts based on item metadata, user role or item status. 
+While this guide describes advanced scripting, openEquella also provides basic script editors that are easy to use and provides sophisticated management of items, controls and security allowing the construction of scripts based on item metadata, user role or item status. 
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEquella and as such may differ in appearance to your own installation.
 
 ## Advanced Scripting control
 
@@ -76,7 +76,7 @@ FreeMarker comments will not be rendered in the final HTML output.
 A more comprehensive FreeMarker manual is available at: <http://fmpp.sourceforge.net/freemarker/index.html>
 
 ### JQuery basics
-JQuery is an open-source JavaScript library used extensively by EQUELLA. You have access to the core JQuery library functions in all of the client-side panes. You also have access to functions in other JQuery extension libraries such as Pretty Photo. To use these functions, you will need to import the relevant library on the JavaScript Libraries tab of the Advanced Scripting control.
+JQuery is an open-source JavaScript library used extensively by openEquella. You have access to the core JQuery library functions in all of the client-side panes. You also have access to functions in other JQuery extension libraries such as Pretty Photo. To use these functions, you will need to import the relevant library on the JavaScript Libraries tab of the Advanced Scripting control.
 
 For a comprehensive introduction to JQuery visit this site: <http://docs.jquery.com/Tutorials>
 
@@ -249,11 +249,11 @@ system  Available only in a contribution wizard and Advanced Script Control cont
 
 ## Advanced scripting control examples
 
-The EQUELLA Integration Pack contains a number of exported Advanced Scripting controls (*.asc files) that you can import and modify. 
+The openEquella Integration Pack contains a number of exported Advanced Scripting controls (*.asc files) that you can import and modify. 
 
 #### To access the Institution Manager
-1.  Enter the complete EQUELLA URL to your institution with ‘/institutions.do?method=admin’ appended to the URL (e.g. ‘<http://equella.myinstitution.edu/logon.do>’ would become ‘<http://equella.myinstitution.edu/institutions.do?method=admin>’). 
-2.  Log in using the EQUELLA server administrator password.
+1.  Enter the complete openEquella URL to your institution with ‘/institutions.do?method=admin’ appended to the URL (e.g. ‘<http://equella.myinstitution.edu/logon.do>’ would become ‘<http://equella.myinstitution.edu/institutions.do?method=admin>’). 
+2.  Log in using the openEquella server administrator password.
 3.  Selecting the Downloads tab to display the Downloads page. 
 4.  Select the Download the Integration Pack link and download the equella-integration-pack.zip file.
 
@@ -264,7 +264,7 @@ The EQUELLA Integration Pack contains a number of exported Advanced Scripting co
 
 ## Redirection servlet
 
-EQUELLA includes a special URL redirection servlet which is useful to avoid cross-site scripting restrictions (particularly with AJAX functions). The servlet is available at ‘<http://YOUR_INSTITUTION_URL/p/geturl?url=ENCODED_URL>’. For example: ‘<http://myserver.edu.au/institution/p/geturl?url=http%3A%2F%2Fwww.google.com>’.
+openEquella includes a special URL redirection servlet which is useful to avoid cross-site scripting restrictions (particularly with AJAX functions). The servlet is available at ‘<http://YOUR_INSTITUTION_URL/p/geturl?url=ENCODED_URL>’. For example: ‘<http://myserver.edu.au/institution/p/geturl?url=http%3A%2F%2Fwww.google.com>’.
 
 The servlet will follow any HTTP 302 redirects and return the contents of the final page with the same HTTP response code.
 ### Example

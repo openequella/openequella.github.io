@@ -1,8 +1,8 @@
-# Bulk Uploading Kaltura Videos to EQUELLA
+# Bulk Uploading Kaltura Videos to openEQUELLA
 
-You can bulk upload Kaltura videos into EQUELLA by first uploading the videos to Kaltura (either in bulk or
-manually), exporting the Kaltura metadata and uploading the metadata to EQUELLA. This document details
-these steps and provides an optional section if you intend to use EQUELLA Bulk Importer (EBI) to do the last
+You can bulk upload Kaltura videos into openEQUELLA by first uploading the videos to Kaltura (either in bulk or
+manually), exporting the Kaltura metadata and uploading the metadata to openEQUELLA. This document details
+these steps and provides an optional section if you intend to use openEQUELLA Bulk Importer (EBI) to do the last
 step.
 
 1. Upload the videos to Kaltura
@@ -10,22 +10,22 @@ Assuming this needs to be done in bulk, this can be accomplished by either using
 Kaltura's API.
 2. Export the Kaltura metadata
 Kaltura will automatically assign an ID and thumbnail URL to each uploaded video and these are needed by
-EQUELLA. You can write your own program that uses Kaltura's API to export the Kaltura metadata. Or you can
+openEQUELLA. You can write your own program that uses Kaltura's API to export the Kaltura metadata. Or you can
 export the Kaltura metadata using Kaltura's metadata dump tool 
 
 Select Download Metadata. This will generate an Excel spreadsheet with a row per video. There are many
 columns but the most important ones are "id", "name" and "thumbnailURL":
 
-3. Add Corresponding EQUELLA Attachments
+3. Add Corresponding openEQUELLA Attachments
 
-Either by using the EBI (see next section) or a custom program that utilizes EQUELLA's APIs produce an
+Either by using the EBI (see next section) or a custom program that utilizes openEQUELLA's APIs produce an
 attachment element for each row in the Kaltura metadata dump 
 
 The value for kalturaServer should be the same for all the attachments and can be retrieved from your
-EQUELLA Settings.
+openEQUELLA Settings.
 
-If you intend to create attachments in EQUELLA by writing a custom program or script then The specified item
-was not found. may be useful. It has information about how attachments and metadata relate in EQUELLA.
+If you intend to create attachments in openEQUELLA by writing a custom program or script then The specified item
+was not found. may be useful. It has information about how attachments and metadata relate in openEQUELLA.
 
 ## Using EBI to Upload Kaltura Metadata
 After performing the Kaltura metadata dump form a CSV with a column from metadata/kalturaattachments/uuid and set the column as a "Custom Attachments" datatype in the EBI

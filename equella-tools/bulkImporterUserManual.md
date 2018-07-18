@@ -15,30 +15,30 @@
 [APPENDICES](#appendices)
 
 ## Introduction
-The EQUELLA Bulk Importer (EBI) is a program that allows you to upload content into the award winning
-Pearson EQUELLA® content management system. It allows non-technical users to quickly and easily import large amounts of content into EQUELLA. The simple steps to use it are as follows:
+The openEQUELLA Bulk Importer (EBI) is a program that allows you to upload content into the award winning
+openEQUELLA content management system. It allows non-technical users to quickly and easily import large amounts of content into openEQUELLA. The simple steps to use it are as follows:
 1. Collect your data into a spreadsheet-like text file called a comma separated view (CSV)
-2. Specify in your CSV where in EQUELLA data should go and any files you wish to attach
-3. Point the EBI at your CSV and your EQUELLA server
+2. Specify in your CSV where in openEQUELLA data should go and any files you wish to attach
+3. Point the EBI at your CSV and your openEQUELLA server
 4. 
 From here the EBI does all the work. 
 
 ### Knowledge Required to Use the EBI
 
 The EBI is easy to use and does not require any programming or scripting skills. You should, however,
-have a basic understanding of EQUELLA including familiarity with the EQUELLA Admin Console, EQUELLA schemas and EQUELLA collections. Familiarity with Microsoft® Excel is also handy but not essential.
+have a basic understanding of openEQUELLA including familiarity with the openEQUELLA Admin Console, openEQUELLA schemas and openEQUELLA collections. Familiarity with Microsoft® Excel is also handy but not essential.
 
 ### How the EBI Works
 The EBI can either be installed on your workstation or on a server. From there it reads a CSV text file provided by you. From the data in each row of your CSV it forms metadata and uploads any specified file attachments which can be either on your computer or a network share. The EBI then creates a corresponding item with the metadata and file attachments.
 
-For each row in the CSV the EBI creates (or updates) an item in EQUELLA. It can upload content to an EQUELLA installation on the same computer, an installation on the local network or an EQUELLA server accessed over the Internet.
+For each row in the CSV the EBI creates (or updates) an item in openEQUELLA. It can upload content to an openEQUELLA installation on the same computer, an installation on the local network or an openEQUELLA server accessed over the Internet.
 
 ### Technical Stuff
 The EBI is a Python application written in Python 2.7. It is packaged as a standalone application for Windows and Macintosh using py2exe and py2app respectively. It can be run on platforms other than Windows or Macintosh by installing Python 2.7.4 or higher (but not Python 3) and wxPython 2.8 and running the source Python scripts included in the Windows package.
 
-The EBI communicates with EQUELLA using the EQUELLA SOAP APIs over the HTTP or HTTPS inter-networking protocols. The application can optionally communicate with EQUELLA via a proxy and supports Basic and Digest proxy authentication. All network communications are achieved with the standard Python library urllib2. Files are “POSTed” to EQUELLA in Base64-encoded “chunks”.
+The EBI communicates with openEQUELLA using the openEQUELLA SOAP APIs over the HTTP or HTTPS inter-networking protocols. The application can optionally communicate with openEQUELLA via a proxy and supports Basic and Digest proxy authentication. All network communications are achieved with the standard Python library urllib2. Files are “POSTed” to openEQUELLA in Base64-encoded “chunks”.
 
-The EBI largely uses the EQUELLA 5.1 API which is back-supported in later versions of EQUELLA. Some EBI functionality may leverage features that are only available in later versions of EQUELLA. Any such features are emphasized in this document as to what versions of EQUELLA they are supported in.
+The EBI largely uses the openEQUELLA 5.1 API which is back-supported in later versions of openEQUELLA. Some EBI functionality may leverage features that are only available in later versions of openEQUELLA. Any such features are emphasized in this document as to what versions of openEQUELLA they are supported in.
 
 ## Installation and Start Up
 ### System Requirements
@@ -47,7 +47,7 @@ The EBI can be installed on any of the following operating systems.
 - Mac OS™ 10.6.x and higher
 - Linux (installed with Python 2.7 and wxPython 2.8)
 
-The EBI is designed to import content into EQUELLA 5.1 and higher.
+The EBI is designed to import content into openEQUELLA 5.1 and higher.
 
 ### Windows® Installation and Start Up
 
@@ -66,7 +66,7 @@ To use the EBI on Linux Python 2.7 and wxPython 2.8 must be installed.
 3. Copy or extract the ebi folder from ebi.zip to a location where you have access to read and write files from.
 To start the EBI launch the ebi.py python file with Python.
 
-### Compatibility with Previous EQUELLA Bulk Importer Versions
+### Compatibility with Previous openEQUELLA Bulk Importer Versions
 EBI version 4 is backwards compatible with CSV files used with older versions of the EBI. Settings files (*.ebi) used with versions 2 and 3 can be used with version 4.
 
 Version 1 “state” files (e.g. state.txt) are only compatible with EBI version 1.
@@ -75,17 +75,17 @@ Version 1 “state” files (e.g. state.txt) are only compatible with EBI versio
 After installing the EBI you can regularly check what version you are using and if there are any new versions available on the download site. Click the About button on the toolbar. The About screen will tell you what version you are using, what the latest available version is and where you can download it from. Upgrading the EBI is a simple matter of replacing the ebi folder or package with the newer version.
 
 ## Quick Start Guide
-Use the following steps to do a basic import of files into EQUELLA, one file per EQUELLA item.
-1. Create a folder on your computer and put the files in it that you wish to upload to EQUELLA.
+Use the following steps to do a basic import of files into openEQUELLA, one file per openEQUELLA item.
+1. Create a folder on your computer and put the files in it that you wish to upload to openEQUELLA.
 2. Using Microsoft Excel® create a CSV file in that folder called content.csv.
-3. In the EQUELLA Admin Console lookup the metadata targets (XPaths) of the controls in your EQUELLA collection that map to item name, item description and attachments.
+3. In the openEQUELLA Admin Console lookup the metadata targets (XPaths) of the controls in your openEQUELLA collection that map to item name, item description and attachments.
 
 Edit the contents of content.csv so that the first row contains the XPaths determined above omitting the leading slashes. 
 
 4. Add a row for each file you wish to upload and put the item title, description and filename on each row:
 5. In the EBI on the Connection tab do the following steps:
 
-a. Put your EQUELLA URL in Institution URL and fill in Username and Password
+a. Put your openEQUELLA URL in Institution URL and fill in Username and Password
 
 b. Click Test/Get Collections
 
@@ -95,26 +95,26 @@ c. Select the collection you would like to upload your files to in the Collectio
 d. Click the Browse button, browse to content.csv and select it
 e. Under Column Data Type double-click on “Metadata” on the third row and change it to “Attachment Locations”
 7. Click Start Import. Once processing is complete check in the log that you received successes.
-8. Check that the items are created in EQUELLA. There should be one brand new item for each row in content.csv 
+8. Check that the items are created in openEQUELLA. There should be one brand new item for each row in content.csv 
 
 ## Basic Settings
 ### Connections Tab
 Upon starting the EBI the main form with the Connections tab will appear as follows:
 
-The Connections tab and CSV tab collect the necessary settings for connecting to EQUELLA and loading the CSV file that provides metadata and location of attachments.
+The Connections tab and CSV tab collect the necessary settings for connecting to openEQUELLA and loading the CSV file that provides metadata and location of attachments.
 
 The Connections tab has the following fields: 
-* Field: Institution URL (Required) - The URL of the EQUELLA institution in this field. This will be the URL of your EQUELLA login page (e.g. http://equella.institute.edu/training).
+* Field: Institution URL (Required) - The URL of the openEQUELLA institution in this field. This will be the URL of your openEQUELLA login page (e.g. http://equella.institute.edu/training).
 
-* Field: Username (Required) - A username of an EQUELLA user account that has privileges to create items in the collection you specified above.
+* Field: Username (Required) - A username of an openEQUELLA user account that has privileges to create items in the collection you specified above.
 
 * Field: Password (Required) - The password of the account specified above.
 
-* Field: Collection (Required) - An EQUELLA institution can support multiple “collections”. In this field you will need to select which collection you would like to upload content into.
+* Field: Collection (Required) - An openEQUELLA institution can support multiple “collections”. In this field you will need to select which collection you would like to upload content into.
 
 The following command buttons are available on the Connections tab:
 
-* Test/Get Collections:  This button connects to EQUELLA and populates the Collection drop down list with a list of collections the specified EQUELLA user can contribute to.
+* Test/Get Collections:  This button connects to openEQUELLA and populates the Collection drop down list with a list of collections the specified openEQUELLA user can contribute to.
 * Test Import: This button starts a test run of the import process. This button appears on every tab.
 * Start Import: This button starts the import process. This button appears on every tab.
 
@@ -151,16 +151,16 @@ The following toolbar buttons are available:
 * About - Opens the About dialog to see the current version number, what the latest version available is, where to get the latest version and license information.
 
 ## CSV File Format
-To import content into EQUELLA using the EBI a Comma Separated View (CSV) file of a particular format must be provided by you. A CSV is a text file with the extension “.csv” and contains multiple rows of data where the values in each row are separated by commas. CSVs are much like tables of data. They can easily be created, viewed and edited in spreadsheet software such as Microsoft® Excel. 
+To import content into openEQUELLA using the EBI a Comma Separated View (CSV) file of a particular format must be provided by you. A CSV is a text file with the extension “.csv” and contains multiple rows of data where the values in each row are separated by commas. CSVs are much like tables of data. They can easily be created, viewed and edited in spreadsheet software such as Microsoft® Excel. 
 
 ### Metadata
 #### Specifying Metadata to Import
 
-The CSV should contain a row per EQUELLA item to be created in EQUELLA (an “item” is effectively a single record in EQUELLA). The first row should be column headings where each heading is a schema field in EQUELLA. 
+The CSV should contain a row per openEQUELLA item to be created in openEQUELLA (an “item” is effectively a single record in openEQUELLA). The first row should be column headings where each heading is a schema field in openEQUELLA. 
 
 The metadata column headings should not simply be name of the node the content should be mapped to (i.e. “name” and “description”) but the entire path to the node. These paths to schema nodes are called XPaths.
 
-Though the full XPath to fields in EQUELLA technically always start with /xml/, for the EBI you must leave this off the path in your column headings:
+Though the full XPath to fields in openEQUELLA technically always start with /xml/, for the EBI you must leave this off the path in your column headings:
 
 Use this:
 metadata/lom/general/keyword
@@ -168,7 +168,7 @@ metadata/lom/general/keyword
 instead of this:
 /xml/metadata/lom/general/keyword
 
-The schema of your EQUELLA server that you are importing into will most likely be completely different to the example above. You will need to look at your EQUELLA schema and carefully type in corresponding XPaths as your CSV column headings. It is unlikely you will need a column for every field in your schema as it is likely that many fields will be optional. You may need to discuss with your EQUELLA administrator which schema fields you need to include. 
+The schema of your openEQUELLA server that you are importing into will most likely be completely different to the example above. You will need to look at your openEQUELLA schema and carefully type in corresponding XPaths as your CSV column headings. It is unlikely you will need a column for every field in your schema as it is likely that many fields will be optional. You may need to discuss with your openEQUELLA administrator which schema fields you need to include. 
 
 Use the Browse button on the EBI to select your CSV. Upon doing this it will read the CSV and display the column headings in the columns grid. 
 
@@ -187,19 +187,19 @@ Our House, "This is a picture of my house, my lawn, my cat and my dog"
 
 Our Car, This is a picture of my car
 ```
-In the example above the /metadata/description value of the first record is in quotation marks to prevent the EBI from mistakenly using the commas in the description to determine the end of the field. The surrounding quotation marks are stripped from the content by the EBI prior to import so they won’t appear in your item’s metadata in EQUELLA.
+In the example above the /metadata/description value of the first record is in quotation marks to prevent the EBI from mistakenly using the commas in the description to determine the end of the field. The surrounding quotation marks are stripped from the content by the EBI prior to import so they won’t appear in your item’s metadata in openEQUELLA.
 
 Tools like Microsoft® Excel make it very easy to surround your content with quotation marks where needed. Microsoft® Excel automatically places quotation marks around any text in CSVs that contain commas. Simply use Microsoft® Excel’s “Save As…” command and set “Save as Type” to “CSV (Comma delimited)(*.csv)”.
 
 #### Importing Metadata Attributes
-EQUELLA supports metadata attributes in its metadata schemas. These can be added to an EQUELLA schema using the EQUELLA schema editor.
+openEQUELLA supports metadata attributes in its metadata schemas. These can be added to an openEQUELLA schema using the openEQUELLA schema editor.
 
 To import values into a schema attribute field specify in the CSV the attribute as you would a usual tag-based field and prefix the attribute name with a “@” character.
 
 #### Specifying Multi-Value Metadata Fields
-EQUELLA supports repeating metadata values. 
+openEQUELLA supports repeating metadata values. 
 
-It is possible with the EBI to import multiple values per CSV field as repeating fields in EQUELLA. This can be achieved with either delimited values in the one cell or spreading the values across multiple columns of the same XPath column heading (or a combination of both).
+It is possible with the EBI to import multiple values per CSV field as repeating fields in openEQUELLA. This can be achieved with either delimited values in the one cell or spreading the values across multiple columns of the same XPath column heading (or a combination of both).
 
 #### Using Delimiters to Specify Multi-Value Metadata Fields
 You can delimit (i.e. separate) the values in the one field with a special character or string of your choice. A pipe character (“|”) can be used to separate the values in the metadata/keywords/keyword column.
@@ -208,7 +208,7 @@ In the Delimiter setting in the EBI’s main form specify what delimiters, if an
 
 Note that XML does not allow metadata attributes to be repeated. If a multi-value column of attributes is specified in the CSV only the first value will be imported.
 
-NOTE: When viewing multi-value metadata in an EQUELLA wizard bear in mind that only wizard controls that support multiple values (e.g. a shuffle list control) can display all the values. Edit box controls will only display the first value of a repeating metadata field. Also note that multi-value wizard controls that utilize control lists (e.g. check box group, radio button group) will only display values that match values included in the control’s control list.
+NOTE: When viewing multi-value metadata in an openEQUELLA wizard bear in mind that only wizard controls that support multiple values (e.g. a shuffle list control) can display all the values. Edit box controls will only display the first value of a repeating metadata field. Also note that multi-value wizard controls that utilize control lists (e.g. check box group, radio button group) will only display values that match values included in the control’s control list.
 
 ##### Using Multiple Columns to Specify Multi-Value Metadata Fields
 Instead of (or as well as) using delimiters, you can put values of the one metadata element into separate columns by using the same XPath column heading across multiple columns. The EBI will collect the value from each column and add them all as repeating values in the item’s metadata.
@@ -218,14 +218,14 @@ All columns have the same XPath column headings. You can combine delimiting mult
 ### Special Characters and File Encoding
 The EBI supports metadata with special characters such as ©, “, ”, ¥ and è. CSVs that contain such special characters are saved by your computer in a special standard format, or “encoding”, called unicode. There is more than one form of unicode and unfortunately there is no guaranteed way to automatically detect what form of unicode a file may be. The EBI supports two types of unicode encoding, UTF-8 and Latin-1, and it requires you to specify which one applies to your CSV file. The encoding can be specified in the Encoding field on the CSV tab.
 
-The EBI defaults to UTF-8 which is the most common format for text files. However, Microsoft Excel® often uses Latin-1 encoding when creating text files that contain special characters. Upon an import if you receive an error such as 'utf8' codec can't decode byte or special characters appear incorrectly in EQUELLA then try changing the encoding selection and re-run the import.
+The EBI defaults to UTF-8 which is the most common format for text files. However, Microsoft Excel® often uses Latin-1 encoding when creating text files that contain special characters. Upon an import if you receive an error such as 'utf8' codec can't decode byte or special characters appear incorrectly in openEQUELLA then try changing the encoding selection and re-run the import.
 
 ### Attachments and Hyperlinks
 #### Specifying Attachments to Import
 A CSV column will specify the location of an attachment for each record. These are file paths and can either be relative to the folder that the CSV is in (e.g. “attachments/FordEscape.jpg”) or absolute (e.g. “c:/My Documents/My Pictures/FordEscape.jpg”). This column can be placed in any position in your CSV. If you are running the EBI on Linux, Unix or Macintosh you should always use forward slashes (“/”) in your file paths. On Windows you can use either forward or backward slashes.
 The EBI needs to be instructed which column contains attachments locations. This is done by setting the Column Data Type for the corresponding Column Heading to “Attachment Locations” 
 
-The column heading should be an XPath the same as the metadata target of the EQUELLA wizard Attachments control that manages the attachments being uploaded. If metadata targets are not required (e.g. when using EQUELLA 4.1) then either leave the column heading blank or prefix the column heading with # (e.g. “#attachments”).
+The column heading should be an XPath the same as the metadata target of the openEQUELLA wizard Attachments control that manages the attachments being uploaded. If metadata targets are not required (e.g. when using EQUELLA 4.1) then either leave the column heading blank or prefix the column heading with # (e.g. “#attachments”).
 
 Running the import process will create an item per row each with its specified attachment. 
 
@@ -237,7 +237,7 @@ For example, you might specify in this field an attachments base path of /Users/
 #### Specifying URLs to Import
 The previous example showed how to attach a file such as an image or a document. You can also upload references to other web pages. In the example in Figure 3 the fifth column is exactly that. The URLs must include the “http://” or “https://” text on the front of them (e.g. “http://www.python.org” not “www.python.org”).
 
-As with file attachments, the column heading for this column should be the metadata target of the EQUELLA wizard Attachments control that manages the URLs. If metadata targets are not required (e.g. when using EQUELLA 4.1 or earlier) then either leave the column heading blank or prefix the column heading with # (e.g. “#urls”).
+As with file attachments, the column heading for this column should be the metadata target of the openEQUELLA wizard Attachments control that manages the URLs. If metadata targets are not required (e.g. when using EQUELLA 4.1 or earlier) then either leave the column heading blank or prefix the column heading with # (e.g. “#urls”).
 To allow the EBI to identify which column has URLs in it specify a Column Data Type of “URLs” for the corresponding column in the columns grid.
 
 #### 5.2.3 Specifying Link Names for Attachments and URLs
@@ -246,10 +246,10 @@ Providing columns in the CSV for attachment_name and hyperlink_description allow
 
 As with URLs and attachments paths, these columns can be positioned anywhere in the CSV. They must be identified in the EBI’s main form as “Attachment Names” and “Hyperlink Names” for their Column Data Types. You can provide and column heading you like or leave it blank as the EBI does not use the column headings of Attachment Names and Hyperlink Names. Providing values in these columns is optional for each row. If you leave some cells blank in the columns then the EBI will use the filename or url as the link name.
 
-Note: the maximum length allowable in EQUELLA for an attachment or hyperlink description is 1,024 characters.
+Note: the maximum length allowable in openEQUELLA for an attachment or hyperlink description is 1,024 characters.
 
 #### Specifying Multiple Attachments and Hyperlinks per Item
-EQUELLA supports multiple attachments and hyperlinks.
+openEQUELLA supports multiple attachments and hyperlinks.
 
 This can be specified in the CSV for the EBI in much the same way as multi-value metadata fields, either with delimiters or multiple columns.
 
@@ -270,7 +270,7 @@ Specifying Link and Attachment names for columns of Column Data Type of Attachme
 
 The red lines in the example above show how the EBI will match up the columns of Attachment Locations with Attachment Names. For example, the Attachment Locations column at L (“metadata/secondaryattachments/attachment”) will be paired up with Attachment Names column at N (“secondary attach names”) because they are both the third occurrence (counted from the left) in the CSV of an Attachment Locations and Attachment Names columns respectively.
 
-Where delimiters are used, the EBI matches pairs of attachment path and attachment name in each item by matching their corresponding position in the cell. For example, in the first item in the CSV in Figure 33 above the attachment attachments/010.jpg (in column I) will have the corresponding attachment name of “Squirrel Eating” (in column J) applied to it in EQUELLA as both values are second in their list of values in their respective delimited lists. Matching of hyperlink urls and hyperlink names are determined in the same way.
+Where delimiters are used, the EBI matches pairs of attachment path and attachment name in each item by matching their corresponding position in the cell. For example, in the first item in the CSV in Figure 33 above the attachment attachments/010.jpg (in column I) will have the corresponding attachment name of “Squirrel Eating” (in column J) applied to it in openEQUELLA as both values are second in their list of values in their respective delimited lists. Matching of hyperlink urls and hyperlink names are determined in the same way.
 
 ## Advanced Content
 ### Appending XML Fragments to Metadata
@@ -296,7 +296,7 @@ Note that the EBI builds the metadata for the item by reading the CSV from left 
 ### Repeating Sub-trees and XPath Support
 The EBI supports a subset of XPath 1.0 and 2.0. 
 
-At times you may wish to form repeating sub-trees in your XML. This is the type of metadata that is commonly created in EQUELLA wizards with a Repeater control. You may also wish to associate attachments or additional metadata (such as attributes) to these sub-trees.
+At times you may wish to form repeating sub-trees in your XML. This is the type of metadata that is commonly created in openEQUELLA wizards with a Repeater control. You may also wish to associate attachments or additional metadata (such as attributes) to these sub-trees.
 
 Sub-trees can be achieved with XML Fragments and attachments can be associated with sub-trees by using Custom Attachments. These features are designed to produce very complex or inter-related XML. However, producing the CSV data that these features rely on can be challenging.
 
@@ -318,7 +318,7 @@ When the EBI encounters columns with contributors/contribution[1]/name and contr
 For shallow, simple sub-trees using XPath indexes rather than XML Fragments is often the easiest approach. However, if your sub-trees are deeper, more complex and varying then it can be unwieldy to use XPath indexes in which case XML Fragments may be the better option.
 
 #### Example 2: Associating Language Attributes to Textual Elements
-EQUELLA supports a multi-language edit box control that allows a contributor to complete a field in multiple languages. The metadata produced by this control requires an attribute for each value indicating what language each element represents. For example: ```
+openEQUELLA supports a multi-language edit box control that allows a contributor to complete a field in multiple languages. The metadata produced by this control requires an attribute for each value indicating what language each element represents. For example: ```
 <metadata> <title> <string language="en">Hello!</string> <string language="fr">Bonjour!</string> <string language="de">Guten tag!</string>
 34
 </title> </metadata>
@@ -343,8 +343,8 @@ You can name the heading of this column anything or leave it blank. Specify in t
 
 Include the desired commands in the commands column for the applicable rows. The supported command options and their effects are provided below. Command options are case insensitive. You can include more than one command per row by separating the multiple commands in the one column with commas.
 
-* UNZIP - Attempts to unzip all attachments of the record after uploading them to EQUELLA. If any files are not valid zip files an error will occur and the entire record will be rejected. Note that no links will appear in the item unless a list of links is specified.
-* IMS - Uploads the last specified attachment in the record to EQUELLA as an IMS content package or SCORM package. If any attachments are not valid IMS package files an error will occur and the entire record will be rejected. Only the last attachment will be uploaded as EQUELLA supports only one IMS package per item.
+* UNZIP - Attempts to unzip all attachments of the record after uploading them to openEQUELLA. If any files are not valid zip files an error will occur and the entire record will be rejected. Note that no links will appear in the item unless a list of links is specified.
+* IMS - Uploads the last specified attachment in the record to openEQUELLA as an IMS content package or SCORM package. If any attachments are not valid IMS package files an error will occur and the entire record will be rejected. Only the last attachment will be uploaded as openEQUELLA supports only one IMS package per item.
 * AUTO - Inspects each attachment and automatically upload IMS content packages or SCORM packages as IMS packages, unzip zip files (that are not IMS packages) and simply attach all non-zip files
 * SCORM - In some cases SCORM packages are unable to be recognized as anything other than simple IMS packages. Use this command to force EBI to upload the package as a SCORM package.
 * VERSION - If updating existing items using source identifiers or target identifiers, a new version of the item will be created rather than the existing item version being updated.
@@ -355,7 +355,7 @@ This can also be achieved using the Options tab.
 * APPENDMETA - When updating an existing item metadata from the CSV is appended to the existing item metadata.
 This can also be achieved using the Options tab. 
 * APPENDATTACH - When updating an existing item attachments specified in the CSV are appended to the existing item attachments. This can also be achieved using the Options tab. 
-* DELETE - If updating existing items using source identifiers or target identifiers (see section 6.9 Updating Existing Items in EQUELLA, page 58) the item will be deleted. If using target identifiers an item can be purged by deleting an already deleted item.
+* DELETE - If updating existing items using source identifiers or target identifiers (see section 6.9 Updating Existing Items in openEQUELLA, page 58) the item will be deleted. If using target identifiers an item can be purged by deleting an already deleted item.
 * CAL_PORTION - When uploading “portion” items for CAL compliance. 
  
 #### Creating Item Links to Files within a Zip File
@@ -394,20 +394,20 @@ As with other attachments such as simple files and IMS packages, it is possible 
 
 ### Setting Owners and Collaborators for Items
 #### Setting Owners (EQUELLA 5.1 and higher only)
-By default the EBI sets the owner of new items and new item versions to the EBI username i.e. the user specified in the main form. You can instead set the owner of each item to a specific EQUELLA user account by adding a column to the CSV with a single username per row. The Column Data Type for the column should be set to “Owner” and the column heading can be anything. For any rows where a cell in the owner column is blank the EBI will set the EBI username as the owner.
+By default the EBI sets the owner of new items and new item versions to the EBI username i.e. the user specified in the main form. You can instead set the owner of each item to a specific openEQUELLA user account by adding a column to the CSV with a single username per row. The Column Data Type for the column should be set to “Owner” and the column heading can be anything. For any rows where a cell in the owner column is blank the EBI will set the EBI username as the owner.
 
-If a username is specified that is not in EQUELLA the EBI will raise an error and skip the row. Optionally, you can configure the EBI to fall back to using the EBI username when it encounters a non-existent username. Do this by checking Options tab -> Ignore owners that do not exist checkbox.
+If a username is specified that is not in openEQUELLA the EBI will raise an error and skip the row. Optionally, you can configure the EBI to fall back to using the EBI username when it encounters a non-existent username. Do this by checking Options tab -> Ignore owners that do not exist checkbox.
 #### Setting Collaborators (EQUELLA 5.1 and higher only)
 You can add collaborators to an item in much the same was as you can specify owners. Add a column of any heading to your CSV and put in a delimited list of usernames. Set the Column Data Type of the column to “Collaborators” and specify what delimiter you are using for the column. Leave the cell blank for any items that should have no collaborators.
 
-As with owners, if a username is specified that is not in EQUELLA the EBI will raise an error and skip the row. Optionally, you can configure the EBI to simply ignore non-existent usernames and create/update the item anyway. Do this by checking Options tab -> Ignore collaborators that do not exist checkbox.
+As with owners, if a username is specified that is not in openEQUELLA the EBI will raise an error and skip the row. Optionally, you can configure the EBI to simply ignore non-existent usernames and create/update the item anyway. Do this by checking Options tab -> Ignore collaborators that do not exist checkbox.
 
 #### Setting LDAP or Replicated Datastore Users as Owners and Collaborators
 When specifying LDAP and replicated datastore users as owners and collaborators instead of usernames use user IDs and set Options tab -> Save usernames that are not internal users as user IDs checkbox. In some cases the user ID may be the same as the username. Check your LDAP or replicated datastore settings to make certain. 
 
 ### Managing Attachment Thumbnails (EQUELLA 6.3 QA1 and higher only)
 #### Suppressing and Specifying Thumbnails
-By including a column with a Column Data Type of “Thumbnails” the EBI will instruct EQUELLA to only generate thumbnails for file attachments whose attachment locations are listed in the Thumbnails column. EQUELLA will be instructed by the EBI to suppress thumbnail generation for any attachment location entries that do not appear in the Thumbnails column.
+By including a column with a Column Data Type of “Thumbnails” the EBI will instruct openEQUELLA to only generate thumbnails for file attachments whose attachment locations are listed in the Thumbnails column. openEQUELLA will be instructed by the EBI to suppress thumbnail generation for any attachment location entries that do not appear in the Thumbnails column.
 
 Three formats can be used to specify Attachment locations in the Thumbnails column:
 - Exact attachment location (e.g. Circular Motion 1.jpg, images\Dining 1.jpg)
@@ -417,7 +417,7 @@ Three formats can be used to specify Attachment locations in the Thumbnails colu
 A combination of any of the above formats can be specified by separating the values with a delimiter.
 
 #### Selecting the Item’s Thumbnail
-In an EQUELLA contribution wizard it is possible to select a thumbnail for the item to control how it is displayed in search results.
+In an openEQUELLA contribution wizard it is possible to select a thumbnail for the item to control how it is displayed in search results.
 
 This thumbnail selection can be achieved in an EBI import by including a column with a Column Data Type of “Selected Thumbnail” (the column can have any column heading).
 
@@ -446,43 +446,43 @@ Thumbnail selection:
 ### Uploading to Multiple Collections
 By default, when creating new items they are created in the collection specified in the Collection drop-down on the main form. It is also possible to specify different collections per row in your CSV. Note that this feature cannot be used when updating existing items or creating new versions from existing items.
 
-To specify a Collection per row add a column to your CSV with a single collection name per row. The Column Data Type for the column should be set to “Collection” and the column heading can be anything. If a cell in the column is left blank then the collection specified in the Collection drop-down on the main form will be used. If a collection is specified that is not in EQUELLA, or the EBI username does not have permission to create items in, an error is raised and the row skipped.
+To specify a Collection per row add a column to your CSV with a single collection name per row. The Column Data Type for the column should be set to “Collection” and the column heading can be anything. If a cell in the column is left blank then the collection specified in the Collection drop-down on the main form will be used. If a collection is specified that is not in openEQUELLA, or the EBI username does not have permission to create items in, an error is raised and the row skipped.
 
-### Attaching EQUELLA Resources
-Other EQUELLA resources — items and item attachments — can be attached to an EQUELLA item in the same institution. This can be accomplished with the EBI by using the “EQUELLA Resources” Column Data Type.
+### Attaching openEQUELLA Resources
+Other openEQUELLA resources — items and item attachments — can be attached to an openEQUELLA item in the same institution. This can be accomplished with the EBI by using the “EQUELLA Resources” Column Data Type.
 
-As with “Attachment Locations” and “URLs” columns, the column heading should be the metadata target of the EQUELLA resource attachments (as used in the corresponding collection’s EQUELLA wizard configuration if applicable). A column of “EQUELLA Resource Names” Column Data Type allows the names of the link descriptions to the EQUELLA Resources to be specified if the default should be overridden. As with “Attachment Locations” and “URLs” columns, multiple EQUELLA resources can be attached to the one item by using delimiters or multiple “EQUELLA Resources” columns.
+As with “Attachment Locations” and “URLs” columns, the column heading should be the metadata target of the openEQUELLA resource attachments (as used in the corresponding collection’s openEQUELLA wizard configuration if applicable). A column of “EQUELLA Resource Names” Column Data Type allows the names of the link descriptions to the openEQUELLA Resources to be specified if the default should be overridden. As with “Attachment Locations” and “URLs” columns, multiple openEQUELLA resources can be attached to the one item by using delimiters or multiple “EQUELLA Resources” columns.
 
-There are two formats that can be used for the specifying EQUELLA Resources in your CSV: by item UUID and by source identifier.
+There are two formats that can be used for the specifying openEQUELLA Resources in your CSV: by item UUID and by source identifier.
 
-#### Specifying EQUELLA Resources by UUID
-If the UUIDs of the EQUELLA resources to attach are known then an EQUELLA resource can be specified by UUID:
+#### Specifying openEQUELLA Resources by UUID
+If the UUIDs of the openEQUELLA resources to attach are known then an openEQUELLA resource can be specified by UUID:
 
-The supported formats for EQUELLA resources are as follows: 
+The supported formats for openEQUELLA resources are as follows: 
 
-**EQUELLA  Resource Format 1 - item uuid**
+**openEQUELLA  Resource Format 1 - item uuid**
 * Example “b515cc8d-d6b0-4a50-bb09-6c87920804b8” 
-* Behavior - The latest live version of the specified item itself will be attached as an EQUELLA resource 
+* Behavior - The latest live version of the specified item itself will be attached as an openEQUELLA resource 
 * Default Attachment Name - The item name
 
-**EQUELLA Resource Format 2 item uuid/item version**
+**openEQUELLA Resource Format 2 item uuid/item version**
 * Example - “b515cc8d-d6b0-4a50-bb09-6c87920804b8/3” 
-* Behavior - The specified version of the specified item itself will be attached as an EQUELLA resource 
+* Behavior - The specified version of the specified item itself will be attached as an openEQUELLA resource 
 * Default Attachment Name - The item name
 
-**EQUELLA Resource Format 3 - item uuid/item version/relative attachment path** 
+**openEQUELLA Resource Format 3 - item uuid/item version/relative attachment path** 
 * Example “b515cc8d-d6b0-4a50-bb09-6c87920804b8/3/docs/intro.pdf” 
-* Behavior - The attachment of the specified item version will be attached as an EQUELLA resource. Use item version 0 for the latest live version. * Default Attachment Name - The attachment description
+* Behavior - The attachment of the specified item version will be attached as an openEQUELLA resource. Use item version 0 for the latest live version. * Default Attachment Name - The attachment description
 
-**EQUELLA Resource Format 4
+**openEQUELLA Resource Format 4
 item uuid/item version/ package>**
 * Example -“521b2225-54e0-4d7b-a4d6-45243fcd7889/1/ package>” 
-* Behavior -The IMS or SCORM package attached to the specified item version will be attached as an EQUELLA resource
+* Behavior -The IMS or SCORM package attached to the specified item version will be attached as an openEQUELLA resource
 * Default Attachment Name - The package name
 
-#### Specifying EQUELLA Resources by Source Identifier Directives
-If the UUIDs of the EQUELLA resources to attach are not known then resources can be specified by source identifiers. This feature is particularly useful if uploading the EQUELLA resources with the EBI either in the same run, or a preceding run, as the items themselves.
-Specifying EQUELLA resources by source identifiers is done using any of the same formats as resources specified by UUID except that in place of a UUID a source identifier directive is included.
+#### Specifying openEQUELLA Resources by Source Identifier Directives
+If the UUIDs of the openEQUELLA resources to attach are not known then resources can be specified by source identifiers. This feature is particularly useful if uploading the openEQUELLA resources with the EBI either in the same run, or a preceding run, as the items themselves.
+Specifying openEQUELLA resources by source identifiers is done using any of the same formats as resources specified by UUID except that in place of a UUID a source identifier directive is included.
 
 The EBI uses the source identifier directive to determine the UUID of the referenced resource. Following are the allowed formats for source identifier directives: 
 
@@ -501,7 +501,7 @@ The EBI uses the source identifier directive to determine the UUID of the refere
 * Behavior - Resolves to the UUID of the item of a matching source identifier in the specified collection. Uses the source identifier found at the specified XPath.
  
 ### Custom Attachments
-EQUELLA supports attachment types other than file attachments and simple URLs. For example, EQUELLA attachments can also be YouTube videos and Flickr media. Such attachments require specialized metadata to be added to the /xml/item/attachments/attachment element in the item’s metadata for each of these attachments. The EBI supports the creation of such attachment elements using what are called Custom Attachments.
+openEQUELLA supports attachment types other than file attachments and simple URLs. For example, openEQUELLA attachments can also be YouTube videos and Flickr media. Such attachments require specialized metadata to be added to the /xml/item/attachments/attachment element in the item’s metadata for each of these attachments. The EBI supports the creation of such attachment elements using what are called Custom Attachments.
 
 To create item attachments other than the standard file attachments or URL links /xml/item/attachments/attachment elements need to be created in items. This can be done by specifying a CSV column with Column Data Type of “Custom Attachments”. Inside the column, a cell should contain an XML fragment of the required attachment elements. As with URLs and standard attachments, the column heading should be the metadata target of the corresponding Attachments control in the wizard.
 
@@ -510,13 +510,13 @@ For example, to create an item with two attachments, a YouTube video and a Kaltu
 ```
 <attachment type="custom"> <type>youtube</type> <file /> <description>Equella tour</description> <attributes> <entry> <string>playUrl</string> <string>http://www.youtube.com/v/uELyRAlRs&fs=1&source=uds&autoplay=1</string> </entry> <entry> <string>thumbUrl</string> <string>http://3.gvt0.com/vi/uELyRAlRs/default.jpg</string> </entry> <entry> <string>videoId</string> <string>uELyRAlRs </string> </entry> </attributes> </attachment> <attachment type="custom"> <type>kaltura</type> <uuid>de077d83-4b99-439b-9e5e-ef566d454226</uuid> <file /> <description>Nature Video</description> <attributes> <entry> <string>title</string> <string>Nature Video</string> </entry> <entry> <string>kalturaServer</string> <string>846328ab-522a-450b-9764-e52e15e1b6bd</string> </entry> <entry> <string>thumbUrl</string> <string> https://cdnsecakmi.kaltura.com/p/691542/sp/69129200/thumbnail/entry_id/0_crf3ox66/version/100000</string> </entry> <entry> <string>entryId</string> <string>0_crf3ox66</string> </entry> </attributes> </attachment>
 ```
-The above Custom Attachments value would result in two attachments in the EQUELLA item, the first to a YouTube video and the second to a Kaltura-hosted video.
+The above Custom Attachments value would result in two attachments in the openEQUELLA item, the first to a YouTube video and the second to a Kaltura-hosted video.
 
-Notice that an attachment UUID was supplied for the second custom attachment (but not for the first). This demonstrates that when using custom attachments you can, if you wish, provide an attachment UUID rather than leaving it to EQUELLA or the EBI to automatically generate a UUID (as is done for URLs and standard attachments).
+Notice that an attachment UUID was supplied for the second custom attachment (but not for the first). This demonstrates that when using custom attachments you can, if you wish, provide an attachment UUID rather than leaving it to openEQUELLA or the EBI to automatically generate a UUID (as is done for URLs and standard attachments).
 
 Note that though the data in a Custom Attachments CSV cell is technically an XML fragment the column does not need to be set for XML Fragments.
 
-There are several formats for the various types of attachments supported in EQUELLA. Higher versions of EQUELLA support a greater number of attachment types as content support typically increases with each version of EQUELLA. One of the easiest ways of determining the format of attachment elements in EQUELLA is to simply create an attachment using an EQUELLA wizard control and inspect the resulting metadata.
+There are several formats for the various types of attachments supported in openEQUELLA. Higher versions of openEQUELLA support a greater number of attachment types as content support typically increases with each version of openEQUELLA. One of the easiest ways of determining the format of attachment elements in openEQUELLA is to simply create an attachment using an openEQUELLA wizard control and inspect the resulting metadata.
 
 Thumbnails for local file attachments can be controlled in custom attachments by including the elements attachment/thumbnail or attachment/selected_thumbnail. 
 
@@ -525,11 +525,11 @@ The EBI can be used for uploading copyright-identified content that utilizes EQU
 
 “Holding” items (e.g. items that register books and journals) can be uploaded without any special EBI settings other than meeting the minimum metadata requirements for saving items to the holding collection.
 
-“Portion” items (e.g. eReserves) should also be uploaded so that they meet minimum metadata requirements for saving items to the portions collection. Additionally, a column of “EQUELLA Resources” should be included so that each portion is linked to a holding item. The link should be to the holding item itself, not any of its attachments. If more than one EQUELLA Resource is specified for the portion item then the EQUELLA Resource column for holding items should be specified first (i.e. furthest left) in the CSV.
+“Portion” items (e.g. eReserves) should also be uploaded so that they meet minimum metadata requirements for saving items to the portions collection. Additionally, a column of “EQUELLA Resources” should be included so that each portion is linked to a holding item. The link should be to the holding item itself, not any of its attachments. If more than one openEQUELLA Resource is specified for the portion item then the openEQUELLA Resource column for holding items should be specified first (i.e. furthest left) in the CSV.
 
 Each portion row in the CSV should also have a command option “CAL_PORTION”. 
 
-The column heading of the EQUELLA Resources column should be the same as the metadata target of the Attachments control configured in the portion collection wizard for linking portions to holdings (minus the leading slash). In the above example the metadata target is /item/temp_resourceHandler. 
+The column heading of the openEQUELLA Resources column should be the same as the metadata target of the Attachments control configured in the portion collection wizard for linking portions to holdings (minus the leading slash). In the above example the metadata target is /item/temp_resourceHandler. 
 
 There are many ways to interlink items using an “EQUELLA Resources” data type in EBI. In the above example the first three rows are linked to the same holding item (in a collection called “Books”) by its ISBN. The next three rows are linked to a holding item by the holding item’s UUID. 
 
@@ -570,24 +570,24 @@ The log file is named the date and time the EBI was started. The log file contai
 ### Stopping or Pausing the Import
 You can stop or pause an import process part way through by clicking the Stop Processing or Pause/Unpause Processing buttons on the EBI’s toolbar. 
 
-Clicking the Stop Processing button will cause the EBI to halt processing immediately. If the EBI is partway through uploading an item the item will not be committed into EQUELLA.
+Clicking the Stop Processing button will cause the EBI to halt processing immediately. If the EBI is partway through uploading an item the item will not be committed into openEQUELLA.
 
-Clicking the Pause Processing button will cause the EBI to pause processing. If the button is clicked again the EBI will resume processing (unpause). If the EBI is paused partway through uploading an item the item will not be committed into EQUELLA until it is unpaused.
+Clicking the Pause Processing button will cause the EBI to pause processing. If the button is clicked again the EBI will resume processing (unpause). If the EBI is paused partway through uploading an item the item will not be committed into openEQUELLA until it is unpaused.
 
 ### Errors
 Any errors that may occur are displayed in the log. 
 
 ### Connecting with a Proxy
-The EBI supports connecting to EQUELLA via a proxy server. If you are using EBI on a corporate network and are unable to connect to EQUELLA this may be because you need to use a proxy server. If you are unsure check with your IT support.
+The EBI supports connecting to openEQUELLA via a proxy server. If you are using EBI on a corporate network and are unable to connect to openEQUELLA this may be because you need to use a proxy server. If you are unsure check with your IT support.
 
-To connect to EQUELLA via a proxy got to Toolbar-> Preferences () -> Advanced. Here, fill in the Proxy Server Address field. The format of the address should be [host]:[port] e.g. “proxy001:8080”.
+To connect to openEQUELLA via a proxy got to Toolbar-> Preferences () -> Advanced. Here, fill in the Proxy Server Address field. The format of the address should be [host]:[port] e.g. “proxy001:8080”.
 
 The EBI provides Proxy Server Username and Proxy Server Password fields for Basic and Digest Authentication support.
 
 The EBI does not support Microsoft NTLM challenge/response authentication for proxies.
 
-### Required EQUELLA Permissions
-The user account in the Username fields must have the necessary privileges in the EQUELLA collection to perform the required actions. The following are the minimum privileges needed on items for the various uses of the EBI. 
+### Required openEQUELLA Permissions
+The user account in the Username fields must have the necessary privileges in the openEQUELLA collection to perform the required actions. The following are the minimum privileges needed on items for the various uses of the EBI. 
 Field:  Required Privileges
 
 * Create new items: CREATE_ITEM, VIEW_ITEM
@@ -598,34 +598,34 @@ Field:  Required Privileges
 * Set collaborators of existing items: VIEW_ITEM, DISCOVER_ITEM, EDIT_ITEM, REASSIGN_OWNERSHIP_ITEM
 * Exporting items: VIEW_ITEM, DISCOVER_ITEM
 
-## EQUELLA Scripts, Workflow and Digital Rights Management
-Items created or updated by the EBI respond and conform to scripts, workflow and digital rights management (DRM) in the same way as items managed through an EQUELLA wizard.
+## openEQUELLA Scripts, Workflow and Digital Rights Management
+Items created or updated by the EBI respond and conform to scripts, workflow and digital rights management (DRM) in the same way as items managed through an openEQUELLA wizard.
 
-### EQUELLA Scripts
-If the EQUELLA collection that you are importing content into has an Expert Save Script configured the script will be run upon import of new items or updated items. Expert New Version Scripts, however, are only run if the VERSION command option is used. Scripts are not run during test runs.
+### openEQUELLA Scripts
+If the openEQUELLA collection that you are importing content into has an Expert Save Script configured the script will be run upon import of new items or updated items. Expert New Version Scripts, however, are only run if the VERSION command option is used. Scripts are not run during test runs.
 
 Scripts on wizard controls or wizard pages are not run.
 
-### EQUELLA Workflow
-If a workflow template is associated with the collection you are importing into then new items and new item versions will progress through workflow as if they were created with an EQUELLA wizard. Workflow is not applied when updating existing items (unless creating new versions).
+### openEQUELLA Workflow
+If a workflow template is associated with the collection you are importing into then new items and new item versions will progress through workflow as if they were created with an openEQUELLA wizard. Workflow is not applied when updating existing items (unless creating new versions).
 
 If you wish to avoid new items going into workflow then remove the workflow template from the collection. However, note that when a workflow template is removed from a collection any items currently in moderation will immediately go live.
 
-### EQUELLA Digital Rights Management
+### openEQUELLA Digital Rights Management
 EQUELLA’s Digital Rights Management (DRM) can be applied to items by reproducing the metadata in the /xml/item/rights element as the DRM pages in a contribution wizard would produce. This can be done with standard metadata, XML fragments or a combination of both.
 
 ## Testing Your Import
-Before running the import you will likely want to perform a test run. This can be done by clicking the Test Import button. Clicking this button performs the same actions as a real import but without submitting items or attachments to EQUELLA. For this reason it runs faster than a real import, especially one with large attachments. The Test Import button is a useful way of verifying your settings and CSV file prior to commencing an import.
+Before running the import you will likely want to perform a test run. This can be done by clicking the Test Import button. Clicking this button performs the same actions as a real import but without submitting items or attachments to openEQUELLA. For this reason it runs faster than a real import, especially one with large attachments. The Test Import button is a useful way of verifying your settings and CSV file prior to commencing an import.
 
 
 You can create sample XML files in a test run by checking the check box Options tab -> Save test XML.
 
 
-When this check box is checked the EBI will create sample files in a folder called test_output under the folder containing the CSV. Within this folder the EBI will create one sub folder for each run and one xml file for each item. This is a convenient way to verify the final item XML without creating items in EQUELLA.
+When this check box is checked the EBI will create sample files in a folder called test_output under the folder containing the CSV. Within this folder the EBI will create one sub folder for each run and one xml file for each item. This is a convenient way to verify the final item XML without creating items in openEQUELLA.
 
-Note that the item IDs in the test XML files are assigned by EQUELLA and will change with each test run. They will also be different to the actual item IDs assigned to the records by EQUELLA in a real import run.
+Note that the item IDs in the test XML files are assigned by openEQUELLA and will change with each test run. They will also be different to the actual item IDs assigned to the records by openEQUELLA in a real import run.
 
-Some system metadata will not be available in these documents (e.g. owner details, item history) as much of the system metadata is only calculated by EQUELLA when an item is saved for real.
+Some system metadata will not be available in these documents (e.g. owner details, item history) as much of the system metadata is only calculated by openEQUELLA when an item is saved for real.
 
 ## Importing Select Rows from Your CSV
 It is possible to specify a subset of rows to process (either test or real) and a specific order they should be processed in. This is done by specifying a row filter. A row filter instructs the EBI to only import rows with row positions that fall within lists and/or ranges of numbers. The row filter is specified in the Row Filter field 
@@ -645,28 +645,28 @@ Note that a row position of a CSV row means its position discounting the heading
 
 If Row Filter is left blank the EBI will process all rows in the CSV.
 
-## Updating Existing Items in EQUELLA
-Using the EBI not only can you create new items in EQUELLA but you can also update existing ones.
+## Updating Existing Items in openEQUELLA
+Using the EBI not only can you create new items in openEQUELLA but you can also update existing ones.
 ### Updating Existing Items using Source Identifiers
-One way of updating existing items is by specifying a source identifier field that can match the records in the CSV with items in EQUELLA. This can be useful if your CSV already contains IDs from another system or generated in the CSV itself.
+One way of updating existing items is by specifying a source identifier field that can match the records in the CSV with items in openEQUELLA. This can be useful if your CSV already contains IDs from another system or generated in the CSV itself.
 
-Create a field in the EQUELLA schema that a source identifier can be stored in. The field can be named anything and may either be an element or an attribute. Check the Index for Advanced Searches check box. 
+Create a field in the openEQUELLA schema that a source identifier can be stored in. The field can be named anything and may either be an element or an attribute. Check the Index for Advanced Searches check box. 
 
-Now in the CSV a column of source identifiers is required. These can be of any format, numerical or alphanumerical, as long as they are unique to each row of the CSV. For example, “1”, “DFWTE”, “232-3423”, “S342343-B” are all valid source identifiers. In the column heading specify the XPath that matches the EQUELLA schema field where the source identifier will be stored. 
+Now in the CSV a column of source identifiers is required. These can be of any format, numerical or alphanumerical, as long as they are unique to each row of the CSV. For example, “1”, “DFWTE”, “232-3423”, “S342343-B” are all valid source identifiers. In the column heading specify the XPath that matches the openEQUELLA schema field where the source identifier will be stored. 
 
 In the EBI’s main form specify the column of the source identifiers in the Source Identifier field.
 
-Now when an import is run (test or real) for each row in the CSV the EBI will search EQUELLA for an item that matches the row’s source identifier. If it finds a matching item rather than creating a new item in EQUELLA it will update the matching item (or create a new version if used in conjunction with the VERSION command option).
+Now when an import is run (test or real) for each row in the CSV the EBI will search openEQUELLA for an item that matches the row’s source identifier. If it finds a matching item rather than creating a new item in openEQUELLA it will update the matching item (or create a new version if used in conjunction with the VERSION command option).
 
 By default, only items with a status of “live” will be updated with source identifiers.
 
 ### Updating Existing Items using Target Identifiers
 
-If you know the EQUELLA item IDs that you are updating another way of updating existing items is by specifying what are called target identifiers. Target identifiers are the UUID EQUELLA item IDs of the existing items in EQUELLA. To do this, in your CSV include a column of item IDs.
+If you know the openEQUELLA item IDs that you are updating another way of updating existing items is by specifying what are called target identifiers. Target identifiers are the UUID openEQUELLA item IDs of the existing items in openEQUELLA. To do this, in your CSV include a column of item IDs.
 
 You can name the column heading of this column anything or leave it blank. In the EBI select “Target Identifiers” for the Column Data Type for the corresponding column.
 
-When run, the EBI will attempt to match the target identifier of each row against an existing item in EQUELLA and update that item. For any rows with blank target identifiers new items are created. If a target identifier is provided that does not exist in EQUELLA an error will be returned and the EBI will move on to the next row.
+When run, the EBI will attempt to match the target identifier of each row against an existing item in openEQUELLA and update that item. For any rows with blank target identifiers new items are created. If a target identifier is provided that does not exist in openEQUELLA an error will be returned and the EBI will move on to the next row.
 
 By default, using target identifiers will see live items updated (or new versions created if used in conjunction with the VERSION command option). However, unlike when using source identifiers, if no live items are available then the first non-live item will be updated (e.g. draft, moderating, archived etc)
 
@@ -700,7 +700,7 @@ By default, when updating existing items with the EBI existing attachments are r
 You can also specify individual rows to append attachments by using the “APPENDATTACH” Command Option.
 
 ## Saving Items in Draft Status
-By default, when items or new versions of items are created in EQUELLA with the EBI they are made immediately live (or in moderation if workflow applies). Optionally, you may instruct the EBI to create items or item version in “draft” status. This can be done by checking Options tab -> Create new items and item versions in draft status checkbox.
+By default, when items or new versions of items are created in openEQUELLA with the EBI they are made immediately live (or in moderation if workflow applies). Optionally, you may instruct the EBI to create items or item version in “draft” status. This can be done by checking Options tab -> Create new items and item versions in draft status checkbox.
 
 You can also specify individual rows to create new items or item versions in draft status by using the “DRAFT” Command Option.
 
@@ -721,11 +721,11 @@ The following settings are available in the Preferences dialog - Basic Tab:
 
 The following settings are available in the Preferences dialog - Advanced Tab:
 
-* Proxy Server Address - The address of your network’s proxy server if one is required to connect to EQUELLA. 
+* Proxy Server Address - The address of your network’s proxy server if one is required to connect to openEQUELLA. 
 * Proxy Server Username - The username for basic or digest authentication with your network’s proxy server. 
 * Proxy Server Password - The password for basic or digest authentication with your network’s proxy server. 
 * Debug mode - When checked the EBI will output to the display and log files additional diagnostic information particularly when errors occur. 
-* Network logging - When checked network diagnostic information is displayed and recorded in the log for each HTTP request made to EQUELLA. WARNING: log files grow rapidly when this setting is in effect, potentially more than 50Kb per item. To avoid excessively large log files only use this setting with a small set of records per run. 
+* Network logging - When checked network diagnostic information is displayed and recorded in the log for each HTTP request made to openEQUELLA. WARNING: log files grow rapidly when this setting is in effect, potentially more than 50Kb per item. To avoid excessively large log files only use this setting with a small set of records per run. 
 * Attachment chunk size (bytes)- Controls the size of each “chunk” that attachments are broken up into during upload. Each chunk is transmitted as a single HTTP or HTTPS request. Will revert to default (2 MB) if cleared.
 
 These settings and others are stored in an automatically created “global” settings file. 
@@ -740,16 +740,16 @@ By including a column with a column data type of “Item Version” the item ver
 By including a column with a column data type of “Row Error” any errors encountered when attempting to import a row will be saved to the CSV copy.
 
 ### Exporting Items
-The EBI can be used for exporting metadata and attachments from EQUELLA. This is done by checking Options tab -> Export Items as CSV. In this mode the EBI will re-label the Test Import and Start Import buttons as Text Export and Start Export respectively.
+The EBI can be used for exporting metadata and attachments from openEQUELLA. This is done by checking Options tab -> Export Items as CSV. In this mode the EBI will re-label the Test Import and Start Import buttons as Text Export and Start Export respectively.
 
-When the Start Export button is clicked EBI will iterate through items in EQUELLA, populating the loaded CSV and downloading attachment files as it goes. Attachment files will be downloaded to the CSV folder or the folder specified in the base path in Options.
+When the Start Export button is clicked EBI will iterate through items in openEQUELLA, populating the loaded CSV and downloading attachment files as it goes. Attachment files will be downloaded to the CSV folder or the folder specified in the base path in Options.
 
 You can export item IDs and item versions by including columns with a column data type of “Item ID” and “Item Version” respectively.
 
 ### Exporting a Subset of Items
 By default all live items in the collection specified on the Connection tab will be exported. Any pre-existing rows in the CSV will be erased (except the header row). Row filters can be used to limit the number of items exported.
 
-If a Collection column is provided in the CSV then all collections in the EQUELLA institution will be exported and the collection column will be populated with collection names.
+If a Collection column is provided in the CSV then all collections in the openEQUELLA institution will be exported and the collection column will be populated with collection names.
 
 A subset of items from the specified collection(s) can be exported by specifying a WHERE clause in Options tab -> WHERE clause.
 
@@ -770,20 +770,20 @@ When exporting attachments, files from different items may have the same names a
 * "Overwrite files with same names" - EBI will overwrite all files of the same names regardless if they existed in the target folder prior to export or from previous items in the same export run
 
 ### Limitations in the Export Function
-For simple content the export capability will produce a CSV that can be used, without any modifications, for re-importing content back into EQUELLA. However, EBI’s CSV export function does not support some of the more advanced EBI features. Features not supported (i.e. not exportable) are the following:
-* EQUELLA Resources (EQUELLA resource attachments are not supported)
+For simple content the export capability will produce a CSV that can be used, without any modifications, for re-importing content back into openEQUELLA. However, EBI’s CSV export function does not support some of the more advanced EBI features. Features not supported (i.e. not exportable) are the following:
+* openEQUELLA Resources (openEQUELLA resource attachments are not supported)
 * Custom Attachments (only simple files, SCORM, IMS and zip files are exportable)
 
-XML fragments and XPath indexes should be used with care. Whilst the export function supports both of these features complex metadata that uses “intertwined” XML fragments and XPaths may require some testing and fine-tuning to support smooth, repeatable two-way import/export of content between a CSV and EQUELLA.
+XML fragments and XPath indexes should be used with care. Whilst the export function supports both of these features complex metadata that uses “intertwined” XML fragments and XPaths may require some testing and fine-tuning to support smooth, repeatable two-way import/export of content between a CSV and openEQUELLA.
 
 ## Expert Scripting
-For those comfortable with programming, the EBI supports powerful scripting capabilities called Expert Scripts. Amongst other uses, Expert Scripts allow you to precisely control how CSVs are interpreted for import into EQUELLA and how EQUELLA items are parsed and formatted for export out of EQUELLA.
+For those comfortable with programming, the EBI supports powerful scripting capabilities called Expert Scripts. Amongst other uses, Expert Scripts allow you to precisely control how CSVs are interpreted for import into openEQUELLA and how openEQUELLA items are parsed and formatted for export out of openEQUELLA.
 Expert Scripts are configured by clicking the Expert Script buttons in the Options tab.
 
 There are four types of Expert Script that can be written:
 * Start Script – This script is executed by the EBI before processing any rows or items. It is only executed once for each test or real run. It could be used, for example, performing a custom validation of the CSV prior to import.
-* Row Pre-Script – This script is executed on every row imported or every item exported. It is executed as soon as a row or item is read from EQUELLA and before any processing by the EBI. It could be used, for example, pre-processing the row data of the CSV prior to the EBI converts the data to item XML.
-* Row Post-Script – This script is executed on every row imported or every item exported. It is executed after a row or item is read from EQUELLA and processed by the EBI but prior to being added to EQUELLA (or a CSV during export). It could be used, for example, adjusting the XML produced by the EBI prior to uploading to EQUELLA.
+* Row Pre-Script – This script is executed on every row imported or every item exported. It is executed as soon as a row or item is read from openEQUELLA and before any processing by the EBI. It could be used, for example, pre-processing the row data of the CSV prior to the EBI converts the data to item XML.
+* Row Post-Script – This script is executed on every row imported or every item exported. It is executed after a row or item is read from openEQUELLA and processed by the EBI but prior to being added to openEQUELLA (or a CSV during export). It could be used, for example, adjusting the XML produced by the EBI prior to uploading to openEQUELLA.
  End Script – This script is executed by the EBI after processing all rows or items. It is only executed once for each test or real run. It could be used, for example, producing a custom outcome report of the import or export.
 
 EBI Expert Scripts are written in the Python programming language (http://www.python.org). As well as
@@ -854,17 +854,17 @@ Below are some common problems and corresponding solutions.
 1. Make certain you are not using the –start or –test command line arguments
 2. Make certain that you have installed (i.e. extracted or copied the ebi folder/package) to a location that has read/write privilege
 
-#### The EBI says it successfully imported items but I can’t find them in EQUELLA
+#### The EBI says it successfully imported items but I can’t find them in openEQUELLA
 1. Ensure that you are performing a real run using “Start Import” and not a test run using “Test Import”
-2. When looking for your freshly imported items check that your user account has the necessary privileges to the EQUELLA collection. Your account will need at least DISCOVER_ITEM and VIEW_ITEM privileges to find the items in EQUELLA. 
+2. When looking for your freshly imported items check that your user account has the necessary privileges to the openEQUELLA collection. Your account will need at least DISCOVER_ITEM and VIEW_ITEM privileges to find the items in openEQUELLA. 
 3. Verify that the items are not in workflow moderation. If the collection that you imported into has a workflow template applied to it then items will likely be created with a status of “Moderating” and won’t appear in standard searches.
 
-#### Item titles and descriptions are not displaying properly in EQUELLA
-1. When viewing your imported items in EQUELLA they may appear without a title or description and instead the titles may be displayed as the UUID of the item.
+#### Item titles and descriptions are not displaying properly in openEQUELLA
+1. When viewing your imported items in openEQUELLA they may appear without a title or description and instead the titles may be displayed as the UUID of the item.
 
-This is caused by failing to populate the special Resource Name Path and Resource Description Path nodes of the item’s XML. These special nodes are set in the EQUELLA schema configuration via the EQUELLA Admin Console.
+This is caused by failing to populate the special Resource Name Path and Resource Description Path nodes of the item’s XML. These special nodes are set in the openEQUELLA schema configuration via the openEQUELLA Admin Console.
 
-To correct the problem, first look up in the EQUELLA Admin Console the XPaths for the Resource Name Path and Resource Description Path of the schema used by the collection you are attempting to populate.
+To correct the problem, first look up in the openEQUELLA Admin Console the XPaths for the Resource Name Path and Resource Description Path of the schema used by the collection you are attempting to populate.
 
 Now check that the XPaths in the column headings of your CSV for your titles and descriptions match these values (minus the leading forward slash).
 
@@ -877,7 +877,7 @@ Now check that the XPaths in the column headings of your CSV for your titles and
 #### Attachments aren’t appearing in my items (yet no errors)
 1. Ensure that the column in your CSV where you specify the file names has a Column Data Type of “Attachment Locations”.
 
-#### Attachments are not appearing in the EQUELLA wizard
+#### Attachments are not appearing in the openEQUELLA wizard
 1. If the attachments appear in the item display page but not in the wizard then custom metadata referencing the attachments is missing. Ensure that the column heading of the Attachment Locations where the files are specified in the CSV uses an XPath that matches a metadata target of an Attachments Control in the wizard.
 
 #### I’m receiving the error “CSV headings do not match the settings”
@@ -890,7 +890,7 @@ b. modifying the CSV so that it matches the columns in the EBI’s main form
 #### I’m receiving the error “'utf8' codec can't decode byte”
 1. This error occurs when the wrong encoding is being used to read the CSV file. Try changing the encoding to “latin1” and re-running the import.
 
-#### Special characters are imported incorrectly into EQUELLA
+#### Special characters are imported incorrectly into openEQUELLA
 1. This can occur when the wrong encoding is being used to read the CSV file. Try changing the encoding and re-running the import.
 
 #### The EBI errors trying to upload file attachments
@@ -899,8 +899,8 @@ b. modifying the CSV so that it matches the columns in the EBI’s main form
 #### A column of metadata won’t import into my item yet there is no error
 1. Make certain that the column’s Column Data Type has been specified as “Metadata” in the EBI’s main form.
 
-#### My multi-value field is not being split into separate fields in EQUELLA
-1. Double check that this problem is actually occurring. Multi-value fields are only fully displayed in an EQUELLA wizard if a multi-value control (e.g. a shuffle list control) is mapped to the metadata field. A non-multi-value control such as an edit box will only display the first value.
+#### My multi-value field is not being split into separate fields in openEQUELLA
+1. Double check that this problem is actually occurring. Multi-value fields are only fully displayed in an openEQUELLA wizard if a multi-value control (e.g. a shuffle list control) is mapped to the metadata field. A non-multi-value control such as an edit box will only display the first value.
 
 The best way to verify if your multi-value metadata is imported correctly is to either use a custom display template or directly view the item’s underlying metadata.
 
@@ -909,31 +909,31 @@ The best way to verify if your multi-value metadata is imported correctly is to 
 3. Make certain that you are not attempting to split an attribute field. XML does not allow attributes to be repeated. An attribute field’s last node will start with an “@” symbol (e.g. item/itembody/@identifier).
 
 #### Existing items won’t update using source identifiers
-1. Make certain the source identifier field in the EQUELLA schema is indexed for power searches
+1. Make certain the source identifier field in the openEQUELLA schema is indexed for power searches
 2. Make certain that the Source Identifier field in the EBI is set for the column where the source identifiers exist in your CSV
-3. Make certain that the column heading of source identifiers column in your CSV is an XPath that matches the tag or attribute in the EQUELLA schema where the source identifiers are stored in EQUELLA.
+3. Make certain that the column heading of source identifiers column in your CSV is an XPath that matches the tag or attribute in the openEQUELLA schema where the source identifiers are stored in openEQUELLA.
 4. Make certain that you are uploading the items into the correct collection
 5. Make certain that the items are live. Only live items can be updated with source identifiers. Remove any workflow templates from the collection before doing an initial import or use target identifiers instead of source identifiers.
 
 #### Only one IMS package is appearing on the item even though more are specified
-1. EQUELLA supports only one IMS package per item. If more than one IMS package is specified in the row (and IMS or AUTO is specified in the command options) only the last IMS package will be imported.
+1. openEQUELLA supports only one IMS package per item. If more than one IMS package is specified in the row (and IMS or AUTO is specified in the command options) only the last IMS package will be imported.
 
 #### I’m receiving the error: “org.xml.sax.SAXParseException: The content of elements must consist of well-formed character data or markup.”
-1. EQUELLA is rejecting the XML document formed from the CSV metadata and column headings. This often happens when column headings have invalid XPaths (e.g. element names that start with numbers).
+1. openEQUELLA is rejecting the XML document formed from the CSV metadata and column headings. This often happens when column headings have invalid XPaths (e.g. element names that start with numbers).
 
 To determine where the exact problem lies try saving sample test XML files and viewing the file in a browser.
 
 #### I’m receiving an error containing the text: “EQUELLA returned the following script error:”
-1. EQUELLA is unable to create or update the item sent from the EBI due to an EQUELLA expert script error in the EQUELLA collection configuration. The text following the error should indicate what the actual script error is. For example:
+1. openEQUELLA is unable to create or update the item sent from the EBI due to an openEQUELLA expert script error in the openEQUELLA collection configuration. The text following the error should indicate what the actual script error is. For example:
 ```
-15:49:02: ERROR uploading file: EQUELLA returned the following script
+15:49:02: ERROR uploading file: openEQUELLA returned the following script
 error: Can't find method com.tle.web.scripting.impl.ItemScriptWrapper .getItem(java.lang.String).
 ```
-Examine and debug the expert script in the EQUELLA Admin Console. This is easier if you are able to reproduce the error in an EQUELLA contribution wizard.
+Examine and debug the expert script in the openEQUELLA Admin Console. This is easier if you are able to reproduce the error in an openEQUELLA contribution wizard.
 
-## Appendix B: EQUELLA WHERE Clause Syntax
+## Appendix B: openEQUELLA WHERE Clause Syntax
 
-An WHERE clause allows you to query on specific schema fields in EQUELLA that have been configured to be indexed for Power Searches. For those familiar with database queries, an EQUELLA WHERE clause is very similar to the WHERE clause of an SQL query.
+An WHERE clause allows you to query on specific schema fields in openEQUELLA that have been configured to be indexed for Power Searches. For those familiar with database queries, an openEQUELLA WHERE clause is very similar to the WHERE clause of an SQL query.
 
 ###  Simple WHERE Clause
 At a minimum, a WHERE Clause must start with a “WHERE” keyword and followed by an XPath, a comparison operator and, typically, a comparison value:
@@ -993,7 +993,7 @@ Example 3:
 WHERE (/xml/meta/name LIKE 'blue house*' OR /xml/meta/color is 'blue') AND /xml/meta/status IS 'published'
 
 ### Full Syntax Reference
-Following is a reference for the full syntax of WHERE Clauses in EQUELLA described in Wirth syntax notation (WSN):
+Following is a reference for the full syntax of WHERE Clauses in openEQUELLA described in Wirth syntax notation (WSN):
 ```
 WHERE STATEMENT ::= "where"? BOOLEAN_EXPR BOOLEAN_EXPR ::= OR_BOOLEAN_EXPR OR_BOOLEAN_EXPR ::= AND_BOOLEAN_EXPR ("or" AND_BOOLEAN_EXPR)* AND_BOOLEAN_EXPR ::= CLAUSE ("and" CLAUSE)* CLAUSE ::= "not" CLAUSE | BRACKETS | COMPARISON | EXISTS_CLAUSE BRACKETS ::= "(" BOOLEAN_EXPR ")" COMPARISON ::= XPATH COMPARISON_OP COMPARISON_RHS EXISTS_CLAUSE ::= XPATH "exists" XPATH ::= "/" (ALPHA | NUMBER | [/._:@])+ COMPARISON_OP ::= "=" | "is" | "<>" | "is not" | "<" | "<=" | ">" | ">=" | "like" | "not like" | "in" | "not in" COMPARISON_RHS ::= "null" | NUMBER_VALUE | STRING_VALUE | GROUP_VALUE STRING_VALUE ::= "'" STRING "'" NUMBER_VALUE ::= NUMBER+ GROUP_VALUE ::= "(" STRING_VALUE ("," STRING_VALUE)* ")" STRING ::= (ALPHA | [0-9] | ...)* ALPHA ::= [a-zA-Z] NUMBER ::= [0-9]
 ```
@@ -1022,7 +1022,7 @@ ebi.basepath() – For reading and setting the absolute basepath for attachments
 
 * imsmanifest (Row Post-Script import only) - XmlScriptType (read-only). The imsmanifest of SCORM and IMS package attachments. Its value is None if neither an IMS nor a SCORM package attachment is specified in the CSV row.
 
-* institutionUrl (All scripts) - String (read-only). Returns the EQUELLA institution URL.
+* institutionUrl (All scripts) - String (read-only). Returns the openEQUELLA institution URL.
 
 * itemId (Row Pre-Script export only, Row Post-Script) -  String (read-only). Item UUID of the current item being imported or exported.
 
@@ -1055,20 +1055,20 @@ Integer (read-only). Index of the target version column. -1 if none specified.
 
 * testOnly (All scripts) - Boolean (read-only). Indicates if the process run is a test run only.
 
-* username (All scripts) - String (read-only). Returns the username that the EQUELLA connection was established with.
+* username (All scripts) - String (read-only). Returns the username that the openEQUELLA connection was established with.
 
 * vars (All scripts) - Dictionary. A general purpose dictionary cleared at the commencement of each run and persisted through each run. Made available to scripts for passing parameters between scripts and rows/items.
 
 * xml (Row Pre-Script, Row Post-Script) - XmlScriptType. A wrapper to xmldom (see below). Same data as xmldom but with many helper functions. See xml Object Reference below for a complete reference.
 
-* xmldom (Row Pre-Script, Row Post-Script) -  xml.dom. The standard Python xml parser loaded with item XML. XML as produced by the EBI during import (prior to submitting to EQUELLA) or item XML of the current item in EQUELLA being exported (prior to conversion to row data).
+* xmldom (Row Pre-Script, Row Post-Script) -  xml.dom. The standard Python xml parser loaded with item XML. XML as produced by the EBI during import (prior to submitting to openEQUELLA) or item XML of the current item in openEQUELLA being exported (prior to conversion to row data).
 
 See http://docs.python.org/2/library/xml.dom.html for the complete object reference.
 
 A handy function for debugging is xmldom.toprettyxml() which returns a formatted, indented string representation of the XML document.
 
 ### xml Object Reference
-The xml object is a variable of type XmlScriptType. It is similar in functionality to the xml object available in EQUELLA scripting but with slightly different method names.
+The xml object is a variable of type XmlScriptType. It is similar in functionality to the xml object available in openEQUELLA scripting but with slightly different method names.
 
 Technically XmlScriptType is a wrapper to the fully-featured Python library xml.dom with additional helper functions to simplify common tasks.
 
@@ -1094,7 +1094,7 @@ Note: this method replaces the deprecated function iterate()
 * nodeExists(xpath) - Boolean. Indicates if an element or attribute exists at the given XPath.
 * setNode(xpath, value) - Sets an element or attribute at the specified XPath with the text value supplied. Creates the path as required.
 *
-The context of the XPaths in the methods are at the root element of the documents (/xml in the case of EQUELLA item XML). The xpath parameter used in the methods support only some of the W3C XPath 1.0 specification. 
+The context of the XPaths in the methods are at the root element of the documents (/xml in the case of openEQUELLA item XML). The xpath parameter used in the methods support only some of the W3C XPath 1.0 specification. 
 
 Note that elements are indexed starting at 1 not 0.
 
@@ -1105,16 +1105,16 @@ Following are some simple EBI Expert scripts examples.
 ###
 Example: Mapping Ordinary CSV Headings to XPaths
 
-Suppose that the CSV for import into EQUELLA is regularly exported from another system and has the following column headings: ID, Title, Description, Keywords, URL
+Suppose that the CSV for import into openEQUELLA is regularly exported from another system and has the following column headings: ID, Title, Description, Keywords, URL
 
-Now suppose that the columns are to be mapped to the following schema fields in your EQUELLA institution:
+Now suppose that the columns are to be mapped to the following schema fields in your openEQUELLA institution:
 ID -> sourceidentifier
 Title -> name
 Description -> description
 Keywords -> keyword
 URL -> url
 
-You could of course manually update the columns in your CSV to match the XPaths of the schema. However, if the same CSV is regularly exported from the source system for import into EQUELLA this can be a tiresome and error-prone task.
+You could of course manually update the columns in your CSV to match the XPaths of the schema. However, if the same CSV is regularly exported from the source system for import into openEQUELLA this can be a tiresome and error-prone task.
 An alternative is to use a Start Script to automatically map the column to XPaths prior to each import.
 1. Add the following script in the Start Script:
 ```
@@ -1126,14 +1126,14 @@ An alternative is to use a Start Script to automatically map the column to XPath
 The above script will work for EBI exports as well.
 
 ### Example: Transforming CSV Data Values
-Even when the column headings map correctly to EQUELLA metadata, sometimes the actual data provided in CSV cells require transformation and Expert scripts can be used. For example, suppose an EQUELLA collection and schema expects the field /xml/metadata/subject populated by one of the following values: Mathematics, Sciences, Languages, English Language Arts, Social Sciences
+Even when the column headings map correctly to openEQUELLA metadata, sometimes the actual data provided in CSV cells require transformation and Expert scripts can be used. For example, suppose an openEQUELLA collection and schema expects the field /xml/metadata/subject populated by one of the following values: Mathematics, Sciences, Languages, English Language Arts, Social Sciences
 
 However, suppose that the CSV provided (perhaps a report/export from another system) instead uses the values “MATH”, “SCI”, “LANG” ENG” and “SS”:
 
 The following examples show how the data itself can be transformed during the import process using one of two approaches: either with a Row Pre-Script or with a Row Post-Script.
 
 Approach A: Using a Row Pre-Script
-The following script meets the requirement by converting the raw values in the “metadata/subject” cell to the values configured in the EQUELLA collection each time a row is read from the CSV. This occurs prior to the EBI converting the row data to XML and uploading to EQUELLA.
+The following script meets the requirement by converting the raw values in the “metadata/subject” cell to the values configured in the openEQUELLA collection each time a row is read from the CSV. This occurs prior to the EBI converting the row data to XML and uploading to openEQUELLA.
 1. Add the following script in the Row Pre-Script: 
 ```
 value = rowData[columnHeadings.index("metadata/subject")] if value == "MATH": value = "Mathematics" elif value == "SCI": value = "Sciences" elif value == "LANG": value = "Languages" elif value == "ENG": value = "English Language Arts" elif value == "SS": value = "Social Sciences" rowData[columnHeadings.index("metadata/subject")] = value
@@ -1141,7 +1141,7 @@ value = rowData[columnHeadings.index("metadata/subject")] if value == "MATH": va
 4. Run the Import
 
 Approach B: Using a Row Post-Script
-Using the following Row Post-script, each time a row is read from the CSV, as per usual EBI will first convert the row data to XML. The script will then convert the values in the XML at “/xml/metadata/subject” to the values configured in the EQUELLA collection prior to the EBI uploading it into EQUELLA.
+Using the following Row Post-script, each time a row is read from the CSV, as per usual EBI will first convert the row data to XML. The script will then convert the values in the XML at “/xml/metadata/subject” to the values configured in the openEQUELLA collection prior to the EBI uploading it into openEQUELLA.
 
 1. Add the following script in the Row Post-Script: 
 ```
@@ -1152,7 +1152,7 @@ value = xml.getNode("metadata/subject") if value == "MATH": value = "Mathematics
 ### Example: Including a Column of Absolute Item URLs in an Export
 Supposing you wish to include the absolute URL of each item in an export. The URL of an item is not included in an item’s metadata but is producible with EBI Expert scripts.
 
-In the following script each time an item is read from EQUELLA, as per usual EBI will first convert the XML to row data. The script will then populate the cell with the column heading of “Item URL” with the item URL (calculated in the first line of the script) prior to the EBI outputting the row data to the CSV file.
+In the following script each time an item is read from openEQUELLA, as per usual EBI will first convert the XML to row data. The script will then populate the cell with the column heading of “Item URL” with the item URL (calculated in the first line of the script) prior to the EBI outputting the row data to the CSV file.
 
 1. Add a column to your CSV headed “Item URL”
 2. Set it’s datatype to “Ignore”
@@ -1175,7 +1175,7 @@ attachmentUUIDs = [] for attachment in xml.iterate("item/attachments/attachment"
 ### Example: Dynamically Controlling Where Attachments are Exported to
 When exporting all local attachments are downloaded to the attachments basepath (specified on the Options tab, CSV folder by default). You can, however, specify the basepath in an expert script by setting ebi.basepath.
 
-In the following scripts each time an item is read from EQUELLA, the Row Pre-Script will calculate the preferred location of the local attachment, in this case a subfolder of the attachments basepath based on subject metadata. After EQUELLA has exported the item’s file the Row Post-Script will modify the filepath exported to the CSV to each local attachment to reflect the subfolder it is located in.
+In the following scripts each time an item is read from openEQUELLA, the Row Pre-Script will calculate the preferred location of the local attachment, in this case a subfolder of the attachments basepath based on subject metadata. After openEQUELLA has exported the item’s file the Row Post-Script will modify the filepath exported to the CSV to each local attachment to reflect the subfolder it is located in.
 
 1. Add the following script in the Row Pre-Script: 
 ```

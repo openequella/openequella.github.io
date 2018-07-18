@@ -6,9 +6,9 @@ Table of Contents
 
 [Installing and Uninstalling EMU](#installing-and-uninstalling-emu)
 
-[Connecting to EQUELLA](#connecting-to-equella)
+[Connecting to openEQUELLA](#connecting-to-equella)
 
-[Searching EQUELLA](#searching-equella)
+[Searching openEQUELLA](#searching-equella)
 
 [Bulk Modifying Item Metadata](#bulk-modifying-item-metadata)
 
@@ -23,14 +23,14 @@ Table of Contents
 [Appendix C: EMU Object Model Reference](#appendix-c-emu-object-model-reference)
 
 ## Introduction
-### About the EQUELLA Metadata Utility (EMU)
-The EQUELLA® Metadata Utility (EMU) is a lightweight software utility designed to bulk manage item metadata in the award-winning EQUELLA® content repository system.
+### About the openEQUELLA Metadata Utility (EMU)
+The EQUELLA® Metadata Utility (EMU) is a lightweight software utility designed to bulk manage item metadata in the award-winning openEQUELLA® content repository system.
 
-EMU is typically installed on an EQUELLA administrator’s workstation. It connects to an EQUELLA repository via a local network or over the Internet. EMU allows querying of EQUELLA and bulk updating of the metadata of selected items.
+EMU is typically installed on an openEQUELLA administrator’s workstation. It connects to an openEQUELLA repository via a local network or over the Internet. EMU allows querying of openEQUELLA and bulk updating of the metadata of selected items.
 
 ### Requirements
 
-#### EQUELLA
+#### openEQUELLA
 EMU can only be used to manage versions of EQUELLA 4.1 or higher.
 #### Microsoft Windows
 EMU requires Microsoft® Windows. Versions of Windows EMU currently supports are:
@@ -58,33 +58,33 @@ If EMU is already installed on the workstation and you are upgrading or reinstal
 
 To uninstall EMU go to “Programs and Features” under Windows Control Panel, select “EQUELLA Metadata Utility” and click “Uninstall”.
 
-## Connecting to EQUELLA
-To connect EMU to an EQUELLA institution use the Connection tab.
+## Connecting to openEQUELLA
+To connect EMU to an openEQUELLA institution use the Connection tab.
 
 
 * Institution URL - This takes the form of:
 http://<server_address>/<institution_short_name>
 An example might be: http://repository.mycollege.edu/live
-If your EQUELLA institution has a URL that has no virtual folder on the end then it may simply require a domain for example: http://repository.mycollege.edu
-You can easily test an EQUELLA institution URL (and the availability of EQUELLA) by entering it into a web browser. If correct it will return the EQUELLA login page.
+If your openEQUELLA institution has a URL that has no virtual folder on the end then it may simply require a domain for example: http://repository.mycollege.edu
+You can easily test an openEQUELLA institution URL (and the availability of openEQUELLA) by entering it into a web browser. If correct it will return the openEQUELLA login page.
 
-* Login Mode - EMU can be connected to EQUELLA with either a username and password or a username and Shared Secret. Use the radio buttons on the Connection tab to select either: A. EQUELLA User or B. Shared Secret
+* Login Mode - EMU can be connected to openEQUELLA with either a username and password or a username and Shared Secret. Use the radio buttons on the Connection tab to select either: A. openEQUELLA User or B. Shared Secret
 
-* Username (EQUELLA User) - This should be a user in EQUELLA that has the DISCOVER_ITEM and VIEW_ITEM privileges on the items that will be searched for. The user should have the EDIT_ITEM privilege for items that will be edited or bulk updated.
+* Username (openEQUELLA User) - This should be a user in openEQUELLA that has the DISCOVER_ITEM and VIEW_ITEM privileges on the items that will be searched for. The user should have the EDIT_ITEM privilege for items that will be edited or bulk updated.
 
 * Password - The password of the above user
 
-* Username (Shared Secret) - This should be a user in EQUELLA that has the DISCOVER_ITEM and VIEW_ITEM privileges on the items that will be searched for. The user should have the EDIT_ITEM privilege for items that the will be edited or bulk updated. You do not need to know the password of this user. Depending on the Shared Secret settings in EQUELLA, if the user account does not exist in EQUELLA it may be automatically created. 
+* Username (Shared Secret) - This should be a user in openEQUELLA that has the DISCOVER_ITEM and VIEW_ITEM privileges on the items that will be searched for. The user should have the EDIT_ITEM privilege for items that the will be edited or bulk updated. You do not need to know the password of this user. Depending on the Shared Secret settings in openEQUELLA, if the user account does not exist in openEQUELLA it may be automatically created. 
 
-* Shared Secret ID - The Shared Secret ID as configured in EQUELLA. 
+* Shared Secret ID - The Shared Secret ID as configured in openEQUELLA. 
 
-* Shared Secret - The Shared Secret as configured in EQUELLA. 
+* Shared Secret - The Shared Secret as configured in openEQUELLA. 
 
-* Test Connection - This button will attempt a login and logout to EQUELLA with the settings above.
+* Test Connection - This button will attempt a login and logout to openEQUELLA with the settings above.
 
 * Log Files Folder - This button will launch a dialog to specify a folder for EMU log files to be written to.
 
-* Use Proxy - Check this checkbox if you require a proxy server to connect to EQUELLA. EMU uses the same network protocols as web browsers to connect to EQUELLA so you can usually determine if a proxy server is required by looking at your web browser settings (in Microsoft Internet Explorer this is under Tools->Internet Settings->Connections->LAN Settings). If you are unsure consult your network administrator.
+* Use Proxy - Check this checkbox if you require a proxy server to connect to openEQUELLA. EMU uses the same network protocols as web browsers to connect to openEQUELLA so you can usually determine if a proxy server is required by looking at your web browser settings (in Microsoft Internet Explorer this is under Tools->Internet Settings->Connections->LAN Settings). If you are unsure consult your network administrator.
 
 * Proxy Address - If applicable, the address of a proxy server. If the proxy server is on a network port other than 80 then include this at the end of the address with a colon as you would in a browser, e.g. http://myproxy:8080
 
@@ -92,19 +92,19 @@ You can easily test an EQUELLA institution URL (and the availability of EQUELLA)
 
 * Proxy Password - This is only required if your proxy requires username/password authentication.
 
-## Searching EQUELLA
-EMU allows you to search EQUELLA in all the ways you can query for items in EQUELLA plus some additional ways.
+## Searching openEQUELLA
+EMU allows you to search openEQUELLA in all the ways you can query for items in openEQUELLA plus some additional ways.
 ### Writing a Search Query
 Queries are specified on EMU’s Search tab.
 #### Freetext Query
-The freetext query conducts the same query as a basic text search in EQUELLA. Any schema fields in EQUELLA configured for freetext indexing plus textual attachments will be included in the search.
+The freetext query conducts the same query as a basic text search in openEQUELLA. Any schema fields in openEQUELLA configured for freetext indexing plus textual attachments will be included in the search.
 
 The query can contain simple keywords, phrases (using double quotes, e.g. "Australian animals"), boolean phrases and wildcards (* or ?), e.g. ''cats AND dog*'' will only match items that contain ''cats'' and any word beginning with ''dog''.
 
-The full syntax for a freetext query is documented in EQUELLA under the “More searching help and features...” link under the basic search edit box.
+The full syntax for a freetext query is documented in openEQUELLA under the “More searching help and features...” link under the basic search edit box.
 
 #### XML Query
-An XML query allows you to query on specific schema fields in EQUELLA that have been configured to be indexed for Power Searches. For those familiar with database queries, an XML Query is very similar to the WHERE clause of an SQL query.
+An XML query allows you to query on specific schema fields in openEQUELLA that have been configured to be indexed for Power Searches. For those familiar with database queries, an XML Query is very similar to the WHERE clause of an SQL query.
 ###### Simple XML Query
 At a minimum, an XML Query must start with a “WHERE” keyword and followed by an XPath, a comparison operator and a comparison value:
 ```
@@ -127,7 +127,7 @@ XPaths to XML attributes are similarly identified but with the attribute name pr
 ```
 /xml/metadata/@identifier
 ```
-In referencing XPaths in EMU to EQUELLA metadata all XPaths should start with /xml/. 
+In referencing XPaths in EMU to openEQUELLA metadata all XPaths should start with /xml/. 
 
 **Comparison Operator**
 The following comparison operators are available: Comparison operator Purpose
@@ -214,7 +214,7 @@ If a single item needs to be retrieved and the UUID of the item is known then th
 
 Upon clicking Search, if an item is found with the UUID specified it is returned in the search results.
 An item version can also be provided in the Ver field. The following behavior exists for the Ver field:
-* Empty - All available versions irrespective of item status. Versions of EQUELLA earlier than 5.2 will only return all versions (irrespective of item status) up to and including the latest LIVE version.
+* Empty - All available versions irrespective of item status. Versions of openEQUELLA earlier than 5.2 will only return all versions (irrespective of item status) up to and including the latest LIVE version.
 * Integer greater than zero (e.g. “1”, “2”, “3” etc) - The matching version if it exists
 * “0” - The latest live version. If no live version exists then the first version irrespective of item status.
 * “-1” - The latest version irrespective of item status. 
@@ -234,7 +234,7 @@ When the search is executed the selected columns will be presented in the search
 To split multi-value fields within a column specify a string (e.g. “|” or “, “) in the “Delimiter for multi-value fields” text field. To split with tabs use the character sequence “\t” and to split by linefeeds/carriage returns use the character sequence “\n”.
 
 ### Performing a Search
-Clicking the Search button will send the query to the EQUELLA server, bring into focus the Search Results tab and populate the results grid.
+Clicking the Search button will send the query to the openEQUELLA server, bring into focus the Search Results tab and populate the results grid.
 
 Depending on the nature of the query this may take some time. At any point during the data retrieval process you can click the Stop Processing button in the tool bar.
 ### Managing the Search Results
@@ -271,7 +271,7 @@ By double-clicking cells in the Search Results tab you can view additional metad
 
 Double-click the row header cell of a row and a form will be displayed which presents the corresponding item’s entire XML metadata.
 
-Click Edit and the item’s XML can be edited directly. The Hide System Metadata checkbox allows system metadata to be hidden or revealed. Note that much of EQUELLA’s system metadata cannot be manually updated and any changes made to such metadata will be overwritten by EQUELLA.
+Click Edit and the item’s XML can be edited directly. The Hide System Metadata checkbox allows system metadata to be hidden or revealed. Note that much of EQUELLA’s system metadata cannot be manually updated and any changes made to such metadata will be overwritten by openEQUELLA.
 
 Double-click to view and edit item’s entire XML metadata
 
@@ -398,7 +398,7 @@ By clicking the Run Bulk Update button EMU will start processing and modifying t
 ```
 Warning: There is no undo feature of a bulk modification. For this reason it is highly recommended that prior to performing a bulk modification on a production server it is first run on a test server with mirrored or similar data and the outcome verified.
 ```
-EMU will automatically select the Log tab and display the progress of the bulk update. Each item will be processed by each modifier and then saved back to EQUELLA.
+EMU will automatically select the Log tab and display the progress of the bulk update. Each item will be processed by each modifier and then saved back to openEQUELLA.
 
 What is displayed in the log window can be controlled prior to performing the run using the Output Format drop-down field on the Update tab.
 
@@ -412,14 +412,14 @@ During a bulk processing run you may stop the run by clicking the Stop Processin
 The Log tab has a maximum size limit and once it reaches that size it will start truncating the oldest events to make room for new ones. You can clear the log display by clicking the Clear Log button on the toolbar. By checking the checkbox “Clear log tab on update” the log display will be automatically cleared with each run. This checkbox does not affect log files.
 
 ### Executing a Test Bulk Modification Run
-Whilst you are authoring and testing modifiers use the Test Bulk Update to check how your modifiers behave. This command processes in the same way as the Run Bulk Update but without saving the item to EQUELLA. This feature allows you to view the updated XML in the display log without the chance of updating items incorrectly.
+Whilst you are authoring and testing modifiers use the Test Bulk Update to check how your modifiers behave. This command processes in the same way as the Run Bulk Update but without saving the item to openEQUELLA. This feature allows you to view the updated XML in the display log without the chance of updating items incorrectly.
 
-Because it skips the step of writing back to EQUELLA, this process is faster than the Run Bulk Update process.
+Because it skips the step of writing back to openEQUELLA, this process is faster than the Run Bulk Update process.
 
 ### Copying Item Files to Staging
-In most cases your bulk metadata tasks will have no effect on any physical files attached to items. However, in some rare cases there will be a need for item files themselves to be modified. Though EMU cannot do this EQUELLA expert scripts, triggered by an EMU item save, can. In such cases EQUELLA needs to be instructed by EMU to copy the item files to a “staging” area of the filestore where the files can be modified by EQUELLA.
+In most cases your bulk metadata tasks will have no effect on any physical files attached to items. However, in some rare cases there will be a need for item files themselves to be modified. Though EMU cannot do this openEQUELLA expert scripts, triggered by an EMU item save, can. In such cases openEQUELLA needs to be instructed by EMU to copy the item files to a “staging” area of the filestore where the files can be modified by openEQUELLA.
 
-File copying can be intensive for the EQUELLA server particularly if there is a large volume of files attached to each item (as is the case with video attachments) so by default EMU does not instruct EQUELLA to copy item files to staging. If file modification is required check the Copy item files to staging checkbox.
+File copying can be intensive for the openEQUELLA server particularly if there is a large volume of files attached to each item (as is the case with video attachments) so by default EMU does not instruct openEQUELLA to copy item files to staging. If file modification is required check the Copy item files to staging checkbox.
 
 
 Only check this checkbox if you understand its purpose and you require this behavior. This checkbox has no effect during a test run.
@@ -430,9 +430,9 @@ EMU can write log files of test or real bulk update runs. To do this, firstly sp
 Log files are created as text files populated with the same content as the log display set to an output format of “Indented XML (large)”. Text files are named the date and time of when the bulk update run was started. Once a log file reaches 10MB it is closed and a new file is started with the same name plus an incremental integer.
 
 ### Scripting in EMU
-Beyond simple modifiers, EMU provides programming capability to bulk update operations through the incorporation of a JScript programming engine. With EMU scripting you can do complex manipulation of item metadata in many ways similar to Expert scripts in EQUELLA.
+Beyond simple modifiers, EMU provides programming capability to bulk update operations through the incorporation of a JScript programming engine. With EMU scripting you can do complex manipulation of item metadata in many ways similar to Expert scripts in openEQUELLA.
 
-EMU scripting code is used to call the EMU object model via Script modifiers and via “script tags” within other modifiers. Using a combination of these aspects of EMU it is possible to make complex modifications to EQUELLA items in bulk.
+EMU scripting code is used to call the EMU object model via Script modifiers and via “script tags” within other modifiers. Using a combination of these aspects of EMU it is possible to make complex modifications to openEQUELLA items in bulk.
 
 Following is an example of a Script modifier that simply outputs text to the event log for each item that is processed during a bulk run.
 
@@ -441,7 +441,7 @@ Obviously, this script alone is of little use but the example is a good introduc
 #### Script Syntax
 The language used in EMU scripting is JScript (http://msdn.microsoft.com/en-us/library/hbxc2t98.aspx). JScript is an ECMA standard language very similar in syntax to JavaScript. For most EMU-related purposes JavaScript examples, tutorials and references translate perfectly well to JScript.
 
-Note that EMU does not run in a browser and therefore does not implement the Browser Objects Reference or the HTML DOM Objects reference. For this reason objects such as Location, Window and Document, which are commonly found in JavaScript examples on the Internet, are not applicable in EMU. Note also that EMU does not implement the EQUELLA scripting object model as it is not running within EQULLA. Instead, EMU implements its own object model.
+Note that EMU does not run in a browser and therefore does not implement the Browser Objects Reference or the HTML DOM Objects reference. For this reason objects such as Location, Window and Document, which are commonly found in JavaScript examples on the Internet, are not applicable in EMU. Note also that EMU does not implement the openEQUELLA scripting object model as it is not running within EQULLA. Instead, EMU implements its own object model.
 
 There is much documentation available on the Internet regarding the JScript language. Here is a small introduction.
 Local variables must be declared but are un-typed e.g.:
@@ -498,7 +498,7 @@ Make certain the “Always use the selected program…” checkbox is checked. T
 
 EMU profile files are XML files and can be edited outside of EMU. However, passwords and shared secrets are encrypted and can only be edited with EMU.
 ```
-Warning: A note on security and EMU profiles. Only share EMU profile files with users who are authorized to administer items on that EQUELLA institution. An EMU profile file confers the EMU user the power to view and make any changes to metadata on all items accessible by the user account saved in the profile.
+Warning: A note on security and EMU profiles. Only share EMU profile files with users who are authorized to administer items on that openEQUELLA institution. An EMU profile file confers the EMU user the power to view and make any changes to metadata on all items accessible by the user account saved in the profile.
 ```
 ## Troubleshooting
 
@@ -509,15 +509,15 @@ Check that your single quotes around strings are not “Smart Quotes”. These c
 Check that you are not trying to update either /xml/item/name or /xml/item/description. These are system fields and cannot be updated with EMU. Instead, to modify an item’s name or description update the custom nodes that are identified in EQUELLA’s Schema Editor as the item’s name and description 
 
 #### Receive an error “The request channel timed out while waiting for a reply…” during a bulk update
-This may occur if the EQUELLA collection that the item being edited belongs to is opened for editing in the Admin Console. It is important to ensure that collections being bulk updated are not opened in the EQUELLA Admin Console.
-#### Metadata not updating in EQUELLA though EMU logs say it has
+This may occur if the openEQUELLA collection that the item being edited belongs to is opened for editing in the Admin Console. It is important to ensure that collections being bulk updated are not opened in the openEQUELLA Admin Console.
+#### Metadata not updating in openEQUELLA though EMU logs say it has
 Double-check that you are not performing a test run.
 
-This may occur if you are attempting to update system metadata. If you attempt to update system metadata (e.g. item ID or item status) in most cases EQUELLA will overwrite your change when the item is saved.
+This may occur if you are attempting to update system metadata. If you attempt to update system metadata (e.g. item ID or item status) in most cases openEQUELLA will overwrite your change when the item is saved.
 
 ## Appendix A Example Modification Routines
 ### Adding Values to a Repeating Field
-You may wish to add values to a list of values in your metadata (e.g. values that are created by a Checkbox Group control in an EQUELLA wizard). The Add XML modifier can be used to achieve this by simply specifying a fragment of xml that consist of the elements you wish to add.
+You may wish to add values to a list of values in your metadata (e.g. values that are created by a Checkbox Group control in an openEQUELLA wizard). The Add XML modifier can be used to achieve this by simply specifying a fragment of xml that consist of the elements you wish to add.
 
 For example, say you wish to add three colors to a list of colors e.g. you want to turn this:
 ```
@@ -562,7 +562,7 @@ If some of your items already had some of those colors, and you didn’t want to
 ```/xml/itembody/colors/color[text()='white' or text()='yellow' or text()='green']```
 
 ### Moving Elements
-There is no EMU modifier to specifically move elements in an EQUELLA item however this can be easily achieved by a Copy XML modifier followed by a Remove XML modifier. For example, say in the following example you wish to move the keyword elements to under the keywords element:
+There is no EMU modifier to specifically move elements in an openEQUELLA item however this can be easily achieved by a Copy XML modifier followed by a Remove XML modifier. For example, say in the following example you wish to move the keyword elements to under the keywords element:
 ```
 <xml> 
 <itembody> 
@@ -620,7 +620,7 @@ Creating empty elements can be done by using the Update Text modifier with Updat
 </xml>
 ```
 ### “Touching” Items
-In many cases it is useful to resave items in EQUELLA without making any changes (also known as “touching” items). Examples of this are the need to re-index a subset of items or the need to execute Expert scripts. This is easily accomplished with EMU by simply performing a bulk update without any enabled modifiers.
+In many cases it is useful to resave items in openEQUELLA without making any changes (also known as “touching” items). Examples of this are the need to re-index a subset of items or the need to execute Expert scripts. This is easily accomplished with EMU by simply performing a bulk update without any enabled modifiers.
 
 ### Regular Expression Matching
 Whilst the Replace Text modifier ably performs simple search and replace functions, you may wish to perform more complex searches across text based on text patterns. Using Script modifiers it is possible to leverage .NET’s regular expression engine.
@@ -641,8 +641,8 @@ Following is an example of an item’s metadata.
 ```
 <xml>
 <item id="f980a911-010d-35af-f480-deca7fd5530c" itemdefid="6e85ce64-9a11-c5e7- 69a4-bd30ec61007f" itemstatus="live" key="2" version="1"> 
-<name>EQUELLA web site</name> 
-<description> With product and service information, eNewsletters and links to support materials, the EQUELLA web site is a key resource for new clients. Come and check it out! </description>
+<name>openEQUELLA web site</name> 
+<description> With product and service information, eNewsletters and links to support materials, the openEQUELLA web site is a key resource for new clients. Come and check it out! </description>
 ... 
 </item> 
 <metadata> 
@@ -655,8 +655,8 @@ Following is an example of an item’s metadata.
   <format>other</format> 
 </technical> 
 </lom> 
-<name>EQUELLA web site</name> 
-<description> With product and service information, eNewsletters and links to support materials, the EQUELLA web site is a key resource for new clients. Come and check it out! </description> 
+<name>openEQUELLA web site</name> 
+<description> With product and service information, eNewsletters and links to support materials, the openEQUELLA web site is a key resource for new clients. Come and check it out! </description> 
 ... 
 </metadata> 
 </xml>
@@ -686,7 +686,7 @@ The above XPath will reference the name element which is a child of item which i
 ```
 <xml> 
 <item id="f980a911-010d-35af-f480-deca7fd5530c" itemdefid="6e85ce64-9a11-c5e7- 69a4-bd30ec61007f" itemstatus="live" key="2" version="1"> 
-<name>EQUELLA web site</name>
+<name>openEQUELLA web site</name>
 ...
 </item>
 ...
@@ -699,7 +699,7 @@ Attributes can be accessed in the same way with the qualifier that the attribute
 In EMU all XPaths should be a full XPath from the root of the XML document. This means that all XPaths in EMU should start with /xml/.
 
 ### Selecting Particular Elements from Multiple Elements
-EQUELLA supports repeating metadata fields. 
+openEQUELLA supports repeating metadata fields. 
 ```
 <xml> 
 <metadata> 
@@ -714,7 +714,7 @@ EQUELLA supports repeating metadata fields.
 </metadata> 
 </xml>
 ```
-In the above example the /xml/metadata/subject_areas/subject element has multiple instances i.e. it repeats. Each instance has a different text value, “Mathematics”, “Science”, “English”, “Arts” etc. This type of XML is easily generated by EQUELLA by using any controls that have multiple selection capabilities. Controls with this capability include Check Box Group, Shuffle Box, Shuffle List, Taxonomy Control and the Repeater.
+In the above example the /xml/metadata/subject_areas/subject element has multiple instances i.e. it repeats. Each instance has a different text value, “Mathematics”, “Science”, “English”, “Arts” etc. This type of XML is easily generated by openEQUELLA by using any controls that have multiple selection capabilities. Controls with this capability include Check Box Group, Shuffle Box, Shuffle List, Taxonomy Control and the Repeater.
 
 XPath allows you to specify select elements from a range of elements: The following XPath selects the second ```<subject>``` element:
 

@@ -1,9 +1,9 @@
 [Home](https://equella.github.io/)
 
-# Installing Equella
+# Installing openEQUELLA
 
 ## Environment setup
-Assuming you are building and installing Equella in the same environment, the following should be setup.  Details can be found in the [Equella Dev Setup](https://github.com/equella/Equella#download-required-software) guide.
+Assuming you are building and installing openEQUELLA in the same environment, the following should be setup.  Details can be found in the [openEQUELLA Dev Setup](https://github.com/equella/Equella#download-required-software) guide.
 
 - Java 8 (Oracle)
 - ImageMagick
@@ -16,10 +16,10 @@ Needed if you are building your own install binary:
 
 ## Build the Installer
 
-If you don't have / don't want to use a pre-built binary, you can build EQUELLA from source yourself by following the instructions on the main [EQUELLA repo](https://github.com/equella/Equella).
+If you don't have / don't want to use a pre-built binary, you can build openEQUELLA from source yourself by following the instructions on the main [openEQUELLA repo](https://github.com/equella/Equella).
 
-## Install Equella
-1. Unzip the equella install zip binary.
+## Install openEQUELLA
+1. Unzip the openEQUELLA install zip binary.
 1. Run the GUI installer:
     ```bash
     ~$ cd ~/equella-installer-{VERSION}
@@ -34,7 +34,7 @@ The 'Institution Administration URL' for local testing can be as simple as ```ht
 ### Windows Install
 Using the equellaserver and manager bat scripts, configure and install as Windows services.
 
-## Starting Equella
+## Starting openEQUELLA
 The primary log to watch is located under ```{install_location}/logs/resource-centre/{current_date}/application.{X.}html```
 
 ### \*nix
@@ -44,24 +44,24 @@ The primary log to watch is located under ```{install_location}/logs/resource-ce
 and/or
 ~$ ./manager start
 ```
-To stop Equella or the manager, run the same command to start the application, but pass in 'stop' instead of 'start'.
+To stop openEQUELLA or the manager, run the same command to start the application, but pass in 'stop' instead of 'start'.
 
 ### Windows
-Assuming Equella and the Equella Manager have been installed as services, navigate to your services, and select Equella to start.
+Assuming openEQUELLA and the openEQUELLA Manager have been installed as services, navigate to your services, and select openEQUELLA to start.
 
-## Accessing Equella / Finish Setup
-Use your browser to login to the EQUELLA manager (default is <http://localhost:3000>)
-From here you can click the "start" button to start the EQUELLA app server if not already done from a Windows service or \*nix start script.
+## Accessing openEQUELLA / Finish Setup
+Use your browser to login to the openEQUELLA manager (default is <http://localhost:3000>)
+From here you can click the "start" button to start the openEQUELLA app server if not already done from a Windows service or \*nix start script.
 
-Once Equella has started you can log in to the server admin pages using the hostname and port you configured in the installer.
+Once openEQUELLA has started you can log in to the server admin pages using the hostname and port you configured in the installer.
 
 The installation process will need to be completed in the server admin pages.  Please access the server admin pages, configure the fields presented, and once presented with the database screen, initialize the database.
 
-At this point, Equella is 'running', but still needs an institution to be useful.
+At this point, openEQUELLA is 'running', but still needs an institution to be useful.
 
 ## Import an Institution
 1. Download the [6.4 vanilla](https://github.com/equella/equella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz) institution.
 1. Using the server admin pages, import the institution
 1. After the import completes, click 'Return to Institution Management'
 1. Your newly imported institution should be enabled on the 'Institutions' page.  Click 'Login' under 'Actions'
-1. Login with the Equella super user ```TLE_ADMINISTRATOR```, and use the institution password you set when configuring the institution import.
+1. Login with the openEQUELLA super user ```TLE_ADMINISTRATOR```, and use the institution password you set when configuring the institution import.

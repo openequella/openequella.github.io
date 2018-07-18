@@ -1,10 +1,10 @@
 # Apache 
 
-Various tips and configs for running Equella behind Apache.
+Various tips and configs for running openEquella behind Apache.
 * Forward Proxy
 * Reverse Proxy
-  * Running Apache in front of Equella
-  * Running Apache as a load balancer in front of Equella
+  * Running Apache in front of openEquella
+  * Running Apache as a load balancer in front of openEquella
 
 ## Forward Proxy
 NOTE: This is an insecure method to setup a forward proxy. Use only with caution and for a small time behind your firewall while you are testing.
@@ -27,15 +27,15 @@ Allow from all
 ```
 
 * Refresh / restart Apache: sudo a2dissite equella-forward-proxy ; sudo a2ensite equella-forward-proxy ; sudo service apache2 restart
-* In your Equella optional-config file, enable the following and restart Equella.
+* In your openEquella optional-config file, enable the following and restart openEquella.
 ```
 configurationService.proxyHost=<Apache Server IP>
 configurationService.proxyPort=8047
 ```
-To confirm Equella is using the proxy, change the ports in the Apache site file, and refresh apache and then try to add a URL to Equella
+To confirm openEquella is using the proxy, change the ports in the Apache site file, and refresh apache and then try to add a URL to openEquella
 
 ## Reverse Proxy
-### Running Apache in front of Equella
+### Running Apache in front of openEquella
 This assumes a single node with the IP Address of 192.168.1.234.
 
 Install Apache (in Ubuntu):
@@ -76,7 +76,7 @@ $ sudo a2ensite equella-standalone
 $ service apache2 restart
 ```
 
-### Running Apache as a load balancer in front of Equella
+### Running Apache as a load balancer in front of openEquella
 
 HTTP:
 ```

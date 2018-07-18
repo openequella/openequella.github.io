@@ -1,22 +1,22 @@
-# Equella Ping Utility 
+# openEQUELLA Ping Utility 
 
 Code:  [Equella-Tools/ping-utility](https://github.com/equella/Equella-Tools/tree/master/ping-equella)
 
 *Recommended for use only with a strong understanding of the system and the potential impact of the utility*
 
-This is a Java utility that loops through Equella items (optionally filtered by institution and/or collection), checking if the item's attachment exist.
+This is a Java utility that loops through openEQUELLA items (optionally filtered by institution and/or collection), checking if the item's attachment exist.
 
 There are three run modes:
 * 'attachments' mode relies on the REST API and will check the attachments of each item via an HTTP GET call. Based on the response
-code, it will decide if the attachment exists. This has some known concerns (such as a longer run duration and some false positives), but can be run from any computer that can access the external EQUELLA site. It does not completely pull the content. It has only been tested on non-DRM items.
-* 'direct-query-batched-items-attachments-per-item' mode uses the filestore and database via batched queries (ie your EQUELLA install would not even need to be running to use this mode). It will make roughly (n/100)+n database calls, where n is number of items in your database.
+code, it will decide if the attachment exists. This has some known concerns (such as a longer run duration and some false positives), but can be run from any computer that can access the external openEQUELLA site. It does not completely pull the content. It has only been tested on non-DRM items.
+* 'direct-query-batched-items-attachments-per-item' mode uses the filestore and database via batched queries (ie your openEQUELLA install would not even need to be running to use this mode). It will make roughly (n/100)+n database calls, where n is number of items in your database.
 * 'direct-query-all-items-all-attachments' is similar to 'direct-query-batched-items-attachments-per-item', but will make a single query for the items, and a single query for the attachments, for a total of 5 DB calls to build the report. This originally was developed as a workaround to an issue with pagination in SQL Server 2008.
 
 ### Setup
 
 **Needed Files** 
 
-Note: Releases of PingEquella and example properties files are stored in the Equella Tool Directory
+Note: Releases of PingEquella and example properties files are stored in the openEQUELLA Tool Directory
 
 * PingEquella jar
 * ping-equella.properties (see Config Details for contents)
@@ -24,7 +24,7 @@ Note: Releases of PingEquella and example properties files are stored in the Equ
 * (Optional): start.sh (see Bitbucket repo)
 
 **Direct* modes**
-This mode requires direct access to the database and the filestore of the Equella install.
+This mode requires direct access to the database and the filestore of the openEQUELLA install.
 
 **Attachments mode**
 The mode requires REST authentication to be setup in the given institution (CCG / LTI). You will you need to provide the client ID / secret in the properties file. It's been shown that there are some false positives and not all system collections are exposed through the REST API. It's recommended to use the direct* modes.
@@ -69,7 +69,7 @@ trying a 6th time).
 8. Running the report with ping.type as 'attachments' can give a false positive on inactive CAL/CLA item.
 
 **V1.4**
-* Added a direct single query mode to support SQL Server 2008. Provides the ability to run on Equella installs with multiple institutions and filter by
+* Added a direct single query mode to support SQL Server 2008. Provides the ability to run on openEQUELLA installs with multiple institutions and filter by
 an institution.
 
 Release notes:
@@ -88,7 +88,7 @@ For direct* ping.types, this is automatic.
 For the attachments ping.type, this needs to be specified via a new configuration key 'attachments.institution.shortname'. This
 will allow attachments reports to match the format of direct* reports. Default value is 'DEFAULT'.
 
-6. Users can run PingEquella on Equella clusters that have multiple institutions
+6. Users can run PingEquella on openEQUELLA clusters that have multiple institutions
 7. Users have enhanced filtering-by-collection ability.
 
 The parameter 'collection.uuid' has been replaced by 'attachments.filter.by.collection.uuid'. Only valid for ping.type = attachments , and ignored if ping.type is not attachments.
@@ -145,8 +145,8 @@ directories.
 ##############
 # Can be 'attachments', 'direct-query-all-items-all-attachments', or
 'direct-query-batched-items-attachments-per-item'
-# 'attachments' uses the REST API / Web UI of Equella
-# 'direct*' will query the DB, and check the filestore without using any Equella code.
+# 'attachments' uses the REST API / Web UI of openEQUELLA
+# 'direct*' will query the DB, and check the filestore without using any openEQUELLA code.
 No web UI calls.
 # direct batched only works with SQL Server 2012 or newer.
 ping.type=attachments

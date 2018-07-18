@@ -1,14 +1,14 @@
-# Equella Web and Documentation
+# openEquella Web and Documentation
 
-EQUELLA is a digital repository that provides a single platform to house your teaching and learning, research, media, and library content.
+openEQUELLA is a digital repository that provides a single platform to house your teaching and learning, research, media, and library content.
 
-EQUELLA has been deployed for copyright resource collections, research materials, managing and exposing materials through websites and portals, content authoring, workflow, institutional policy and organizational resources. EQUELLA is currently in use in a wide range of schools, universities, colleges, TAFEs, departments of education, government agencies, and corporations worldwide.
+openEQUELLA has been deployed for copyright resource collections, research materials, managing and exposing materials through websites and portals, content authoring, workflow, institutional policy and organizational resources. openEQUELLA is currently in use in a wide range of schools, universities, colleges, TAFEs, departments of education, government agencies, and corporations worldwide.
 
-With over 15 years of history, EQUELLA is a mature solution written for the Java platform.  In its recent history, EQUELLA was proprietary software licensed to adopters by Pearson.  EQUELLA is now available as open source software via Apereo. [Learn more about Equella and Apereo here.](https://www.apereo.org/projects/equella)
+With over 15 years of history, openEQUELLA is a mature solution written for the Java platform.  In its recent history, openEQUELLA was proprietary software licensed to adopters by Pearson.  EQUELLA is now available as open source software via Apereo. [Learn more about Equella and Apereo here.](https://www.apereo.org/projects/equella)
 
 ## Join the Community
 * [Join the Apereo Equella Google Group](https://groups.google.com/a/apereo.org/forum/#!forum/equella-users)
-* [Follow EQUELLA on Twitter](https://twitter.com/EQUELLA)
+* [Follow openEQUELLA on Twitter](https://twitter.com/EQUELLA)
 * [Community Governance Model](community/CommunityGovernance.md)
 * [Documentation Guidelines](https://github.com/equella/equella.github.io/blob/master/community/DocumentationGuidelines.md)
 
@@ -17,7 +17,7 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
 * [6.5-Stable](release-notes/ReleaseNotes-6.5-GA.md)
 
 ## Getting Started
-* [Installing Equella - Quick Start Guide](gettingstarted/InstallingEquella.md)
+* [Installing openEquella - Quick Start Guide](gettingstarted/InstallingEquella.md)
 
 ## Tutorials
 
@@ -29,7 +29,7 @@ With over 15 years of history, EQUELLA is a mature solution written for the Java
 
 ## Administrative and User Guides
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
-    * [Equella Schema Info](guides/equella_schema.zip)
+    * [openEquella Schema Info](guides/equella_schema.zip)
     * [Additional General Info and Help](guides/AdditionalGeneralInfoHelp.md)
     * [Theming Guide](guides/ThemingGuide.md)
     * [Workflow Configuration Guide](guides/WorkflowConfigurationGuide.md)

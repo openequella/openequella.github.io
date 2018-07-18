@@ -63,7 +63,7 @@ A brief explanation of the available controls is provided below:
 * Shuffle Box—allows for the selection of one or more items by moving them from one pane to another using arrow buttons.
 * Shuffle List—allows the entry of any number of elements to a list.
 * Term Selector—allows for the selection of pre-existing terms.
-* User Selector—allows for the search and selection of EQUELLA users.
+* User Selector—allows for the search and selection of openEquella users.
 
 Each control must target a specific metadata schema node.
 

@@ -1,4 +1,4 @@
-## Reporting tutorials EQUELLA schema
+## Reporting tutorials openEquella schema
 
 All tutorials in this wiki will be written against the same XML schema, which will be 
 updated as needed for new tutorial topics.
