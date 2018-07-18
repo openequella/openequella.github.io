@@ -1,36 +1,36 @@
 # Clustering Configuration Guide
 Table of Contents
-* [EQUELLA clustering overview](#equella-clustering-overview)
+* [openEQUELLA clustering overview](#equella-clustering-overview)
 * [Clustering environment](#clustering-environment) 
 * [Install Apache Zookeeper](#install-apache-zookeeper) 
-* [Configure EQUELLA on the first host](#configure-equella-on-the-first-host)
-* [Configure EQUELLA on subsequent hosts](#configure-equella-on-subsequent-hosts)
+* [Configure openEQUELLA on the first host](#configure-equella-on-the-first-host)
+* [Configure openEQUELLA on subsequent hosts](#configure-equella-on-subsequent-hosts)
 * [Test the clustered environment](#test-the-clustered-environment)
 * [Configure Apache™ HTTPD as a load balancer](#configure-apache-httpd-as-a-load-balancer)
 
 
-## EQUELLA clustering overview
-The purpose of this guide is to provide system administrators with an understanding of the EQUELLA clustering process.
+## openEQUELLA clustering overview
+The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA clustering process.
 
-EQUELLA clustering involves two or more EQUELLA instances sharing a common Apache Zookeeper, database and filestore behind a load balancer. The load balancer directs clients to one of the members (EQUELLA instances) of the cluster. 
+openEQUELLA clustering involves two or more openEQUELLA instances sharing a common Apache Zookeeper, database and filestore behind a load balancer. The load balancer directs clients to one of the members (openEQUELLA instances) of the cluster. 
 
 Each of these components will typically be on dedicated hardware.
 
 ## Clustering environment
 Prior to setting up clustering the following conditions must be met:
-* EQUELLA must be installed on all cluster nodes, but not started. If you are using Apache™ as your load balancer and Apache is installed on the same hardware as one of your EQUELLA nodes, then you must not bind EQUELLA to port 80, because Apache will need that port.
+* openEQUELLA must be installed on all cluster nodes, but not started. If you are using Apache™ as your load balancer and Apache is installed on the same hardware as one of your openEQUELLA nodes, then you must not bind openEQUELLA to port 80, because Apache will need that port.
 * All application servers, Zookeeper and database instances must be able to communicate with each other via TCP.
-* When clustered, EQUELLA requires a shared filestore to house the cluster file repository. This filestore must be ready and available to all hardware nodes in the cluster prior to operating EQUELLA. If each node has a unique device path to the common filestore, those device paths should be noted for ease of configuration.
-* Once EQUELLA is installed on all hosts of the cluster, the network file share must be determined. Also ensure that the user who is designated to start EQUELLA services on each node is the same (in Windows™, this must be a network user) and that the user has write permissions to the filestore (on each node).
-* EQUELLA must have access through any firewalls.
+* When clustered, openEQUELLA requires a shared filestore to house the cluster file repository. This filestore must be ready and available to all hardware nodes in the cluster prior to operating openEQUELLA. If each node has a unique device path to the common filestore, those device paths should be noted for ease of configuration.
+* Once openEQUELLA is installed on all hosts of the cluster, the network file share must be determined. Also ensure that the user who is designated to start openEQUELLA services on each node is the same (in Windows™, this must be a network user) and that the user has write permissions to the filestore (on each node).
+* openEQUELLA must have access through any firewalls.
 
 ## Install Apache Zookeeper
 
-Apache Zookeeper is used for coordination and discovery services between EQUELLA nodes, and is a required component for a clustered setup.
+Apache Zookeeper is used for coordination and discovery services between openEQUELLA nodes, and is a required component for a clustered setup.
 
 Zookeeper itself should be installed in a cluster, referred to in the Zookeeper documentation as a quorum. While a single instance of Zookeeper will suffice, it is recommended that a 3-node quorum is configured for production environments for resilience to errors. Please note that it is highly recommended that a quorum consists of an odd number of nodes – typically either 3 or 5.
 
-The Zookeeper instance or quorum can be run on its own hardware or virtual machines, or installed alongside the EQUELLA application servers. A single Zookeeper quorum can also be utilised by multiple EQUELLA clusters.
+The Zookeeper instance or quorum can be run on its own hardware or virtual machines, or installed alongside the openEQUELLA application servers. A single Zookeeper quorum can also be utilised by multiple openEQUELLA clusters.
 
 A detailed overview of what Zookeeper provides as a service can be found at http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
 
@@ -54,11 +54,11 @@ server.3=zoo3:2888:3888
 6. 
 Further information on Zookeeper customization can be found at http://zookeeper.apache.org/doc/trunk/zookeeperStarted.html
 
-## Configure EQUELLA on the first host
+## Configure openEQUELLA on the first host
 
 The following sections describe configuration modifications to various files suitable for Windows Server™ or Unix™ using two nodes and a software load balancer.
 
-### Edit the EQUELLA configuration files
+### Edit the openEQUELLA configuration files
 Edit the following files, substituting the correct values for the variables. (All configuration files can be found in the <path-to-equella>\learningedge-config directory.)
 
 #### mandatory-config.properties
@@ -66,7 +66,7 @@ In the <path-to-equella>\learningedge-config\mandatory-config.properties file ed
 ```
 filestore.root = //some.host/share.name/
 ```
-Edit the admin.url property to be the EQUELLA address of the hosting server:
+Edit the admin.url property to be the openEQUELLA address of the hosting server:
 ```
 admin.url = http://equellaadmin.myinstitution.com
 ```
@@ -80,17 +80,17 @@ In the <path-to-equella>\learningedge-config\optional-config.properties file, ed
 ```
 zookeeper.instances = 192.168.1.177:2181,zookeeper2.my.lan:2181
 ```
-If you are using the Zookeeper quorum for more than one EQUELLA cluster, then the zookeeper.prefix property must be set with a unique name for the cluster:
+If you are using the Zookeeper quorum for more than one openEQUELLA cluster, then the zookeeper.prefix property must be set with a unique name for the cluster:
 zookeeper.prefix = equella63staging
-The property zookeeper.nodeId can be set in order to append a human readable string to the NODE ID which makes identifying nodes much easier. If this property is not set, the EQUELLA application will try to use the hostname of the server on which EQUELLA is running. Failing that, it will revert to a plain UUID NODE ID. Note that this string should be unique between cluster nodes.
+The property zookeeper.nodeId can be set in order to append a human readable string to the NODE ID which makes identifying nodes much easier. If this property is not set, the openEQUELLA application will try to use the hostname of the server on which openEQUELLA is running. Failing that, it will revert to a plain UUID NODE ID. Note that this string should be unique between cluster nodes.
 ```
 zookeeper.nodeId = nodeX
 ```
-EQUELLA will do its best to determine the public IP address of the machine it is running on. If the machine has more than one up, non-virtual network interface then EQUELLA will present an error in its logs and fail to start. To resolve this, the messaging.bindAddress property must be set with an IP address accessible by the other application server nodes:
+openEQUELLA will do its best to determine the public IP address of the machine it is running on. If the machine has more than one up, non-virtual network interface then openEQUELLA will present an error in its logs and fail to start. To resolve this, the messaging.bindAddress property must be set with an IP address accessible by the other application server nodes:
 ```
 messaging.bindAddress = 192.168.1.100
 ```
-Finally, EQUELLA will attempt to bind to port 8999 for communications between application servers. If this port is already bound to by another service, then the messaging.bindPort property may be set to an alternative. Note that this port does not need to match other application servers:
+Finally, openEQUELLA will attempt to bind to port 8999 for communications between application servers. If this port is already bound to by another service, then the messaging.bindPort property may be set to an alternative. Note that this port does not need to match other application servers:
 ```
 messaging.bindAddress = 192.168.1.100
 ```
@@ -100,8 +100,8 @@ jvmroute.id = NODE1
 ```
 NOTE: Although AJP is a supported protocol, it is not recommended.
 
-## Configure EQUELLA on subsequent hosts
-To configure EQUELLA on subsequent hosts, install EQUELLA and repeat the steps from the Configure EQUELLA on the first host section on each node of your cluster.
+## Configure openEQUELLA on subsequent hosts
+To configure openEQUELLA on subsequent hosts, install openEQUELLA and repeat the steps from the Configure openEQUELLA on the first host section on each node of your cluster.
 
 Ensure the variables used to configure the first host are updated where appropriate to refer to the second (or subsequent) hosts, to maintain uniqueness.
 ## Test the clustered environment
@@ -109,7 +109,7 @@ The following tests ensure the clustered environment is working correctly by tes
 
 #### Display each server’s unique ID
 To view details about all of the registered application nodes in the cluster:
-1. Login to the EQUELLA server administration.
+1. Login to the openEQUELLA server administration.
 2. Select Health check.
 You can also select the Enable cluster debugging checkbox to show debug information in the page footer. 
 
@@ -118,7 +118,7 @@ Test cluster node server configuration
 Additionally, further information about each node’s services can be found by clicking the drop-down arrow. 
 
 To test each server is running and being called correctly:
-1. Log in to an EQUELLA instance and identify the unique cluster ID that is displayed in the bottom left-hand corner of the window, and then stop that instance.
+1. Log in to an openEQUELLA instance and identify the unique cluster ID that is displayed in the bottom left-hand corner of the window, and then stop that instance.
 2. Force a refresh after the service has stopped (Ctrl + R / Ctrl + F5).
 3. The unique cluster ID should now identify a different machine in the cluster.
 4. Repeat this process until all the cluster servers have been identified and are running correctly.
@@ -127,7 +127,7 @@ To test each server is running and being called correctly:
 This test stops a server part way through a resource contribution to simulate a server failure.
 1. Ensure all the cluster web servers are running.
 2. Create a test user.
-3. Log in to EQUELLA using the new user and open a contribution wizard with multiple pages.
+3. Log in to openEQUELLA using the new user and open a contribution wizard with multiple pages.
 4. Enter some details on the first wizard page, and then navigate to another page in the wizard. (This commits the changes for temporary storage. Without this, the server wouldn’t know that anything had been written.)
 5. Leave the contribution wizard open, wait approximately 40 seconds and stop the server identified by the cluster ID. Note that user sessions are only persisted to the database every 30 seconds to reduce load.
 

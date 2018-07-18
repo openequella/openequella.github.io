@@ -4,65 +4,65 @@ Table of Contents
 
 * [Overview](#overview)
 * [Blackboard My Institution page](#blackboard-my-institution-page)
-* [EQUELLA portal](#equella-portal)
-* [Accessing the EQUELLA repository](#accessing-the-equella-repository)
+* [openEQUELLA portal](#equella-portal)
+* [Accessing the openEQUELLA repository](#accessing-the-equella-repository)
 * [Managing resources in Blackboard](#managing-resources-in-blackboard)
 
 
 ## Overview
-EQUELLA is an advanced digital repository that can be integrated with Blackboard Learn™ (Blackboard). EQUELLA incorporates a digital repository and content authoring tools which enable users to search, create and manage content such as images, audio, video, packaged content, web links, text, PDFs and Microsoft Office™ documents. From within Blackboard, users can create and add EQUELLA resources to courses or contribute resources to the EQUELLA repository.
+openEQUELLA is an advanced digital repository that can be integrated with Blackboard Learn™ (Blackboard). openEQUELLA incorporates a digital repository and content authoring tools which enable users to search, create and manage content such as images, audio, video, packaged content, web links, text, PDFs and Microsoft Office™ documents. From within Blackboard, users can create and add openEQUELLA resources to courses or contribute resources to the openEQUELLA repository.
 
-The purpose of this guide is to demonstrate to users how to integrate EQUELLA resources using Blackboard. Users will learn how to search for, create and manage available resources, and how to add these materials to courses. 
+The purpose of this guide is to demonstrate to users how to integrate openEQUELLA resources using Blackboard. Users will learn how to search for, create and manage available resources, and how to add these materials to courses. 
 
-Please note that this guide has been developed using EQUELLA version 6.4 and Blackboard version 9.1 (SP16) and as such may differ in appearance to your own installation. 
+Please note that this guide has been developed using openEQUELLA version 6.4 and Blackboard version 9.1 (SP16) and as such may differ in appearance to your own installation. 
 
-Additional details about using Equella with an LMS Integration can be found in the [Integrated LMS User Guide](IntegratedLMSUserGuide.md)
+Additional details about using openEQUELLA with an LMS Integration can be found in the [Integrated LMS User Guide](IntegratedLMSUserGuide.md)
 
 
 ## Blackboard My Institution page
 
 Login to Blackboard. The Blackboard My Institution page displays.  (NOTE: To return to the My Institution page at any point, select the My Institution link at the top of the page.)
 
-Through Blackboard, EQUELLA can be reached via a course page or, if your institution has this feature enabled, directly via the EQUELLA portal on the My Institutions page.
+Through Blackboard, openEQUELLA can be reached via a course page or, if your institution has this feature enabled, directly via the openEQUELLA portal on the My Institutions page.
 
 All of the user’s courses are listed in the My Courses portal on the My Institutions page, as well as in the Course List pane on the Courses page. Click the Course link to display the Courses page. 
 
-Clicking the name of the course displays the course Home page where EQUELLA resources can be added, edited and managed.
+Clicking the name of the course displays the course Home page where openEQUELLA resources can be added, edited and managed.
 
-## EQUELLA portal
-The EQUELLA portal acts as an interface between Blackboard and EQUELLA. Listed in the portal are a number of links to pages in EQUELLA. Clicking these links will take the user directly to EQUELLA and away from Blackboard.
+## openEQUELLA portal
+The openEQUELLA portal acts as an interface between Blackboard and openEQUELLA. Listed in the portal are a number of links to pages in openEQUELLA. Clicking these links will take the user directly to openEQUELLA and away from Blackboard.
 
 This portal will only be viewable if it has been enabled by your institution’s Blackboard administrator. 
 
-The EQUELLA portal may contain the following links:
-* EQUELLA Home—selecting this link will display the EQUELLA Dashboard page.
-* Search EQUELLA—selecting this link will display the EQUELLA Search page.
-* Contribute to EQUELLA—selecting this link will display the EQUELLA Contribute page.
-* All Tasks (x)—selecting this page will display the EQUELLA Tasks page without filtering.
-* Tasks assigned to me (x)—selecting this link will display the EQUELLA Task list Tasks page filtered for only tasks assigned to the user.
-* Tasks assigned to others (x)—selecting this link will display the EQUELLA Task list Tasks page filtered for only tasks assigned to other users.
-* Unassigned tasks (x)—selecting this link will display the EQUELLA Tasks page filtered for only tasks not assigned to any users.
-* All notifications (x)—selecting this link will display the EQUELLA Notifications page.
-* Resources that were rejected (x)—selecting this link will display the EQUELLA Notifications page filtered for notifications of rejected resources.
-* Items that went live (x)—selecting this link will display the EQUELLA Notifications page filtered for notifications of resources that became live.
-* Items that went into review (x)—selecting this link will display the EQUELLA Notifications page filtered for notifications of resources marked for review.
+The openEQUELLA portal may contain the following links:
+* openEQUELLA Home—selecting this link will display the openEQUELLA Dashboard page.
+* Search EQUELLA—selecting this link will display the openEQUELLA Search page.
+* Contribute to EQUELLA—selecting this link will display the openEQUELLA Contribute page.
+* All Tasks (x)—selecting this page will display the openEQUELLA Tasks page without filtering.
+* Tasks assigned to me (x)—selecting this link will display the openEQUELLA Task list Tasks page filtered for only tasks assigned to the user.
+* Tasks assigned to others (x)—selecting this link will display the openEQUELLA Task list Tasks page filtered for only tasks assigned to other users.
+* Unassigned tasks (x)—selecting this link will display the openEQUELLA Tasks page filtered for only tasks not assigned to any users.
+* All notifications (x)—selecting this link will display the openEQUELLA Notifications page.
+* Resources that were rejected (x)—selecting this link will display the openEQUELLA Notifications page filtered for notifications of rejected resources.
+* Items that went live (x)—selecting this link will display the openEQUELLA Notifications page filtered for notifications of resources that became live.
+* Items that went into review (x)—selecting this link will display the openEQUELLA Notifications page filtered for notifications of resources marked for review.
 
 
-## Accessing the EQUELLA repository
-Resources stored in the EQUELLA repository can be added to any Blackboard course in the Course List. This is managed through the course Home page as outlined in the following steps:
+## Accessing the openEQUELLA repository
+Resources stored in the openEQUELLA repository can be added to any Blackboard course in the Course List. This is managed through the course Home page as outlined in the following steps:
 
 1. Select the relevant course from the My Courses portal or from the Courses page. The course Home page is displayed. 
-2. Select either Information link, the Content link or any other content pages (e.g. Week 1), from the course navigation men. Content pages handle the addition of resources in the same way and have access to the EQUELLA Object tool required to access the EQUELLA repository. For the purposes of this guide, Week 1 page will be used.
+2. Select either Information link, the Content link or any other content pages (e.g. Week 1), from the course navigation men. Content pages handle the addition of resources in the same way and have access to the openEQUELLA Object tool required to access the openEQUELLA repository. For the purposes of this guide, Week 1 page will be used.
 3. Select the required content page from the Course navigation menu (e.g. Week 1).
 4. Click the Tools drop-down to display a list of tools which can be used in the Blackboard course. 
-5. Select EQUELLA Object. The EQUELLA Integration screen displays. 
+5. Select openEQUELLA Object. The openEQUELLA Integration screen displays. 
 
 ## Managing resources in Blackboard
 Once a resource is added to a Blackboard course, Blackboard functionality allows for a number of actions to be performed on the resource. Some basic functions are described below.
 
 With the Edit Mode set to On, clicking the button alongside a resource reveals a menu of actions which can be used to manage resources. 
 
-The menu actions with specific relevance to EQUELLA resources, include the following
+The menu actions with specific relevance to openEQUELLA resources, include the following
 * Edit—edit the resource name and description, as well as certain display properties.
 * Copy—copy the resource to a different course and/or into a different course location (e.g. Week 2). The source resource remains in place after this operation.
 * Move—moves the resource to a different course and/or into a different course location (e.g. Week 2). The source resource does not remain in the original location after this operation.
@@ -92,10 +92,10 @@ Each question can be selected to view question level feedback, if included as pa
 To return to the results page, click View Results.
 
 ## Edit resource details
-To edit the details of an EQUELLA resource
+To edit the details of an openEQUELLA resource
 1. Select the Edit link from the action menu to display the Modify Resource Content Object page. 
 
-This page includes the following options for editing EQUELLA resources in the Content Information pane:
+This page includes the following options for editing openEQUELLA resources in the Content Information pane:
 * Name—edit the name of the resource. (NOTE: Blank entries in this field will revert to the previously saved value.)
 * Description—a brief description of the resource can be entered or edited.
 * Attachments—select this link to access the resource summary page.

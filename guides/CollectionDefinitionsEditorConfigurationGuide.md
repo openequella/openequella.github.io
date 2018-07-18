@@ -16,9 +16,9 @@ Table of contents
 * [Extensions tab](#extensions-tab)
 
 ## Collection definitions overview
-An EQUELLA collection represents a unique container to store items within the EQUELLA Digital Repository. Each collection comprises a contribution wizard and an associated metadata schema, and can also include a workflow definition, access control rights, display template rules, copyright and digital rights management (DRM) controls. Collections are created and edited in the EQUELLA Administration Console Collection Definition Editor.
+An openEQUELLA collection represents a unique container to store items within the openEQUELLA Digital Repository. Each collection comprises a contribution wizard and an associated metadata schema, and can also include a workflow definition, access control rights, display template rules, copyright and digital rights management (DRM) controls. Collections are created and edited in the openEQUELLA Administration Console Collection Definition Editor.
 
-The purpose of this guide is to provide system administrators with an understanding of the EQUELLA Collection Definition Editor tool to enable successful contribution of items to the repository. 
+The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA Collection Definition Editor tool to enable successful contribution of items to the repository. 
 
 The examples in this guide use a LOM compliant schema called the Generic Schema and a collection called the Learning Resources Collection. 
 
@@ -27,14 +27,14 @@ Collection definitions wrap important information (metadata) and processes aroun
 
 A metadata schema must be defined before a collection definition can be created. 
 
-An instance of the schema metadata is associated with each resource contributed to the collection and controls the resource’s lifecycle and search ability. The example in this guide uses the Generic Schema provided with the EQUELLA Vanilla Institution. [The EQUELLA Vanilla Institution is available here.](6.4VanillaReferenceInstitution.tgz)
+An instance of the schema metadata is associated with each resource contributed to the collection and controls the resource’s lifecycle and search ability. The example in this guide uses the Generic Schema provided with the openEQUELLA Vanilla Institution. [The openEQUELLA Vanilla Institution is available here.](6.4VanillaReferenceInstitution.tgz)
 
 Schemas are created using the Metadata Schemas tool from the Administration Console. 
 
-Collection definitions are modified or created in the EQUELLA Administration Console.
+Collection definitions are modified or created in the openEQUELLA Administration Console.
 
-**To access EQUELLA and open the Administration Console**
-1. Log in to EQUELLA as an administrator, select Settings then Administration console.
+**To access openEQUELLA and open the Administration Console**
+1. Log in to openEQUELLA as an administrator, select Settings then Administration console.
 2. The Administration console displays. Select Collection Definitions to display a list of collections
 ### Administration Console elements
 When the Collection Definitions tool has been selected the Add, Edit, Remove, Clone, Import and Export buttons are enabled. (Providing the correct privileges have been granted)
@@ -188,7 +188,7 @@ The Security page features three tabs: Access Control, Resource Status ACLs and 
 The Access Control page comprises a Who can...? drop-down list of applicable privileges for the collection and a choice of interfaces for configuring user access to these privileges. 
 #### Who can...?
 Privileges can be granted to users enabling them to perform a variety of actions on a collection or resources within a collection. The privileges associated with collections and found in the drop-down list are:
-* **add a course at time of activation from a LMS in any state**  – when users are granted this privilege the courses are automatically created in EQUELLA if there is no match found when activating courses from the integration screen. 
+* **add a course at time of activation from a LMS in any state**  – when users are granted this privilege the courses are automatically created in openEQUELLA if there is no match found when activating courses from the integration screen. 
 * **add comments to resources in this collection in any state** —allows users granted this privilege access to the comments area of a resource belonging to the collection.
 * **allow contributors to mark attachments as restricted in this collection in any state** – allows users granted this privilege to see and select the Restricted checkbox on the Edit attachment dialog.
 * **allow search filtering by this collection** —allows users granted this privilege to use an advanced search to find resources belonging to this collection.
@@ -215,7 +215,7 @@ Privileges can be granted to users enabling them to perform a variety of actions
 * **purge deleted items from this collection** – allows users granted this privilege to purge items from the collection, once the items have been marked as deleted.
 reassign ownership of resources in this collection in any state—allows users granted this privilege to reassign the ownership of resources of any status belonging to this collection.
 * **redraft resources in this collection in any state** —allows users granted this privilege to redraft resources of any status belonging to this collection.
-* **set pricing information for resources in this collection in any state** – allows users granted this privilege to set the pricing details for resources belonging in this collection, when the EQUELLA Content Exchange has been enabled.
+* **set pricing information for resources in this collection in any state** – allows users granted this privilege to set the pricing details for resources belonging in this collection, when the openEQUELLA Content Exchange has been enabled.
 * **set resources in this collection in any state for review** – allows users granted this privilege to set resources belonging in this collection for review (sends them back into workflow).
 * **share resources in this collection in any state** —allows users granted this privilege to share resources of any status belonging to this collection.
 * **suspend resources in this collection in any state** —allows users granted this privilege to suspend resources of any status belonging to this collection. Suspending a resource prevents it from showing in results lists.
@@ -226,10 +226,10 @@ reassign ownership of resources in this collection in any state—allows users g
 * **view comments on resources in this collection in any state** —allows users granted this privilege to view comments that have been added to resources of any status belonging to this collection.
 * **view digital rights on resources in this collection in any state** —allows users granted this privilege to view digital right details that have been configured for resources of any status belonging to this collection.
 * **view linked portions for resources in this collection in any state** – allows users granted this privilege to see the Links to other portions section on copyright portion record’s summary page.
-* **view pricing information for resources in this collection in any state** – allows users granted this privilege to view the pricing details for resources in this collection when the EQUELLA Content Exchange is being used.
-* **view purchase details for resources in this collection in any state** – allows users granted this privilege to view the purchase details on the Resource summary page for resources in this collection that have been purchased when the EQUELLA Content Exchange is being used.
+* **view pricing information for resources in this collection in any state** – allows users granted this privilege to view the pricing details for resources in this collection when the openEQUELLA Content Exchange is being used.
+* **view purchase details for resources in this collection in any state** – allows users granted this privilege to view the purchase details on the Resource summary page for resources in this collection that have been purchased when the openEQUELLA Content Exchange is being used.
 * **view resources in this collection in any state** —allows users granted this privilege to view all resources belonging to this collection. This means the ability to click on a resource from a results list to open the resource summary page.
-* **view sales history for resources in this collection in any state** – allows users granted this privilege to view the purchase history for resources in this collection when the EQUELLA Content Exchange is being used.
+* **view sales history for resources in this collection in any state** – allows users granted this privilege to view the purchase history for resources in this collection when the openEQUELLA Content Exchange is being used.
 * **view the history of resources in this collection in any state** —allows users granted this privilege to view the moderation history of resources of any status belonging to this collection.
 * **view the xml and directory of resources in this collection in any state** —allows users granted this privilege to add a tilde (‘~’) to the end of a resource summary URL belonging to this collection to view the xml and directory details of the resource.
 ### Configure user access
@@ -259,7 +259,7 @@ Click Add to display the Add A New Resource Summary Section dialog
 The options outlined below will display.
 
 #### Purchase details for this resource
-Shows details of any resource purchases (EQUELLA Content Exchange).
+Shows details of any resource purchases (openEQUELLA Content Exchange).
 #### Comments and ratings for this resource
 Displays comments and ratings that have been recorded for the resource on the resource summary page, with identity options. 
 The following options display:
@@ -286,7 +286,7 @@ Provides the ability to upload a custom display template.
 The following option displays:
 * Title – defaults to XSLT. This title can be changed and shows in the left hand panel (e.g. differentiate between multiple XSLTs) but does not display on the Resource summary page.
 #### Pricing details for this resource 
-Displays the pricing details for resources that are available for purchase (EQUELLA Content Exchange).
+Displays the pricing details for resources that are available for purchase (openEQUELLA Content Exchange).
 #### A scriptable section for advanced customization
 Provides a page where scripts can be added to customise the resource summary template. The following option displays:
 * Title – defaults to Scripted section. This title can be changed and shows in the left hand panel (to differentiate between multiple Scripted sections) but does not display on the Resource summary page.
@@ -349,9 +349,9 @@ Select the checkbox to remove these thumbnails from the results page.
 Clicking the Up Arrow icon closes the attachment display section.
 
 #### Show attachments icon default value
-The Show attachments icon displays to the right of the resource title on all EQUELLA results pages for resources with one or more attached files or links. Clicking on this icon lists the attachments in either structured or thumbnail view. 
+The Show attachments icon displays to the right of the resource title on all openEQUELLA results pages for resources with one or more attached files or links. Clicking on this icon lists the attachments in either structured or thumbnail view. 
 
-The default value of this icon is Closed, but can be set to Open for both Standard results pages and Integration screen results pages. This allows administrators the flexibility to configure results pages to automatically show attachments for some or all collections within standard (native) EQUELLA and the integration screen accessed from an integrated LMS. For example, an administrator may not want the Show attachments icon to default to open, displaying the list of attachments for a collection that contains resources that have many attachments, but may wish to for another collection with a single attachment restriction. Alternatively, an administrator may not require attachments to show automatically on standard EQUELLA results pages, but may feel it useful for instructors to be able to see attachments by default on the Integration screen results pages when they are adding content to their courses.
+The default value of this icon is Closed, but can be set to Open for both Standard results pages and Integration screen results pages. This allows administrators the flexibility to configure results pages to automatically show attachments for some or all collections within standard (native) openEQUELLA and the integration screen accessed from an integrated LMS. For example, an administrator may not want the Show attachments icon to default to open, displaying the list of attachments for a collection that contains resources that have many attachments, but may wish to for another collection with a single attachment restriction. Alternatively, an administrator may not require attachments to show automatically on standard openEQUELLA results pages, but may feel it useful for instructors to be able to see attachments by default on the Integration screen results pages when they are adding content to their courses.
 
 Note: No matter what value is selected as the default, users can click the Show attachment icon to open or close the attachments list as desired.
 
@@ -435,9 +435,9 @@ This script runs when a resource is contributed to the repository, or when a res
 
 ## Extensions tab
 
-EQUELLA supports use of Australian Copyright Agency Limited (CAL) and the United Kingdom Copyright Licensing Agency Limited (CLA) agreements. The copyright features are configured in the Extensions page and provide custom activation error messages and copyright status agreements for display to users. 
+openEQUELLA supports use of Australian Copyright Agency Limited (CAL) and the United Kingdom Copyright Licensing Agency Limited (CLA) agreements. The copyright features are configured in the Extensions page and provide custom activation error messages and copyright status agreements for display to users. 
 
-Only collections that require copyright compliance management need to be configured in the Extensions page. Further information is provided in the EQUELLA Copyright (CAL) and EQUELLA Copyright (CLA) Guides. 
+Only collections that require copyright compliance management need to be configured in the Extensions page. Further information is provided in the openEQUELLA Copyright (CAL) and openEQUELLA Copyright (CLA) Guides. 
 
 ### Configure licensing options
 Check the appropriate box to select an option depending on your region (e.g. CAL Licensing) and click  to display the licensing dialog.

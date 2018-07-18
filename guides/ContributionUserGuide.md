@@ -1,4 +1,4 @@
-[Home](https://equella.github.io/)
+[Home](https://openEQUELLA.github.io/)
 
 # Contribution User Guide
 
@@ -31,33 +31,33 @@ Table of Contents
 
 ## Item contribution overview
 
-The EQUELLA Digital Repository allows users to search, discover, create, store, manage, view and share resources. An EQUELLA resource is a grouping of metadata (information) and digital content. Resources enter the EQUELLA repository by contribution using a wizard based web form.
+The openEQUELLA Digital Repository allows users to search, discover, create, store, manage, view and share resources. An openEQUELLA resource is a grouping of metadata (information) and digital content. Resources enter the openEQUELLA repository by contribution using a wizard based web form.
 
 Resources are contributed to the repository using a customized contribution wizard. Each resource is stored in a Collection and each collection belongs to a Category
 
 Contribution wizards are customized by adding different wizard controls that prompt users to input text, make selections, upload files, add links and various other actions. 
 
-The purpose of this guide is to demonstrate to users how to contribute resources to EQUELLA using a contribution wizard. Users will also gain a broad overview of the wizard control types that can be used when contributing items. 
+The purpose of this guide is to demonstrate to users how to contribute resources to openEQUELLA using a contribution wizard. Users will also gain a broad overview of the wizard control types that can be used when contributing items. 
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA, and as such may differ in appearance to your own installation based on the permissions and configurations set for your institution. 
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA, and as such may differ in appearance to your own installation based on the permissions and configurations set for your institution. 
 
 
 ## Digital Repository  
 
-**To access EQUELLA** 
-1. Open a browser and enter your EQUELLA URL (e.g. http://equella.myinstitution.edu).
-2. Log in to EQUELLA to display the EQUELLA Dashboard page. 
+**To access openEQUELLA** 
+1. Open a browser and enter your openEQUELLA URL (e.g. http://equella.myinstitution.edu).
+2. Log in to openEQUELLA to display the openEQUELLA Dashboard page. 
 
 ## Contribute resources to collections
 
-Every resource contributed to EQUELLA is saved in a collection, and each collection belongs to a category. There may be multiple collections and categories, and privileges may be set so users will see only relevant categories and collections. 
+Every resource contributed to openEQUELLA is saved in a collection, and each collection belongs to a category. There may be multiple collections and categories, and privileges may be set so users will see only relevant categories and collections. 
 
 To access the Contribute page, select Contribute from the navigation menu.
 
 The Contribute page displays, with available collections listed under their categories. When selected, each contribution link opens the associated contribution wizard. 
 
 ### Contribution wizards
-Contribution wizards prompt contributors for details relevant to the resources being contributed to EQUELLA. The amount of information collected is set by the institution, but the more metadata (information) collected for a resource, the more ‘discoverable’ it becomes in the EQUELLA repository.
+Contribution wizards prompt contributors for details relevant to the resources being contributed to openEQUELLA. The amount of information collected is set by the institution, but the more metadata (information) collected for a resource, the more ‘discoverable’ it becomes in the openEQUELLA repository.
 
 The appearance and sequence of contribution wizard pages can be different for each collection, and can change according to:
 * the type of user;
@@ -122,7 +122,7 @@ To best illustrate the functionality of a contribution wizard, the process of co
 Keep in mind that contribution wizards are highly configurable and will be tailored to meet the needs of different institutions so may look different from the example.
 
 #### Example
-Contribute a resource to the Learning Resources collection titled Introduction to EQUELLA, add a description, a pdf document, an image file, a URL and a YouTube link, then save the resource.
+Contribute a resource to the Learning Resources collection titled Introduction to openEQUELLA, add a description, a pdf document, an image file, a URL and a YouTube link, then save the resource.
 
 * To contribute the example resource to a collection, select the Contribute link from the navigation menu.
 * Select the Learning resources link from the Demonstration category
@@ -161,9 +161,9 @@ Once a file is edited and saved using an editor (e.g. Word), the Upload Changes 
 
 8. Select the Add a resource link again, then select URL then click Next. The Add a URL page displays.
 9.  Enter the URL (e.g. http://www.equella.com) and click Add . The Edit URL details page displays.
-The Display name can be changed to something more meaningful than the actual web address if required (e.g. EQUELLA website), but the Website address must be prefixed with http://, not just www, or it won’t work.
+The Display name can be changed to something more meaningful than the actual web address if required (e.g. openEQUELLA website), but the Website address must be prefixed with http://, not just www, or it won’t work.
 10. Click Save to return to the Learning resources wizard page. The added website link now displays in the list.
-11. Select the Add a resource link again, and this time select YouTube then click Next. The Add YouTube page displays. Enter an appropriate search term (e.g. equella) in the Search text box then click Search YouTube. Matching search results from YouTube display.
+11. Select the Add a resource link again, and this time select YouTube then click Next. The Add YouTube page displays. Enter an appropriate search term (e.g. openEQUELLA) in the Search text box then click Search YouTube. Matching search results from YouTube display.
 
 12. Select the required YouTube video then click Add . The Edit YouTube details page displays. The Display name can be changed if required. 
 13. Click Save to return to the Learning resources wizard page. The Added link now displays in the list.
@@ -254,7 +254,7 @@ The Details area displays information about the resource and can include: Owner,
 * Collection—the collection to which the resource belongs. Selecting the collection link displays a search result list for that collection.
 * Version—displays the version number of the current resource. Clicking on the (show all) link displays a list of all versions, including the current live version.
 * Status—resource statuses can be Live, Archived, Deleted, Suspended, Review, Moderating, Rejected or Draft.
-* Find uses—use this link to display a list of current uses for this resource. This link displays only if at least one connector is configured in the EQUELLA system. 
+* Find uses—use this link to display a list of current uses for this resource. This link displays only if at least one connector is configured in the openEQUELLA system. 
 * Moderation History—select this link to display the Moderation history page. 
 * Terms of use—select this link to display the Terms of use page with terms and a list of users who have accepted those terms and date of acceptance. 
 * Moderation Progress—select this link to display the Moderation progress page.
@@ -267,9 +267,9 @@ When a new resource has been created using the Create a new version action, the 
 2. Select the Title of the version to display the resource summary page of the selected version.
 
 #### Find uses function
-The Find uses function is part of the EQUELLA Push to LMS feature.
+The Find uses function is part of the openEQUELLA Push to LMS feature.
 
-1. Select Find uses from the Details section to display all current uses for the selected resource within a specific connector (LMS). NOTE: The Find uses link only displays if at least one external connector has been configured in the EQUELLA system. EQUELLA supports Moodle and Blackboard connectors (and Local Resources for the Find Uses function), and more than one may be configured. If there are multiple connectors configured, a drop down box displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen displays immediately. If the connector Local Resources is configured and selected, the system displays all uses of the current resource and attachments within other resources in the EQUELLA repository. 
+1. Select Find uses from the Details section to display all current uses for the selected resource within a specific connector (LMS). NOTE: The Find uses link only displays if at least one external connector has been configured in the openEQUELLA system. openEQUELLA supports Moodle and Blackboard connectors (and Local Resources for the Find Uses function), and more than one may be configured. If there are multiple connectors configured, a drop down box displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen displays immediately. If the connector Local Resources is configured and selected, the system displays all uses of the current resource and attachments within other resources in the openEQUELLA repository. 
 If there is only one connector configured, the Find uses screen is displayed immediately.
 
 The Courses in which the selected resource is currently used are listed, with the Location and Date added information.
@@ -333,11 +333,11 @@ Activations can be edited by selecting the Edit link
 ### Actions
 The Actions area can display the following operations:
 #### Add to external system
-The Add to external system function is part of the EQUELLA Push to LMS feature.
+The Add to external system function is part of the openEQUELLA Push to LMS feature.
 
-Selecting this action allows the user to add all or parts of the resource to external connectors that have been configured in the system. (Note: The Add to external system link only displays if at least one external connector has been configured in the EQUELLA system.) 
+Selecting this action allows the user to add all or parts of the resource to external connectors that have been configured in the system. (Note: The Add to external system link only displays if at least one external connector has been configured in the openEQUELLA system.) 
 
-EQUELLA supports Moodle and Blackboard connectors, and more than one may be configured. If there are multiple connectors configured, a drop down box displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen displays immediately. 
+openEQUELLA supports Moodle and Blackboard connectors, and more than one may be configured. If there are multiple connectors configured, a drop down box displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen displays immediately. 
 
 The Add to external system function allows the addition of a resource to multiple locations within the selected connector. 
 
@@ -496,7 +496,7 @@ The Large Image Viewer is used when an image is too large or detailed to be view
 
 Depending on the configuration settings of the attachment control, addition of attachments may include the following types:
 * Files (e.g. doc, docx, pdf, xls, zip, ppt etc.)
-* EQUELLA Resources—attachments and links associated with existing EQUELLA resources
+* openEQUELLA Resources—attachments and links associated with existing openEQUELLA resources
 * URL Links 
 * Web pages
 * Google Books
@@ -533,7 +533,7 @@ Once a file is edited and saved using an editor (e.g. Word), the Upload Changes 
 * Delete—removes file after confirmation.
 
 ### Upload zip files
-When one or more zip files are uploaded to EQUELLA, depending on how the system is configured to treat zip files by default, a Zip options dialog may display. 
+When one or more zip files are uploaded to openEQUELLA, depending on how the system is configured to treat zip files by default, a Zip options dialog may display. 
 
 Select the required option:
 * Unzip the contents and allow me to select the files to attach – selecting this option allows single files from the zip file to be attached to the resource.
@@ -543,13 +543,13 @@ Select the required option:
 When a QTI package (a package conforming to the IMS QTI 2.1 standard) is uploaded during contribution, depending on how the system is configured to treat zip and package files by default, a Package options dialog may display. 
 
 Select the required option for ‘How would you like to treat this file?’:
-* As a QTI package – stores the package as a QTI package, allowing the quiz to be played using the default EQUELLA quiz player.
+* As a QTI package – stores the package as a QTI package, allowing the quiz to be played using the default openEQUELLA quiz player.
 * As a content package – stores the package as an IMS package, ignoring any QTI functionality.
 * As a zip file – selecting this option brings up the Zip options.
 * As a regular file – stores as a file (without zip or package options).
 
 ### Playing QTI packages
-Once a QTI package has been uploaded to an EQUELLA resource, and the resource has been saved, the package can be played. As long as it has been stored as a QTI package, the default QTI quiz player will be used. When QTI packages are played in EQUELLA, a score accumulates, but is not stored. Each time a user logs in, the quiz will restart.
+Once a QTI package has been uploaded to an openEQUELLA resource, and the resource has been saved, the package can be played. As long as it has been stored as a QTI package, the default QTI quiz player will be used. When QTI packages are played in openEQUELLA, a score accumulates, but is not stored. Each time a user logs in, the quiz will restart.
 
 To play a QTI quiz
 1. From the results or Resource summary page, click on the required QTI package. The quiz start page displays.
@@ -566,14 +566,14 @@ NOTE: Not all QTI quizzes are configured to display results or feedback once the
 
 To return to the results page, click View Results.
 
-### EQUELLA Resource
-Select EQUELLA Resource then click Next to add an attachment associated to an existing EQUELLA resource. 
+### openEQUELLA Resource
+Select openEQUELLA Resource then click Next to add an attachment associated to an existing openEQUELLA resource. 
 
 The Select screen has the following links at the top of the page:
 * Home – click to return to the home page
-* Search – click to open the standard EQUELLA Search page.
+* Search – click to open the standard openEQUELLA Search page.
 * Browse – click to browse results from hierarchy topics and sub-topics.
-* Contribute – click to contribute a new resource to EQUELLA.
+* Contribute – click to contribute a new resource to openEQUELLA.
 
 #### Select buttons
 All the Select buttons on the results and summary pages initially look the same (+), but there are differences between the functions of some of them. Hovering the mouse over the buttons expand their labels. The exceptions are the Select buttons beside each attachment, which always show as +.
@@ -628,7 +628,7 @@ The Display name can be changed to something more meaningful than the actual web
 ### Web pages
 To add a web page link
 1. Select Web pages then click Next to add a web page. The Create web pages page displays.
-The Add Page link allows the user to open the EQUELLA HTML Editor and create web pages. The Import pages from scrapbook allows the user to select existing web pages from their Scrapbook.
+The Add Page link allows the user to open the openEQUELLA HTML Editor and create web pages. The Import pages from scrapbook allows the user to select existing web pages from their Scrapbook.
 
 #### Add Page link
 To add a page link
@@ -670,7 +670,7 @@ To add existing Kaltura media
 If only one Kaltura video link has been selected, the Edit Kaltura media page displays.
 4. Click the Play icon to play the streaming media item, or the Share icon to display share options.
 NOTE: The icons may differ depending on the player being used. Additionally, if the file is large, it may still be processing at this point. 
-5. Edit the Display name if required. This is the name EQUELLA attachment name. The name is not changed in Kaltura.
+5. Edit the Display name if required. This is the name openEQUELLA attachment name. The name is not changed in Kaltura.
 6. Select the required player from the Select player drop-down. The [Default player] is the player selected as the default for this Kaltura server.
 7. Click Save. The contribution wizard page displays with the Kaltura media link listed.
 
@@ -719,7 +719,7 @@ NOTE: The Kaltura conversion process can take some time to complete, depending o
 #### YouTube
 To add a YouTube link
 1. Select YouTube then click Next to add a YouTube link. The Add YouTube page displays.
-2. Enter search criteria (e.g. equella) then click Search YouTube. The search results display. 
+2. Enter search criteria (e.g. openEQUELLA) then click Search YouTube. The search results display. 
 3. Select the required videos then click Add. If multiple selections are made, the contribution wizard page displays with the selected attachments listed. They can be edited or deleted from the list. If only one YouTube link has been selected, the Edit YouTube details page displays. 
 4. Click the View on YouTube link to open YouTube and view the resource.
 5. Edit the Display name if required, then click Save. The contribution wizard page displays with the YouTube video link listed.
@@ -782,7 +782,7 @@ Name
 To add an LTI provider link
 1. Select External tool provider (LTI) then click  to add an LTI provider link. The Add external tool page displays. 
 
-NOTE: EQUELLA has a setting (External Tool Providers (LTI)) which allows administrators to configure Base URL information for LTI Tool Providers that provide one or more tools. If the core information for these providers is pre-configured, the user only needs to select the LTI provider from the list and enter the Launch URL during contribution. The rest of the information will default from the pre-configured record. 
+NOTE: openEQUELLA has a setting (External Tool Providers (LTI)) which allows administrators to configure Base URL information for LTI Tool Providers that provide one or more tools. If the core information for these providers is pre-configured, the user only needs to select the LTI provider from the list and enter the Launch URL during contribution. The rest of the information will default from the pre-configured record. 
 
 2. From the LTI provider drop-down, select either a pre-defined tool provider if the required tool provider displays in the list, otherwise leave as Automatic, based on URL.
 NOTE: If a pre-configured LTI provider has been selected, any information added in the Advanced settings fields will override the preset configuration, except Custom parameters, which will add to current custom parameters configured through Settings, rather than overriding them.
@@ -957,9 +957,9 @@ The HTML Editor operations can include:
 * Superscript
 * Insert custom character
 * Toggle full screen mode
-* EQUELLA Resource Embedder
-* EQUELLA Resource Linker
-* EQUELLA File Uploader 
+* openEQUELLA Resource Embedder
+* openEQUELLA Resource Linker
+* openEQUELLA File Uploader 
 * Font Family
 * Font Size
 * Cut

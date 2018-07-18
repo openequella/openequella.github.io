@@ -11,29 +11,29 @@ Table of Contents
 [Using a dynamic collection](#using-a-dynamic-collection)
 
 ## Dynamic Collections
-EQUELLA provides an OAI-PMH endpoint to allow its metadata to be harvested by third-party services. This functionality maps each available EQUELLA Collection to an OAI Set.
+openEQUELLA provides an OAI-PMH endpoint to allow its metadata to be harvested by third-party services. This functionality maps each available openEQUELLA Collection to an OAI Set.
 
-The use of dynamic collections provides more flexibility, allowing OAI Sets to be mapped to more than one collection, or to certain items within a collection. As these collections are dynamic by nature, then the number of defined OAI Sets can change depending on what content is contained within EQUELLA at the time.
+The use of dynamic collections provides more flexibility, allowing OAI Sets to be mapped to more than one collection, or to certain items within a collection. As these collections are dynamic by nature, then the number of defined OAI Sets can change depending on what content is contained within openEQUELLA at the time.
 
-The purpose of this guide is to provide system administrators with an understanding of the EQUELLA Dynamic Collections tool to enable successful management of dynamic collections.
+The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA Dynamic Collections tool to enable successful management of dynamic collections.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation.
 
 ## Dynamic Collections tool
-Dynamic collections allow for custom collections to be created from resources existing in the EQUELLA repository, or from a manually-entered list as configurable in the Dynamic Collection Editor. These collections can then be used within EQUELLA in a number of ways. The dynamic collections are mapped to OAI Sets, which allows for discovery via an OAI-PMH endpoint (available in EQUELLA), but they can also be used for harvesting, searching and Store catalogue purposes.
+Dynamic collections allow for custom collections to be created from resources existing in the openEQUELLA repository, or from a manually-entered list as configurable in the Dynamic Collection Editor. These collections can then be used within openEQUELLA in a number of ways. The dynamic collections are mapped to OAI Sets, which allows for discovery via an OAI-PMH endpoint (available in openEQUELLA), but they can also be used for harvesting, searching and Store catalogue purposes.
 
 ## Configure a dynamic collection
 
 Dynamic collections are created and modified using the Dynamic Collections tool, available in the Administration Console.
-#### To access EQUELLA and open the Administration Console
-1. Open a browser and enter your EQUELLA URL (e.g. ‘http://equella.myinstitution.edu/institution’).
-2. Log in to EQUELLA as an administrator (with sufficient privileges to see the Dynamic Collections tool). Select Settings then Administration Console. 
+#### To access openEQUELLA and open the Administration Console
+1. Open a browser and enter your openEQUELLA URL (e.g. ‘http://equella.myinstitution.edu/institution’).
+2. Log in to openEQUELLA as an administrator (with sufficient privileges to see the Dynamic Collections tool). Select Settings then Administration Console. 
 3. The Administration Console displays. Select the Dynamic Collections option to display the Dynamic Collections pane.
 
 The Dynamic collections pane displays, showing a list of all previously configured dynamic collections.
 
 ### Administration Console elements
-When a tool has been selected the Add, Edit, Remove, Clone, Import and Export buttons are visible (providing the correct privileges have been granted; refer to the EQUELLA Security Administration Guide for further information), although not all may be enabled. For instance, when no entity of the given type currently exists, only the Add and Import buttons are enabled.
+When a tool has been selected the Add, Edit, Remove, Clone, Import and Export buttons are visible (providing the correct privileges have been granted; refer to the openEQUELLA Security Administration Guide for further information), although not all may be enabled. For instance, when no entity of the given type currently exists, only the Add and Import buttons are enabled.
 
 #### Add
 Select Add to display the Dynamic Collections Editor and create a new collection.
@@ -78,7 +78,7 @@ Details page elements include:
 * OAI-PMH Set—allow resources to be returned as virtual sets with an OAI-PMH endpoint.
 * Harvester Collection—allow resources in this collection to be harvested.
 
-*NOTE: Dynamic collections are always available for the purpose of building catalogues, using the EQUELLA Content Exchange Store function.* 
+*NOTE: Dynamic collections are always available for the purpose of building catalogues, using the openEQUELLA Content Exchange Store function.* 
 
 
 ### Item Filtering
@@ -105,7 +105,7 @@ When filtering resources to match those used by a specific collection or schema,
 11. Click OK to return to the Dynamic Collection Editor, where the dynamic collection can be saved, or further configuration made.
 
 ### Dynamic Filtering
-Virtualise the dynamic collection into multiple instances, made available from each entry in a list of values. These values can come from a manually entered list, as defined in the Editor, or dynamically from the resources existing in the EQUELLA repository.
+Virtualise the dynamic collection into multiple instances, made available from each entry in a list of values. These values can come from a manually entered list, as defined in the Editor, or dynamically from the resources existing in the openEQUELLA repository.
 
 Dynamic filtering page elements include:
 * Enable Dynamic Filtering checkbox—click this to enable the other elements on the page.
@@ -162,9 +162,9 @@ When all elements have been configured for a collection:
 2.Click Close to close the Dynamic Collection Editor.
 
 ## Using a dynamic collection
-Dynamic collections can be employed in multiple areas of EQUELLA. This is set on the Details page of the Dynamic Collection Editor. Under the heading Make this Dynamic Collection available through the following services: there are three options: Searching, OAI-PMH Set and Harvester Collection. Clicking the checkboxes will enable the dynamic collection to this section. Any combination of options is allowed.
+Dynamic collections can be employed in multiple areas of openEQUELLA. This is set on the Details page of the Dynamic Collection Editor. Under the heading Make this Dynamic Collection available through the following services: there are three options: Searching, OAI-PMH Set and Harvester Collection. Clicking the checkboxes will enable the dynamic collection to this section. Any combination of options is allowed.
 
-NOTE: Dynamic collections are always available for the purpose of building catalogues, using the EQUELLA Content Exchange Store function. 
+NOTE: Dynamic collections are always available for the purpose of building catalogues, using the openEQUELLA Content Exchange Store function. 
 
 These options are explored in the following section.
 
@@ -186,8 +186,8 @@ This output can be confirmed by using EQUELLA’s built-in OAI functionality. Ad
 ```
 
 ### Harvester Collection
-Selecting the Harvester Collection checkbox in the Dynamic Collection Editor will make the available as a harvester collection. This allows items in the collection to be harvested by third-party harvesters, including EQUELLA.
+Selecting the Harvester Collection checkbox in the Dynamic Collection Editor will make the available as a harvester collection. This allows items in the collection to be harvested by third-party harvesters, including openEQUELLA.
 
 When Dynamic Filtering is not enabled on the dynamic collection, the dynamic collection is listed as a harvestable collection.
 
-When Dynamic Filtering is enabled on the dynamic collection, each instance created from the configured list of values becomes harvestable. An example list of harvestable instances as viewed from an EQUELLA Harvester 
+When Dynamic Filtering is enabled on the dynamic collection, each instance created from the configured list of values becomes harvestable. An example list of harvestable instances as viewed from an openEQUELLA Harvester 

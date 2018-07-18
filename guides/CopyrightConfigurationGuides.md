@@ -28,7 +28,7 @@ Table of Contents
 
 The purpose of this guide is to provide system administrators, content managers, copyright
 administrators/librarians and system designers with examples of how to use and manage
-copyright compliance in the EQUELLA Digital Repository in accordance with the Copyright Act (1968) plus amendments, in Australia, and the Copyright Act (1994) plus amendments, in
+copyright compliance in the openEQUELLA Digital Repository in accordance with the Copyright Act (1968) plus amendments, in Australia, and the Copyright Act (1994) plus amendments, in
 New Zealand.
 
 In Australia, the Educational Use and Fair Dealing statutory licences agreed to by educational institutions are managed by the Copyright Agency (CA, formerly CAL). In New Zealand, equivalent licences are managed by Copyright Licensing New Zealand (CLNZ).
@@ -38,9 +38,9 @@ websites, including those of CA and CLNZ, the Australian Copyright Council, the 
 Council of New Zealand, and AUSTLII.
 
 The examples in this guide are based on the schemas, citations, XSL transformations,
-collections, courses, remote repository searches, advanced searches and security that are provided with the EQUELLA Vanilla Copyright Collections and provide a starting point for creating custom configurations that closely fit the institution’s purpose. 
+collections, courses, remote repository searches, advanced searches and security that are provided with the openEQUELLA Vanilla Copyright Collections and provide a starting point for creating custom configurations that closely fit the institution’s purpose. 
 
-Please note that this guide is based on Australian and New Zealand Copyright regulations. It has been developed to reflect the full capabilities of EQUELLA and as such may differ in appearance from your own installation.
+Please note that this guide is based on Australian and New Zealand Copyright regulations. It has been developed to reflect the full capabilities of openEQUELLA and as such may differ in appearance from your own installation.
 
 ### Copyright compliance configuration process
 In this guide the user will:
@@ -52,9 +52,9 @@ Administration Console
 * either upload the three default copyright collection definitions using the Collection
 Definitions tool in the Administration Console
 * or create the three copyright collection definitions as required to manage copyright in
-EQUELLA, using the Collection Definitions tool in the Administration Console.
+openEQUELLA, using the Collection Definitions tool in the Administration Console.
 
-NOTE: the collections must follow the requirements specified in this document. Failing to do so may mean that the copyright software which sits within EQUELLA will be
+NOTE: the collections must follow the requirements specified in this document. Failing to do so may mean that the copyright software which sits within openEQUELLA will be
 unable to calculate percentages and will therefore be unable to block activations which
 would breach copyright.
 
@@ -73,10 +73,10 @@ Repositories tool
 * If required, create browse hierarchies using the Hierarchy Editor tool
 
 ## Administration console
-The EQUELLA Administration Console provides a range of tools and plug-ins that simplify the
-management and configuration of EQUELLA.
+The openEQUELLA Administration Console provides a range of tools and plug-ins that simplify the
+management and configuration of openEQUELLA.
 
-To access EQUELLA and open the Administration Console
+To access openEQUELLA and open the Administration Console
 1. From the navigation menu, select Settings, Administration Console. 
 2. The Administration console displays.
 
@@ -92,22 +92,22 @@ required.
 
 ## Copyright metadata schema
 A metadata schema (schema) is a storage structure used to hold a resource’s metadata.
-Resource metadata is used in searching and managing resources within the EQUELLA
+Resource metadata is used in searching and managing resources within the openEQUELLA
 repository. A schema that conforms to an available standard increases the utility and
 interoperability of resources. The most widely recognised metadata schema for learning
 objects is the internationally recognised IEEE 1484.12.1 Standard for Learning Object
 Metadata (LOM) available at http://ieeeltsc.org/.
 
-EQUELLA provides a LOM compliant schema called the Generic Schema with the EQUELLA
+openEQUELLA provides a LOM compliant schema called the Generic Schema with the openEQUELLA
 Vanilla Institution and it provides a starting point for creating custom metadata schemas that closely fit the institution’s purpose. The examples in this section are based on the Generic Schema but only mandatory nodes required to create Copyright copyright compliant collection definitions are described. Other nodes can be added as per the institution’s requirements; however it is essential that nodes are not removed and the structure and naming conventions are maintained.
 
-To enable the copyright compliance features in EQUELLA to function correctly, a specific Copyright schema is required.
+To enable the copyright compliance features in openEQUELLA to function correctly, a specific Copyright schema is required.
 
 ### Create the copyright schema
 Metadata schemas are created and modified using the Metadata Schemas tool available
 in the Administration Console.
 
-To create a new EQUELLA copyright metadata schema from scratch
+To create a new openEQUELLA copyright metadata schema from scratch
 1. Select the Metadata Schemas tool in the Administration Console.
 2. Select the default schema
 3. Click Edit to display the Schema Editor.
@@ -129,7 +129,7 @@ paths.
 on the Details page. 
 
 The Resource Name Path and Resource Description Path are pre-selected in the
-default schema, once the relevant nodes have been created in the schema. These nodes must be mapped into the ‘title’ edit box controls in each of the three copyright collections to avoid the record display showing the EQUELLA uuid in place of the title.
+default schema, once the relevant nodes have been created in the schema. These nodes must be mapped into the ‘title’ edit box controls in each of the three copyright collections to avoid the record display showing the openEQUELLA uuid in place of the title.
 
 ### Editor tab
 All schemas have the base node xml and must contain a node for the name and description of contributed resources (which are recorded in the Resource Name Path and Resource Description Path fields on the Details tab). Further nodes specific to copyright can be added.
@@ -186,7 +186,7 @@ collection resources are not updated and can exhibit unexpected behaviour.)
 Importing an Extensible Stylesheet Language Transformation (XSLT) can transform
 resource metadata, for example to provide a link between a search and resources in a
 Parent (holding) collection. Transformations are added in the Transformations page.
-Example import transformations are provided with the EQUELLA Vanilla Institution.
+Example import transformations are provided with the openEQUELLA Vanilla Institution.
 
 To add an import transformation
 1. Select the Transformations tab in the Schema Editor to display the
@@ -200,7 +200,7 @@ When citing licensed material and institution-preferred style can be selected to
 the LMS. Citations can be configured in the Citations page. Various citation styles can be
 added (APA, Chicago, Harvard, etc.) for use with resources associated with the schema
 (by a collection using the schema). The citation information is gathered from the schema metadata and transformed into the appropriate format by an XSLT. Example generic
-citation styles are provided with the EQUELLA Vanilla Institution.
+citation styles are provided with the openEQUELLA Vanilla Institution.
 
 To add a citation
 1. Select the Citations tab in the Schema Editor to display the Citations page.
@@ -215,7 +215,7 @@ of an XSLT file (e.g. generic_citation.xsl).
 Schema collaborators (users that can perform various operations on a schema) are
 managed with the Access Control page. Collaborators can be selected individually, as
 groups or by role to be granted permissions to perform actions on the schema. Further
-information on managing privileges is provided in the EQUELLA Security Guide.
+information on managing privileges is provided in the openEQUELLA Security Guide.
 The schema privileges include:
 * CREATE_SCHEMA = create a schema
 * DELETE_SCHEMA = delete this schema
@@ -233,15 +233,15 @@ Save the schema settings
 ## Collection definitions
 Collection Definitions (collections) associate important information (metadata) and processes
 with uploaded files or external web sites, and in the case of the eReserve Collection, with a
-resource in either the Book or the Journal parent (holding) collection as appropriate for the particular e-reading. EQUELLA Contribution Wizards gather this information during the
+resource in either the Book or the Journal parent (holding) collection as appropriate for the particular e-reading. openEQUELLA Contribution Wizards gather this information during the
 contribution process to create a repository resource.
 
-EQUELLA copyright compliance requires the creation of parent (holding) resources in the
+openEQUELLA copyright compliance requires the creation of parent (holding) resources in the
 Books or Journals collections and portion resources (extracts, chapters, articles, etc.) in the eReserve Collection. Parent (holding) resources contain information about the resource such as book or journal details and the portion resources contain the copyright content such as the scanned chapter of a book or article from a journal. Parent (holding) resources are contributed to parent (holding) collections and portion resources to a portion collection. During the portion contribution process contributors must link the portion resource to the relevant parent (holding) resource.
 
-Parent (holding) collections are used to easily differentiate the types of copyright content and these are typically a book collection and a journal collection. EQUELLA places no limit on the number of collections with the number being dictated by the reporting granularity.
+Parent (holding) collections are used to easily differentiate the types of copyright content and these are typically a book collection and a journal collection. openEQUELLA places no limit on the number of collections with the number being dictated by the reporting granularity.
 
-EQUELLA provides copyright compliant collections with the EQUELLA Vanilla Institution and they provide a starting point for creating custom collections that closely fit the institution’s purpose. The examples in this section are based on two Parent (holding) collections called Books and Journals and a portion collection called eReserve articles.
+openEQUELLA provides copyright compliant collections with the openEQUELLA Vanilla Institution and they provide a starting point for creating custom collections that closely fit the institution’s purpose. The examples in this section are based on two Parent (holding) collections called Books and Journals and a portion collection called eReserve articles.
 
 ### Create collection definitions
 Creating a collection definition requires that the metadata schema has been defined.
@@ -266,11 +266,11 @@ customised error messages and agreements.
 
 ## Copyright compliant collections
 
-EQUELLA copyright compliance features typically require users to create separate
+openEQUELLA copyright compliance features typically require users to create separate
 collections for Parent (holding) resources (books, journals, etc.) and portion resources
 (extracts, chapters, articles, etc.).
 
-EQUELLA copyright compliant collections do not restrict the amount of resources that can
+openEQUELLA copyright compliant collections do not restrict the amount of resources that can
 be stored in the repository but do restrict the number of portion resources that can be
 viewed by course users. The following restrictions are applied:
 * For books—usually 10% (this percentage is configurable) or one chapter,
@@ -297,7 +297,7 @@ To add the collection definition details
 1. Enter the following in the Details page.
   
   a. Collection name—enter a unique display name for the collection (e.g. Books).
-  Collection details are displayed to users on the Contribute page in the EQUELLA
+  Collection details are displayed to users on the Contribute page in the openEQUELLA
   Digital Repository. 
   
   b. Collection description—enter a description for this collection. This description is
@@ -314,13 +314,13 @@ To add the collection definition details
   g. Select review period— select from the drop-down list to allow the period between moderation reviews to be set to ensure the resource remains current.
   This option is only available for collections that have an associated workflow.
   
-  h. Select wizard category— select a category from the drop-down list to allow a means for grouping collection definitions. Categories are displayed on the user contribution page in the EQUELLA Digital Repository. Select a wizard category (e.g. Demonstration) from the list. If there is no suitable category, new ones can be created by clicking the Add... link. 
+  h. Select wizard category— select a category from the drop-down list to allow a means for grouping collection definitions. Categories are displayed on the user contribution page in the openEQUELLA Digital Repository. Select a wizard category (e.g. Demonstration) from the list. If there is no suitable category, new ones can be created by clicking the Add... link. 
 
 To create a collection definition wizard
 
 The Wizard page enables the construction of a Contribution Wizard. 
 
-Contribution Wizards are used to assist contributors in providing the details appropriate for the contributed resources. The wizard is displayed when the collection is selected from the Contribute page the EQUELLA Digital Repository. 
+Contribution Wizards are used to assist contributors in providing the details appropriate for the contributed resources. The wizard is displayed when the collection is selected from the Contribute page the openEQUELLA Digital Repository. 
 
 To add the wizard controls
 1. Select the Wizard tab in the Collection Definition Editor to display the Wizard page.
@@ -725,7 +725,7 @@ To save the licensing settings
 1. Click Save to save the configuration details.
 2. Click Close to close the Collection Definition Editor.
 
-The copyright compliant Journals Parent (holding) collection is now complete. The wizard is displayed to contributors in the EQUELLA Digital Repository when the Journals
+The copyright compliant Journals Parent (holding) collection is now complete. The wizard is displayed to contributors in the openEQUELLA Digital Repository when the Journals
 collection definition is selected.
 
 The next step is to create a portion collection.
@@ -745,7 +745,7 @@ To add the collection definition details
 
 a. Collection name—enter a unique display name for the collection (e.g. eReserve
 articles). Collections details are displayed to users on the Contribute page in the
-EQUELLA Digital Repository.
+openEQUELLA Digital Repository.
 
 b. Collection description—enter a description for this collection. This description is
 displayed to help contributors choose a collection during the contribution process.
@@ -769,7 +769,7 @@ This option is only available for collections that have an associated workflow.
 
 h. Select wizard category—select a category from the drop-down list to allow
 provides a means for grouping collection definitions. Categories are displayed on
-the user contribution page in the EQUELLA Digital Repository. Select a wizard category (e.g. Documentation) from the list. If
+the user contribution page in the openEQUELLA Digital Repository. Select a wizard category (e.g. Documentation) from the list. If
 there is no suitable category, new ones can be created by clicking the Add… link.
 
 To create a collection definition wizard
@@ -777,7 +777,7 @@ To create a collection definition wizard
 The Wizard page enables the construction of a Contribution Wizard. The controls with a
 red dot have an associated script.
 
-The wizard is displayed to contributors in the EQUELLA Digital Repository when the
+The wizard is displayed to contributors in the openEQUELLA Digital Repository when the
 collection definition (e.g. eReserve articles) is selected. 
 
 To add the wizard controls
@@ -986,7 +986,7 @@ c. Scripting—(e.g. if /item/copyright @parenttype = ‘Book’).
 
 d. Select metadata target(s) for this control – (e.g. item/temp_resourceHandler).
 
-e. Add the following attachment types – select EQUELLA Resources
+e. Add the following attachment types – select openEQUELLA Resources
 
 f. Selected resources are—(e.g. Copyright Holdings) to restrict resource selection.
 (NOTE: This is a mandatory selection for CAL.)
@@ -1112,18 +1112,18 @@ Save the collection definition settings
 1. Click Save to save the configuration details.
 2. Click Close to close the Collection Definition Editor.
 The copyright compliant eReserve articles portion collection is now complete. The wizard
-is displayed to contributors in the EQUELLA Digital Repository when the collection
+is displayed to contributors in the openEQUELLA Digital Repository when the collection
 definition (e.g. eReserve articles) is selected. 
 
 ## Courses
-EQUELLA Courses are used for copyright licence activation to show where the licensed
-content is used. Courses in EQUELLA should reflect the courses (by using the same course
+openEQUELLA Courses are used for copyright licence activation to show where the licensed
+content is used. Courses in openEQUELLA should reflect the courses (by using the same course
 codes) used by any associated Learning Management System (LMS) such as Blackboard™ or
 Moodle™.
 E
-QUELLA provides a sample course called EQUELLA 101 with the EQUELLA Vanilla Institution
-and it provides a starting point for creating custom courses that closely fit the institution’s purpose. The examples in this section are based on the EQUELLA 101 Course.
-EQUELLA courses can be archived for future use or multiple courses can be imported in
+QUELLA provides a sample course called openEQUELLA 101 with the openEQUELLA Vanilla Institution
+and it provides a starting point for creating custom courses that closely fit the institution’s purpose. The examples in this section are based on the openEQUELLA 101 Course.
+openEQUELLA courses can be archived for future use or multiple courses can be imported in
 bulk by uploading a CSV file with appropriate information. 
 
 ### Create a course
@@ -1141,7 +1141,7 @@ The Details page provides general information and configurable elements for a co
 
 3. Enter appropriate information in the Details page. 
 
-a. Course Name —enter an appropriate course name (e.g. EQUELLA 101). This name is displayed to users when activating and managing copyright resources.
+a. Course Name —enter an appropriate course name (e.g. openEQUELLA 101). This name is displayed to users when activating and managing copyright resources.
 
 b. Description—enter an appropriate course description. This description is displayed on the resource’s Copyright page when a resource is activated. An email address or URL can be entered and are displayed as a clickable link.
 
@@ -1149,7 +1149,7 @@ c. Department—enter the name of the department responsible for material (e.g. 
 
 d. Course Owner—defaults to the course creator. Clicking displays the Select Recipients... dialog where a new owner can be selected.
 
-e. Code—enter an ID for linking the course to a LMS such as Blackboard™ or Moodle™. (NOTE: The EQUELLA course code should be exactly the same as the course code used in the integrated system.)
+e. Code—enter an ID for linking the course to a LMS such as Blackboard™ or Moodle™. (NOTE: The openEQUELLA course code should be exactly the same as the course code used in the integrated system.)
 
 f. Start Date—selecting the course start date is optional. If this field is blank the
 course start date is determined by dates selected in the Settings Course Defaults options. 
@@ -1166,7 +1166,7 @@ j. Course Type—select an appropriate course type from the drop-down list (e.g.
 k. Archived—leave this box unchecked. Checking this box prevents a course from displaying to users when activating and managing copyright resources.
 
 ### Resource selection tab
-The Resource Selection page provides institution-wide and course specific settings for resource version selection. Resource selection configuration is used to determine which version of a resource is displayed when a resource is selected. These settings are applicable to resources selected and saved when using an Attachments control with EQUELLA Resources selected in a Contribution Wizard, and when EQUELLA is integrated with a LMS such as Blackboard™ or Moodle™.
+The Resource Selection page provides institution-wide and course specific settings for resource version selection. Resource selection configuration is used to determine which version of a resource is displayed when a resource is selected. These settings are applicable to resources selected and saved when using an Attachments control with openEQUELLA Resources selected in a Contribution Wizard, and when openEQUELLA is integrated with a LMS such as Blackboard™ or Moodle™.
 
 1. Select the Resource Selection tab to display the Resource Selection page. 
 2. Select one of the following options that is applicable for your institution:
@@ -1206,7 +1206,7 @@ Security settings are granted and revoked as is applicable for each institution.
 privileges can be set at Institution, Collection and Resource levels. This section provides typical practices that are suitable for most institutions.
 
 ### Grant copyright permissions
-EQUELLA provides the following copyright privileges:
+openEQUELLA provides the following copyright privileges:
 * COPYRIGHT_ITEM = edit copyright on resources
 * VIEW_ACTIVATION_ITEM = view activation request on resources
 * DEACTIVATE_ACTIVATION_ITEM = deactivate activation request on resources
@@ -1231,7 +1231,7 @@ The example in this section grants the copyright privileges to a specific Collec
 Depending on the security settings required for your institution, a system administrator
 can implement the privileges at Institution, Collection and Resource levels. The example
 relies on System Administrator, Content Administrator and Contributor roles being
-present in the EQUELLA instance.
+present in the openEQUELLA instance.
 
 Copyright privileges are granted or revoked in the Administration Console Security
 Manager tool.
@@ -1299,7 +1299,7 @@ c. Search for and select a role (e.g. System Administrator Role).
 d. Remove Content Administrator Role then click OK.
 
 e. Check the Override? checkbox to enable the System Administrator privileges on
-any child objects, allowing them control over all resources in EQUELLA.
+any child objects, allowing them control over all resources in openEQUELLA.
 
 The Security Manager with example privileges is shown in Figure 41. The actions
 assigned to the System Administrator now override any actions assigned to individual
@@ -1319,15 +1319,15 @@ The Manage Activations page is accessed from the navigation menu, and allows the
 view a list of previously activated resources. The results list can be filtered by course, owner or date range. Activated resources can be deactivated, deleted or rolled-over, individually or in bulk. 
 
 ## Reporting
-EQUELLA provides a Copyright report that shows all activated content for the reporting period. The reports are presented using Copyright layout in HTML or PDF format and are
+openEQUELLA provides a Copyright report that shows all activated content for the reporting period. The reports are presented using Copyright layout in HTML or PDF format and are
 appropriate for the Copyright Agency Limited (CAL).
 
-The Copyright report can be modified, refer to the EQUELLA Reporting Guide for more information on reports.
+The Copyright report can be modified, refer to the openEQUELLA Reporting Guide for more information on reports.
 
 ### Download the report file
 
-Reports are uploaded to the EQUELLA Administration Console and generated in the
-EQUELLA Digital Repository.
+Reports are uploaded to the openEQUELLA Administration Console and generated in the
+openEQUELLA Digital Repository.
 
 ### Upload a report
 Reports are uploaded using the Reporting tool available in the Administration Console.
@@ -1366,13 +1366,13 @@ Z39.50 remote repository search can be used to automatically add information to 
 the Parent (holding) contribution wizard. When configured an import option is provided to the
 user for federated search results either selected directly from the remote repository search results page or through a Resource Selector wizard control.
 
-When a remote repository search is configured to import results to the EQUELLA repository a
+When a remote repository search is configured to import results to the openEQUELLA repository a
 library search option is also available. The library search only searches Z39.50 repository
 types and it also can automatically populate fields in the Parent (holding) collection
 contribution wizard. Advanced or basic searches can be configured depending on the type of searches the Z39.50 host supports. The advanced searching option provides the user with a greater selection of search conditions in the one query and basic searching presents a single keyword field that only accepts a simple search term.
 
-EQUELLA provides a sample remote repository search called Books – Libraries Australia with
-the EQUELLA Vanilla Institution and it provides a starting point for creating custom remote repository searches that closely fit the institution’s purpose. The examples in this section are based on the Books – Libraries Australia remote repository search.
+openEQUELLA provides a sample remote repository search called Books – Libraries Australia with
+the openEQUELLA Vanilla Institution and it provides a starting point for creating custom remote repository searches that closely fit the institution’s purpose. The examples in this section are based on the Books – Libraries Australia remote repository search.
 
 ### Create a remote repository search 
 
@@ -1400,7 +1400,7 @@ IP address.
 6. Enter the Port access port. The default port is 210, although some Z39.50 hosts use
 very high port numbers.
 NOTE: If there are problems saving high port numbers please contact Support or your
-EQUELLA Consultant.
+openEQUELLA Consultant.
 7. Enter the Database name of the database to be searched.
 8. Enter the Username and Password used to access the repository (if authentication
 is required).
@@ -1445,7 +1445,7 @@ indexed for advanced searching, enabling refined searches over particular resour
 A collection could be made up of hundreds of resources, making a refined search a very
 useful tool.
 
-EQUELLA provides a sample advanced search called eReserve with the EQUELLA Vanilla
+openEQUELLA provides a sample advanced search called eReserve with the openEQUELLA Vanilla
 Institution and it provides a starting point for creating custom advanced searches that closely fit the institution’s purpose. The examples in this section are based on the eReserve advanced search that is linked to the Parent (holding) resources (Books and Journals) and the portion resource (eReserve articles) collections. (NOTE: Alternatively a separate advanced search can be configured for each collection.) 
 
 ### Create an advanced search
@@ -1577,7 +1577,7 @@ viewer role.
 3. 
 The eReserve advanced search is now complete. All controls configured for the advanced
 search (e.g. eReserve) are displayed to the user when the Advanced Search is selected in
-the EQUELLA Digital Repository. 
+the openEQUELLA Digital Repository. 
 
 ## Close the Administration Console
 To log out of the Administration Console

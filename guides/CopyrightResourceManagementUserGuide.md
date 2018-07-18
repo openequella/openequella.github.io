@@ -16,27 +16,27 @@ Table of Contents
 
 ## Copyright compliance overview
 
-The EQUELLA copyright compliance features do not restrict the amount of copyright material
+The openEQUELLA copyright compliance features do not restrict the amount of copyright material
 that can be contributed to the repository: they do restrict the amount of copied content
 which can be active at any time – i.e. copyright compliant content cannot be viewed by course users until it has been activated. Any number of resources can be active at a
 particular time as long as they comply with Part VB of the Australian Copyright Act 1968 (as amended) and the New Zealand Copyright Act 1994 (and subsequent amendments). 
 
 The purpose of this guide is to provide content contributors, such as lecturers, teachers librarians and content administrators with examples of the copyright resource contribution, activation, management and reporting process.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation and as it is based on Australian and New Zealand Copyright regulations it will have varying levels of applicability around the
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation and as it is based on Australian and New Zealand Copyright regulations it will have varying levels of applicability around the
 world. Contact the system administrator for access to extra features or to reconfigure your installation.
 
 Where possible the examples in this guide use the Collections, Contribution Wizards and
-Power Searches provided in the EQUELLA Vanilla Institution. (Note: There are no workflows associated with these vanilla collections and hence the resources do not go through a moderation process.)
+Power Searches provided in the openEQUELLA Vanilla Institution. (Note: There are no workflows associated with these vanilla collections and hence the resources do not go through a moderation process.)
 
 ### Contribute copyright compliant resources
-EQUELLA enables users to create, manage and search for copyright compliant content
+openEQUELLA enables users to create, manage and search for copyright compliant content
 such as images, audio, video, packaged content, web links, text, PDF and MS Office™
 documents.
 
 ### Training tasks
 In this guide, the user will:
-* Contribute resources to the EQUELLA Digital Repository:
+* Contribute resources to the openEQUELLA Digital Repository:
   * Contribute a holding resource using the federated search method;
   * Contribute a holding resource using the library search method;
   * Contribute portion resources.
@@ -47,7 +47,7 @@ In this guide, the user will:
 * Generate a copyright report.
 
 ## Contribute resources
-EQUELLA copyright compliance management involves interrelated collections.
+openEQUELLA copyright compliance management involves interrelated collections.
 
 Typically these include two separate holding collections to easily differentiate the types of copyright content and are typically a book collection and a journal collection. The holding collections contain holding resources that consist of information (metadata) about the resource such as book or journal details.
 
@@ -55,9 +55,9 @@ The portion collection stores portion resources that each contain copyright cont
 
 In this section the user will contribute a resource a resource to the book holding collection then contribute portion resources that are linked to the book holding resource.
 
-## EQUELLA Digital Repository
-To access EQUELLA
-1. Open a browser and enter your EQUELLA URL (e.g. http://equella.myinstitution.edu)
+## openEQUELLA Digital Repository
+To access openEQUELLA
+1. Open a browser and enter your openEQUELLA URL (e.g. http://equella.myinstitution.edu)
 and log in.
 
 The examples in this section are as follows:
@@ -165,7 +165,7 @@ controls relevant to the selected type.
 #### To link the portion resource to the holding resource
 1. Click the Add a resource link in the Select Book section to display the Select page with the search. 
 
-Existing EQUELLA holding resources can be selected using the Search, Recent or
+Existing openEQUELLA holding resources can be selected using the Search, Recent or
 Browse portlets.
 
 When an existing holding resource cannot be located it can be added using the
@@ -225,7 +225,7 @@ The copyright compliance features do not restrict the amount of copyright materi
 Managed copyright compliant content cannot be viewed by course users until it has been
 activated for a course.
 
-In this section the user will activate two chapters from the same book against the EQUELLA 101 course. One chapter is activated, however, the other chapter is not as it violates the copyright requirements.
+In this section the user will activate two chapters from the same book against the openEQUELLA 101 course. One chapter is activated, however, the other chapter is not as it violates the copyright requirements.
 
 ### Activate resources
 Any number of resources can be active at a particular time as long as they comply with
@@ -252,7 +252,7 @@ combined size violates the copyright portion rules such as 10% of a book.)
 Activation requires that course and time frame details are entered, as the content is only made available to course users for the specified dates.
 
 To link the portion resource to a course
-1. Select a Course from the drop-down list (e.g. EQUELLA 101).
+1. Select a Course from the drop-down list (e.g. openEQUELLA 101).
 2. Select Make live from and Make live until dates for the resource to be available
 online.
 3. Select a Citation from the drop-down list (e.g. Generic).
@@ -278,7 +278,7 @@ message and the portion resource should not be allowed to be made active.
 (e.g. Comparing educational requirements) to display the Resource summary page.
 2. Select the checkbox for the portion then click Activate to display the Activate
 Attachments page.
-3. Select the course (e.g. EQUELLA 101) and Make live from and until dates for the
+3. Select the course (e.g. openEQUELLA 101) and Make live from and until dates for the
 resource to be available online then click Activate .
 
 Because the portion violates both the 10% and one chapter CAL rules a Copyright problem page is displayed. 
@@ -344,7 +344,7 @@ Portion resources can be rolled over from one course to another at the end of a 
 during the semester by deactivating them from the old course and adding them to the
 new course.
 
-3. Select a new Course to roll-over to from the drop-down list (e.g. EQUELLA 202).
+3. Select a new Course to roll-over to from the drop-down list (e.g. openEQUELLA 202).
 4. Check the Deactivate existing checkbox if the resource is currently active and the
 activation period is not due to finish before the roll-over activation begins.
 5. Select a Start date and End date.
@@ -380,7 +380,7 @@ Activations page. Resource activations can be deleted from the Activations page.
 1. Click the X button next to the required resource then click to confirm.
 
 ## Copyright (EUS) Reports
-EQUELLA generates electronic use survey (EUS) reports that show all activated content for
+openEQUELLA generates electronic use survey (EUS) reports that show all activated content for
 the reporting period. The reports are presented using the Australian Copyright Agency layout in HTML, Word, Excel or PDF format and are appropriate for the Australian Copyright Agency (CA).
 
 ### Generate an EUS report
@@ -401,7 +401,7 @@ The reports are presented using the EUS layout in HTML, Word, Excel or PDF forma
 
 ## Copyright Enhancements
 
-A number of changes and additions were added to the CAL module for the EQUELLA 6.3 release. These features are documented below.
+A number of changes and additions were added to the CAL module for the openEQUELLA 6.3 release. These features are documented below.
 
 ### Set Part VB book percentage (CAL only)
 
@@ -477,7 +477,7 @@ This option must be selected on the portion collection (e.g. eReserve articles) 
 ### Restrict ‘View linked portions’ section
 A new ACL is available (VIEW_LINKED_PORTIONS) that allows administrators to restrict who has access to the Links to other Portions section displayed on the portion record Resource summary page. 
 
-When upgrading to EQUELLA 6.3, this ACL will default to be granted to all users (as per current functionality). Revoking this ACL for users results in those users no longer seeing that section on the portion summary page. 
+When upgrading to openEQUELLA 6.3, this ACL will default to be granted to all users (as per current functionality). Revoking this ACL for users results in those users no longer seeing that section on the portion summary page. 
 
 Additionally, when this ACL is revoked, users will no longer see the (View portion) link for each portion from the holding record Resource summary page.
 
@@ -493,13 +493,13 @@ Granting the VIEW_INACTIVE_PORTIONS ACL to users allows those users to open and 
 A new statistic (Pages available for activation) has been added to the holding record summary page which indicates how many pages could be activated before the Part VB percentage had been reached. 
 
 ### Autocreate courses
-A new ACL is available (AUTO_CREATE_COURSE) that allows administrators to grant users the ability to create a course automatically in EQUELLA when activating items for a course through a Moodle or Blackboard integration selection session.
+A new ACL is available (AUTO_CREATE_COURSE) that allows administrators to grant users the ability to create a course automatically in openEQUELLA when activating items for a course through a Moodle or Blackboard integration selection session.
 
-When a user opens the integration screen selection session from a course section, goes to a portion summary page and selects the Activate and add button, EQUELLA looks at the course code from the LMS, then matches it with a course code in EQUELLA. If there is no matching course code in EQUELLA, a message displays conveying this information, and the user can’t proceed with the activation and addition to the course section. When users are granted the AUTO_CREATE_COURSE ACL, the system will automatically add a course record to EQUELLA, using the course code from the LMS as the Course Name and Code.
+When a user opens the integration screen selection session from a course section, goes to a portion summary page and selects the Activate and add button, openEQUELLA looks at the course code from the LMS, then matches it with a course code in openEQUELLA. If there is no matching course code in openEQUELLA, a message displays conveying this information, and the user can’t proceed with the activation and addition to the course section. When users are granted the AUTO_CREATE_COURSE ACL, the system will automatically add a course record to openEQUELLA, using the course code from the LMS as the Course Name and Code.
 
 NOTE: When using this feature, Administrators will need to monitor Courses to update automatically created records with required details.
 
-A record is added to the Course table in EQUELLA with the Course Name and Code being the Course ID from the LMS. 
+A record is added to the Course table in openEQUELLA with the Course Name and Code being the Course ID from the LMS. 
 
 ### Rollover enhancements
 EQUELLA 6.3 introduces enhancements to the activation rollover functionality accessed from Manage Activations.
