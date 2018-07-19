@@ -4,7 +4,7 @@ Table of Contents
 
 * [Overview](#overview)
 * [Brightspace  homepage](#brightspace-homepage)
-* [Accessing the openEQUELLA repository](#accessing-the-equella-repository)
+* [Accessing the openEQUELLA repository](#accessing-the-openequella-repository)
 * [Managing resources in Brightspace](#managing-resources-in-brightspace)
 * [Push to LMS](#push-to-lms)
 

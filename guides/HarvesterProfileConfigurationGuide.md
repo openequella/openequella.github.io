@@ -10,30 +10,30 @@
 
 ## Harvesting guide  
 
-Content from third-party sources can be obtained by using EQUELLA’s harvesting tool that is used to collect learning objects and resources from third-party institutions and upload them automatically to the EQUELLA repository. Content can be obtained from The Learning Federation using the LORAX protocol, while content from other institutions can be gathered with the OAI (Open Archives Initiative) metadata harvesting protocol.
+Content from third-party sources can be obtained by using EQUELLA’s harvesting tool that is used to collect learning objects and resources from third-party institutions and upload them automatically to the openEQUELLA repository. Content can be obtained from The Learning Federation using the LORAX protocol, while content from other institutions can be gathered with the OAI (Open Archives Initiative) metadata harvesting protocol.
 
-Content contained in the EQUELLA Digital Repository can also be accessed by using the OAI protocol.
+Content contained in the openEQUELLA Digital Repository can also be accessed by using the OAI protocol.
 
-The purpose of this guide is to provide system administrators with an understanding of the EQUELLA Harvester Profile tool to enable successful management of harvesting. 
+The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA Harvester Profile tool to enable successful management of harvesting. 
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation.
 
 
 ## Harvester Profile tool
-The EQUELLA harvester allows content from third-party sources to be collected and uploaded to the EQUELLA Digital Repository. Content can be obtained from The Le@rning Federation (TLF) using the Learning Object Repository Access and eXchange (LORAX) protocol, while metadata can be gathered with the Open Archives Initiative (OAI) metadata harvesting protocol. Content from other EQUELLA Digital Repositories can also be collected.
+The openEQUELLA harvester allows content from third-party sources to be collected and uploaded to the openEQUELLA Digital Repository. Content can be obtained from The Le@rning Federation (TLF) using the Learning Object Repository Access and eXchange (LORAX) protocol, while metadata can be gathered with the Open Archives Initiative (OAI) metadata harvesting protocol. Content from other openEQUELLA Digital Repositories can also be collected.
 
 The Harvester Profile:
 * provides harvesting of metadata and resources,
-* allows harvesting of other EQUELLA repositories, enabling community repositories to be created with sizable pools of content,
+* allows harvesting of other openEQUELLA repositories, enabling community repositories to be created with sizable pools of content,
 * allows multiple Harvester Profiles to be created and managed via the Administration Console,
 * can be run as a scheduled task.
 
 ### Configure a harvester profile
 Harvester profiles are created and modified using the Harvester Profiles tool available in the Administration Console. 
 
-##### To access EQUELLA and open the Administration Console
-1.  Open a browser and enter your EQUELLA URL (e.g.‘<http://equella.myequellainstitution.edu>’).
-2.  Log in to EQUELLA as an administrator user to display the EQUELLA dashboard.
+##### To access openEQUELLA and open the Administration Console
+1.  Open a browser and enter your openEQUELLA URL (e.g.‘<http://equella.myequellainstitution.edu>’).
+2.  Log in to openEQUELLA as an administrator user to display the openEQUELLA dashboard.
 3.  Click the Settings button to display the Settings page, then select Administration console from the categories list. 
 4.  Select the Harvester Profiles option to display the Harvester Profiles pane that contains a list of all previously configured profiles. 
 
@@ -66,7 +66,7 @@ Click the Export button to export a profile as a ZIP file.
 
 ## Harvester types  
 Each Harvester profile type provides options for harvesting resources or metadata from different repository types:
-* EQUELLA Harvester
+* openEQUELLA Harvester
 * LORAX Harvester
 * MEX Harvester
 * OAI Harvester
@@ -95,16 +95,16 @@ The common Details page elements are:
 * Profile Enabled—is checked by default. Uncheck the box to disable the profile and stop harvesting. 
 * Collection—displays a list of collections where the harvested resources can be contributed.
 * Import Transform—displays a list of XSLT for transforming the harvested resources metadata to that of the contributed collection. The list comprises XSL transformations that have been added to the metadata schema for the associated collection.
-* Updates – select how updates occurring to a resource at the source affects the harvested resource in EQUELLA. The options are:
+* Updates – select how updates occurring to a resource at the source affects the harvested resource in openEQUELLA. The options are:
     * Create a new version (and archive the current version) – selecting this option creates a new version of the resource, while archiving the old.
     * Update the current version – select this option to update the resource with the changes from the source, but keep the current version number (similar to an edit).
 
 The harvester type specific elements are described in the following sections:
 
-### EQUELLA Harvester
-The EQUELLA type allows harvesting of resources and attachments from other EQUELLA repositories.
-The configurable EQUELLA Settings include:
-* Server—enter the URL for the EQUELLA institution to be harvested.
+### openEQUELLA Harvester
+The openEQUELLA type allows harvesting of resources and attachments from other openEQUELLA repositories.
+The configurable openEQUELLA Settings include:
+* Server—enter the URL for the openEQUELLA institution to be harvested.
 * Username/ Password—enter the username and password used to access the repository (if authentication is required). 
 * Remote Collection—select a collection to be harvested from the drop-down list. Select the Get Collections button to display a list of collections names. 
 * Only harvest live resources—is checked by default. Uncheck the box to include non-live resources in the harvest.
@@ -114,7 +114,7 @@ The LORAX protocol is used to harvest TLF content.
  
 The configurable LORAX Settings are:
 * Username/ Password—enter the username and password used to access the repository.
-* Only check Live EQUELLA resources—is selected by default and scans your EQUELLA Institution for Live resources to ensure that duplicates are not harvested. Uncheck the box to include non-live resources (e.g. Draft, Archived) in the checking process.
+* Only check Live openEQUELLA resources—is selected by default and scans your openEQUELLA Institution for Live resources to ensure that duplicates are not harvested. Uncheck the box to include non-live resources (e.g. Draft, Archived) in the checking process.
 * Harvest Learning Objects—is selected by default. Uncheck the box to exclude learning objects in the harvest.
 * Harvest Resources—is un-selected by default. Select the box to include resources in the harvest.
 
@@ -123,7 +123,7 @@ MEX is an Australian protocol used to harvest free content provided under the Na
  
 The configurable MEX Settings are:
 * Username/ Password—enter the username and password used to access the repository.
-* Only check Live EQUELLA resources—is selected by default and scans your EQUELLA Institution for Live resources to ensure that duplicates are not harvested. Uncheck the box to include non-live resources (e.g. Draft, Archived) in the checking process.
+* Only check Live openEQUELLA resources—is selected by default and scans your openEQUELLA Institution for Live resources to ensure that duplicates are not harvested. Uncheck the box to include non-live resources (e.g. Draft, Archived) in the checking process.
 * Harvest Learning Objects—is selected by default. Uncheck the box to exclude learning objects in the harvest.
 * Harvest Resources—is un-selected by default. Select the box to include resources in the harvest.
 
@@ -140,7 +140,7 @@ SHEX is an Australian protocol used to harvest free content provided under the N
  
 The configurable SHEX Settings are:
 * Username/ Password—enter the username and password used to access the repository.
-* Only check Live EQUELLA resources—is selected by default and scans your EQUELLA Institution for Live resources to ensure that duplicates are not harvested. Uncheck the box to include non-live resources (e.g. Draft, Archived) in the checking process.
+* Only check Live openEQUELLA resources—is selected by default and scans your openEQUELLA Institution for Live resources to ensure that duplicates are not harvested. Uncheck the box to include non-live resources (e.g. Draft, Archived) in the checking process.
 * Harvest Learning Objects—is selected by default. Uncheck the box to exclude learning objects in the harvest.
 * Harvest Resources—is un-selected by default. Select the box to include resources in the harvest.
 
@@ -161,12 +161,12 @@ The Actions page elements include:
     c.  The harvester is now running in the background and will not require further user input. Harvester actions are logged in the resource-centre logs and can be viewed by accessing the file:
     
         ```
-        C:\<path-to-equella-install-directory>\logs\resource-centre\<date>\application.html
+        C:\<path-to-openEQUELLA-install-directory>\logs\resource-centre\<date>\application.html
         ```
     
     d.  In this file harvester actions are recorded and can be viewed. 
     
-    e.  As soon as the harvester is initiated, resources are being added to the selected collection. Resources are uploaded one at a time and can be discovered within EQUELLA before the harvest has fully completed.
+    e.  As soon as the harvester is initiated, resources are being added to the selected collection. Resources are uploaded one at a time and can be discovered within openEQUELLA before the harvest has fully completed.
 
 ### Access Control tab
 The Access Control page allows a harvester profile to be restricted to a set of users, groups or roles. 
@@ -205,7 +205,7 @@ When all elements have been configured for a profile:
 
 ## Harvester profiles scheduled task
 
-Harvesters run with other EQUELLA schedules tasks. Scheduled tasks are configured from the Settings page.
+Harvesters run with other openEQUELLA schedules tasks. Scheduled tasks are configured from the Settings page.
 
 #### To configure Scheduled tasks
 1.  Select Settings from the navigation menu, then click the Scheduled tasks link.  The Scheduled tasks page displays.

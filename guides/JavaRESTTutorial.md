@@ -1,15 +1,15 @@
 [Home](https://equella.github.io/)
 
-# EQUELLA Java REST Tutorial
+# openEQUELLA Java REST Tutorial
 
 Table of Contents
-* [EQUELLA Java REST Tutorial](#equella-java-rest-tutorial)
+* [openEQUELLA Java REST Tutorial](#openequella-java-rest-tutorial)
 * [Login](#login)
 * [Search](#search)
 * [View](#view)
 * [Contribute](#contribute)
 
-## EQUELLA Java REST Tutorial
+## openEQUELLA Java REST Tutorial
 This document covers an example Java REST client (hereafter "the client") which is a J2EE web application and can be deployed into any J2EE servlet container, e.g. Tomcat (<http://tomcat.apache.org/download-70.cgi>)
 
 To compile and execute the example code you will need to download a number of library jar files. See the readme.txt file in the samples/java/public_html/WEB-INF/lib directory for more information.
@@ -28,7 +28,7 @@ The client is rather basic and does not do any checking of response codes to ens
 
 ### Third Party Libraries
 The client relies directly on the following third-party libraries:
-* Apache HTTP Client 4 (<http://hc.apache.org/httpcomponents-client-ga/>) to make HTTP requests and read responses from the EQUELLA server.  
+* Apache HTTP Client 4 (<http://hc.apache.org/httpcomponents-client-ga/>) to make HTTP requests and read responses from the openEQUELLA server.  
 * Apache Commons FileUpload (<http://commons.apache.org/fileupload/>) for reading multipart requests
 * Jackson (<http://jackson.codehaus.org/>) to parse JSON responses and manipulate JSON objects.
 * Freemarker (<http://freemarker.sourceforge.net/>) to render web pages
@@ -38,9 +38,9 @@ The client uses OAuth "Authorization Code Grant" login mechanism (<http://tools.
 
 Each page is protected by the CheckLoginFilter which requires that a token has been obtained for the current user session. If there is no token the user is redirected to the LoginServlet.
 
-The LoginServlet will first redirect to the EQUELLA OAuth code-request URL, with the URL of the client embedded in the query string. This will force the user to login to EQUELLA (if not already logged in, for example in another browser tab).
+The LoginServlet will first redirect to the openEQUELLA OAuth code-request URL, with the URL of the client embedded in the query string. This will force the user to login to openEQUELLA (if not already logged in, for example in another browser tab).
 
-Once logged in, EQUELLA will redirect back to the client with a code embedded in the query string. The client takes this code and requests a token from EQUELLA, which it adds to the user's session, and redirects to the client's /search page.
+Once logged in, openEQUELLA will redirect back to the client with a code embedded in the query string. The client takes this code and requests a token from openEQUELLA, which it adds to the user's session, and redirects to the client's /search page.
 
 ## Search
 The search page shows all of the fields that can be supplied to the REST API endpoint /api/search (except the info and collections parameters) and displays the formatted results of the search below the fields.  Clicking on a search result will take the user to the client's /view page.
@@ -61,7 +61,7 @@ Clicking on a search result will direct the user to the view page. The view page
 #### Viewing a resource will perform the following steps in the client
 
 1.  ViewResourceServlet does some simple query string parameter validation and passes the parameters to the EquellaApiService.getResource method.
-2.  The EquellaApiService.getResource method retrieves a resource from the EQUELLA server using the /api/item endpoint i.e. 
+2.  The EquellaApiService.getResource method retrieves a resource from the openEQUELLA server using the /api/item endpoint i.e. 
 ```
 GET [equella.url]/api/item/[uuid]/[version]?info=all 
 ```
@@ -71,14 +71,14 @@ GET [equella.url]/api/item/[uuid]/[version]?info=all
 
 ## Contribute
 
-To /edit page allows the user to contribute new resources to EQUELLA and attach files to the resource.  This relies on the collection.uuid configuration property to determine which collection to contribute to.
+To /edit page allows the user to contribute new resources to openEQUELLA and attach files to the resource.  This relies on the collection.uuid configuration property to determine which collection to contribute to.
 #### When the user clicks "Save" the following steps are performed by the client
 
 1.  EditResourceServlet retrieves all form data, including uploaded files, and passes them to the EquellaApiService.saveResource method.
 2.  The saveResource method sets the name and description of the resource in the appropriate XML nodes in the metadata.  This relies on the name.xpath and description.xpath in the configuration properties.  The name and description cannot changed by modifying the name and description JSON nodes, these are provided for convenient retrieval only.
 3.  The saveResource method invokes the uploadFiles method which:
 
-    a.  Creates a temporary file area by POSTing to the EQUELLA REST API endpoint /api/file
+    a.  Creates a temporary file area by POSTing to the openEQUELLA REST API endpoint /api/file
     
     b.  Retrieve the upload location for this new file area
     

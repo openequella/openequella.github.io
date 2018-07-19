@@ -30,7 +30,7 @@ Table of Contents
 
 ## Introduction
 
-This guide describes the concepts and some low level specifics of the EQUELLA REST API.  For a detailed EQUELLA REST API reference you should refer to the inbuilt API documentation at .../apidocs.do
+This guide describes the concepts and some low level specifics of the openEQUELLA REST API.  For a detailed openEQUELLA REST API reference you should refer to the inbuilt API documentation at .../apidocs.do
 In this guide your institution URL will be referred to as the text ... , so if your institution base URL is http://my.inst.edu/ then you will find the inbuilt documentation at http://my.inst.edu/apidocs.do
 In this document all placeholder variables are shown in square brackets and should not be treated literally. For example,
 ```
@@ -44,7 +44,7 @@ where 5950e6b8-6ce4-11e1-b335-fb4e4824019b is a UUID of an item and 2 is the ver
 
 Please note that all HTTP requests made to the REST endpoints are not application/x-www-form-urlencoded requests. The content-type of PUT and POST requests must be application/json, except in special cases such as uploading files. Various web browser plug-ins exist which allow you to easily issue HTTP requests to REST endpoints and provide access to the HTTP headers and various HTTP verbs such as DELETE which are not normally available within the browser.
 
-The integration pack (available for download from your institution admin site: http://my.inst.edu/institutions.do?method=admin) contains example code for invoking the EQUELLA REST services via Java or Python. A document is included with the Java example which gives a explanation of the code.
+The integration pack (available for download from your institution admin site: http://my.inst.edu/institutions.do?method=admin) contains example code for invoking the openEQUELLA REST services via Java or Python. A document is included with the Java example which gives a explanation of the code.
 
 ## Authorization
 
@@ -77,7 +77,7 @@ Future releases will expand on this by allowing import of read-only properties s
 
 ## Institutions 
 
-Institutions can be viewed and edited on the special institution API endpoint. Note that this endpoint is based on the administration URL as it cannot be tied to any specific institution. E.g. if the EQUELLA web page that lists institutions can be found at http://equelladev:8080/institutions.do then the REST endpoint for institution management will be found at http://equelladev:8080/api/institution.
+Institutions can be viewed and edited on the special institution API endpoint. Note that this endpoint is based on the administration URL as it cannot be tied to any specific institution. E.g. if the openEQUELLA web page that lists institutions can be found at http://equelladev:8080/institutions.do then the REST endpoint for institution management will be found at http://equelladev:8080/api/institution.
 
 Requests that attempt to manipulate institutions require that the system_token be included in the request under the X-Authorization header. i.e.:
 ```
@@ -138,7 +138,7 @@ Again, you will need to send the system_token in the request.
 
 ## OAuth Login
 
-The EQUELLA REST API supports OAuth 2.0 login. To use OAuth login, you must first register an OAuth Client within EQUELLA. This can be done from the OAuth Settings function accessed from the Settings page. 
+The openEQUELLA REST API supports OAuth 2.0 login. To use OAuth login, you must first register an OAuth Client within openEQUELLA. This can be done from the OAuth Settings function accessed from the Settings page. 
 
 You will need the following privileges to fully administer OAuth Clients:
 * CREATE_OAUTH_CLIENT
@@ -147,14 +147,14 @@ You will need the following privileges to fully administer OAuth Clients:
 * ADMINISTER_OAUTH_TOKENS.
 
 The configuration of your client depends on which OAuth flow you intend to use.  
-EQUELLA supports three OAuth flows:
+openEQUELLA supports three OAuth flows:
 1. Authorization Code Grant (<http://tools.ietf.org/html/rfc6749#section-4.1>)
 2. Implicit Grant (<http://tools.ietf.org/html/rfc6749#section-4.2>)
 3. Client Credentials Grant (<http://tools.ietf.org/html/rfc6749#section-4.4>)
 
 ### OAuth Client Configuration
 
-All registered OAuth Clients need a Name (for use within EQUELLA only), Client ID and, a Client Secret. Further configuration options depend upon the flow you wish to use. 
+All registered OAuth Clients need a Name (for use within openEQUELLA only), Client ID and, a Client Secret. Further configuration options depend upon the flow you wish to use. 
 
 #### Accessing OAuth settings
 
@@ -173,7 +173,7 @@ To register a new OAuth client
 To configure an OAuth Client for Authorization Code Grant
 1. To use this OAuth flow, your client application needs to be a web application with a URL that can be redirected to.
 2. From the OAuth flow drop-down, select Authorization code grant. The Create new OAuth client page displays some an options. 
-3. Enter the Redirect URL of the endpoint in your application that will handle the OAuth redirects and responses from EQUELLA, e.g. <http://mywebapp.com/oauthlogin>
+3. Enter the Redirect URL of the endpoint in your application that will handle the OAuth redirects and responses from openEQUELLA, e.g. <http://mywebapp.com/oauthlogin>
 4. Click Save.
 
 To configure an OAuth Client for Client Credentials Grant
@@ -197,7 +197,7 @@ The Generated tokens section of the OAuth settings page lists all tokens that ha
 Your client application must obtain an OAuth token to make secure API calls.  Once you have retrieved the token, each API call needs to include an "X-Authorization" HTTP header with a value of "access_token=[token]"
 
 ### Obtaining a token via Authorization Code Grant
-This is a multi step process: first you must obtain an authorization code using a redirect response or a browser window.location redirect, then the user logs into EQUELLA, a code is returned to your application via a redirect, your application obtains a token using that code.
+This is a multi step process: first you must obtain an authorization code using a redirect response or a browser window.location redirect, then the user logs into openEQUELLA, a code is returned to your application via a redirect, your application obtains a token using that code.
 
 1. Your application must redirect to the OAuth authorization endpoint .../oauth/authorise:
 ```
@@ -211,14 +211,14 @@ or
 
 NOTE: If you prefer, the authorization endpoint can also be accessed at .../oauth/authorize  (z instead of s)
 
-2. User is presented with an EQUELLA login screen (if they are not already logged in, e.g. in another browser tab)
-3.  The EQUELLA OAuth authorization endpoint redirects to your application (as determined by the redirect_uri) with a code parameter appended:  
+2. User is presented with an openEQUELLA login screen (if they are not already logged in, e.g. in another browser tab)
+3.  The openEQUELLA OAuth authorization endpoint redirects to your application (as determined by the redirect_uri) with a code parameter appended:  
 ```
 [redirect URL]?code=[a short lived code]
 ```
 Do not store this code as it has a limited lifespan (2 minutes) and can only be used once, even if the request containing the code fails.  In this case you would need to obtain another code.
 
-4. Your application needs to detect the presence of the code parameter and do a server side request to the EQUELLA OAuth token endpoint:
+4. Your application needs to detect the presence of the code parameter and do a server side request to the openEQUELLA OAuth token endpoint:
 ```
 .../oauth/access_token?grant_type=authorization_code&client_id=[client id]&code=[code from step 3]
 ```
@@ -237,13 +237,13 @@ Your application must extract the access_token value.
 
 ### Obtaining a token via Implicit Grant
 
-To obtain a token using this flow, simply redirect to the EQUELLA OAuth authorization endpoint with response_type=token
+To obtain a token using this flow, simply redirect to the openEQUELLA OAuth authorization endpoint with response_type=token
 1. Set the browser location to:
 ```
 .../oauth/authorise?response_type=token&client_id=[client id]&redirect_uri=["default" for embedded browser, or redirect URL for Javascript]
 ```
-2. User is presented with an EQUELLA login screen (if they are not already logged in, e.g. in another browser tab)
-3. The EQUELLA OAuth authorization endpoint redirects to either the inbuilt redirect URL (if "default" was specified) or the supplied redirect_uri with the token appended to the URL as a URL fragment:
+2. User is presented with an openEQUELLA login screen (if they are not already logged in, e.g. in another browser tab)
+3. The openEQUELLA OAuth authorization endpoint redirects to either the inbuilt redirect URL (if "default" was specified) or the supplied redirect_uri with the token appended to the URL as a URL fragment:
 ```
 [redirect URL]#access_token=[token]
 ```
@@ -272,7 +272,7 @@ Your application must extract the access_token value.
 
 ## Entities
 
-EQUELLA uses many objects which inherit from a common "entity" super class. The list of entity types include:
+openEQUELLA uses many objects which inherit from a common "entity" super class. The list of entity types include:
 * Schema
 * Collection
 * Course
@@ -546,11 +546,11 @@ The Course type extends the Entity type, plus the following:
 ```
 
 ## Connectors
-Connectors are a type of entity. Currently no read or write operations can be performed on connectors, they must be created manually using the EQUELLA web UI.
+Connectors are a type of entity. Currently no read or write operations can be performed on connectors, they must be created manually using the openEQUELLA web UI.
 
-You can view where EQUELLA content is used in external systems using the connector endpoint.
+You can view where openEQUELLA content is used in external systems using the connector endpoint.
 
-To use the connector endpoint you need to have External system connectors configured within EQUELLA. 
+To use the connector endpoint you need to have External system connectors configured within openEQUELLA. 
 ### Retrieve a list of connectors for an item
 To view the list of connectors available for any item perform a GET on .../api/connector/[item uuid]/[item version]
 
@@ -582,7 +582,7 @@ The Connector type extends the Entity type, plus the following:
 }
 ```
 ## Dynamic Collections
-Dynamic Collections are a type of entity. Currently no write operations can be performed on dynamic collections, they must be created manually using the EQUELLA Administration Console.
+Dynamic Collections are a type of entity. Currently no write operations can be performed on dynamic collections, they must be created manually using the openEQUELLA Administration Console.
 ### Virtual dynamic collections
 The listing endpoint for dynamic collections will return not only "real" dynamic collections, but also dynamic collections which represent virtual values. I.e. a dynamic collection with Dynamic Filtering enabled will appear for each virtual value found, either through a manually entered list or discovered items.
 Virtual dynamic collections utilize a compound UUID of UUID:value format. You can search with dynamic collections on the item search endpoint using compound dynamic collection UUIDs.
@@ -1055,7 +1055,7 @@ The most common attachment type is 'file'.
   }
 }
 ```
-**EQUELLA Resource Attachment**
+**openEQUELLA Resource Attachment**
 ```
 {
   * "type" : "linked-resource",
@@ -1577,7 +1577,7 @@ Hierarchy Browse Topics are entirely read-only.
 
 ## Users
 ### Searching
-The user API endpoint is found at .../api/usermanagement/local/user. It will only search for local EQUELLA users, hence the 'local', but additional usermanagement endpoints will be added in the future. The endpoint will list all local users by default, but additional query string parameters may be supplied:
+The user API endpoint is found at .../api/usermanagement/local/user. It will only search for local openEQUELLA users, hence the 'local', but additional usermanagement endpoints will be added in the future. The endpoint will list all local users by default, but additional query string parameters may be supplied:
 * q - A text query, which will match on username, first name or last name.
 * group - An ID of a group to search within.
 * recursive - If a group parameter is supplied, search through all subgroups of this group as well.
@@ -1590,7 +1590,7 @@ To perform actions on an individual user you use the .../api/usermanagement/loca
 
 You can retrieve a specific user via their username by using the special .../api/usermanagement/local/user/username/[username] endpoint. This is a read-only endpoint, all edits must be made via the endpoint which uses the user ID.
 ### Reassign the ID of existing users
-This function changes all references of a user ID to another ID assigned by you. This can be useful when a user will no longer be using EQUELLA and existing workflow, item ownership, ACL expressions and a multitude of other objects can be assigned to another user.
+This function changes all references of a user ID to another ID assigned by you. This can be useful when a user will no longer be using openEQUELLA and existing workflow, item ownership, ACL expressions and a multitude of other objects can be assigned to another user.
 
 To change a user ID you need to POST an empty request to .../api/user/[user id]/action/changeid/[new user id]
 
@@ -1615,7 +1615,7 @@ Many types contain references to User objects, typically as an owner or an assig
 
 ## Groups
 ### Searching
-The user API endpoint is found at .../api/usermanagement/local/group. It will only search for local EQUELLA groups, hence the 'local', but additional usermanagement endpoints will be added in the future. The endpoint will list all local groups by default, but additional query string parameters may be supplied:
+The user API endpoint is found at .../api/usermanagement/local/group. It will only search for local openEQUELLA groups, hence the 'local', but additional usermanagement endpoints will be added in the future. The endpoint will list all local groups by default, but additional query string parameters may be supplied:
 * q - A text query, which will match on the group name.
 * user - An ID of a user to find all the groups for.
 * allParents - .Works in conjunction with the user parameter. Specify allParents=true to include parent groups in the results for any group that the user is a direct member of.
@@ -1651,9 +1651,9 @@ NOTE: A 200 (success) response can be returned even in the event of failure, sin
 ## Miscellaneous
 
 ### Server Status
-A lightweight server status endpoint exists for load balancing software or hardware to contact to determine if the EQUELLA instance is running. This has benefits over using a web page in that it won't create a guest user session or run unnecessary database queries.
+A lightweight server status endpoint exists for load balancing software or hardware to contact to determine if the openEQUELLA instance is running. This has benefits over using a web page in that it won't create a guest user session or run unnecessary database queries.
 
-Use .../api/status as the health check URL for your load balancer. Currently an empty JSON object is returned from the GET request. If the EQUELLA server returns a 200 status code then it is at least in a state to receive HTTP requests.
+Use .../api/status as the health check URL for your load balancer. Currently an empty JSON object is returned from the GET request. If the openEQUELLA server returns a 200 status code then it is at least in a state to receive HTTP requests.
 ### Formats
 #### Search Results
 Note that the Search Results type is used on several endpoints and the results array may not contain Items, but the type relevant to the endpoint. E.g. the results field is an array of Notifications on the .../api/notification endpoint.
@@ -1977,12 +1977,12 @@ Note that the Search Results type is used on several endpoints and the results a
 
 ## Internal REST API Reference
 
-An internal REST API reference page displays information about all available REST endpoints and the operations and parameters supported for each endpoint. It also displays a link to the EQUELLA REST API Guide.
+An internal REST API reference page displays information about all available REST endpoints and the operations and parameters supported for each endpoint. It also displays a link to the openEQUELLA REST API Guide.
 ### Open the REST API reference
-1. Open a browser and enter the EQUELLA address of the hosting server including the institution name with ‘/apidocs.do’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/institution/logon.do’ would become ‘http://equella.myinstitute.edu/institution/apidocs.do’). The EQUELLA REST API page displays.
-2. If you wish to try out the GET methods, you will need to login to EQUELLA as a user with appropriate item discovery privileges.
+1. Open a browser and enter the openEQUELLA address of the hosting server including the institution name with ‘/apidocs.do’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/institution/logon.do’ would become ‘http://equella.myinstitute.edu/institution/apidocs.do’). The openEQUELLA REST API page displays.
+2. If you wish to try out the GET methods, you will need to login to openEQUELLA as a user with appropriate item discovery privileges.
 
-The EQUELLA REST API reference lists Endpoints (search, item-lock, item-action, item, file and item-relation). Each endpoint has the following links:
+The openEQUELLA REST API reference lists Endpoints (search, item-lock, item-action, item, file and item-relation). Each endpoint has the following links:
 * Show/Hide – toggles the operations list for each endpoint.
 * List Operations – lists the available operations for each endpoint.
 * Expand Operations – lists the available operations for each endpoint with a parameter dialog.

@@ -12,10 +12,10 @@ Table of Contents
 
 ## Remote repositories overview
 
-The Remote repository search allows users to search multiple external sources, including other EQUELLA repositories, for content using a single search query. The results display and can be imported directly into a contribution wizard. 
+The Remote repository search allows users to search multiple external sources, including other openEQUELLA repositories, for content using a single search query. The results display and can be imported directly into a contribution wizard. 
 
 Remote repository searches can be configured to return results from internet search engines, university library databases and online course management systems using the following search types:
-* EQUELLA
+* openEQUELLA
 * Multimedia Educational Resource for Learning and Online Teaching (MERLOT)
 * Search/Retrieval via URL (SRU)
 * Search/Retrieve Web service (SRW)
@@ -23,10 +23,10 @@ Remote repository searches can be configured to return results from internet sea
 
 The purpose of this guide is to provide administrators with an overview of the various remote repository search types available and an understanding of their configuration and use. 
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation.
 
 ## Remote repository searches
-A feature of remote repository searches is their link to a collection to import search result metadata into. A collection is nominated while configuring the search, into which the search results are imported for contributing to your EQUELLA repository.
+A feature of remote repository searches is their link to a collection to import search result metadata into. A collection is nominated while configuring the search, into which the search results are imported for contributing to your openEQUELLA repository.
 
 Remote repository searches are accessed from the Search page drop-down list, or on the Contribute page under the collection where selected results will be added. 
 
@@ -44,7 +44,7 @@ Users can complete and publish the wizard as normal to contribute the imported s
 Remote repository searches are created and modified using the Remote Repositories tool available from the Administration Console.
 
 #### To access the Remote Repositories tool
-1.  Log in to EQUELLA as an administrator, select Settings then Administration console.
+1.  Log in to openEQUELLA as an administrator, select Settings then Administration console.
 2.  The Administration console displays. Select Remote Repositories. A list of all previously configured remote repository searches displays. 
 
 #### Administration Console elements
@@ -77,7 +77,7 @@ Click Export to export a remote repository search as a ZIP file.
 
 ## Search types  
 Each remote repository search type can be configured to display results that can be contributed to a collection using the user process described above. Available search types include:
-* EQUELLA
+* openEQUELLA
 * MERLOT
 * SRU
 * SRW
@@ -104,11 +104,11 @@ The common Details page elements are:
 
 The search specific elements are described in the sections detailing the individual search types, as follows:
 
-### EQUELLA
-The EQUELLA search allows for the searching of other EQUELLA repositories. 
+### openEQUELLA
+The openEQUELLA search allows for the searching of other openEQUELLA repositories. 
 
 The configurable elements for the EQUELLA—Details page are:
-* Institution URL – enter the address of the EQUELLA institution to search.
+* Institution URL – enter the address of the openEQUELLA institution to search.
 * Shared secret ID – enter the shared secret ID for authentication of search requests.
 * Shared secret value – enter the shared secret value for authentication of search requests.
 * Sign-in option – select to sign-in as the current user, or specify another user based on your institution configuration.
@@ -146,7 +146,7 @@ The configurable elements for the Z39.50—Details page are:
 * Password – enter the password for remote repository authentication.
 * Import record format – select from the drop-down list of record formats.
 * Load default attributes – click Select to choose the default advanced search field values to use on the Z39.50 search page. Once selected, the search field values display in the Advanced search fields table at the bottom of the page. The options available are:
-    * EQUELLA Default – loads the default EQUELLA values (this is the default value).
+    * openEQUELLA Default – loads the default openEQUELLA values (this is the default value).
     * Bath level 0 – loads the Bath level 0 values.
     * Bath level 1 – loads the Bath level 1 values.
     * To learn more about the Bath Profile, go to <http://www.ukoln.ac.uk/interop-focus/activities/z3950/int_profile/bath/draft/stable1.html>.

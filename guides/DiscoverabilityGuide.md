@@ -5,7 +5,7 @@
 
 Table of Contents
 * [Search Engine Optimization](#search-engine-optimization)
-* [openEQUELLA Configuration](#equella-configuration)  
+* [openEQUELLA Configuration](#openequella-configuration)  
 * [Increasing Discoverability](#increasing-discoverability)
 * [Google Scholar](#google-scholar)
 * [References](#references)  

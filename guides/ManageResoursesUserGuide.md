@@ -4,7 +4,7 @@ Table of Contents
 
 [Manage resources overview](#manage-resources-overview)
 
-[EQUELLA Digital Repository](#equella-digital-repository)
+[openEQUELLA Digital Repository](#openequella-digital-repository)
 
 [Manage resources](#manage-resources)
 
@@ -17,18 +17,18 @@ Table of Contents
 [My content](#my-content)
 
 ## Manage resources overview
-An EQUELLA resource typically comprises metadata (information) and one or more attachments uploaded during contribution. When a resource is displayed, important elements of its metadata are shown along with links to attachments. Modifications to a resource comprise modification of the metadata or the addition or removal of attachments.
+An openEQUELLA resource typically comprises metadata (information) and one or more attachments uploaded during contribution. When a resource is displayed, important elements of its metadata are shown along with links to attachments. Modifications to a resource comprise modification of the metadata or the addition or removal of attachments.
 
-Every resource in the EQUELLA repository is assigned an owner, with the owner typically being the resource’s creator or contributor. Owners are typically configured with privileges to maintain their own resources, such as the ability to modify drafts, create versions and assign users for sharing ownership. The system administrators are granted more extensive privileges, having access to the Manage resources function. This function allows content and system administrators to manage resources, either individually or as bulk operations, regardless of ownership.
+Every resource in the openEQUELLA repository is assigned an owner, with the owner typically being the resource’s creator or contributor. Owners are typically configured with privileges to maintain their own resources, such as the ability to modify drafts, create versions and assign users for sharing ownership. The system administrators are granted more extensive privileges, having access to the Manage resources function. This function allows content and system administrators to manage resources, either individually or as bulk operations, regardless of ownership.
 
-The purpose of this guide is to demonstrate to administrators the range of options available for resource management. The EQUELLA My Resources User Guide provides information on managing resources for owners.
+The purpose of this guide is to demonstrate to administrators the range of options available for resource management. The openEQUELLA My Resources User Guide provides information on managing resources for owners.
 
-Please note that this guide has been developed to reflect the full capabilities of EQUELLA and as such may differ in appearance from your own installation.
+Please note that this guide has been developed to reflect the full capabilities of openEQUELLA and as such may differ in appearance from your own installation.
 
-## EQUELLA Digital Repository
-#### To access EQUELLA
-1. Open a browser and enter your EQUELLA URL (e.g.‘http://equella.myinstitution.edu’).
-2. Log in to EQUELLA. The EQUELLA Dashboard displays.  The EQUELLA Digital Repository allows users to search, create, store, manage, view, and share content.
+## openEQUELLA Digital Repository
+#### To access openEQUELLA
+1. Open a browser and enter your openEQUELLA URL (e.g.‘http://equella.myinstitution.edu’).
+2. Log in to openEQUELLA. The openEQUELLA Dashboard displays.  The openEQUELLA Digital Repository allows users to search, create, store, manage, view, and share content.
 
 ## Manage resources
 Suitably-privileged administrators have the ability to access the Manage resources function to perform a variety of actions to either an individual resource or a selection of resources in one instance.
@@ -39,7 +39,7 @@ Suitably-privileged administrators have the ability to access the Manage resourc
 ## Manage resources page
 The Manage resources page displays resources and provides functionality for viewing, sorting and filtering resources. Additionally, unpublished files and web pages from users’ scrapbooks can be displayed on the Manage resources results page. Elements of this page can include:
 ### Search pane
-* Search—original search terms (e.g. EQUELLA) are displayed in the search field with a Search button. New search terms can be entered, if required.
+* Search—original search terms (e.g. openEQUELLA) are displayed in the search field with a Search button. New search terms can be entered, if required.
 * Within—select a specific collection, My content (scrapbook content) or All resources. 
 
 ### Search results
@@ -74,7 +74,7 @@ Search results can be shared with other users by sending them the search results
 Clicking Share Search Query on the right-hand side of the page displays the Share search query dialog where results can be shared by RSS or Atom feed, via URL and via e-mail. 
 
 * Share search results as an RSS or Atom feed—selecting the RSS feed or Atom feed link will display a subscription page. Subscribed users are notified if resources are updated or added to the search results.
-* Share search results via URL—users can send a link to the search results page to other users by copying and pasting the URL into an email or other document. The EQUELLA log in page is displayed when the link is clicked. Once logged in, the user is taken directly to the search results page.
+* Share search results via URL—users can send a link to the search results page to other users by copying and pasting the URL into an email or other document. The openEQUELLA log in page is displayed when the link is clicked. Once logged in, the user is taken directly to the search results page.
 * Share search results via e-mail—users can send results to others via email. Enter an email address in the field provided and click Send Email. Check the Share only results viewable by guests checkbox if sending to users outside your institution.
 
 ### Selection pane
@@ -102,7 +102,7 @@ The following filters are included:
 #### Filter by owner
 Click Select User to display the Select owner to filter by dialog. Enter search terms and click Search to display a list of matching results. 
 
-Select a user (e.g. Internal EQUELLA Demonstration Teacher) then click Select this user to filter the results to those owned by the selected user. The selected owner is displayed in the Filter by owner pane. 
+Select a user (e.g. Internal openEQUELLA Demonstration Teacher) then click Select this user to filter the results to those owned by the selected user. The selected owner is displayed in the Filter by owner pane. 
 
 The owner selected can be changed by clicking Change user, or removed by clicking Close.
 
@@ -122,12 +122,12 @@ Check this checkbox to display resources currently in moderation. This includes 
 If required, select a workflow from the drop-down list.
 
 #### Only show purchased items
-This filter is relevant for EQUELLA instances set up as EQUELLA Content Exchange Store fronts.
+This filter is relevant for openEQUELLA instances set up as openEQUELLA Content Exchange Store fronts.
 
 Select this checkbox to show only resources that have been purchased from Store catalogues.
 
 #### Filter by subscription end date
-This filter is relevant for EQUELLA instances set up as EQUELLA Content Exchange Store fronts, where resources have been purchased on a subscription basis.
+This filter is relevant for openEQUELLA instances set up as openEQUELLA Content Exchange Store fronts, where resources have been purchased on a subscription basis.
 
 Select a qualifier from the drop-down list (After, Before, Between or On), then click the calendar field or icon to display a calendar control. 
 
@@ -240,11 +240,11 @@ When a new resource has been created using the Create a new version action, the 
 2. Select the Title of the version to display the resource summary page of the selected version.
 
 ### Find uses function
-The Find uses function is part of the EQUELLA Push to LMS feature.
+The Find uses function is part of the openEQUELLA Push to LMS feature.
 
-Select Find uses from the Details section to display all current uses for the selected resource within a specific connector (LMS). The Find uses link only displays if at least one external connector has been configured in the EQUELLA system.) 
+Select Find uses from the Details section to display all current uses for the selected resource within a specific connector (LMS). The Find uses link only displays if at least one external connector has been configured in the openEQUELLA system.) 
 
-EQUELLA supports Moodle and Blackboard connectors (and local resources for the Find Uses function), and more than one may be configured. If there are multiple connectors configured, a drop-down box displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen displays immediately. If the connector Local Resources is configured and selected, the system displays all uses of the current resource and attachments within other resources in the EQUELLA repository.
+openEQUELLA supports Moodle and Blackboard connectors (and local resources for the Find Uses function), and more than one may be configured. If there are multiple connectors configured, a drop-down box displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen displays immediately. If the connector Local Resources is configured and selected, the system displays all uses of the current resource and attachments within other resources in the openEQUELLA repository.
 
 If there is only one connector configured, the Find uses screen is displayed immediately. 
 
@@ -297,11 +297,11 @@ This page is made up of the following elements:
 The Actions area can display the following operations:
 
 ### Add to external system
-The Add to external system function is part of the EQUELLA Push to LMS feature.
+The Add to external system function is part of the openEQUELLA Push to LMS feature.
 
-Selecting this action allows the user to add all or parts of the resource to external systems (LMSs) that have been configured in the system. The Add to external system link only displays if at least one external (LMS) connector has been configured in the EQUELLA system. 
+Selecting this action allows the user to add all or parts of the resource to external systems (LMSs) that have been configured in the system. The Add to external system link only displays if at least one external (LMS) connector has been configured in the openEQUELLA system. 
 
-EQUELLA supports Moodle and Blackboard LMS connectors, and more than one may be configured. If there are multiple connectors configured, a drop-down list displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen is displayed immediately.
+openEQUELLA supports Moodle and Blackboard LMS connectors, and more than one may be configured. If there are multiple connectors configured, a drop-down list displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen is displayed immediately.
 
 The Add to external system function allows the addition of a resource to multiple course locations within the selected LMS connector.
 
@@ -466,7 +466,7 @@ A preferred schema transformation can be applied to the cloned resources, if req
 Click Execute to complete the action.
 
 ### Set pricing tiers
-This bulk action is used with EQUELLA systems that are set up as a Store. 
+This bulk action is used with openEQUELLA systems that are set up as a Store. 
 
 ### Execute Script
 The Execute script action allows users to run scripts across the selected resources. When selecting this option, a Next button displays. Once clicked, the Execute script dialog displays. 
@@ -485,10 +485,10 @@ If a syntax error displays, check your script for errors, then recheck the synta
 6. Click Close.
 
 ### Add to catalogues
-This bulk action is used with EQUELLA systems that are set up as a Store. 
+This bulk action is used with openEQUELLA systems that are set up as a Store. 
 
 ### Exclude from catalogues
-This bulk action is used with EQUELLA systems that are set up as a Store. 
+This bulk action is used with openEQUELLA systems that are set up as a Store. 
 
 ### Edit metadata
 The Edit metadata action is used to change the same metadata properties for the selected resources. The following actions are available:

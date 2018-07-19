@@ -1,6 +1,6 @@
 # Glossary of Terms
 
-An alphabetical list of frequently used terms within EQUELLA.
+An alphabetical list of frequently used terms within openEQUELLA.
 
 **ACL** - Access Control List—list of actions which associate users, groups or roles with privileges for particular items, collections or institutions.
 
@@ -10,15 +10,15 @@ An alphabetical list of frequently used terms within EQUELLA.
 
 **Activation** - Used to describe enabling copyright compliance recording. Once activated the associated copyright content can be viewed and used.
 
-**Active cache** - Regularly updated, localised copy of the EQUELLA Digital Repository for users who either have slower connection speeds or are geographically separated from the repository. 
+**Active cache** - Regularly updated, localised copy of the openEQUELLA Digital Repository for users who either have slower connection speeds or are geographically separated from the repository. 
 
-**Activity Assembler** - EQUELLA application that allows users to create, customise, assemble and reuse a variety of different learning objects and documents into learning sequences or training modules (Activities or Activity Plans), using resources from the Digital Repository, the local computer or network, and the internet. (Note: The EQUELLA Activity Assembler was deprecated in EQUELLA v5.0.)
+**Activity Assembler** - openEQUELLA application that allows users to create, customise, assemble and reuse a variety of different learning objects and documents into learning sequences or training modules (Activities or Activity Plans), using resources from the Digital Repository, the local computer or network, and the internet. (Note: The openEQUELLA Activity Assembler was deprecated in openEQUELLA v5.0.)
 
-**Administration console** - EQUELLA application that enables the administrator to configure and manage the EQUELLA suite of tools.
+**Administration console** - openEQUELLA application that enables the administrator to configure and manage the openEQUELLA suite of tools.
 
 **Advanced Image Viewer** - See Large Image Viewer.
 
-**Advanced management** - Item Management page that provides an item metadata filter allowing the administrator to target metadata related to a specific item, further refining searches within the EQUELLA Digital Repository. Typically accessed through the Adv. Item Management link in the Administer group in the EQUELLA Home page navigation pane.
+**Advanced management** - Item Management page that provides an item metadata filter allowing the administrator to target metadata related to a specific item, further refining searches within the openEQUELLA Digital Repository. Typically accessed through the Adv. Item Management link in the Administer group in the openEQUELLA Home page navigation pane.
 
 **Advanced scripting** - Contribution wizard control that uses JavaScript™, FreeMarker and HTML mark-up languages to build customised wizard controls. The control is shareable using import and export options.
 
@@ -46,11 +46,11 @@ An alphabetical list of frequently used terms within EQUELLA.
 
 **BIRT** - Business Intelligence and Reporting Tools—custom reporting engine that allows administrators to design and execute custom reports.
 
-**Blackboard™** -  Third-party system that can be integrated with EQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
+**Blackboard™** -  Third-party system that can be integrated with openEQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
 
 **Bookmark** - Favourite item or location that has been stored for quick access at a later date.
 
-**Boolean operators** -  Allows search terms to be combined through logic operators. Operators supported within EQUELLA are AND, ‘+’, OR, NOT and ‘-’. Parentheses can be used to group conditions together.
+**Boolean operators** -  Allows search terms to be combined through logic operators. Operators supported within openEQUELLA are AND, ‘+’, OR, NOT and ‘-’. Parentheses can be used to group conditions together.
 Breadcrumb or breadcrumb trail
 Method of navigation through levels of a page, allowing users to keep track of their location. Typically appearing horizontally across the top of a page and providing links back to each previous page that the user navigated through (e.g. Home > Section > Subsection).
 
@@ -62,7 +62,7 @@ Method of navigation through levels of a page, allowing users to keep track of t
 
 **Cache** -  See Active cache.
 
-**CAL** - Copyright Agency Limited—organisation that manages licence fees for Australian copyright holders. EQUELLA provides a convenient method to track content usage and the number of enrolled users against activated items and report in the CAL format.
+**CAL** - Copyright Agency Limited—organisation that manages licence fees for Australian copyright holders. openEQUELLA provides a convenient method to track content usage and the number of enrolled users against activated items and report in the CAL format.
 
 **Calendar** - Contribution and power search wizard control that allows the selection of a date or date range (e.g. to select a publication, creation or modification date, or to control resource use or availability).
 
@@ -79,16 +79,16 @@ Digital Repository grouping created for the storage of collections.
 
 **Citations** -  Style used when citing (quoting) licensed material. Appearance can be controlled by an XSLT.
 
-**CLA** - Copyright Licensing Agency Limited—organisation that manages licenses for United Kingdom copyright holders. EQUELLA provides a convenient method to track content usage and the number of enrolled users against activated items and report in the CLA format.
+**CLA** - Copyright Licensing Agency Limited—organisation that manages licenses for United Kingdom copyright holders. openEQUELLA provides a convenient method to track content usage and the number of enrolled users against activated items and report in the CLA format.
 
 **Clone** -  Item administration operation that creates a copy of an item.
 
 **CMS** - 
-Content Management System—third-party training software that can be integrated with EQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Learning Management System (LMS) or Virtual Learning Environment (VLE).
+Content Management System—third-party training software that can be integrated with openEQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Learning Management System (LMS) or Virtual Learning Environment (VLE).
 
 **Collaborators** - Selected users who have permission to edit or update an item, collection or other resource.
 
-**Collection** -  Unique container to store items and associated information (metadata) within the EQUELLA Digital Repository.
+**Collection** -  Unique container to store items and associated information (metadata) within the openEQUELLA Digital Repository.
 
 **Collection Definition editor** - Administration Console tool used to create and modify collections.
 
@@ -102,12 +102,12 @@ Location in the repository for the storage of items.
 
 **Content package** - A file comprising resources and related metadata.
 
-**Contribute** - To add an item to the EQUELLA Digital Repository, via a contribution wizard. The contributor must enter information (metadata) describing the item during contribution.
+**Contribute** - To add an item to the openEQUELLA Digital Repository, via a contribution wizard. The contributor must enter information (metadata) describing the item during contribution.
 
 **Contribution wizard** - 
 Sequence of pages used to gather information (metadata) about, and manage the rights associated with, contributed items.
 
-**Contributor** -  User who adds (contributes) an item to the EQUELLA Digital Repository.
+**Contributor** -  User who adds (contributes) an item to the openEQUELLA Digital Repository.
 
 **Control editor** -  Pane located on the right-hand side of the Collection Definition Editor—Wizard page and the Power Search Editor—Wizard page that displays the details of the control currently selected in the hierarchy pane.
 
@@ -166,13 +166,13 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Embed** - To display a copy of an attachment in the HTML Editor (as opposed to displaying the item as a link).
 
-**EQUELLA Agents Framework** - Suite of services that enables third parties to integrate and build applications utilising EQUELLA functionality.
+**openEQUELLA Agents Framework** - Suite of services that enables third parties to integrate and build applications utilising openEQUELLA functionality.
 
-**EQUELLA Cluster Testing tool** - Troubleshooting tool for diagnosing cluster network configuration.
+**openEQUELLA Cluster Testing tool** - Troubleshooting tool for diagnosing cluster network configuration.
 
-**EQUELLA HTML editor** - Allows users to create, load and edit a series of HTML web pages. It provides numerous operations including the selection of repository content.
+**openEQUELLA HTML editor** - Allows users to create, load and edit a series of HTML web pages. It provides numerous operations including the selection of repository content.
 
-**EQUELLA Manager** - EQUELLA application for upgrading EQUELLA.
+**openEQUELLA Manager** - openEQUELLA application for upgrading openEQUELLA.
 
 **eReserve** - Electronic library holdings of material copied under educational use provisions of the Copyright Act.
 
@@ -182,11 +182,11 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Export engine** - Tool used to export item XML, item attachments or both in a single bulk operation. It can be done on a per-collection basis or institution-wide.
 
-**External Authentication plug-in** - Administration Console User Management plug-in that manages identity and access permissions allowing users to exchange information. The information exchanged determines which users can access EQUELLA.
+**External Authentication plug-in** - Administration Console User Management plug-in that manages identity and access permissions allowing users to exchange information. The information exchanged determines which users can access openEQUELLA.
 
 **Extension** - Defines the format of a file (e.g .txt, .jpg, .doc etc).
 
-**Federated search** - Search method that allows users to search multiple external sources, including other EQUELLA repositories, for content using a single search query. Sources can include university library databases, Internet search engines and online course management systems.
+**Federated search** - Search method that allows users to search multiple external sources, including other openEQUELLA repositories, for content using a single search query. Sources can include university library databases, Internet search engines and online course management systems.
 
 **Field** - Text box providing a space for entering or editing information.
 
@@ -200,7 +200,7 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Fuzzy search** - Uses the tilde ‘~’ symbol at the end of a single word search term to search for words similar in spelling to the entered term.
 
-**Generate reports** - Page where a variety of pre-configured reports can be run, typically accessed through the Administer group in the navigation pane on the EQUELLA Home page. Reports are configured with the Administration Console Reporting tool.
+**Generate reports** - Page where a variety of pre-configured reports can be run, typically accessed through the Administer group in the navigation pane on the openEQUELLA Home page. Reports are configured with the Administration Console Reporting tool.
 
 **Googlebook search** - Contribution wizard control that allows users to search for Google™ Books content to be added to a contributed item.
 
@@ -212,11 +212,11 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Harvard** - Citation style used when referencing licensed material.
 
-**Harvester** - Custom upload application used to collect learning objects and resources from third party institutions and upload them automatically to the EQUELLA repository.
+**Harvester** - Custom upload application used to collect learning objects and resources from third party institutions and upload them automatically to the openEQUELLA repository.
 
-**Hierarchy editor** - Administration Console tool used to create and edit content in the hierarchy pane on the EQUELLA Home page.
+**Hierarchy editor** - Administration Console tool used to create and edit content in the hierarchy pane on the openEQUELLA Home page.
 
-**Hierarchy pane** - Central feature on the EQUELLA Home page. Linked tree-like structure displaying content and materials available to the user in a hierarchical list so that they can be easily browsed. Also an element of the Collection Definition Editor—Wizard page where controls can be added to provide the structure for the pages and controls that make up the wizard.
+**Hierarchy pane** - Central feature on the openEQUELLA Home page. Linked tree-like structure displaying content and materials available to the user in a hierarchical list so that they can be easily browsed. Also an element of the Collection Definition Editor—Wizard page where controls can be added to provide the structure for the pages and controls that make up the wizard.
 
 **HTML Edit box** - Contribution wizard control that provides an inline HTML Editor allowing users to create web page content during contribution.
 
@@ -224,45 +224,45 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Hyperlink** - Reference link to another location in the same or another document or report.
 
-**Import engine** - Uploads external data sources consisting of metadata or a combination of metadata and file attachments to the EQUELLA Digital Repository. Allows users to supply an XSLT for custom mapping of the import item’s metadata.
+**Import engine** - Uploads external data sources consisting of metadata or a combination of metadata and file attachments to the openEQUELLA Digital Repository. Allows users to supply an XSLT for custom mapping of the import item’s metadata.
 
 **IMS** - Instructional Management Systems—content packaging standard.
 
 **Initial value** - Default value that is automatically applied to a wizard control, but that may also be altered at the time of contribution or during editing. Can be used for storing commonly entered information for a given collection, such as course names or codes.
 
-**Institution Manager** - EQUELLA application that allows for convenient hosting of EQUELLA. One physical installation of EQUELLA can host as many virtual installations of EQUELLA as required.
+**Institution Manager** - openEQUELLA application that allows for convenient hosting of openEQUELLA. One physical installation of openEQUELLA can host as many virtual installations of openEQUELLA as required.
 
-**Internal Groups plug-in** - Administration Console User Management plug-in that enables EQUELLA users to be managed as groups when no groups are provided by the UMS.
+**Internal Groups plug-in** - Administration Console User Management plug-in that enables openEQUELLA users to be managed as groups when no groups are provided by the UMS.
 
-**Internal Roles plug-in** - Administration Console User Management plug-in. Internal roles are labels that offer a greater variety of user groupings or sets than EQUELLA Groups and can be used in conjunction with any configured UMP.
+**Internal Roles plug-in** - Administration Console User Management plug-in. Internal roles are labels that offer a greater variety of user groupings or sets than openEQUELLA Groups and can be used in conjunction with any configured UMP.
 
-**Internal Users plug-in** - Administration Console User Management plug-in that can provide user management options that can be applied concurrently with an external plug-in. This plug-in allows the creation of EQUELLA users.
+**Internal Users plug-in** - Administration Console User Management plug-in that can provide user management options that can be applied concurrently with an external plug-in. This plug-in allows the creation of openEQUELLA users.
 
-**Item** - Content that is stored in the EQUELLA Digital Repository. Items are contributed to a customised Collection using a contribution wizard. An EQUELLA Item typically comprises information (metadata) and one or more files uploaded during contribution.
+**Item** - Content that is stored in the openEQUELLA Digital Repository. Items are contributed to a customised Collection using a contribution wizard. An openEQUELLA Item typically comprises information (metadata) and one or more files uploaded during contribution.
 
-**Item Administration** - Page providing administrator access to all items in the repository, regardless of ownership. Typically accessed through the Item Management link in the Administer group in the EQUELLA Home page navigation pane.
+**Item Administration** - Page providing administrator access to all items in the repository, regardless of ownership. Typically accessed through the Item Management link in the Administer group in the openEQUELLA Home page navigation pane.
 
 **Item Finder** - Contribution wizard control—deprecated in favour of the Resource Selector control.
 
-**Item status** - Every item in the EQUELLA repository has a status that can determine filtering and viewing options, and which operations are allowable on the item.
+**Item status** - Every item in the openEQUELLA repository has a status that can determine filtering and viewing options, and which operations are allowable on the item.
 
 **Item Summary Display template** - Controls what metadata is displayed on the Item Summary page.
 
 **ITunes U™ browser** - Contribution wizard control that allows users to search for and add iTunesU™ resources to a contributed item.
 
-**Janison** - Third-party system that can be integrated with EQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
+**Janison** - Third-party system that can be integrated with openEQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
 
-**JavaScript™** - Scripting language used to enhance the functionality of EQUELLA processes.
+**JavaScript™** - Scripting language used to enhance the functionality of openEQUELLA processes.
 
 **Kerberos™** - Protocol and mechanism for securely authenticating users of a public network.
 
 **Key resources** - Important resources relating to a hierarchy topic.
 
-**Language pack** - Allows the default controls in EQUELLA to display institution specific text and users to select a preferred language for the user interface display.
+**Language pack** - Allows the default controls in openEQUELLA to display institution specific text and users to select a preferred language for the user interface display.
 
-**Languages plug-in** - Administration Console System Settings plug-in that enables the use of multiple languages within EQUELLA and provides customisation of EQUELLA labels and text (e.g. display titles and error messages) to specific locales.
+**Languages plug-in** - Administration Console System Settings plug-in that enables the use of multiple languages within openEQUELLA and provides customisation of openEQUELLA labels and text (e.g. display titles and error messages) to specific locales.
 
-**Large Image Viewer** - Allows users to easily view very large, detailed images stored in the EQUELLA repository.
+**Large Image Viewer** - Allows users to easily view very large, detailed images stored in the openEQUELLA repository.
 
 **LDAP** - Lightweight Directory Access Protocol—a popular protocol for user authentication.
 
@@ -280,7 +280,7 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Live** - Item status for items that have been published to the repository.
 
-**LMS** - Learning Management System—third-party training software that can be integrated with EQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Content Management System (CMS) or Virtual Learning Environment (VLE).
+**LMS** - Learning Management System—third-party training software that can be integrated with openEQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Content Management System (CMS) or Virtual Learning Environment (VLE).
 
 **Load Attachment** - Contribution wizard control that allows users to upload a single attachment to the chosen collection during item contribution.
 
@@ -288,23 +288,23 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Login plug-in** - Administration Console System Settings plug-in used for configuring remote login and authentication by IP address options.
 
-**Login Notice Editor plug-in** - Administration Console System Settings plug-in used to edit the notice that appears when users log in to EQUELLA.
+**Login Notice Editor plug-in** - Administration Console System Settings plug-in used to edit the notice that appears when users log in to openEQUELLA.
 
 **Mail server** - Computer that sends and receives email on behalf of users and holds them for later retrieval.
 
-**Mail Server plug-in** - Administration Console System Settings plug-in that enables the configuration of automatically generated emails to EQUELLA users.
+**Mail Server plug-in** - Administration Console System Settings plug-in that enables the configuration of automatically generated emails to openEQUELLA users.
 
 **Make live** - Item administration operation that returns items that have been archived to a live state, making them discoverable to users with the appropriate privileges.
 
-**Manage Activations** - Copyright management page where, depending on the privileges granted, previously activated copyright compliant items can be deactivated, deleted, or rolled-over for further use. Typically accessed through the Administer group in the EQUELLA Home page navigation pane.
+**Manage Activations** - Copyright management page where, depending on the privileges granted, previously activated copyright compliant items can be deactivated, deleted, or rolled-over for further use. Typically accessed through the Administer group in the openEQUELLA Home page navigation pane.
 
 **MERLOT** - Multimedia Educational Resource for Learning and Online Teaching—searchable online collection of learning materials.
 
-**Metadata** - Descriptive data usually comprising keywords, descriptions, dates and other information describing the contents of an item. Metadata is used for searching and managing items within the EQUELLA Digital Repository.
+**Metadata** - Descriptive data usually comprising keywords, descriptions, dates and other information describing the contents of an item. Metadata is used for searching and managing items within the openEQUELLA Digital Repository.
 
 **Metadata mapping** - Enables the automatic mapping of metadata from a contributed item or literal value to a particular schema node of the collection schema during contribution.
 
-**Metadata schema** - Storage structure used to hold an item’s metadata. A metadata schema that conforms to an available standard increases the effectiveness and operability of items, enabling searching and management of items within the EQUELLA Digital Repository.
+**Metadata schema** - Storage structure used to hold an item’s metadata. A metadata schema that conforms to an available standard increases the effectiveness and operability of items, enabling searching and management of items within the openEQUELLA Digital Repository.
 
 **Metadata target** - Schema item designated as the storage area for entered data.
 
@@ -318,7 +318,7 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Moderator** - User responsible for accepting, editing or rejecting an item in order to progress it through a workflow.
 
-**Moodle™** - Third-party system that can be integrated with EQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
+**Moodle™** - Third-party system that can be integrated with openEQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
 
 **Move** - Item administration operation allowing an item to be transferred to a different collection. A preferred schema transform can be applied to the moved item if required.
 
@@ -328,17 +328,17 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **My Favourites** - User bookmarking feature that allows users to easily add, view, search for and manage their bookmarks. These resources can be added to items during the contribution process.
 
-**My Items** - Page listing all items belonging to users, providing access to view and edit these items. Typically accessed through the Manage group in the EQUELLA Home page navigation pane.
+**My Items** - Page listing all items belonging to users, providing access to view and edit these items. Typically accessed through the Manage group in the openEQUELLA Home page navigation pane.
 
 **My Searches** - Personal search bookmarking feature that allows users to add and manage their search results.
 
 **Navigation Builder** - Contribution wizard control that allows users to: organise item content into a package with customised navigation; provide content viewers with a ‘split view’ option where attachments can be viewed in two independent panes; rename files; and specify the viewer type for individual attachments.
 
-**Navigation Group** - Group of navigation links in the navigation pane on the EQUELLA Home page (e.g. the Search Navigation Group includes Basic Search, Guided Search and so on).
+**Navigation Group** - Group of navigation links in the navigation pane on the openEQUELLA Home page (e.g. the Search Navigation Group includes Basic Search, Guided Search and so on).
 
-**Navigation link** - - Component of a Navigation Group in the navigation pane on the left-hand side of the EQUELLA Home page, provided for user navigation and configurable within the Administration Console. Can also be configured to appear on the login page.
+**Navigation link** - - Component of a Navigation Group in the navigation pane on the left-hand side of the openEQUELLA Home page, provided for user navigation and configurable within the Administration Console. Can also be configured to appear on the login page.
 
-**Navigation pane** - Area displayed on the left-hand side of EQUELLA pages, containing Navigation Groups and Links. Not visible during contribution if the contribution wizard features sidebar wizard navigation.
+**Navigation pane** - Area displayed on the left-hand side of openEQUELLA pages, containing Navigation Groups and Links. Not visible during contribution if the contribution wizard features sidebar wizard navigation.
 
 **New version** - Item administration operation that displays the contribution wizard for the item so that data and files can be modified and the new version can be published or submitted for moderation. When the new version reaches the live state, the current item is automatically archived.
 
@@ -362,7 +362,7 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Page** - Contribution wizard control used to provide logical steps in the contribution wizard, with each wizard comprising at least one page. Pages can be displayed as tabs across the top of the wizard or vertically down the left-hand side of the wizard.
 
-**Pane** - Divided section of the page (e.g. the navigation pane on the EQUELLA Home page).
+**Pane** - Divided section of the page (e.g. the navigation pane on the openEQUELLA Home page).
 
 **Parallel steps/node** - Workflow step type that allows a workflow to be branched so multiple branches can be completed concurrently. All branches must be completed for the workflow to leave a parallel step.
 
@@ -382,13 +382,13 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Proximity search** - Uses the tilde ‘~’ symbol at the end of a phrase to find words that are close to each other.
 
-**Proxy Server** - Server that acts as an intermediary between remote users and EQUELLA.
+**Proxy Server** - Server that acts as an intermediary between remote users and openEQUELLA.
 
-**Publish** - Contribute an item to the EQUELLA Digital Repository.
+**Publish** - Contribute an item to the openEQUELLA Digital Repository.
 
 **Purge** - Item administration operation displayed for items that have been deleted. This operation causes the item to be purged immediately from the repository. Purged items are not recoverable, all files and data are removed from the filestore and database.
 
-**Quick Contribute plug-in** - Administration Console System Settings plug-in that enables a Quick Contribute control on the selection EQUELLA Home page for integrated third-party systems such as Blackboard™ and Moodle™. The control provides a simple way of adding files from the local computer or network to a course as an EQUELLA item and prevents duplicate files being uploaded.
+**Quick Contribute plug-in** - Administration Console System Settings plug-in that enables a Quick Contribute control on the selection openEQUELLA Home page for integrated third-party systems such as Blackboard™ and Moodle™. The control provides a simple way of adding files from the local computer or network to a course as an openEQUELLA item and prevents duplicate files being uploaded.
 
 **Radio button** - One of a group of options whose on-screen appearance is a circle followed by an option name.
 
@@ -413,9 +413,9 @@ Workflow node where an item is able to re-enter the workflow after it has been m
 
 **Reporting** - Administration Console tool used to upload reports.
 
-**Replicated Datastore plug-in** - Administration Console User Management plug-in that provides a flexible method for automatically creating EQUELLA users from any datastore that can be queried using SQL.
+**Replicated Datastore plug-in** - Administration Console User Management plug-in that provides a flexible method for automatically creating openEQUELLA users from any datastore that can be queried using SQL.
 
-**Resource** - Personal content stored in the My Content area of the EQUELLA Digital Repository. Resources are not shared with other users unless they have been added to items or included in a webpage.
+**Resource** - Personal content stored in the My Content area of the openEQUELLA Digital Repository. Resources are not shared with other users unless they have been added to items or included in a webpage.
 
 **Resource Selector** - Contribution wizard control that enables users to search for and link to other items or attachments within the repository or from external sources.
 
@@ -425,11 +425,11 @@ Workflow node where an item is able to re-enter the workflow after it has been m
 
 **Review** - Item status for items that have re-entered a workflow in order to be checked for currency, while remaining discoverable by searches.
 
-**Roles** - Collection of users identified by IP address, EQUELLA context or UMS.
+**Roles** - Collection of users identified by IP address, openEQUELLA context or UMS.
 
 **RSS Feed** - Search results option enabling notifications to be generated when items that match a user’s search criteria are contributed or updated. See also Atom feed.
 
-**Sakai** - Third-party system that can be integrated with EQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
+**Sakai** - Third-party system that can be integrated with openEQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
 
 **Scheduled Tasks plug-in** - Administration Console System Settings plug-in that configures the timing of scheduled tasks providing basic, advanced and execute now functionality.
 
@@ -443,18 +443,18 @@ Workflow node where an item is able to re-enter the workflow after it has been m
 
 **Searching plug-in** - Administration Console System Settings plug-in that enables the Include non-live items checkbox to be shown or hidden for search results.
 
-**Security Manager** - Administration Console tool that manages privileges and groups for users allowing fine grained control of user privileges for all areas of EQUELLA. Any permissions set on any access control or ACL page can be modified here.
+**Security Manager** - Administration Console tool that manages privileges and groups for users allowing fine grained control of user privileges for all areas of openEQUELLA. Any permissions set on any access control or ACL page can be modified here.
 
 **Selection Session** - 
-Dialog that provides an overview of resources available for selection during item contribution, displayed when using the Resource Selector contribution wizard control, or when using one of the resource selector tool tips in the HTML editor. Also a prominent feature of integrated EQUELLA installations.
+Dialog that provides an overview of resources available for selection during item contribution, displayed when using the Resource Selector contribution wizard control, or when using one of the resource selector tool tips in the HTML editor. Also a prominent feature of integrated openEQUELLA installations.
 
 **Sequential steps** - Workflow step type that allows a sequence of workflow steps to be chained together for sequential completion.
 
 **Serial node** - See Sequential steps.
 
-**Share Pass plug-in** - Administration Console User Management plug-in that allows users to share licensed content outside EQUELLA.
+**Share Pass plug-in** - Administration Console User Management plug-in that allows users to share licensed content outside openEQUELLA.
 
-**Shared Secrets plug-in** - Administration Console User Management plug-in used to enable authentication of communications between EQUELLA and external systems enabling one password to be used.
+**Shared Secrets plug-in** - Administration Console User Management plug-in used to enable authentication of communications between openEQUELLA and external systems enabling one password to be used.
 
 **Shibboleth®** - Web-based single sign-on authentication framework.
 
@@ -472,7 +472,7 @@ Dialog that provides an overview of resources available for selection during ite
 
 **Single URL Link** - Contribution wizard control that allows for the entry of a URL link relating to the contributed item.
 
-**SOAP** - Communication protocol developed to allow third parties to easily author custom access to EQUELLA in a supported manner.
+**SOAP** - Communication protocol developed to allow third parties to easily author custom access to openEQUELLA in a supported manner.
 
 **SOAP Settings plug-in** - Administration Console System Settings plug-in that configures the period of a SOAP call before termination.
 
@@ -486,7 +486,7 @@ Dialog that provides an overview of resources available for selection during ite
 Text box that displays information about a selected object. Metadata may be entered or displayed through a status pane.
 
 **Studywiz™** - 
-Third-party system that can be integrated with EQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
+Third-party system that can be integrated with openEQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
 
 **Submit** - See Publish.
 
@@ -498,13 +498,13 @@ Third-party system that can be integrated with EQUELLA to deliver online content
 
 **Suspensions plug-in** - Administration Console User Management plug-in that enables the management of suspended users. The only user that cannot be suspended is the TLE_ADMINISTRATOR.
 
-**System Administrator** - User in an institution who is responsible for operating and managing EQUELLA.
+**System Administrator** - User in an institution who is responsible for operating and managing openEQUELLA.
 
-**System Settings** - Tool in the Administration Console providing access to EQUELLA institution settings for editing configuration settings.
+**System Settings** - Tool in the Administration Console providing access to openEQUELLA institution settings for editing configuration settings.
 
 **Tabbed wizard navigation** - Contribution wizard display option where pages are displayed as tabs across the top of the wizard. See also Sidebar wizard navigation.
 
-**Task list** - Area typically appearing on the EQUELLA Home page that identifies and provides links to outstanding items requiring the user’s attention.
+**Task list** - Area typically appearing on the openEQUELLA Home page that identifies and provides links to outstanding items requiring the user’s attention.
 
 **Taxonomy** - Classified data that a user can select during contribution, using the Term Selector wizard control.
 
@@ -516,7 +516,7 @@ Third-party system that can be integrated with EQUELLA to deliver online content
 
 **The Le@rning Federation (TLF)**- Australian federal initiative to provide online K–12 curriculum materials and support for students and teachers.
 
-**Third-party integrations** -Training software that can be integrated with EQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Learning Management System (LMS), Content Management System (CMS) or Virtual Learning Environment (VLE).
+**Third-party integrations** -Training software that can be integrated with openEQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Learning Management System (LMS), Content Management System (CMS) or Virtual Learning Environment (VLE).
 
 **Thumbnail Locator** - Feature of the Large Image Viewer that helps identify which part of an image is being viewed and enables quick navigation around the image.
 
@@ -538,15 +538,15 @@ Third-party system that can be integrated with EQUELLA to deliver online content
 
 **User Selector** - Contribution wizard control that enables the selection of users and stores their details with the item metadata, for example to assign workflow tasks to specific users during the workflow process.
 
-**User Quota plug-in** - Administration Console System Settings plug-in that configures the amount of storage available to EQUELLA users.
+**User Quota plug-in** - Administration Console System Settings plug-in that configures the amount of storage available to openEQUELLA users.
 
-**UUID** - Unique Universal Identifier—unique number used to identify EQUELLA items.
+**UUID** - Unique Universal Identifier—unique number used to identify openEQUELLA items.
 
 **Version Selection plug-in** - Administration Console System Settings plug-in that provides institution-wide settings for resource version selection.
 
-**VLE** - Virtual Learning Environment—third-party training software that can be integrated with EQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Learning Management System (LMS) or Content Management System (CMS).
+**VLE** - Virtual Learning Environment—third-party training software that can be integrated with openEQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Learning Management System (LMS) or Content Management System (CMS).
 
-**Vista_CE** - Third-party system that can be integrated with EQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
+**Vista_CE** - Third-party system that can be integrated with openEQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
 
 **WebDAV File Management** - File management protocol available with the Load Attachments contribution wizard control.
 
@@ -561,7 +561,7 @@ Contribution wizard control that allows users to author, edit or import web page
 
 **Wizard layout** - Configured using the Wizard node in the Administration Console Collection Definition editor. See also Sidebar wizard navigation and Tabbed wizard navigation.
 
-**Workflow** - EQUELLA workflows are processes that automatically notify users when they must review or moderate a repository item.
+**Workflow** - openEQUELLA workflows are processes that automatically notify users when they must review or moderate a repository item.
 
 **Workflow node** - See Workflow task.
 
@@ -574,7 +574,7 @@ Contribution wizard control that allows users to author, edit or import web page
 **XML** - Extensible Markup Language—general-purpose markup language for storing data.
 
 **XSLT** - 
-Extensible Stylesheet Transformations—commonly used to change the presentation of XML data. In EQUELLA they can be used to present information returned in reports, transformations, citations, display and confirmation templates.
+Extensible Stylesheet Transformations—commonly used to change the presentation of XML data. In openEQUELLA they can be used to present information returned in reports, transformations, citations, display and confirmation templates.
 
 **YouTube™ Search** - 
 Contribution wizard control that allows users to search for YouTube™ content to be added to a contributed item.

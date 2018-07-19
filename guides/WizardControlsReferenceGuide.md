@@ -39,16 +39,16 @@ Table of Contents
 
 ## Wizard controls overview 
 
-The EQUELLA Administration Console enables the creation and customization of a variety of user wizards. Each of these wizards contains a range of controls that translate to checkboxes, buttons and fields etc. to prompt users to input text, make selections, upload files and various other actions.
+The openEQUELLA Administration Console enables the creation and customization of a variety of user wizards. Each of these wizards contains a range of controls that translate to checkboxes, buttons and fields etc. to prompt users to input text, make selections, upload files and various other actions.
 
 The purpose of this reference guide is to describe the controls available to contribution wizards; where and why each control is used and how they are configured in the Administration Console Collection Definition Editor. Some of the wizard controls are also used to configure advanced searches in the Administration Console Advanced Search Editor and these controls are referenced accordingly.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA, and as such may differ in appearance to your own installation. 
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA, and as such may differ in appearance to your own installation. 
 
 ## Wizard controls  
 Wizard controls are configured in the Administration Console. A choice of controls can be added to:
-* Contribution wizards—created in the Collection Definition Editor. Refer to the EQUELLA Collection Definitions Configuration Guide for information on the editor.
-* Advanced search wizards—created in the Advanced Searches Editor. Refer to the EQUELLA Advanced Search Configuration Guide for information on the editor.
+* Contribution wizards—created in the Collection Definition Editor. Refer to the openEQUELLA Collection Definitions Configuration Guide for information on the editor.
+* Advanced search wizards—created in the Advanced Searches Editor. Refer to the openEQUELLA Advanced Search Configuration Guide for information on the editor.
 
 All wizard controls can be added to a contribution wizard while an Advanced search wizard can contain only the following controls:
    * Calendar
@@ -103,7 +103,7 @@ Enter a brief instruction or explanation in the Description field if the functio
 Click Scripting to display the Script Editor. Scripting can be used to modify controls based on resource metadata, user roles or resource status. For example, a control could be hidden or displayed based on previous data entered. (NOTE: When a control has a script, a red dot appears beside the control name in the list in the left-hand pane.)
 The Script Editor provides two options:
 * Basic—for simple and quick script creation.
-* Advanced—for users who are more familiar with EQUELLA and JavaScript™. 
+* Advanced—for users who are more familiar with openEQUELLA and JavaScript™. 
 
 #### This control is mandatory
 Check the This control is mandatory checkbox to enforce that data must be entered in the associated control before the wizard can be completed. A red asterisk displays beside mandatory controls in the contribution wizard.
@@ -149,14 +149,14 @@ When the Add a resource link is clicked, and there is more than one attachment t
 If only one attachment type is enabled, the page specific to that type opens immediately.
 
 #### Echo360 Presentations
-The Echo360 Presentations attachment type enables users to link Echo360 presentations to their EQUELLA resources. 
+The Echo360 Presentations attachment type enables users to link Echo360 presentations to their openEQUELLA resources. 
 
-#### EQUELLA Resources
-The EQUELLA Resources attachment type enables users to search for and link to other resources or attachments within the EQUELLA repository or from external sources.
+#### openEQUELLA Resources
+The openEQUELLA Resources attachment type enables users to search for and link to other resources or attachments within the openEQUELLA repository or from external sources.
 
 The attachment type can be configured to allow searching within the entire repository and other repositories, or searches can be restricted to particular collections and sources. 
 
-The EQUELLA Resources control elements are:
+The openEQUELLA Resources control elements are:
 * Selected resources are—select from Not specified (all resources, regardless of copyright status), CLA Holdings (in the UK) or CAL Holdings (in Australia).
 * Allow selection of—select from Resources or Attachments to allow both resources and attachments, Resources only, or Attachments only. This option is only available when Not specified is selected in the Selected resources are drop-down.
 * Restrict searching to the following collection:—check to select the collections that can be searched. Move required collections to the right-hand pane of the shuffle box using the > button. The >> button moves all collections at once. To remove a selected collection, use the < button, or to remove all collections, use the << button.
@@ -190,7 +190,7 @@ During contribution, if a file with a MIME type other than one selected and move
 Selecting the Flickr photos attachment type enables users to add Flickr photo links to a resource during contribution. The Flickr photos section allows the user to configure API key information, if required. 
 
 The Flickr configuration elements are:
-* Flickr API key—enter your Flickr API key here. If you don’t have one, the inbuilt EQUELLA key is used; therefore leave these fields blank. If you require your own key but don’t currently have one, click the here link to open the Flickr The App Garden and apply.
+* Flickr API key—enter your Flickr API key here. If you don’t have one, the inbuilt openEQUELLA key is used; therefore leave these fields blank. If you require your own key but don’t currently have one, click the here link to open the Flickr The App Garden and apply.
 * Flickr API shared secret—enter the shared secret that matched the key.
 
 #### Google Books
@@ -301,7 +301,7 @@ The Edit Box control is also available in the Advanced Search Editor.
 
 ## Email Selector  
 
-The Email Selector control allows for the selection of the email addresses associated with registered EQUELLA users. 
+The Email Selector control allows for the selection of the email addresses associated with registered openEQUELLA users. 
 
 The Email Selector control elements include:
 * Allow selection of multiple email addresses—by default this control allows the selection of a single email address. Selecting this option allows multiple email address to be added.
@@ -317,7 +317,7 @@ The File Manager control is a Java™ applet that allows for advanced management
 
 The File Manager control elements are:
 * Automatically mark root-level files to be shown in the resource summary?—select to display root-level files (files not in folders) automatically on the resource summary. If this is not checked, the Show in Item summary button in the File Manager must be selected for each required attachment to display on the resource summary page. 
-* Allow WebDAV file management—select to allow WebDAV functionality in EQUELLA. WebDAV functionality enables the user to add resources to a web-accessible folder to make them available to users for the purposes of facilitating collaboration on documents, similar to the way a FTP or cloud server would operate. 
+* Allow WebDAV file management—select to allow WebDAV functionality in openEQUELLA. WebDAV functionality enables the user to add resources to a web-accessible folder to make them available to users for the purposes of facilitating collaboration on documents, similar to the way a FTP or cloud server would operate. 
 
 An example of the File Manager with WebDAV enabled displayed in a contribution wizard.
 
@@ -364,9 +364,9 @@ Enter and/or edit content as required, then select the [Click here to lock] link
 
 Leave the Only load this editor on-demand checkbox unchecked to load the HTML Editor automatically. 
 
-The Insert EQUELLA Content button can be configured to allow searching within the entire repository, or searches can be restricted to particular collections, dynamic collections or advanced searched. Additionally, the collections available for contributions can be restricted. 
+The Insert openEQUELLA Content button can be configured to allow searching within the entire repository, or searches can be restricted to particular collections, dynamic collections or advanced searched. Additionally, the collections available for contributions can be restricted. 
 
-The Insert EQUELLA Content control elements are:
+The Insert openEQUELLA Content control elements are:
 * Restrict searching to the following collection:—check to select the collections that can be searched. Move required collections to the right-hand pane of the shuffle box using the > button. The >> button moves all collections at once. To remove a selected collection, use the < button, or to remove all collections, use the << button.
 * Restrict advanced search usage to the following:—check to limit the advanced searches that can be searched. Move required advanced searches to the right-hand pane of the shuffle box using the > button. The >>   button moves all advanced searches at once. To remove a selected advanced search, use the < button, or to remove all advanced searched, use the << button.
 * Restrict searching to the following dynamic collections:—check to limit the dynamic collections that can be searched. Move required dynamic collections to the right-hand pane of the shuffle box using the   > button. The >> button moves all dynamic collections at once. To remove a selected dynamic collection, use the < button, or to remove all dynamic collections, use the <<   button.
@@ -452,7 +452,7 @@ The Raw HTML control enables the entry of HTML to enhance the design and usabili
 
 The Raw HTML control elements are:
 * Predefined HTML—select to insert a horizontal rule on a wizard page.
-* User defined HTML—enter HTML (e.g. to provide additional information on a wizard page). Metadata can be selected using the format {/xpath/to/my/data}, for example selecting the {/item/itembody/client} path populates the corresponding field in the contribution wizard with data matching the selected path (e.g. University of EQUELLA). 
+* User defined HTML—enter HTML (e.g. to provide additional information on a wizard page). Metadata can be selected using the format {/xpath/to/my/data}, for example selecting the {/item/itembody/client} path populates the corresponding field in the contribution wizard with data matching the selected path (e.g. University of openEQUELLA). 
 
 The Raw HTML control is also available in the Advanced Search Editor.
 

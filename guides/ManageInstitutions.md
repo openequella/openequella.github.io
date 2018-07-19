@@ -1,6 +1,6 @@
 [Home](https://equella.github.io/)
 
-# Manage EQUELLA institutions
+# Manage openEQUELLA institutions
 
 [Access the Server Administration Account](#access-the-server-administration-account)
 
@@ -27,8 +27,8 @@
 ## Access the Server Administration Account
 
 To access the Server administration account
-1. Open a browser and enter the EQUELLA address of the hosting server with ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’) to display the Log In page.
-2. Enter the Password used by the EQUELLA server administrator (this is set in the System password section after installation)
+1. Open a browser and enter the openEQUELLA address of the hosting server with ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’) to display the Log In page.
+2. Enter the Password used by the openEQUELLA server administrator (this is set in the System password section after installation)
 3. Click Log In to display the Server administration page.  Institutions can be imported or cloned to create a new institution. Once created the new institutions are independent of the parent institution.
 
 ## Passwords
@@ -40,7 +40,7 @@ There are two passwords that can be changed in the Server administration account
 
 ## Import an Institution
 
-EQUELLA provides a facility for importing institutions to an EQUELLA server. This facility is typically used for migrating institutions from test environments to staging or production by exporting the test institution and importing it to the staging or production server.
+openEQUELLA provides a facility for importing institutions to an openEQUELLA server. This facility is typically used for migrating institutions from test environments to staging or production by exporting the test institution and importing it to the staging or production server.
 
 Importing an institution using the Server administration account is a simple process that comprises:
 * selection of an institution file
@@ -54,7 +54,7 @@ Configurations from the parent institution can be selectively exported or import
 
 1. Select Institutions to navigate to the Institutions page
 2. Select Edit from the links beside the institution to display the editable institution values. The institution data comprises the:
-* Institution name—is enabled by default and must be unique for the EQUELLA server.
+* Institution name—is enabled by default and must be unique for the openEQUELLA server.
 * URL—the URL is locked by default as changes to the URL will cause the server to modify all institution resource URLs with the new URL (invalidating external links to these resources). The processing time required for the URL modification is dependent on the number of items in the institution.
 * Filestore – the Filestore is locked by default as an incorrect folder name could cause the content of the institution to become unavailable.
 * Filestore size limit – a filestore size limit can be set per institution. Once the filestore exceeds the limit, the system administrator/s are notified by email. 
@@ -72,7 +72,7 @@ Attempts to login after the institution URL has been modified may cause an error
 
 ## Clone an Institution
 
-EQUELLA provides a Clone option that condenses an institution’s export and import to the same EQUELLA server, to a single step process. 
+openEQUELLA provides a Clone option that condenses an institution’s export and import to the same openEQUELLA server, to a single step process. 
 
 It is advised that the institution be disabled before cloning. Doing so removes access to the institution. This reduces the chance of data becoming corrupted or lost while cloning, as changes cannot be made to the institution while it is disabled. 
 
@@ -94,7 +94,7 @@ NOTE: Users will not be able to access institution items until after all items o
 
 ## Export an Institution
 
-EQUELLA institutions can be exported as a single zip archive providing a simple method for reproducing institutions. The institution export archive contains a hierarchy of the data and configuration settings selected during the export process. Exported institutions can be imported to any EQUELLA server that has enabled institutions.
+openEQUELLA institutions can be exported as a single zip archive providing a simple method for reproducing institutions. The institution export archive contains a hierarchy of the data and configuration settings selected during the export process. Exported institutions can be imported to any openEQUELLA server that has enabled institutions.
 
 It is advised that an institution be disabled before exporting. Doing so removes access to the institution. This reduces the chance of data becoming corrupted or lost during an export, as changes cannot be made to the institution while it is disabled.
 
@@ -144,14 +144,14 @@ The Approximate filestore usage field shows the current usage.
 
 ## Display Server Message
 
-The Server message section is optional. The administrator can enter a server message to be displayed at the top of each page of the EQUELLA Digital Repository and the Server administration account. 
+The Server message section is optional. The administrator can enter a server message to be displayed at the top of each page of the openEQUELLA Digital Repository and the Server administration account. 
 
 1. Select Settings from the navigation menu to display the Server administration page.
 2. Enter a Message then select the Enable message checkbox.
 3. Click Save message  to save the settings. 
 4. To disable a server message, uncheck the Enable message checkbox.
 
-The server message is displayed at the top of each page of the EQUELLA Digital Repository and the Server administration account. 
+The server message is displayed at the top of each page of the openEQUELLA Digital Repository and the Server administration account. 
 
 ## System Password
 

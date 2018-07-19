@@ -15,21 +15,21 @@ Table of Contents
 
 ## Security overview
 
-EQUELLA security is designed using Access Control Lists (ACLs) for flexible top-down management, allowing system administrators to manage user access to objects (collection definitions, metadata schemas, etc.), tasks, and resources within the repository.  Management of self-contributed objects and resources can be delegated to users.
+openEQUELLA security is designed using Access Control Lists (ACLs) for flexible top-down management, allowing system administrators to manage user access to objects (collection definitions, metadata schemas, etc.), tasks, and resources within the repository.  Management of self-contributed objects and resources can be delegated to users.
 
-EQUELLA security enables the definition of suitable security defaults, so that specific settings seldom need to be defined when objects are created. 
+openEQUELLA security enables the definition of suitable security defaults, so that specific settings seldom need to be defined when objects are created. 
 
 The purpose of this guide is to provide administrators with an overview of the various security settings available and an understanding of their configuration and use. 
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA, and as such may differ in appearance to your own installation. 
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA, and as such may differ in appearance to your own installation. 
 
-Where possible the examples in this guide are provided in the EQUELLA Vanilla Institution.   
+Where possible the examples in this guide are provided in the openEQUELLA Vanilla Institution.   
 
 ## Access control lists 
 
-After an EQUELLA installation, the system administrator will implement security settings as required by their institution. This typically requires modification of the default ACLs. 
+After an openEQUELLA installation, the system administrator will implement security settings as required by their institution. This typically requires modification of the default ACLs. 
 
-An ACL associates a Grant or Revoke action and a User, Group or Role with an EQUELLA privilege on an object. For example, the EDIT_SCHEMA privilege might be granted to users having the System Administrator role. 
+An ACL associates a Grant or Revoke action and a User, Group or Role with an openEQUELLA privilege on an object. For example, the EDIT_SCHEMA privilege might be granted to users having the System Administrator role. 
 
 ACLs can be configured using the object’s Access Control or Security page or the Administration Console Security Manager. 
 
@@ -40,7 +40,7 @@ Roles are defined using the Internal Roles plug-in available from the Administra
 
 **Privileges**
 
-EQUELLA provides a privilege for every system task. Privileges have an associated object (for example, a resource, workflow, collection etc.) and can also have a textual string (e.g. EDIT_SCHEMA=edit this schema). The raw privilege (EDIT_SCHEMA) only is displayed in the Security Manager and the string (edit this schema) is displayed on the object’s Access Control or Security page.
+openEQUELLA provides a privilege for every system task. Privileges have an associated object (for example, a resource, workflow, collection etc.) and can also have a textual string (e.g. EDIT_SCHEMA=edit this schema). The raw privilege (EDIT_SCHEMA) only is displayed in the Security Manager and the string (edit this schema) is displayed on the object’s Access Control or Security page.
 
 ### Actions
 Each ACL element has an associated Grant or Revoke action.
@@ -50,11 +50,11 @@ Each ACL element has an associated Grant or Revoke action.
 The Security Manager provides access to ACLs for all institution objects. Institution objects are displayed in a tree hierarchy with folders containing groups of objects and child objects. 
 
 ### Security Manager
-The Security Manager is accessed through the EQUELLA Administration Console.
+The Security Manager is accessed through the openEQUELLA Administration Console.
 
-To access EQUELLA and open the Administration Console:
-1.  Open a browser and enter your EQUELLA URL (e.g. ‘http://equella.myequellainstitution.edu’).
-2.  Log in to EQUELLA as an administrator, select Settings then Administration console.
+To access openEQUELLA and open the Administration Console:
+1.  Open a browser and enter your openEQUELLA URL (e.g. ‘http://equella.myequellainstitution.edu’).
+2.  Log in to openEQUELLA as an administrator, select Settings then Administration console.
 3.  The Administration console displays. Select Security Manager. 
 4. The Security Manager page displays
 The Security Manager hierarchy represents the ACL hierarchy. Object groupings are displayed as folders, and these groupings contain child objects representing institution objects. Each hierarchy node can have zero or more associated ACLs.
@@ -80,12 +80,12 @@ For an individual ACL:
 
 ## Security hierarchy reference 
 
-The top two levels of the Security Manager hierarchy are the same for all EQUELLA installations.
+The top two levels of the Security Manager hierarchy are the same for all openEQUELLA installations.
 
 These levels are intended to provide the default ACLs configured by the system administrator. Carefully chosen defaults will decrease the work required by object creators during the creation process. 
 
 ### Typical object grouping 
-Typically groupings will only contain objects that have been created for the EQUELLA instance: Advanced Searches, Schemas, Remote Repositories, Courses, Taxonomies, LTI consumers, HTML editor plugins, User Scripts, Connectors, Hierarchy, External Tools, Stores, EchoSystem servers, Reports, Workflows, OAuth Clients, Dynamic Collections, Hierarchy, Kaltura servers , Harvester Profiles, Custom Links, Regions, Catalogues, Tiers, Payment Gateways, Storefronts and Store Taxes. 
+Typically groupings will only contain objects that have been created for the openEQUELLA instance: Advanced Searches, Schemas, Remote Repositories, Courses, Taxonomies, LTI consumers, HTML editor plugins, User Scripts, Connectors, Hierarchy, External Tools, Stores, EchoSystem servers, Reports, Workflows, OAuth Clients, Dynamic Collections, Hierarchy, Kaltura servers , Harvester Profiles, Custom Links, Regions, Catalogues, Tiers, Payment Gateways, Storefronts and Store Taxes. 
 
 Collections, Portlets, Management Pages, Resources and System Settings have further groupings as outlined in the following sections.
 
@@ -115,7 +115,7 @@ Resource statuses have the following inheritance:
 * Specific Collection Resource—privileges set here are applied to all resources of a particular collection with the selected privilege. 
 
 ### System Settings object grouping
-The System Settings grouping allows ACLs to be set against each object to restrict what is available on the Settings page accessed from the navigation menu. These settings contain the various configuration options for a wide range of functions across the EQUELLA system, and would normally be restricted to those with administration rights for the relevant functions.
+The System Settings grouping allows ACLs to be set against each object to restrict what is available on the Settings page accessed from the navigation menu. These settings contain the various configuration options for a wide range of functions across the openEQUELLA system, and would normally be restricted to those with administration rights for the relevant functions.
 
 ### View/Modify ACLs
 1.  Select an object from the Security Manager hierarchy to display the ACLs for the selected object (e.g. Schemas) in the View/Modify ACLs pane. This pane lists the ACLs and allows addition, removal and modification. 
@@ -198,13 +198,13 @@ Enter an IP address in standard 255.255.255.255 format and a subnet mask in CIDR
 The Other page associates generic user entities with an action. These user entities represent groupings that cannot be easily specified using any of the other methods. 
 
 #### Everyone
-Represents everyone who can access this instance of EQUELLA. This group includes everyone who can access an EQUELLA URL and comprises Guest and Logged in users. 
+Represents everyone who can access this instance of openEQUELLA. This group includes everyone who can access an openEQUELLA URL and comprises Guest and Logged in users. 
 #### The owner of the targeted object
 Represents object owners, typically object creators. 
 #### Logged in users
-Represents users who are logged into this instance of EQUELLA. 
+Represents users who are logged into this instance of openEQUELLA. 
 #### Guest users
-Represents users who can access the EQUELLA URL without logging in. 
+Represents users who can access the openEQUELLA URL without logging in. 
 #### Single signed on with identifier
 Represents users who are logged on using the Shared Secrets plug-in. This option is mainly for use with third-party integrations.
  
@@ -233,7 +233,7 @@ Click Close  to close the dialog without saving changes.
 
 ## Access Control reference
 
-Objects with configurable security in the EQUELLA Administration Console have either an Access Control tab or a Security tab that provide multiple methods for configuring ACLs. This sections below describe access control options for individual objects.
+Objects with configurable security in the openEQUELLA Administration Console have either an Access Control tab or a Security tab that provide multiple methods for configuring ACLs. This sections below describe access control options for individual objects.
 
 ## Administration Console objects 
 
@@ -268,7 +268,7 @@ Elements of the Basic page can include:
 #### Entity list
 Determines the user entity that will be associated with the specified privilege and can include:
 * Just the owner—the object owner, typically the object creator. (NOTE: This entity is not displayed on the Collection Definitions—Access Control page in Basic mode.)
-* Everyone—all users who can access this instance of EQUELLA. This group includes everyone who can access an EQUELLA URL and comprises Guest and Logged in users. 
+* Everyone—all users who can access this instance of openEQUELLA. This group includes everyone who can access an openEQUELLA URL and comprises Guest and Logged in users. 
 * Everyone except guests—all logged on users. 
 * A limited set of users, groups, and/or roles—select particular users, groups or roles to be associated with the specified privilege. 
 
@@ -353,7 +353,7 @@ The Resource Metadata ACLs (static) provides a means of setting permissions base
 
 Once a Dynamic Metadata rule is set up for a collection, and a User, Group or Role ID stored in the metadata (which may be added via a selector during contribution, a Save script, checklists etc.) is found to match a value in the selected ID Type table (User, Group or Role), the ACLs pre-set for the selected objects will be allocated dynamically. 
 
-For example, an EQUELLA group could be set up for each course an institution offers, and the users (students) enrolled in that course are added to the group. A dynamic metadata rule is created which sets the path, ID type (in this case, group) and the ACLs (privileges) that will be applied when a match is found during contribution. When the value of the metadata node for the group selector matches the group ID, the ACLs are automatically created. 
+For example, an openEQUELLA group could be set up for each course an institution offers, and the users (students) enrolled in that course are added to the group. A dynamic metadata rule is created which sets the path, ID type (in this case, group) and the ACLs (privileges) that will be applied when a match is found during contribution. When the value of the metadata node for the group selector matches the group ID, the ACLs are automatically created. 
 
 In the above example, the following steps are completed to configure the dynamic metadata ACLs rule:
 * Add a user, group or role selector to the relevant contribution wizard (including creating a new metadata schema node, if required)
@@ -378,7 +378,7 @@ When a resource is contributed to the collection, Users, Groups or Roles are sel
 
 ## Privileges  
 
-EQUELLA provides a privilege for every system task. Creating an ACL for an institution displays all the available privileges. In the Security Manager, the number of privileges for ACLs in subsequent levels depends on the child objects and associated tasks. 
+openEQUELLA provides a privilege for every system task. Creating an ACL for an institution displays all the available privileges. In the Security Manager, the number of privileges for ACLs in subsequent levels depends on the child objects and associated tasks. 
 
 All privileges are listed in alphabetical order below. Privileges have an associated object and most have a textual string; however the raw privilege only, for example EDIT_COLLECTION, is displayed in the Security Manager while the associated string edit this collection is displayed to collection creators when configuring security. 
 
@@ -421,8 +421,8 @@ Allows resources to be moved to a state where they retain their permanent addres
 * The other resource operation privileges include CLONE_ITEM, DELETE_ITEM, EDIT_ITEM, EXPORT_ITEM, MOVE_ITEM, NEWVERSION_ITEM, REASSIGN_OWNERSHIP_ITEM, REDRAFT_ITEM, REVIEW_ITEM and SUSPEND_ITEM.
 
 ### AUTO_CREATE_COURSE
-Allows courses to be created automatically in EQUELLA in the instance where a user is activating a copyright portion for a course from the integration screen and no matching course code from the LMS course can be found in EQUELLA. A course is created in EQUELLA using the course code from the LMS as the Course Name and Code. It is available in the Collection Definition Editor – Access Control page with the textual strings add a course at time of activation from a LMS in any state, add a course at time of activation from a LMS in this state (on the Resource Status ACLs page) and add a course at time of activation from a LMS matching this rule (on the Resource Metadata ACLs page).
-* When granted to a copyright portion collection, when a copyright portion is activated from the integration screen, and no course match is found in EQUELLA, the course will be automatically added to EQUELLA. 
+Allows courses to be created automatically in openEQUELLA in the instance where a user is activating a copyright portion for a course from the integration screen and no matching course code from the LMS course can be found in openEQUELLA. A course is created in openEQUELLA using the course code from the LMS as the Course Name and Code. It is available in the Collection Definition Editor – Access Control page with the textual strings add a course at time of activation from a LMS in any state, add a course at time of activation from a LMS in this state (on the Resource Status ACLs page) and add a course at time of activation from a LMS matching this rule (on the Resource Metadata ACLs page).
+* When granted to a copyright portion collection, when a copyright portion is activated from the integration screen, and no course match is found in openEQUELLA, the course will be automatically added to openEQUELLA. 
 * Related copyright privileges include COPYRIGHT_ITEM, COPYRIGHT_OVERRIDE, DEACTIVATE_ACTIVATION_ITEM, DELETE_ACTIVATION_ITEM, EDIT_ACTIVATION_ITEM, VIEW_ACTIVATION_ITEM, VIEW_INACTIVE_PORTIONS and VIEW_LINKED_PORTIONS.
 
 ### BROWSE_STORE
@@ -553,7 +553,7 @@ Enables the creation of new HTML Editor plugins. This privilege can be granted a
 
 ### CREATE_ITEM
 Allows for the contribution of resources into collections. It is available in the Collection Definition Editor—Access Control page with the textual string contribute resources with this collection. 
-* Granting this privilege enables the Contribute link in the EQUELLA Digital Repository navigation menu. 
+* Granting this privilege enables the Contribute link in the openEQUELLA Digital Repository navigation menu. 
 * The other resource privileges include ARCHIVE_ITEM, CLONE_ITEM, COMMENT_CREATE_ITEM, COMMENT_DELETE_ITEM, COMMENT_VIEW_ITEM, DELETE_ITEM, DIGITAL_RIGHTS_ITEM, DISCOVER_ITEM, EDIT_ITEM, DOWNLOAD_ITEM, EXPORT_ITEM, MOVE_ITEM, NEWVERSION_ITEM, PURGE_ITEM, RAW_VIEW_ITEM, REASSIGN_OWNERSHIP_ITEM, REDRAFT_ITEM, REVIEW_ITEM, SHARE_ITEM, SUSPEND_ITEM, VIEW_HISTORY_ITEM and VIEW_ITEM.
 
 ### CREATE_KALTURA
@@ -854,7 +854,7 @@ Allows workflow templates to be deleted. It is available in the Workflow Templat
 * The other workflow privileges include CREATE_WORKFLOW and EDIT_WORKFLOW.
 ###  DESIGN_REPORT
 Allows for reports to be designed using the BIRT report designer. It is available at Institution level, and on the Reporting grouping. 
-* This privilege is required for creating EQUELLA reports in the BIRT report designer.
+* This privilege is required for creating openEQUELLA reports in the BIRT report designer.
 * Typically only granted to administrators.
 * The other reporting privileges include CREATE_REPORT, DELETE_REPORT, EDIT_REPORT and EXECUTE_REPORT.
 ### DIGITAL_RIGHTS_ITEM
@@ -1101,7 +1101,7 @@ Allows resources to be pushed to a configured connector (LMS) (e.g. Blackboard o
 * Typically granted to content administrators.
 * The other connector privileges are CREATE_CONNECTOR, DELETE_CONNECTOR, EDIT_CONNECTOR, FIND_USES_ITEM and VIEWCONTENT_VIA_CONNECTOR.
 ### FIND_USES_ITEM
-Allows users to view the current uses of resources within configured connectors (LMSs) (e.g. Blackboard, Moodle or EQUELLA system). It is available from the Resource summary page.
+Allows users to view the current uses of resources within configured connectors (LMSs) (e.g. Blackboard, Moodle or openEQUELLA system). It is available from the Resource summary page.
 (NOTE: This privilege must be set in conjunction with the VIEWCONTENT_VIA_CONNECTOR privilege before access to the Find Uses functionality is granted.)
 * When granted to users, the Find Uses link is available from the Details section of the Resource summary page.
 * When granted to a specific collection, the Find Uses function can be used for all resources in that collection, regardless of their state. 
@@ -1227,7 +1227,7 @@ Allows for resources that have passed through workflow to be marked for review. 
 Allows collections to be searched via selecting the collection name on the Search page. It is available in the Collection Definition Editor—Access Control page with the textual string search for resources using this collection in a guided search.
 * When granted at Institution level, all collections are visible in the Within list on the Search page. If it has been granted on a specific collection or collections, only those collections are displayed in the list.
 * When this privilege has been granted, the specified collection or collections are also displayed in the Within filter list on the Manage resources page.
-* Collections specified in the EQUELLA Resources attachment type of the Attachments control under Restrict searching to the following collections are filtered by this privilege when using the control.
+* Collections specified in the openEQUELLA Resources attachment type of the Attachments control under Restrict searching to the following collections are filtered by this privilege when using the control.
 * The other collection privileges include CREATE_COLLECTION, EDIT_COLLECTION and DELETE_COLLECTION.
 ### SEARCH_DYNA_COLLECTION
 Allows dynamic collections to be searched by adding the names of existing dynamic collections to the Within list on the Search page. It is available in the Dynamic Collection Definition Editor—Access Control page with the textual string search this dynamic collection.
@@ -1265,7 +1265,7 @@ Allows resources to be suspended. It is available in the Collection Definition E
 * The Resume this version action will return suspended resources to the state they were suspended from. 
 * The other resource operation privileges include ARCHIVE_ITEM, CLONE_ITEM, DELETE_ITEM, EDIT_ITEM, EXPORT_ITEM, MOVE_ITEM, NEWVERSION_ITEM, PURGE_ITEM, REASSIGN_OWNERSHIP_ITEM, REDRAFT_ITEM and REVIEW_ITEM.
 ### VIEWCONTENT_VIA_CONNECTOR
-Allows users to view the current uses of resources within configured connectors (LMSs) (e.g. Blackboard, Moodle or EQUELLA system). It is available from the Resource summary page.
+Allows users to view the current uses of resources within configured connectors (LMSs) (e.g. Blackboard, Moodle or openEQUELLA system). It is available from the Resource summary page.
 (NOTE: This privilege must be set in conjunction with the FIND_USES_ITEM privilege before access to the Find Uses functionality is granted.)
 * When granted to users, the Find uses link is available in the Details section of the Resource summary page.
 * Typically granted to content administrators.
@@ -1276,7 +1276,7 @@ Allows copyright activations on resources to be viewed. It is available in the C
 * Typically granted to content contributors such as lecturers and teachers or librarians, to verify the copyright content.
 * The other copyright privileges include AUTO_CREATE_COURSE, COPYRIGHT_ITEM, COPYRIGHT_OVERRIDE, DEACTIVATE_ACTIVATION_ITEM, DELETE_ACTIVATION_ITEM, EDIT_ACTIVATION_ITEM, VIEW_INACTIVE_PORTIONS and VIEW_LINKED_PORTIONS.
 ### VIEW_ATTACHMENTS
-This ACL is designed to be used in conjunction with DISCOVER_ITEM and VIEW_ITEM to restrict access to item metadata. When granting this ACL, while revoking DISCOVER_ITEM and VIEW_ITEM, users with a link to an EQUELLA attachment will be prevented from gaining access to the item metadata and other attachments for that item. For example, if a student has an EQUELLA pdf link provided via an LMS, opens the link then ‘hacks’ the URL to be the EQUELLA item URL, a message displays informing the user that they don’t have the required privileges.
+This ACL is designed to be used in conjunction with DISCOVER_ITEM and VIEW_ITEM to restrict access to item metadata. When granting this ACL, while revoking DISCOVER_ITEM and VIEW_ITEM, users with a link to an openEQUELLA attachment will be prevented from gaining access to the item metadata and other attachments for that item. For example, if a student has an openEQUELLA pdf link provided via an LMS, opens the link then ‘hacks’ the URL to be the openEQUELLA item URL, a message displays informing the user that they don’t have the required privileges.
 It is available in the Collection Definition Editor—Access Control page with the textual strings view attachments in this collection in any state, view attachments in this collection in this state (on the Resource Status ACLs page) and view attachments in this collection matching this rule (on the Resource Metadata ACLs page).
 * When granted to a specific collection, (when DISCOVER_ITEM and VIEW_ITEM have been revoked) all attachment links, regardless of their state, can be viewed. 
 * When granted to a particular resource status, (when DISCOVER_ITEM and VIEW_ITEM have been revoked) all attachment links in that state can be viewed. 

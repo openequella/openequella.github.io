@@ -15,28 +15,28 @@ Table of Contents
 [Contribution language examples](#contribution-language-examples)
 
 ## Language settings overview
-EQUELLA supports institution language localisation and customisation, including right to left languages, using language packs. The language packs contain strings that can be customised to change any label, link or button in EQUELLA. Additionally when matched with a contribution language any user-added objects can be customised to suit the locale of the user. Multiple language packs can be added to an EQUELLA institution.
+openEQUELLA supports institution language localisation and customisation, including right to left languages, using language packs. The language packs contain strings that can be customised to change any label, link or button in openEQUELLA. Additionally when matched with a contribution language any user-added objects can be customised to suit the locale of the user. Multiple language packs can be added to an openEQUELLA institution.
 
-The purpose of this guide is to provide system administrators and managers with an understanding of how to customise and view EQUELLA controls and content in a user’s preferred language.
+The purpose of this guide is to provide system administrators and managers with an understanding of how to customise and view openEQUELLA controls and content in a user’s preferred language.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation.
 
 ## Configuration procedure
 Configuring language settings can be broken into the following steps:
 1. Create a language pack using a Text Editor:
 
-  a. Download and unzip the language pack file from the EQUELLA Service Desk.
+  a. Download and unzip the language pack file from the openEQUELLA Service Desk.
   
   b. Create new text files that contain customised strings for the display controls.
   
   c. Zip the text files together.
 
-2. Upload the new language pack using the Languages option from the EQUELLA Settings page.
-3. Configure the contribution language using the Languages option from the EQUELLA Settings page.
-4. Select the display language in the EQUELLA Digital Repository.
+2. Upload the new language pack using the Languages option from the openEQUELLA Settings page.
+3. Configure the contribution language using the Languages option from the openEQUELLA Settings page.
+4. Select the display language in the openEQUELLA Digital Repository.
 
 ## Language settings
-EQUELLA provides multiple configuration options for language settings including:
+openEQUELLA provides multiple configuration options for language settings including:
 * Language Packs—to customise the display interface.
 * Contribution Languages—to customise any user added objects.
 * Display Languages—to display the customised strings and objects for the imported language files.
@@ -44,7 +44,7 @@ EQUELLA provides multiple configuration options for language settings including:
 Language settings are defined by country and locale to allow for variations in language or dialect in different regions.
 
 ### Language packs
-Language packs allow the default controls in EQUELLA to display institution-specific text such as display titles or error messages and allow users to select a preferred language for the user interface display.
+Language packs allow the default controls in openEQUELLA to display institution-specific text such as display titles or error messages and allow users to select a preferred language for the user interface display.
 
 
 A language pack is a zip archive that comprises text files that map language strings to application descriptors. These text files can include:
@@ -61,7 +61,7 @@ A language pack zip archive can be obtained from github and contains text file t
 
 
 ### Customise the display interface
-Changes can be made to EQUELLA display controls by changing the strings in any of the properties text files. The customised files must be zipped to create a language pack file.
+Changes can be made to openEQUELLA display controls by changing the strings in any of the properties text files. The customised files must be zipped to create a language pack file.
 
 *NOTE: It is important that only the strings that have been edited are saved in a new version of the particular properties file (in a different directory); otherwise the strings that haven’t been edited will overwrite existing strings.*
 
@@ -75,9 +75,9 @@ Changes can be made to EQUELLA display controls by changing the strings in any o
 7. Repeat steps 1 to 6 for any other files that require changes.
 
 ### Locale file
-If an extra language is being introduced to EQUELLA, a locale.properties text file must be created and included as part of the language pack. If it is not included, the edited strings may overwrite the current language strings.
+If an extra language is being introduced to openEQUELLA, a locale.properties text file must be created and included as part of the language pack. If it is not included, the edited strings may overwrite the current language strings.
 
-The locale.properties file contains the language, country and any special variant the user wants to see in their EQUELLA instance. The associated text files containing the edited strings are valid for the language specified in the locale.properties file.
+The locale.properties file contains the language, country and any special variant the user wants to see in their openEQUELLA instance. The associated text files containing the edited strings are valid for the language specified in the locale.properties file.
 
 Locale specific information is available at <http://publib.boulder.ibm.com/infocenter/forms/v3r0m0/index.jsp?topic=/com.ibm.help.forms.doc/locale_spec/i_xfdl_r_locale_quick_reference.html>
 
@@ -92,7 +92,7 @@ Locale specific information is available at <http://publib.boulder.ibm.com/infoc
 3. Close the locale.properties file.
 
 ### Create a language pack file
-To make the changes in EQUELLA a zip file must be uploaded using the Languages option accessed from the EQUELLA Settings page. The zip file must contain the text files that have been customised.
+To make the changes in openEQUELLA a zip file must be uploaded using the Languages option accessed from the openEQUELLA Settings page. The zip file must contain the text files that have been customised.
 
 #### To create a language pack file
 1. Zip any properties files containing the customised strings (e.g. resource-centre.properties) together to create a language pack zip file (e.g. spanish-language.zip). Include the locale.properties file if relevant.
@@ -100,11 +100,11 @@ To make the changes in EQUELLA a zip file must be uploaded using the Languages o
 *(NOTE: The zip file should contain only customised text files and the locale file (if relevant).)*
 
 ### Upload a language pack
-The display languages used within the EQUELLA Digital Repository are imported as language packs. The language packs are uploaded using the Languages option from the EQUELLA Settings page.
+The display languages used within the openEQUELLA Digital Repository are imported as language packs. The language packs are uploaded using the Languages option from the openEQUELLA Settings page.
 
 #### To access the Languages administration function
-1. Open a browser and enter your EQUELLA URL (e.g.‘http://equella.myequellainstitution.edu’).
-2. Log in to EQUELLA as an administrator then select Settings from the navigation menu. The Settings page displays. 
+1. Open a browser and enter your openEQUELLA URL (e.g.‘http://equella.myequellainstitution.edu’).
+2. Log in to openEQUELLA as an administrator then select Settings from the navigation menu. The Settings page displays. 
 3. Select Languages to open the Languages page. 
 
 #### To import a language pack zip file
@@ -124,7 +124,7 @@ Language packs can also be exported or removed by using the corresponding button
 3. Click to confirm the removal.
 
 ## Contribution languages
-Contribution languages are defined by country and locale to allow for variations in language or dialect in different regions, for example English (United States) (en-US), English (Australia) (en-AU) and English (United Kingdom) (en-GB). Selecting a contribution language allows the user to customise any content that is added or contributed to the EQUELLA Digital Repository.
+Contribution languages are defined by country and locale to allow for variations in language or dialect in different regions, for example English (United States) (en-US), English (Australia) (en-AU) and English (United Kingdom) (en-GB). Selecting a contribution language allows the user to customise any content that is added or contributed to the openEQUELLA Digital Repository.
 
 
 ### Configure the contribution language
@@ -142,10 +142,10 @@ The corresponding contribution language (e.g. Spanish (Spain)) is displayed in t
 2. Click OK.
 
 ## Display languages
-The default display language setting is that of the browser where the EQUELLA instance is being viewed. Languages imported as language packs can be selected in the EQUELLA Digital Repository as the preferred display language. Selecting a preferred display language will override the browser locale setting.
+The default display language setting is that of the browser where the openEQUELLA instance is being viewed. Languages imported as language packs can be selected in the openEQUELLA Digital Repository as the preferred display language. Selecting a preferred display language will override the browser locale setting.
 
 #### To select the preferred display language
-1. Log in to the EQUELLA Digital Repository to display the Dashboard page. 
+1. Log in to the openEQUELLA Digital Repository to display the Dashboard page. 
 2. Select the PROFILE link in the top right corner to display the Edit User page. 
 3. In the Preferred display language, select the preferred display language from the drop-down list (e.g. Spanish (Spain)). The preferred display languages list only contains languages imported as language packs.
 
@@ -155,7 +155,7 @@ The default display language setting is that of the browser where the EQUELLA in
 The user may need to re-login for all changes to display.
 
 ## Contribution language examples
-When more than one contribution language has been configured, a language button appears in the Schema Editor, Collection Definition Editor, Advanced Search Editor, Workflow Template Editor, Report Editor, Remote Repository Editor, Course Editor, Taxonomy Editor, Dynamic Collection Editor, Hierarchy Editor and Harvester Profiles Editor dialogs in the Administration Console. This allows the user to customise any content that is added or contributed to the EQUELLA system. 
+When more than one contribution language has been configured, a language button appears in the Schema Editor, Collection Definition Editor, Advanced Search Editor, Workflow Template Editor, Report Editor, Remote Repository Editor, Course Editor, Taxonomy Editor, Dynamic Collection Editor, Hierarchy Editor and Harvester Profiles Editor dialogs in the Administration Console. This allows the user to customise any content that is added or contributed to the openEQUELLA system. 
 
 ### Customise a collection example
 #### To customise the collection name
@@ -169,7 +169,7 @@ When more than one contribution language has been configured, a language button 
 2. Click Close to close the Collection Definition Editor.
 
 ### Customise a contribution wizard example
-EQUELLA provides a Multi-Language Edit Box wizard control that allows users to input multiple language strings and display the string relevant to the language the user has selected.
+openEQUELLA provides a Multi-Language Edit Box wizard control that allows users to input multiple language strings and display the string relevant to the language the user has selected.
 
 #### For a Multi-Language Edit Box control in a Contribution Wizard
 1. Select the language button (e.g. Spanish) to display a dialog showing the configured contribution language options (e.g. Chinese and Spanish). 

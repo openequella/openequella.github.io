@@ -5,13 +5,13 @@
 
 Table of Contents
 
-* [openEquella Blackboard Learn integration overview](#equella-blackboard-learn-integration-overview)  
+* [openEquella Blackboard Learn integration overview](#openequella-blackboard-learn-integration-overview)  
 * [Prerequisites](#prerequisites)  
 * [Integration procedure](#integration-procedure)  
-* [Configure openEquella](#configure-equella)  
+* [Configure openEquella](#configure-openequella)  
 * [Register an LTI consumer](#register-an-lti-consumer)  
 * [Configure Blackboard](#configure-blackboard)
-* [openEquella portal](#equella-portal)  
+* [openEquella portal](#openequella-portal)  
 * [Troubleshoot an unsuccessful integration](#troubleshoot-an-unsuccessful-integration)  
 
 

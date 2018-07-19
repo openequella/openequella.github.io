@@ -6,12 +6,12 @@ Table of Contents
 * [Integration overview](#integration-overview)  
 * [Prerequisites](#prerequisites)  
 * [Integration procedure](#integration-procedure)  
-* [Register an LTI consumer in openEQUELLA](#register-an-lti-consumer-in-equella)  
+* [Register an LTI consumer in openEQUELLA](#register-an-lti-consumer-in-openequella)  
 * [Configure Canvas](#configure-canvas)  
-* [Configure openEQUELLA External connector](#configure-equella-external-connector)  
+* [Configure openEQUELLA External connector](#configure-openequella-external-connector)  
 * [Test the installation](#test-the-installation)  
-* [openEQUELLA Selection session options](#equella-selection-session-options)  
-* [openEQUELLA Canvas user login plug-in](#equella-canvas-user-login-plug-in)  
+* [openEQUELLA Selection session options](#openequella-selection-session-options)  
+* [openEQUELLA Canvas user login plug-in](#openequella-canvas-user-login-plug-in)  
 
 
 ## Integration overview

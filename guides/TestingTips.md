@@ -5,7 +5,7 @@ While not a recommendation for production use, the following are tips for sandbo
 
 [Build a ZK Quorum](#build-a-zk-quorum)
 
-[Equella Clustering in a Sandbox](#equella-clustering-in-a-sandbox)
+[openEQUELLA Clustering in a Sandbox](#openequella-clustering-in-a-sandbox)
 
 [Integrations](#integrations)
 
@@ -47,7 +47,7 @@ To turn several standalone ZK nodes into a quorum:
   * ```server.3=192.168.1.113:2888:3888```
 * Assuming you've kept the Zookeeper dataDir to be ```/usr/local/zookeeper-3.4.5/dataDir```, add a file at ```/usr/local/zookeeper-3.4.5/dataDir/myid``` and put in the single digit server ID (1,2, or 3).
 
-## Equella Clustering in a Sandbox
+## openEQUELLA Clustering in a Sandbox
 
 1. Filestore:
   1. Create a shared directory on one of the servers
@@ -69,34 +69,34 @@ optional-config.properties.
 
 ## Integrations
 ### Blackboard Quick Start
-In Equella:
+In openEQUELLA:
 1. Setup a Shared Secret. For the login, select 'create a local user' and add them to a group with enough ACLs (discover / view items).
-1. If working with an Equella that supports LTI Auth (such as 6.3-QA2+), create an OAuth client following the LTI Auth flow, and setup the LTI Mappings. (both from the Web UI Settings page).
+1. If working with an openEQUELLA that supports LTI Auth (such as 6.3-QA2+), create an OAuth client following the LTI Auth flow, and setup the LTI Mappings. (both from the Web UI Settings page).
 1. Ensure there are items / attachments available.
 
 In Blackboard:
 1. If EQ is http, ensure mixed content is allowed in the browser.
-1. To test Bb / Equella from a student's point-of-view in a given course, using the Admin Bb user:
+1. To test Bb / openEQUELLA from a student's point-of-view in a given course, using the Admin Bb user:
   1. Go to a course
   1. In the left hand nav menu under 'Course Management', select 'Users and Groups' > 'Users'
   1. Click 'Enroll User' > 'Create User'.
   1. Fill in the needful, and click 'Submit'.
-1. Remove any old Equella WebService and Equella Building Blocks in Blackboard.
-1. Upload your desired Equella Building Block. Set Available, and then configure the settings.
-1. Go into 'System Admin' > 'Tools and Utilities' > 'Tools'. Search for the Equella plugin, and turn on the 3 Availability toggles.
+1. Remove any old openEQUELLA WebService and openEQUELLA Building Blocks in Blackboard.
+1. Upload your desired openEQUELLA Building Block. Set Available, and then configure the settings.
+1. Go into 'System Admin' > 'Tools and Utilities' > 'Tools'. Search for the openEQUELLA plugin, and turn on the 3 Availability toggles.
 Allow it to be available for new AND existing courses / etc.
 1. If you want to test push-to-lms functionality, install the Web Service (jar can be obtained from the building block, or if a custom build, it's one of the two artifacts from running 'ant product'.
-1. Equella should now be hooked up to Blackboard.  To test:
+1. openEQUELLA should now be hooked up to Blackboard.  To test:
   1. Go into a course
   1. Select Information or Content from the left nav
-  1. On the ribbon on top of the 'editable' area, click 'Tools' > 'Equella Object'. Select an item or attachment and enjoy!
+  1. On the ribbon on top of the 'editable' area, click 'Tools' > 'openEQUELLA Object'. Select an item or attachment and enjoy!
 
 ### Canvas
 The available Canvas site is hosted in the cloud by Instructure. Go to the website [https://canvas.instructure.com/login](https://canvas.instructure.com/login) and create a free account.
 
-From there, you can setup an integration with a given Equella install.
+From there, you can setup an integration with a given openEQUELLA install.
 
-1. Create a Canvas module before trying to select an Equella resource from Canvas or use the Push To LMS feature in Equella for Canvas.
+1. Create a Canvas module before trying to select an openEQUELLA resource from Canvas or use the Push To LMS feature in openEQUELLA for Canvas.
 1. There is a Canvas config guide in the docs repo.  It would be good to pull out the quick start details into here.
 
 ## Moodle
@@ -163,7 +163,7 @@ userpassword: {SHA}nU4eI71bcnBGqeO0t9tXvY1u5oQ=
 
 _mapUsersToNestedGroups.ldif_
 
-Configure EQUELLA to use Apache DS as LDAP
+Configure openEQUELLA to use Apache DS as LDAP
 
 General
 * LDAPS URL: ```ldaps://<<LDAP IP>>:10636```
@@ -186,7 +186,7 @@ LDAP Mappings
 * member key : title (This is a hack since Apache DS doesn't look to have virtual attributes - ideally it'd be cn or uid)
 
 ### Primary Use Cases
-1. Login to Equella with an LDAP user
+1. Login to openEQUELLA with an LDAP user
 2. Confirm CREATE_ITEM ACL works when assigned to a specific user
 3. Confirm CREATE_ITEM ACL works when assigned to a group that your logged in user is a part of
 4. Confirm Diagnostics work to find groups by user
@@ -201,27 +201,27 @@ should display.
 
 General
 
-Under 'LDAP Mappings', when the Personal object class is blank, Equella assumes 'person'. The 'Group Object Class' however, is not given a default. Plugging in 'groupOfUniqueNames' for group object class allows the group-centric use cases to work.
+Under 'LDAP Mappings', when the Personal object class is blank, openEQUELLA assumes 'person'. The 'Group Object Class' however, is not given a default. Plugging in 'groupOfUniqueNames' for group object class allows the group-centric use cases to work.
 
 ### Setup a partition
 1. Open Apache Studio
-2. Right click on the ''Equella LDAP connection' entry in the 'Connections' tab.
+2. Right click on the ''openEQUELLA LDAP connection' entry in the 'Connections' tab.
 3. Select 'Open Configuration' > Partitions
 * Click 'Add'
 * Provide connection details:
 * Partition Type: JDBM
-* id: Equella Support
+* id: openEQUELLA Support
 * Suffix: o=equellasupport
 * Leave the rest as defaults
 4. Restart LDAP Server from Apache Studio
 5. You might need to reload the entities in the Root DSE - Eclipse (Studio) tends to cache these values.
 
 #### RDS
-RDS stands for Replication Data Store.  The Postgres backup file and Equella institution tgz provides a complete example (TODO - need to locate).  Inspecting the instition should give a good idea of how the RDS should be setup.
+RDS stands for Replication Data Store.  The Postgres backup file and openEQUELLA institution tgz provides a complete example (TODO - need to locate).  Inspecting the instition should give a good idea of how the RDS should be setup.
 * replicated.backup
 * institution.tgz
 
-The basic concept is user, groups, and roles from the RDS will be available to Equella once the RDS UMP is configured and enabled - it'll behave similarly to Equella Internal Users / Groups / Roles.
+The basic concept is user, groups, and roles from the RDS will be available to openEQUELLA once the RDS UMP is configured and enabled - it'll behave similarly to openEQUELLA Internal Users / Groups / Roles.
 
 Putting the following in learningedge-config/learningedge-log4j.properties will log all replicated datastore queries that are performed in the resource-centre logs (requires a restart though)
 ```
@@ -249,11 +249,11 @@ Display name=<make it up>
 1. It should succeed. Attachment should be playable.
 1. Contribute another item with LTI, details as follows.
 1. Just check that it is playable.
-1. In Equella create an LTI Consumer.
+1. In openEQUELLA create an LTI Consumer.
 1. In Moodle go to SiteAdministration/plugins/plugins overview/LTI/Settings.
 1. Start to add an external tool configuration.
-1. Make up a ToolName, then point the ToolBaseURL to one of the LTI items you just contributed in Equella.
-1. Set the ConsumerKey and SharedSecret to match the Equella settings, then Save.
+1. Make up a ToolName, then point the ToolBaseURL to one of the LTI items you just contributed in openEQUELLA.
+1. Set the ConsumerKey and SharedSecret to match the openEQUELLA settings, then Save.
 1. Still in Moodle, go to a Course and click AddActivityOrResource/ExternalTool.
 1. Fill in details as follows, then Save.
 ```

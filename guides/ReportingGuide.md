@@ -5,7 +5,7 @@
 Table of Contents
 * [Report Designer overview](#report-designer-overview)  
 * [Installation](#installation)
-* [EQUELLA reporting](#equella-reporting)
+* [openEQUELLA reporting](#openequella-reporting)
 * [Example reports](#example-reports)
 * [Create a report](#create-a-report)
 * [Upload a report](#upload-a-report)
@@ -15,24 +15,24 @@ Table of Contents
 * [Joint data set example usage](#joint-data-set-example-usage)
 * [User management](#user-management)
 * [Scenarios](#scenarios)
-* [Creating an Equella-Enabled BIRT Report Designer Binary](#creating-an-equella-enabled-birt-report-designer-binary)
+* [Creating an openEQUELLA-Enabled BIRT Report Designer Binary](#creating-an-openequella-enabled-birt-report-designer-binary)
 
 ## Report Designer overview 
 
-The EQUELLA Report Designer is a customized version of BIRT™ (Business Intelligence and Reporting Tools), a product derived from the Eclipse Foundation™ that supports the development of complex reports using standard relational database queries.
+The openEQUELLA Report Designer is a customized version of BIRT™ (Business Intelligence and Reporting Tools), a product derived from the Eclipse Foundation™ that supports the development of complex reports using standard relational database queries.
 
-The purpose of this guide is to provide administrators with an understanding of the EQUELLA reporting process.
+The purpose of this guide is to provide administrators with an understanding of the openEQUELLA reporting process.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation.
 
 ### Report creation overview
-To create an EQUELLA report the following tasks must be completed:
-* A copy of the EQUELLA Report Designer must be installed on a machine that can communicate with the EQUELLA repository. 
+To create an openEQUELLA report the following tasks must be completed:
+* A copy of the openEQUELLA Report Designer must be installed on a machine that can communicate with the openEQUELLA repository. 
 * A username and password for a user with the DESIGN_REPORT privilege must be provided to allow the Report Designer to connect to the repository. 
 * A report design is developed and tested.
-* The report design is then uploaded to the EQUELLA server.
+* The report design is then uploaded to the openEQUELLA server.
 
-Once created and uploaded, any user with suitable privileges can run the report by selecting the 'Reports' link from the EQUELLA Digital Repository.
+Once created and uploaded, any user with suitable privileges can run the report by selecting the 'Reports' link from the openEQUELLA Digital Repository.
 
 ### Prerequisites
 Knowledge of SQL is an absolute requirement for generating reports with the Report Designer.
@@ -43,9 +43,9 @@ Additionally it is strongly recommended that training start with the online Ecli
 
 ## Installation
 
-Versions of the EQUELLA Report Designer are available for download from the open source community [here](https://github.com/equella/equella-reporting-plugin/releases/tag/v6.4). These versions are supported by EQUELLA and use BIRT 2.6.1.
+Versions of the openEQUELLA Report Designer are available for download from the open source community [here](https://github.com/equella/equella-reporting-plugin/releases/tag/v6.4). These versions are supported by openEQUELLA and use BIRT 2.6.1.
 
-### Install the EQUELLA Report Designer
+### Install the openEQUELLA Report Designer
 Download the Report Designer files
 
 #### Install the Report Designer on Windows
@@ -55,7 +55,7 @@ Download the Report Designer files
 Once the BIRT Report Designer is running, it is ready for report creation and editing.
 
 #### Install the Report Designer on Linux/Mac
-The Linux/Mac Report Designer files are versions of Eclipse with Business Intelligence and Reporting Tools, and the EQUELLA plug-in, built in. 
+The Linux/Mac Report Designer files are versions of Eclipse with Business Intelligence and Reporting Tools, and the openEQUELLA plug-in, built in. 
 1. Extract the contents of the file to a suitable location on your local filesystem.
 2. Inside the eclipse folder, run eclipse.
 3. Select a workspace by entering one of your own or leaving it as the default.
@@ -63,17 +63,17 @@ The Linux/Mac Report Designer files are versions of Eclipse with Business Intell
 5. Expand the Business Intelligence and Reporting Tools folder and select Report.
 You are ready to design your report.
 
-## EQUELLA reporting
+## openEQUELLA reporting
 
-The following tasks must be completed to create a report that can be used with EQUELLA:
-* Create a report design using the EQUELLA Report Designer.
+The following tasks must be completed to create a report that can be used with openEQUELLA:
+* Create a report design using the openEQUELLA Report Designer.
 
 -Connect to the database to access the necessary data.
 
 -Retrieve specified data from the data source.
 
 -Format the report presentation.
-* Upload the report design to EQUELLA using the Administration Console Reporting plug-in.
+* Upload the report design to openEQUELLA using the Administration Console Reporting plug-in.
 
 A single instance of the Report Designer can be used to create reports for multiple institutions, as each report design has a distinct database connection.
 
@@ -91,15 +91,15 @@ The standard example reports can be found [here](https://github.com/equella/Eque
 The Report Designer can now be used to create a data source, data sets and a layout for the report.
 
 ### Data sources
-Each report requires a connection to a data source to retrieve data for the report. The Report Designer provides a custom data source that can be used for EQUELLA reports. The Data Explorer view is used to create a connection to a database.
+Each report requires a connection to a data source to retrieve data for the report. The Report Designer provides a custom data source that can be used for openEQUELLA reports. The Data Explorer view is used to create a connection to a database.
 
 To create a data source
 1. Select the Data Explorer tab to activate the Data Explorer pane.
 2. Right-click Data Sources then choose New Data Source to display the New Data Source wizard 
-3. Select EQUELLA Datasource from the list of available sources.
+3. Select openEQUELLA Datasource from the list of available sources.
 4. Enter a Data Source Name (e.g. Sample Data Source).
-5. Click Next to display the EQUELLA Datasource Wizard.
-6. Enter the EQUELLA institution URL for the EQUELLA institution providing the report data (e.g. ‘http://equella.myinstitution.edu/institution/’).
+5. Click Next to display the openEQUELLA Datasource Wizard.
+6. Enter the openEQUELLA institution URL for the openEQUELLA institution providing the report data (e.g. ‘http://equella.myinstitution.edu/institution/’).
 7. Enter the User Name and Password of a user with the DESIGN_REPORT privilege
 8. Click Test Connection to display a dialog indicating the connection state. If the connection could not be made, check the connection details and repeat the test.
 
@@ -113,9 +113,9 @@ To create a data set
 1. Right-click on Data Sets in the Data Explorer tab and select New Data Set. The New Data Set wizard is displayed.
 2. Select a data source from your list of available data sources. In this case, it is the previously created ‘Sample Data Source’. 
 
-The EQUELLA Report Designer provides the following data set types:
-* UserManagement Dataset—provides user data stored in systems outside EQUELLA.
-* JDBC Data Set—provides data from the EQUELLA database.
+The openEQUELLA Report Designer provides the following data set types:
+* UserManagement Dataset—provides user data stored in systems outside openEQUELLA.
+* JDBC Data Set—provides data from the openEQUELLA database.
 * Freetext Dataset—provides data by performing free text queries on item metadata, returning custom fields that are not stored directly in the database.
 
 The following example uses the ‘mime_entry’ table from a JDBC Data Set. 
@@ -163,15 +163,15 @@ A table comprises a Header Row, Detail Row (data set results) and Footer Row.
 
 Further information on report creation is provided in the BIRT documentation at http://www.eclipse.org/birt/phoenix/tutorial/.
 
-Once the report is created it can be uploaded to any instance of an EQUELLA institution.
+Once the report is created it can be uploaded to any instance of an openEQUELLA institution.
 
 ### Report parameters
 Report parameters are values that can be passed into reports using BIRT. They are added to a report to filter results, restrict information users can view, or to allow one report to pass a parameter to another report. Report parameters can include simple parameters that a user can enter or a predefined list created from a table or several tables.
 
-EQUELLA provides a wizard where the user will be prompted to enter the parameter values when running the report.
+openEQUELLA provides a wizard where the user will be prompted to enter the parameter values when running the report.
 
 #### Create a report with parameters
-The following example creates a report with parameters the user can enter via a wizard when the report is generated in the EQUELLA Digital Repository.
+The following example creates a report with parameters the user can enter via a wizard when the report is generated in the openEQUELLA Digital Repository.
 
 The details of this sample report are as follows:
 * Report name—Status Report
@@ -189,9 +189,9 @@ To create the parameters
 4. Right-click on Report Parameters and select New Parameter. The New Parameter dialog is displayed.
 5. Enter a Parameter Name and Prompt text. An example ‘Version’ parameter is shown.
 6. Select a type (e.g. Decimal) from the Data type drop-down list.
-The EQUELLA Report Designer provides Boolean, Date, Date Time, Decimal, Float, Integer, String, and Time data types.
+The openEQUELLA Report Designer provides Boolean, Date, Date Time, Decimal, Float, Integer, String, and Time data types.
 7. Select a display type (e.g. Text Box) from the Display type drop-down list.
-The EQUELLA Report Designer provides Text Box, List Box, Combo Box and Radio Button display types.
+The openEQUELLA Report Designer provides Text Box, List Box, Combo Box and Radio Button display types.
 8. Enter a Default value.
 9. Click OK to save the details and close the New Parameter dialog.
 10. Create another parameter. An example ‘Item Status’ parameter is shown.
@@ -226,12 +226,12 @@ To add the parameters to a report query
 17. Test the report by selecting the Preview tab in Report Designer.
 18. The report will run with the default parameters. 
 19. To test the use of parameters, select Show Report Parameters from the Preview tab and enter values in the displayed fields.
-Once a report with parameters is uploaded to EQUELLA the user will be prompted to enter parameter values before the report is generated. 
+Once a report with parameters is uploaded to openEQUELLA the user will be prompted to enter parameter values before the report is generated. 
 
 ### Hyperlinks
 Reports can be created that drill-through from one report to another. The main report passes the identity of the item to the drill-through report as a report parameter. If the item is a hyperlink, the drill-through report then uses the parameter value to display only data corresponding to the item the user clicked on.
 
-This approach can be used to create landing pages for directing users to different reports when multiple report designs have been uploaded to a single EQUELLA report.
+This approach can be used to create landing pages for directing users to different reports when multiple report designs have been uploaded to a single openEQUELLA report.
 
 #### Create a report with a hyperlink
 The following example creates a main report with a hyperlink and a drill-through sub-report. The report details are as follows:
@@ -295,26 +295,26 @@ The completed Expression Builder dialog would display and show ‘row[“uuid”
 7. In the corresponding drop-down menu, select html. The hyperlink feature will not work if PDF is selected as the target format for the report.
 6. Click OK  to save the options and close the Hyperlink Options dialog.
 
-Once both the main report and the sub-report are uploaded to the EQUELLA Resource Center, the main report will contain hyperlinks that when selected will drill-through to the sub-report and present only relevant information. 
+Once both the main report and the sub-report are uploaded to the openEQUELLA Resource Center, the main report will contain hyperlinks that when selected will drill-through to the sub-report and present only relevant information. 
 
 ### Create a landing page for handling multiple reports
 
-This approach can be used to create landing pages for directing users to different reports when multiple report designs have been uploaded to a single EQUELLA report.
+This approach can be used to create landing pages for directing users to different reports when multiple report designs have been uploaded to a single openEQUELLA report.
 
 Once you know which report design files you will be adding to your report, it is possible to create links to those report designs using the ‘drill-through’ approach. Hyperlinks can be added to your page which, when clicked, will execute the report. 
 
-Once completed, the landing page can be saved as a .rptdesign file and uploaded to EQUELLA as part of a reporting archive. 
+Once completed, the landing page can be saved as a .rptdesign file and uploaded to openEQUELLA as part of a reporting archive. 
 
 ## Upload a report
 
-Once the report is created it can be uploaded to any instance of an EQUELLA institution. The data connection is automatically re-configured to use the server running the report.
+Once the report is created it can be uploaded to any instance of an openEQUELLA institution. The data connection is automatically re-configured to use the server running the report.
 
 Reports are uploaded using the Administration Console Reporting plug-in.
 
 ### Upload a single report
-1. To open the EQUELLA Administration Console
-Open a browser and enter your EQUELLA URL (e.g. ‘http://equella.myinstitution.edu/logon.do’).
-2. Log in to EQUELLA as an administrator user. The EQUELLA Dashboard page is displayed.
+1. To open the openEQUELLA Administration Console
+Open a browser and enter your openEQUELLA URL (e.g. ‘http://equella.myinstitution.edu/logon.do’).
+2. Log in to openEQUELLA as an administrator user. The openEQUELLA Dashboard page is displayed.
 3. Select Settings from the left-hand navigation pane.
 4. Select Administration Console from the list of Settings categories. 
 5. From the Administration Console, select Reporting. 
@@ -325,18 +325,18 @@ Open a browser and enter your EQUELLA URL (e.g. ‘http://equella.myinstitution.
 10. Configure Access Control, if required. 11. Click Save to save the report then click Close to close the Report Editor.
 
 ### Upload multiple reports
-It is possible to upload multiple report design files into a single EQUELLA report, by combining the report files into a .zip archive. The archive can then be uploaded to an EQUELLA report, creating the same effect as uploading the report design files individually.
+It is possible to upload multiple report design files into a single openEQUELLA report, by combining the report files into a .zip archive. The archive can then be uploaded to an openEQUELLA report, creating the same effect as uploading the report design files individually.
 
 1. Create one or more report design files using the Report Designer.
 2. Add them to a .zip archive.
 3. Open the Administration Console Report 4. Editor, as described above.
 5. Enter a Report Name and Description.
 6. Click Upload  and browse to your newly created .zip file.
-6. Click Open. The .zip file will attempt to upload to EQUELLA. If there are no report design files inside the zip, you will see a warning dialog informing you to upload another file because that one is not valid. Valid file types include .rptdesign and .rptlibrary. Only .zip archive types are accepted.
+6. Click Open. The .zip file will attempt to upload to openEQUELLA. If there are no report design files inside the zip, you will see a warning dialog informing you to upload another file because that one is not valid. Valid file types include .rptdesign and .rptlibrary. Only .zip archive types are accepted.
 
-With the .zip file uploaded, EQUELLA automatically unpacks the files and displays them in the Administration Console. 
+With the .zip file uploaded, openEQUELLA automatically unpacks the files and displays them in the Administration Console. 
 
-With multiple report files uploaded, EQUELLA needs to know which report to load first. This is configured in the Initial Report Design field of the Report Editor. While any report can be chosen for this purpose, it is good practice to design a purpose-built landing page where users can access the reports from. 
+With multiple report files uploaded, openEQUELLA needs to know which report to load first. This is configured in the Initial Report Design field of the Report Editor. While any report can be chosen for this purpose, it is good practice to design a purpose-built landing page where users can access the reports from. 
 
 7. Select your landing page as the Initial Report Design by selecting the .rptdesign file from the drop-down menu, or leave it as the default.
 8. Click Save to save the report then click Close  to close the Report Editor.
@@ -346,8 +346,8 @@ With multiple report files uploaded, EQUELLA needs to know which report to load 
 The report access is controlled by the report Access Control and can be configured to suit the requirements of the institution. Users with the EXECUTE_REPORT privilege are able to run reports.
 
 To run a report
-1. Open a browser and enter your EQUELLA URL (e.g. ‘http://equella.myinstitution.edu/logon.do’).
-2. Log in to EQUELLA as an administrator user. The EQUELLA Dashboard page is displayed.
+1. Open a browser and enter your openEQUELLA URL (e.g. ‘http://equella.myinstitution.edu/logon.do’).
+2. Log in to openEQUELLA as an administrator user. The openEQUELLA Dashboard page is displayed.
 3. Select Reports from the left-hand navigation pane. 
 4. Select the newly create report (e.g. Example Dataset (MIME_TYPES)).
 5. Confirm that you are sure you want to run the selected report on the popup dialog. 
@@ -364,7 +364,7 @@ To change the default parameter values
 2. Click Execute Report to display the report details.
 
 ### Disable generation of sub-reports
-Some reports cannot be, or do not need to be, generated because they are created from the details of other reports. EQUELLA provides a feature that facilitates the hiding of such reports. When uploading the report, checking the Hide on Generate Reports screen checkbox will conceal the report from users in the Resource Centre.
+Some reports cannot be, or do not need to be, generated because they are created from the details of other reports. openEQUELLA provides a feature that facilitates the hiding of such reports. When uploading the report, checking the Hide on Generate Reports screen checkbox will conceal the report from users in the Resource Centre.
 
 When a main report uses a sub-report, the main report passes the identity of the key item to the sub-report as a report parameter. The sub-report uses to parameter value to only display detail rows corresponding to the specified key item.
 
@@ -372,10 +372,10 @@ To hide the sub-report
 1. Create a main report and the sub-report. 
 2. Upload the main report in the Administration Console as described in the Upload a report section.
 3. Upload a sub-report in the Administration Console. 
-4. Check the Hide on Generate Reports screen checkbox to conceal the sub-report from users in the EQUELLA Reports page.
+4. Check the Hide on Generate Reports screen checkbox to conceal the sub-report from users in the openEQUELLA Reports page.
 Both reports will be visible in the Administration Console.
 
-In the EQUELLA Resource Center
+In the openEQUELLA Resource Center
 1. Select Reports from the left-hand navigation menu.
 2. Select a report to run by clicking the report name link. 
 3. Click OK in the dialog questioning if you are sure you want to run the report. 
@@ -384,14 +384,14 @@ If the main report relies on a sub-report and the sub-report has not been upload
  
 ## Data sets
 
-EQUELLA provides multiple data sources for reporting:
+openEQUELLA provides multiple data sources for reporting:
 * UserManagement Dataset
 * JDBC Data Set
 * Freetext Dataset.
 
-The UserManagement Dataset provides access to user information kept in a system separate to EQUELLA such as LDAP or a replicated datastore user management system.
+The UserManagement Dataset provides access to user information kept in a system separate to openEQUELLA such as LDAP or a replicated datastore user management system.
 
-The JDBC Data Set provides a standard interface allowing any reporting tool to create reports for EQUELLA. The other two data sets are only available to users of the Report Designer. 
+The JDBC Data Set provides a standard interface allowing any reporting tool to create reports for openEQUELLA. The other two data sets are only available to users of the Report Designer. 
 
 The Freetext Dataset provides access to item metadata.
 
@@ -428,7 +428,7 @@ The available query types are:
 * Matrix Count
 
 ####  Query items
-Configuring this query type requires query text. An optional Where Clause can also be included to direct the searching. The behavior of this query type mimics an EQUELLA Power Search.
+Configuring this query type requires query text. An optional Where Clause can also be included to direct the searching. The behavior of this query type mimics an openEQUELLA Power Search.
 
 ##### Query Text
 Any free text query such as ‘education’ or ‘Tas*’.
@@ -487,7 +487,7 @@ Joint queries that do not use Inner Join return a record for every item in the d
 
 ## User management
 
-Reporting on user and group information for LDAP and replicated datastore requires a special UserManagement data set, as the user management plug-ins (UMPs) store user and group information outside the EQUELLA database.
+Reporting on user and group information for LDAP and replicated datastore requires a special UserManagement data set, as the user management plug-ins (UMPs) store user and group information outside the openEQUELLA database.
 
 User management data sets require a parameter to be supplied from a source outside the data set, typically a Universally Unique Identifier (UUID) from a JDBC or freetext query. This parameter is represented by the question mark (?) character.
 
@@ -530,7 +530,7 @@ An example user management data set scenario is a report that lists all institut
 To create this report
 1. Create a new report. For this example, the report has been named ‘Item owners report’.
 2. Create a JDBC data set to return all items created in the last week 
-The query selects information on items from the CURRENT_INSTITUTION (a variable defined by EQUELLA to determine which institution is being accessed) that were created in the last seven days. (NOTE: EQUELLA also defines a CURRENT_USER variable, which provides the user ID of the user running the query.) 
+The query selects information on items from the CURRENT_INSTITUTION (a variable defined by openEQUELLA to determine which institution is being accessed) that were created in the last seven days. (NOTE: openEQUELLA also defines a CURRENT_USER variable, which provides the user ID of the user running the query.) 
 
 This particular query is written for a PostgreSQL database and uses the date_part() function that may not work in another database type. Check your database documentation for equivalent functions to evaluate dates.
 
@@ -598,9 +598,9 @@ To bind a data set field to the query parameter
 12. Preview the report. 
 The report is complete.
 13. Save the report.
-Typically EQUELLA reports would require improved formatting before being uploaded to EQUELLA. Formatting is beyond the scope of this document, further information is available in the BIRT Report Developer Guide in the Report Designer Help.
+Typically openEQUELLA reports would require improved formatting before being uploaded to openEQUELLA. Formatting is beyond the scope of this document, further information is available in the BIRT Report Developer Guide in the Report Designer Help.
 ## Notes
-User and Group information queries require careful implementation as each record of the JDBC data set causes a search of the User Management system. When the returned JDBC data set is large, the time to run the report can be great as each record causes a request to EQUELLA. When EQUELLA is using the internal user management plug-in the TLEUSER and TLEGROUP tables can be joined to improve query reporting.
+User and Group information queries require careful implementation as each record of the JDBC data set causes a search of the User Management system. When the returned JDBC data set is large, the time to run the report can be great as each record causes a request to openEQUELLA. When openEQUELLA is using the internal user management plug-in the TLEUSER and TLEGROUP tables can be joined to improve query reporting.
 
-# Creating an Equella-Enabled BIRT Report Designer Binary
-A given BIRT RD Equella release binary is comprised of a standard binary of BIRT RD, along with the Equella plugins from [equella/equella-reporting-plugin](https://github.com/equella/equella-reporting-plugin).  These plugins are the same plugins used in the Equella application to receive requests from BIRT RD, and to run the reports that have been added to Equella.
+# Creating an openEQUELLA-Enabled BIRT Report Designer Binary
+A given BIRT RD openEQUELLA release binary is comprised of a standard binary of BIRT RD, along with the openEQUELLA plugins from [equella/equella-reporting-plugin](https://github.com/equella/equella-reporting-plugin).  These plugins are the same plugins used in the Equella application to receive requests from BIRT RD, and to run the reports that have been added to Equella.

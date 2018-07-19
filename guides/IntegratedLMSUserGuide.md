@@ -3,8 +3,8 @@
 Table of Contents
 
 * [Overview](#overview)
-* [EQUELLA Integration screen](#equella-integration-screen)
-* [EQUELLA Integration pages](#equella-integration-pages)
+* [openEQUELLA Integration screen](#openequella-integration-screen)
+* [openEQUELLA Integration pages](#openequella-integration-pages)
 * [Search results – Standard view](#search-results-standard-view)
 * [Search results – Images view](#search-results-images-view)
 * [Search results – Videos view](#search-results-videos-view)
@@ -16,13 +16,13 @@ Table of Contents
 
 
 ## Overview
-EQUELLA is an advanced digital repository that can be integrated with a number of Learning Management Systems. EQUELLA incorporates a digital repository and content authoring tools which enable users to search, create and manage content such as images, audio, video, packaged content, web links, text, PDFs and Microsoft Office™ documents. From within the LMS, users can create and add EQUELLA resources to courses or contribute resources to the EQUELLA repository.
+openEQUELLA is an advanced digital repository that can be integrated with a number of Learning Management Systems. openEQUELLA incorporates a digital repository and content authoring tools which enable users to search, create and manage content such as images, audio, video, packaged content, web links, text, PDFs and Microsoft Office™ documents. From within the LMS, users can create and add openEQUELLA resources to courses or contribute resources to the openEQUELLA repository.
 
-The purpose of this guide is to demonstrate to users how to integrate EQUELLA resources using an LMS. Individual user guides are available for the supported LMS and are linked at the end of this document. Users will learn how to search for, create and manage available resources, and how to add these materials to courses. 
+The purpose of this guide is to demonstrate to users how to integrate openEQUELLA resources using an LMS. Individual user guides are available for the supported LMS and are linked at the end of this document. Users will learn how to search for, create and manage available resources, and how to add these materials to courses. 
 
 
-## EQUELLA Integration screen
-The EQUELLA Integration screen includes the following features:
+## openEQUELLA Integration screen
+The openEQUELLA Integration screen includes the following features:
 * The ability to search for resources
 * The ability to sort and filter
 * The ability to contribute resources using standard contributions or Quick contribute.
@@ -30,7 +30,7 @@ The EQUELLA Integration screen includes the following features:
 * The ability to add resources to the LMS course location using either the + button or by dragging and dropping resources to the relevant location.
 * The ability to view and edit selections before saving.
 
-## EQUELLA Integration screen elements
+## openEQUELLA Integration screen elements
 For the Search, Browse, Favourites and My Resources pages, the integration screen is made up of the Search/Results panel and the LMS panel. 
 
 Links are listed along the top of the screen, and can be selected to change the page view. Available pages are:
@@ -42,9 +42,9 @@ Links are listed along the top of the screen, and can be selected to change the 
 
 The Search/Results panel has relevant search options for each page, and the Results box underneath.
 
-The LMS panel shows the Course title, and lists the Course locations. The course content page that the EQUELLA Integration screen was accessed from is highlighted and bolded. EQUELLA resources are selected and added to course content pages during the selection session. Selections can be previewed before they are saved to the course content pages by clicking the course content page or clicking the Review all selections link.
+The LMS panel shows the Course title, and lists the Course locations. The course content page that the openEQUELLA Integration screen was accessed from is highlighted and bolded. openEQUELLA resources are selected and added to course content pages during the selection session. Selections can be previewed before they are saved to the course content pages by clicking the course content page or clicking the Review all selections link.
 
-## EQUELLA Integration pages
+## openEQUELLA Integration pages
 ### Search
 The Search page enables users to search all resources, a specific collection or an advanced search. Additionally, users can search the Cloud (OER) for matching results. The Search page is the default display option when the integration screen opens, but can be accessed from other pages by clicking the Search link at the top of the page. 
 
@@ -58,7 +58,7 @@ The Search box comprises:
 
 To search for a resource
 1. Enter keyword/s (e.g. physiology) in the search field.
-2. Select a suggestion or click Search to return matching results. The matching results from the EQUELLA repository are displayed (local results). 
+2. Select a suggestion or click Search to return matching results. The matching results from the openEQUELLA repository are displayed (local results). 
 
 The number of search results viewable on the current page is displayed alongside the total number of matching results. Search results can be sorted and filtered. 
 
@@ -81,16 +81,16 @@ To conduct an advanced search
 
 ### Cloud searching
 
-The Cloud search (when enabled) occurs simultaneously with the standard EQUELLA search and searches the OER repository in the cloud. When a search term is entered on an EQUELLA search page and matching items are located in the cloud, the user can easily view and select cloud content in addition to local EQUELLA content.
+The Cloud search (when enabled) occurs simultaneously with the standard openEQUELLA search and searches the OER repository in the cloud. When a search term is entered on an openEQUELLA search page and matching items are located in the cloud, the user can easily view and select cloud content in addition to local openEQUELLA content.
 
 To view Cloud results
 1. Once a search has been performed, from the results page click the Found x cloud results link in the bottom-right of the Search box to view the matching OER results. 
 2. Click the Local resource link to return to the local resource results. 
 
 ### Browse
-The Browse view enables users to browse the EQUELLA repository using pre-defined hierarchy topics.
+The Browse view enables users to browse the openEQUELLA repository using pre-defined hierarchy topics.
 
-To Browse EQUELLA resources
+To Browse openEQUELLA resources
 1. Select the Browse link from the top of the page. 
 2. Select the required hierarchy topic/subtopic to view results. When drilling down into hierarchy sub-topics, use the breadcrumbs to move back to higher-level sub-topics. 
 
@@ -118,7 +118,7 @@ To add a search to favourites
 3. Enter a name for the search, then click . The search now displays on the Favourites – Searches page. 
 
 #### My resources
-The My resources page enables the logged-in user to view and select the EQUELLA resources which they own in one place, including resources with statuses other than Live.
+The My resources page enables the logged-in user to view and select the openEQUELLA resources which they own in one place, including resources with statuses other than Live.
 
 To view My Resources
 1. Select the My resources link from the top of the page. The My resources page displays. 
@@ -126,33 +126,33 @@ To view My Resources
 This page includes the following views:
 * Published – resources that have a status of Live, that can be selected for LMS courses.
 * Drafts – resources that have a status of Draft, that are the user’s works in progress (i.e. haven’t yet been published or added to moderation). Not available for course selection.
-* Scrapbook – the function where users can upload files or create HTML pages to be added to EQUELLA resources.
+* Scrapbook – the function where users can upload files or create HTML pages to be added to openEQUELLA resources.
 * Moderation queue – resources that are currently in moderation.
 * Archive – resources with a status of Archived. Not available for course selection.
 * All resources – shows all resources, regardless of status. Only those with a status of Live can be selected for courses.
-* Purchased – only relevant to institutions using the EQUELLA Content Exchange.
+* Purchased – only relevant to institutions using the openEQUELLA Content Exchange.
 
 ### Contribute
-The Contribute page provides the ability to create a new EQUELLA resource that can then be selected and added to an LMS course (depending on the moderation process required prior to a resource ‘going live’).
+The Contribute page provides the ability to create a new openEQUELLA resource that can then be selected and added to an LMS course (depending on the moderation process required prior to a resource ‘going live’).
 
 To view Contribute page
 
 Select the Contribute link from the top of the page. The Contribute page displays. 
 
-Users can select from the Quick contribute pane (which uploads a file, using the file name as the resource title and description in the EQUELLA repository) or a standard collection.
+Users can select from the Quick contribute pane (which uploads a file, using the file name as the resource title and description in the openEQUELLA repository) or a standard collection.
 
 #### Quick contribution
-To create a new EQUELLA resource using Quick contribution
+To create a new openEQUELLA resource using Quick contribution
 1. Select the Contribute link from the integration screen. The Contribute page displays.
 2. In the Quick contribution panel, click Browse and locate and Open the required file.
 3. Click Upload.
 
 The file is automatically added to the LMS course location the Integration screen was accessed from. 
 
-Additionally, the file has been added into EQUELLA with the file name as the title and description. 
+Additionally, the file has been added into openEQUELLA with the file name as the title and description. 
 
 #### Standard contribution
-To contribute a new EQUELLA resource
+To contribute a new openEQUELLA resource
 1. Select the Contribute link from the integration screen. The Contribute page display
 2. Select a collection (e.g. Learning resources) from the list of collections to display a contribution wizard that will guide the user through the contribution process. Wizard controls will differ for each collection.
 Contribution wizard elements can include:
@@ -238,7 +238,7 @@ Select the clear filters link to remove the filter criteria and display all resu
 Search results can be shared with other users by sending them the search results for their use.
 Clicking the Share tab at the top of the Results box displays the Share search query pane where results can be shared by: RSS or Atom feed, via URL and via e-mail.
 * Share search results as an RSS or Atom feed—selecting the RSS feed or Atom feed link will display a subscription page. Subscribed users are notified if resources are updated or added to the search results.
-* Share search results via URL—users can send a link to the search results page to other users by copying and pasting the URL into an email or other document. The EQUELLA log in page is displayed when the link is clicked. After logging in, the user is taken directly to the search results page.
+* Share search results via URL—users can send a link to the search results page to other users by copying and pasting the URL into an email or other document. The openEQUELLA log in page is displayed when the link is clicked. After logging in, the user is taken directly to the search results page.
 * Share search results via e-mail—users can send results to others via email. Enter an email address in the field provided and click the mail icon . Check the Share only results viewable by guests checkbox if sending to users outside your institution.
 
 ## Search results Images view
@@ -371,7 +371,7 @@ The courses in which the selected resource is current used are listed, with the 
 Select the down arrow which displays to the right of the Date Added column when the cursor points at a course line to display an expandable pane showing information about the resource details, which can include:
 * Resource version - the current version of the resource.
 * Attachment - the name of the attachment
-* Name in the external system - the LMS title, which may differ from the EQUELLA title.
+* Name in the external system - the LMS title, which may differ from the openEQUELLA title.
 
 ### Moderation history page
 A resource’s Moderation history page provides details on any submission, status change and moderation events pertaining to this resource. 
@@ -388,11 +388,11 @@ It is made up of the following elements:
 The Actions area can display the following operations, depending on user permissions:
 
 ### Add to external system
-The Add to external system function is part of the EQUELLA Push to LMS feature.
+The Add to external system function is part of the openEQUELLA Push to LMS feature.
 
-Selecting this action allows the user to add all or parts of the resource to external connectors that have been configured in the system. (Note: The Add to external system link only displays if at least one external connector has been configured in the EQUELLA system.) 
+Selecting this action allows the user to add all or parts of the resource to external connectors that have been configured in the system. (Note: The Add to external system link only displays if at least one external connector has been configured in the openEQUELLA system.) 
 
-EQUELLA supports Moodle and Blackboard connectors, and more than one may be configured. If there are multiple connectors configured, a drop down box displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen displays immediately.
+openEQUELLA supports Moodle and Blackboard connectors, and more than one may be configured. If there are multiple connectors configured, a drop down box displays, and the user selects from the list. If there is only one connector configured, the Add to external system screen displays immediately.
 
 The Add to external system function allows the addition of a resource to multiple locations within the selected connector.
 

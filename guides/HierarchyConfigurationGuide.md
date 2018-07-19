@@ -13,28 +13,28 @@ Table of Contents
 [Displaying subtopics and results](#displaying-subtopics-and-results)
 
 ## Hierarchy overview
-In addition to searching, the EQUELLA Digital Repository allows the administrator to define and control access to a hierarchy of logically grouped resources.
+In addition to searching, the openEQUELLA Digital Repository allows the administrator to define and control access to a hierarchy of logically grouped resources.
 
-Hierarchical browsing allows users to discover resources placed within the digital repository based upon category. Users can ‘drill down’ into topics and their subfolders and search within the results. EQUELLA can be configured to provide a count of subtopics and results and allow contributors to add their most important resources to a hierarchy topic as key resources.
+Hierarchical browsing allows users to discover resources placed within the digital repository based upon category. Users can ‘drill down’ into topics and their subfolders and search within the results. openEQUELLA can be configured to provide a count of subtopics and results and allow contributors to add their most important resources to a hierarchy topic as key resources.
 
-In EQUELLA, hierarchies can be dynamic in nature. This functionality allows administrators to create an environment where users can browse through categories to target their searches.
+In openEQUELLA, hierarchies can be dynamic in nature. This functionality allows administrators to create an environment where users can browse through categories to target their searches.
 
-The purpose of this guide is to provide system administrators with an understanding of the EQUELLA Hierarchy Editor tool to create and manage topics and subtopics, and to illustrate how these hierarchy topics may be accessed for use.
+The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA Hierarchy Editor tool to create and manage topics and subtopics, and to illustrate how these hierarchy topics may be accessed for use.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation.
 
 ## Hierarchy privileges
 There are three privileges linked to hierarchies:
 * EDIT_HIERARCHY_TOPIC—users with this privilege have access to the Hierarchy editor to create and maintain hierarchies.
-* VIEW_HIERARCHY_TOPIC—users with this privilege are able to see and use the Hierarchy topic links from the EQUELLA navigation menu and the Browse portlet.
+* VIEW_HIERARCHY_TOPIC—users with this privilege are able to see and use the Hierarchy topic links from the openEQUELLA navigation menu and the Browse portlet.
 * MODIFY_KEY_RESOURCE—users with this privilege are able to add and remove key resources to a hierarchy topic from the search results page, as well as the Action menu on the Resource summary page.
 
-These privileges can be configured from the Security Manager (see the EQUELLA Security Manager Configuration Guide for more detail) or through the Access Control tab in the Hierarchy Editor tool. 
+These privileges can be configured from the Security Manager (see the openEQUELLA Security Manager Configuration Guide for more detail) or through the Access Control tab in the Hierarchy Editor tool. 
 
 ## Hierarchy Editor
-Hierarchies are created and maintained via the Hierarchy Editor, accessed from the EQUELLA Administration console.
+Hierarchies are created and maintained via the Hierarchy Editor, accessed from the openEQUELLA Administration console.
 #### To access the Hierarchy Editor
-1. Log in to EQUELLA as an administrator, select Settings then Administration console. 
+1. Log in to openEQUELLA as an administrator, select Settings then Administration console. 
 2. The Administration console displays. Select Hierarchy Editor. The Hierarchy Editor displays. 
 
 The Hierarchy Editor page is made up of two panes:
@@ -88,7 +88,7 @@ The Topic editor (for a resource topic) has the following tabs:
 The Display Details page elements are:
 
 #### Topic name
-The topic name is the editable display name shown as the topic link in the EQUELLA navigation menu and Browse portlet (e.g. Browse resources by format...).
+The topic name is the editable display name shown as the topic link in the openEQUELLA navigation menu and Browse portlet (e.g. Browse resources by format...).
 
 #### Short description
 The short description is a brief description of the topic or subtopic, and allows HTML tags. It displays under the topic name in the Browse portlet, and under the subtopic name once the topic link has been selected. 
@@ -105,7 +105,7 @@ Section names can be configured to display above subtopics or above results:
 Check this box at a parent level to prevent subtopics with no results from displaying.
 
 #### Advanced search
-The Advanced Search drop-down lists all advanced searches configured in the EQUELLA system and provides the option of associating the hierarchy topic with an advanced search, allowing for targeted searching using specific metadata to refine search results. Select an advanced search (e.g. Learning Resources), or leave at the default No advanced search selected. When an advanced search is selected an Advanced Search link is displayed on the Search page. 
+The Advanced Search drop-down lists all advanced searches configured in the openEQUELLA system and provides the option of associating the hierarchy topic with an advanced search, allowing for targeted searching using specific metadata to refine search results. Select an advanced search (e.g. Learning Resources), or leave at the default No advanced search selected. When an advanced search is selected an Advanced Search link is displayed on the Search page. 
 
 ### Resource Filtering tab
 The Resource Filtering page provides options for configuring the type of results to be displayed. Only the contents of selected schemas and collections are displayed. If this page is not configured, all repository resources are displayed under the hierarchy topic. 
@@ -117,7 +117,7 @@ When this box is checked (default), the results list of resources matching the t
 Where the option is unchecked, results are not displayed. This option could be used where a subtopic needs to be selected before results are displayed. 
 
 #### Perform the following freetext query
-Enter search terms in the freetext query box to restrict results from this topic or subtopic to resources containing the specified terms. For example, entering the search term ‘equella’ in the query box means that only those resources containing the search term EQUELLA are displayed. 
+Enter search terms in the freetext query box to restrict results from this topic or subtopic to resources containing the specified terms. For example, entering the search term ‘equella’ in the query box means that only those resources containing the search term openEQUELLA are displayed. 
 
 There is no notification on the screen when performing a hierarchy search to inform the user that a freetext search term has been specified in the Hierarchy editor.
 
@@ -148,7 +148,7 @@ Adding a collection or collections restricts searches to resources belonging onl
 3. Click OK to display the collection in the list.
 
 #### To add a script
-1. Click [Add Script] to display the script editor. See the EQUELLA Scripting Guide (Basic) for more information on adding scripts.
+1. Click [Add Script] to display the script editor. See the openEQUELLA Scripting Guide (Basic) for more information on adding scripts.
 
 #### To remove a collection from the list
 1. Select the relevant collection then click Remove.
@@ -286,7 +286,7 @@ NOTE: Hierarchy topics or subtopics where the selected resource already exists a
 
 ## Accessing hierarchical browsing
 
-Hierarchy topics are accessed from the EQUELLA Dashboard page via the Browse portlet or from the hierarchy topic links displayed on the navigation menu.
+Hierarchy topics are accessed from the openEQUELLA Dashboard page via the Browse portlet or from the hierarchy topic links displayed on the navigation menu.
 ### Browsing using hierarchy topic links
 Hierarchy topic links display in a group on the left-hand navigation menu. Click on a link to display subtopics and results.
 
@@ -296,9 +296,9 @@ Selecting the More... link displays the Browse page with a list of all hierarchy
 
 Select a topic to display subtopics and results.
 ### Browsing using the Browse portlet
-The EQUELLA Dashboard page can display multiple portlets including Browse, Favourites, Formatted text, My resources, Quick search, RSS or Atom feed, Recent contributions, Scripted, Task statistics, Tasks and Web page, depending on user privileges.
+The openEQUELLA Dashboard page can display multiple portlets including Browse, Favourites, Formatted text, My resources, Quick search, RSS or Atom feed, Recent contributions, Scripted, Task statistics, Tasks and Web page, depending on user privileges.
 
-These portlets are configured by selecting Screen Options from EQUELLA Dashboard then selecting the required portlet.
+These portlets are configured by selecting Screen Options from openEQUELLA Dashboard then selecting the required portlet.
 
 #### To add a Browse portlet to the Dashboard
 1. Select Screen Options from the top right-hand corner of the Dashboard page. 

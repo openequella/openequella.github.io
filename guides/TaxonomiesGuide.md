@@ -11,21 +11,21 @@ Table of Contents
 [Taxonomies during contribution](#taxonomies-during-contribution)
 
 ## Taxonomies guide
-EQUELLA provides a taxonomy engine that is scalable to facilitate taxonomies with very large numbers of hierarchical terms. Terms can be configured to contain HTML fragments or custom data keys, and can be selected during resource contribution, or when power searching, through browsing to a target or by searching the list of terms.
+openEQUELLA provides a taxonomy engine that is scalable to facilitate taxonomies with very large numbers of hierarchical terms. Terms can be configured to contain HTML fragments or custom data keys, and can be selected during resource contribution, or when power searching, through browsing to a target or by searching the list of terms.
 
-The purpose of this guide is to provide system administrators and content creators with an understanding of the EQUELLA Taxonomies tool to enable successful taxonomy creation and management.
+The purpose of this guide is to provide system administrators and content creators with an understanding of the openEQUELLA Taxonomies tool to enable successful taxonomy creation and management.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA, and as such may differ in appearance to your own installation. Where possible the examples in this guide use the schemas, collections, contribution wizards and power searches provided in the EQUELLA Vanilla Institution. 
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA, and as such may differ in appearance to your own installation. Where possible the examples in this guide use the schemas, collections, contribution wizards and power searches provided in the openEQUELLA Vanilla Institution. 
 
 ## Taxonomies tool
-The Taxonomies tool enables the creation of taxonomies to a large size via manual addition of local terms or referral from a SQL data source. For mass addition of terms, it is possible to define taxonomies programmatically using the EQUELLA SOAP interface.
+The Taxonomies tool enables the creation of taxonomies to a large size via manual addition of local terms or referral from a SQL data source. For mass addition of terms, it is possible to define taxonomies programmatically using the openEQUELLA SOAP interface.
 
 ## Configure a taxonomy
 Taxonomies are created, modified and removed using the Taxonomies tool, available in the Administration Console.
-To access EQUELLA and open the Administration Console
+To access openEQUELLA and open the Administration Console
 
-1. Open a browser and enter your EQUELLA URL (e.g. ‘http://equella.myinstitution.edu/institution’).
-2. Log in to EQUELLA as an administrator, select Settings then Administration console.
+1. Open a browser and enter your openEQUELLA URL (e.g. ‘http://equella.myinstitution.edu/institution’).
+2. Log in to openEQUELLA as an administrator, select Settings then Administration console.
 3. The Administration Console displays. Select Taxonomies. 
 The Taxonomies page displays, showing a list of all previously configured taxonomies.
 
@@ -252,12 +252,12 @@ The three privileges for taxonomies are:
 
 
 ### Use SOAP to upload terms
-Administrators can programmatically add a large number of additional terms to an existing taxonomy stored in EQUELLA via the available SOAP methods in the EQUELLA AP. The SOAP methods require a unique identifier to access the taxonomy; this can be retrieved by copying-and-pasting the UUID from the Identifier field on the Details tab of the Taxonomy Editor.
+Administrators can programmatically add a large number of additional terms to an existing taxonomy stored in openEQUELLA via the available SOAP methods in the openEQUELLA AP. The SOAP methods require a unique identifier to access the taxonomy; this can be retrieved by copying-and-pasting the UUID from the Identifier field on the Details tab of the Taxonomy Editor.
 
 ## Taxonomies during contribution
 After a taxonomy has been successfully created, it becomes possible to incorporate it into the wizard of an Advanced Search or Collection Definition, using the Term Selector control. Created taxonomies contain a list of terms that can be selected to use during contribution or when performing a power search.
 
-Contribution Wizards are configured in the EQUELLA Administration Console by selecting the Collection Definitions tool. Term Selector wizard controls are added in the Wizard tab. 
+Contribution Wizards are configured in the openEQUELLA Administration Console by selecting the Collection Definitions tool. Term Selector wizard controls are added in the Wizard tab. 
 
 
 The configurable Term Selector control elements are:

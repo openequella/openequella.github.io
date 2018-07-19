@@ -27,12 +27,12 @@ java -cp axis.jar;commons-logging-1.0.4.jar;commons-discovery-0.2.jar;jaxrpc.jar
 INSTITUTION_URL/services/SoapService50?wsdl
 ```
 
-In this way, you can build classes to invoke SOAP methods for any SOAP service exposed by EQUELLA.  E.g. the copyright SOAP service at <http://INSTITUTION_URL/services/calactivation.service?wsdl>
+In this way, you can build classes to invoke SOAP methods for any SOAP service exposed by openEQUELLA.  E.g. the copyright SOAP service at <http://INSTITUTION_URL/services/calactivation.service?wsdl>
 
-The example code contains a helper class (EQUELLASOAP) which you are free to use and modify.  This class has been created to simplify the processing of the XML results and XML parameters returned from and supplied to the SOAP methods, it also ensures the user’s session is maintained between SOAP calls by setting setMaintainSession(true) on the SOAP service locator object.  The EQUELLASOAP class is not required to use the EQUELLA SOAP services, it is simply for convenience.
+The example code contains a helper class (EQUELLASOAP) which you are free to use and modify.  This class has been created to simplify the processing of the XML results and XML parameters returned from and supplied to the SOAP methods, it also ensures the user’s session is maintained between SOAP calls by setting setMaintainSession(true) on the SOAP service locator object.  The EQUELLASOAP class is not required to use the openEQUELLA SOAP services, it is simply for convenience.
 
 ### Search
-This example shows how you can retrieve a list of items from EQUELLA based on a few search parameters.  The searching code is contained within the cmdSearch_Click method.  Here is a summary of that code:
+This example shows how you can retrieve a list of items from openEQUELLA based on a few search parameters.  The searching code is contained within the cmdSearch_Click method.  Here is a summary of that code:
 * It creates an EQUELLASOAP object which is a thin wrapper around the automatically generated SoapService50 object. The EQUELLASOAP ensures that user session is maintained on the SoapService50 object and logs the user in.
 * It invokes searchItems on the EQUELLASOAP object.  This method is also a thin wrapper around the SoapService50 method.  This method returns an XMLWrapper object for convenience, rather than raw XML string returned by the SoapService50.
 * It retrieves information from the XML, such as the number of results returned, the number of results available and the actual result list.  The format of the returned XML and the meanings/values of the parameters are documented in the SOAP API documentation.
@@ -49,12 +49,12 @@ This example shows how you can contribute an item to a collection and give it a 
 ## Writing your own code
 In general the process for invoking a SOAP method is as follows:
 1.  Create a SoapService50 object.
-When creating a SoapService50 object, you should supply the URL to connect to although this is not strictly necessary.  You MUST set a cookie handler on the SoapService50 object before invoking the login method.  This is because the user session is retrieved from the cookie by the EQUELLA server; if you do not set a cookie handler your session will be lost immediately after calling login.  When using Apache Axis, you can easily do this by setting setMaintainSession(true) on the generated locator class.
+When creating a SoapService50 object, you should supply the URL to connect to although this is not strictly necessary.  You MUST set a cookie handler on the SoapService50 object before invoking the login method.  This is because the user session is retrieved from the cookie by the openEQUELLA server; if you do not set a cookie handler your session will be lost immediately after calling login.  When using Apache Axis, you can easily do this by setting setMaintainSession(true) on the generated locator class.
 2.  Call the login method:
 ```
 client.login(username, password);
 ```
-The user that you login as must have sufficient privileges to perform your required task.  You cannot do anything over SOAP that you cannot do within the EQUELLA Digital Repository.
+The user that you login as must have sufficient privileges to perform your required task.  You cannot do anything over SOAP that you cannot do within the openEQUELLA Digital Repository.
 
 3.  Invoke a method:
 ```

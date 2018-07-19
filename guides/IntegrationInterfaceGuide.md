@@ -10,12 +10,12 @@
 
 ## Integration overview  
 
-The purpose of this guide is to provide system administrators with a method for a third party system to use the EQUELLA Digital Repository as an integrated tool to discover and return content. A typical usage would be adding course content, via an integration, to deliver to students.
+The purpose of this guide is to provide system administrators with a method for a third party system to use the openEQUELLA Digital Repository as an integrated tool to discover and return content. A typical usage would be adding course content, via an integration, to deliver to students.
 
-EQUELLA provides a URL that is a hook into the content discovery engine. Once at this URL (typically displayed within a frameset of the third party system), the user can search, create, manage and share content that they have access to within EQUELLA. The hook is designed to provide seamless single sign-on access and can be customized to present a look-and-feel similar to the integrating system.
+openEQUELLA provides a URL that is a hook into the content discovery engine. Once at this URL (typically displayed within a frameset of the third party system), the user can search, create, manage and share content that they have access to within openEQUELLA. The hook is designed to provide seamless single sign-on access and can be customized to present a look-and-feel similar to the integrating system.
 
 ## Single sign on authentication
-When single sign-on (SSO) to EQUELLA is required, an authentication token should be included in the URL. Including a token in the URL logs the user nominated in the token into EQUELLA, providing access to all EQUELLA pages the user has privileges for, and ensures the security and auditing integrity are maintained.
+When single sign-on (SSO) to openEQUELLA is required, an authentication token should be included in the URL. Including a token in the URL logs the user nominated in the token into openEQUELLA, providing access to all openEQUELLA pages the user has privileges for, and ensures the security and auditing integrity are maintained.
 
 ### Token generation
 The format of the token parameter is most easily specified by the following code:
@@ -38,9 +38,9 @@ public String createToken (String username, String shareId, String sharedSecret)
       ).getDigest ());
   }
 ```
-Once a token is generated, it can be URL-encoded and added to the hook URL as the token parameter. This token can be used as a parameter on any EQUELLA page and may also be used to initiate SOAP sessions. There is a maximum time difference of 30 minutes between a token and the current time on the server (GMT). Tokens with a larger difference are considered to be expired and invalid.
+Once a token is generated, it can be URL-encoded and added to the hook URL as the token parameter. This token can be used as a parameter on any openEQUELLA page and may also be used to initiate SOAP sessions. There is a maximum time difference of 30 minutes between a token and the current time on the server (GMT). Tokens with a larger difference are considered to be expired and invalid.
 
-The single sign-on relies on the EQUELLA Shared Secrets plug-in being set up with an appropriate shared secret. Shared Secrets are configured in the Administration Console’s User Management tool. 
+The single sign-on relies on the openEQUELLA Shared Secrets plug-in being set up with an appropriate shared secret. Shared Secrets are configured in the Administration Console’s User Management tool. 
 
 The Shared Secret plug-in provides the following options:
    * Specification of Identifier (ID) and Shared Secret.
@@ -50,11 +50,11 @@ The Shared Secret plug-in provides the following options:
    * Automatic creation of local users if they do not exist at the time of login. 
 
 ## Integration hook URL  
-The integration hook URL comprises several parameters that include methods, actions, URLs and authentication. These parameters allow complete access to EQUELLA pages from an integration and provide a means for performing tasks in the EQUELLA Digital Repository.
+The integration hook URL comprises several parameters that include methods, actions, URLs and authentication. These parameters allow complete access to openEQUELLA pages from an integration and provide a means for performing tasks in the openEQUELLA Digital Repository.
 
 ## Integration hook actions 
 
-An integration must forward to your EQUELLA institution with ‘signon.do’ appended to the hosting server URL where a selection session will be started. All selection sessions provide a means for performing tasks in the EQUELLA Digital Repository that result in the selection of an item or attachment by the user. 
+An integration must forward to your openEQUELLA institution with ‘signon.do’ appended to the hosting server URL where a selection session will be started. All selection sessions provide a means for performing tasks in the openEQUELLA Digital Repository that result in the selection of an item or attachment by the user. 
 
 As an example the following URL:
 ‘<http://equella.myinstitute.edu/institution/logon.do>’ 
@@ -66,7 +66,7 @@ The following parameters can be appended to the URL:
 
 **method (required)**  This should always have the value ‘lms'.
 
-**token (optional)**  A string to enable single sign-on to EQUELLA. If the token is not provided the user will have to provide authentication whenever the hook URL is used. 
+**token (optional)**  A string to enable single sign-on to openEQUELLA. If the token is not provided the user will have to provide authentication whenever the hook URL is used. 
 
 **returnurl (required)**  The URL that the user is redirected to when the action is complete. This URL can comprise parameters; an example is provided in the guide below.
 
@@ -83,7 +83,7 @@ Note: a value for this parameter overrides the courseId parameter if both are su
 
 **attachmentUuidUrls (optional)** If passed in with a value of ‘true’, the URLs for selected attachments will use the attachment UUID rather than the attachment name. This allows attachment names to be renamed without breaking existing URLs in an LMS.
 
-**cancelDisabled (optional)**  If passed in with a value of ‘true’, any close or cancel buttons in the EQUELLa interface will be suppressed. This is useful for integrations that provide their own close/cancel buttons.
+**cancelDisabled (optional)**  If passed in with a value of ‘true’, any close or cancel buttons in the openEQUELLA interface will be suppressed. This is useful for integrations that provide their own close/cancel buttons.
 
 **options (optional)**  Extended set of parameters that can be used for further configuration. These are predefined strings and are listed under the section on the Options parameter.
 
@@ -157,18 +157,18 @@ CYlI2Q%3D%3D
 ```
 
 ## Predefined actions
-The following actions are recommended for easily providing access to most EQUELLA functions through a single entry point:
+The following actions are recommended for easily providing access to most openEQUELLA functions through a single entry point:
 
-**selectOrAdd** Provides access to all EQUELLA searching and contribution methods. Loads the EQUELLA Selection Home Page.
+**selectOrAdd** Provides access to all openEQUELLA searching and contribution methods. Loads the openEQUELLA Selection Home Page.
 
-**searchResources** Provides access to all EQUELLA searching methods.
+**searchResources** Provides access to all openEQUELLA searching methods.
 
-**contribute**  Provides access to all EQUELLA contribution methods.
+**contribute**  Provides access to all openEQUELLA contribution methods.
 
-**structured** Provides access to all EQUELLA searching and contribution methods. Loads the search results page with a graphical representation of the target folders (sent from your system) on the right hand side, with which users can drag and drop resources onto.  Must be used with the structure 
+**structured** Provides access to all openEQUELLA searching and contribution methods. Loads the search results page with a graphical representation of the target folders (sent from your system) on the right hand side, with which users can drag and drop resources onto.  Must be used with the structure 
 
 ## ‘Options’ parameter
-The following is a list of the current pre-defined parameter values that can be assigned to the options parameter, and the corresponding function in EQUELLA that they provide access to:
+The following is a list of the current pre-defined parameter values that can be assigned to the options parameter, and the corresponding function in openEQUELLA that they provide access to:
 
 **allCollections**  Turn on or off the availability of all collections for searching. (true/false)
 
@@ -191,7 +191,7 @@ The parameters that are appended to the return URL are as follows:
 **name**  String representing the name of the item found.
 description  String representing the description of the item found.
 
-**url**  The absolute URL to the item found. Do not rely on the format of the URL being an integ/gen style URL. This is not part of the integration interface and may change depending on the type of attachment or item selected, or in future versions of EQUELLA.
+**url**  The absolute URL to the item found. Do not rely on the format of the URL being an integ/gen style URL. This is not part of the integration interface and may change depending on the type of attachment or item selected, or in future versions of openEQUELLA.
 
 **uuid**  Persistent identifier for the item.
 itemdefuuid  Persistent identifier for the collection for the item.
@@ -216,7 +216,7 @@ session=47f23cd29
 &xxxtemdefuuid=1ed3feb1-2e04-1bad-cfbb-7e6168c4a8ca
 &xxxversion=1
 ```
-where the module on the integration at ‘/module/mod.do’ can interpret these parameters to add a link to the EQUELLA item.(Note: the parameters added by EQUELLA are prefixed with ‘xxx’ as specified in the returnprefix parameter.)
+where the module on the integration at ‘/module/mod.do’ can interpret these parameters to add a link to the openEQUELLA item.(Note: the parameters added by openEQUELLA are prefixed with ‘xxx’ as specified in the returnprefix parameter.)
 
 If a "structured" action is used, or if either selectMultiple=true or forcePost=true was specified to start the integration session, a JSON array value will be POSTed back to your integration under the "links" form parameter.
 
@@ -226,7 +226,7 @@ The fields of each link object are:
 
 **description**   Will be blank if an attachment was selected, otherwise it will be the description of the selected item.
 
-**url**  The absolute URL to the item found. Do not rely on the format of the URL being an integ/gen style URL. This is not part of the integration interface and may change depending on the type of attachment or item selected, or in future versions of EQUELLA.
+**url**  The absolute URL to the item found. Do not rely on the format of the URL being an integ/gen style URL. This is not part of the integration interface and may change depending on the type of attachment or item selected, or in future versions of openEQUELLA.
 
 **uuid**  Persistent identifier for the item.
 

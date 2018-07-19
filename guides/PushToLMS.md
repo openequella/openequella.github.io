@@ -25,7 +25,7 @@ Table of Contents
 [Bulk actions](#bulk-actions)
 
 ## Push to LMS overview
-EQUELLA allows LMS integration enabling direct contribution of resources into Moodle™ (Moodle) or Blackboard Learn™ (Blackboard) courses without having to access each LMS separately. This functionality enables the addition of a resource to multiple locations across courses in one process. Push to LMS also allows the user to find all the current course locations a resource has been linked to in the LMS. Additionally, the user can find all resources within the EQUELLA system that share the same attachments.
+openEQUELLA allows LMS integration enabling direct contribution of resources into Moodle™ (Moodle) or Blackboard Learn™ (Blackboard) courses without having to access each LMS separately. This functionality enables the addition of a resource to multiple locations across courses in one process. Push to LMS also allows the user to find all the current course locations a resource has been linked to in the LMS. Additionally, the user can find all resources within the openEQUELLA system that share the same attachments.
 
 The Manage external resources function enables administrators to view, edit, sort and filter linked LMS resources, as well as removing or moving multiple LMS resources in one action.
 
@@ -36,17 +36,17 @@ Please note that this guide has been developed using Moodle version 2.4 and Blac
 ## Prerequisites
 To successfully complete this installation the system administrator will require:
 * sufficient privileges to access the Moodle or Blackboard system integration functionality;
-* sufficient privileges to access the EQUELLA Security Management functionality and
+* sufficient privileges to access the openEQUELLA Security Management functionality and
 * privileges to unzip and create files in Moodle.
 
 System prerequisites for integration:
-* EQUELLA version 6.1 and Moodle version 2.1,2.2, 2.3 or 2.4 or Blackboard version 9.1 (SP8, SP9 or SP11) must be installed and running. 
+* openEQUELLA version 6.1 and Moodle version 2.1,2.2, 2.3 or 2.4 or Blackboard version 9.1 (SP8, SP9 or SP11) must be installed and running. 
 * Ensure that the servers have the same UTC (formerly GMT) time. As long as the UTC time is synchronised on all servers, different times and time zones can be set on each server.
-* If using Moodle, the latest EQUELLA Moodle Module must be installed within Moodle to use this feature.
-* If using Blackboard, the latest EQUELLA Blackboard Building Block must be installed within Blackboard to use this feature. 
+* If using Moodle, the latest openEQUELLA Moodle Module must be installed within Moodle to use this feature.
+* If using Blackboard, the latest openEQUELLA Blackboard Building Block must be installed within Blackboard to use this feature. 
 
 ## Push to LMS configuration procedure
-EQUELLA Push to LMS configuration can be broken down into the following steps:
+openEQUELLA Push to LMS configuration can be broken down into the following steps:
 * Select new connector type.
 * Enter configuration details for the connector then test the URL (unless setting up a local resources connector).
 * Test Web Service (unless setting up a local resources connector).
@@ -68,7 +68,7 @@ The sixth is the privilege required to allow access to the management pages (Man
 
 
 ## Set up a Moodle connector
-Setting up a Moodle connector will enable suitably privileged users to add resources to Moodle courses from EQUELLA using the Add to external system link from the Resource summary screen. Additionally, users will be able to check the current usage of the resource within Moodle using the Find uses link.
+Setting up a Moodle connector will enable suitably privileged users to add resources to Moodle courses from openEQUELLA using the Add to external system link from the Resource summary screen. Additionally, users will be able to check the current usage of the resource within Moodle using the Find uses link.
 
 #### To set up a Moodle connector
 1. Select External system connectors from the Settings menu. 
@@ -82,17 +82,17 @@ Setting up a Moodle connector will enable suitably privileged users to add resou
 9. Click the enable web services link. The system requires the user to be logged into Moodle to activate web services. A log in screen displays if the user is not currently logged in. The Enable web services page displays.
 10. Select the check box then click Save Changes.
 11. Close the Moodle page then click the enable the REST protocol link. The Manage Protocols page displays.
-EQUELLA 6.1 Push to LMS 10 | P a g e
+openEQUELLA 6.1 Push to LMS 10 | P a g e
 12. Click the Enable Icon next to REST protocol to enable it, then click Save Changes.
 13. From the Site administration menu, select Web Services then External Services from the Web services node. The External services page displays, with the equellaservice listed.
 14. Click on the equellaservice Authorised users link.  The Select authorised users page displays, with all available users listed in the Not authorised users pane. 
-15. Highlight the users authorised to use the EQUELLA functionality, then click to move them to the Authorised users pane. Use ctrl+click or shift+click to highlight multiple users. Selections are automatically saved. 
+15. Highlight the users authorised to use the openEQUELLA functionality, then click to move them to the Authorised users pane. Use ctrl+click or shift+click to highlight multiple users. Selections are automatically saved. 
 16. Close the Moodle page then click the create a web service token link. A Manage tokens page displays. Click the Add link. The Create token page displays. 
 17. Select a Moodle user with web service and REST service permissions from the User list. Select equellaservice from the Service drop-down list.
 18. Click Save Changes. The Manage tokens page displays with a Token value.
 19. Copy the Token value and close the page.
 20. Paste the Token value to the Web service token field then click Test Web Services. Connection successful should display. 
-21. If required, select Modify EQUELLA usernames to match Moodle:. A text box displays for entering Javascript to modify and return the EQUELLA username stored in the variable “username”. An example is shown in Figure 13. If a token is set up to prepend a string to the start of a username (e.g. "moodle_" for users coming from moodle) then an example script to string off the "moodle_" prefix and just return the original username would be:
+21. If required, select Modify openEQUELLA usernames to match Moodle:. A text box displays for entering Javascript to modify and return the openEQUELLA username stored in the variable “username”. An example is shown in Figure 13. If a token is set up to prepend a string to the start of a username (e.g. "moodle_" for users coming from moodle) then an example script to string off the "moodle_" prefix and just return the original username would be:
 ```
 if (username.indexOf("moodle_") == 0) 
 {return username.substr(7);} 
@@ -100,32 +100,32 @@ else
 {return username;}
 ```
 22. If required, click Change next to Exportable by to open the Select users page. Select the users to access the Add to external link from the Resource summary page. Click OK to save.
-EQUELLA 6.1 Push to LMS 15 | P a g e
+openEQUELLA 6.1 Push to LMS 15 | P a g e
 23. If required, click Change next to Content viewable by to open the Select users page. Select the users to access the Find uses link from the Resource summary page. Click to OK save.
 24. Click OK to save the connector details.
 
 ## Set up a Blackboard connector
-Setting up a Blackboard connector will enable suitably privileged users to add resources to Blackboard courses from EQUELLA, using the Add to external system link from the Resource summary screen. Additionally, users will be able to check the current usage of the resource within Blackboard using the Find uses link.
+Setting up a Blackboard connector will enable suitably privileged users to add resources to Blackboard courses from openEQUELLA, using the Add to external system link from the Resource summary screen. Additionally, users will be able to check the current usage of the resource within Blackboard using the Find uses link.
 
-Once the Blackboard connector has been configured, a scheduled event (which runs with the Weekly Tasks) will table existing EQUELLA resources in Blackboard and display each instance in Manage external resources.
+Once the Blackboard connector has been configured, a scheduled event (which runs with the Weekly Tasks) will table existing openEQUELLA resources in Blackboard and display each instance in Manage external resources.
 
-If a resource is moved from one Blackboard location to another from the Blackboard application, the scheduled event needs to run before the new locations will display in EQUELLA.
+If a resource is moved from one Blackboard location to another from the Blackboard application, the scheduled event needs to run before the new locations will display in openEQUELLA.
 
-Prior to setting up the Blackboard connector in EQUELLA, the EQUELLA webservice.jar file must be uploaded in Blackboard to create the EQUELLA web service, then web service settings in Blackboard need to be checked for correct configuration.
+Prior to setting up the Blackboard connector in openEQUELLA, the openEQUELLA webservice.jar file must be uploaded in Blackboard to create the openEQUELLA web service, then web service settings in Blackboard need to be checked for correct configuration.
 
-### Upload the EQUELLA web service
+### Upload the openEQUELLA web service
 1. Log in to Blackboard as an administrative user.
 2. Select the System Admin tab. The Administrator Panel displays. 
 3. From the Building Blocks portlet, select the Building Blocks link. The Building Blocks menu page displays. Click the Installed Tools link to open the Building Blocks page. 
 Figure 15 Blackboard Building Blocks page
-4. Click the down arrow button beside the EQUELLA Plugin building block and select Settings from the menu. The EQUELLA Server Configuration page displays.
+4. Click the down arrow button beside the openEQUELLA Plugin building block and select Settings from the menu. The openEQUELLA Server Configuration page displays.
 5. Click the Download the web service.jar link in the Web Service Download section. 
 6. Save the webservice.jar file to a selected folder.
 7. Click the System Admin tab. The Administrator Panel displays. 
 8. From the Building Blocks portlet, select the Web Services link. The Web Services page displays. 
 9. Click Upload Web Services. The Install Web Service page displays. 
 10. Click Browse and select the downloaded webservice.jar file.
-11. Click Submit. The EQUELLA web service (EQUELLA.WS) now displays in the Web Services list, and a ‘Success’ message displays at the top of the screen.
+11. Click Submit. The openEQUELLA web service (EQUELLA.WS) now displays in the Web Services list, and a ‘Success’ message displays at the top of the screen.
 
 ### Configure Blackboard Web Services settings
 1. Check the following web service configurations.
@@ -149,12 +149,12 @@ Figure 15 Blackboard Building Blocks page
 8. Click Test URL to make sure the entered URL is valid. A successful connection page displays. 
 9. Enter a Proxy tool registration password if your Blackboard Proxy Tool Global Properties specifies a Proxy Tool Registration Password; otherwise, leave blank.
 10. Click Register Proxy Tool. This creates a proxy tool registration and automatically populates the Proxy tool shared password field. An example of the screen after the Register Proxy Tool button is selected. 
-11. Click the make the proxy tool available link. The Blackboard Proxy Tool page displays. Click the down arrow button beside EQUELLA and select Edit. 
+11. Click the make the proxy tool available link. The Blackboard Proxy Tool page displays. Click the down arrow button beside openEQUELLA and select Edit. 
 12. The Edit Proxy Tool page displays. In the Availability section, select Yes then click Submit.
 13. Close the Proxy Tools page.
 14. Enter the Blackboard administrator username in the Blackboard system user field.
 15. Click Test Web Service. A web service confirmation displays. 
-16. If required, select Modify EQUELLA usernames to match Moodle:. A text box displays for entering Javascript to modify and return the EQUELLA username stored in the variable “username”. 
+16. If required, select Modify openEQUELLA usernames to match Moodle:. A text box displays for entering Javascript to modify and return the openEQUELLA username stored in the variable “username”. 
 
 If a token is set up to prepend a string to the start of a username (e.g. "bb_" for users coming from Blackboard) then an example script to string off the "bb_" prefix and just return the original username would be:
 ```
@@ -168,18 +168,18 @@ else
 19. Click Save to save the connector details.
 
 ## Set up a local resources connector
-Setting up a local resources connector allows suitably privileged users the ability to view any current uses of attachments linked to a resource within EQUELLA by accessing the Find uses link from the Resource summary page.
+Setting up a local resources connector allows suitably privileged users the ability to view any current uses of attachments linked to a resource within openEQUELLA by accessing the Find uses link from the Resource summary page.
 
 #### To set up a local resources connector
 1. Select External System Connectors from the Settings menu. 
 2. Click the Add new connector link to display the Create new connector page.
 3. Select Local resources from the drop-down menu. 
-4. Enter a Connector name (e.g. EQUELLA).
+4. Enter a Connector name (e.g. openEQUELLA).
 5. If required, click Change next to Content viewable by to open the Select users page. Select the users to access the Find uses link from the Resource Summary page. Click OK to save.
 6. Click Save to save the connector details.
 
 ## Add to external system function
-The Add to external system function allows suitably privileged users to add all, or parts of, a resource to multiple locations in an LMS (VLE) from the EQUELLA system. (NOTE: The Add to external system link only displays if at least one LMS connector has been configured in the EQUELLA system.)
+The Add to external system function allows suitably privileged users to add all, or parts of, a resource to multiple locations in an LMS (VLE) from the openEQUELLA system. (NOTE: The Add to external system link only displays if at least one LMS connector has been configured in the openEQUELLA system.)
 
 ### Add a resource to a Moodle location
 1. From the Resource summary screen, select the Add to external system link from the Actions section. 
@@ -200,13 +200,13 @@ The Add to external system function allows suitably privileged users to add all,
 7. Use the breadcrumbs to navigate back to the resource.
 
 ## Find uses function
-The Find uses function allows suitably privileged users to view all the locations in the LMS where the selected resource is currently being used. If the local resources connector has been configured in the system, the user will be able to view all resources that share any of the same attachments as the selected resource within the EQUELLA system. 
+The Find uses function allows suitably privileged users to view all the locations in the LMS where the selected resource is currently being used. If the local resources connector has been configured in the system, the user will be able to view all resources that share any of the same attachments as the selected resource within the openEQUELLA system. 
 
-NOTE: The Find uses link only displays if at least one external connector has been configured in the EQUELLA system.
+NOTE: The Find uses link only displays if at least one external connector has been configured in the openEQUELLA system.
 
 ### Find uses in Moodle
 1. From the Resource summary screen, select the Find uses link from the Details section. 
-2. EQUELLA supports external connectors (Moodle, Blackboard and Local resources), and more than one may be configured. If there are multiple connectors configured, a drop-down list displays, and the user selects from the list (e.g. Moodle). If there is only one connector configured, the Find uses screen is displayed immediately. 
+2. openEQUELLA supports external connectors (Moodle, Blackboard and Local resources), and more than one may be configured. If there are multiple connectors configured, a drop-down list displays, and the user selects from the list (e.g. Moodle). If there is only one connector configured, the Find uses screen is displayed immediately. 
 
 The courses in which the selected resource is currently used are listed, with the Location and Date added information. The Where this resource is used section elements include:
 * Enter text to filter table rows edit box—enter the first few characters of a course, location or date added to filter the table to display relevant results. (NOTE: This filter edit box only displays when there are 10 or more courses listed.)
@@ -219,8 +219,8 @@ The courses in which the selected resource is currently used are listed, with th
 Select the down arrow (which displays to the right of the Date added column when the cursor points at a course line) to display an expandable pane showing information about the resource details, which can include:
 * Resource version—the current version of the resource.
 * Date modified—the approximate time the resource was last updated.
-* Name in external system—the Moodle title, which may differ from the EQUELLA title.
-* Description—the Moodle description, which may differ from the EQUELLA description.
+* Name in external system—the Moodle title, which may differ from the openEQUELLA title.
+* Description—the Moodle description, which may differ from the openEQUELLA description.
 * Enrollments—the number of students enrolled in the associated course.
 * Instructor—the instructor allocated to the course.
 * Visible—refers to the availability of the associated course. Values can be true (available) or false (hidden).
@@ -231,7 +231,7 @@ Select the down arrow (which displays to the right of the Date added column when
 
 ### Find uses in Blackboard
 1. From the Resource summary screen, select the Find uses link from the Details section. 
-2. EQUELLA supports external connectors (Moodle, Blackboard and Local resources), and more than one may be configured. If there are multiple connectors configured, a drop-down list displays, and the user selects from the list (e.g. Blackboard). If there is only one connector configured, the Find uses screen is displayed immediately. 
+2. openEQUELLA supports external connectors (Moodle, Blackboard and Local resources), and more than one may be configured. If there are multiple connectors configured, a drop-down list displays, and the user selects from the list (e.g. Blackboard). If there is only one connector configured, the Find uses screen is displayed immediately. 
 The courses in which the selected resource is currently used are listed, with the Location and Date added information. The Where this resource is used section elements include:
 * Enter text to filter table rows edit box—enter the first few characters of a course, location or date added to filter the table to display relevant results. (NOTE: This filter edit box only displays when there are 10 or more courses listed.)
 * Course—lists the Blackboard courses the resource has been added to. Click the Course column title or arrow to sort by course in alpha-numerical order. Clicking the link a second time reverses the order. 
@@ -243,13 +243,13 @@ The courses in which the selected resource is currently used are listed, with th
 Select the down arrow (which displays to the right of the Date added column when the cursor points at a course line) to display an expandable pane showing resource details, including Resource version, Date modified, and Name in external system. 
 
 ###  Find uses in local resources
-This connector displays any instances where attachments linked to the selected resource have been linked to other resources in EQUELLA through the Attachments control/EQUELLA Resources option during contribution. 
+This connector displays any instances where attachments linked to the selected resource have been linked to other resources in openEQUELLA through the Attachments control/openEQUELLA Resources option during contribution. 
 
 A list of resources that share the same attachments displays.
 
-#### To find uses in local resources (EQUELLA)
+#### To find uses in local resources (openEQUELLA)
 1. From the Resource summary screen, select the Find uses link from the Details section. 
-2. EQUELLA supports connectors (Moodle, Blackboard and Local resources), and more than one may be configured. If there are multiple connectors configured, a drop-down list displays, and the user selects from the list (e.g. EQUELLA). If there is only one connector configured, the Find uses screen is displayed immediately. 
+2. openEQUELLA supports connectors (Moodle, Blackboard and Local resources), and more than one may be configured. If there are multiple connectors configured, a drop-down list displays, and the user selects from the list (e.g. openEQUELLA). If there is only one connector configured, the Find uses screen is displayed immediately. 
 
 The resources in which attachments linked to the selected resource are currently used are listed, with the Attachment and Date added information.
 
@@ -258,9 +258,9 @@ The resources in which attachments linked to the selected resource are currently
 5. Select the down arrow (which displays to the right of the Date added column when the cursor points at a course line) to display an expandable pane showing resource details, including Resource version, Date modified, Owner and Selected attachment. 
 
 ## Manage external resources
-The Manage external resources page displays all instances of an EQUELLA resource or resource attachment that have been allocated to courses within configured LMSs. Additionally, Manage external resources also allows the user to view the uses of internal EQUELLA resources and attachments within the EQUELLA system, if Local resources has been configured as a connector.
+The Manage external resources page displays all instances of an openEQUELLA resource or resource attachment that have been allocated to courses within configured LMSs. Additionally, Manage external resources also allows the user to view the uses of internal openEQUELLA resources and attachments within the openEQUELLA system, if Local resources has been configured as a connector.
 
-The Manage external resources function enables users to perform a variety of actions to any EQUELLA resource or resource attachment that has been added to an LMS. These actions include editing the name and description, and deleting and moving (the latter two can be done in bulk). (NOTE: These functions are not available for Local resource connectors.)
+The Manage external resources function enables users to perform a variety of actions to any openEQUELLA resource or resource attachment that has been added to an LMS. These actions include editing the name and description, and deleting and moving (the latter two can be done in bulk). (NOTE: These functions are not available for Local resource connectors.)
 
 ### To access Manage external resources
 1. Select Manage external resources from the navigation menu. 
@@ -270,7 +270,7 @@ The first time a user accesses the Manage external resources function during a s
 
 Select the Moodle connector from the Within drop-down. The Manage external resources results page displays for Moodle resources. 
 
-The Moodle Manage external resources page displays EQUELLA resources and resource attachments that have been added to Moodle courses as links. It provides functionality for viewing, sorting and filtering resources. Additionally, resources can be edited and deleted. The ability to select multiple resources to perform bulk actions (delete and move) is also available from this page. Elements of this page include:
+The Moodle Manage external resources page displays openEQUELLA resources and resource attachments that have been added to Moodle courses as links. It provides functionality for viewing, sorting and filtering resources. Additionally, resources can be edited and deleted. The ability to select multiple resources to perform bulk actions (delete and move) is also available from this page. Elements of this page include:
 
 #### Screen options
 Click Screen Options to display the screen options at the top of the page. One screen option is available from this page, Number of results per page. Select the required option from the drop-down list. Options available are 10, 50 or 100. 
@@ -281,10 +281,10 @@ Click Screen Options to display the screen options at the top of the page. One s
 
 #### Search results
 Results can be displayed in groups of 10, 50 or 100 per page, with paging displayed at the end of the search results page. Information displayed for each matching result can include:
-* Title—the Moodle name for the resource or resource attachment. Select this link to display the EQUELLA resource summary page.
+* Title—the Moodle name for the resource or resource attachment. Select this link to display the openEQUELLA resource summary page.
 * Description—the Moodle description.
-* EQUELLA resource—the name of the resource in EQUELLA.
-* EQUELLA attachment—the name of the attachment in EQUELLA. (Only displays if the Moodle resource is an EQUELLA attachment.)
+* openEQUELLA resource—the name of the resource in openEQUELLA.
+* openEQUELLA attachment—the name of the attachment in openEQUELLA. (Only displays if the Moodle resource is an openEQUELLA attachment.)
 * Course—the Moodle course the resource or resource attachment is associated with.
 * Location—the location within the selected Moodle course (e.g. 8 November -14 November).
 * Date added—approximate time in minutes, hours, days or months since the resource or resource attachment was added to the Moodle system. Mouse-over the number of days to display a pop-up showing the exact date and time.
@@ -293,13 +293,13 @@ Results can be displayed in groups of 10, 50 or 100 per page, with paging displa
 * Visible—refers to the availability of the associated course. Values can be true (available) or false (hidden).
 * Number of views—the number of times the resource or resource attachment has been viewed in Moodle.
 * Last accessed—approximate time in minutes, hours, days or months since the resource or resource attachment was last viewed or updated. Mouse-over the number of days to display a pop-up showing the exact date and time.
-* Status—displays the EQUELLA resource status and when it was last updated. Statuses displayed can be live, archived, deleted, suspended, review, moderating, rejected or draft.
+* Status—displays the openEQUELLA resource status and when it was last updated. Statuses displayed can be live, archived, deleted, suspended, review, moderating, rejected or draft.
 * Last updated—the last time the status was updated.
 * Edit—click to edit names and descriptions. See Edit section below for more information.
 * Remove—click to remove the resource or resource attachment from Moodle.
 * Select—click to add the current resource or resource attachment to the Select panel. See the Bulk actions section on page 60 for more information.
 ### Edit
-Resource and resource attachment Moodle names and descriptions can be edited from the Manage external resources page. This does not affect the EQUELLA names and descriptions.
+Resource and resource attachment Moodle names and descriptions can be edited from the Manage external resources page. This does not affect the openEQUELLA names and descriptions.
 #### To edit names and descriptions
 1. Locate the required Moodle resource on the Manage external resources results page, then click Edit. The Edit external resource dialog displays. 
 2. Edit the Name and Description fields as required, then click OK. The new text displays on the Manage external resources results page, and in the Moodle system. 
@@ -327,7 +327,7 @@ The first time a user accesses the Manage external resources function during a s
 
 Select the Blackboard connector from the Within drop-down. The Manage external resources results page displays for Blackboard resources. 
 
-The Blackboard Manage external resources page displays EQUELLA resources and resource attachments that have been added to Blackboard courses. It provides functionality for viewing, sorting and filtering resources. Additionally, resources can be edited and deleted. The ability to select multiple resources to perform bulk actions (delete and move) is also available from this page. Elements of this page include:
+The Blackboard Manage external resources page displays openEQUELLA resources and resource attachments that have been added to Blackboard courses. It provides functionality for viewing, sorting and filtering resources. Additionally, resources can be edited and deleted. The ability to select multiple resources to perform bulk actions (delete and move) is also available from this page. Elements of this page include:
 #### Screen options
 Click Screen Options to display the screen options at the top of the page. One screen option is available from this page, Number of results per page. Select the required option from the drop-down list. Options available are 10, 50 or 100. 
 #### Search pane
@@ -337,8 +337,8 @@ Click Screen Options to display the screen options at the top of the page. One s
 Results can be displayed in groups of 10, 50 or 100 per page, with paging displayed at the end of the search results page. Information displayed for each matching result can include:
 * Title—the Blackboard name for the resource or resource attachment. Select this link to display the original resource summary page.
 * Description—the Blackboard description.
-* EQUELLA resource—the name of the resource in EQUELLA.
-* EQUELLA attachment—the name of the attachment in EQUELLA. (Only displays if the Blackboard resource is an EQUELLA attachment.)
+* openEQUELLA resource—the name of the resource in openEQUELLA.
+* openEQUELLA attachment—the name of the attachment in openEQUELLA. (Only displays if the Blackboard resource is an openEQUELLA attachment.)
 * Course—the Blackboard course the resource or resource attachment is associated with.
 * Location—the location within the selected Blackboard course (e.g. Content).
 * Date added—approximate time in minutes, hours, days or months since the resource or resource attachment was added to the Blackboard system. Mouse-over the number of days to display a pop-up showing the exact date and time.
@@ -347,17 +347,17 @@ Results can be displayed in groups of 10, 50 or 100 per page, with paging displa
 * Course available—refers to the availability of the associated course. Values can be Yes (available) or No (unavailable).
 * Instructor—the name of the instructor allocated to the selected course.
 * Content available—refers to the availability of the resource or resource attachment. Values can be Yes (available) or No (unavailable).
-* Status—displays the EQUELLA resource status and when it was last updated. Statuses displayed can be live, archived, deleted, suspended, review, moderating, rejected or draft.
+* Status—displays the openEQUELLA resource status and when it was last updated. Statuses displayed can be live, archived, deleted, suspended, review, moderating, rejected or draft.
 * Last updated—the last time the status was updated.
 * Edit—click to edit names and descriptions. See Edit section below for more information.
 * Remove—click to remove the resource or resource attachment from Blackboard.
 * Select—click to add the current resource or resource attachment to the Select panel. See the Bulk actions section on page 60 for more information.
 ### Edit
-Resource and resource attachment Blackboard names and descriptions can be edited from the Manage external resources page. This does not affect the EQUELLA names and descriptions.
+Resource and resource attachment Blackboard names and descriptions can be edited from the Manage external resources page. This does not affect the openEQUELLA names and descriptions.
 #### To edit names and descriptions
 1. Locate the required Blackboard resource on the Manage external resources results page, then click Edit. The Edit external resource dialog displays.
 2. Edit the Name and Description fields as required, then click OK. The new text displays on the Manage external resources results page, and in the Blackboard
-EQUELLA 6.1 Push to LMS 54 | P a g e
+openEQUELLA 6.1 Push to LMS 54 | P a g e
 system. 
 
 ### Add search to favourites
@@ -383,7 +383,7 @@ The first time a user accesses the Manage external resources function during a s
 
 Select the Local resources connector from the Within drop-down (in this example, it has been called ‘EQUELLA’). The Manage external resources results page displays for Local resources displays.
 
-The EQUELLA Manage external resources page displays EQUELLA resources and resource attachments that have been added to EQUELLA courses. It provides functionality for viewing, sorting and filtering resources. Elements of this page include:
+The openEQUELLA Manage external resources page displays openEQUELLA resources and resource attachments that have been added to openEQUELLA courses. It provides functionality for viewing, sorting and filtering resources. Elements of this page include:
 
 #### Screen options
 Click Screen Options to display the screen options at the top of the page. One screen option is available from this page, Number of results per page. Select the required option from the drop-down list. Options available are 10, 50 or 100. 
@@ -393,14 +393,14 @@ Click Screen Options to display the screen options at the top of the page. One s
 #### Search results
 Results can be displayed in groups of 10, 50 or 100 per page, with paging displayed at the end of the search results page. Information displayed for each matching result can include:
 * Title—the name of the resource or resource attachment. Select this link to display the original resource summary page.
-* EQUELLA resource—click to view the original resource.
-* EQUELLA attachment—click to open the attachment in the default viewer.
+* openEQUELLA resource—click to view the original resource.
+* openEQUELLA attachment—click to open the attachment in the default viewer.
 * Linking resource—click to open the new resource that the attachment or resource summary has been attached to.
 * Linking attachment—click to open the attachment in the default viewer.
-* Date added—approximate time in minutes, hours, days or months since the resource or resource attachment was added to the new EQUELLA resource. Mouse-over the number of days to display a pop-up showing the exact date and time.
-* Date modified—approximate time in minutes, hours, days or months since the resource was last updated in EQUELLA. Mouse-over the number of days to display a pop-up showing the exact date and time.
+* Date added—approximate time in minutes, hours, days or months since the resource or resource attachment was added to the new openEQUELLA resource. Mouse-over the number of days to display a pop-up showing the exact date and time.
+* Date modified—approximate time in minutes, hours, days or months since the resource was last updated in openEQUELLA. Mouse-over the number of days to display a pop-up showing the exact date and time.
 * Owner—the owner of the resource (generally the user who created the resource).
-* Status—displays the EQUELLA resource status and when it was last updated. Statuses displayed can be live, archived, deleted, suspended, review, moderating, rejected or draft.
+* Status—displays the openEQUELLA resource status and when it was last updated. Statuses displayed can be live, archived, deleted, suspended, review, moderating, rejected or draft.
 * Last updated—the last time the status was updated.
 
 #### Add search to favourites

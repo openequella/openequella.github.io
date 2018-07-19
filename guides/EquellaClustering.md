@@ -1,4 +1,4 @@
-# Equella Clustering
+# openEQUELLA Clustering
 
 **Discover if a ZK node is the leader**
 There is a set of four letter words that give insight into a ZK instance. The reference can be found here. Run the 'stat' command against the ZK

@@ -21,13 +21,13 @@ Table of Contents
 [Manage tasks](#manage-tasks)
 
 ## Workflow moderation overview
-An EQUELLA workflow is a process whereby a new resource must pass through one or more stages of review or moderation before becoming fully available. The process automatically notifies users when they must moderate the resource. A workflow is associated with a collection and can be a simple one-step review or complex multi-step editorial and technical review comprising multiple publication paths.
+An openEQUELLA workflow is a process whereby a new resource must pass through one or more stages of review or moderation before becoming fully available. The process automatically notifies users when they must moderate the resource. A workflow is associated with a collection and can be a simple one-step review or complex multi-step editorial and technical review comprising multiple publication paths.
 
-An EQUELLA workflow provides a structure for an institution’s quality assurance processes. Workflows are used to record the outcomes of each moderation task review and move resources through the review process based on these outcomes. Workflows are typically created by the Content Administrator, who designates reviewers (moderators) and determines the structure of the workflow.
+An openEQUELLA workflow provides a structure for an institution’s quality assurance processes. Workflows are used to record the outcomes of each moderation task review and move resources through the review process based on these outcomes. Workflows are typically created by the Content Administrator, who designates reviewers (moderators) and determines the structure of the workflow.
 
 The purpose of this guide is to explain the moderation and review process and demonstrate to users how to perform workflow moderation tasks. 
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA, and as such may differ from your own installation. Contact the system administrator for access to extra features or to reconfigure your installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA, and as such may differ from your own installation. Contact the system administrator for access to extra features or to reconfigure your installation.
 
 ## The workflow process
 A workflow is typically created by a content administrator as an ordered process that has rules for passing a resource from one step to the next. The content administrator designates users, groups or roles to a moderation task to create workflow task moderators. Workflow task moderators can be allocated to multiple moderation tasks with moderator options determined by the workflow creator that can include: rejection, modification, acceptance by one group member or acceptance by all group members.
@@ -46,8 +46,8 @@ Resources can only be submitted for moderation using a collection that has an as
 
 
 ####  To contribute a resource for moderation
-1. Open a browser and enter your EQUELLA URL (e.g. http://equella.myinstitution.edu).
-2. Log in to EQUELLA.
+1. Open a browser and enter your openEQUELLA URL (e.g. http://equella.myinstitution.edu).
+2. Log in to openEQUELLA.
 3. Select Contribute from the navigation menu. The Contribute page displays. 
 4. Select the required collection from the list (e.g. Documentation). The contribution wizard displays for the selected collection. 
 5. Enter the relevant metadata to complete the About page of the wizard. Add required attachments. 
@@ -221,7 +221,7 @@ A task is approved once the required moderator or moderators have reviewed the r
 2. If relevant, type a message in the Enter an optional approval message text box, then click Submet. The My tasks page displays with a confirmation receipt at the top of the screen. 
 
 ## Workflow example
-The following example is based on the example ‘Documentation Workflow’ created in the EQUELLA Workflow Configuration Guide. It is intended to demonstrate how a resource moves through a simple moderation process.
+The following example is based on the example ‘Documentation Workflow’ created in the openEQUELLA Workflow Configuration Guide. It is intended to demonstrate how a resource moves through a simple moderation process.
 
 ### Review Decisions task
 In the example moderation process, the Document Administrator has been selected as the single moderator for the Review Decisions task. This task requires the moderator to select whether the resource requires a content review and an editorial review. If a content review is required, a reviewer must be assigned.
@@ -229,7 +229,7 @@ In the example moderation process, the Document Administrator has been selected 
 To complete the review decisions task
 1. Log in as the Document Administrator.
 2. Click the My task navigation menu item.
-3. Click the EQUELLA Workflow User Guide Moderate button. The contribution wizard page displays with the task moderation section.
+3. Click the openEQUELLA Workflow User Guide Moderate button. The contribution wizard page displays with the task moderation section.
 4. Go to the Workflow details page of the wizard. (NOTE: The Workflow details page is specific to this example, not a standard part of the moderation process. Some wizards would not have a Workflow page, and saving the resource would automatically enter it into the associated moderation workflow.) 
 5. Click Edit Resources to enable the wizard fields.
 6. Select Required in the Is a content review required? field.
@@ -239,12 +239,12 @@ To complete the review decisions task
 10.Click Approve. The Approving task page displays. Enter a message if required, then click Submit. The My tasks page is displayed. The resource then moves on to the next task in the workflow.
 
 ### Content review task
-In this case, because the next task was allocated to the Document Administrator, which is the logged-in user in this example, the EQUELLA Workflow User Guide appears on the My tasks page, with a Task name of Content Review.
+In this case, because the next task was allocated to the Document Administrator, which is the logged-in user in this example, the openEQUELLA Workflow User Guide appears on the My tasks page, with a Task name of Content Review.
 
-Select the Moderation progress link for EQUELLA Workflow User Guide to view the moderation progress in a diagrammatic format.
+Select the Moderation progress link for openEQUELLA Workflow User Guide to view the moderation progress in a diagrammatic format.
 
 #### To complete the content review task
-1. Click the EQUELLA Workflow User Guide Moderate button. The contribution wizard page displays with the task moderation section.
+1. Click the openEQUELLA Workflow User Guide Moderate button. The contribution wizard page displays with the task moderation section.
 2. In the task moderation section, select the assign to me link to assign to task to the Document Administrator (logged-in user). 
 
 NOTE: The task does not have to be assigned to a moderator to be approved or rejected, but assigning tasks shows who has taken ownership of that task.
@@ -260,7 +260,7 @@ If the resource returns to the original contributor, its status is ‘rejected�
 If the task is approved, the resource moves to the Editorial Review task, which is similar to the Content Review task in this example. If this task was not required, it moves to the Create PDF task.
 
 ### Create PDF task
-Select the Moderation progress link for EQUELLA Workflow User Guide to view the moderation progress in a diagrammatic format. 
+Select the Moderation progress link for openEQUELLA Workflow User Guide to view the moderation progress in a diagrammatic format. 
 
 #### To complete the Create PDF task
 1. Follow steps 1 to 4 in the Content review task section. If the task is approved and the pdf created, the resource moves to the Check PDF task.
@@ -276,7 +276,7 @@ Notifications are messages used to notify users of an event. These messages are 
 
 Rejection notifications are immediate, and can be viewed within minutes of the resource being rejected, whereas other types of notifications are processed as a timed event (for example, overnight), so will not display until after that timed event has run.
 
-There are a number of ways that users can choose to be alerted to notifications. Emails can be sent, RSS and ATOM feeds can be set up as well as the Notifications menu item on the EQUELLA navigation bar.
+There are a number of ways that users can choose to be alerted to notifications. Emails can be sent, RSS and ATOM feeds can be set up as well as the Notifications menu item on the openEQUELLA navigation bar.
 
 ### Notifications menu item
 The user is alerted to existing notifications from the red number (number of notifications) displayed beside the Notifications navigation menu item. 
@@ -297,10 +297,10 @@ Selecting the following notification links opens the Notifications page and disp
 * Resources that are overdue to be moderated—resources that have passed their completed by date. These resources have a ‘reason’ of ‘Moderation overdue’ on the notifications results page.
 
 ### Notifications set up via the Profile function
-Notifications can be configured via the Profile function accessible from any EQUELLA page. Collections are selected, and a notification is sent to the user when resources belonging to those collections become available (Live).
+Notifications can be configured via the Profile function accessible from any openEQUELLA page. Collections are selected, and a notification is sent to the user when resources belonging to those collections become available (Live).
 
 #### To set up Profile notifications
-1. Select the PROFILE link on the top right-hand side of the any EQUELLA page.  The Edit user page displays. 
+1. Select the PROFILE link on the top right-hand side of the any openEQUELLA page.  The Edit user page displays. 
 2. In the Notifications section, use the arrows to select the required collection or collections. Use:
 * Double Right Arrows to select all collections
 * Right Arrow to select the highlighted collection
@@ -313,7 +313,7 @@ A notification is sent whenever a resource belonging to the selected collection 
 Users can configure their profiles so emails are sent to alert the user to new notifications.
 
 #### To set up email notifications
-1. Select the PROFILE link on the top right-hand side of the any EQUELLA page. The Edit user page displays. 
+1. Select the PROFILE link on the top right-hand side of the any openEQUELLA page. The Edit user page displays. 
 2. Select Send notifications to email.
 
 Selecting this option also sends an email to the user when a new moderation task is added.
@@ -324,7 +324,7 @@ Uncheck this option to switch off email notifications (except moderation overdue
 The Notifications results page displays details of notifications. 
 
 The notifications results page elements are:
-* Resource title—click the resource title to open the Resource summary page. See EQUELLA My Resources User Guide for more information on the Resource summary page.
+* Resource title—click the resource title to open the Resource summary page. See openEQUELLA My Resources User Guide for more information on the Resource summary page.
 * Resource description
 * Status—live, moderating, rejected.
 * Moderating since—time since resource entered the workflow. Only displays for resources with a status of moderating.
@@ -360,13 +360,13 @@ The Editing page displays.
 3. Enter a message if relevant, then click Submit for Moderation. The resource re-enters the workflow at the appropriate moderation task.
 
 ## Manage tasks
-There may be many resources at various stages of a workflow at any one time within the EQUELLA system, and the Manage tasks function and Task statistics portlet allow administrators to view the progress of these resources through the workflow. Information, such as moderator details, length of time at a particular task and at what point in the workflow resources are getting held up, can be easily detected using these functions.
+There may be many resources at various stages of a workflow at any one time within the openEQUELLA system, and the Manage tasks function and Task statistics portlet allow administrators to view the progress of these resources through the workflow. Information, such as moderator details, length of time at a particular task and at what point in the workflow resources are getting held up, can be easily detected using these functions.
 ### Manage tasks privilege
 The privilege associated with access to the Manage task function is MANAGE_WORKFLOW. Granting this privilege to a user, group or role will display the Manage tasks menu item in the left-hand navigation bar.
 ### Manage tasks page
 The Manage tasks page displays all workflow tasks. Content and system administrators would typically be granted privileges to access this function to view moderation progress.
 #### To open the Manage tasks page
-1. Log in to EQUELLA as an administrator. The EQUELLA Dashboard page displays.
+1. Log in to openEQUELLA as an administrator. The openEQUELLA Dashboard page displays.
 2. Select Manage tasks from the left-hand navigation menu. The Manage tasks page displays. 
 The Manage tasks page has the Search box at the top, where criteria are selected, and the results list displayed below.
 

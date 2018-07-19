@@ -16,7 +16,7 @@ Table of Contents
 
 
 ## Workflow overview
-An EQUELLA workflow is a process whereby a new resource must pass through one or more stages of review or moderation before becoming fully available (live). The process automatically notifies users when they must moderate the resource. A workflow is associated with a collection and can be a simple one-step review or complex multi-step editorial and technical review comprising multiple publication paths.
+An openEQUELLA workflow is a process whereby a new resource must pass through one or more stages of review or moderation before becoming fully available (live). The process automatically notifies users when they must moderate the resource. A workflow is associated with a collection and can be a simple one-step review or complex multi-step editorial and technical review comprising multiple publication paths.
 
 The workflow is typically created by a content administrator from workflow steps that comprise an ordered process for passing from one node to the next. Scripts can be attached to workflow steps to determine whether a resource can skip the step. This allows very complex and flexible workflows to be created. On passing the last of the workflow steps the resource becomes ‘live’. Resources can also be made live during moderation, if required.
 
@@ -29,7 +29,7 @@ Resources may enter a workflow when:
 * versioned—a new version enters the workflow and on completion archives all other ‘live’ versions;
 * reviewed—a resource that has been ‘live’ for a period is checked for currency using its associated workflow. This process can be triggered manually by the resource owner or automatically by the collection definition. The resource remains ‘live’ during this review.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation.
 
 ## Workflow template procedure
 A typical workflow template is created using the following broad steps:
@@ -44,10 +44,10 @@ A typical workflow template is created using the following broad steps:
 There are no restrictions to the number of collections or metadata schemas associated with a workflow, however the number of collections and schemas that use an individual workflow template is restricted by the schema nodes required by the workflow and the controls provided by the collection.
 
 ## Workflow Template Editor
-Workflow templates are created in the EQUELLA Administration Console using the Workflow Template Editor. The editor simplifies the creation of templates by modelling the workflow as a series of flow chart nodes. The flow and branches of the template can be previewed as a flow chart diagram to allow a complete view of the workflow.
+Workflow templates are created in the openEQUELLA Administration Console using the Workflow Template Editor. The editor simplifies the creation of templates by modelling the workflow as a series of flow chart nodes. The flow and branches of the template can be previewed as a flow chart diagram to allow a complete view of the workflow.
 
 #### To access the Workflow Template Editor
-1. Log in to EQUELLA as an administrator, select Settings then Administration console.The Administration console displays. 
+1. Log in to openEQUELLA as an administrator, select Settings then Administration console.The Administration console displays. 
 2. Select Workflow Templates. 
 
 ### Administration console elements
@@ -243,7 +243,7 @@ The moderators used in this example belong to the ‘INT – Documentation Admin
 * Internal EQUELLA Editor [int.editor]
 
 
-#### To create a workflow from the EQUELLA Administration Console
+#### To create a workflow from the openEQUELLA Administration Console
 1. Select Workflow Templates to display the Workflow Templates pane.
 2. Click Add to display the Workflow Template Editor.
 3. Enter a Workflow name (e.g. Documentation workflow).

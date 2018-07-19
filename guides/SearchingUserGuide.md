@@ -1,7 +1,7 @@
 # Searching User Guide
 
 Table of Contents
-[EQUELLA Dashboard](#equella-dashboard)
+[openEQUELLA Dashboard](#openequella-dashboard)
 
 [Search types](#search-types)
 
@@ -54,22 +54,22 @@ Table of Contents
 [Search settings](#search-settings)
 
 ## Searching overview
-The EQUELLA Digital Repository allows users to search, create, store, manage, view and share content. Content can include published content (resources) and personal content (files and web pages). A variety of searching methods are available for finding content in the repository, ranging from a basic keyword search to complex custom searches targeting specific resource information (metadata), to browsing specific categories.
+The openEQUELLA Digital Repository allows users to search, create, store, manage, view and share content. Content can include published content (resources) and personal content (files and web pages). A variety of searching methods are available for finding content in the repository, ranging from a basic keyword search to complex custom searches targeting specific resource information (metadata), to browsing specific categories.
 
-In addition to searching, EQUELLA provides a variety of options for sorting and filtering the search results to drill down to the specific needs of the user.
+In addition to searching, openEQUELLA provides a variety of options for sorting and filtering the search results to drill down to the specific needs of the user.
 
 The purpose of this guide is to give users an overview of the available search options and how they can be most effectively used.
-Please note that this guide has been developed to reflect the full capabilities of EQUELLA and as such may differ in appearance from your own installation. Contact the system administrator for access to extra features or to reconfigure your installation.
+Please note that this guide has been developed to reflect the full capabilities of openEQUELLA and as such may differ in appearance from your own installation. Contact the system administrator for access to extra features or to reconfigure your installation.
 
-## EQUELLA Dashboard
-### To access EQUELLA
-1. Open a browser and enter your EQUELLA URL (e.g.‘http://equella.myinstitution.edu’).
-2. Log in to EQUELLA. The EQUELLA Dashboard displays. 
+## openEQUELLA Dashboard
+### To access openEQUELLA
+1. Open a browser and enter your openEQUELLA URL (e.g.‘http://equella.myinstitution.edu’).
+2. Log in to openEQUELLA. The openEQUELLA Dashboard displays. 
 
-The EQUELLA Digital Repository allows users to search for and discover content in a number of ways.
+The openEQUELLA Digital Repository allows users to search for and discover content in a number of ways.
 
 ## Search types
-There are a variety of search types available for discovering EQUELLA content, including:
+There are a variety of search types available for discovering openEQUELLA content, including:
 * Basic search—search by keyword, used when the resource name or keywords are known. 
 * Search by collection—search within a specific collection. 
 * Advanced search—target specific resource information (metadata) using customised search criteria. 
@@ -84,41 +84,41 @@ There are a variety of search types available for discovering EQUELLA content, i
 * Browse—browse hierarchy categories to ‘drill down’ to required resources. 
 
 ## Search edit box
-The search edit box is found on most search pages in the EQUELLA system, and allows the user to enter keyword data to search for matching resources. 
+The search edit box is found on most search pages in the openEQUELLA system, and allows the user to enter keyword data to search for matching resources. 
 
 Once keywords are entered, the system can search resource titles, descriptions, attachment names and content and other metadata for matching results, depending on how the search options are configured.
 
 ### Keywords
-In EQUELLA, keywords can be entered to search for matching resources. A single keyword can be entered, or a number of keywords. The keywords must be an exact match within the resource name, description or stored keywords (e.g. equella), otherwise no matching results will be found.
+In openEQUELLA, keywords can be entered to search for matching resources. A single keyword can be entered, or a number of keywords. The keywords must be an exact match within the resource name, description or stored keywords (e.g. openEQUELLA), otherwise no matching results will be found.
 
 For example, entering the keyword ‘equella’ will return any resources that have the word ‘equella’ in their title, description, attachment name or attachment content (for most attachment types). 
 
 ### Autocomplete
-Autocomplete functionality is available in the search edit box and most keyword searches. Autocomplete means that the user can type two or more letters into the search text box and EQUELLA will suggest resource titles based on the letters entered.
-For example, if the user is looking for a resource that has equella in its title, as soon as they type in eq, up to four suggestions display, based on relevance. 
+Autocomplete functionality is available in the search edit box and most keyword searches. Autocomplete means that the user can type two or more letters into the search text box and openEQUELLA will suggest resource titles based on the letters entered.
+For example, if the user is looking for a resource that has openEQUELLA in its title, as soon as they type in eq, up to four suggestions display, based on relevance. 
 
-If the user is searching for equella 6.2, typing the 6.2 will change the suggestions. 
-Note that there is only one matching suggestion for ‘equella 6.2’, which means there is only one resource in the EQUELLA repository containing ‘equella 6.2’ in its title.
+If the user is searching for openEQUELLA 6.2, typing the 6.2 will change the suggestions. 
+Note that there is only one matching suggestion for ‘equella 6.2’, which means there is only one resource in the openEQUELLA repository containing ‘equella 6.2’ in its title.
 ### Selecting a suggestion
 Selecting a suggestion from the drop-down list by clicking on it, or highlighting it using the keyboard arrows, replaces what is currently in the Search text box with the selected value.
 
 The top suggestion always defaults in the search text box in light gray. Click on the required suggestion to select.
 ### Multiple word autocomplete
-If the user types in a single word (e.g. equella), the suggestions will be resources with the word ‘equella’ in their titles. But if the user types in ‘equella features’, the suggestions will be resources that have ‘equella features’ in their titles in that exact order. 
+If the user types in a single word (e.g. openEQUELLA), the suggestions will be resources with the word ‘equella’ in their titles. But if the user types in ‘equella features’, the suggestions will be resources that have ‘equella features’ in their titles in that exact order. 
 
-If a user wants to find resources using multiple keywords (e.g. equella + guide), and there are no resources that contain the words in the exact order, the autocomplete function will suggest single words, based on words used in resource titles in the repository.
+If a user wants to find resources using multiple keywords (e.g. openEQUELLA + guide), and there are no resources that contain the words in the exact order, the autocomplete function will suggest single words, based on words used in resource titles in the repository.
 ### Stemming
-EQUELLA also uses ‘stemming’ in searching. Stemming is where the system recognises the root (stem) of a word, and performs the search using the root term instead. For example, if ‘cooks’ was entered as a search criterion, the system performs a search for ‘cook´ (the stem word) and resources containing this stem would be returned, such as ‘cooking’ and ‘cooked’.
+openEQUELLA also uses ‘stemming’ in searching. Stemming is where the system recognises the root (stem) of a word, and performs the search using the root term instead. For example, if ‘cooks’ was entered as a search criterion, the system performs a search for ‘cook´ (the stem word) and resources containing this stem would be returned, such as ‘cooking’ and ‘cooked’.
 
 #### Multiple keywords
 Multiple keywords can be entered in the following ways:
-* Multiple keywords with a space between each word—entering two or more keywords with a space between each word will return results that have all of the entered keywords. For example, entering equella features will display resources that have both equella and features in its title, description or attachment name.
+* Multiple keywords with a space between each word—entering two or more keywords with a space between each word will return results that have all of the entered keywords. For example, entering openEQUELLA features will display resources that have both openEQUELLA and features in its title, description or attachment name.
 * Multiple keyword with ‘or’—entering two or more keywords with ‘or’ between each will return resources that contain either all or one of the keywords. For example, entering ‘equella or features’ will display resources that have one or both words contained within its title, description or attachment name, with the ones containing both words at the top.
 
 ### Use of a wildcard 
 The definition of a wildcard is a character that can be used to substitute for any other character or characters in a string. This comes in handy if the user is unsure of spelling or wants to find a range of results that start with a certain character or string of characters.
 
-In EQUELLA, a user can enter a character or string of characters with the wildcard (asterisk) to find any resources that start with that value. For example, the user could enter tas* to return any resources that contain the word tasmania. Any other resources containing words starting with the character string ‘tas’ will also be returned (e.g. taste, tassel etc.).
+In openEQUELLA, a user can enter a character or string of characters with the wildcard (asterisk) to find any resources that start with that value. For example, the user could enter tas* to return any resources that contain the word tasmania. Any other resources containing words starting with the character string ‘tas’ will also be returned (e.g. taste, tassel etc.).
 
 A wildcard can also be placed in the middle of two characters or character strings. For example, entering t*a will also return any resources containing the word tasmania, as well as any resources containing a word starting with t and ending in a (e.g. tarantula, tea etc.).
 
@@ -131,16 +131,16 @@ Additionally, if attachments have a boost value set to something other than Off 
 If the boost value for attachments is set at any value besides Off, individual users may toggle the attachment search from the Results page Screen options. This allows users to choose whether they want their keyword searches to look in attachments, or only in the resource title and metadata. 
 
 ## Quick search
-The Quick search portlet is found on the EQUELLA Dashboard page, and allows the user to perform simple keyword searches using the search edit box. 
+The Quick search portlet is found on the openEQUELLA Dashboard page, and allows the user to perform simple keyword searches using the search edit box. 
 
 #### To perform a search using the Quick search portlet
-1. Using one the methods outlined above, enter keywords (e.g. equella) in the search field.
+1. Using one the methods outlined above, enter keywords (e.g. openEQUELLA) in the search field.
 2. Click the search icon button or press Enter to return matching results. The Search page opens with the results displayed.
 
 ## Search page
 The Search page enables the user to search resources using simple keyword searches, but also provides the ability to search within particular collections or perform more complex searches such as advanced searches and remote repository searches. The search page is accessed by selecting Search from the navigation menu. 
 
-On first logging into EQUELLA and selecting the search page, the search results default is Within all resources. If the user leaves the search page after changing the search criteria, on returning to the search page, the last criteria selected will be the default.
+On first logging into openEQUELLA and selecting the search page, the search results default is Within all resources. If the user leaves the search page after changing the search criteria, on returning to the search page, the last criteria selected will be the default.
 
 The Search page has the Search box at the top, where criteria are selected, and the Results box displayed below. 
 
@@ -165,12 +165,12 @@ An advanced search provides a means of searching specifically within the metadat
 4. Select Edit Items from the search box to open the advanced search criteria page and change or refine the search criteria, or Clear to remove the criteria.
 
 ## Cloud search
-The Cloud search (when enabled) occurs simultaneously with the standard EQUELLA search and searches the OER repository in the cloud. When a search term is entered in the text field in the Search box on an EQUELLA search page and matching items are located in the cloud, the user can easily view and select cloud content in addition to local EQUELLA content.
+The Cloud search (when enabled) occurs simultaneously with the standard openEQUELLA search and searches the OER repository in the cloud. When a search term is entered in the text field in the Search box on an openEQUELLA search page and matching items are located in the cloud, the user can easily view and select cloud content in addition to local openEQUELLA content.
 
 NOTE: Cloud search can only find matches to the text search string entered in the edit box on a search page. As the OER has its own metadata schema, it can’t use information selected from the Within drop-down list to further tailor the search results.
-### Viewing Cloud results in conjunction with a local EQUELLA search
-The Cloud search occurs simultaneously with the standard EQUELLA search, so when a search term is entered on an EQUELLA search page and matching items are located ‘in the cloud’, the user can easily view and select cloud content in addition to local EQUELLA content.
-#### To view Cloud results in conjunction with a local EQUELLA search
+### Viewing Cloud results in conjunction with a local openEQUELLA search
+The Cloud search occurs simultaneously with the standard openEQUELLA search, so when a search term is entered on an openEQUELLA search page and matching items are located ‘in the cloud’, the user can easily view and select cloud content in addition to local openEQUELLA content.
+#### To view Cloud results in conjunction with a local openEQUELLA search
 1. From the Search page, enter a search term (e.g. physiology). The matching results display in the Results box. Cloud results
 The system has also searched the cloud with the same search term, and found available results.
 2. Click the Found x cloud results link to open the Cloud search page and view the matching cloud results. 
@@ -236,7 +236,7 @@ Clicking the Add search to favourites link on the bottom-left of the Search box 
 Clicking Add displays a ‘Successfully added this search to your favourites’ message and adds the search to your Favourite searches list.
 
 ### Sorting, filtering and sharing results
-Once search results display on the results screen, resources can be sorted and filtered to drill down to the most relevant results. Every results page in the EQUELLA system has sorting and filtering options, and these options may change, or additional options may display, depending on the type of results list. For example, the My resources results page has different filter options (Filter by keyword, Filter by collection and Filter by date modified) than the Search results page (Filter by owner, Filter by date modified). Additionally, search results can be shared with other users. 
+Once search results display on the results screen, resources can be sorted and filtered to drill down to the most relevant results. Every results page in the openEQUELLA system has sorting and filtering options, and these options may change, or additional options may display, depending on the type of results list. For example, the My resources results page has different filter options (Filter by keyword, Filter by collection and Filter by date modified) than the Search results page (Filter by owner, Filter by date modified). Additionally, search results can be shared with other users. 
 
 ### Sort results
 Clicking the Sort drop-down opens the Sort pane, which provides options for sorting the results list. 
@@ -272,7 +272,7 @@ Search results can be shared with other users by sending them the search results
 
 Clicking the Share tab at the top of the Results box displays the Share search query pane where results can be shared by: RSS or Atom feed, via URL and via e-mail. 
 * Share search results as an RSS or Atom feed—selecting the RSS feed or Atom feed link will display a subscription page. Subscribed users are notified if resources are updated or added to the search results.
-* Share search results via URL—users can send a link to the search results page to other users by copying and pasting the URL into an email or other document. The EQUELLA log in page is displayed when the link is clicked. After logging in, the user is taken directly to the search results page.
+* Share search results via URL—users can send a link to the search results page to other users by copying and pasting the URL into an email or other document. The openEQUELLA log in page is displayed when the link is clicked. After logging in, the user is taken directly to the search results page.
 * Share search results via e-mail—users can send results to others via email. Enter an email address in the field provided and click the email icon. Check the Share only results viewable by guests checkbox if sending to users outside your institution.
  
 ## Search results  Images view
@@ -297,7 +297,7 @@ Click the thumbnail image to open the Resource summary page.
 The Images view can be disabled by an administrator if not required, and enabled at another time. When disabled, the Images link in the top left of the results box no longer displays. 
 
 ### Multiple image file count
-One image thumbnail is used to represent an EQUELLA resource on the Images page. Resources may have multiple images attached, and in this case, the total number of image file attachments displays in the top left corner of the thumbnail. 
+One image thumbnail is used to represent an openEQUELLA resource on the Images page. Resources may have multiple images attached, and in this case, the total number of image file attachments displays in the top left corner of the thumbnail. 
 
 The indicators alert users to the presence of other images, and clicking on the image thumbnail opens the Resource summary so all image attachments can be viewed.
 
@@ -325,7 +325,7 @@ Click the thumbnail image to open the Resource summary page.
 The Videos view can be disabled by an administrator if not required, and enabled at another time. When disabled, the Videos link in the top left of the results box no longer displays. 
 
 ### Multiple video file count
-One video thumbnail is used to represent an EQUELLA resource on the Videos page. Resources may have multiple video attachments, and in this case, the total number of video attachments displays in the top left corner of the thumbnail. 
+One video thumbnail is used to represent an openEQUELLA resource on the Videos page. Resources may have multiple video attachments, and in this case, the total number of video attachments displays in the top left corner of the thumbnail. 
 
 The indicators alert users to the presence of other videos, and clicking on the video thumbnail opens the Resource summary so all video attachments can be viewed.
 
@@ -348,12 +348,12 @@ To import results
 1. Click Import to display a contribution wizard. The collection is defined in the Administration Console—Remote Repositories tool. 
 
 ### Other remote repository types
-Search boxes and sorting and filtering options may differ depending on the types of remote repositories set up in your EQUELLA system. 
+Search boxes and sorting and filtering options may differ depending on the types of remote repositories set up in your openEQUELLA system. 
 
 (NOTE: there are no sort or filter options for this type of remote repository search.)
 
 ## Favourites
-Users can save bookmarks to resources and searches they find useful by using EQUELLA’s ‘Favourites’ functionality. Depending on how your EQUELLA system is configured, resources and searches added to favourites are listed as links in the My Favourites portlet on the Dashboard page. Select a link to go straight to the resource summary page for a resource, or the search results page for a search.
+Users can save bookmarks to resources and searches they find useful by using EQUELLA’s ‘Favourites’ functionality. Depending on how your openEQUELLA system is configured, resources and searches added to favourites are listed as links in the My Favourites portlet on the Dashboard page. Select a link to go straight to the resource summary page for a resource, or the search results page for a search.
 
 The Favourites page is accessed by selecting Favourites from the navigation menu. 
 
@@ -393,11 +393,11 @@ Pre-defined criteria are displayed as links across the top of the page, with the
 Click on a link to change the results displayed. Available links are:
 * Published—displays resources that are in a live state through having been moderated or through belonging to a collection that does not require moderation. Additionally, resources with a status of review are displayed, and are live resources which are due for review.
 * Drafts—resources that are under construction.
-* Scrapbook—displays personal files or web pages belonging to the user. These items have not been published to the EQUELLA Digital Repository, and they cannot be viewed, edited or deleted by other users.
+* Scrapbook—displays personal files or web pages belonging to the user. These items have not been published to the openEQUELLA Digital Repository, and they cannot be viewed, edited or deleted by other users.
 * Moderation queue—resources that have been submitted for moderation, and are still at some point in the moderation workflow.
 * Archived—resources that have been live but are now superseded by a new version. These resources are no longer available to repository users other than the resource owner and the system administrator.
 * All resources—all the resources the user owns or has permission to view.
-* Purchased- resources that have been purchased using the EQUELLA Store front function. 
+* Purchased- resources that have been purchased using the openEQUELLA Store front function. 
 
 ### Filter
 From the My resources results pages, the following filter options may be available:
@@ -408,7 +408,7 @@ From the My resources results pages, the following filter options may be availab
 * Filter by status—select a status from the drop-down list (All statuses, Draft, Live, Rejected, Moderating, Archived, Suspended, Deleted, Review or Personal). Check the ‘Only show items in moderation’ checkbox to display resources currently in the moderation workflow. (That is, resources with the status of Moderating or Rejected.) Only available for Moderation queue and All resources.
 
 ## My tasks
-My Tasks lists any tasks that require moderation by the currently logged in user. The My tasks page is accessed by selecting the Tasks icon at the top-right of any EQUELLA page. 
+My Tasks lists any tasks that require moderation by the currently logged in user. The My tasks page is accessed by selecting the Tasks icon at the top-right of any openEQUELLA page. 
 
 A search text box is displayed at the top of the page to enter keyword searches, and each result displays the following:
 * Title—the name of the resource. Select this link to go to the Task: Edit Document page.
@@ -439,7 +439,7 @@ From the My tasks results pages, the following filter options are available:
 Filter by date modified—select a qualifier from the drop-down list (After, Before, Between or On), then click the calendar field or icon to display a calendar control.
 
 ## Notifications
-The Notifications page displays items such as tasks that are overdue for moderation, rejected workflow items and notifications that resources have become available (Live). The Notifications page is accessed by selecting the Notifications icon at the top-right of any EQUELLA page. 
+The Notifications page displays items such as tasks that are overdue for moderation, rejected workflow items and notifications that resources have become available (Live). The Notifications page is accessed by selecting the Notifications icon at the top-right of any openEQUELLA page. 
 
 A search text box is displayed at the top of the page to enter keyword searches, and each notification may display the following, depending on its type:
 
@@ -450,9 +450,9 @@ A search text box is displayed at the top of the page to enter keyword searches,
   * Rejected—the resource has been rejected at a workflow task.
   * Moderation overdue—a task assigned to the user has passed its due by date.
   * Bad URL – a linked URL is incorrect and doesn’t work.
-  * Purchased resource updated – resource that has been purchased using the EQUELLA Store Front function has been automatically updated from the source Store.
+  * Purchased resource updated – resource that has been purchased using the openEQUELLA Store Front function has been automatically updated from the source Store.
   * Watched resource became LIVE – resource that has been in moderation has now become Live.
-  * Item was sold – resource has been purchased by another institution (only relevant where the EQUELLA Content Exchange is configured).
+  * Item was sold – resource has been purchased by another institution (only relevant where the openEQUELLA Content Exchange is configured).
 
 ### Filter
 The Filter pane on the Notifications results page displays options relevant to notifications.
@@ -464,7 +464,7 @@ From the Notifications results pages, the following filter options are available
 * Filter by date modified—select a qualifier from the drop-down list (After, Before, Between or On), then click the calendar field or icon to display a calendar control.
 
 ## Manage external resources
-The Manage external resources page displays all instances of an EQUELLA resource or resource attachment that have been allocated to courses within configured LMSs. Additionally, Manage external resources also allows the user to view the uses of internal EQUELLA resources and attachments within the EQUELLA system, if Local resources has been configured as a connector.
+The Manage external resources page displays all instances of an openEQUELLA resource or resource attachment that have been allocated to courses within configured LMSs. Additionally, Manage external resources also allows the user to view the uses of internal openEQUELLA resources and attachments within the openEQUELLA system, if Local resources has been configured as a connector.
 
 The Manage external resources page is accessed by selecting the Manage external resources link from the navigation menu. 
 
@@ -537,8 +537,8 @@ The Manage resources filter pane displays options relevant to resources.
 From the Manage resources results pages, the following additional filter options are available:
 * Filter by owner – click to display the Select owner to filter by and search for and select the required user. See Filter by owner on page 30 for more information. Select the Show items with no owner checkbox to display resources where no owner is recorded.
 * Filter by status – select from All statuses, Draft, Live, Rejected, Moderating, Archived, Suspended, Deleted or Review. Select the Only show items in moderation checkbox to display the resources that are currently in moderation in a workflow.
-* Filter by purchased – select the Only show purchased resources to view resources that have been purchased from other institutions. This is only relevant when your institution has the EQUELLA Content Exchange in use.
-* Filter by subscription end date – Select a condition from the drop-down (e.g. on) then select a date to display the matching subscription resources. This is only relevant when your institution has the EQUELLA Content Exchange in use.
+* Filter by purchased – select the Only show purchased resources to view resources that have been purchased from other institutions. This is only relevant when your institution has the openEQUELLA Content Exchange in use.
+* Filter by subscription end date – Select a condition from the drop-down (e.g. on) then select a date to display the matching subscription resources. This is only relevant when your institution has the openEQUELLA Content Exchange in use.
 
 
 ## Manage activations
@@ -587,7 +587,7 @@ YouTube video links can be added to resources during contribution using the atta
 3. Select the required videos then click Add.
 
 ## Flickr search
-Flickr image links can be added to resources during contribution using the attachments control. See EQUELLA Contribution User Guide for more information.
+Flickr image links can be added to resources during contribution using the attachments control. See openEQUELLA Contribution User Guide for more information.
 
 #### To add a Flickr image link
 1. Select Flickr from the contribution attachments control, then click Next. The Add Flickr image page displays.
@@ -629,11 +629,11 @@ The Add Kaltura media page provides the user with two options, Add existing Kalt
 4. Select the required resources then click Add.
 
 ## Browsing
-In addition to searching, the EQUELLA Digital Repository allows the user to browse hierarchies of logically grouped resources.
+In addition to searching, the openEQUELLA Digital Repository allows the user to browse hierarchies of logically grouped resources.
 
-Hierarchical browsing allows users to discover resources placed within the digital repository based upon category. Users can ‘drill down’ into topics and their subfolders and search within the results. EQUELLA can be configured to provide a count of subtopics and results and allow contributors to add their most important resources to a hierarchy topic as key resources. 
+Hierarchical browsing allows users to discover resources placed within the digital repository based upon category. Users can ‘drill down’ into topics and their subfolders and search within the results. openEQUELLA can be configured to provide a count of subtopics and results and allow contributors to add their most important resources to a hierarchy topic as key resources. 
 
-Hierarchy topics are accessed from the EQUELLA Dashboard page via the Browse portlet or from the hierarchy topic links displayed on the navigation menu.
+Hierarchy topics are accessed from the openEQUELLA Dashboard page via the Browse portlet or from the hierarchy topic links displayed on the navigation menu.
 
 ### Browsing using hierarchy topic links
 Hierarchy topic links display in a group on the left-hand navigation menu. Select a link to display subtopics and results.
@@ -643,9 +643,9 @@ Selecting the More... link displays the Browse page with a list of all hierarchy
 
 Select a topic to display subtopics and results.
 ### Browsing using the Browse portlet
-The EQUELLA Dashboard page can display multiple portlets, including Browse, Favourites, Formatted text, My resources, Quick search, RSS or Atom feed, Recent contributions, Scripted, Task statistics, Tasks and Web page, depending on user privileges.
+The openEQUELLA Dashboard page can display multiple portlets, including Browse, Favourites, Formatted text, My resources, Quick search, RSS or Atom feed, Recent contributions, Scripted, Task statistics, Tasks and Web page, depending on user privileges.
 
-These portlets are configured by clicking from EQUELLA Dashboard then selecting the required portlet.
+These portlets are configured by clicking from openEQUELLA Dashboard then selecting the required portlet.
 
 #### To add a Browse portlet to the Dashboard
 1. Click Screen Options from the top right-hand corner of the Dashboard page.  A list of available portlets displays. Click the Browse link to display the Create a new Browse portlet page. 
@@ -684,8 +684,8 @@ A user with administrator privileges would generally have access to these settin
 ### Searching terms boost
 When the results sort order is set to Relevance, and search terms are entered, the results display a relevance score.
 
-When calculating the relevance score in EQUELLA versions prior to 6.2, the item title was worth 1.5 times as much as content found anywhere else (metadata plus attachments). Attachment content and metadata were grouped into the same field and were worth the same.
-From EQUELLA 6.2, these weights are adjustable, and in addition the attachment content is a separately configurable weight. That is, title, metadata and attachment content can all be adjusted from being not searched at all to being 8 times more relevant.
+When calculating the relevance score in openEQUELLA versions prior to 6.2, the item title was worth 1.5 times as much as content found anywhere else (metadata plus attachments). Attachment content and metadata were grouped into the same field and were worth the same.
+From openEQUELLA 6.2, these weights are adjustable, and in addition the attachment content is a separately configurable weight. That is, title, metadata and attachment content can all be adjusted from being not searched at all to being 8 times more relevant.
 
 NOTE: Different indexed metadata nodes cannot be made more or less relevant; they are all worth the same.
 

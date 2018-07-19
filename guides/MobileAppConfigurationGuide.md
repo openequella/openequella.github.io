@@ -6,20 +6,20 @@ Table of Contents
 
 [Mobile app configuration](#mobile-app-configuration)
 
-[Using the EQUELLA mobile app](#using-the-equella-mobile-app)
+[Using the openEQUELLA mobile app](#using-the-openequella-mobile-app)
 
 ## Mobile app overview
-The EQUELLA Mobile app enables users to logon to EQUELLA and view resources and associated workflow progress, as well as notifications and tasks, using a mobile device.
+The openEQUELLA Mobile app enables users to logon to openEQUELLA and view resources and associated workflow progress, as well as notifications and tasks, using a mobile device.
 
-The purpose of this guide is to provide system administrators with an understanding of the EQUELLA Mobile app functionality and the configuration required to successfully set it up. It also provides instruction to the users who will access EQUELLA from a mobile device using the app.
+The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA Mobile app functionality and the configuration required to successfully set it up. It also provides instruction to the users who will access openEQUELLA from a mobile device using the app.
 
 ### Supported devices
 EQUELLA 6.0+ supports iPads (using Safari) and Android tablets (using the Android Browser).
 
 ## Mobile app configuration
 
-### Configuring EQUELLA for the mobile app
-A Client application must be registered in EQUELLA to enable the mobile app.
+### Configuring openEQUELLA for the mobile app
+A Client application must be registered in openEQUELLA to enable the mobile app.
 #### To register a mobile app client application
 1. Go to Settings, OAuth settings. The OAuth settings page displays. 
 2. Click the Register new client application link. The Create new OAuth client page displays. 
@@ -31,21 +31,21 @@ A Client application must be registered in EQUELLA to enable the mobile app.
 8. Enter the Redirect URL in the following format: http://myinstitution/institution/p/r/dev/com.tle.web.mobile/js/closelogin.html
 9. Click Save. The new registrations displays in the list.
 
-## Accessing EQUELLA from a mobile device
+## Accessing openEQUELLA from a mobile device
 
-The mobile app URL is entered, and the user logs in with their EQUELLA Username and Password. Once logged in, the user can create a bookmark to the home screen for future access.
-#### To access the EQUELLA app from a mobile device
-1. Open a browser page and enter the mobile app URL, in the following format: http://myinstitution/instititution/mobile. The Log in to EQUELLA page displays. 
-2. Enter your EQUELLA Username and Password, then click . The My resources page displays. 
-3. Create a bookmark to the device’s home screen, which will display an EQUELLA icon. On iPads, when launching the app from the home screen, it opens as a full-screen app rather than a tab within the browser.
+The mobile app URL is entered, and the user logs in with their openEQUELLA Username and Password. Once logged in, the user can create a bookmark to the home screen for future access.
+#### To access the openEQUELLA app from a mobile device
+1. Open a browser page and enter the mobile app URL, in the following format: http://myinstitution/instititution/mobile. The Log in to openEQUELLA page displays. 
+2. Enter your openEQUELLA Username and Password, then click . The My resources page displays. 
+3. Create a bookmark to the device’s home screen, which will display an openEQUELLA icon. On iPads, when launching the app from the home screen, it opens as a full-screen app rather than a tab within the browser.
 
-## Using the EQUELLA mobile app
-The EQUELLA mobile app is tailored for mobile devices, and enables access to the following functions:
+## Using the openEQUELLA mobile app
+The openEQUELLA mobile app is tailored for mobile devices, and enables access to the following functions:
 * Viewing resources owned by the logged in user
 * Viewing notifications and tasks
 
 ### Viewing resources owned by the logged in user
-When logging into the EQUELLA mobile app, the My resources page displays, listing all Published resources belonging to the logged in user as the default. The user can choose to change the results displayed by selecting one of the following status buttons:
+When logging into the openEQUELLA mobile app, the My resources page displays, listing all Published resources belonging to the logged in user as the default. The user can choose to change the results displayed by selecting one of the following status buttons:
 * Draft
 * Moderating
 * Archived
@@ -66,11 +66,11 @@ NOTE: Some file types may not display perfectly within the mobile app, depending
 #### To view the LMS uses for a resource
 1. From the Summary page, tap the Find uses button to display the Uses page. The current uses of the selected resource within any connected LMSs are listed. 
 
-#### To access native EQUELLA
-1. From the Summary, Moderation or Find uses pages, tap the Open in EQUELLA button to open native EQUELLA. The Resource summary page for the selected resource displays.
+#### To access native openEQUELLA
+1. From the Summary, Moderation or Find uses pages, tap the Open in openEQUELLA button to open native openEQUELLA. The Resource summary page for the selected resource displays.
 
 ### Viewing notifications and tasks
-The EQUELLA mobile app allows users to view their notifications and tasks.
+The openEQUELLA mobile app allows users to view their notifications and tasks.
 
 #### To view notifications
 1. Tap the Notifications button at the bottom of the mobile app page for iPads or at the top for Androids. The Notifications page displays. 

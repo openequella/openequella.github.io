@@ -1,8 +1,8 @@
 # Additional Information on openEquella in general, how-tos, guides, etc.
 
-[Turning An openEquella Institution Into An OAI Endpoint](#turning-an-equella-institution-into-an-oai-endpoint)
+[Turning An openEquella Institution Into An OAI Endpoint](#turning-an-openequella-institution-into-an-oai-endpoint)
 
-[Using openEquella to Harvest Another openEquella Via OAI](#using-equella-to-harvest-another-equella-via-oai)
+[Using openEquella to Harvest Another openEquella Via OAI](#using-openequella-to-harvest-another-openequella-via-oai)
 
 [Bulk Update Of User Email Notification Option](#bulk-update-of-user-email-notification-option)
 
@@ -10,7 +10,7 @@
 
 [Reset the Server Admin Pages Password](#reset-the-server-admin-pages-password)
 
-[Reset the openEquella Manager Password](#reset-the-equella-manager-password)
+[Reset the openEquella Manager Password](#reset-the-openequella-manager-password)
 
 [Adding Collaborators In Bulk](#adding-collaborators-in-bulk)
 

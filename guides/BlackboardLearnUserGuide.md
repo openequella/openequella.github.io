@@ -4,8 +4,8 @@ Table of Contents
 
 * [Overview](#overview)
 * [Blackboard My Institution page](#blackboard-my-institution-page)
-* [openEQUELLA portal](#equella-portal)
-* [Accessing the openEQUELLA repository](#accessing-the-equella-repository)
+* [openEQUELLA portal](#openequella-portal)
+* [Accessing the openEQUELLA repository](#accessing-the-openequella-repository)
 * [Managing resources in Blackboard](#managing-resources-in-blackboard)
 
 

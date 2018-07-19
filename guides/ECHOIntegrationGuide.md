@@ -9,14 +9,14 @@ Table of Contents
 * [Echo360 privileges](#echo360-privileges)
 * [Integration process](#integration-process)
 * [Deployment recommendations](#deployment-recommendations)
-* [Configure an openEQUELLA Schema](#configure-an-equella-schema)
-* [Configure an openEQUELLA Collection](#configure-an-equella-collection)
-* [Configure an openEQUELLA OAuth client](#configure-an-equella-oauth-client)
-* [Configure an openEQUELLA Trusted System](#configure-an-equella-trusted-system)
-* [Configure openEQUELLA EchoSystem Servers](#configure-equella-echosystem-servers)
-* [Echo360’s openEQUELLA Publisher installation](#echo360-equella-publisher-installation) 
-* [Enable openEQUELLA Publisher plugin](#enable-equella-publisher-plugin)
-* [Configure openEQUELLA Echo360 viewer](#configure-equella-echo360-viewer)
+* [Configure an openEQUELLA Schema](#configure-an-openequella-schema)
+* [Configure an openEQUELLA Collection](#configure-an-openequella-collection)
+* [Configure an openEQUELLA OAuth client](#configure-an-openequella-oauth-client)
+* [Configure an openEQUELLA Trusted System](#configure-an-openequella-trusted-system)
+* [Configure openEQUELLA EchoSystem Servers](#configure-openequella-echosystem-servers)
+* [Echo360’s openEQUELLA Publisher installation](#echo360-openequella-publisher-installation) 
+* [Enable openEQUELLA Publisher plugin](#enable-openequella-publisher-plugin)
+* [Configure openEQUELLA Echo360 viewer](#configure-openequella-echo360-viewer)
 
 
 ## Echo360 Integration overview

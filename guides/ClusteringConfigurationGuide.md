@@ -1,10 +1,10 @@
 # Clustering Configuration Guide
 Table of Contents
-* [openEQUELLA clustering overview](#equella-clustering-overview)
+* [openEQUELLA clustering overview](#openequella-clustering-overview)
 * [Clustering environment](#clustering-environment) 
 * [Install Apache Zookeeper](#install-apache-zookeeper) 
-* [Configure openEQUELLA on the first host](#configure-equella-on-the-first-host)
-* [Configure openEQUELLA on subsequent hosts](#configure-equella-on-subsequent-hosts)
+* [Configure openEQUELLA on the first host](#configure-openequella-on-the-first-host)
+* [Configure openEQUELLA on subsequent hosts](#configure-openequella-on-subsequent-hosts)
 * [Test the clustered environment](#test-the-clustered-environment)
 * [Configure Apache™ HTTPD as a load balancer](#configure-apache-httpd-as-a-load-balancer)
 

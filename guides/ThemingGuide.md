@@ -11,23 +11,23 @@ Changing the background colour..................................................
 Changing buttons 
 
 ## Theming overview
-EQUELLA makes it easy to create and upload custom themes allowing you to tailor the look and feel of your site.
+openEQUELLA makes it easy to create and upload custom themes allowing you to tailor the look and feel of your site.
 
-The purpose of this guide is to demonstrate to users how to identify web page elements and alter them to create a customised EQUELLA. 
+The purpose of this guide is to demonstrate to users how to identify web page elements and alter them to create a customised openEQUELLA. 
 
 ## Permanent changes to CSS
 
 Custom CSS code should be created in the customer.css file, to be imported with a theme. This is the only file where CSS should be permanently altered. It is the last stylesheet to be loaded, so any rules set in this file will overwrite matching rules from other stylesheets.
 
-This file can be created from scratch, copied from one of the pre-configured themes, or downloaded from your EQUELLA site using one of the previously described tools.
+This file can be created from scratch, copied from one of the pre-configured themes, or downloaded from your openEQUELLA site using one of the previously described tools.
 
 ## Creating a theme
-Two completed themes, Grape and Red, are available for download from the EQUELLA Support site in the Customisation folder. These can be used as a reference, if required. It is also possible to download a custom theme from the Theme settings page, although the Default theme cannot be downloaded.
+Two completed themes, Grape and Red, are available for download from the openEQUELLA Support site in the Customisation folder. These can be used as a reference, if required. It is also possible to download a custom theme from the Theme settings page, although the Default theme cannot be downloaded.
 
 
-A valid EQUELLA theme can be made up of images and/or customer.css file, arranged in a suitable folder structure and added to an archive (.zip) file.
+A valid openEQUELLA theme can be made up of images and/or customer.css file, arranged in a suitable folder structure and added to an archive (.zip) file.
 
-Folders must be arranged in such a way that EQUELLA knows where to find the appropriate files. Absolute links to the images can be found by exploring the resources using a web development tool, although there is an important distinction between what the addresses are on the site and the way the folders need to be arranged. Where the relative image URL reads:
+Folders must be arranged in such a way that openEQUELLA knows where to find the appropriate files. Absolute links to the images can be found by exploring the resources using a web development tool, although there is an important distinction between what the addresses are on the site and the way the folders need to be arranged. Where the relative image URL reads:
 
 /p/r/29303/com.tle.web.sections.equella/images/theimage.png
 
@@ -63,7 +63,7 @@ With the files and folders in place, your theme now needs to be archived.
 1. Open the file to ensure the folder structure is correct.  You should not see the parent folder of the theme files in the archive.
 
 ### How to import a theme
-1. Login to EQUELLA.
+1. Login to openEQUELLA.
 2. Select Settings from the left-hand navigation menu, then select Themes from the list of options.
 3. If there is already a theme loaded, click Remove custom theme. 
 4. If there is no theme loaded, click Browse.
@@ -73,7 +73,7 @@ With the files and folders in place, your theme now needs to be archived.
 
 ## Theme creation examples
 ### Changing the header image
-1. Navigate to EQUELLA in your browser of choice. 
+1. Navigate to openEQUELLA in your browser of choice. 
 2. Right-click on the header image and select Inspect Element.
 3. This opens the Elements view, where the element you clicked on is selected and the applicable styles displayed in the right-hand pane. If the 
 ```
@@ -91,9 +91,9 @@ NOTE: When recreating the folder structure in the theme archive, it is important
 
 7. Create a new header image, or save and modify the existing one, as desired. Ensure the dimensions remain the same as the original.
 
-8. Save the image by right-clicking the URL and selecting Save link as..., or right-clicking the image and selecting Save image as..., with the same name as the original. In this case header-bg.ltr.gif, and place it in the /p/r/com.tle.web.sections.equella/images directory of your theme.
+8. Save the image by right-clicking the URL and selecting Save link as..., or right-clicking the image and selecting Save image as..., with the same name as the original. In this case header-bg.ltr.gif, and place it in the /p/r/com.tle.web.sections.openEQUELLA/images directory of your theme.
 
-9. Even at this early stage, the theme can be uploaded to EQUELLA. Simply zip the folder(s) and upload.
+9. Even at this early stage, the theme can be uploaded to openEQUELLA. Simply zip the folder(s) and upload.
 
 ### Changing the background colour
 #### Determining the relevant elements
@@ -159,7 +159,7 @@ The body-bg-top.gif and body-bg-bottom.gif are 1 pixel-wide images designed to r
 
 3. Save these images. This can be easily achieved using Chrome Developer Tools.
 
-a. Inspect an element of an EQUELLA page.
+a. Inspect an element of an openEQUELLA page.
 
 b. In the subsequent window, click on Resources. 
 
@@ -176,7 +176,7 @@ d. Click through each one, right-clicking the image URL and saving as... as desc
 structure and filename in the archive must be: 
 /p/r/com.tle.web.sections.equella/images/body-bg.gif
 
-7. Create the theme archive and import it into EQUELLA.
+7. Create the theme archive and import it into openEQUELLA.
 
 8. View the changes in your browser. T
 
@@ -190,7 +190,7 @@ structure and filename in the archive must be:
 
 13. Put the customer.css file inside the css directory and save the theme archive.
 
-14. Import the file into EQUELLA as per previous instructions, and view the results.
+14. Import the file into openEQUELLA as per previous instructions, and view the results.
 
 15. 
 To complete the full theme background transformation, there are four other images that will need editing. 
@@ -199,15 +199,15 @@ To complete the full theme background transformation, there are four other image
 * footer-bg.gif
 * footer-equella.gif.
 
-16. Download these images from your EQUELLA website for editing.
+16. Download these images from your openEQUELLA website for editing.
 Both images, 2 (header-bg.ltr.gif) and 4 (footer-equella.gif), are branded images. These can be altered to reflect the branding of your institution. It is important to create custom images at the same dimensions as the originals to avoid layout problems. The dimensions can be found by loading the images into an image editor, or on the specific resource page in Chrome’s Developer Tools.
 
 17. Make the appropriate changes and save the images.
-18. Load them into the theme archive and reload the archive into EQUELLA.
+18. Load them into the theme archive and reload the archive into openEQUELLA.
 19. Trigger a cache refresh in your browser by pressing Ctrl+F5.
 
 ### Changing buttons
-It is also possible to change many of the buttons that exist within EQUELLA. Many of EQUELLA’s buttons are loaded from images, which can be edited in the same way as other images.
+It is also possible to change many of the buttons that exist within openEQUELLA. Many of EQUELLA’s buttons are loaded from images, which can be edited in the same way as other images.
 
 Buttons use a background image with text overlaid dynamically. The background image can be easily changed without affecting the message.
 
@@ -223,7 +223,7 @@ When a button is placed on the page, it is done so with the lower half of the im
 
 ### Altering button backgrounds example
 Continuing with our colour theme, the hover colour will need to be changed to make it more neutral.
-1. Download the following images from your EQUELLA site, using your preferred web tools:
+1. Download the following images from your openEQUELLA site, using your preferred web tools:
 * button-big.png
 * button-down.png
 * button.gif
@@ -234,7 +234,7 @@ Continuing with our colour theme, the hover colour will need to be changed to ma
 * Select user (button.gif)
 4. Save the changes.
 5. Move the saved images into your theme archive. In the case of these three images, they should be placed in the /p/r/com.tle.web.sections.equella/images directory, with the background images.
-6. ‘Zip’ the archive and import the theme into EQUELLA. 
+6. ‘Zip’ the archive and import the theme into openEQUELLA. 
 
-The scope of the editable EQUELLA environment is not limited to the examples and suggestions outlined in this document. Users are welcome to apply the concepts covered in this guide to identify and alter any and all page elements.
+The scope of the editable openEQUELLA environment is not limited to the examples and suggestions outlined in this document. Users are welcome to apply the concepts covered in this guide to identify and alter any and all page elements.
 

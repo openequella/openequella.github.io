@@ -11,11 +11,11 @@ Table of Contents
 * [Copyright compliance schema](#copyright-compliance-schema)
 
 ## Metadata schema overview
-A metadata schema (schema) is a storage structure used to hold an item’s metadata. Item metadata is used in searching and managing items within the EQUELLA Digital Repository. A schema that conforms to an available standard increases the discoverability, utility and interoperability of items held in different repositories.
+A metadata schema (schema) is a storage structure used to hold an item’s metadata. Item metadata is used in searching and managing items within the openEQUELLA Digital Repository. A schema that conforms to an available standard increases the discoverability, utility and interoperability of items held in different repositories.
 
-The purpose of this guide is to provide system administrators with an understanding of the EQUELLA Metadata Schemas tool to enable successful management of metadata.
+The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA Metadata Schemas tool to enable successful management of metadata.
 
-Please note that this guide has been developed to best reflect the full capabilities of EQUELLA and as such may differ in appearance to your own installation. The examples in this guide use a LOM compliant schema called the Generic Schema and a Generic citation provided in the EQUELLA Vanilla Institution. Information on institution management is provided in the EQUELLA Installation and Administration Guides.
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA and as such may differ in appearance to your own installation. The examples in this guide use a LOM compliant schema called the Generic Schema and a Generic citation provided in the openEQUELLA Vanilla Institution. Information on institution management is provided in the openEQUELLA Installation and Administration Guides.
 
 ## Metadata schemas
 The most widely recognized metadata schema for learning objects is the internationally recognized IEEE 1484.12.1 Standard for Learning Object Metadata (LOM) standard available from:
@@ -31,31 +31,31 @@ A metadata schema comprises nodes that can contain further child nodes, metadata
 
 A item node comprises a group of nodes associated with the node (indicated by the ‘+’) including the copyright node that has type and parenttype attributes and a group of simple data nodes. The schema, when associated with a collection, controls all the metadata stored by items in the repository and affects the item’s lifecycle, usefulness, interoperability and discoverability.
 
-Metadata schemas are the core of item management in EQUELLA, providing storage for metadata used:
+Metadata schemas are the core of item management in openEQUELLA, providing storage for metadata used:
 * to control contribution wizard behavior
 * collection management
 * for searching
 * for workflow control (moderation)
 * for informational display to users
 
-EQUELLA provides a LOM compliant schema called the Generic Schema with each EQUELLA Vanilla Institution and it provides a starting point for creating custom metadata schemas that closely fit the institution’s purpose. 
+openEQUELLA provides a LOM compliant schema called the Generic Schema with each openEQUELLA Vanilla Institution and it provides a starting point for creating custom metadata schemas that closely fit the institution’s purpose. 
 
 Before creating or modifying a schema gaining a clear understanding of the required business processes greatly simplifies schema creation.
 
 The examples in this guide use the Generic Schema.
 
 ## Schema Editor
-Metadata schemas are modified or created in the EQUELLA Administration Console.
+Metadata schemas are modified or created in the openEQUELLA Administration Console.
 
-**To access EQUELLA and open the Administration Console:
+**To access openEQUELLA and open the Administration Console:
 **
-1. Open a browser and enter your EQUELLA URL (e.g.‘<http://equella.myequellainstitution.edu>’).
-2. Log in to EQUELLA as an administrator user to display the EQUELLA dashboard.
+1. Open a browser and enter your openEQUELLA URL (e.g.‘<http://equella.myequellainstitution.edu>’).
+2. Log in to openEQUELLA as an administrator user to display the openEQUELLA dashboard.
 3. Click the Settings button to display the Settings page, then select Administration console from the categories list. 
 4. Select the Metadata Schemas option to display the Metadata Schemas pane that contains a list of all previously configured profiles. 
 
 ### Administration Console elements
-When the Metadata Schemas tool has been selected the Add, Edit, Remove, Clone, Import and Export buttons are enabled. (Providing the correct privileges have been granted, refer to the EQUELLA Security Guide for further information.)
+When the Metadata Schemas tool has been selected the Add, Edit, Remove, Clone, Import and Export buttons are enabled. (Providing the correct privileges have been granted, refer to the openEQUELLA Security Guide for further information.)
 
 #### Add
 Click +Add to display the Schema Editor and create a new schema.
@@ -113,7 +113,7 @@ Schemas all have the base xml node and must contain a node for the name and desc
 A schema-node name is the concatenation of the node’s name with that of all its ancestors. Schema-node names must be unique, however duplicate node names can be used within the schema if the nodes do not share the same parent.
 
 #### Partial locking
-A ‘This metadata schema is partially locked’ warning is displayed when a metadata schema is being used in EQUELLA.
+A ‘This metadata schema is partially locked’ warning is displayed when a metadata schema is being used in openEQUELLA.
 
 Partial locking of a schema prevents changes to the locked nodes. Schema nodes are locked when the schema has been associated with a collection and prevent inadvertent corruption of existing collections. Attributes and sibling nodes can be added to locked nodes without issue.
 
@@ -213,7 +213,7 @@ To save the schema
 2. Click OK.
 
 ### Transformations tab
-The Schema Editor enables the conversion of metadata between schemas to enable import and export of metadata and items between repositories. Item metadata can be transformed to the relevant schema when it is imported to or exported from EQUELLA using the Transformations tab. 
+The Schema Editor enables the conversion of metadata between schemas to enable import and export of metadata and items between repositories. Item metadata can be transformed to the relevant schema when it is imported to or exported from openEQUELLA using the Transformations tab. 
 
 The Transformation tab comprises the Import Transformations and Export Transformations sections.
 
@@ -239,7 +239,7 @@ The Transformation tab comprises the Import Transformations and Export Transform
 5. Use the Add, Edit or Remove buttons as necessary to perform the associated actions.
 
 ### Citations tab
-When citing licensed material an institution-preferred style can be selected. Citations can be configured in the Citations page. Various citation styles can be added (Harvard, Chicago etc.) for use with items associated with the schema (by a collection using the schema). The citation information is gathered from the schema metadata and transformed into the appropriate format by an XSLT. A generic citation style is provided with the EQUELLA Vanilla Institution.
+When citing licensed material an institution-preferred style can be selected. Citations can be configured in the Citations page. Various citation styles can be added (Harvard, Chicago etc.) for use with items associated with the schema (by a collection using the schema). The citation information is gathered from the schema metadata and transformed into the appropriate format by an XSLT. A generic citation style is provided with the openEQUELLA Vanilla Institution.
 
 The Citations tab includes the following elements:
 * Add—adds a new row to the citation pane.
@@ -271,7 +271,7 @@ To save the schema settings
 2. Click Close to close the Schema Editor.
 
 ## Associate a schema to a collection
-Each EQUELLA collection requires a metadata schema. An instance of the schema metadata is associated with each item contributed to the collection and controls the item’s lifecycle and search ability.
+Each openEQUELLA collection requires a metadata schema. An instance of the schema metadata is associated with each item contributed to the collection and controls the item’s lifecycle and search ability.
 
 Any SCORM XSLT templates uploaded using the metadata schema’s Transformation tab are associated with the metadata schema.  The selected XSLT template transforms the current metadata into a SCORM compliant package. 
 
@@ -293,7 +293,7 @@ To log out of the Administration Console
 Metadata schemas are associated with collections, workflows and advanced searches. Typically, metadata is added to an item in a collection at contribution and then used by the associated workflow and advanced search. Further information on using schemas is provided in other configuration guides. 
 
 ## XSLT template data
-Extensible stylesheet transformations (XSLTs) are commonly used to change the presentation of XML data. In EQUELLA, they can be used to present information returned in display and confirmation templates, email templates, export templates, OAI and Z3950 import and display results.
+Extensible stylesheet transformations (XSLTs) are commonly used to change the presentation of XML data. In openEQUELLA, they can be used to present information returned in display and confirmation templates, email templates, export templates, OAI and Z3950 import and display results.
 
 Item data is of the form as shown in the example below:
 ```
