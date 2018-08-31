@@ -1,14 +1,5 @@
 # Theming Guide
 
-Table of Contents
-Theming overview 
-
-Permanent changes to CSS............................................................................................ 9
-Creating a theme.......................................................................................................... 9
-Theme creation examples............................................................................................ 14
-Changing the header image ...................................................................................... 14
-Changing the background colour................................................................................ 16
-Changing buttons 
 
 ## Theming overview
 openEQUELLA makes it easy to create and upload custom themes allowing you to tailor the look and feel of your site.
@@ -29,11 +20,11 @@ A valid openEQUELLA theme can be made up of images and/or customer.css file, arr
 
 Folders must be arranged in such a way that openEQUELLA knows where to find the appropriate files. Absolute links to the images can be found by exploring the resources using a web development tool, although there is an important distinction between what the addresses are on the site and the way the folders need to be arranged. Where the relative image URL reads:
 
-/p/r/29303/com.tle.web.sections.equella/images/theimage.png
+*/p/r/29303/com.tle.web.sections.equella/images/theimage.png*
 
 The folder structure would ignore the 5-digit build number (29303), to read:
 
-/p/r/com.tle.web.sections.equella/images/theimage.png
+*/p/r/com.tle.web.sections.equella/images/theimage.png*
 
 The folder structure of the sample themes gives a good idea of how to setup your own:
 * css/customer.css
@@ -192,7 +183,6 @@ structure and filename in the archive must be:
 
 14. Import the file into openEQUELLA as per previous instructions, and view the results.
 
-15. 
 To complete the full theme background transformation, there are four other images that will need editing. 
 * topbar-bg.gif
 * header-bg.ltr.gif
