@@ -180,30 +180,6 @@ rm -r scratch/libav*
 You should ensure compatibility of your
 specific operating system and adherence to any applicable laws and regulations before downloading the packages outlined here. 
 
-To install the prerequisites for openEQUELLA  on CentOS:
-* sudo yum update
-* sudo yum install wget from "http://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/#"
-  * cd /opt/
-  * wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F;
-  oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz"
-  * tar -xzf jdk-8u91-linux-x64.tar.gz
-* From "https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-centos-7"
-  * sudo yum install postgresql-server postgresql-contrib
-  * sudo postgresql-setup initdb
-  * via sudo vi /var/lib/pgsql/data/pg_hba.conf, change 'ident' to 'md5'
-  * sudo systemctl start postgresql
-  * sudo systemctl enable postgresql
-  * change the postgres password
-  * Create a user for openEQUELLA (I did a superuser), and an empty database.
-* sudo yum install ImageMagick
-* Drop an existing 6.4-QA1 install of openEQUELLA into the OS, and confirm openEQUELLA runs.
-* Open your port for tomcat:
-  * firewall-cmd --permanent --add-port=8641/tcp
-  * firewall-cmd --reload
-
-Note: At this point, check your openEQUELLA install that it works and images can be thumbed.
-
-To install Libav:
 * Confirm the 'extras' repo is enabled (sudo yum repolist)
 * sudo yum install epel-release
 * sudo yum install yasm
@@ -221,7 +197,7 @@ To install Libav:
 * ./configure –enable-static
 * make
 * make install
-* Download libav (For Example: 11.3 - libav-11.3.tar.gz, md5: 1a2eb461b98e0f1d1d6c4d892d51ac9b)
+* Download libav (For Example: 11.12 - libav-11.12.tar.gz, md5: 1a2eb461b98e0f1d1d6c4d892d51ac9b)
 * Extract the tar ball, and cd to the directory
 * Run
 * Run 'avconv' from your home directory to ensure it's installed
