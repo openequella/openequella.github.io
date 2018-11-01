@@ -115,9 +115,9 @@ Install the program, taking note of the name and location of the folder in which
 Install the program, taking note of the name and location of the folder in which the avconv and avprobe executable files have been installed, as the openEQUELLA installation will require these details to properly configure and run openEQUELLA.
 
 ### To install Libav for Windows
-1. Go to <http://builds.libav.org/windows/release-gpl/> and download the relevant release build. (e.g. libav-11.3-win64.7z)
+1. Go to <http://builds.libav.org/windows/release-gpl/> and download the relevant release build. (e.g. libav-11.12-win64.7z)
 2. Unzip to a directory of choice (e.g. Program Files) taking note of the name and location of the folder in which the avconv.exe and avprobe.exe files have been installed, as the openEQUELLA installation will require these details to properly configure and run openEQUELLA.
-3. You will use that folder location plus "win64/usr/bin/ to direct openEQUELLA to that version of libav (either via the installer or in optional-config.properties). Note: Make sure the path you enter in the installation contains the following avconv.exe and avprobe.exe
+3. You will use that folder location plus "win64/usr/bin/" to direct openEQUELLA to that version of libav (either via the installer or in optional-config.properties). Note: Make sure the path you enter in the installation contains the following avconv.exe and avprobe.exe
 
 ### To install and configure Libav for Linux - Ubuntu
 1. Install Libav from <https://libav.org/download.html>
