@@ -280,10 +280,10 @@ This procedure describes installing openEQUELLA using a graphical interface. The
 31. When completed select OK to confirm.
 32. openEQUELLA is now installed and the server is ready to be registered and started.
 
-### Register the openEQUELLA Server
+### Run openEQUELLA
 
 #### To Register the openEQUELLA server as a Windows service
-1. Navigate to the Manager folder (the default installation folder is C drive :\openEQUELLA\manager). In the ‘config’ files, details for the services can be edited (this is optional.) The details that can be changed include: 
+1. Navigate to the Manager folder (the default installation folder is C:\openEQUELLA\manager). In the ‘config’ files, details for the services can be edited (this is optional). The details that can be changed include: 
 * logging properties
 * service names and descriptions 
 * whether the service should auto start.
@@ -305,7 +305,7 @@ Find the openEQUELLA services (by default the names are openEQUELLA App Server a
 The openEQUELLA server is now started but may take a few minutes to be operational.
 Once the server has been registered and started, the success of the installation can be checked by opening the Server administration account. 
 
-#### Linux Installations
+#### Run openEQUELLA service for UNIX like Installations
 1. To start the service, navigate to the openEQUELLA install directory, then the manager folder (e.g. path-to-equella/manager). From this folder, the server can be started by running the commands:
 ```
 ./manager start
@@ -331,7 +331,7 @@ Once the server has been started, the success of the installation can be checked
 
 ## openEQUELLA Server Administration Account
 
-The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL created from the server’s base URL. 
+The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL created from the server’s base URL. The exception to this is the 'first run' configuration page, for which no login is required.
 
 ### To open the Server administration account page
 1. Open a browser and enter the openEQUELLA address of the hosting server with 
@@ -345,10 +345,11 @@ The openEQUELLA Server administration account is hidden from casual users and is
 
 ## Import a New Institution
 1. Select Import institution from the navigation menu to display the Import new institution page
-2. Click Browse to select the institution zip file to import (e.g. institution-....tgz). 
+2. Click Browse to select the institution zip file to import (e.g. institution-....tgz)
+Note: If there is no current institution (for example on a test/demo server) download a vanilla reference institution from https://github.com/equella/equella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz
 3. Click to start the import. The Import new institution page displays. 
 The Import New Institution page allows for arbitrary base URLs and the renaming of the institution.
-4. To continue the importation, if multiple databases have been configured, click Select Database and select the required database in the Target database field. Otherwise the system defaults to the database set up during installation.
+4. To continue the import, if multiple databases have been configured, click Select Database and select the required database in the Target database field. Otherwise the system defaults to the database set up during installation.
 5. Enter an Institution name for the institution. The institution name must be unique for the openEQUELLA server.
 6. Enter an Institution URL for the institution. 
 Server administrators are able to give institutions an arbitrary base URL. This URL may contain a base URL context. For example, the following base URLs would be valid for institutions on the same server: 
@@ -364,7 +365,7 @@ The arbitrary base URL can be entered in the Institution URL edit box. The Insti
 7. Enter a unique Filestore folder name. This is optional; if a name is not entered a folder with a randomly generated name will be automatically generated for the institution in the path-to-equella\filestore\Institutions folder.
 8. Enter a new Admin password for the institution administrator. If left blank, the institution will inherit the password from the imported institution. (NOTE: This password is used to log in to the Institution using the TLE_ADMINISTRATOR login.)
 9. Confirm the password.
-10. Click Import new institution then click OK to confirm. An Importing… progress dialog that indicates the import progress is displayed. When the import is complete the Return of Institution Management button becomes active.
+10. Click Import new institution then click OK to confirm. An Importing… progress dialog that indicates the import progress is displayed. When the import is complete the Return to Institution Management button becomes active.
 11. Click Return to Institution Management to view the new institution on the Institutions page.
 
 Installation of the openEQUELLA server is now complete. Login to the institution as the TLE_ADMINISTRATOR to administer and configure the institution.
@@ -416,19 +417,17 @@ These configurations should be used only with the utmost care.
 
 ### openEQUELLA URLs
 
-* openEQUELLA inst url/language/download/refresh : *Refreshes the language caches, but you'll have to hit it on each node*
+* openEQUELLA inst_url/language/download/refresh : *Refreshes the language caches, but you'll have to hit it on each node*
 
-* openEQUELLA inst url/access/sched
-uledtasksdebug.do: *Landing page of the scheduled tasks in openEQUELLA allows the tasks to be manually kicked off by clicking on the task link.*
+* openEQUELLA inst_url/access/scheduledtasksdebug.do : *Landing page of the scheduled tasks in openEQUELLA allows the tasks to be manually kicked off by clicking on the task link.*
 
-* openEQUELLA inst url/some
-openEQUELLA tree?$DEBUG$ : *Displays the supported and unsupported parameters. Also displays the section tree structure*
+* openEQUELLA inst_url/some openEQUELLA tree?$DEBUG$ : *Displays the supported and unsupported parameters. Also displays the section tree structure*
 
-* openEQUELLA inst url/logon.do?NO_AUTO_LOGIN : *Bypasses auth redirections, for example, for CAS, and presents the normal openEQUELLA login page. The =true is optional - the key just needs to be present.*
+* openEQUELLA inst_url/logon.do?NO_AUTO_LOGIN : *Bypasses auth redirections, for example, for CAS, and presents the normal openEQUELLA login page. The =true is optional - the key just needs to be present.*
 
-* openEQUELLA inst url/logon.do?NO_IP_LOGIN : *Bypasses IP login and presents the normal openEQUELLA login page. The =true is optional - the key just needs to be present.*
+* openEQUELLA inst_url/logon.do?NO_IP_LOGIN : *Bypasses IP login and presents the normal openEQUELLA login page. The =true is optional - the key just needs to be present.*
 
-* openEQUELLA inst url/logon.do?logout=true  : *Forces a user to log out.*
+* openEQUELLA inst_url/logon.do?logout=true  : *Forces a user to log out.*
 
 
 ## Manage Databases
