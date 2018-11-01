@@ -100,13 +100,11 @@ The JDK can be obtained from Oracle at <http://www.oracle.com/technetwork/java/j
 
 During installation the name and location of the folder in which the JDK is installed is needed to properly configure and run openEQUELLA. 
 
-The next step in the installation is to install ImageMagick.
 
 ## Install ImageMagick
 
-ImageMagick can be obtained from <http://www.imagemagick.org/> . Download the platform-specific installer. openEQUELLA requires version 6.4 or greater to be installed. 
-
-NOTE: openEQUELLA requires Imagemagick version 6.8.9 or higher for digital camera RAW image files. Additionally, a third party plugin called Ghostscript is required by Imagemagick to enable the generation of thumbnails for some file types (for example, pdfs). Go to <http://ghostscript.com> to download and install. 
+NOTE: openEQUELLA requires Imagemagick version 6.4 or greater be installed; 6.8.9 or higher for digital camera RAW image files. ImageMagick can be obtained from <http://www.imagemagick.org/> ; download the platform-specific installer.  **If using a platform with package management check the available version of Imagemagick before installing from source; its highly likely packages exist already.**
+Additionally, a third party plugin called Ghostscript is required by Imagemagick to enable the generation of thumbnails for some file types (for example, pdfs). Go to <http://ghostscript.com> to download and install. 
 
 For a full list of image file types supported by Imagemagick, go to <http://imagemagick.sourceforge.net/http/www/formats.html>.
 
