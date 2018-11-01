@@ -120,28 +120,60 @@ Install the program, taking note of the name and location of the folder in which
 3. You will use that folder location plus "win64/usr/bin/" to direct openEQUELLA to that version of libav (either via the installer or in optional-config.properties). Note: Make sure the path you enter in the installation contains the following avconv.exe and avprobe.exe
 
 ### To install and configure Libav for Linux - Ubuntu
-1. Install Libav from <https://libav.org/download.html>
-libvo_aacenc and libx264 dependencies are also required for video previews to be generated correctly. Take note of the name and location of the folder in which the avconv and avprobe executables have been installed, as the openEQUELLA installation will require these details to properly configure and run openEQUELLA.
+Install Libav from <https://libav.org/download.html>. libvo_aacenc and libx264 dependencies are also required for video previews to be generated correctly.
 
-To install:
-1. run 'sudo apt-get install yasm'
-2. run 'sudo apt-get install libvo-aacenc-dev' (that's the audio codec we need)
-3. run 'sudo apt-get install libx264-dev' (that's the video codec we encode with)
-4. cd to the directory you want to download libav into.
-5. download the tar.gz file (e.g. <https://libav.org/releases/libav-11.3.tar.gz>)
-6. run 'tar -zxf libav-11.3.tar.gz'
-7. cd into libav-11.3
-8. run './configure --enable-libvo-aacenc --enable-version3 --enable-libx264 --enable-gpl'
-9. run 'make'
-10. run 'sudo make install'
+1. Install required packages; here we install an assembler,t he audio codec we need and the video codec we encode with.
+
+```
+sudo apt-get install build-essential pkg-config
+sudo apt-get install yasm libvo-aacenc-dev libx264-dev
+```
+
+2. change to the directory you want to download libav into.
+```
+mkdir scratch
+cd scratch
+```
+
+3. download and extract the tar.gz file, e.g
+```
+wget https://libav.org/releases/libav-11.12.tar.gz
+tar -zxf libav-11.12.tar.gz
+```
+
+4. change into libav-11.12
+```
+cd libav-11.12
+```
+
+5. configure and make libav; these do NOT need sudo
+```
+./configure --enable-libvo-aacenc --enable-version3 --enable-libx264 --enable-gpl --prefix=/usr/local
+make
+```
+
+Finally, with sudo, install libav.
+```
+sudo make install
+```
 
 To remove:
-1. cd in the libav-11.3 directory:
-2. run 'sudo make uninstall'
-3. run 'sudo apt-get remove libx264-dev'
-4. run 'sudo apt-get remove libvo-aacenc-dev'
-5. run 'sudo apt-get remove yasm'
-6. delete the libav-11.3 directory and libav-11.3.tar.gz file.
+1. Remove the build dependencies
+```
+sudo apt-get remove libx264-dev libvo-aacenc-dev yasm
+```
+
+2. Remove libav
+```
+cd scratch/libav-11.12
+sudo make uninstall
+```
+
+3. delete the libav-11.12 directory and libav-11.12.tar.gz file.
+```
+cd
+rm -r scratch/libav*
+```
 
 ### To install and configure Libav for Linux - CentOS 7
 
