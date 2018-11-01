@@ -58,12 +58,13 @@ openEQUELLA installation involves the following steps:
 
 All databases must be able to store character data using UTF-8 encoding.
 
-A database must be configured for use by openEQUELLA with openEQUELLA being the owner or having complete control of the database.
+A database must be configured for use by openEQUELLA with openEQUELLA being the owner or having complete control of the database. That means the equella database user must have permission to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries. 
+You must also ensure the database user has a password as openEQUELLA will request id during installation.
 
 NOTE: When using multiple databases, only databases from one vendor may be used. For example, two Microsoft SQL Server databases could be used, but NOT a Microsoft SQL Server and a PostgreSQL Server database. The database vendor is selected when the openEQUELLA system is first installed, and the database configured during the openEQUELLA installation wizard is the default system database.
+
 ### Create an Oracle database instance for openEQUELLA
 Creating a database instance on Oracle should be managed by an experienced Oracle DBA. No step-by-step guide is provided, however to successfully install openEQUELLA on an Oracle database (10g, 11g and 12c) the openEQUELLA user (in the default install this is ‘equellauser’) must have the following:
-* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries. 
 * Database Name: the name must not exceed 20 characters.
 * Database Username: the name must not exceed 20 characters.
 * Character Encoding: the character encoding must be set to Use Unicode (AL32UTF8).
@@ -75,21 +76,28 @@ openEQUELLA uses the default Users Tablespace that must have an <unlimited> Quot
 ### Create a Microsoft SQL Server database instance for openEQUELLA
 
 If you are using Microsoft SQL Server 2008, 2012 or 2014, please ensure that the TCP/IP protocol has been enabled. The openEQUELLA user (the installer default value is ‘equellauser’) must have the following:
-* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries. 
 * Database Name: the installer default name is ‘equella’.
 * Database Role: the database user must be the database owner. For the openEQUELLA user login select ‘db_owner’.
 
 It is required that Microsoft SQL Server databases have READ_COMMITTED_SNAPSHOT enabled to avoid possible deadlocks. See http://msdn.microsoft.com/en-us/library/ms173763.aspx for more information. The following statement will enable this setting for a given database:
 
+```
 ALTER DATABASE MyEquellaDatabase SET READ_COMMITTED_SNAPSHOT ON;
+```
 
 ### Create a PostgreSQL database instance for openEQUELLA
 
 Installations using a PostgreSQL (8.0 or higher) database must create an openEQUELLA database before installing openEQUELLA. The openEQUELLA user (in the default install this is ‘equellauser’) must have the following:
-* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries. 
 * Database Name: the default name used is ‘equella’.
 * Database Owner: the default name used is ‘equellauser’.
 * Tablespace:‘pg_default’.
+
+These requirements are met by the following commands
+
+```
+createuser --interactive --pwprompt equellauser
+createdb -O equellauser -D pg_default -E UTF-8 equella
+```
 
 The database can now be used for an installation of openEQUELLA.
 
