@@ -84,7 +84,7 @@ If you are using Microsoft SQL Server 2008, 2012 or 2014, please ensure that the
 
 It is required that Microsoft SQL Server databases have READ_COMMITTED_SNAPSHOT enabled to avoid possible deadlocks. See http://msdn.microsoft.com/en-us/library/ms173763.aspx for more information. The following statement will enable this setting for a given database:
 
-```
+```sql
 ALTER DATABASE MyEquellaDatabase SET READ_COMMITTED_SNAPSHOT ON;
 ```
 
@@ -97,7 +97,7 @@ Installations using a PostgreSQL (8.0 or higher) database must create an openEQU
 
 These requirements are met by the following commands
 
-```
+```sh
 createuser --interactive --pwprompt equellauser
 createdb -O equellauser -D pg_default -E UTF-8 equella
 ```
