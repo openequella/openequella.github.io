@@ -331,9 +331,7 @@ Once the server has been started, the success of the installation can be checked
 
 ## openEQUELLA Server Administration Account
 
-The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL created from the server’s base URL. 
-
-Note: The base URL is configured in `learningedge-config/mandatory-config.properties` as `admin.url`. If admin.url is changed adjust the instructions below accordingly.
+The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL. This URL is configured in learningedge-config/mandatory-config.properties as admin.url.
 
 ### To open the Server administration account page
 1. Open a browser and enter the openEQUELLA address of the hosting server with 
