@@ -95,10 +95,10 @@ Installations using a PostgreSQL (8.0 or higher) database must create an openEQU
 * Database Owner: the default name used is ‘equellauser’.
 * Tablespace:‘pg_default’.
 
-These requirements are met by the following commands
+These requirements are met by the following commands when run as the `postgresql` user from a terminal
 
 ```sh
-createuser --interactive --pwprompt equellauser
+createuser --createdb --superuser --pwprompt equellauser
 createdb -O equellauser -D pg_default -E UTF-8 equella
 ```
 
