@@ -124,53 +124,53 @@ Install Libav from <https://libav.org/download.html>. libvo_aacenc and libx264 d
 
 1. Install required packages; here we install packages required for building, an assembler, the audio codec we need and the video codec we encode with.
 
-```
+```bash
 sudo apt-get install build-essential pkg-config
 sudo apt-get install yasm libvo-aacenc-dev libx264-dev
 ```
 
 2. change to the directory you want to download libav into.
-```
+```bash
 mkdir scratch
 cd scratch
 ```
 
 3. download and extract the tar.gz file, e.g
-```
+```bash
 wget https://libav.org/releases/libav-11.12.tar.gz
 tar -zxf libav-11.12.tar.gz
 ```
 
 4. change into libav-11.12
-```
+```bash
 cd libav-11.12
 ```
 
 5. configure and make libav; these do NOT need sudo
-```
+```bash
 ./configure --enable-libvo-aacenc --enable-version3 --enable-libx264 --enable-gpl --prefix=/usr/local
 make
 ```
 
 Finally, with sudo, install libav.
-```
+```bash
 sudo make install
 ```
 
 To remove:
 1. Remove the build dependencies
-```
+```bash
 sudo apt-get remove libx264-dev libvo-aacenc-dev yasm
 ```
 
 2. Remove libav
-```
+```bash
 cd scratch/libav-11.12
 sudo make uninstall
 ```
 
 3. delete the libav-11.12 directory and libav-11.12.tar.gz file.
-```
+```bash
 cd
 rm -r scratch/libav*
 ```
