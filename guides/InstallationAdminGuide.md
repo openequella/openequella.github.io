@@ -231,9 +231,9 @@ This information is required to successfully install openEQUELLA. Incomplete det
 
 This procedure describes installing openEQUELLA using a graphical interface. The examples shown are using Windows although other GUIs such as X-windows will be similar. The wizard pages provide information on the required details. Read each page before entering information.
 
-Note: It may be possible to install without requiring a GUI; see https://groups.google.com/a/apereo.org/d/msg/equella-users/v-MMOuoa7mk/UDbmSkKRAwAJ for discussion if this is important to you.
+Note: It is possible to install without requiring a GUI. While not widespread as a production installation method, it's consistently used in the docker logic; see https://groups.google.com/a/apereo.org/d/msg/equella-users/v-MMOuoa7mk/UDbmSkKRAwAJ for discussion if this is important to you.
 
-1. Download equella-installer-x.x.zip (substitute x for the current minor version) from https://github.com/equella/Equella/releases
+1. Obtain an openEQUELLA installer. You can either download a demo installer from https://github.com/equella/Equella/releases or build a production installer via sbt. Demo installers do not contain Kaltura integration or Oracle DB drivers, and use a self-signed Java signing certificate. The file format is equella-installer-x.y.zip (substitute x for the current major version, and y for the current minor version)
 2. Extract the equella-installer-x.x.zip file to a temporary directory.
 3. Navigate to the installer temporary directory and double-click on the enterprise-install file to start the installation. 
 4. Click Next to display the Java Development Kit selection screen.
