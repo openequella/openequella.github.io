@@ -559,14 +559,29 @@ To access openEQUELLA:
 
 ## Use Log Files
 
-openEQUELLA writes an extensive series of log files for events including the resource center, openEQUELLA services and the openEQUELLA conversion service. All log files can be found in directories bearing the date of the log file. Each directory contains one log file containing entries for all events logged on that date. A new log directory is created for every day the logged services are run. Log files may need to be archived from time to time to recover disk space.
+openEQUELLA writes an extensive series of log files for events including the resource center, openEQUELLA services and the openEQUELLA conversion service. All log files can be found in directories bearing the date of the log file. Each directory contains one log file containing entries for all events logged on that date. A new log directory is created for every day the logged services are run. Log files may need to be archived from time to time to recover disk space.  The log directories and files are contained in the logs directory of openEQUELLA server.
 
-Log file Error events are highlighted to simplify discovery as the files can contain many entries. Log files are contained in the logs directory of openEQUELLA server.
+Via the `HTMLLayout3` layout scheme, Error events are highlighted to simplify discovery as the files can contain many entries. 
 
 To view a resource centre log
-1. Navigate to the logs directory, typically path-to-equella\logs\resource-centre.
-2. Select the date directory and open the application.html file within.
+1. Navigate to the logs directory on a given server, typically path-to-equella\logs\resource-centre.
+2. Select the date directory and open the `application.html` (or similar) file within.
 
+Logs are controlled with standard log4j technology, and you can change how logs are emitted to match your log monitoring setup.  For example, to emit a parser-oriented set of logs, add the following to your `learningedge-config/learningedge-log4j-config.properties` (and optionally, remove the previous configurations):
+
+```properties
+log4j.appender.FILE.File=path-to-equella\logs\app\app.log
+
+log4j.rootLogger=INFO, FILE
+
+log4j.appender.FILE=com.tle.core.equella.runner.DailySizeRollingAppender
+log4j.appender.FILE.Threshold=TRACE
+log4j.appender.FILE.ImmediateFlush=true
+log4j.appender.FILE.Append=true
+log4j.appender.FILE.layout=org.apache.log4j.PatternLayout
+log4j.appender.FILE.layout.ConversionPattern=%d{ISO8601} [%p] [appX] [%t:%c.%M()] - %m%n
+log4j.appender.FILE.layout.title=openEQUELLA Resource Center
+```
 
 ## Thread Dump
 
