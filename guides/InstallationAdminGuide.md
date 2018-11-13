@@ -569,7 +569,7 @@ To view a resource centre log
 
 Logs are controlled with standard log4j technology, and you can change how logs are emitted to match your log monitoring setup.  For example, to emit a parser-oriented set of logs, add the following to your `learningedge-config/learningedge-log4j-config.properties` (and optionally, remove the previous configurations):
 
-```
+```properties
 log4j.appender.FILE.File=path-to-equella\logs\app\app.log
 
 log4j.rootLogger=INFO, FILE
