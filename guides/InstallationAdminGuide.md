@@ -331,10 +331,11 @@ Once the server has been started, the success of the installation can be checked
 
 ## openEQUELLA Server Administration Account
 
-The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL. This URL is configured in learningedge-config/mandatory-config.properties as admin.url.
+The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL. This URL is configured in `learningedge-config/mandatory-config.properties`
+as `admin.url` and defaults to '/'. It is recommended `admin.url` be set to a different hostname or IP address to the domains used by institutions accessed by users.
 
 ### To open the Server administration account page
-1. Open a browser and enter the openEQUELLA address of the hosting server with 
+1. Open a browser and enter openEQUELLA's `admin.url` with
 ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’).
 2. The Server administration - Welcome page displays
 2. Enter Email addresses, SMTP, No reply mail, User, SMTP password, and Confirm SMTP password.
@@ -350,18 +351,18 @@ The openEQUELLA Server administration account is hidden from casual users and is
 The Import New Institution page allows for arbitrary base URLs and the renaming of the institution.
 4. To continue the importation, if multiple databases have been configured, click Select Database and select the required database in the Target database field. Otherwise the system defaults to the database set up during installation.
 5. Enter an Institution name for the institution. The institution name must be unique for the openEQUELLA server.
-6. Enter an Institution URL for the institution. 
-Server administrators are able to give institutions an arbitrary base URL. This URL may contain a base URL context. For example, the following base URLs would be valid for institutions on the same server: 
-  * http://some.host.com/ 
-  * http://another.host.com/ 
+6. Enter an Institution URL for the institution.  Server administrators are able to give institutions an arbitrary base URL but it is recommended that they contain a context (`/something/` after the address) and be fully qualified (including both host and domain name).
+For example, the following base URLs would be valid for institutions on the same server: 
+  * http://some.host.com/  	(See note below)
+  * http://another.host.com/ 	(See note below)
   * http://another.host.com/with/a/context/ 
   * http://another.host.com/with/another/context/ 
   * http://on.a.different.port:8080/ 
 
-The arbitrary base URL can be entered in the Institution URL edit box. The Institution URL should be fully qualified. It is not possible to overwrite the other institution’s URL space, for example: ‘http://equella.myinstitution:4012/doco/qa2/’ will conflict with  ‘http://equella.myinstitution:4012/doco/’. This will be disallowed and will result in the following message:
-**‘URL must not 'overwrite' an existing institution's URL space, in this case http://equella.myinstitution:4012/doco/qa2/. This may cause this institution to work incorrectly’.**
+It is not possible to overwrite another institution’s URL space, for example: ‘http://equella.myinstitution:4012/doco/qa2/’ will conflict with  ‘http://equella.myinstitution:4012/doco/’. This will be disallowed and will result in the following message:
+**‘URL must not 'overwrite' an existing institution's URL space, in this case http://equella.myinstitution:4012/doco/qa2/. This may cause this institution to work incorrectly’.**. 
 
-Note: The first two examples above conflict with the default setting for `admin.url`. If using the top level for your repository change `admin.url` in `learningedge-config/mandatory-config.properties` to include `/adm` or similar.
+Like institutions, the location specified by `admin.url` should be in its own context and not sit under an institution.
 
 7. Enter a unique Filestore folder name. This is optional; if a name is not entered a folder with a randomly generated name will be automatically generated for the institution in the path-to-equella\filestore\Institutions folder.
 8. Enter a new Admin password for the institution administrator. If left blank, the institution will inherit the password from the imported institution. (NOTE: This password is used to log in to the Institution using the TLE_ADMINISTRATOR login.)
