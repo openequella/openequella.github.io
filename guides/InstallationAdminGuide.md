@@ -533,8 +533,8 @@ An example directive is:
 
 ```apache
 <VirtualHost *:80>
-  ServerName www.equella.com
-  ProxyPass / http://equellahost:80/ nocanon
+  ServerName {external-server-name}
+  ProxyPass / http://{equella-host}:{http-port}/ nocanon
   ProxyPreserveHost On
 </VirtualHost>
 ```
@@ -568,8 +568,8 @@ An example directive is:
 
 ```apache
 <VirtualHost *:443>
-  ServerName www.equella.com
-  ProxyPass / http://equellahost:80/ nocanon
+  ServerName {external-server-name}
+  ProxyPass / http://{equella-host}:{http-port}/ nocanon
   ProxyPreserveHost On
 
   ## SSL
