@@ -58,7 +58,10 @@ openEQUELLA installation involves the following steps:
 
 All databases must be able to store character data using UTF-8 encoding.
 
-A database must be configured for use by openEQUELLA with openEQUELLA being the owner or having complete control of the database. That means the equella database user must have permission to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries. 
+A database must be configured for use by openEQUELLA with openEQUELLA being the owner or having complete control of the database. That means the equella database user must have permission to:
+* Create, modify and delete tables, indexes and constraints
+* Perform select, insert, delete and update queries on the newly created databases.
+
 You must also ensure the database user has a password as openEQUELLA will request id during installation.
 
 NOTE: When using multiple databases, only databases from one vendor may be used. For example, two Microsoft SQL Server databases could be used, but NOT a Microsoft SQL Server and a PostgreSQL Server database. The database vendor is selected when the openEQUELLA system is first installed, and the database configured during the openEQUELLA installation wizard is the default system database.
