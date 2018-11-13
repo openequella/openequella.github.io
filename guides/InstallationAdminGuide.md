@@ -42,15 +42,15 @@ openEQUELLA has a step-by-step wizard that guides administrators through the ins
 
 ## Installation prerequisites
 openEQUELLA installation involves the following steps:
-1. Ensure a graphical user interface (GUI) is available (Windows, X-windows or equivalent). 
+1. Ensure a graphical user interface (GUI) is available (Windows, X-windows or equivalent).
 2. Ensure a suitable database or databases are available for openEQUELLA. openEQUELLA is supported on the following database servers:
-* Oracle™ 10g, 11g and 12c 
+* Oracle™ 10g, 11g and 12c
 * Microsoft SQL Server™  2008, 2008 R2 or 2012 and 2014
 * PostgreSQL™ 8 or higher.
 3. Ensure that Oracle Java JDK 8 is installed on the server.
 4. Ensure ImageMagick is installed on the server.
 5. If using video file attachments (other than streaming media) and require thumbnails and previews for those files, ensure Libav is installed on the server.
-6. Install openEQUELLA. 
+6. Install openEQUELLA.
 7. Ensure the installation is functioning correctly.
 
 
@@ -63,7 +63,7 @@ A database must be configured for use by openEQUELLA with openEQUELLA being the 
 NOTE: When using multiple databases, only databases from one vendor may be used. For example, two Microsoft SQL Server databases could be used, but NOT a Microsoft SQL Server and a PostgreSQL Server database. The database vendor is selected when the openEQUELLA system is first installed, and the database configured during the openEQUELLA installation wizard is the default system database.
 ### Create an Oracle database instance for openEQUELLA
 Creating a database instance on Oracle should be managed by an experienced Oracle DBA. No step-by-step guide is provided, however to successfully install openEQUELLA on an Oracle database (10g, 11g and 12c) the openEQUELLA user (in the default install this is ‘equellauser’) must have the following:
-* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries. 
+* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries.
 * Database Name: the name must not exceed 20 characters.
 * Database Username: the name must not exceed 20 characters.
 * Character Encoding: the character encoding must be set to Use Unicode (AL32UTF8).
@@ -75,7 +75,7 @@ openEQUELLA uses the default Users Tablespace that must have an <unlimited> Quot
 ### Create a Microsoft SQL Server database instance for openEQUELLA
 
 If you are using Microsoft SQL Server 2008, 2012 or 2014, please ensure that the TCP/IP protocol has been enabled. The openEQUELLA user (the installer default value is ‘equellauser’) must have the following:
-* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries. 
+* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries.
 * Database Name: the installer default name is ‘equella’.
 * Database Role: the database user must be the database owner. For the openEQUELLA user login select ‘db_owner’.
 
@@ -86,7 +86,7 @@ ALTER DATABASE MyEquellaDatabase SET READ_COMMITTED_SNAPSHOT ON;
 ### Create a PostgreSQL database instance for openEQUELLA
 
 Installations using a PostgreSQL (8.0 or higher) database must create an openEQUELLA database before installing openEQUELLA. The openEQUELLA user (in the default install this is ‘equellauser’) must have the following:
-* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries. 
+* Permissions: to create, modify and delete tables, indexes and constraints and to run, select, insert, delete and update queries.
 * Database Name: the default name used is ‘equella’.
 * Database Owner: the default name used is ‘equellauser’.
 * Tablespace:‘pg_default’.
@@ -98,19 +98,19 @@ The database can now be used for an installation of openEQUELLA.
 
 The JDK can be obtained from Oracle at <http://www.oracle.com/technetwork/java/javase/downloads/index.html>. Installation instructions are available for all platforms by following the appropriate Oracle documentation. We recommend installing the latest point release of Java 8 JDK.
 
-During installation the name and location of the folder in which the JDK is installed is needed to properly configure and run openEQUELLA. 
+During installation the name and location of the folder in which the JDK is installed is needed to properly configure and run openEQUELLA.
 
 The next step in the installation is to install ImageMagick.
 
 ## Install ImageMagick
 
-ImageMagick can be obtained from <http://www.imagemagick.org/> . Download the platform-specific installer. openEQUELLA requires version 6.4 or greater to be installed. 
+ImageMagick can be obtained from <http://www.imagemagick.org/> . Download the platform-specific installer. openEQUELLA requires version 6.4 or greater to be installed.
 
-NOTE: openEQUELLA requires Imagemagick version 6.8.9 or higher for digital camera RAW image files. Additionally, a third party plugin called Ghostscript is required by Imagemagick to enable the generation of thumbnails for some file types (for example, pdfs). Go to <http://ghostscript.com> to download and install. 
+NOTE: openEQUELLA requires Imagemagick version 6.8.9 or higher for digital camera RAW image files. Additionally, a third party plugin called Ghostscript is required by Imagemagick to enable the generation of thumbnails for some file types (for example, pdfs). Go to <http://ghostscript.com> to download and install.
 
 For a full list of image file types supported by Imagemagick, go to <http://imagemagick.sourceforge.net/http/www/formats.html>.
 
-Install the program, taking note of the name and location of the folder in which ImageMagick is installed as the openEQUELLA installation will require these details to properly configure and run openEQUELLA. 
+Install the program, taking note of the name and location of the folder in which ImageMagick is installed as the openEQUELLA installation will require these details to properly configure and run openEQUELLA.
 
 ## Install Libav
 
@@ -148,7 +148,7 @@ To remove:
 ### To install and configure Libav for Linux - CentOS 7
 
 You should ensure compatibility of your
-specific operating system and adherence to any applicable laws and regulations before downloading the packages outlined here. 
+specific operating system and adherence to any applicable laws and regulations before downloading the packages outlined here.
 
 To install the prerequisites for openEQUELLA  on CentOS:
 * sudo yum update
@@ -204,7 +204,7 @@ PKG_CONFIG_PATH environment variable. You  may have to explicitly export the pat
 
 ## Install openEQUELLA
 
-When installing openEQUELLA, a wizard is provided that gathers information for the installation and initiates the installation process once sufficient information has been provided. If the installation fails to complete due to inappropriate initialization of the wizard, all partially installed components are removed and the wizard closes leaving the system as it was, prior to the installation attempt. 
+When installing openEQUELLA, a wizard is provided that gathers information for the installation and initiates the installation process once sufficient information has been provided. If the installation fails to complete due to inappropriate initialization of the wizard, all partially installed components are removed and the wizard closes leaving the system as it was, prior to the installation attempt.
 
 ### Before you install: important network configuration
 openEQUELLA has an inbuilt web server that stores content, and as such requires a port number to listen on. Additionally, openEQUELLA needs to know the full URL by which linked content will be accessed.
@@ -229,32 +229,32 @@ This information is required to successfully install openEQUELLA. Incomplete det
 
 ### PLACEHOLDER FOR INSTRUCTIONS ON CREATING/OBTAINING INSTALLATION FILES FOR OPEN openEQUELLA VIA APEREO
 
-1.  ... In Progress...  Need to insert steps required to get install files 
+1.  ... In Progress...  Need to insert steps required to get install files
 
-### Begin openEQUELLA Installation 
+### Begin openEQUELLA Installation
 
 This procedure describes installing openEQUELLA using a graphical interface. The examples shown are using Windows although other GUIs such as X-windows will be similar. The wizard pages provide information on the required details. Read each page before entering information.
 
 1. PLACEHOLDER FOR WHERE THE INDIVIDUAL CAN DOWNLOAD THE equella-6.4-GAx Installer file.
 2. Extract the equella-installer-xxxx.zip file to a temporary directory.
-3. Navigate to the installer temporary directory and double-click on the enterprise-install file to start the installation. 
+3. Navigate to the installer temporary directory and double-click on the enterprise-install file to start the installation.
 4. Click Next to display the Java Development Kit page.
 5. Click Browse and navigate to the directory in which the JDK is installed.
 6. Click Next to display the Install Directory page.
 7. Click Browser to select the location where openEQUELLA will be installed (e.g. ‘c:\equella’).
-8. Click Next to display the Database Server page.  The database server group and database type must be entered to configure openEQUELLA with an empty database ready for use. 
-9. Select the database type from the drop-down list (e.g. ‘SQL Server’). 
+8. Click Next to display the Database Server page.  The database server group and database type must be entered to configure openEQUELLA with an empty database ready for use.
+9. Select the database type from the drop-down list (e.g. ‘SQL Server’).
 10. Select a Database Server from the following options:
 * This machine — select this option if the database server is on the local machine.
-* A different server — select this option if the database server is not on this machine and enter the IP address or hostname of the server. 
-11. Click Next to display the Database Authentication page. 
+* A different server — select this option if the database server is not on this machine and enter the IP address or hostname of the server.
+11. Click Next to display the Database Authentication page.
 12. Enter the openEQUELLA Database Name (the default value is ‘equella’).
-13. Enter the Database Username (the default value is ‘equellauser’). 
+13. Enter the Database Username (the default value is ‘equellauser’).
 (NOTE: For Oracle the database username must start with an alphabetic character.)
 14. Enter the Database Password used to access the database. This is the password used to set up the database. A confirmation dialog is displayed.
-15. Re-enter the password to confirm the password is correct. 
+15. Re-enter the password to confirm the password is correct.
 16. Click Next to display the Web Server Settings page.  The web server settings are used to allow web access to openEQUELLA.
-17. Enter the Institution Administration URL — enter the DNS name or IP address and port 
+17. Enter the Institution Administration URL — enter the DNS name or IP address and port
 18. Select an Address Binding from the following options:
 * Bind to all network interfaces — select this option if openEQUELLA is the only web server running on the machine.
 * Restrict to given hostname or IP address — select this option if openEQUELLA is sharing the machine with other web servers.
@@ -268,13 +268,13 @@ This procedure describes installing openEQUELLA using a graphical interface. The
 24. Proxy Server Settings
 * Enter the Proxy Host and Proxy Port.
 * Enter the Proxy Username and Proxy Password for proxy authentication. Leave blank if there is none.
-* Click Next to display the Memory Management page. 
+* Click Next to display the Memory Management page.
 24. Memory Management page - The memory usage of openEQUELLA can be set on this page. It is recommended that the default settings Minimum Memory Usage: 96m (MB) and Maximum Memory Usage: 512m (MB) are used. These provide suitable settings for machines with 1024 MB of memory where openEQUELLA is the only application running. The Minimum Memory Usage should never be less than 96 MB nor should the Maximum Memory exceed the amount of physical RAM available on the server (the RAM used for the OS should be taken into consideration as well). Memory should be allocated to allow sufficient memory for all applications being run on the server.
 (NOTE: For 32-bit systems, Java processes on Windows are limited to 1536 MB.)
 25. Click Next to display the ImageMagick page.
-26. Click Browse and navigate to the directory that contains the ImageMagick files. 
+26. Click Browse and navigate to the directory that contains the ImageMagick files.
 27. Click Next to display the Libav page
-28. If you have installed Libav to create thumbnails and previews for video files uploaded as attachments, click Browse and navigate to the directory that contains the Libav files avconv.exe and avprobe.exe. Otherwise leave the field blank. A confirmation dialog displays to confirm that Libav is not required. 
+28. If you have installed Libav to create thumbnails and previews for video files uploaded as attachments, click Browse and navigate to the directory that contains the Libav files avconv.exe and avprobe.exe. Otherwise leave the field blank. A confirmation dialog displays to confirm that Libav is not required.
 29. Click Next display the Ready to Install page
 30. Click Install to begin the installation process. The Installing… progress dialog may take a few moments to appear.
 31. When completed select OK to confirm.
@@ -283,9 +283,9 @@ This procedure describes installing openEQUELLA using a graphical interface. The
 ### Run openEQUELLA
 
 #### To Register the openEQUELLA server as a Windows service
-1. Navigate to the Manager folder (the default installation folder is C:\openEQUELLA\manager). In the ‘config’ files, details for the services can be edited (this is optional). The details that can be changed include: 
+1. Navigate to the Manager folder (the default installation folder is C:\openEQUELLA\manager). In the ‘config’ files, details for the services can be edited (this is optional). The details that can be changed include:
 * logging properties
-* service names and descriptions 
+* service names and descriptions
 * whether the service should auto start.
 2. Optional: To change the details, navigate to the manager folder (<path-to-equella>\manager\) and edit the manager-config and/or equellaserver-config files as required.
 3.  To register the openEQUELLA server with Windows: Open a command prompt in the Manager folder (Shift/right click, then Open command window here) and enter:
@@ -300,10 +300,10 @@ equellaserver start
 ```
 Or
 In Windows™ on the openEQUELLA server, go to the Control Panel, Administrative Tools then double click Services.
-Find the openEQUELLA services (by default the names are openEQUELLA App Server and openEQUELLA Manager) in the list of services, right click and select the Start. 
+Find the openEQUELLA services (by default the names are openEQUELLA App Server and openEQUELLA Manager) in the list of services, right click and select the Start.
 
 The openEQUELLA server is now started but may take a few minutes to be operational.
-Once the server has been registered and started, the success of the installation can be checked by opening the Server administration account. 
+Once the server has been registered and started, the success of the installation can be checked by opening the Server administration account.
 
 #### Run openEQUELLA service for UNIX like Installations
 1. To start the service, navigate to the openEQUELLA install directory, then the manager folder (e.g. path-to-equella/manager). From this folder, the server can be started by running the commands:
@@ -311,14 +311,14 @@ Once the server has been registered and started, the success of the installation
 ./manager start
 ./equellaserver start
 ```
-Once the server has been started, the success of the installation can be checked by opening the Server administration account. 
+Once the server has been started, the success of the installation can be checked by opening the Server administration account.
 
 ## Stop the openEQUELLA server
 
 
 ### To stop the openEQUELLA server using Windows
-1. Go to the Start menu, Control Panel, Administrative Tools then double click Services. 
-2. Find openEQUELLA in the list of services (by default, the names are openEQUELLA App Server and openEQUELLA  Manager), right click and select Stop. 
+1. Go to the Start menu, Control Panel, Administrative Tools then double click Services.
+2. Find openEQUELLA in the list of services (by default, the names are openEQUELLA App Server and openEQUELLA  Manager), right click and select Stop.
 
 ### To stop the openEQUELLA server on other platforms
 1. Navigate to the Manager folder (the default installation folder is /usr/local/equella), open a command prompt and enter:
@@ -326,7 +326,7 @@ Once the server has been started, the success of the installation can be checked
 ./manager stop
 ./equellaserver stop
 ```
-2. The services have now stopped. 
+2. The services have now stopped.
 
 
 ## openEQUELLA Server Administration Account
@@ -334,30 +334,30 @@ Once the server has been started, the success of the installation can be checked
 The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL created from the server’s base URL. The exception to this is the 'first run' configuration page, for which no login is required.
 
 ### To open the Server administration account page
-1. Open a browser and enter the openEQUELLA address of the hosting server with 
+1. Open a browser and enter the openEQUELLA address of the hosting server with
 ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’).
 2. The Server administration - Welcome page displays
 2. Enter Email addresses, SMTP, No reply mail, User, SMTP password, and Confirm SMTP password.
 3. Enter a System password, then Confirm password. This password is used to access the Server administration function in the future.
 4. Click Install. The Databases page displays, with the system database listed.
 5. Click the Initialize link to start the database initialization process. The progress percentage displays on the page.  During the initialization process, the button changes to Progress. Click this button to view the progress dialog.
-6.  When the initialization process is complete, the database status changes to ‘Online’. 
+6.  When the initialization process is complete, the database status changes to ‘Online’.
 
 ## Import a New Institution
 1. Select Import institution from the navigation menu to display the Import new institution page
 2. Click Browse to select the institution zip file to import (e.g. institution-....tgz)
 Note: If there is no current institution (for example on a test/demo server) download a vanilla reference institution from https://github.com/equella/equella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz
-3. Click to start the import. The Import new institution page displays. 
+3. Click to start the import. The Import new institution page displays.
 The Import New Institution page allows for arbitrary base URLs and the renaming of the institution.
 4. To continue the import, if multiple databases have been configured, click Select Database and select the required database in the Target database field. Otherwise the system defaults to the database set up during installation.
 5. Enter an Institution name for the institution. The institution name must be unique for the openEQUELLA server.
-6. Enter an Institution URL for the institution. 
-Server administrators are able to give institutions an arbitrary base URL. This URL may contain a base URL context. For example, the following base URLs would be valid for institutions on the same server: 
-  * http://some.host.com/ 
-  * http://another.host.com/ 
-  * http://another.host.com/with/a/context/ 
-  * http://another.host.com/with/another/context/ 
-  * http://on.a.different.port:8080/ 
+6. Enter an Institution URL for the institution.
+Server administrators are able to give institutions an arbitrary base URL. This URL may contain a base URL context. For example, the following base URLs would be valid for institutions on the same server:
+  * http://some.host.com/
+  * http://another.host.com/
+  * http://another.host.com/with/a/context/
+  * http://another.host.com/with/another/context/
+  * http://on.a.different.port:8080/
 
 The arbitrary base URL can be entered in the Institution URL edit box. The Institution URL should be fully qualified. It is not possible to overwrite the other institution’s URL space, for example: ‘http://equella.myinstitution:4012/doco/qa2/’ will conflict with  ‘http://equella.myinstitution:4012/doco/’. This will be disallowed and will result in the following message:
 **‘URL must not 'overwrite' an existing institution's URL space, in this case http://equella.myinstitution:4012/doco/qa2/. This may cause this institution to work incorrectly’.**
@@ -377,42 +377,42 @@ Note: When using openEQUELLA on Windows and changing the equellaserver or equell
 ### Available openEQUELLA Configs
 
 * Config: freetextIndex.defaultOperator = AND
-  * Release(s) Valid: 5.2? - 6.3+ 
+  * Release(s) Valid: 5.2? - 6.3+
   * Location: optional.properties in /plugins/com.tle.core.freetext
   * Comments: Indicates if default search terms should be performed with an implicit AND or OR. Defaults to AND
 
-* Config: can.access.internet = true 
+* Config: can.access.internet = true
   * Release(s) Valid: 6.1-QA2 - 6.3+
   * Location: optional-config.properties
   * Comments: Allows the URL checker to run. Defaults to true.
 
 * Config: com.tle.core.tasks.RemoveOldAuditLogs.daysBeforeRemoval = 120
   * Release(s) Valid: At least 6.0-QA3,6.1-QA2, 6.2-GA+
-  * Location: optional-config.properties 
-  * Comments: Set the number of days to keep audit logs in openEQUELLA before the scheduled task truncates them. Default is 120 days (~4 months). 
-  
+  * Location: optional-config.properties
+  * Comments: Set the number of days to keep audit logs in openEQUELLA before the scheduled task truncates them. Default is 120 days (~4 months).
+
 * Config: com.tle.core.tasks.RemoveDeletedItems.daysBeforeRemoval = 7
   * Release(s) Valid: At least 6.4-QA3+
-  * Location: optional-config.properties 
-  * Comments: Set the number of days to keep deleted items in openEQUELLA before the scheduled task purges them. Default is 7 days. 
-  
+  * Location: optional-config.properties
+  * Comments: Set the number of days to keep deleted items in openEQUELLA before the scheduled task purges them. Default is 7 days.
+
 ### Internal openEQUELLA Configs
 
 These configurations should be used only with the utmost care.  
 
 * Config: tomcat.useBio = false
-  * Release(s) Valid: 6.4-GA + 
-  * Location: optional-config 
-  * Comments: Default is false (Tomcat will by default use the NIO connectors). 
+  * Release(s) Valid: 6.4-GA +
+  * Location: optional-config
+  * Comments: Default is false (Tomcat will by default use the NIO connectors).
 
 * Config: tomcat.maxThreads = 100
-  * Release(s) 6.2-GA + 
-  * Location: optional-config 
+  * Release(s) 6.2-GA +
+  * Location: optional-config
   * Comments: Default is 100.
 
 * Config: sessions.neverPersist = false
   * Release(s) Valid: 6.3-GA +, 6.2-QA1 +
-  * Location: optional-config 
+  * Location: optional-config
   * Comments: Default is 'false'. In 6.2-QA1 that setting this config to true will stop openEQUELLA from inserting data into tomcat_sessions.
 
 ### openEQUELLA URLs
@@ -436,28 +436,28 @@ openEQUELLA provides the ability to use multiple databases, allowing each instit
 
 ### Add a new database to openEQUELLA procedure
 Configuring multiple databases involves the following steps:
-1. Install a new database. 
+1. Install a new database.
 NOTE: When using multiple databases, only databases from one vendor may be used. For example, two Microsoft SQL Server databases could be used, but NOT a Microsoft SQL Server and a PostgreSQL Server database. The database vendor is selected when the openEQUELLA system is first installed.
 2. Configure the new database in openEQUELLA. (See Add a database to openEQUELLA below.)
-3. Clone or import an institution, specifying the new database. 
+3. Clone or import an institution, specifying the new database.
 
 ### Add a database to openEQUELLA
 Databases are managed through the Databases function, accessed from the Server Administration page.
 
 To add a new database:
-1. Select Databases from the Server Administration page navigation menu. 
+1. Select Databases from the Server Administration page navigation menu.
 2. Click the Add database link to display the Add database dialog.
 3. The Use system schema checkbox is only selected to default to the database specified in the hibernate.properties file. Selecting this checkbox disables the remaining fields.
 4. Enter the new database JDBC URL. In this example, the existing openEQUELLA database is PostgresSQL, so the system prompts a PostgreSQL example. If using MS SQL or Oracle, a relevant example is shown.
-The existing database JDBC URL can be found in path-to-equella\learningedge-config\hibernate.properties, and the structure is 
+The existing database JDBC URL can be found in path-to-equella\learningedge-config\hibernate.properties, and the structure is
 ```
 jdbc:<databasetype>://<host>:<port>/<database_name>.
 ```
-For example, jdbc:postgresql://localhost:5432/equella51. 
+For example, jdbc:postgresql://localhost:5432/equella51.
 
 Change the <database_name> to the new database name. For example, jdbc:postgresql://localhost:5432/Equella2
 
-5. Enter the database Username and Password. 
+5. Enter the database Username and Password.
 6. Click Add and bring online to save the Main connection details. The Database page displays, and the new database starts an automatic initialization process with a progress bar. Once completed, the new database displays with a status of Online.
 
 ### Reporting connection
@@ -465,7 +465,7 @@ Change the <database_name> to the new database name. For example, jdbc:postgresq
 The reporting connection section allows a separate database login for users who have reporting/read-only privileges.
 
 To configure Reporting connection settings:
-1. Enter the JDBC URL, if relevant. 
+1. Enter the JDBC URL, if relevant.
 NOTE: This would only be different from the Main connection JDBC URL if data was transferred to a separate database for reporting purposes. Leave blank to use the Main connection JDBC URL.
 2. Enter the Username and Password.
 3. Click Save to save the details.
@@ -479,16 +479,16 @@ Databases can be taken offline if required. For example, for database maintenanc
 ### Bring a database online
 
 If a database has been taken off-line, it must then be brought back online for use.
-1. From the Databases page, click Bring Online. The database Status is now Online. 
+1. From the Databases page, click Bring Online. The database Status is now Online.
 
 ### Edit database settings
-Database settings can be accessed for editing. Generally settings won’t be changed, but a Reporting connection or description might be added at a later date. The database must be Offline for the settings to be edited. 
+Database settings can be accessed for editing. Generally settings won’t be changed, but a Reporting connection or description might be added at a later date. The database must be Offline for the settings to be edited.
 1. From the Databases page, click the drop-down in the relevant database’s Actions column to view menu options.
 2. Select the Edit database settings link to display the Edit database page.
 3. Make the relevant changes, then click Save.
 
 ### Delete a database
-On rare occasions, it may be required to delete a database that may no longer be used. The database must be Offline before it can be deleted. 
+On rare occasions, it may be required to delete a database that may no longer be used. The database must be Offline before it can be deleted.
 1. From the Databases page, click the drop-down in the relevant database’s Actions column to view menu options.
 2. Select the Remove this database link. A warning/confirmation dialog displays.
 3. Click OK to confirm.
@@ -507,14 +507,22 @@ A reverse proxy is a gateway for servers enabling one web server to provide tran
 * providing all services through a single server
 * providing an openEQUELLA service on the default HTTP port (or any below 1024) but running the service as a non-privileged user
 * increasing the security of your services by running Apache or Squid
-* you want to use SSL with openEQUELLA 
+* you want to use SSL with openEQUELLA
 
 The following section provides an example installation using Apache. This is indicative of the process required for other web servers.
 
 ### Configure a reverse proxy
 1. Ensure the Apache modules mod_proxy and mod_proxy_http have been installed.
 2. Open the Apache httpd.conf file and add a ‘ProxyPass’ directive to the VirtualHost element:
-![alt text](Step2ConfigureReverseProxy.png "Configure Reverse Proxy")
+
+```apache
+<VirtualHost *:80>
+  ServerName {external-server-name}
+  ProxyPass / http://{equella-host}:{http-port}/ nocanon
+  ProxyPreserveHost On
+</VirtualHost>
+```
+
 Where:
 * ‘external-server-name’ must be either the hostname of an institution, or the hostname in mandatory-config.properties.
 * ‘equellahost’ is the host with the openEQUELLA installation (if it is on the same machine as the apache server, this would normally be localhost).
@@ -523,14 +531,32 @@ Where:
 
 An example directive is:
 
-![alt text](ExampleDirective.png "Example Directive")
+```apache
+<VirtualHost *:80>
+  ServerName {external-server-name}
+  ProxyPass / http://{equella-host}:{http-port}/ nocanon
+  ProxyPreserveHost On
+</VirtualHost>
+```
 
 ### Configure openEQUELLA with SSL
 1. Open mandatory-config.properties and ensure the https.port is enabled (uncommented).
 2. Ensure the Apache modules mod_proxy and mod_proxy_http have been installed.
 3. Open the Apache httpd.conf file and add a ‘ProxyPass’ directive to the VirtualHost element, and the additional SSL directives:
 
-![alt text](Step3ConfigureEquellawithSSL.png "Configure with SSL")
+```apache
+<VirtualHost *:443>
+  ServerName {external-server-name}
+  ProxyPass / http://{equella-host}:{http-port}/ nocanon
+  ProxyPreserveHost On
+
+  ## SSL
+  SSLEngine on
+  SSLProxyEngine on
+  SSLCertificateFile    {path-to-cert.pem}
+  SSLCertificateKeyFile {path-to-cert.key}
+</VirtualHost>
+```
 
 Where:
 *‘external-server-name’ must be either the hostname of an institution, or the hostname in mandatory-config.properties.
@@ -539,7 +565,20 @@ Where:
 * ‘nocanon’ ensures URLs are passed through to the host without processing.
 
 An example directive is:
-![alt text](ExampleDirectiveSSL.png "Example Directive SSL")
+
+```apache
+<VirtualHost *:443>
+  ServerName {external-server-name}
+  ProxyPass / http://{equella-host}:{http-port}/ nocanon
+  ProxyPreserveHost On
+
+  ## SSL
+  SSLEngine on
+  SSLProxyEngine on
+  SSLCertificateFile    {path-to-cert.pem}
+  SSLCertificateKeyFile {path-to-cert.key}
+</VirtualHost>
+```
 
 5. Update the institution URL for https://... (e.g. https://equella.com).
 
@@ -551,17 +590,17 @@ After the initial setup, openEQUELLA features are managed through the Administra
 
 To access openEQUELLA:
 1. Select the Login link for the new institution in the Institutions dialog to display the Welcome page.
-2. Login to the institution using the institution administrator (TLE_ADMINISTRATOR) login and password (this is the login set when the institution was imported), then click Log In. The Dashboard page displays. 
+2. Login to the institution using the institution administrator (TLE_ADMINISTRATOR) login and password (this is the login set when the institution was imported), then click Log In. The Dashboard page displays.
 3. To open the Administration Console, select Settings from the navigation menu on the left-hand side of the page to display the Settings page.
-4. Select the Administration console link. 
-5. To access the openEQUELLA Digital Repository, users, roles and groups will need to be defined. 
+4. Select the Administration console link.
+5. To access the openEQUELLA Digital Repository, users, roles and groups will need to be defined.
 
 
 ## Use Log Files
 
 openEQUELLA writes an extensive series of log files for events including the resource center, openEQUELLA services and the openEQUELLA conversion service. All log files can be found in directories bearing the date of the log file. Each directory contains one log file containing entries for all events logged on that date. A new log directory is created for every day the logged services are run. Log files may need to be archived from time to time to recover disk space.  The log directories and files are contained in the logs directory of openEQUELLA server.
 
-Via the `HTMLLayout3` layout scheme, Error events are highlighted to simplify discovery as the files can contain many entries. 
+Via the `HTMLLayout3` layout scheme, Error events are highlighted to simplify discovery as the files can contain many entries.
 
 To view a resource centre log
 1. Navigate to the logs directory on a given server, typically path-to-equella\logs\resource-centre.
@@ -585,8 +624,8 @@ log4j.appender.FILE.layout.title=openEQUELLA Resource Center
 
 ## Thread Dump
 
-The Thread Dump page provides information about the threads that are running, processing and being accessed. This information is used to help the system administrator identify problems. 
-1. Select Thread dump from the navigation menu to display the Thread dump page. 
+The Thread Dump page provides information about the threads that are running, processing and being accessed. This information is used to help the system administrator identify problems.
+1. Select Thread dump from the navigation menu to display the Thread dump page.
 
 ## Health Check
 
@@ -595,14 +634,14 @@ The Health check page provides system service information for services required 
 * Image Magick – location, version, copyright information and features.
 * Lucene index – index location.
 
-Additionally, where institution filestore size restrictions have been configured, an Institution filestore usage section displays, showing the Limit and the Approximate usage. 
+Additionally, where institution filestore size restrictions have been configured, an Institution filestore usage section displays, showing the Limit and the Approximate usage.
 
-1. To access the Health check page from the navigation menu, select Health check. The Health check page displays. 
+1. To access the Health check page from the navigation menu, select Health check. The Health check page displays.
 2. Click the Services drop-down arrow to view the service details. The relevant Node ID displays beside each running task in the Running tasks section for clustered environments.
 3. If there is a problem with one or more of the services for a node, a red cross icon displays in the Services column instead of the green tick icon, Click the down-arrow to view details of the error.
-4. Select the Enable cluster debugging checkbox to display cluster node information at the bottom of each openEQUELLA page. 
+4. Select the Enable cluster debugging checkbox to display cluster node information at the bottom of each openEQUELLA page.
 
-## Uninstall openEQUELLA 
+## Uninstall openEQUELLA
 
 This section describes how to uninstall openEQUELLA. The re-installation process is the same as the installation process.
 
@@ -613,9 +652,9 @@ Uninstalling openEQUELLA is a three-stage process on Windows and two-stage proce
 
 ### Stop the openEQUELLA server
 Using Windows
-1. Navigate to the Start menu and find Settings, then Control Panel. 
-2. Open the Administrative Tools panel and then Services. 
-3. Find openEQUELLA in the list of services  and select the Stop the service link on the left. 
+1. Navigate to the Start menu and find Settings, then Control Panel.
+2. Open the Administrative Tools panel and then Services.
+3. Find openEQUELLA in the list of services  and select the Stop the service link on the left.
 
 On other platforms
 1. Navigate to the Manager folder (the default installation folder is /usr/local/equella), open a command prompt and enter:
@@ -623,7 +662,7 @@ On other platforms
 ./manager stop
 ./equellaserver stop
 ```
-The services have now stopped. 
+The services have now stopped.
 
 ### De-register the services manager (Windows only)
 
@@ -641,5 +680,3 @@ To delete the installation directory:
 2. Press the Delete key.
 3. Confirm the deletion. The directory and all its contents are deleted.
 4. Ensure the database administrator deletes the openEQUELLA database.
-
-
