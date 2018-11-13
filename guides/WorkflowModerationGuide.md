@@ -25,7 +25,7 @@ An openEQUELLA workflow is a process whereby a new resource must pass through on
 
 An openEQUELLA workflow provides a structure for an institution’s quality assurance processes. Workflows are used to record the outcomes of each moderation task review and move resources through the review process based on these outcomes. Workflows are typically created by the Content Administrator, who designates reviewers (moderators) and determines the structure of the workflow.
 
-The purpose of this guide is to explain the moderation and review process and demonstrate to users how to perform workflow moderation tasks. 
+The purpose of this guide is to explain the moderation and review process and demonstrate to users how to perform workflow moderation tasks.
 
 Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA, and as such may differ from your own installation. Contact the system administrator for access to extra features or to reconfigure your installation.
 
@@ -48,31 +48,31 @@ Resources can only be submitted for moderation using a collection that has an as
 ####  To contribute a resource for moderation
 1. Open a browser and enter your openEQUELLA URL (e.g. http://equella.myinstitution.edu).
 2. Log in to openEQUELLA.
-3. Select Contribute from the navigation menu. The Contribute page displays. 
-4. Select the required collection from the list (e.g. Documentation). The contribution wizard displays for the selected collection. 
-5. Enter the relevant metadata to complete the About page of the wizard. Add required attachments. 
-6. Click Next to display the Workflow details page. (NOTE: The Workflow details page is specific to this example, not a standard part of the moderation process. Some wizards would not have a Workflow page, and saving the resource would automatically enter it into the associated moderation workflow.) 
+3. Select Contribute from the navigation menu. The Contribute page displays.
+4. Select the required collection from the list (e.g. Documentation). The contribution wizard displays for the selected collection.
+5. Enter the relevant metadata to complete the About page of the wizard. Add required attachments.
+6. Click Next to display the Workflow details page. (NOTE: The Workflow details page is specific to this example, not a standard part of the moderation process. Some wizards would not have a Workflow page, and saving the resource would automatically enter it into the associated moderation workflow.)
 7. Select Updated or new document.
 The Review Decisions section establishes the structure of the workflow and includes a user selector wizard control to determine who will conduct the content review. This section will be completed as the first step of the example workflow.
-8. Click Save. 
-9. Enter a message if required, then click Submit for Moderation to enter the resource into the documentation workflow. Saving as a draft will save the resource, but will not enter it into the workflow, nor make it ‘live’. 
+8. Click Save.
+9. Enter a message if required, then click Submit for Moderation to enter the resource into the documentation workflow. Saving as a draft will save the resource, but will not enter it into the workflow, nor make it ‘live’.
 
 The Resource summary page Details section shows the following links relevant to the workflow:
 * Status: Moderating—the resource has just entered the workflow, and is at the first moderation point.
 * Moderation progress— select this link to display the Moderation progress page and see a diagrammatic representation of the workflow. See Moderation progress on page 8 for more information.
-* Moderation history—select this link to open the Moderation history page. 
+* Moderation history—select this link to open the Moderation history page.
 
 ### Moderation progress
 The Moderation progress link can be found in the Details section of the Resource summary page, and at the bottom of each result on the My tasks results page.
 
 Select this link to display the Moderation progress page and see a diagrammatic representation of the workflow.
 
-The current step is highlighted in yellow, completed tasks are highlighted in green and a Tasks awaiting moderation list displays at the top of the flow chart with moderator details. 
+The current step is highlighted in yellow, completed tasks are highlighted in green and a Tasks awaiting moderation list displays at the top of the flow chart with moderator details.
 
 ### Moderation history
 The Moderation history link can be found in the Details section of the Resource summary page. Select this link to display the Moderation history page.
 
-A resource’s Moderation history page provides details on any submission, status change and moderation events pertaining to this resource. 
+A resource’s Moderation history page provides details on any submission, status change and moderation events pertaining to this resource.
 
 The Moderation history page has the following elements:
 * Event (Submitted for moderation, Went live etc.)—displays a descriptive name of the event.
@@ -85,11 +85,11 @@ The Moderation history page has the following elements:
 The Moderation queue enables the logged-in user to view all their resources currently waiting for moderation within a workflow. The Moderation queue link is accessed from the My resources page.
 
 #### To view the Moderation queue page
-1. Select My resources from the navigation menu. 
+1. Select My resources from the navigation menu.
 
 The My resources page displays. The default on first entering My resources is Published resources.
 
-2. Click the Moderation queue link at the top of the page. The results display all resources belonging to the logged-in user that is currently in a moderation workflow. 
+2. Click the Moderation queue link at the top of the page. The results display all resources belonging to the logged-in user that is currently in a moderation workflow.
 
 The Moderation queue results page elements include:
 * Title—the resource title. Select the link to go to the resource summary page.
@@ -101,26 +101,26 @@ The Moderation queue results page elements include:
 ### Tasks
 After a resource has been submitted for moderation, users allocated to the first moderation task will have the task added to their My tasks page. As the resource moves through the workflow steps, the relevant users will receive their tasks.
 
-The user is notified of pending tasks by the red number (number of waiting tasks displayed beside the My tasks navigation menu item). 
+The user is notified of pending tasks by the red number (number of waiting tasks displayed beside the My tasks navigation menu item).
 
-Clicking on My tasks displays the My tasks page with all pending tasks displayed. 
+Clicking on My tasks displays the My tasks page with all pending tasks displayed.
 
 Notification of new tasks can be configured to be sent by email to the relevant users.
 
 ### Tasks portlet
-The Tasks portlet on the Dashboard page also shows the user the number of pending tasks. 
+The Tasks portlet on the Dashboard page also shows the user the number of pending tasks.
 
-Each item on the Tasks portlet is a link. In the tasks section of the portlet, selecting any link takes the user to the My tasks page, with the relevant tasks displayed. The Tasks portlet includes notifications. 
+Each item on the Tasks portlet is a link. In the tasks section of the portlet, selecting any link takes the user to the My tasks page, with the relevant tasks displayed. The Tasks portlet includes notifications.
 
 Selecting the following task links opens the My tasks page and displays:
 * All tasks—all tasks waiting for moderation where the logged-in user is set as a moderator.
-* Tasks assigned to me—tasks waiting for moderation where the task has been assigned to the logged-in user. 
+* Tasks assigned to me—tasks waiting for moderation where the task has been assigned to the logged-in user.
 * Tasks assigned to others—tasks where the logged-in user is set as one of a number of possible moderators and another moderator has assigned themselves those tasks. This allows the logged-in user access to the task for review purposes, even though it has been assigned to another moderator.
 * Unassigned tasks—tasks waiting for moderation where the currently logged-in user is set as a moderator but the tasks haven’t yet been assigned.
 • Must moderate—tasks waiting for moderation where the currently logged-in user is set as the only moderator.
 
 ### My tasks page
-The My tasks results page displays the tasks waiting to be moderated. 
+The My tasks results page displays the tasks waiting to be moderated.
 
 The My tasks page elements are:
 * Resource title—click on the resource title to open the Resource summary screen with the Task moderation section displayed at the top of the page.
@@ -131,14 +131,14 @@ The My tasks page elements are:
 * Expires / Expired in—number of days before or since task expiry date.
 * Time at this task—time since resource arrived at this workflow task.
 * Priority—the priority of the task (can be LOW, NORMAL or HIGH).
-* Moderation progress—select this link to see a diagrammatic representation of the workflow. 
+* Moderation progress—select this link to see a diagrammatic representation of the workflow.
 * Moderation comments—select this link to view any existing moderation comments.
 • Moderate—click to open the resource in the contribution wizard view, with the Task moderation section displayed at the top of the page.
 • Screen Options—click to view and change the number of results per page. The default is 10, but 50 or 100 can be selected.
 • RSS Feeds—click to display the RSS Feeds dialog, and choose to subscribe to an RSS Feed or Atom Feed to track tasks.
 
 ### Sort and filter
-The Sort and Filter boxes on the My tasks results page display options relevant to tasks. 
+The Sort and Filter boxes on the My tasks results page display options relevant to tasks.
 
 The sort options are:
 * Priority—the priority of the resource’s current workflow task.
@@ -159,7 +159,7 @@ From the My tasks results pages, the following filter options are available:
 ### Accessing task moderation
 Tasks can be moderated from the resource summary page or the contribution wizard page. Moderating from the contribution wizard page enables the moderator to access all the metadata stored during contribution, depending on workflow configuration.
 #### To moderate from the resource summary page
-1. From the My tasks results page, click Moderate on the relevant resource link. The resource summary page opens with the black task moderation section displayed at the top. 
+1. From the My tasks results page, click Moderate on the relevant resource link. The resource summary page opens with the black task moderation section displayed at the top.
 
 To change to the contribution wizard page if required, click the View Metadata button, where the task moderation section is also displayed.
 
@@ -171,7 +171,7 @@ If required, click Edit Resources to edit the contribution wizard fields.
 Click View Summary to display the resource summary screen with the task moderation section displayed at the top.
 
 ### Task moderation section
-The task moderation section enables the user to approve or reject the task. It also allows users to assign tasks to themselves, cancel assignments, post comments and move between tasks. 
+The task moderation section enables the user to approve or reject the task. It also allows users to assign tasks to themselves, cancel assignments, post comments and move between tasks.
 
 The task moderation section is made up of the following elements:
 * Task name and description
@@ -186,8 +186,8 @@ The task moderation section is made up of the following elements:
 If there is a group of moderators selected for a task, of which only one is required to complete the task, a moderator would assign themselves the task. Assigning the task informs the other moderators that someone has already taken ownership of the task.
 
 #### To assign a task
-1. Click the assign to me link in the task moderation section. 
-The Assigned to field changes to Me, and the link changed to cancel assignment. 
+1. Click the assign to me link in the task moderation section.
+The Assigned to field changes to Me, and the link changed to cancel assignment.
 
 Select the cancel assignment link to change the status back to unassigned.
 
@@ -195,30 +195,30 @@ Select the cancel assignment link to change the status back to unassigned.
 Comments can be added to a task, which can be read by other moderators. This is a great way to share information.
 
 #### To post a comment
-1. Select the Post a comment link in the task moderation section. The Task comments screen displays. 
+1. Select the Post a comment link in the task moderation section. The Task comments screen displays.
 2. Type the required text in the Enter your comment text box, then click Submit.
 3. Click the Cancel button to return to the task moderation section.
 
 ### Viewing comments
-Select the (x) comments link to view existing comments. The task comments page displays. 
+Select the (x) comments link to view existing comments. The task comments page displays.
 
 Click Close to return to the task moderation section.
 
 ### Reject a task
 A task is rejected when the moderator decides changes need to be made before the resource moves on to the next step of the moderation workflow.
 
-When a task is rejected, the moderator enters a moderation comment outlining the reasons for rejection, the resource goes back to the rejection point set in the workflow and a rejection notification is sent to the appropriate users. The user would then edit and redraft the resource to re-enter it into the workflow. 
+When a task is rejected, the moderator enters a moderation comment outlining the reasons for rejection, the resource goes back to the rejection point set in the workflow and a rejection notification is sent to the appropriate users. The user would then edit and redraft the resource to re-enter it into the workflow.
 
 #### To reject a task
-1. Click Reject from the task moderation section. The Rejecting task page displays. 
-2. Type the reason for rejection in the Enter your rejection message edit box, then click Submet. (NOTE: this field is mandatory.) The My tasks page displays with a confirmation receipt at the top of the screen. 
+1. Click Reject from the task moderation section. The Rejecting task page displays.
+2. Type the reason for rejection in the Enter your rejection message edit box, then click Submet. (NOTE: this field is mandatory.) The My tasks page displays with a confirmation receipt at the top of the screen.
 
 ### Approve a task
 A task is approved once the required moderator or moderators have reviewed the resource and decide it is ready to move to the next stage of the moderation workflow.
 
 #### To approve a task
-1. Click Approve from the task moderation section. The Approving task page displays. 
-2. If relevant, type a message in the Enter an optional approval message text box, then click Submet. The My tasks page displays with a confirmation receipt at the top of the screen. 
+1. Click Approve from the task moderation section. The Approving task page displays.
+2. If relevant, type a message in the Enter an optional approval message text box, then click Submet. The My tasks page displays with a confirmation receipt at the top of the screen.
 
 ## Workflow example
 The following example is based on the example ‘Documentation Workflow’ created in the openEQUELLA Workflow Configuration Guide. It is intended to demonstrate how a resource moves through a simple moderation process.
@@ -230,11 +230,11 @@ To complete the review decisions task
 1. Log in as the Document Administrator.
 2. Click the My task navigation menu item.
 3. Click the openEQUELLA Workflow User Guide Moderate button. The contribution wizard page displays with the task moderation section.
-4. Go to the Workflow details page of the wizard. (NOTE: The Workflow details page is specific to this example, not a standard part of the moderation process. Some wizards would not have a Workflow page, and saving the resource would automatically enter it into the associated moderation workflow.) 
+4. Go to the Workflow details page of the wizard. (NOTE: The Workflow details page is specific to this example, not a standard part of the moderation process. Some wizards would not have a Workflow page, and saving the resource would automatically enter it into the associated moderation workflow.)
 5. Click Edit Resources to enable the wizard fields.
 6. Select Required in the Is a content review required? field.
 7. Select the Select a user link to choose the user to moderate the content review. In this example, the Document Administrator will be selected.
-8. Select Required in the Is an Editorial Review required? field. 
+8. Select Required in the Is an Editorial Review required? field.
 9. Click Save.
 10.Click Approve. The Approving task page displays. Enter a message if required, then click Submit. The My tasks page is displayed. The resource then moves on to the next task in the workflow.
 
@@ -245,22 +245,22 @@ Select the Moderation progress link for openEQUELLA Workflow User Guide to view 
 
 #### To complete the content review task
 1. Click the openEQUELLA Workflow User Guide Moderate button. The contribution wizard page displays with the task moderation section.
-2. In the task moderation section, select the assign to me link to assign to task to the Document Administrator (logged-in user). 
+2. In the task moderation section, select the assign to me link to assign to task to the Document Administrator (logged-in user).
 
 NOTE: The task does not have to be assigned to a moderator to be approved or rejected, but assigning tasks shows who has taken ownership of that task.
 3. Review the attachments and resource metadata, editing if required.
 4. Either:
-* Click Approve to move the resource to the next moderation task, in this case Editorial review. The Approving task page displays. Enter a message, if required, then click Submit. 
+* Click Approve to move the resource to the next moderation task, in this case Editorial review. The Approving task page displays. Enter a message, if required, then click Submit.
 
 OR
-* Click Reject to display the Rejecting task page and return the resource to a previous moderation task. An explanatory comment must be entered before the rejection can be submitted. If the resource is rejected at this point, the task it returns to can be selected from a drop-down list. 
+* Click Reject to display the Rejecting task page and return the resource to a previous moderation task. An explanatory comment must be entered before the rejection can be submitted. If the resource is rejected at this point, the task it returns to can be selected from a drop-down list.
 
 If the resource returns to the original contributor, its status is ‘rejected’ and it must be redrafted and resubmitted for moderation or removed from the system to clear the rejected notification.
 
 If the task is approved, the resource moves to the Editorial Review task, which is similar to the Content Review task in this example. If this task was not required, it moves to the Create PDF task.
 
 ### Create PDF task
-Select the Moderation progress link for openEQUELLA Workflow User Guide to view the moderation progress in a diagrammatic format. 
+Select the Moderation progress link for openEQUELLA Workflow User Guide to view the moderation progress in a diagrammatic format.
 
 #### To complete the Create PDF task
 1. Follow steps 1 to 4 in the Content review task section. If the task is approved and the pdf created, the resource moves to the Check PDF task.
@@ -279,14 +279,14 @@ Rejection notifications are immediate, and can be viewed within minutes of the r
 There are a number of ways that users can choose to be alerted to notifications. Emails can be sent, RSS and ATOM feeds can be set up as well as the Notifications menu item on the openEQUELLA navigation bar.
 
 ### Notifications menu item
-The user is alerted to existing notifications from the red number (number of notifications) displayed beside the Notifications navigation menu item. 
+The user is alerted to existing notifications from the red number (number of notifications) displayed beside the Notifications navigation menu item.
 
-Selecting Notifications displays the Notifications page, with all notifications displayed. 
+Selecting Notifications displays the Notifications page, with all notifications displayed.
 
 ## Tasks portlet
-The Tasks portlet on the Dashboard page also shows the user the number of notifications, broken down by type. 
+The Tasks portlet on the Dashboard page also shows the user the number of notifications, broken down by type.
 
-Each item in the notifications portlet is a link. In the notifications section of the portlet, selecting any link takes the user to the Notifications page, with the relevant tasks displayed. 
+Each item in the notifications portlet is a link. In the notifications section of the portlet, selecting any link takes the user to the Notifications page, with the relevant tasks displayed.
 
 Selecting the following notification links opens the Notifications page and displays:
 * All notifications—all notifications.
@@ -300,7 +300,7 @@ Selecting the following notification links opens the Notifications page and disp
 Notifications can be configured via the Profile function accessible from any openEQUELLA page. Collections are selected, and a notification is sent to the user when resources belonging to those collections become available (Live).
 
 #### To set up Profile notifications
-1. Select the PROFILE link on the top right-hand side of the any openEQUELLA page.  The Edit user page displays. 
+1. Select the PROFILE link on the top right-hand side of the any openEQUELLA page.  The Edit user page displays.
 2. In the Notifications section, use the arrows to select the required collection or collections. Use:
 * Double Right Arrows to select all collections
 * Right Arrow to select the highlighted collection
@@ -313,7 +313,7 @@ A notification is sent whenever a resource belonging to the selected collection 
 Users can configure their profiles so emails are sent to alert the user to new notifications.
 
 #### To set up email notifications
-1. Select the PROFILE link on the top right-hand side of the any openEQUELLA page. The Edit user page displays. 
+1. Select the PROFILE link on the top right-hand side of the any openEQUELLA page. The Edit user page displays.
 2. Select Send notifications to email.
 
 Selecting this option also sends an email to the user when a new moderation task is added.
@@ -321,7 +321,7 @@ Selecting this option also sends an email to the user when a new moderation task
 Uncheck this option to switch off email notifications (except moderation overdue messages).
 
 ### Notifications page
-The Notifications results page displays details of notifications. 
+The Notifications results page displays details of notifications.
 
 The notifications results page elements are:
 * Resource title—click the resource title to open the Resource summary page. See openEQUELLA My Resources User Guide for more information on the Resource summary page.
@@ -335,7 +335,7 @@ The notifications results page elements are:
 * Owner notified you—a resource that has become available (Live) where the owner of the resource selected the logged-in user to be notified using the Share with others function. These notifications are cleared manually by clicking .
 * Rejected—a resource that has been rejected during a moderation step. The resource is usually updated by the relevant user, then the ‘Redraft this version’ action is used to enter it back into the workflow. These notifications are automatically cleared once the associated resources have been redrafted.
 * (x) comments—select this link to display the Resource summary page, where existing comments and ratings can be viewed or new ones added.
-* Add to favourites—select this link to add resource to the Favourites list. 
+* Add to favourites—select this link to add resource to the Favourites list.
 * Clear —click to remove the notification from the Notifications results page. Typically this would be done once the user has noted the reason and viewed the resource.
 * RSS Feeds—click to subscribe to an RSS or Atom Feed for notifications.
 
@@ -352,11 +352,11 @@ From the notifications results pages, the following filter options are available
 This action is intended for resources that require redrafting (editing), usually after being rejected and prior to moderation workflow completion. Selecting this operation allows the resource to be edited and re-submitted for moderation or saved as a draft.
 
 #### To access the Redraft this version function
-1. From the Actions section of Resource summary page, select Redraft this version. 
+1. From the Actions section of Resource summary page, select Redraft this version.
 
 The Editing page displays.
 
-2. Edit the resource, then click Save. The Save dialog displays. 
+2. Edit the resource, then click Save. The Save dialog displays.
 3. Enter a message if relevant, then click Submit for Moderation. The resource re-enters the workflow at the appropriate moderation task.
 
 ## Manage tasks
@@ -367,12 +367,12 @@ The privilege associated with access to the Manage task function is MANAGE_WORKF
 The Manage tasks page displays all workflow tasks. Content and system administrators would typically be granted privileges to access this function to view moderation progress.
 #### To open the Manage tasks page
 1. Log in to openEQUELLA as an administrator. The openEQUELLA Dashboard page displays.
-2. Select Manage tasks from the left-hand navigation menu. The Manage tasks page displays. 
+2. Select Manage tasks from the left-hand navigation menu. The Manage tasks page displays.
 The Manage tasks page has the Search box at the top, where criteria are selected, and the results list displayed below.
 
-The search box has a search text box to enter keyword searches, and a Within drop-down list. Searching can be refined by selecting All workflows or a specific workflow (e.g. Document Review) from the Within drop-down list. 
+The search box has a search text box to enter keyword searches, and a Within drop-down list. Searching can be refined by selecting All workflows or a specific workflow (e.g. Document Review) from the Within drop-down list.
 
-If a workflow is selected from the Within drop-down box, an extra filter displays in the Filter box. 
+If a workflow is selected from the Within drop-down box, an extra filter displays in the Filter box.
 
 Each task on the Manage tasks results page displays the following elements:
 * Title—the title of the resource in moderation. Select this link to open the Moderation progress page.
@@ -388,10 +388,10 @@ Each task on the Manage tasks results page displays the following elements:
 Each task can also have the following links:
 * View item summary—select to display the Resource summary page.
 * (x) remaining moderators—select to open the Moderators dialog, which lists moderators who have not yet completed the current task.  If multiple moderators are selected for a task, but only one needs to complete it, all the potential moderators display in the Moderators dialog, even if the task has been assigned to one of them.
-* (x) moderation comment(s) —select to open the Moderation comments dialog, which displays any existing moderation comments. 
+* (x) moderation comment(s) —select to open the Moderation comments dialog, which displays any existing moderation comments.
 
 ### Sort and filter
-The Sort and Filter boxes on the Manage tasks results page displays options relevant to managing tasks. 
+The Sort and Filter boxes on the Manage tasks results page displays options relevant to managing tasks.
 
 The sort options are:
 * Priority—the priority of the resource’s current workflow task (HIGH, NORMAL or LOW).
@@ -400,7 +400,7 @@ The sort options are:
 * Title—name of the resource.
 
 From the Manage tasks results pages, the following filter option is available:
-* Filter by moderator—click to display the Choose moderator to filter by and search for and select the required user. If a workflow has been selected from the Within drop-down, an additional filter, Filter by workflow tasks displays. 
+* Filter by moderator—click to display the Choose moderator to filter by and search for and select the required user. If a workflow has been selected from the Within drop-down, an additional filter, Filter by workflow tasks displays.
 * Filter by workflow tasks—displays the tasks belonging to the selected workflow. Select the required task from the drop-down list.
 
 ## Task statistics portlet
@@ -408,10 +408,10 @@ A Tasks statistics portlet can be added to an administrator’s Dashboard to dis
 
 #### To create a Task statistics portlet
 1. From the Dashboard page, click Screen Options. The screen options display at the top of the screen.
-2. Click the Tasks statistics link. The Create portlet page displays. 
+2. Click the Tasks statistics link. The Create portlet page displays.
 3. Enter a Title (defaults to Task statistics).
-4. Select a Weekly or Monthly Default trend, then click Save. The new portlet displays on the Dashboard page. 
-5. 
+4. Select a Weekly or Monthly Default trend, then click Save. The new portlet displays on the Dashboard page.
+5.
 The tasks statistics portlet lists tasks where there are current resources waiting to be moderated.
 
 This portlet displays the top five tasks with waiting items, ordered by number of waiting items. (In the example above, there are only four tasks with waiting resources hence it only shows four rows.)
@@ -420,7 +420,7 @@ The Task statistics portlet elements include:
 * Task—the name of the workflow task. Select the links to open the Manage tasks page with filters set to display the results at the selected workflow task in the appropriate workflow.
 * Waiting—the number of resources currently awaiting moderation at that task.
 * Trend—the number of resources that were awaiting moderation at this task at the same time the previous week or month, which is valuable for comparisons.
-* Workflow drop-down—select a specific workflow from the drop-down list to limit the results. When a workflow is selected, a Total resources in workflow link displays. 
+* Workflow drop-down—select a specific workflow from the drop-down list to limit the results. When a workflow is selected, a Total resources in workflow link displays.
 
 Select this link to display the Manage resource page, with the relevant resources listed as results.
 * Weekly | Monthly—select the links to change the trend between weekly and monthly.

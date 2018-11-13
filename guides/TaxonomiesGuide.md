@@ -15,7 +15,7 @@ openEQUELLA provides a taxonomy engine that is scalable to facilitate taxonomies
 
 The purpose of this guide is to provide system administrators and content creators with an understanding of the openEQUELLA Taxonomies tool to enable successful taxonomy creation and management.
 
-Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA, and as such may differ in appearance to your own installation. Where possible the examples in this guide use the schemas, collections, contribution wizards and power searches provided in the openEQUELLA Vanilla Institution. 
+Please note that this guide has been developed to best reflect the full capabilities of openEQUELLA, and as such may differ in appearance to your own installation. Where possible the examples in this guide use the schemas, collections, contribution wizards and power searches provided in the openEQUELLA Vanilla Institution.
 
 ## Taxonomies tool
 The Taxonomies tool enables the creation of taxonomies to a large size via manual addition of local terms or referral from a SQL data source. For mass addition of terms, it is possible to define taxonomies programmatically using the openEQUELLA SOAP interface.
@@ -26,14 +26,14 @@ To access openEQUELLA and open the Administration Console
 
 1. Open a browser and enter your openEQUELLA URL (e.g. ‘http://equella.myinstitution.edu/institution’).
 2. Log in to openEQUELLA as an administrator, select Settings then Administration console.
-3. The Administration Console displays. Select Taxonomies. 
+3. The Administration Console displays. Select Taxonomies.
 The Taxonomies page displays, showing a list of all previously configured taxonomies.
 
 ### Administration Console elements
 When a taxonomy has been highlighted the Add, Edit, Remove, Clone, Import and Export buttons are enabled. (Providing the correct privileges have been granted.)
 
 #### Add
-Click Add to display the Taxonomy Editor and create a new taxonomy. 
+Click Add to display the Taxonomy Editor and create a new taxonomy.
 
 #### Edit
 Select a taxonomy then click Edit (or double-click a taxonomy name) to display the Taxonomy Editor and modify the selected taxonomy.
@@ -56,7 +56,7 @@ Click Import to import a taxonomy that has previously been exported from the Adm
 Click Export to export a taxonomy as a ZIP file.
 
 ### Add a taxonomy
-1. Click Add on the Administration Console to display the Taxonomy Editor. 
+1. Click Add on the Administration Console to display the Taxonomy Editor.
 2. The only mandatory fields that must contain values prior to saving a taxonomy are the Name and the Data Source. At this point it is possible to simply provide a name, select either data source option, and click Save to create a valid taxonomy. Further configuration is required to provide the taxonomy with any function, and these options are described below.
 
 The Taxonomy Editor provides an interface for taxonomy creation with the following tabs:
@@ -68,19 +68,19 @@ The Taxonomy Editor provides an interface for taxonomy creation with the followi
 Each tab is described in the following sections.
 
 ### Details tab
-The Details page displays the taxonomy’s general details such as UUID, name, description and owner. 
+The Details page displays the taxonomy’s general details such as UUID, name, description and owner.
 
 The configurable Details page elements include:
-* Name—enter or edit the name of the taxonomy. This name (e.g. Learning Resource Type) is displayed as the taxonomy name in the Term Selector control. 
+* Name—enter or edit the name of the taxonomy. This name (e.g. Learning Resource Type) is displayed as the taxonomy name in the Term Selector control.
 * Description—enter or edit the taxonomy’s description.
 * Owner—displays the owner of the taxonomy; the default owner is the creator of the taxonomy. Click Search to choose a new owner from available users.
 * Data Source—select the data source for the taxonomy terms:
   * SQL Data Source—to query a database for terms associated with this taxonomy. A SQL Details tab is enabled.
   * Locally Defined Terms—to define and manage terms associated with this taxonomy. A Terms tab is enabled. The taxonomy must have a name and be saved before terms can be added.
 * Allow end-users to add new terms during contribution—check to allow users to add new terms to the taxonomy when they are contributing resources.
- 
+
 ### SQL Details tab
-The SQL Details tab provides a flexible method for creating SQL queries to search a database and return terms for populating the taxonomy. 
+The SQL Details tab provides a flexible method for creating SQL queries to search a database and return terms for populating the taxonomy.
 
 The supported databases are:
 * Oracle™ 9i, 10g and 11g
@@ -89,26 +89,26 @@ The supported databases are:
 
 Database connection details depend on the database being used; selecting the database from the Database drop-down list populates the JDBC URL fields with default templates for each of the supported databases.
 
-The JDBC URL templates require the values enclosed in angle brackets to be added, while the values in [square brackets] are optional values required by some systems. 
+The JDBC URL templates require the values enclosed in angle brackets to be added, while the values in [square brackets] are optional values required by some systems.
 
 The configurable SQL Details page elements include:
 * Username—enter the username for the connection. This user will need permissions to access the database and run the SQL queries that retrieve user data.
 * Password—enter the password for the entered username.
 * Test Connection —click the button to check the connection.
 
-The SQL Queries are associated with terms by mapping database queries to the taxonomy. 
+The SQL Queries are associated with terms by mapping database queries to the taxonomy.
 
 The function and syntax of each query type is described according to the selected query type on the SQL Details page, above the query text area.
 
 #### Example setup:
 
-Note 1: this is meant for demonstration / guidance purposes, not necessarily best practice. 
+Note 1: this is meant for demonstration / guidance purposes, not necessarily best practice.
 Note 2:  The syntax is for Postgres.
 
 ##### DB Tables:
 
 *TERM*
-```
+```sql
 CREATE TABLE term
 (
   term_id integer NOT NULL,
@@ -125,7 +125,7 @@ CREATE TABLE term
 )
 ```
 *TERM_DATA*
-```
+```sql
 CREATE TABLE term_data
 (
   term_id integer NOT NULL,
@@ -141,36 +141,36 @@ CREATE TABLE term_data
 ##### Queries
 
 *Get term*
-```
+```sql
 SELECT LEAF AS "term", UUID AS "uuid", FULL_PATH AS "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
 FROM TERM t1
 WHERE FULL_PATH = :term
 ```
 
 *Get child terms*
-```
+```sql
 SELECT LEAF AS "term", UUID AS "uuid", FULL_PATH as "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
 FROM TERM t1
-WHERE ((:parentTerm IS NULL OR :parentTerm = '') AND PARENT_TERM_ID IS NULL) 
+WHERE ((:parentTerm IS NULL OR :parentTerm = '') AND PARENT_TERM_ID IS NULL)
 UNION
 SELECT t1.LEAF AS "term", t1.UUID AS "uuid", t1.FULL_PATH as "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
-FROM TERM t1 
+FROM TERM t1
 INNER JOIN TERM parentTerm
 	ON t1.PARENT_TERM_ID = parentTerm.TERM_ID
 WHERE (:parentTerm IS NOT NULL AND parentTerm.FULL_PATH = :parentTerm)
 ```
 *Get data for term*
-```
+```sql
 SELECT td.VALUE
 FROM TERM_DATA td
 INNER JOIN TERM t
 	ON td.TERM_ID = t.TERM_ID
-WHERE t.FULL_PATH = :term 
+WHERE t.FULL_PATH = :term
 	AND td.KEY = :dataKey
  ```
- 
+
  *Get all data for term*
- ```
+```sql
 SELECT td.KEY, td.VALUE
 FROM TERM_DATA td
 INNER JOIN Term t
@@ -179,60 +179,60 @@ WHERE t.UUID = :uuid
  ```
 
 *Search all terms*
-```
+```sql
 SELECT LEAF AS "term", UUID AS "UUID", FULL_PATH AS "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
 FROM TERM t1
 WHERE FULL_PATH LIKE :searchQuery
 ```
 
 *Count all terms*
-```
+```sql
 SELECT COUNT (*)
 FROM TERM
 WHERE FULL_PATH LIKE :searchQuery
 ```
 
 *Search leaf terms*
-```
+```sql
 SELECT LEAF AS 'term', UUID as 'uuid', FULL_PATH AS 'fullterm', 1 AS 'isleaf'
 FROM TERM t1
 WHERE FULL_PATH LIKE :searchQuery
 	AND COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) = 1
  ```
- 
+
  *Count leaf terms*
-```
+```sql
 SELECT COUNT(*)
 FROM TERM t1
 WHERE FULL_PATH LIKE :searchQuery
 	AND COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) = 1
  ```
- 
+
  *Search top-level terms*
- ```
+ ```sql
  SELECT LEAF AS "term", UUID AS "UUID", FULL_PATH AS "fullterm", COALESCE((SELECT 0 FROM TERM t2 WHERE t2.PARENT_TERM_ID = t1.TERM_ID FETCH FIRST 1 ROWS ONLY), 1) AS "isleaf"
 FROM TERM t1
-WHERE PARENT_TERM_ID IS NULL 
+WHERE PARENT_TERM_ID IS NULL
 	AND FULL_PATH LIKE :searchQuery
  ```
- 
+
  *Count top-level terms*
- ```
+ ```sql
  SELECT COUNT(*)
 FROM TERM
 WHERE PARENT_TERM_ID IS NULL
 ```
 
 ### Terms tab
-The Terms tab enables terms for the taxonomy to be defined and managed. 
+The Terms tab enables terms for the taxonomy to be defined and managed.
 
 The configurable Terms page elements include:
 * Child —clicking the button, entering a name in the Input dialog then clicking the OK button adds a sub-element term to the selected term in the taxonomy.
 * Sibling —clicking the button, entering a name in the Input dialog then clicking the OK button adds a new element term at the same level as the selected term in the taxonomy.
 * Remove —clicking the button removes the selected term from the taxonomy.
-Adding or selecting a term (e.g. Mid-Year) in the tree displays its name and a details section. 
+Adding or selecting a term (e.g. Mid-Year) in the tree displays its name and a details section.
 
-Data associated with the term can be added by clicking the button to display an Add a new data key dialog. 
+Data associated with the term can be added by clicking the button to display an Add a new data key dialog.
 
 Pre-determined or custom keys can be selected including:
 * HTML fragment displayed in EQUELLA—select this option to add pre-determined HTML.
@@ -257,7 +257,7 @@ Administrators can programmatically add a large number of additional terms to an
 ## Taxonomies during contribution
 After a taxonomy has been successfully created, it becomes possible to incorporate it into the wizard of an Advanced Search or Collection Definition, using the Term Selector control. Created taxonomies contain a list of terms that can be selected to use during contribution or when performing a power search.
 
-Contribution Wizards are configured in the openEQUELLA Administration Console by selecting the Collection Definitions tool. Term Selector wizard controls are added in the Wizard tab. 
+Contribution Wizards are configured in the openEQUELLA Administration Console by selecting the Collection Definitions tool. Term Selector wizard controls are added in the Wizard tab.
 
 
 The configurable Term Selector control elements are:
@@ -272,18 +272,18 @@ The configurable Term Selector control elements are:
   * individual term (e.g. Tiger).
 * Restrict item selection to—select an option to control the type of term selected.
 * Display the taxonomy using the following control—select the type of control to display in the contribution wizard:
-  * Auto-Complete Edit Box—select to display an edit box that will automatically complete an entered term. This is the best option to select if allowing users to add new terms to a taxonomy during contribution. 
-  * Detailed Pop-up Browser—select to display a modal dialog that allows users to browse or search for terms. 
-  * Wide Pop-up Browser—select to display a modal dialog with a wide screen to display very long taxonomies. 
+  * Auto-Complete Edit Box—select to display an edit box that will automatically complete an entered term. This is the best option to select if allowing users to add new terms to a taxonomy during contribution.
+  * Detailed Pop-up Browser—select to display a modal dialog that allows users to browse or search for terms.
+  * Wide Pop-up Browser—select to display a modal dialog with a wide screen to display very long taxonomies.
 * Select metadata target(s) for this control—select a metadata target or storage area for entered data.
 
 ### Auto-Complete Edit Box
-Selecting Auto-Complete Edit Box as the display type for a Term Selector control displays an edit box alongside a Select button in the contribution wizard. Entering search term(s) then clicking Select displays a list of matching terms. 
+Selecting Auto-Complete Edit Box as the display type for a Term Selector control displays an edit box alongside a Select button in the contribution wizard. Entering search term(s) then clicking Select displays a list of matching terms.
 
-Selecting a term and clicking Select adds the term to the list in the contribution wizard. 
+Selecting a term and clicking Select adds the term to the list in the contribution wizard.
 
 ### Detailed Pop-up Browser
-When this option is selected, the Term Selector control displays a Select terms link in the contribution wizard that opens a Pop-up browser with two panes. The left-hand pane displays the taxonomy tree, and each term has a Select and View link. When the View link is selected the details of the term displays in the right-hand pane. 
+When this option is selected, the Term Selector control displays a Select terms link in the contribution wizard that opens a Pop-up browser with two panes. The left-hand pane displays the taxonomy tree, and each term has a Select and View link. When the View link is selected the details of the term displays in the right-hand pane.
 
 Use the Select link or the Select This Term button to select a term.
 
@@ -293,10 +293,10 @@ Select to display a modal dialog that allows users to browse or search for terms
 Click the Select link to select a term.
 
 ### Search Terms tab
-The Search Terms tab on the Detailed and Wide Pop-up Browsers allows the user to search for the required terms. Entering search term(s) and clicking Search displays a list of matching terms. Selecting a term and clicking Select this Item adds the term to the Selected terms section. 
+The Search Terms tab on the Detailed and Wide Pop-up Browsers allows the user to search for the required terms. Entering search term(s) and clicking Search displays a list of matching terms. Selecting a term and clicking Select this Item adds the term to the Selected terms section.
 
 Terms can be removed from the Selected terms section by clicking X.
 
-Clicking OK adds the terms to the Contribution wizard. 
+Clicking OK adds the terms to the Contribution wizard.
 
 Terms can be removed by clicking X.

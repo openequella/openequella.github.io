@@ -32,12 +32,12 @@ When an LTI consumer client is created in openEQUELLA, a Consumer key and Consum
 ### Create new LTI consumer
 To create a new LTI consumer
 1.  Select Settings from the navigation menu, and either type LTI in the filter box, then select LTI consumers from the results or scroll down to LTI consumers on the Settings list. The LTI consumers page displays.
-2.  Select the Create new LTI consumer link to open the Create new LTI consumer page. 
+2.  Select the Create new LTI consumer link to open the Create new LTI consumer page.
 3.  Enter a Title (e.g. Moodle LTI) and a Description (optional).
 4.  A default Consumer key displays. This can be changed as desired. The Consumer key is entered in the LMS/LTI tool during integration configuration.
 5.  A default Consumer secret displays. This can be changed as desired. The Consumer secret is entered in the LMS/LTI tool during integration configuration.
-6.  If required, enter a unique Username prefix (e.g. mdl_) or Username postfix (e.g._mdl) for this LTI consumer. This prefix or postfix is added when new users are created to distinguish those users accessing openEQUELLA from this LTI consumer.
-7.  The Usable by field allows administrators to restrict who can use this LTI consumer. The default is Everyone. Click Change to open the Select recipients… dialog to select users, groups or roles from the Home tab, or other options, such as Guest users, specific IP address etc. from the Other tab. 
+6.  If required, enter a unique Username prefix (e.g. mdl_) or Username postfix (e.g.\_mdl) for this LTI consumer. This prefix or postfix is added when new users are created to distinguish those users accessing openEQUELLA from this LTI consumer.
+7.  The Usable by field allows administrators to restrict who can use this LTI consumer. The default is Everyone. Click Change to open the Select recipients… dialog to select users, groups or roles from the Home tab, or other options, such as Guest users, specific IP address etc. from the Other tab.
 8.  From the Unknown user handling drop-down, select the system behavior when an attempt is made to logon to openEQUELLA with a username that doesn’t exist. Options are:
 * Deny access and present error message
 * Treat user as a guest
@@ -45,7 +45,7 @@ To create a new LTI consumer
     If the third option is selected, click the Add groups link open the Select group(s) dialog to search and select the required groups to which the user will be added.
 
 ### LTI/LIS Role Mappings
-Standard LTI/LIS roles that are supplied to openEQUELLA from the LMS/LTI tool can be mapped to openEQUELLA using the LTI/LIS Role Mappings section on the Create new LTI consumer and Edit LTI consumer pages. Additionally, custom roles can also be mapped to openEQUELLA roles. 
+Standard LTI/LIS roles that are supplied to openEQUELLA from the LMS/LTI tool can be mapped to openEQUELLA using the LTI/LIS Role Mappings section on the Create new LTI consumer and Edit LTI consumer pages. Additionally, custom roles can also be mapped to openEQUELLA roles.
 
 The LTI/LIS Role Mappings section has three areas:
 * Instructor role – commonly used LTI role within LMSs. Use this area to map to relevant openEQUELLA role/s.
@@ -57,19 +57,19 @@ In the Instructor and Unknown roles fields, the Add roles link is used to select
 
 To map to openEQUELLA role/s
 1.  Click the Add roles link under the Instructor role field.  The Select role(s) dialog displays.
-2.  Enter a search query then click Search. Matching results display. 
-3. Select the required role/s, then click Select these roles. The mapping/s displays in the Instructor role field. 
+2.  Enter a search query then click Search. Matching results display.
+3. Select the required role/s, then click Select these roles. The mapping/s displays in the Instructor role field.
 4. Select the Add roles link to add more mappings.
 
 #### Mapping Other roles
 The Other roles section is used to map all LTI/LIS standard roles (other than Instructor) to openEQUELLA roles. Custom roles can also be mapped.
 
 To map an LTI/LIS standard role (other than Instructor)
-1.  In the Other roles area, start typing the required LTI/LIS role in the Enter LTI/LIS role field. A list of all the standard LTI/LIS roles displays in a drop-down list. 
+1.  In the Other roles area, start typing the required LTI/LIS role in the Enter LTI/LIS role field. A list of all the standard LTI/LIS roles displays in a drop-down list.
 2.  Select the required role.
-3.  Click the Add roles link next to the selected LTI/LIS role. The Select role(s) dialog displays. 
-4.  Enter a search query then click Search. Matching results display. 
-5.  Select the required role/s, then click Select these roles. The mapping/s displays in the Other roles field. 
+3.  Click the Add roles link next to the selected LTI/LIS role. The Select role(s) dialog displays.
+4.  Enter a search query then click Search. Matching results display.
+5.  Select the required role/s, then click Select these roles. The mapping/s displays in the Other roles field.
 6. To add further openEQUELLA roles to LTI/LIS roles that have existing mappings or to add another LTI/LIS role mapping, repeat steps 1 to 5.
 
 #### Mapping custom roles
@@ -79,34 +79,34 @@ To add a custom role
 1.  In the Other roles area, type the custom role (e.g. Lecturer) in the Enter LTI/LIS role field. Check that your custom role doesn’t appear in the LTI roles drop-down, otherwise ignore the drop-down list.
 NOTE: When typing custom roles, be sure that it is entered as an exact match to what is being used in LMS/LTI tool, including case-sensitivity.
 2.  Click the Add roles link next to the custom role name. The Select role(s) dialog displays.
-3. Enter a search query then click Search. Matching results display. 
-4.  Select the required role/s, then click Select these roles. The mapping/s displays in the Other roles field. 
+3. Enter a search query then click Search. Matching results display.
+4.  Select the required role/s, then click Select these roles. The mapping/s displays in the Other roles field.
 5. To add further openEQUELLA roles to the custom roles that have existing mappings or to add another custom role mapping, repeat steps 1 to 4.
 
 ### Save LTI consumer
 1.  Once all fields are completed, click Save.
- 
+
 ## Edit LTI consumer
 
 To edit an LTI consumer
 1.  Select Settings from the navigation menu, and either type LTI in the filter box, then select LTI consumers from the results or scroll down to LTI consumers on the Settings list. The LTI consumers page displays.
-2.  Select the Edit link beside the LTI consumer to be edited to open the Edit LTI consumer page. 
-3.  Make the required changes. 
+2.  Select the Edit link beside the LTI consumer to be edited to open the Edit LTI consumer page.
+3.  Make the required changes.
 4.  Click Save.
- 
+
 ## Disable or enable LTI consumer
 
 LTI consumers can be disabled and enabled. For example, an administrator may wish to disable a particular LTI consumer to prevent it from being used during a maintenance period. Once maintenance is complete, they can then enable it for use.
 
 To enable or disable an LTI consumer
-1.  Select Settings from the navigation menu, and either type LTI in the filter box, then select LTI consumers from the results or scroll down to LTI consumers on the Settings list. The LTI consumers page displays. 
+1.  Select Settings from the navigation menu, and either type LTI in the filter box, then select LTI consumers from the results or scroll down to LTI consumers on the Settings list. The LTI consumers page displays.
 2.  Select the Disable link beside the LTI consumer to be disabled. The LTI consumer is disabled and can no longer be used. The Disable link has changed to an Enable link. 3.  Click the Enable link to enable the LTI consumer for use.
 
 ## Delete LTI consumer
 When deleting an existing LTI consumer, it must be disabled prior to being deleted.
 
 To delete an LTI consumer
-1.  Select Settings from the navigation menu, and either type LTI in the filter box, then select LTI consumers from the results or scroll down to LTI consumers on the Settings list. The LTI consumers page displays. 
+1.  Select Settings from the navigation menu, and either type LTI in the filter box, then select LTI consumers from the results or scroll down to LTI consumers on the Settings list. The LTI consumers page displays.
 2.  Select the Disable link beside the LTI consumer to be deleted. The LTI consumer is disabled, and the Disable link changes to Enable, and a Delete link displays.
 3.  Select the Delete link beside the LTI consumer to be deleted. A confirmation box displays.
 4.  Click OK.

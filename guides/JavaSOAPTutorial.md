@@ -51,13 +51,13 @@ In general the process for invoking a SOAP method is as follows:
 1.  Create a SoapService50 object.
 When creating a SoapService50 object, you should supply the URL to connect to although this is not strictly necessary.  You MUST set a cookie handler on the SoapService50 object before invoking the login method.  This is because the user session is retrieved from the cookie by the openEQUELLA server; if you do not set a cookie handler your session will be lost immediately after calling login.  When using Apache Axis, you can easily do this by setting setMaintainSession(true) on the generated locator class.
 2.  Call the login method:
-```
+```java
 client.login(username, password);
 ```
 The user that you login as must have sufficient privileges to perform your required task.  You cannot do anything over SOAP that you cannot do within the openEQUELLA Digital Repository.
 
 3.  Invoke a method:
-```
+```java
 collectionsXml = client.getContributableCollections();
 ```
 

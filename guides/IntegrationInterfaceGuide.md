@@ -5,7 +5,7 @@
 * [Integration overview](#integration-overview)
 * [Single sign-on authentication](#single-sign-on-authenication)  
 * [Integration hook URL](#integration-hook-url)  
-* [Integration hook actions](#integration-hook-actions) 
+* [Integration hook actions](#integration-hook-actions)
 
 
 ## Integration overview  
@@ -19,7 +19,7 @@ When single sign-on (SSO) to openEQUELLA is required, an authentication token sh
 
 ### Token generation
 The format of the token parameter is most easily specified by the following code:
-```
+```java
 public String createToken (String username, String shareId, String sharedSecret) {
     String time = Long.toString (System.currentTimeMillis ());
 
@@ -40,25 +40,25 @@ public String createToken (String username, String shareId, String sharedSecret)
 ```
 Once a token is generated, it can be URL-encoded and added to the hook URL as the token parameter. This token can be used as a parameter on any openEQUELLA page and may also be used to initiate SOAP sessions. There is a maximum time difference of 30 minutes between a token and the current time on the server (GMT). Tokens with a larger difference are considered to be expired and invalid.
 
-The single sign-on relies on the openEQUELLA Shared Secrets plug-in being set up with an appropriate shared secret. Shared Secrets are configured in the Administration Console’s User Management tool. 
+The single sign-on relies on the openEQUELLA Shared Secrets plug-in being set up with an appropriate shared secret. Shared Secrets are configured in the Administration Console’s User Management tool.
 
 The Shared Secret plug-in provides the following options:
    * Specification of Identifier (ID) and Shared Secret.
    * Automatically modify usernames, with prefix and/or postfix, to disambiguate from other single sign-ons.
    * An access control expression to allow only certain users to login with this shared secret.
    * Automatic denial or acceptance of guest user access.
-   * Automatic creation of local users if they do not exist at the time of login. 
+   * Automatic creation of local users if they do not exist at the time of login.
 
 ## Integration hook URL  
 The integration hook URL comprises several parameters that include methods, actions, URLs and authentication. These parameters allow complete access to openEQUELLA pages from an integration and provide a means for performing tasks in the openEQUELLA Digital Repository.
 
-## Integration hook actions 
+## Integration hook actions
 
-An integration must forward to your openEQUELLA institution with ‘signon.do’ appended to the hosting server URL where a selection session will be started. All selection sessions provide a means for performing tasks in the openEQUELLA Digital Repository that result in the selection of an item or attachment by the user. 
+An integration must forward to your openEQUELLA institution with ‘signon.do’ appended to the hosting server URL where a selection session will be started. All selection sessions provide a means for performing tasks in the openEQUELLA Digital Repository that result in the selection of an item or attachment by the user.
 
 As an example the following URL:
-‘<http://equella.myinstitute.edu/institution/logon.do>’ 
-would become the hook URL 
+‘<http://equella.myinstitute.edu/institution/logon.do>’
+would become the hook URL
 ‘<http://equella.myinstitute.edu/institution/signon.do>’.
 
 ### Input parameters
@@ -66,7 +66,7 @@ The following parameters can be appended to the URL:
 
 **method (required)**  This should always have the value ‘lms'.
 
-**token (optional)**  A string to enable single sign-on to openEQUELLA. If the token is not provided the user will have to provide authentication whenever the hook URL is used. 
+**token (optional)**  A string to enable single sign-on to openEQUELLA. If the token is not provided the user will have to provide authentication whenever the hook URL is used.
 
 **returnurl (required)**  The URL that the user is redirected to when the action is complete. This URL can comprise parameters; an example is provided in the guide below.
 
@@ -95,7 +95,7 @@ Note: a value for this parameter overrides the courseId parameter if both are su
 
 **structure** A JSON representation of your destination folders. (See "structured" action value). It is highly recommended that this value be POSTed rather than included in the URL parameters due to the size of the value.
 The format for this value is:
-```
+```json
 {
   "name": "Course Name",
   "code": "Course Code",
@@ -103,18 +103,18 @@ The format for this value is:
   "targetable": true|false,
   "selected": true|false,
   "folders":
-    [ 
+    [
       {
         "name": "Folder 1",
         "id": "A unique ID #2",
         "targetable": true|false,
         "selected": true|false,
-        "folders": 
+        "folders":
         [
-        <any number of folders in same format as Folder 1>
+        "<any number of folders in same format as Folder 1>"
         ]
       },
-      ...
+      "..."
     ]
 }
 ````
@@ -147,7 +147,7 @@ session=47f23cd29&course=3&folder=1
 ```
 http://equella.myinstitute.edu/signon.do?
 method=lms
-&token=demouser%3AsharedSecretID%3A1115854854000%3A4Qw4nf92EV6ev%2F1O 
+&token=demouser%3AsharedSecretID%3A1115854854000%3A4Qw4nf92EV6ev%2F1O
 CYlI2Q%3D%3D
 &returnurl=http%3A%2F%2Flms.institution.edu%2Fmodule%2Fmod.do
 %3Fsession%3D47f23cd29%26course%3D3%26folder%3D1
@@ -165,7 +165,7 @@ The following actions are recommended for easily providing access to most openEQ
 
 **contribute**  Provides access to all openEQUELLA contribution methods.
 
-**structured** Provides access to all openEQUELLA searching and contribution methods. Loads the search results page with a graphical representation of the target folders (sent from your system) on the right hand side, with which users can drag and drop resources onto.  Must be used with the structure 
+**structured** Provides access to all openEQUELLA searching and contribution methods. Loads the search results page with a graphical representation of the target folders (sent from your system) on the right hand side, with which users can drag and drop resources onto.  Must be used with the structure
 
 ## ‘Options’ parameter
 The following is a list of the current pre-defined parameter values that can be assigned to the options parameter, and the corresponding function in openEQUELLA that they provide access to:
@@ -201,7 +201,7 @@ result  “success” | “cancelled” | “failed”     Note: this is still s
 
 **type**  “resource”  “plan”    Note: this is still supported but deprecated. If possible, integrations should not rely on this value.
 
-Using the example of returning from a Moodle™ integration, the user will be redirected to: 
+Using the example of returning from a Moodle™ integration, the user will be redirected to:
 ```
 http://lms.institution.edu/module/mod.do?
 session=47f23cd29
@@ -255,7 +255,7 @@ The fields of each link object are:
 **folder**  In the case of a structured session, the folder property indicates where the resource should be added to.
 
 For example:
-```
+```json
  [
   {
     "url":"http://YOUR_INST/integ/gen/9a4b5423-7340-4562-bfea-97e4dccf30a9/1/",

@@ -31,9 +31,9 @@ This guide provides information on upgrading current installations to use the ne
 ## EQUELLA 6.4 upgrade-specific notes
 Please note the following points specific to the EQUELLA 6.4 upgrade:
 * EQUELLA 6.4 sees the separation of the LTI consumers configuration out of the Settings, OAuth function. It is now a separate LTI consumers option accessed from the Settings page, where the configuration and role mapping can be carried out in one function. LTI consumer registrations that were previously configured via the OAuth function are automatically transferred to the new LTI consumers section. The users, groups or roles granted the CREATE_OAUTH_CLIENT, EDIT_OAUTH_CLIENT and DELETE_OAUTH CLIENT privileges prior to the upgrade will automatically have the new CREATE_LTI_CONSUMER, EDIT_LTI_CONSUMER and DELETE_LTI_CONSUMER privileges granted after the upgrade.
-* EQUELLA 6.4 introduces the Videos search results page. A one-off reindexing procedure needs to be run once the system is upgraded to 6.4 for existing streaming media thumbnails and previews to display in the Videos view. 
-* To display thumbnails and previews on the Videos view page for video files uploaded as attachments during contribution (for example, video files created on a camera), EQUELLA requires Libav, a free, third-party application to be installed and configured on the server. EQUELLA then uses Libav to produce video thumbnails and 10 second previews. 
-* Google has switched off their old YouTube search API and now require application developers to use the latest YouTube Data API (v3). A new Google API option on the Settings page allows a Google API key (with the new YouTube Data API (v3) enabled) to be stored in EQUELLA. 
+* EQUELLA 6.4 introduces the Videos search results page. A one-off reindexing procedure needs to be run once the system is upgraded to 6.4 for existing streaming media thumbnails and previews to display in the Videos view.
+* To display thumbnails and previews on the Videos view page for video files uploaded as attachments during contribution (for example, video files created on a camera), EQUELLA requires Libav, a free, third-party application to be installed and configured on the server. EQUELLA then uses Libav to produce video thumbnails and 10 second previews.
+* Google has switched off their old YouTube search API and now require application developers to use the latest YouTube Data API (v3). A new Google API option on the Settings page allows a Google API key (with the new YouTube Data API (v3) enabled) to be stored in EQUELLA.
 * hikari.properties – EQUELLA now uses Hikari (https://github.com/brettwooldridge/HikariCP) for database connection pooling to provide better recovery after database disconnections. The bonecp.properties file will no longer be read. Any custom changes that have been made to the bonecp.properties file will need to be recreated in the hikari.properties file. In particular, if the maxConnectionsPerPartition properties has been configured in bonecp.properties then the maximumPoolSize property will need to be configured in hikari.properties.
 ## Upgrade EQUELLA to version 6.4
 EQUELLA 6.4 uses in-place upgrades, ensuring your institution’s decision to upgrade EQUELLA is faster, easier and cheaper. Any version from the latest EQUELLA 4.1 QA can be upgraded to any newer major version or QA release using the EQUELLA Manager.
@@ -76,7 +76,7 @@ The following actions should be completed:
 When upgrading a system using a Windows environment, the EQUELLA Manager and application service must be run by a user with Administrator rights.
 
 ## Upgrade current version
-Before upgrading to EQUELLA 6.4, your existing EQUELLA server may require upgrading to the most recent QA release for that version. 
+Before upgrading to EQUELLA 6.4, your existing EQUELLA server may require upgrading to the most recent QA release for that version.
 
 ## Test server
 Using an EQUELLA 6.4 test server is recommended so that:
@@ -94,7 +94,7 @@ Administrators installing a fresh test server should follow the instructions in 
 3. Complete the relevant tasks described in the Upgrade EQUELLA section.
 
 ### Upgrade an existing test server
-Existing EQUELLA test servers require upgrading to the most recent QA release. 
+Existing EQUELLA test servers require upgrading to the most recent QA release.
 1. Ensure the test environment is a clone of the production environment.
 2. Perform all tasks described in the Upgrade preparation section.
 3. Complete the relevant tasks described in the Upgrade EQUELLA section.
@@ -152,7 +152,7 @@ set wrapper.java.command=xxx
 set wrapper.java.classpath.2=xxx
 
 **Unix system upgrading from EQUELLA version5.1 and greater:**
-Both manager/manager-config.sh and manager/equellaserver-config.sh 
+Both manager/manager-config.sh and manager/equellaserver-config.sh
 export JAVA_HOME=xxx
 
 3. Reinstall the services Navigate to the manager folder (the default installation folder is c:\equella\manager) and open a command prompt and enter:
@@ -197,7 +197,7 @@ libav.path = C:/Program Files/libav/libav-x86_64-w64-mingw32-11/usr/bin
 ```
 Note: The libav.path needs to point to the directory that contains the avconv.exe and avprobe.exe files.
 
-Once the upgrade has been completed, and the EQUELLA server restarted, a one-off process to generate thumbnails and previews for existing video file attachments needs to be run. 
+Once the upgrade has been completed, and the EQUELLA server restarted, a one-off process to generate thumbnails and previews for existing video file attachments needs to be run.
 
 #### To install and configure Libav for Linux
 1. Install Libav from https://libav.org/download.html libvo_aacenc and libx264 dependencies are also required for video previews to be generated correctly.
@@ -213,7 +213,7 @@ libav.path = /usr/local/bin
 Note: The libav.path needs to point to the directory that contains the a
 vconv and avprobe executable files.
 
-Once the upgrade has been completed, and the EQUELLA server restarted, a one-off process to generate thumbnails and previews for existing video file attachments needs to be run. 
+Once the upgrade has been completed, and the EQUELLA server restarted, a one-off process to generate thumbnails and previews for existing video file attachments needs to be run.
 
 ## Upgrade EQUELLA
 EQUELLA 6.4 upgrades are completed using the EQUELLA Manager.
@@ -234,7 +234,7 @@ The EQUELLA Manager shows the current Deployed Version, the Server Status and ha
 * Downloaded Versions—provides access to all downloaded EQUELLA versions, allowing administrators to upgrade to any downloaded version.
 * Get Other Versions—allows administrators to browse to and upload Manually Provided Versions of EQUELLA or to download any available Official Upgrades.
 
-Once EQUELLA has been upgraded to version 6.4, the EQUELLA Manager includes a Configuration tab. 
+Once EQUELLA has been upgraded to version 6.4, the EQUELLA Manager includes a Configuration tab.
 
 ### Upgrade to EQUELLA 6.4
 When upgrading to a major version such as EQUELLA 6.4, the upgrade file can be accessed by browsing to and uploading it via the Manually Provided Versions section of the Get Other Versions page.
@@ -242,7 +242,7 @@ When upgrading to a major version such as EQUELLA 6.4, the upgrade file can be a
 The upgrade process includes the following steps:
 1. Perform all tasks described in the Upgrade preparation section.
 2. Download an upgrade file.
-3. Upload the upgrade file. 
+3. Upload the upgrade file.
 4. Deploy the new version.
 5. Restart the EQUELLA Manager.
 (NOTE: Not required if upgrading from EQUELLA 5.0, 5.1, 6.0 or 6.1. The EQUELLA Manager will restart automatically, and a browser refresh is required to update the screen.)
@@ -258,11 +258,11 @@ The first step is to perform all tasks described in the Upgrade preparation sect
 The upgrade file is uploaded in the Manually Provided Versions section of the Get Other Versions page in the EQUELLA Manager.
 1. Select the Get Other Versions tab to display the Get Other Versions page.
 2. Click Choose File in the Manually Provided Versions section.
-3. Navigate to and select the tle-upgrade-6.4rXXXXX (branches+’VersionName’).zip file from your temporary directory. The file path is displayed in the Manually Provided Versions field. 
-4. Click Upload. When the upload is completed, the new version is displayed in the Newer Versions list on the Downloaded Versions page. 
+3. Navigate to and select the tle-upgrade-6.4rXXXXX (branches+’VersionName’).zip file from your temporary directory. The file path is displayed in the Manually Provided Versions field.
+4. Click Upload. When the upload is completed, the new version is displayed in the Newer Versions list on the Downloaded Versions page.
 
 ### Downloaded versions
-The Downloaded Versions page displays any Newer Versions that have been downloaded but not deployed, the Current Version as well as any Older Versions that have been downloaded, whether they have been deployed or not. 
+The Downloaded Versions page displays any Newer Versions that have been downloaded but not deployed, the Current Version as well as any Older Versions that have been downloaded, whether they have been deployed or not.
 
 The next step is to deploy the upgrade version.
 
@@ -270,10 +270,10 @@ The next step is to deploy the upgrade version.
 The upgrade version is deployed on the Downloaded Versions page.
 1. Select the radio button next to the required version (e.g. 6.4.r1324) in the Newer Versions list.
 2. Click Deploy Now to display a confirmation dialog that asks the user if they wish to proceed and warns that to do so will stop the EQUELLA App Server service.
-3. Select OK to confirm the deployment. The App Server is stopped and the steps of the upgrade process are displayed. 
+3. Select OK to confirm the deployment. The App Server is stopped and the steps of the upgrade process are displayed.
 
 ### Deployment errors
-Any errors that occur during upgrading are displayed in the dialog. 
+Any errors that occur during upgrading are displayed in the dialog.
 
 To attempt the deployment again
 1. Resolve any issues associated with the error message. Further information is provided in the Troubleshoot the upgrade section.
@@ -284,12 +284,12 @@ To attempt the deployment again
 When the deployment process is completed successfully a Click here to continue button is displayed.
 
 #### To complete the deployment
-1. Click to display the Downloaded Versions page. 
+1. Click to display the Downloaded Versions page.
 
 The EQUELLA Manager restarts in the background.
 
 ### Start the EQUELLA server
-The EQUELLA server is started in the EQUELLA Manager. When the Server Status is Stopped, a Start button is displayed. 
+The EQUELLA server is started in the EQUELLA Manager. When the Server Status is Stopped, a Start button is displayed.
 2. Click Start to change the Server Status to Running.
 
 The next step is to enter a licence key and migrate existing repository data. License key will be required for version prior to the open source version of Equella.
@@ -297,28 +297,28 @@ The next step is to enter a licence key and migrate existing repository data. Li
 ### Migrate existing data
 The data migration process can take a significant amount of time and depends on the size of the EQUELLA repository.
 
-1. Select Databases from the Server administration navigation menu (although the system should default to this page). 
+1. Select Databases from the Server administration navigation menu (although the system should default to this page).
 
 (NOTE: It is important that your system is backed up before executing the upgrade.)
 
-2. Select Migrate to start the migration process. A confirmation dialog displays. 
+2. Select Migrate to start the migration process. A confirmation dialog displays.
 3. Click OK. A progress percentage displays.
 (NOTE: The data migration process can take a significant amount of time.)
 
-When multiple databases are in use, the Databases screen lists each database with a checkbox. Check each checkbox then select the Migrate selected link to start the migration process. The databases are migrated sequentially and the progress percentage displays. 
+When multiple databases are in use, the Databases screen lists each database with a checkbox. Check each checkbox then select the Migrate selected link to start the migration process. The databases are migrated sequentially and the progress percentage displays.
 
 ### Migration errors
-When an error occurs during the migration process, a message and a Show migration error link display. 
-Select the Show migration error link to display the error report. 
+When an error occurs during the migration process, a message and a Show migration error link display.
+Select the Show migration error link to display the error report.
 
 #### To attempt the migration again
 1. Click the Migrate link next to the relevant database to retry the migration process. A progress percentage displays.
 
 ### Successful migration
-When the migration process is completed successfully, the status of each database will display as Online. 
+When the migration process is completed successfully, the status of each database will display as Online.
 
 #### To complete the migration
-1. Select Settings from the navigation menu to display the Licence Management section on the Server Settings page. 
+1. Select Settings from the navigation menu to display the Licence Management section on the Server Settings page.
 2. Enter the EQUELLA Licence key supplied by EQUELLA Support, then click Save license. (Note: This will only be required for version prior to the open source release)
 
 ## Generate thumbnails and previews – streaming media files
@@ -327,13 +327,13 @@ to be run after the EQUELLA 6.4 upgrade is complete to refresh the content index
 
 #### To refresh the index
 1. Login to EQUELLA as a user with administration permissions.
-2. Go to Settings, Manual data fixes. The Manual data fixes page displays. 
+2. Go to Settings, Manual data fixes. The Manual data fixes page displays.
 3. From the Manual data fixes page, click Refresh Index.
 
 ## Generate thumbnails and previews – video file attachments
 Video files uploaded to EQUELLA as file attachments require the free, third party product called Libav to be installed. EQUELLA uses this product to produce thumbnails and previews for video files uploaded to EQUELLA during contribution (that is, video files that are not streamed). They will not display in the Videos view until the following steps are carried out:
-1. Install Libav, a free, third-party product used by EQUELLA to produce thumbnails and previews for video files. 
-3. Once Libav is configured and the upgrade is complete, go to the Settings, Manual data fixes page. From the Generate thumbnails and previews section, select Missing thumbnails then click Generate Thumbnails. 
+1. Install Libav, a free, third-party product used by EQUELLA to produce thumbnails and previews for video files.
+3. Once Libav is configured and the upgrade is complete, go to the Settings, Manual data fixes page. From the Generate thumbnails and previews section, select Missing thumbnails then click Generate Thumbnails.
 
 Thumbnails and previews are created for all existing video file attachments, and display on the Videos view page. Thumbnails and previews for new files uploaded during contribution will be generated automatically.
 
@@ -361,11 +361,11 @@ The YouTube Data API (v3) lets you incorporate YouTube functionality into your o
 ```
 A new Google API option on the Settings page allows a Google API key (with the new YouTube Data API (v3) enabled) to be stored in EQUELLA. This allows users to search and select YouTube content from an attachment control during contribution in the same manner as prior to the API change.
 
-NOTE: If the Google API key is not configured in EQUELLA, existing YouTube links will continue to open and play. However, searching for new YouTube content during contribution or editing of resources will result in the following message being displayed: Google API Key not Configured" 
+NOTE: If the Google API key is not configured in EQUELLA, existing YouTube links will continue to open and play. However, searching for new YouTube content during contribution or editing of resources will result in the following message being displayed: Google API Key not Configured"
 
 #### To configure the Google API
 1. Login to EQUELLA as a user with administration permissions.
-2. Go to Settings, Google API. The Google API page displays. 
+2. Go to Settings, Google API. The Google API page displays.
 3. Enter the Google API Key as provided by Google. API Keys can be obtained from the Developers Console site after creating a project. For step-by-step instructions to obtain a Google API Key (with YouTube Data API (v3) enabled), use the video link on the Google API page.
 
 The major release upgrade process is now complete.
@@ -392,7 +392,7 @@ The QA Release upgrade process can include the following steps:
 6. Migrate existing repository data.
 7. Upgrade systems integrated with EQUELLA.
 8. Upgrade customisations.
-9. 
+9.
 The first step is to perform all tasks described in the Upgrade preparation section. The next step is to enter the configuration details.
 
 ### Upgrade configuration details
@@ -400,10 +400,10 @@ To access the EQUELLA Upgrade Server and any official upgrades, username and pas
 
 If your installation is behind a proxy server, you will also need to fill out the Connection Proxy Details section of the Configuration page.
 
-1. Select the Configuration tab to display the Configuration page. 
+1. Select the Configuration tab to display the Configuration page.
 
 #### To add the Upgrade Server Authentication details
-3. Enter a Username and Password. 
+3. Enter a Username and Password.
 4. Click Save.
 
 #### To add the Connection Proxy Details
@@ -412,7 +412,7 @@ If your installation is behind a proxy server, you will also need to fill out th
 The next step is to download the upgrade file.
 
 ## Official upgrade
-For institutions that have upgraded to EQUELLA 6.4, when QA Release upgrades are available they are listed in the Official Upgrades section of the Get Other Versions page of the EQUELLA Manager. 
+For institutions that have upgraded to EQUELLA 6.4, when QA Release upgrades are available they are listed in the Official Upgrades section of the Get Other Versions page of the EQUELLA Manager.
 
 ### Official upgrade error messages
 If the details are not provided or are incorrect the following messages are displayed in the Official Upgrades section:
@@ -421,15 +421,15 @@ If the details are not provided or are incorrect the following messages are disp
 * If any other unexpected error occurs, a message such as ‘Error while contacting upgrade server: Stream closed’ is displayed.
 
 ### Download an official upgrade
-The upgrade file is downloaded from the Official Upgrades section of the Get Other Versions page. 
+The upgrade file is downloaded from the Official Upgrades section of the Get Other Versions page.
 (Note the process may differ for Open Source Versions)
 
 1. Click Download Now adjacent to the required version in the Official Upgrades section to display a Preparing download… dialog. When the download is complete:
-2. Click "click here to continue" to display the new version in the Newer Versions list of the Downloaded Versions page. 
+2. Click "click here to continue" to display the new version in the Newer Versions list of the Downloaded Versions page.
 (NOTE: Downloaded versions are stored in the path-to-equella\manager\updates folder.)
 
 ### Downloaded versions
-The Downloaded Versions page displays any Newer Versions that have been downloaded but not deployed as well as the Current Version and any Older Versions that have been downloaded, whether they have been deployed or not. 
+The Downloaded Versions page displays any Newer Versions that have been downloaded but not deployed as well as the Current Version and any Older Versions that have been downloaded, whether they have been deployed or not.
 
 The next step is to deploy the upgrade version.
 ###  Deploy a new version
@@ -437,9 +437,9 @@ To deploy the upgrade version
 1. Select the radio button next to the required version (e.g. 6.4-QA1) in the Newer Versions list.
 2. Click Deploy Now to display a confirmation dialog that asks the user if they wish to proceed and warns that to do so will stop the EQUELLA App Server service.
 3. Click OK to confirm the deployment. The App Server is stopped and the steps of the upgrade process display.
- 
+
 ### Deployment errors
-Any errors that occur during the upgrade are displayed in the dialog. 
+Any errors that occur during the upgrade are displayed in the dialog.
 
 ### Successful deployment
 When the deployment process is completed successfully, a Click here to continue button is displayed.
@@ -453,7 +453,7 @@ The Server Status is displayed in the EQUELLA Manager.
 The next step is to login to the Server administration account. (NOTE: This step may or may not include the data migration step.)
 
 ### Login to EQUELLA
-1. Open a browser and enter the EQUELLA address of the hosting server. If data migration is required a page is displayed . 
+1. Open a browser and enter the EQUELLA address of the hosting server. If data migration is required a page is displayed .
 See the Migrate existing data section for more information.
 
 ### Important information for test upgrades
@@ -469,7 +469,7 @@ Administrators installing a fresh production server should follow the instructio
 3. Complete the relevant tasks described in the Upgrade EQUELLA section.
 
 ### Upgrade an existing production server
-Existing EQUELLA test servers require upgrading to the most recent QA release. 
+Existing EQUELLA test servers require upgrading to the most recent QA release.
 1. Ensure the upgrade process and new version’s functionality were previously tested using a test environment that is a clone of the production environment.
 2. Perform all tasks described in the Upgrade preparation section.
 3. Complete the relevant tasks described in the Upgrade EQUELLA section.

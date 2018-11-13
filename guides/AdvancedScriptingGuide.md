@@ -11,10 +11,10 @@
 
 ## Scripting overview
 
-openEquella provides scripting to enable system administrators to exercise fine grain control over processes within openEquella. 
+openEquella provides scripting to enable system administrators to exercise fine grain control over processes within openEquella.
 
-This guide is intended for administrators familiar with JavaScript™, FreeMarker and HTML and describes the Advanced Scripting control and other script-related information. 
-While this guide describes advanced scripting, openEquella also provides basic script editors that are easy to use and provides sophisticated management of items, controls and security allowing the construction of scripts based on item metadata, user role or item status. 
+This guide is intended for administrators familiar with JavaScript™, FreeMarker and HTML and describes the Advanced Scripting control and other script-related information.
+While this guide describes advanced scripting, openEquella also provides basic script editors that are easy to use and provides sophisticated management of items, controls and security allowing the construction of scripts based on item metadata, user role or item status.
 
 Please note that this guide has been developed to best reflect the full capabilities of openEquella and as such may differ in appearance to your own installation.
 
@@ -22,11 +22,11 @@ Please note that this guide has been developed to best reflect the full capabili
 
 The Advanced Scripting control requires advanced knowledge of scripting languages.
 
-This section describes the Advanced Scripting wizard control that is available in the Collection Definition Editor within the Administration Console. Add an Advanced Scripting control to a new collection (or an existing one) to explore the features of the control. 
+This section describes the Advanced Scripting wizard control that is available in the Collection Definition Editor within the Administration Console. Add an Advanced Scripting control to a new collection (or an existing one) to explore the features of the control.
 
 The Advanced Scripting control elements include:
-* Import... button—select to import an advanced script configuration (*.asc file). 
-* Export...button—select to export an advanced script configuration (*.asc file). 
+* Import... button—select to import an advanced script configuration (*.asc file).
+* Export...button—select to export an advanced script configuration (*.asc file).
 * Notes pane—add descriptive information about the control.
 
 There are a number of different script panes on the control, separated into two different groups based on whether they are sent to a browser or not.
@@ -83,7 +83,7 @@ For a comprehensive introduction to JQuery visit this site: <http://docs.jquery.
 ### FreeMarker panes
 The FreeMarker panes are the client-side panes, that is, the Display Template, the On-Load JavaScript and the On-Submit JavaScript.
 
-All FreeMarker variables are referenced by enclosing the name of the variable in 
+All FreeMarker variables are referenced by enclosing the name of the variable in
 ${}, for example. ${prefix}, unless you are within a FreeMarker tag such as
 
 ```
@@ -165,7 +165,7 @@ The names of the available script objects are listed below. For a full descripti
 * com.tle.core.taxonomy.scripting.objects
 * TaxonomyServiceScriptObject
 
-**drm** - Retrieve DRM information from the current item. 
+**drm** - Retrieve DRM information from the current item.
 * com.tle.web.scripting.advanced.objects
 * DrmScriptObject
 
@@ -189,11 +189,11 @@ The names of the available script objects are listed below. For a full descripti
 * com.tle.web.discoverability.scripting.objects
 * MetaScriptObject
 
-**metadata** - Retrieve extracted metadata from attached files. 
+**metadata** - Retrieve extracted metadata from attached files.
 * com.tle.core.metadata.scripting.objects
 * MetadataScriptObject
 
-**mime** - Get MIME-type information for files. 
+**mime** - Get MIME-type information for files.
 * com.tle.web.scripting.advanced.objects
 * MimeScriptObject
 
@@ -224,7 +224,7 @@ system  Available only in a contribution wizard and Advanced Script Control cont
 * com.tle.common.scripting.objects
 * SystemScriptObject
 
-**tier** - View and assign pricing information. 
+**tier** - View and assign pricing information.
 * com.tle.core.payment.scripting.objects
 * PricingTierScriptObject
 
@@ -249,12 +249,12 @@ system  Available only in a contribution wizard and Advanced Script Control cont
 
 ## Advanced scripting control examples
 
-The openEquella Integration Pack contains a number of exported Advanced Scripting controls (*.asc files) that you can import and modify. 
+The openEquella Integration Pack contains a number of exported Advanced Scripting controls (*.asc files) that you can import and modify.
 
 #### To access the Institution Manager
-1.  Enter the complete openEquella URL to your institution with ‘/institutions.do?method=admin’ appended to the URL (e.g. ‘<http://equella.myinstitution.edu/logon.do>’ would become ‘<http://equella.myinstitution.edu/institutions.do?method=admin>’). 
+1.  Enter the complete openEquella URL to your institution with ‘/institutions.do?method=admin’ appended to the URL (e.g. ‘<http://equella.myinstitution.edu/logon.do>’ would become ‘<http://equella.myinstitution.edu/institutions.do?method=admin>’).
 2.  Log in using the openEquella server administrator password.
-3.  Selecting the Downloads tab to display the Downloads page. 
+3.  Selecting the Downloads tab to display the Downloads page.
 4.  Select the Download the Integration Pack link and download the equella-integration-pack.zip file.
 
 #### To import an Advanced Scripting control
@@ -274,8 +274,8 @@ If you wish retrieve the contents of an external URL within an Advanced Scriptin
 function showHtml(myExternalUrl)
 {
   // Get the page from a remote server
-  $.get('p/geturl', {'url': myExternalUrl}, 
-    function(html) 
+  $.get('p/geturl', {'url': myExternalUrl},
+    function(html)
     {
       alert(html);
     }

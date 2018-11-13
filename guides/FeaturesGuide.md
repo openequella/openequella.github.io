@@ -37,20 +37,20 @@ This guide provides an overview of the features introduced in EQUELLA 6.4. For m
 EQUELLA version 6.4 introduces the following features:
 
 * Attachment control restrictions – ability to apply file size, attachment number and MIME type restrictions on an attachment control.
-* Attachment control display options – ability to display attachment controls in separate, user-titled sections on the Resource summary page. 
-* Bulk collaborators – ability to add collaborators to multiple resources in one action. 
-* Copyright activations enhancements – improvements to the functionality of copyright activations with the integration screen. 
-* Gallery views – a new Videos search results view enabling video thumbnails and previews to be viewed. Additionally, files counts for both images and videos and configuration option to provide flexibility for these views. 
-* Google API – a new option on the Settings page allows a Google API to be stored, so that YouTube Videos can be searched and selected. 
-* Institution filestore size limit – a size limit can now be stored per institution. 
-* LTI consumer configuration changes – changes and enhancements to the LTI consumer configuration allow for greater flexibility in role mapping and other areas. 
-* Online help for scripting – the scripting shortcuts can now be viewed online. 
+* Attachment control display options – ability to display attachment controls in separate, user-titled sections on the Resource summary page.
+* Bulk collaborators – ability to add collaborators to multiple resources in one action.
+* Copyright activations enhancements – improvements to the functionality of copyright activations with the integration screen.
+* Gallery views – a new Videos search results view enabling video thumbnails and previews to be viewed. Additionally, files counts for both images and videos and configuration option to provide flexibility for these views.
+* Google API – a new option on the Settings page allows a Google API to be stored, so that YouTube Videos can be searched and selected.
+* Institution filestore size limit – a size limit can now be stored per institution.
+* LTI consumer configuration changes – changes and enhancements to the LTI consumer configuration allow for greater flexibility in role mapping and other areas.
+* Online help for scripting – the scripting shortcuts can now be viewed online.
 * Push to LMS restriction – ability to restrict resource availability for the Push to LMS function.
-* Reporting enhancements – including the availability of MS Word as an output format and the publishing of an EQUELLA 6.4 interactive database map. 
+* Reporting enhancements – including the availability of MS Word as an output format and the publishing of an EQUELLA 6.4 interactive database map.
 * Search enhancements – a number of enhancements and new functionality have been added to search pages.
-* Term selector – improvement to user experience. 
+* Term selector – improvement to user experience.
 * View attachment ACL – a new ACL has been created to restrict access to resource metadata.
-* Z39.50 configuration enhancements – changes have been made to the configuration of Z39.50 Remote Repositories. 
+* Z39.50 configuration enhancements – changes have been made to the configuration of Z39.50 Remote Repositories.
 
 ## Attachment control restrictions
 A number of new restrictions can be configured at an attachment control level to allow administrators to better define and regulate content being added during contribution.
@@ -58,29 +58,29 @@ A number of new restrictions can be configured at an attachment control level to
 The following restrictions can now be set on the Attachments wizard control in the Collection Definition Editor:
 
 ### Maximum number of attachments
-If multiple attachments are allowed for an attachments control during contribution, the administrator can now set the Maximum number of attachments allowed for this attachment control. This is the total number of attachments across all attachment types that are enabled for the control, including files, EQUELLA resources, YouTube video links, iTunes U links, Kaltura media links, URLs, web pages, Google book links, Flickr image links and External Tool Providers. 
+If multiple attachments are allowed for an attachments control during contribution, the administrator can now set the Maximum number of attachments allowed for this attachment control. This is the total number of attachments across all attachment types that are enabled for the control, including files, EQUELLA resources, YouTube video links, iTunes U links, Kaltura media links, URLs, web pages, Google book links, Flickr image links and External Tool Providers.
 
 Users will be prevented from adding more than the maximum allowed number of attachments when they are contributing to a collection with an attachment control that has a restriction set.
 
-The Add a resource link displays when more attachments can be added. 
+The Add a resource link displays when more attachments can be added.
 
 Once the maximum number of attachments has been added, the Add a resource link no longer displays.
 
-If a user adds multiple files using the file drag and drop functionality that results in more than the maximum number of attachments allowed being added, a message displays asking the user to remove the excess files. The user cannot successfully save their contribution until the restriction is met. 
+If a user adds multiple files using the file drag and drop functionality that results in more than the maximum number of attachments allowed being added, a message displays asking the user to remove the excess files. The user cannot successfully save their contribution until the restriction is met.
 
 ### Individual upload file size
-A new Individual upload file size restriction can be set per file within an Attachments control’s General section of Files options. 
+A new Individual upload file size restriction can be set per file within an Attachments control’s General section of Files options.
 
-Users will be prevented from adding files larger than the restriction size when they are contributing to a collection with an attachment control that has file size restriction set. 
+Users will be prevented from adding files larger than the restriction size when they are contributing to a collection with an attachment control that has file size restriction set.
 
 
-If a user adds multiple files using the file drag and drop functionality which include one or more files larger that the specified size restriction, a dialog box displays for each oversized file, informing the user that they will not be uploaded. 
+If a user adds multiple files using the file drag and drop functionality which include one or more files larger that the specified size restriction, a dialog box displays for each oversized file, informing the user that they will not be uploaded.
 
 ### MIME type
-Files to be uploaded via an attachments control can now be restricted to specific MIME types. An administration user can select the MIME types allowed from a list, and if files of other MIME types are attempted to be uploaded, the system displays a message to the user. The MIME types are selected from the new MIME type restrictions section in the Attachments control’s Files options. 
+Files to be uploaded via an attachments control can now be restricted to specific MIME types. An administration user can select the MIME types allowed from a list, and if files of other MIME types are attempted to be uploaded, the system displays a message to the user. The MIME types are selected from the new MIME type restrictions section in the Attachments control’s Files options.
 
 
-Users will be prevented from adding files where the MIME types don’t match those selected in the restriction list when they are contributing to a collection with an attachment control that has MIME type restrictions set. 
+Users will be prevented from adding files where the MIME types don’t match those selected in the restriction list when they are contributing to a collection with an attachment control that has MIME type restrictions set.
 
 If a user adds multiple files using the file drag and drop functionality which include one or more files with MIME types which are not allowed, a dialog box displays for each file, informing the user that they will not be uploaded.
 
@@ -90,11 +90,11 @@ Changes to the way attachment controls are displayed on the Resource summary pag
 * display multiple separately titled sections on the summary page when there are multiple attachment controls in a contribution wizard.
 
 ### Attachment section titles
-From the Collection Definitions Editor Display tab, the Resource Summary Display sub-tab shows the Resource summary sections currently displaying on the Resource summary page. Prior to 6.4, the Attachments section had a default title value of Attachments. This is now labelled (by default) Links to resources to match the heading section on the summary page. 
+From the Collection Definitions Editor Display tab, the Resource Summary Display sub-tab shows the Resource summary sections currently displaying on the Resource summary page. Prior to 6.4, the Attachments section had a default title value of Attachments. This is now labelled (by default) Links to resources to match the heading section on the summary page.
 
-Administration users can now change the attachments section title to a user-defined value. For example, rather than Links to resources, the user may wish the section title to display as Documents and links. The user types in the required title on the Resource Summary Display Template tab for the attachment section in the Collection Definition Editor. 
+Administration users can now change the attachments section title to a user-defined value. For example, rather than Links to resources, the user may wish the section title to display as Documents and links. The user types in the required title on the Resource Summary Display Template tab for the attachment section in the Collection Definition Editor.
 
-Once saved, the Attachments section on the Resource summary page will display the new title. 
+Once saved, the Attachments section on the Resource summary page will display the new title.
 
 ### Display multiple attachment sections on Resource summary page
 EQUELLA 6.4 introduces the ability to display multiple attachment controls within a contribution wizard as separately titled sections on the Resource summary page, based on specified metadata nodes. Admin users can now display:
@@ -102,7 +102,7 @@ EQUELLA 6.4 introduces the ability to display multiple attachment controls withi
 * user-defined groups of attachment controls
 * all attachments in one section, as per prior versions of EQUELLA.
 
-The configuration of the attachment sections is done from the Collection Definition Editor Display tab, on the Resource Summary Display sub-tab. An attachment section (which defaults to the title Links to resources when first added) is added for each separate section required on the Resource summary page. 
+The configuration of the attachment sections is done from the Collection Definition Editor Display tab, on the Resource Summary Display sub-tab. An attachment section (which defaults to the title Links to resources when first added) is added for each separate section required on the Resource summary page.
 
 The attachment controls to be included in a section are defined in the Restrict attachment display section, where the attachment control metadata targets are selected. In the following example two attachment control metadata targets have been selected to display in the section titled Documents.
 
@@ -113,11 +113,11 @@ NOTE: To display all attachments for one or more attachment controls, leave this
 ## Bulk Collaborators
 Collaborators can now be added to multiple resources in one process with the new Add collaborators bulk action accessed from the Manage resources page.
 
-Once the required resources are selected and the Perform an Action button is clicked, an administrator can choose the new Add collaborators bulk action from the Bulk actions list. 
+Once the required resources are selected and the Perform an Action button is clicked, an administrator can choose the new Add collaborators bulk action from the Bulk actions list.
 
 The user can then select the user/s to be added as collaborators to the selected resources.
 
-Once executed, the users selected display as collaborators for each of the selected resources. 
+Once executed, the users selected display as collaborators for each of the selected resources.
 
 ### Copyright activations enhancements
 Enhancements have been made to the behavior of copyright items when they are being added to LMS courses, both via the structured integration screen and the Push to LMS (Add to external system) function.
@@ -134,7 +134,7 @@ When a user without the COPYRIGHT_ITEM privilege accesses the EQUELLA integratio
 
 The Active or Pending attachments can be added to the course section by clicking the Plus button.
 
-NOTE: Inactive attachments cannot be added to a course. Similarly, copyright attachments that have been activated against other courses cannot be added to the current course. In these cases, the attachment does not have the Plus button available. 
+NOTE: Inactive attachments cannot be added to a course. Similarly, copyright attachments that have been activated against other courses cannot be added to the current course. In these cases, the attachment does not have the Plus button available.
 
 #### Users with the COPYRIGHT_ITEM privilege
 When a user with the COPYRIGHT_ITEM privilege accesses the EQUELLA integration screen from an LMS course page, any copyright items that have been activated against that course display as selectable attachments on both the results page and the Resource summary page. The Resource summary page also displays an Activate and Add Plus button for each attachment. This buttons opens the Activate attachments page for the user to create new activations to add to the current course.
@@ -142,7 +142,7 @@ When a user with the COPYRIGHT_ITEM privilege accesses the EQUELLA integration s
 
 Hover over the plus button to view the Activate and Add label.
 
-Click the plus button to open the Activate attachments page to create a new activation which will then be added to the course. 
+Click the plus button to open the Activate attachments page to create a new activation which will then be added to the course.
 
 Clicking the Activate and Add button creates the activation and adds it to the highlighted course section.
 
@@ -180,19 +180,19 @@ libav.path = C:/Program Files/libav/libav-x86_64-w64-mingw32-11/usr/bin
 ````
 3. Upgrade to EQUELLA 6.4 (this step can also be carried out prior to steps 1 and 2).
 Note: See the EQUELLA 6.4 Upgrade Guide for full instructions on installing and configuring Libav.
-4. From the Settings, Manual data fixes page, in the Generate thumbnails and previews section, select Missing thumbnails then click Refresh Index. 
+4. From the Settings, Manual data fixes page, in the Generate thumbnails and previews section, select Missing thumbnails then click Refresh Index.
 
 Thumbnails are created from the 5th second of a video, and ten second previews are created from the 5th until the 15th second of a video. These previews can be played from the Video view.
 
 #### Videos view page
-The Videos view is accessed by clicking the Videos link at the top-left of the Results box on the Search and Favourites pages. 
+The Videos view is accessed by clicking the Videos link at the top-left of the Results box on the Search and Favourites pages.
 
 Click the Standard link to return to the standard results page format, or Images to go to the image results page format.
 
 Up to 30 video thumbnails are displayed per page, with links to other pages if relevant.
 
 #### Previewing videos
-To preview a video file, hover the mouse over a specific video thumbnail to display a 320px X 180px preview frame. 
+To preview a video file, hover the mouse over a specific video thumbnail to display a 320px X 180px preview frame.
 
 Select the Play button to play the preview. Kaltura and youTube videos can be previewed in their entirety, and ten second previews can be viewed for video files uploaded to EQUELLA as a file attachment. To stop the preview, move the mouse away from the preview frame.
 
@@ -206,10 +206,10 @@ Click on the thumbnail image to open the Resource summary page.
 #### Multiple video attachments
 When there are multiple videos for a resource, the thumbnail of the first video in the attachments list is used to represent the resource on the Videos page. The Reorder attachments feature introduced in EQUELLA 6.3 can be used to change the order of the attachments, and placing a different video at the top of the list will change the thumbnail (and available preview) used on the Videos page.
 
-On the Videos results page, resources with multiple videos display an icon indicating the number of attached video files or links in the top left of the thumbnail. This alerts users to the existence of other videos for which no thumbnail is available from the Videos view. The user can open the Resource summary page to view the other videos. 
+On the Videos results page, resources with multiple videos display an icon indicating the number of attached video files or links in the top left of the thumbnail. This alerts users to the existence of other videos for which no thumbnail is available from the Videos view. The user can open the Resource summary page to view the other videos.
 
 #### Multiple image files
-On the Images view results page (previously labelled Gallery view in 6.3), resources with multiple image files now display an icon indicating the number of attached images in the top left of the thumbnail. This alerts users to the existence of other image files for which no thumbnail is available from the Images view. The user can open the Resource summary page to view the other images. 
+On the Images view results page (previously labelled Gallery view in 6.3), resources with multiple image files now display an icon indicating the number of attached images in the top left of the thumbnail. This alerts users to the existence of other image files for which no thumbnail is available from the Images view. The user can open the Resource summary page to view the other images.
 
 #### Gallery view configuration options
 In some cases, administrators may wish to disable the Images and/or Videos views. This will remove the Images and/or Videos links at the top left of the results box. Thumbnails for image and video files will still be created in the background, so if the views are enabled at some point in the future, thumbnails will display immediately.
@@ -240,7 +240,7 @@ The Google API Key as provided by Google is entered. API Keys can be obtained fr
 ## Institution filestore size limit
 EQUELLA 6.4 allows administrators to set a filestore size limit per institution. This allows administrators to monitor the size of the filestore and receive warning emails once the size limit has been reached.
 
-The new setting is accessed from the Server Administration, Institutions page. 
+The new setting is accessed from the Server Administration, Institutions page.
 
 The Edit institution page displays.
 
@@ -248,19 +248,19 @@ Administrators can enter the required Filestore size limit in GB (e.g. 1.5). An 
 
 The Approximate filestore usage field shows the current usage.
 
-When filestore size limits are set, the Health check page also displays filestore usage information. 
+When filestore size limits are set, the Health check page also displays filestore usage information.
 
 ## LTI consumer configuration
 In EQUELLA 6.4, the OAuth1 (LTI authentication) configuration that was included as an OAuth flow option in Settings, OAuth in prior versions, has been separated out into a new Settings option labelled LTI Consumer. Additionally, the LTI role mappings page (also accessed from Settings in EQUELLA 6.3) has been incorporated into the same function. A number of new configuration options have been introduced, to both match the Shared Secret functionality and enable more detailed role mapping.
 
-After upgrading to EQUELLA 6.4, previously existing OAuth1 (LTI authentication) registrations display in the new LTI Consumer option, accessed from the Settings page. 
+After upgrading to EQUELLA 6.4, previously existing OAuth1 (LTI authentication) registrations display in the new LTI Consumer option, accessed from the Settings page.
 
 Users who have the equivalent OAuth privileges will automatically inherit the new CREATE_LTI_CONSUMER, EDIT_LTI_CONSUMER and DELETE_LTI_CONSUMER after the upgrade.
 
 ### LTI consumer configuration options
 A number of configuration options have been added to create parity with Shared Secret functionality.
 
-A detailed mapping section allows administrators to map both standard LTI roles and custom roles to existing EQUELLA roles. 
+A detailed mapping section allows administrators to map both standard LTI roles and custom roles to existing EQUELLA roles.
 
 New options include:
 * Username prefix – users can enter a prefix value that is added to the front of usernames to distinguish from other LTI consumers
@@ -278,7 +278,7 @@ New options include:
 
 ## Online help for scripting
 
-In the EQUELLA 6.3 release, scripting shortcuts were introduced. Those shortcuts are now available to view from the script editors within EQUELLA. To display the list of shortcuts, hover the mouse over the View available shortcuts text showing on the script editor page. 
+In the EQUELLA 6.3 release, scripting shortcuts were introduced. Those shortcuts are now available to view from the script editors within EQUELLA. To display the list of shortcuts, hover the mouse over the View available shortcuts text showing on the script editor page.
 
 ## Push to LMS restriction
 EQUELLA 6.4 sees the introduction of a new privilege, EXPORT_TO_LMS_ITEM, which, used in conjunction with the existing EXPORT_VIA_CONNECTOR privilege, allows administrators to restrict which resources can be added to external systems (LMSs), and can be set at Collection, Resource Status , Resource Metadata rule and individual resource levels.
@@ -295,18 +295,18 @@ Text has been added to some of the table comments to explain what type of inform
 The EQUELLA database map (equella_schema.zip) is available to download from github. Once the file is upzipped, open index.html to explore the EQUELLA database.
 
 ### Word output for reporting
-Users can now select Word as an output format for reports (from the Show as… drop-down on the reporting page). Selecting this option downloads a .doc file that can then be opened in MS Word. 
+Users can now select Word as an output format for reports (from the Show as… drop-down on the reporting page). Selecting this option downloads a .doc file that can then be opened in MS Word.
 
 ## Search enhancements
 A number of enhancements to EQUELLA’s search functionality have been added in 6.4. These include:
 * Immediate display of search suggestion results once selected.
-* Ability to default the Show attachments icon to open or closed 
+* Ability to default the Show attachments icon to open or closed
 * Sort by creation date
 * Multiple image indicator for Images view
-* Video view 
- 
+* Video view
+
 ### Immediate display of search suggestion
-In versions prior to EQUELLA 6.4, when a user starts typing a search term in the search edit box and resource title suggestions show, when clicking the required suggestion the user then had to click the search icon to view the selected result/s. EQUELLA 6.4 removes the requirement to click the search icon, displaying the selected result/s as soon as the user clicks on the suggestion. 
+In versions prior to EQUELLA 6.4, when a user starts typing a search term in the search edit box and resource title suggestions show, when clicking the required suggestion the user then had to click the search icon to view the selected result/s. EQUELLA 6.4 removes the requirement to click the search icon, displaying the selected result/s as soon as the user clicks on the suggestion.
 
 ### Ability to default Show attachments icon to open
 The Show attachments icon that displays to the right of the resource name on results pages in EQUELLA can now be configured at a collection level for both native EQUELLA and integration screen results pages to default to open or closed.
@@ -315,10 +315,10 @@ This granularity allows administrators to set the default value for the icon to 
 
 Additionally, they could set the default value for the icon to be open to display attachments automatically on integration screen results pages to improve the resource selection process for those who add resources to LMS courses, but leave it as closed on the searches within native EQUELLA.
 
-The new Show attachments icon default value options are configured from the Collection Definition Editors Display tab, on the Search Results Template sub-tab. 
+The new Show attachments icon default value options are configured from the Collection Definition Editors Display tab, on the Search Results Template sub-tab.
 
 ### Sort by creation date
-Date created has now been added as a value in the Sort drop-down for all results pages. When selected, resources display based on the date they were created. 
+Date created has now been added as a value in the Sort drop-down for all results pages. When selected, resources display based on the date they were created.
 
 ## Term Selector
 In EQUELLA 6.4, a user no longer needs to click the Select button after selecting a taxonomy result from the Auto-complete edit box drop-down list of a Term selector control. The selected result will be added to the table immediately.
@@ -328,7 +328,7 @@ A user selects the required term from the taxonomy results list.
 ## View attachment privilege
 In EQUELLA 6.4, the new VIEW_ATTACHMENTS privilege allows administrators to restrict users that are provided a link to an attachment stored in EQUELLA to access only that attachment, and not the item metadata or list of attachments for that item.
 
-For example, an administrator may wish to prevent students from being able to manipulate an attachment URL provided to them in an LMS course to gain access to the attachment’s associated Resource summary page. To achieve this, the administrator would revoke (or not grant) VIEW_ITEM and DISCOVER_ITEM for the relevant users, groups or roles, but grant VIEW_ATTACHMENTS. If access to the Resource summary page is attempted, an Access denied message displays and the user is prevented from viewing the page. 
+For example, an administrator may wish to prevent students from being able to manipulate an attachment URL provided to them in an LMS course to gain access to the attachment’s associated Resource summary page. To achieve this, the administrator would revoke (or not grant) VIEW_ITEM and DISCOVER_ITEM for the relevant users, groups or roles, but grant VIEW_ATTACHMENTS. If access to the Resource summary page is attempted, an Access denied message displays and the user is prevented from viewing the page.
 
 ## Z39.50 configuration enhancements
 The Z39.50 Remote Repository type has been updated to allow administrators to configure desired advanced search fields.
@@ -348,4 +348,4 @@ Additional search fields and their attributes can be added to the table then use
 
 A user can add a custom field by typing in the field Name and associated Attributes, then clicking Add. For information regarding Z39.50 attributes, see http://www.loc.gov/z3950/agency/defns/bib1.html.
 
-The new search field is then added to the table, and appears as a search field on the Z39.50 search option from the Search page. 
+The new search field is then added to the table, and appears as a search field on the Z39.50 search option from the Search page.

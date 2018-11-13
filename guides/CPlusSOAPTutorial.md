@@ -11,7 +11,7 @@ Table of Contents
 ## Running the examples
 Visual Studio Express 2013 for Web is a free IDE for developing C# web applications and is available at <http://www.visualstudio.com/downloads/download-visual-studio-vs#d-express-web>
 
-Setup a new Web Site project in Visual Studio Express 2013 for Web and point to the samples\dotnet folder as the root of the web site.  To run the example files, edit Settings.Config with an openEQUELLA username and password, and edit Web.Config at the path system.serviceModel/client/endpoint/@address (towards the bottom of the file) with the openEQUELLA SOAP endpoint. The SOAP endpoint is of the format: 
+Setup a new Web Site project in Visual Studio Express 2013 for Web and point to the samples\dotnet folder as the root of the web site.  To run the example files, edit Settings.Config with an openEQUELLA username and password, and edit Web.Config at the path system.serviceModel/client/endpoint/@address (towards the bottom of the file) with the openEQUELLA SOAP endpoint. The SOAP endpoint is of the format:
 
 <http://INSTITUTION_URL/services/SoapService51>
 
@@ -44,13 +44,13 @@ In general the process for invoking a SOAP method is as follows:
 1.  Create a SoapService51 object.
 2.  Call the login method:
 
-```
+```cs
 client.login(username, password);
 ```
 The user that you login as must have sufficient privileges to perform your required task.  You cannot do anything over SOAP that you cannot do within the openEQUELLA web UI.
 
 3.  Invoke a method:
-```
+```cs
 collectionsXml = client.getContributableCollections();
 ```
 *NOTE: All SOAP methods will return either a simple string, number or an XML string.*

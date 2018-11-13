@@ -30,8 +30,8 @@ Major Minor Version ->  Release Build
 * 6.4-QA4 -> 6.4.r1675
 
 
-Freemarker version can be found via the FTL script: 
-```
+Freemarker version can be found via the FTL script:
+```html
 <div>FTL Version is [${.version}]</div>
 ```
 

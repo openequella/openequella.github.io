@@ -47,8 +47,8 @@ There are no restrictions to the number of collections or metadata schemas assoc
 Workflow templates are created in the openEQUELLA Administration Console using the Workflow Template Editor. The editor simplifies the creation of templates by modelling the workflow as a series of flow chart nodes. The flow and branches of the template can be previewed as a flow chart diagram to allow a complete view of the workflow.
 
 #### To access the Workflow Template Editor
-1. Log in to openEQUELLA as an administrator, select Settings then Administration console.The Administration console displays. 
-2. Select Workflow Templates. 
+1. Log in to openEQUELLA as an administrator, select Settings then Administration console.The Administration console displays.
+2. Select Workflow Templates.
 
 ### Administration console elements
 When a workflow template has been selected the Add, Edit, Remove, Clone, Import and Export buttons are enabled. (Providing the correct privileges have been granted.)
@@ -83,7 +83,7 @@ The Workflow Steps page elements are:
 Workflow templates are constructed using steps to build a hierarchical workflow tree. This structure provides flexibility and simplicity and allows the construction of simple or complex workflows.
 
 ### Workflow steps
-The building blocks for a workflow template are workflow steps. Steps provide various structures and control mechanisms to implement a workflow. 
+The building blocks for a workflow template are workflow steps. Steps provide various structures and control mechanisms to implement a workflow.
 
 Each workflow step type provides specific functionality:
 * Decision Point—allows a workflow to be branched. Decision points require a predicate script for differentiating between the branches. A decision point can have the following child nodes: decision points, parallel steps, sequential steps or workflow tasks.
@@ -117,7 +117,7 @@ All workflows are created one step at a time by adding child nodes to the select
 Configuration of particular step types is provided in the Workflow step types section,
 
 ### Workflow template display
-To assist understanding of how the tree structure maps to a flow chart, the workflow template can be previewed using the Workflow Visualiser. The workflow visualiser is accessed by clicking the button. 
+To assist understanding of how the tree structure maps to a flow chart, the workflow template can be previewed using the Workflow Visualiser. The workflow visualiser is accessed by clicking the button.
 
 Many of the attributes of the workflow tree are directly analogous to flow chart elements such as decision points. The parallel steps type cannot be easily depicted in a flow chart as they allow branching for performing concurrent workflow steps rather than unconditional branching. Concurrency has no flow chart representation so currently the parallel step is depicted as a branched flow without showing the dependency on completion of all branches.
 
@@ -142,7 +142,7 @@ The Access Control tab is used to control user access to the workflow template. 
 ### Decision points
 Decision points allow a workflow to be branched. They require a predicate script to decide which of the branches to move to next.
 
-When Decision Point is selected from the Select a step type... dialog, or when an existing Decision Point node is edited, the Decision Point Editor displays. 
+When Decision Point is selected from the Select a step type... dialog, or when an existing Decision Point node is edited, the Decision Point Editor displays.
 
 The Decision Point Editor comprises the following:
 * Name—the name that will be displayed in the Workflow Template Editor and in the workflow diagrams.
@@ -154,14 +154,14 @@ The Decision Point Editor comprises the following:
 
 #### To add a predicate script
 1. Click Open Script Editor.
-2. Enter the required script. 
+2. Enter the required script.
 3. Click OK to save the decision point script.
 4. Click Save to save the decision point.
 
 ### Sequential steps
 Sequential steps allow workflow template steps to be linked together so each step must be completed in sequence.
 
-When Sequential Steps is selected from the Select a step type... dialog, or when an existing Sequential Steps node is edited, the Sequential Steps—Workflow Step Editor displays. 
+When Sequential Steps is selected from the Select a step type... dialog, or when an existing Sequential Steps node is edited, the Sequential Steps—Workflow Step Editor displays.
 
 The Workflow Step Editor comprises the following fields:
 * Name—enter the name that is to be displayed in the Workflow Template Editor and in the workflow diagrams.
@@ -172,7 +172,7 @@ The Workflow Step Editor comprises the following fields:
 ### Parallel steps
 Parallel steps enable the creation of workflows with multiple branches by allowing multiple child nodes. Workflow branches created by parallel steps are entered without any conditional test (to distinguish these nodes from a decision node), all steps can be performed concurrently and all branches must be completed for the workflow to proceed to the next workflow step.
 
-When Parallel Steps is selected from the Select a step type... dialog, or when an existing Parallel Steps node is edited, the Parallel Steps—Workflow Step Editor is displayed. 
+When Parallel Steps is selected from the Select a step type... dialog, or when an existing Parallel Steps node is edited, the Parallel Steps—Workflow Step Editor is displayed.
 
 The Parallel Steps—Workflow Step Editor comprises the following fields:
 * Name—enter the name that is to be displayed in the Workflow Template Editor and in the workflow diagrams.
@@ -183,7 +183,7 @@ The Parallel Steps—Workflow Step Editor comprises the following fields:
 ### Workflow tasks
 Workflow tasks are where the moderation work is actually performed. Task details and configuration options as well as moderator selection can be set for workflow tasks.
 
-When Workflow Task is selected from the Select a step type... dialog, or when an existing Workflow Task node is edited, the Workflow Task—Workflow Step Editor is displayed. 
+When Workflow Task is selected from the Select a step type... dialog, or when an existing Workflow Task node is edited, the Workflow Task—Workflow Step Editor is displayed.
 
 The Workflow Task—Workflow Task Editor comprises the following tabbed pages:
 
@@ -201,11 +201,11 @@ The Details page configures the workflow task attributes:
 * Close—closes the workflow task editor.
 
 ### Moderators tab
-The Moderators tab enables the configuration of users, groups and roles to be allocated as moderators for the selected workflow task. 
+The Moderators tab enables the configuration of users, groups and roles to be allocated as moderators for the selected workflow task.
 
 The Moderators tab page comprises the following:
 * Search tab—enables discovery and selection of Users, Groups and Roles to perform this workflow task by directly searching for entities and selecting from the returned results.
-* Browse tab—enables discovery and selection of users by groups then the users within those groups, typically reducing the number of results returned on systems with large user bases. 
+* Browse tab—enables discovery and selection of users by groups then the users within those groups, typically reducing the number of results returned on systems with large user bases.
 
 To select users, groups or roles as moderators for the task, use the following buttons:
   * Right Arrow —adds selected users, groups or roles to the list of selected moderators.
@@ -234,7 +234,7 @@ The business process for the workflow is as follows:
   * The PDF is to be checked. (This task is to be allocated to the administrator or the documenter.)
 * Resource becomes available to users.
 
-The example ‘Documentation Workflow’ workflow has an associated ‘Document Workflow Collection’ collection with a User Selector wizard control integrated with a ‘Documentation’ metadata schema that has additional workflow nodes for workflow scripting. 
+The example ‘Documentation Workflow’ workflow has an associated ‘Document Workflow Collection’ collection with a User Selector wizard control integrated with a ‘Documentation’ metadata schema that has additional workflow nodes for workflow scripting.
 
 The moderators used in this example belong to the ‘INT – Documentation Administrators’ group and are:
 * Internal EQUELLA Documentation User [int.documentation]
@@ -248,16 +248,16 @@ The moderators used in this example belong to the ‘INT – Documentation Admin
 2. Click Add to display the Workflow Template Editor.
 3. Enter a Workflow name (e.g. Documentation workflow).
 4. Select the Start parent node.
-5. 
+5.
 The first workflow step (Documentation Workflow required?) requires a decision to determine whether a resource can skip the node, and has a predicate script attached.
 
 #### To add a child decision point
 1. Click Add to display the Select a step type...dialog.
-2. Select Decision Point and click OK to display the Decision Point Editor. 
+2. Select Decision Point and click OK to display the Decision Point Editor.
 3. In the name field, enter ‘Documentation Workflow required?’.
 4. Click Open Script Editor to display the Script Editor.
 5. Select the associated ’Documentation’ from the Select Collection drop-down list.
-6. Enter the script. 
+6. Enter the script.
 7. Click OK to close the Script Editor.
 8. Click Save to close the Decision Point Editor.
 
@@ -267,7 +267,7 @@ The ‘Review decisions’ workflow node is a task that is to be completed by th
 
 #### To add a child workflow step
 1. Select the parent ‘Documentation Workflow required?’ node and click to display the Select a step type... dialog.
-2. Select Workflow Task. The Workflow Task Editor displays. 
+2. Select Workflow Task. The Workflow Task Editor displays.
 3. In the Task Name field, enter ‘Review decisions’.
 4. In the Description field, enter explanatory information.
 5. Leave the Priority field at the default of ‘NORMAL’.
@@ -278,7 +278,7 @@ The ‘Review decisions’ workflow node is a task that is to be completed by th
 1. Select the Moderators tab.
 2. With the Users option selected, click Search. A list of all users displays. Alternatively, type the first letter or letters of the search item and click Search.
 3. Select the ‘Document Administrator [int.docsadmin]’ user to moderate this step.
-4. Move it to the list of selected moderators (right-hand) pane using the button. 
+4. Move it to the list of selected moderators (right-hand) pane using the button.
 5. Check the Allow moderators to edit the metadata of resources for this task checkbox.
 6. Click Save to close the Workflow Task Editor.
 
@@ -288,7 +288,7 @@ The ‘Content Review required?’ workflow node requires a decision to determin
 
 #### To add a sibling decision point
 1. Select the ‘Documentation Workflow required?’ node and add a ‘Content Review required?’ Decision Point.
-2. Add the associated script (e.g. if /workflow/contentReviewRequired = ‘Yes’). 
+2. Add the associated script (e.g. if /workflow/contentReviewRequired = ‘Yes’).
 3. Click OK to close the Script Editor.
 4. Click Save to close the Decision Point Editor.
 

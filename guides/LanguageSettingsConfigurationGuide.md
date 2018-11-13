@@ -26,9 +26,9 @@ Configuring language settings can be broken into the following steps:
 1. Create a language pack using a Text Editor:
 
   a. Download and unzip the language pack file from the openEQUELLA Service Desk.
-  
+
   b. Create new text files that contain customised strings for the display controls.
-  
+
   c. Zip the text files together.
 
 2. Upload the new language pack using the Languages option from the openEQUELLA Settings page.
@@ -104,12 +104,12 @@ The display languages used within the openEQUELLA Digital Repository are importe
 
 #### To access the Languages administration function
 1. Open a browser and enter your openEQUELLA URL (e.g.‘http://equella.myequellainstitution.edu’).
-2. Log in to openEQUELLA as an administrator then select Settings from the navigation menu. The Settings page displays. 
-3. Select Languages to open the Languages page. 
+2. Log in to openEQUELLA as an administrator then select Settings from the navigation menu. The Settings page displays.
+3. Select Languages to open the Languages page.
 
 #### To import a language pack zip file
 1. In the Language Packs section, click the Browse button and select the required language pack zip file (e.g. spanish-language.zip).
-2. Click the Import language pack link. The language pack is imported, and the new language listed in the Language packs table, with Export and Delete links. The imported language pack is displayed in the Language Packs pane. 
+2. Click the Import language pack link. The language pack is imported, and the new language listed in the Language packs table, with Export and Delete links. The imported language pack is displayed in the Language Packs pane.
 
 Language packs can also be exported or removed by using the corresponding buttons.
 
@@ -145,8 +145,8 @@ The corresponding contribution language (e.g. Spanish (Spain)) is displayed in t
 The default display language setting is that of the browser where the openEQUELLA instance is being viewed. Languages imported as language packs can be selected in the openEQUELLA Digital Repository as the preferred display language. Selecting a preferred display language will override the browser locale setting.
 
 #### To select the preferred display language
-1. Log in to the openEQUELLA Digital Repository to display the Dashboard page. 
-2. Select the PROFILE link in the top right corner to display the Edit User page. 
+1. Log in to the openEQUELLA Digital Repository to display the Dashboard page.
+2. Select the PROFILE link in the top right corner to display the Edit User page.
 3. In the Preferred display language, select the preferred display language from the drop-down list (e.g. Spanish (Spain)). The preferred display languages list only contains languages imported as language packs.
 
 #### To save the configuration details
@@ -155,13 +155,13 @@ The default display language setting is that of the browser where the openEQUELL
 The user may need to re-login for all changes to display.
 
 ## Contribution language examples
-When more than one contribution language has been configured, a language button appears in the Schema Editor, Collection Definition Editor, Advanced Search Editor, Workflow Template Editor, Report Editor, Remote Repository Editor, Course Editor, Taxonomy Editor, Dynamic Collection Editor, Hierarchy Editor and Harvester Profiles Editor dialogs in the Administration Console. This allows the user to customise any content that is added or contributed to the openEQUELLA system. 
+When more than one contribution language has been configured, a language button appears in the Schema Editor, Collection Definition Editor, Advanced Search Editor, Workflow Template Editor, Report Editor, Remote Repository Editor, Course Editor, Taxonomy Editor, Dynamic Collection Editor, Hierarchy Editor and Harvester Profiles Editor dialogs in the Administration Console. This allows the user to customise any content that is added or contributed to the openEQUELLA system.
 
 ### Customise a collection example
 #### To customise the collection name
 1. Select Collection Definitions from the Administration Console, then click to create a new collection, or to edit an existing collection. The Collection Definition Editor is displayed.
 2. Select the language button (e.g. English) to display the language options that have been configured.
-3. Enter the required text. 
+3. Enter the required text.
 4. Click the Close link to close the dialog.
 
 #### To save the configuration details
@@ -172,6 +172,6 @@ When more than one contribution language has been configured, a language button 
 openEQUELLA provides a Multi-Language Edit Box wizard control that allows users to input multiple language strings and display the string relevant to the language the user has selected.
 
 #### For a Multi-Language Edit Box control in a Contribution Wizard
-1. Select the language button (e.g. Spanish) to display a dialog showing the configured contribution language options (e.g. Chinese and Spanish). 
+1. Select the language button (e.g. Spanish) to display a dialog showing the configured contribution language options (e.g. Chinese and Spanish).
 2. Enter information in any of the configured contribution languages.
 3. Click the button provided to select the preferred language.

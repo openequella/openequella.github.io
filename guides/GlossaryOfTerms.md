@@ -10,7 +10,7 @@ An alphabetical list of frequently used terms within openEQUELLA.
 
 **Activation** - Used to describe enabling copyright compliance recording. Once activated the associated copyright content can be viewed and used.
 
-**Active cache** - Regularly updated, localised copy of the openEQUELLA Digital Repository for users who either have slower connection speeds or are geographically separated from the repository. 
+**Active cache** - Regularly updated, localised copy of the openEQUELLA Digital Repository for users who either have slower connection speeds or are geographically separated from the repository.
 
 **Activity Assembler** - openEQUELLA application that allows users to create, customise, assemble and reuse a variety of different learning objects and documents into learning sequences or training modules (Activities or Activity Plans), using resources from the Digital Repository, the local computer or network, and the internet. (Note: The openEQUELLA Activity Assembler was deprecated in openEQUELLA v5.0.)
 
@@ -68,7 +68,7 @@ Method of navigation through levels of a page, allowing users to keep track of t
 
 **CAS plug-in** - Administration Console User Management plug-in used to authenticate users with the Central Authentication Service.
 
-**Category** - 
+**Category** -
 Digital Repository grouping created for the storage of collections.
 
 **Checkbox** -  Used to select or enable an option. A checkmark in the checkbox graphic indicates that the option or item is selected.
@@ -83,7 +83,7 @@ Digital Repository grouping created for the storage of collections.
 
 **Clone** -  Item administration operation that creates a copy of an item.
 
-**CMS** - 
+**CMS** -
 Content Management System—third-party training software that can be integrated with openEQUELLA to deliver online content (e.g. Blackboard™, Moodle™). Also called Learning Management System (LMS) or Virtual Learning Environment (VLE).
 
 **Collaborators** - Selected users who have permission to edit or update an item, collection or other resource.
@@ -94,17 +94,17 @@ Content Management System—third-party training software that can be integrated
 
 **Command button** - On-screen appearance is typically a rectangular shape with the name of the command displayed within the button. The user clicks the button to initiate an action.
 
-**Confirmation template** - 
+**Confirmation template** -
 Controls how data is displayed in the contribution wizard Review page when an item is submitted.
 
-**Container** - 
+**Container** -
 Location in the repository for the storage of items.
 
 **Content package** - A file comprising resources and related metadata.
 
 **Contribute** - To add an item to the openEQUELLA Digital Repository, via a contribution wizard. The contributor must enter information (metadata) describing the item during contribution.
 
-**Contribution wizard** - 
+**Contribution wizard** -
 Sequence of pages used to gather information (metadata) about, and manage the rights associated with, contributed items.
 
 **Contributor** -  User who adds (contributes) an item to the openEQUELLA Digital Repository.
@@ -142,7 +142,7 @@ Workflow step type that allows a workflow to be branched. Decision points requir
 
 **Digital repository** - Flexible digital library capable of storing a variety of custom item types and associated document formats.
 
-**Draft** - 
+**Draft** -
 Item status for items that are under construction and have not yet been published or submitted for moderation.
 
 **Drag and Drop** - To select an item, file or folder and copy it by moving it to another pane using the mouse.
@@ -157,7 +157,7 @@ Item status for items that are under construction and have not yet been publishe
 
 **Edit** - Item administration operation that displays the contribution wizard for the item, allowing the user to modify item metadata or files. Any changes made are saved to the current version. This operation is typically available for items in a draft state.
 
-**Edit box** - 
+**Edit box** -
 Contribution and power search wizard control that allows the entry of basic text such as names, descriptions and keywords. Also used to provide a space for users to enter comments or other details such as email addresses.
 
 **Edna™** - Education Network Australia—organisation working towards developing a common standard for the finding, sharing and management of information.
@@ -402,7 +402,7 @@ Contribution and power search wizard control that allows the entry of basic text
 
 **Rejected** - Item status for items that have been rejected from a workflow. These items must be redrafted and resubmitted for moderation to re-enter the workflow.
 
-**Reject Point** - 
+**Reject Point** -
 Workflow node where an item is able to re-enter the workflow after it has been modified following rejection.
 
 **Remote Caching plug-in** - Administration Console System Settings plug-in that allows a cache server to download repository items from the central server during low usage times so local users can have improved responsiveness when using and viewing the cached items. Also referred to as Active Cache.
@@ -445,7 +445,7 @@ Workflow node where an item is able to re-enter the workflow after it has been m
 
 **Security Manager** - Administration Console tool that manages privileges and groups for users allowing fine grained control of user privileges for all areas of openEQUELLA. Any permissions set on any access control or ACL page can be modified here.
 
-**Selection Session** - 
+**Selection Session** -
 Dialog that provides an overview of resources available for selection during item contribution, displayed when using the Resource Selector contribution wizard control, or when using one of the resource selector tool tips in the HTML editor. Also a prominent feature of integrated openEQUELLA installations.
 
 **Sequential steps** - Workflow step type that allows a sequence of workflow steps to be chained together for sequential completion.
@@ -482,10 +482,10 @@ Dialog that provides an overview of resources available for selection during ite
 
 **Static Metadata** - Contribution wizard control used to store metadata that is fixed for all items of a collection.
 
-**Status pane** - 
+**Status pane** -
 Text box that displays information about a selected object. Metadata may be entered or displayed through a status pane.
 
-**Studywiz™** - 
+**Studywiz™** -
 Third-party system that can be integrated with openEQUELLA to deliver online content. Often referred to as an LMS, CMS or VLE.
 
 **Submit** - See Publish.
@@ -550,7 +550,7 @@ Third-party system that can be integrated with openEQUELLA to deliver online con
 
 **WebDAV File Management** - File management protocol available with the Load Attachments contribution wizard control.
 
-**Web Pages Selector** - 
+**Web Pages Selector** -
 Contribution wizard control that allows users to author, edit or import web pages.
 
 **Wildcard search** - Single character wildcard search looks for terms that match words with a single character replaced with the ‘?’ symbol. Multiple character wildcard search looks for 0 or more characters replaced with the ‘*’ symbol.
@@ -573,11 +573,11 @@ Contribution wizard control that allows users to author, edit or import web page
 
 **XML** - Extensible Markup Language—general-purpose markup language for storing data.
 
-**XSLT** - 
+**XSLT** -
 Extensible Stylesheet Transformations—commonly used to change the presentation of XML data. In openEQUELLA they can be used to present information returned in reports, transformations, citations, display and confirmation templates.
 
-**YouTube™ Search** - 
+**YouTube™ Search** -
 Contribution wizard control that allows users to search for YouTube™ content to be added to a contributed item.
 
-**Z39.50** - 
+**Z39.50** -
 Protocol for searching and retrieving information from remote library database systems.

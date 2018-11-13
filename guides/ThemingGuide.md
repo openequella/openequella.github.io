@@ -4,7 +4,7 @@
 ## Theming overview
 openEQUELLA makes it easy to create and upload custom themes allowing you to tailor the look and feel of your site.
 
-The purpose of this guide is to demonstrate to users how to identify web page elements and alter them to create a customised openEQUELLA. 
+The purpose of this guide is to demonstrate to users how to identify web page elements and alter them to create a customised openEQUELLA.
 
 ## Permanent changes to CSS
 
@@ -36,17 +36,17 @@ With the files and folders in place, your theme now needs to be archived.
 
 ### How to archive your theme
 1. With a compression utility installed, such as Winrar or 7-Zip, the workload required to archive your theme will be greatly reduced. While it is possible to achieve the same results using default Windows programs, these utilities are freely available on the internet and they make the process easier.
-2. You will presumably have the previously mentioned theme folders in a location similar to ‘C:\My Documents\EQUELLA\themes\green\’. 
+2. You will presumably have the previously mentioned theme folders in a location similar to ‘C:\My Documents\EQUELLA\themes\green\’.
 3. Select the contents of this folder, and right-click on the selection.
-4. With either of these compression utilities installed, specific contexts exist within the right-click menu to create archives. 
+4. With either of these compression utilities installed, specific contexts exist within the right-click menu to create archives.
 
 ### Create a Winrar archive
-1. Select the Winrar option to Add to archive.... 
+1. Select the Winrar option to Add to archive....
 2. On the resulting page, give the archive a name and use the ZIP archive format.
 3. Click OK to save the archive. You now have a completed theme archive.
 
 ### Create a 7-Zip archive
-1. Expand the 7-Zip menu, and select Add to archive.... 
+1. Expand the 7-Zip menu, and select Add to archive....
 2. On the resulting page, give the archive a name and assign it the Archive format: zip.
 3. Click OK to save the archive. You now have a completed theme archive.
 
@@ -56,7 +56,7 @@ With the files and folders in place, your theme now needs to be archived.
 ### How to import a theme
 1. Login to openEQUELLA.
 2. Select Settings from the left-hand navigation menu, then select Themes from the list of options.
-3. If there is already a theme loaded, click Remove custom theme. 
+3. If there is already a theme loaded, click Remove custom theme.
 4. If there is no theme loaded, click Browse.
 5. Browse to your theme archive and select it.
 6. Once the filename is loaded in the file uploader, click Upload.
@@ -64,9 +64,9 @@ With the files and folders in place, your theme now needs to be archived.
 
 ## Theme creation examples
 ### Changing the header image
-1. Navigate to openEQUELLA in your browser of choice. 
+1. Navigate to openEQUELLA in your browser of choice.
 2. Right-click on the header image and select Inspect Element.
-3. This opens the Elements view, where the element you clicked on is selected and the applicable styles displayed in the right-hand pane. If the 
+3. This opens the Elements view, where the element you clicked on is selected and the applicable styles displayed in the right-hand pane. If the
 ```
 <div id=’header’>
 ```
@@ -92,7 +92,7 @@ NOTE: When recreating the folder structure in the theme archive, it is important
 2. By hovering the mouse cursor over the different divs in Firebug, you can see which div applies to which area. The div with the id=”body” covers the area between the header and the footer that you are interested in. This controls the predominantly blue background that you wish to alter.
 
 3. Follow the subsequent steps, as illustrated, to turn off the background setting in this div and view the result.
-a. Click on the HTML element 
+a. Click on the HTML element
 ```
 <div id=”body”>
 ```
@@ -102,11 +102,11 @@ c. Notice the area no longer covered by the defined image. Any changes to the ba
 
 4. The next nested div is that with id=”body-wrap1”. This handles the lower section of the body background.
 
-5. Turn the background off as described in Step 3. 
+5. Turn the background off as described in Step 3.
 
 6. Expand the “body-wrap2” div in the Firebug browser. This handles the main section of the body background.
 
-7. Turn the background off as described in Step 3. 
+7. Turn the background off as described in Step 3.
 
 Now that you know that these elements control the body background, you can set about making changes.
 
@@ -128,8 +128,8 @@ E.g. #body { background: orange; }
 As the customer.css file is included after the other styles sheets, its rules will overwrite that of the other styles.
 
 3. Save the file within the ‘css’ folder.
-4. Create a theme file and import it as described in the Creating a theme section. 
-5. View the changes in the browser. 
+4. Create a theme file and import it as described in the Creating a theme section.
+5. View the changes in the browser.
 
 
 This approach creates a flat, single-colour background that might not appeal. To create a more interesting feel, custom images can be uploaded, or the existing ones can be modified to suit your preferred colour scheme.
@@ -152,7 +152,7 @@ The body-bg-top.gif and body-bg-bottom.gif are 1 pixel-wide images designed to r
 
 a. Inspect an element of an openEQUELLA page.
 
-b. In the subsequent window, click on Resources. 
+b. In the subsequent window, click on Resources.
 
 c. Locate the images in the left-hand menu.
 
@@ -162,9 +162,9 @@ d. Click through each one, right-clicking the image URL and saving as... as desc
 
 5. Save the images with the same names as the originals. This is crucial for the correct application of this theme.
 
-6. Arrange them in the correct directory structure. For example, where the body-bg.gif image has the following relative URL: 
-/p/r/29303/com.tle.web.sections.equella/images/body-bg.gif the directory 
-structure and filename in the archive must be: 
+6. Arrange them in the correct directory structure. For example, where the body-bg.gif image has the following relative URL:
+/p/r/29303/com.tle.web.sections.equella/images/body-bg.gif the directory
+structure and filename in the archive must be:
 /p/r/com.tle.web.sections.equella/images/body-bg.gif
 
 7. Create the theme archive and import it into openEQUELLA.
@@ -183,7 +183,7 @@ structure and filename in the archive must be:
 
 14. Import the file into openEQUELLA as per previous instructions, and view the results.
 
-To complete the full theme background transformation, there are four other images that will need editing. 
+To complete the full theme background transformation, there are four other images that will need editing.
 * topbar-bg.gif
 * header-bg.ltr.gif
 * footer-bg.gif
@@ -224,7 +224,6 @@ Continuing with our colour theme, the hover colour will need to be changed to ma
 * Select user (button.gif)
 4. Save the changes.
 5. Move the saved images into your theme archive. In the case of these three images, they should be placed in the /p/r/com.tle.web.sections.equella/images directory, with the background images.
-6. ‘Zip’ the archive and import the theme into openEQUELLA. 
+6. ‘Zip’ the archive and import the theme into openEQUELLA.
 
 The scope of the editable openEQUELLA environment is not limited to the examples and suggestions outlined in this document. Users are welcome to apply the concepts covered in this guide to identify and alter any and all page elements.
-

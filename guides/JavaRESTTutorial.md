@@ -14,7 +14,7 @@ This document covers an example Java REST client (hereafter "the client") which 
 
 To compile and execute the example code you will need to download a number of library jar files. See the readme.txt file in the samples/java/public_html/WEB-INF/lib directory for more information.
 
-If you wish to run the client you will need to build the Java war file before deploying to a web container. To do this you will need to have Apache Ant installed. 
+If you wish to run the client you will need to build the Java war file before deploying to a web container. To do this you will need to have Apache Ant installed.
 
 Once Ant is installed simply run the following on a command prompt:
 
@@ -34,7 +34,7 @@ The client relies directly on the following third-party libraries:
 * Freemarker (<http://freemarker.sourceforge.net/>) to render web pages
 
 ## Login
-The client uses OAuth "Authorization Code Grant" login mechanism (<http://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-4.1>). 
+The client uses OAuth "Authorization Code Grant" login mechanism (<http://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-4.1>).
 
 Each page is protected by the CheckLoginFilter which requires that a token has been obtained for the current user session. If there is no token the user is redirected to the LoginServlet.
 
@@ -47,7 +47,7 @@ The search page shows all of the fields that can be supplied to the REST API end
 
 #### Searching for a resource will perform the following steps in the client
 1.  SearchServlet retrieves all form data and passes them to the EquellaApiService.search method
-2.  The EquellaApiService.search method GETs the search API endpoint with the relevant query string parameters e.g. 
+2.  The EquellaApiService.search method GETs the search API endpoint with the relevant query string parameters e.g.
  ```
  GET [equella.url]/api/search?q=cats&start=0&length=10
 ```
@@ -61,9 +61,9 @@ Clicking on a search result will direct the user to the view page. The view page
 #### Viewing a resource will perform the following steps in the client
 
 1.  ViewResourceServlet does some simple query string parameter validation and passes the parameters to the EquellaApiService.getResource method.
-2.  The EquellaApiService.getResource method retrieves a resource from the openEQUELLA server using the /api/item endpoint i.e. 
+2.  The EquellaApiService.getResource method retrieves a resource from the openEQUELLA server using the /api/item endpoint i.e.
 ```
-GET [equella.url]/api/item/[uuid]/[version]?info=all 
+GET [equella.url]/api/item/[uuid]/[version]?info=all
 ```
 3.  The EquellaApiService.getResource method asks the JSON parser to turn the JSON response into a JSON ObjectNode for easy processing.  This node is returned to ViewResourceServlet.
 4.  ViewResourceServlet takes the JSON object and populates the display model object.
@@ -79,17 +79,17 @@ To /edit page allows the user to contribute new resources to openEQUELLA and att
 3.  The saveResource method invokes the uploadFiles method which:
 
     a.  Creates a temporary file area by POSTing to the openEQUELLA REST API endpoint /api/file
-    
+
     b.  Retrieve the upload location for this new file area
-    
+
     c.  Upload each file by PUT-ting to the file content URL.  i.e.
     ```
     PUT [equella.url]/api/file/[file_area_uuid]/content/[filename]  
     ```
     Note that this is a PUT for content creation, not POST, since the location is user defined (via the filename).
-    
+
     For each file that is uploaded an attachment node is added to the resource JSON within the uploadFiles method.
-4.  The saveResource method POSTs to the /api/item endpoint (since the resource UUID is blank), including the file area UUID as a parameter if any files were uploaded.  i.e. 
+4.  The saveResource method POSTs to the /api/item endpoint (since the resource UUID is blank), including the file area UUID as a parameter if any files were uploaded.  i.e.
 ```
 POST [equella.url]/api/item?file=[file_area_uuid]
 ```

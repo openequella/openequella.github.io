@@ -21,13 +21,13 @@ Additional details about using openEQUELLA with an LMS Integration can be found 
 ## Moodle homepage
 
 Login to Moodle
-1. Log in to Moodle to display the Moodle homepage. 
+1. Log in to Moodle to display the Moodle homepage.
 
 ## openEQUELLA Blocks
 
 Administrators can set up three types of blocks in Moodle, the openEQUELLA Search block, openEQUELLA Tasks block and openEQUELLA Links block, to take information from openEQUELLA and display it in a convenient portlet on the Moodle Course pages.
 
-For information on how to add openEQUELLA blocks to Moodle, please refer to the openEQUELLA Moodle 
+For information on how to add openEQUELLA blocks to Moodle, please refer to the openEQUELLA Moodle
 Configuration Guide.
 
 ### openEQUELLA Search block
@@ -35,13 +35,13 @@ This block offers users a quick way of searching the openEQUELLA repository to v
 
 To use the openEQUELLA Search block
 
-1. Click the Search openEQUELLA link inside the openEQUELLA Search Block. 
-2. An openEQUELLA Search page displays inside Moodle with a Search for text box and a Search button. 
+1. Click the Search openEQUELLA link inside the openEQUELLA Search Block.
+2. An openEQUELLA Search page displays inside Moodle with a Search for text box and a Search button.
 3. Enter a search query in the Search for box and click Search or press Enter.
 4. Matching search results returned from the openEQUELLA repository display. Relevant resource attachments matching the search query are also returned.
 5. Click the View link beside the resource you wish to view.
 
-The result will load as if being accessed directly. ‘Overview.pdf’ resource being displayed. 
+The result will load as if being accessed directly. ‘Overview.pdf’ resource being displayed.
 
 ### openEQUELLA Tasks
 This block displays information relating to a user’s moderation tasks or notifications. It is typically used by contributor and moderator users to note any resources requiring their attention.
@@ -54,24 +54,24 @@ Each task will match a certain task filter, and a link to the filtered task list
 
 To use the openEQUELLA Tasks block
 
-1. Click the name of the task filter you wish to view. 
-2. The openEQUELLA My Tasks page displays in native openEQUELLA, with the appropriate filtering applied. 
+1. Click the name of the task filter you wish to view.
+2. The openEQUELLA My Tasks page displays in native openEQUELLA, with the appropriate filtering applied.
 
 ### openEQUELLA Links
 
-The openEQUELLA Links block is configured by administration, and enables links to specific native openEQUELLA pages to be accessed. An example is a link to the Contribution page in openEQUELLA. An administrator can configure a link by providing a name (e.g. Contribute openEQUELLA resource) and the relevant openEQUELLA URL. 
+The openEQUELLA Links block is configured by administration, and enables links to specific native openEQUELLA pages to be accessed. An example is a link to the Contribution page in openEQUELLA. An administrator can configure a link by providing a name (e.g. Contribute openEQUELLA resource) and the relevant openEQUELLA URL.
 
-Clicking on the link will take the user to the specified URL page. 
+Clicking on the link will take the user to the specified URL page.
 
-Clicking the link takes the user to the relevant openEQUELLA page. 
+Clicking the link takes the user to the relevant openEQUELLA page.
 
 ## Accessing the openEQUELLA repository
 
 Resources stored in the openEQUELLA repository can be added to any user-editable Moodle course.
-1. Select an appropriate course (e.g. Science - Physiology) from the My courses pane to display the Weekly outline page. 
+1. Select an appropriate course (e.g. Science - Physiology) from the My courses pane to display the Weekly outline page.
 
 To activate editing features
-1. Select Turn editing on by clicking the button in the top right-hand corner of the page to display editing features. 
+1. Select Turn editing on by clicking the button in the top right-hand corner of the page to display editing features.
 
 ## Accessing the openEQUELLA Integration page
 
@@ -99,7 +99,7 @@ To view a resource
 
 To edit the details of an openEQUELLA resource
 
-1. Select Edit settings from the Edit menu beside the resource to display the Updating: openEQUELLA Resource page. 
+1. Select Edit settings from the Edit menu beside the resource to display the Updating: openEQUELLA Resource page.
 2.  This page includes the following options for editing openEQUELLA items in the General pane:
 * Name—edit the name of the resource in the Name field. (NOTE: This field cannot be left blank; the asterisk * indicates it is a mandatory field.)
 • Description—a brief description of the item can be entered or edited using the basic HTML editor provided.
@@ -115,7 +115,7 @@ When editing is complete, either:
 When a QTI quiz link has been added to a course and that link has been selected, the quiz begins to play.
 
 To play a QTI quiz
-1. Click the required quiz link from the course to launch the quiz start page. 
+1. Click the required quiz link from the course to launch the quiz start page.
 2. Click Start Test . The first question displays. The question titles display down the left hand side of the page, and a single question’s details show in the right-hand pane.
 Note the following points:
 * Once a question has been answered, a blue bar displays to the left of the question name in the left-hand question list.
@@ -131,7 +131,7 @@ NOTE: If a quiz is begun then aborted for any reason, when the same user reenter
 NOTE: Not all QTI quizzes are configured to display results or feedback once they are submitted.
 
 
-Each question can be selected to view question level feedback, if included as part of the package. 
+Each question can be selected to view question level feedback, if included as part of the package.
 
 To return to the results page, click View result.
 
@@ -143,22 +143,22 @@ To use the openEQUELLA repository tool
 (Note: The openEQUELLA repository tool works in conjunction with the Moodle HTML editor. These HTML editors exist in a number of places in Moodle, and this guide will refer to just one of those.)
 
 1. On the Moodle Course page, click the button to turn on editing.
-2. Select Edit settings from the Edit menu beside the required resource link. 
+2. Select Edit settings from the Edit menu beside the required resource link.
 
 The Updating openEQUELLA Resource page displays.
 
 3. In the Description field, an HTML editor enables the creation of interesting descriptions that are more than just text. Click either the Moodle Media button or the Insert/Edit Image button.
-4. In the Image properties dialog window that opens, click Browse Repositories. 
-5. In the File picker window, select the relevant openEQUELLA link (there may be more than one openEQUELLA instance integrated with Moodle). 
+4. In the Image properties dialog window that opens, click Browse Repositories.
+5. In the File picker window, select the relevant openEQUELLA link (there may be more than one openEQUELLA instance integrated with Moodle).
 6. The page loads with all the resources matching a blank search query. The following elements are included on the page:
 * Page links – Browse, Favourites, My resources and Search (default). Select Browse to browse hierarchy topics and subtopics, Favourites to list the current user’s favourite openEQUELLA resources or searches or My resources to view the resources the current user owns.
 * Select the Search link to return to the search page.
   * Search panel—Enter keywords and/or select a specific collection or advanced search from the Within drop-down.
-  * Sort and Filter drop-downs 
-7. Click the down arrow icon from the results page or the resource title to display the list of attachments in the resource. 
-8. Select an attachment. This displays a details page. 
-9. Change the details if appropriate then click Select this File. The Image properties dialog displays with a preview of the attachment. Add a description in the Describe this image for someone who cannot see it field or select the Description not necessary checkbox. 
-10. Click Save Image to return to the Updating openEQUELLA Resource page. The imported media displays in the HTML editor. 
+  * Sort and Filter drop-downs
+7. Click the down arrow icon from the results page or the resource title to display the list of attachments in the resource.
+8. Select an attachment. This displays a details page.
+9. Change the details if appropriate then click Select this File. The Image properties dialog displays with a preview of the attachment. Add a description in the Describe this image for someone who cannot see it field or select the Description not necessary checkbox.
+10. Click Save Image to return to the Updating openEQUELLA Resource page. The imported media displays in the HTML editor.
 11. Click Save and Return to Course. The imported media has now been saved to the resource description field.
 
 ### Drag and drop/Auto add to openEQUELLA
@@ -166,7 +166,7 @@ Files can be automatically contributed to openEQUELLA when dragging and dropping
 
 To drag and drop/auto add to openEQUELLA
 
-1. From a Moodle Course page, click the button to turn editing on if not already enabled. 
+1. From a Moodle Course page, click the button to turn editing on if not already enabled.
 2. Drag and drop the required file (e.g. Desert.jpg) onto the appropriate course week. A file destination dialog displays. The options are:
 * Contribute to openEQUELLA – contributes the file into the collection allocated for the Quick Contribute function in openEQUELLA, with the file name as the resource name and description.
 * Add image to course page – shows the full sized image on the course page instead of a link.

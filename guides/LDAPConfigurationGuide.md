@@ -35,10 +35,10 @@ As of openEQUELLA 5, the LDAP configuration tool has changed to become more intu
 LDAP connections are configured using the LDAP plug-in, found in the User Management section of the Administration Console.
 
 #### To access openEQUELLA and open the Administration Console
-1. Log in to openEQUELLA as an administrator, select Settings then Administration console. 
-2. The Administration console displays. Select User Management to display a list of the available User Management plug-ins. 
-3. Check the Enabled checkbox next to the LDAP option to enable the plug-in. (Similarly, when the plug-in is enabled, checking the checkbox will disable the plug-in.) 
-4. Highlight LDAP then click to display the User Management—LDAP configuration window. 
+1. Log in to openEQUELLA as an administrator, select Settings then Administration console.
+2. The Administration console displays. Select User Management to display a list of the available User Management plug-ins.
+3. Check the Enabled checkbox next to the LDAP option to enable the plug-in. (Similarly, when the plug-in is enabled, checking the checkbox will disable the plug-in.)
+4. Highlight LDAP then click to display the User Management—LDAP configuration window.
 
 ### General page
 The General page displays the configuration information for connection to the LDAP server.
@@ -69,11 +69,11 @@ Values can also be mapped manually if the LDAP server does not have a preset val
 3. Enter the LDAP server name for the Group Object Class. This value is used to match to LDAP group units. The default value is group.
 
 ### Manage DNs
-1. Click the Manage DNs button to open the Manage DNs dialog, where LDAP Distinguished Names (DNs) can be configured. 
+1. Click the Manage DNs button to open the Manage DNs dialog, where LDAP Distinguished Names (DNs) can be configured.
 
-2. To add DNs manually, type the value into the text box then click Add , or to get DNs from the LDAP server, click the Fetch DNs from the LDAP Server button. The field will populate, and a message will appear confirming the number of successfully discovered DNs. 
+2. To add DNs manually, type the value into the text box then click Add , or to get DNs from the LDAP server, click the Fetch DNs from the LDAP Server button. The field will populate, and a message will appear confirming the number of successfully discovered DNs.
 3. Click OK to close the Message. Listed DNs can be Removed and Updated by selecting the DN from the list, and clicking Add the appropriate button. Extra DNs can also be added at this time, by typing a value into the text box and clicking .
-4. Click OK to close the Manage DNs dialog and return to the LDAP configuration. 
+4. Click OK to close the Manage DNs dialog and return to the LDAP configuration.
 
 The LDAP fields are displayed as a tree in the left-hand pane. The mapped values are displayed in the right-hand pane.
 

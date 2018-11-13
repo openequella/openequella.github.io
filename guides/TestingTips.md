@@ -16,7 +16,7 @@ While not a recommendation for production use, the following are tips for sandbo
 
 ## Zookeeper
 
-* Zookeeper's default logging will log messages to zookeeper.out in the directory that zookeeper is started from. 
+* Zookeeper's default logging will log messages to zookeeper.out in the directory that zookeeper is started from.
 * After installing Zookeeper, start via:
 ```bash
 cd /usr/local/zookeeper-3.4.X
@@ -169,7 +169,7 @@ General
 * LDAPS URL: ```ldaps://<<LDAP IP>>:10636```
 * Version: 3
 * Admin Username : ```uid=admin,ou=system```
-* Password: 
+* Password:
 
 LDAP Mappings
 * Personal Object Class : person

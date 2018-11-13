@@ -3,7 +3,7 @@
 Table of Contents
 * [Metadata schema overview](#metadata-schema-overview)
 * [Metadata schemas](#metadata-schemas)
-* [Schema Editor](#schema-editor) 
+* [Schema Editor](#schema-editor)
 * [Associate a schema to a collection](#associaate-a-schema-to-a-collection)
 * [Close the Administration Console](#close-the-administration-console)
 * [Using metadata schemas](#using-metadata-schemas)
@@ -19,7 +19,7 @@ Please note that this guide has been developed to best reflect the full capabili
 
 ## Metadata schemas
 The most widely recognized metadata schema for learning objects is the internationally recognized IEEE 1484.12.1 Standard for Learning Object Metadata (LOM) standard available from:
-* <http://standards.ieee.org/findstds/standard/1484.12.1-2002-Cor_1-2011.html> 
+* <http://standards.ieee.org/findstds/standard/1484.12.1-2002-Cor_1-2011.html>
 A reference for the Aus-NZ interpretation (ANZ-LOM) that describes the use of each field and common controlled vocabularies is available from:
 * <http://www.ndlrn.edu.au/verve/_resources/ANZ-LOM_1_02_file.pdf#search=schema>
 
@@ -27,7 +27,7 @@ Other metadata schema standards are available from:
 * IMS (<http://www.imsglobal.org/>)
 * Dublin Core (<http://dublincore.org/about/>)
 
-A metadata schema comprises nodes that can contain further child nodes, metadata or attributes. 
+A metadata schema comprises nodes that can contain further child nodes, metadata or attributes.
 
 A item node comprises a group of nodes associated with the node (indicated by the ‘+’) including the copyright node that has type and parenttype attributes and a group of simple data nodes. The schema, when associated with a collection, controls all the metadata stored by items in the repository and affects the item’s lifecycle, usefulness, interoperability and discoverability.
 
@@ -38,7 +38,7 @@ Metadata schemas are the core of item management in openEQUELLA, providing stora
 * for workflow control (moderation)
 * for informational display to users
 
-openEQUELLA provides a LOM compliant schema called the Generic Schema with each openEQUELLA Vanilla Institution and it provides a starting point for creating custom metadata schemas that closely fit the institution’s purpose. 
+openEQUELLA provides a LOM compliant schema called the Generic Schema with each openEQUELLA Vanilla Institution and it provides a starting point for creating custom metadata schemas that closely fit the institution’s purpose.
 
 Before creating or modifying a schema gaining a clear understanding of the required business processes greatly simplifies schema creation.
 
@@ -47,12 +47,11 @@ The examples in this guide use the Generic Schema.
 ## Schema Editor
 Metadata schemas are modified or created in the openEQUELLA Administration Console.
 
-**To access openEQUELLA and open the Administration Console:
-**
+**To access openEQUELLA and open the Administration Console:**
 1. Open a browser and enter your openEQUELLA URL (e.g.‘<http://equella.myequellainstitution.edu>’).
 2. Log in to openEQUELLA as an administrator user to display the openEQUELLA dashboard.
-3. Click the Settings button to display the Settings page, then select Administration console from the categories list. 
-4. Select the Metadata Schemas option to display the Metadata Schemas pane that contains a list of all previously configured profiles. 
+3. Click the Settings button to display the Settings page, then select Administration console from the categories list.
+4. Select the Metadata Schemas option to display the Metadata Schemas pane that contains a list of all previously configured profiles.
 
 ### Administration Console elements
 When the Metadata Schemas tool has been selected the Add, Edit, Remove, Clone, Import and Export buttons are enabled. (Providing the correct privileges have been granted, refer to the openEQUELLA Security Guide for further information.)
@@ -153,7 +152,7 @@ The Down arrow moves the selected element node below its neighbouring sibling.
 
 Click +Child to add a sub-element node to the selected element in the schema. Children cannot be added to locked nodes unless a child node currently exists.
 
-**Add Sibling** 
+**Add Sibling**
 Click +Sibling to add a new element node at the same level as the selected element in the schema.
 
 **Add Attribute**
@@ -177,11 +176,11 @@ xml
   item
     name
       description
-      
+
 To enter schema elements
 1. Select the Editor tab in the Schema Editor.
 2. Select the xml node.
-3. Click +Child the button. A new node is added with the default label new_element. 
+3. Click +Child the button. A new node is added with the default label new_element.
 4. Enter a name (e.g. item) in the Name field to display the new name in the hierarchy pane.
 5. Select a Type (e.g. text) from the drop-down list.
 6. Select the newly created node (e.g. item).
@@ -203,17 +202,17 @@ Once the name and description nodes have been created, the Item Name Path and It
 2. Enter a Schema Name and Description.
 3. Click Browse next to the Item Description Path field to display the Choose a schema element? dialog showing the recently created schema.
 4. Select the appropriate schema element (e.g. name).
-5. Click OK to display the selected schema element in the Item Name Path. 
-6. Click Browse next to the Item Description Path field and select the description element from the Choose a schema element? dialog. 
+5. Click OK to display the selected schema element in the Item Name Path.
+6. Click Browse next to the Item Description Path field and select the description element from the Choose a schema element? dialog.
 
-When a node is being used by another control a warning dialog is displayed. 
+When a node is being used by another control a warning dialog is displayed.
 
 To save the schema
 1. Click Save to display a confirmation dialog.
 2. Click OK.
 
 ### Transformations tab
-The Schema Editor enables the conversion of metadata between schemas to enable import and export of metadata and items between repositories. Item metadata can be transformed to the relevant schema when it is imported to or exported from openEQUELLA using the Transformations tab. 
+The Schema Editor enables the conversion of metadata between schemas to enable import and export of metadata and items between repositories. Item metadata can be transformed to the relevant schema when it is imported to or exported from openEQUELLA using the Transformations tab.
 
 The Transformation tab comprises the Import Transformations and Export Transformations sections.
 
@@ -232,10 +231,10 @@ The Transformation tab comprises the Import Transformations and Export Transform
 • Remove —enabled when an import transformation schema is selected. Removes the selected schema from the transformation list.
 
 #### To configure Schema transformations
-1. Click beside the transformations pane (e.g. Export Transformations). A Schema Transformation dialog is displayed. 
+1. Click beside the transformations pane (e.g. Export Transformations). A Schema Transformation dialog is displayed.
 2. Select the required schema (e.g. OAI_DC) from the Schema Name drop-down list or enter the schema name.
 3. Click Browse to locate the required XSL Transformation.
-4. Click OK to add the XSLT. 
+4. Click OK to add the XSLT.
 5. Use the Add, Edit or Remove buttons as necessary to perform the associated actions.
 
 ### Citations tab
@@ -264,7 +263,7 @@ The three privileges for schemas are:
 
 These privileges are typically granted to Administrators.
 
-If delete or edit privileges are not specified on the Access Control tab of the Schema Editor, users and collaborators associated with this particular schema will inherit the privileges that are set at the Schemas level in the Administration Console Security Manager. 
+If delete or edit privileges are not specified on the Access Control tab of the Schema Editor, users and collaborators associated with this particular schema will inherit the privileges that are set at the Schemas level in the Administration Console Security Manager.
 
 To save the schema settings
 1. Click Save to save the configuration details.
@@ -273,7 +272,7 @@ To save the schema settings
 ## Associate a schema to a collection
 Each openEQUELLA collection requires a metadata schema. An instance of the schema metadata is associated with each item contributed to the collection and controls the item’s lifecycle and search ability.
 
-Any SCORM XSLT templates uploaded using the metadata schema’s Transformation tab are associated with the metadata schema.  The selected XSLT template transforms the current metadata into a SCORM compliant package. 
+Any SCORM XSLT templates uploaded using the metadata schema’s Transformation tab are associated with the metadata schema.  The selected XSLT template transforms the current metadata into a SCORM compliant package.
 
 To apply a schema to a collection definition
 1. Select Collection Definitions in the Administration Console.
@@ -282,7 +281,7 @@ To apply a schema to a collection definition
 
 
 To apply an export transformation to a collection
-1. Select the required export template (e.g. OAI_DC) from the Allow SCORM packaging drop-down list. 
+1. Select the required export template (e.g. OAI_DC) from the Allow SCORM packaging drop-down list.
 2. Save and close the editor.
 
 ## Close the Administration Console
@@ -290,51 +289,51 @@ To log out of the Administration Console
 1. Click the ! Exit Console button.
 
 ## Using metadata schemas
-Metadata schemas are associated with collections, workflows and advanced searches. Typically, metadata is added to an item in a collection at contribution and then used by the associated workflow and advanced search. Further information on using schemas is provided in other configuration guides. 
+Metadata schemas are associated with collections, workflows and advanced searches. Typically, metadata is added to an item in a collection at contribution and then used by the associated workflow and advanced search. Further information on using schemas is provided in other configuration guides.
 
 ## XSLT template data
 Extensible stylesheet transformations (XSLTs) are commonly used to change the presentation of XML data. In openEQUELLA, they can be used to present information returned in display and confirmation templates, email templates, export templates, OAI and Z3950 import and display results.
 
 Item data is of the form as shown in the example below:
-```
+```xml
 <xml>
-<item id="dd8d6c65-437d-1e78-e383-0d5f9cc738e0" itemdefid="6e85ce64-9a11-c5e7-69a4-bd30ec61007f" itemstatus="live" key="26427" version="1">
-<itembody>
-<name>EQUELLA Promotional Video</name>
-<description>Short marketing video about EQUELLA</description>
-....(other item schema nodes)...
-</itembody>
-<owner>
-a11c588d-79a3-aa90-7fd9-6f641cd47db3
-<user id="a11c588d-79a3-aa90-7fd9-6f641cd47db3">
-<username>int.sysadmin</username>
-<givenname>Internal EQUELLA</givenname>
-<surname>System Administrator</surname>
-</user>
-</owner>
-<datecreated>2009-02-12T17:01:52+1100</datecreated>
-<datemodified>2009-02-12T17:01:52+1100</datemodified>
-<dateforindex>2009-09-21T17:05:22+1000</dateforindex>
-<rating average="-1.0" />
-<attachments>
-....(other attachment nodes)...
-</attachments>
-<badurls />
-<history>
-....(other history nodes)...
-</history>
-<moderation>
-....(other moderation nodes)...
-</moderation>
-<navigationNodes />
-</item>
-<template>entity/25709/displaytemplate/</template>
-<itemdir>/doco/items/dd8d6c65-437d-1e78-e383-0d5f9cc738e0/1/</itemdir>
-<sessionparams />
-<collection>Learning Resources Collection</collection>
+  <item id="dd8d6c65-437d-1e78-e383-0d5f9cc738e0" itemdefid="6e85ce64-9a11-c5e7-69a4-bd30ec61007f" itemstatus="live" key="26427" version="1">
+  <itembody>
+  <name>EQUELLA Promotional Video</name>
+  <description>Short marketing video about EQUELLA</description>
+  ....(other item schema nodes)...
+  </itembody>
+  <owner>
+  a11c588d-79a3-aa90-7fd9-6f641cd47db3
+  <user id="a11c588d-79a3-aa90-7fd9-6f641cd47db3">
+  <username>int.sysadmin</username>
+  <givenname>Internal EQUELLA</givenname>
+  <surname>System Administrator</surname>
+  </user>
+  </owner>
+  <datecreated>2009-02-12T17:01:52+1100</datecreated>
+  <datemodified>2009-02-12T17:01:52+1100</datemodified>
+  <dateforindex>2009-09-21T17:05:22+1000</dateforindex>
+  <rating average="-1.0" />
+  <attachments>
+  ....(other attachment nodes)...
+  </attachments>
+  <badurls />
+  <history>
+  ....(other history nodes)...
+  </history>
+  <moderation>
+  ....(other moderation nodes)...
+  </moderation>
+  <navigationNodes />
+  </item>
+  <template>entity/25709/displaytemplate/</template>
+  <itemdir>/doco/items/dd8d6c65-437d-1e78-e383-0d5f9cc738e0/1/</itemdir>
+  <sessionparams />
+  <collection>Learning Resources Collection</collection>
 </xml>
 ```
 
 ## Copyright compliance schema
 
-Copyright nodes are provided in the Generic schema in the EQUELLA Vanilla Institution. 
+Copyright nodes are provided in the Generic schema in the EQUELLA Vanilla Institution.

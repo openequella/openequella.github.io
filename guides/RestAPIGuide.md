@@ -75,7 +75,7 @@ If the user is using the institution administrator token and has specified impor
 
 Future releases will expand on this by allowing import of read-only properties such as item history when using the import flag. This will ultimately allow a full institution dump and import via the REST API.
 
-## Institutions 
+## Institutions
 
 Institutions can be viewed and edited on the special institution API endpoint. Note that this endpoint is based on the administration URL as it cannot be tied to any specific institution. E.g. if the openEQUELLA web page that lists institutions can be found at http://equelladev:8080/institutions.do then the REST endpoint for institution management will be found at http://equelladev:8080/api/institution.
 
@@ -138,7 +138,7 @@ Again, you will need to send the system_token in the request.
 
 ## OAuth Login
 
-The openEQUELLA REST API supports OAuth 2.0 login. To use OAuth login, you must first register an OAuth Client within openEQUELLA. This can be done from the OAuth Settings function accessed from the Settings page. 
+The openEQUELLA REST API supports OAuth 2.0 login. To use OAuth login, you must first register an OAuth Client within openEQUELLA. This can be done from the OAuth Settings function accessed from the Settings page.
 
 You will need the following privileges to fully administer OAuth Clients:
 * CREATE_OAUTH_CLIENT
@@ -154,7 +154,7 @@ openEQUELLA supports three OAuth flows:
 
 ### OAuth Client Configuration
 
-All registered OAuth Clients need a Name (for use within openEQUELLA only), Client ID and, a Client Secret. Further configuration options depend upon the flow you wish to use. 
+All registered OAuth Clients need a Name (for use within openEQUELLA only), Client ID and, a Client Secret. Further configuration options depend upon the flow you wish to use.
 
 #### Accessing OAuth settings
 
@@ -172,19 +172,19 @@ To register a new OAuth client
 
 To configure an OAuth Client for Authorization Code Grant
 1. To use this OAuth flow, your client application needs to be a web application with a URL that can be redirected to.
-2. From the OAuth flow drop-down, select Authorization code grant. The Create new OAuth client page displays some an options. 
+2. From the OAuth flow drop-down, select Authorization code grant. The Create new OAuth client page displays some an options.
 3. Enter the Redirect URL of the endpoint in your application that will handle the OAuth redirects and responses from openEQUELLA, e.g. <http://mywebapp.com/oauthlogin>
 4. Click Save.
 
 To configure an OAuth Client for Client Credentials Grant
 1. Use this flow if your client application is not web based in any way, e.g. it is a Python script. When using this flow your client must act as a pre-configured user.
-2. From the OAuth flow drop-down, select Client credentials grant. The Create new OAuth client page displays the Fixed user option. 
+2. From the OAuth flow drop-down, select Client credentials grant. The Create new OAuth client page displays the Fixed user option.
 3. Click Select to open the Select User(s) dialog and search for and select the required user. A user MUST be selected. When the client application makes API calls it will do so as this user (since a user is never asked to login)
 4. Click Save.
 
 To configure an OAuth Client for Implicit Grant
 1. Use this flow if your client is Javascript in a web browser that needs to make secure API calls, or your client application supports an embeddable browser (such as a C# Winforms application) where you can extract the location URL.
-2. From the OAuth flow drop-down, select Implicit grant. The Create new OAuth client page displays some extra options. 
+2. From the OAuth flow drop-down, select Implicit grant. The Create new OAuth client page displays some extra options.
 3. Select 'My application doesn't host a redirect URL, I want to use the default' for the Redirect URL if using an embedded browser, otherwise select 'I want to use a custom redirect URL' and enter the URL of the page where your Javascript is loaded.
 4. Click Save.
 
@@ -299,7 +299,7 @@ Most entities will follow the same pattern: LIST_(ENTITY NAME) to see the listin
 * View Privilege
 
 
-**.../api/schema** 
+**.../api/schema**
 * LIST_SCHEMA
 * .../api/schema/[uuid]
 * VIEW_SCHEMA
@@ -393,13 +393,13 @@ In a similar fashion the value of the security field may be an instance of an ex
 {
   * "uuid" : <uuid>,
   "name" : <string>,
-  "nameStrings" : [ 
+  "nameStrings" : [
       {
        (language key)<string> : <string>
       },
        ...],
   "description" : <string>,
-  "descriptionStrings" : [ 
+  "descriptionStrings" : [
       {
        (language key)<string> : <string>
       },
@@ -408,8 +408,8 @@ In a similar fashion the value of the security field may be an instance of an ex
   "createdDate" : <date>
   "owner" : <User>,
   "security" : <Entity Security>,
-  "links" : { 
-    "self" : ".../api/[entity_type]/[uuid]/" 
+  "links" : {
+    "self" : ".../api/[entity_type]/[uuid]/"
   }
 }
 ```
@@ -550,7 +550,7 @@ Connectors are a type of entity. Currently no read or write operations can be pe
 
 You can view where openEQUELLA content is used in external systems using the connector endpoint.
 
-To use the connector endpoint you need to have External system connectors configured within openEQUELLA. 
+To use the connector endpoint you need to have External system connectors configured within openEQUELLA.
 ### Retrieve a list of connectors for an item
 To view the list of connectors available for any item perform a GET on .../api/connector/[item uuid]/[item version]
 
@@ -652,30 +652,30 @@ You can also delete any data key/value by performing a DELETE request on the pat
 ### Format
 #### Taxonomy
 The Taxonomy type extends the Entity type, plus the following:
-```
+```json
 {
-  ‡ "readonly" : <boolean>
+  ‡ "readonly" : "<boolean>"
 }
 ```
 
 #### Term
-```
+```json
 {
-  "uuid" : <string>,
-  "parentUuid" : <string>,
-  "term" : <string>,
-  "fullTerm" : <string>,
-  "index" : <int>,
-  "readonly" : <boolean>,
+  "uuid" : "<string>",
+  "parentUuid" : "<string>",
+  "term" : "<string>",
+  "fullTerm" : "<string>",
+  "index" : "<int>",
+  "readonly" : "<boolean>",
   "data" : {
-    <string>(key) : <string>,
-    ... (additional key/value pairs)
+    "<string>(key)" : "<string>",
+    "... (additional key/value pairs)"
   }
 }
 ```
 
 ## Activations
-You can view, create and modify copyright activations on the activation endpoint. 
+You can view, create and modify copyright activations on the activation endpoint.
 To search for activations use the root of the activation endpoint, i.e. .../api/activation. Two query string parameters are supported, both optional:
 * course - The UUID of the course that the activation was made against.
 * status - The status of the activation. Allowed values are 'active', 'pending', 'expired' and 'any'. Default value is 'any'.
@@ -689,21 +689,21 @@ PUT .../api/activation/[activation uuid]?disable=true
 Make sure you send the existing JSON representation of the activation as well.
 ### Format
 #### Activation
-```
+```json
 {
-  "uuid" : <string>,
-  "type" : <string>,
-  "item" : <Item>,
-  "attachment" : <string>,
-  "user" : <User>,
-  "status" : <string>,
-  "from" : <date>,
-  "until" : <date>,
-  "course" : <Course>,
-  "citation" : <string>,
-  "description" : <string>,
-  "locationId" : <string>,
-  "locationName" : <string>
+  "uuid" : "<string>",
+  "type" : "<string>",
+  "item" : "<Item>",
+  "attachment" : "<string>",
+  "user" : "<User>",
+  "status" : "<string>",
+  "from" : "<date>",
+  "until" : "<date>",
+  "course" : "<Course>",
+  "citation" : "<string>",
+  "description" : "<string>",
+  "locationId" : "<string>",
+  "locationName" : "<string>"
 }
 ```
 
@@ -765,7 +765,7 @@ There are a number of pre-configured search types available for searching the cu
 #### Performing a personal items search
 Perform a GET on the .../api/search/myresources/[id] endpoint, where [id] is the ID of a search definition returned from the .../api/search/myresources endpoint.
 
-Several parameters are supported, all of them are optional. 
+Several parameters are supported, all of them are optional.
 
 The format of the results returned by this endpoint is the Search Results type.
 #### Examples
@@ -858,7 +858,7 @@ The directory structure will be created as required.
 
 #### Attaching Files
 Uploading a file will not make it appear on the resource summary page.  To do so you must create and append an Attachment of type 'file' to the item's 'attachments' field.
-```
+```json
 {
   "attachments": [
   {
@@ -875,13 +875,13 @@ GET, PUT and DELETE are supported for the .../api/file/[file area uuid]/content 
 #### Directories
 You can manipulate directories in the file area using the .../api/file/[file area uuid]/dir endpoint.  GET, PUT and DELETE are supported for this endpoint.
 
-When using GET you can specify a deep=true parameter to get a nested representation  of the folder structure.  E.g. 
+When using GET you can specify a deep=true parameter to get a nested representation  of the folder structure.  E.g.
 ```
 GET .../api/file/[file area uuid]/dir/a%20folder?deep=true
 ```
 **Files on the dir endpoint**
 
-You can also get information on files using GET. E.g. 
+You can also get information on files using GET. E.g.
 ```
 GET .../api/file/[file area uuid]/dir/a%20folder/another%20folder/myimage.jpeg
 ```
@@ -894,16 +894,16 @@ You can edit the navigation tree of the item by manipulating the JSON of the ite
 
 Note that any new attachments you have added to the item's 'attachment' field will not have a UUID assigned, yet the Navigation Tab has a $ref field which relies on an existing attachment UUID.  You can resolve this issue by assigning your attachment with a UUID of "uuid:[temporary ID]" and set the navigation tab to refer to "uuid:[temporary ID]".  When the item is saved the attachment will be assigned a UUID and the navigation tab reference will be updated accordingly.  This also applies for XML nodes in the item's metadata field, i.e. each temporary attachment UUID will be scanned for and replaced with the attachment's assigned UUID in the XML.
 For example:
-```
+```json
 {
-  ..
+  "..."
   "metadata" : "<xml><mynode>uuid:myfile</mynode></xml>",
-  ..
-  "attachments" : [ { 
+  "..."
+  "attachments" : [ {
     "type" : "file",
     "filename" : "myfile.jpg",
     "uuid" : "uuid:myfile"
-  } ]
+  } ],
 
   "navigation" : {
     "showUnreferencedAttachments" : false,
@@ -917,8 +917,8 @@ For example:
         }
       } ]
     } ]
-  }
-  ..
+  },
+  "..."
 }
 ```
 When assigning these UUIDs to your attachments make sure you assign a unique ID for each attachment, otherwise an error will be returned.
@@ -972,7 +972,7 @@ You may unlock an item by calling DELETE on the lock.  Note that this means you 
 ```
 DELETE .../api/item/[uuid]/[version]/lock
 ```
-To obtain a lock, POST to the lock URL (the item must not already be locked) 
+To obtain a lock, POST to the lock URL (the item must not already be locked)
 ```
 POST .../api/item/[uuid]/[version]/lock
 ```
@@ -996,7 +996,7 @@ Attempting to unlock an item that is not locked will result in a 404 (the lock i
 5. PUT .../api/item/e25586c8-6d5a-11e1-a751-a4f34824019b/1?lock=[uuid]
 
 #### Files
-If you need to edit the files of the item you should use the .../api/file/copy endpoint 
+If you need to edit the files of the item you should use the .../api/file/copy endpoint
 
 If the file parameter is not supplied when POSTing the edited item then the files will remain unchanged.
 
@@ -1024,31 +1024,31 @@ Note that the name and description fields are read-only.  If you post an item ob
 
 
 ##### Attachment
-```
+```json
 {
-  "uuid" : <uuid>,
-  * "type" : <string>,
-  * "description" : <string>,
-  "viewer" : <string>,
-  "preview" : <boolean>
+  "uuid" : "<uuid>",
+  * "type" : "<string>",
+  * "description" : "<string>",
+  "viewer" : "<string>",
+  "preview" : "<boolean>"
 }
 ```
 
 NOTE: An attachment object may contain additional fields based on the value of the 'type' field.
 The most common attachment type is 'file'.
 
-**File Attachment** 
-```
+**File Attachment**
+```json
 {
-  "uuid" : <uuid>,
+  "uuid" : "<uuid>",
   * "type" : "file",
-  * "description" : <string>,
-  "viewer" : <string>,
-  * "filename" : <string>,
-  "size" : <int>,
-  "md5" : <string>,
-  "thumbFilename" : <string>,
-  "conversion" : <boolean>,
+  * "description" : "<string>",
+  "viewer" : "<string>",
+  * "filename" : "<string>",
+  "size" : "<int>",
+  "md5" : "<string>",
+  "thumbFilename" : "<string>",
+  "conversion" : "<boolean>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1056,13 +1056,13 @@ The most common attachment type is 'file'.
 }
 ```
 **openEQUELLA Resource Attachment**
-```
+```json
 {
   * "type" : "linked-resource",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  * "itemUuid" : <uuid>,
-  * "itemVersion" : <int>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  * "itemUuid" : "<uuid>",
+  * "itemVersion" : "<int>",
   "resourceType" : "p",
   "resourcePath" : "",
   "links" : {
@@ -1072,13 +1072,13 @@ The most common attachment type is 'file'.
 }
 ```
 **Link Attachment**
-```
+```json
 {
   * "type" : "url",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  * "url" : <string>,
-  "disabled" : <boolean>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  * "url" : "<string>",
+  "disabled" : "<boolean>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1086,13 +1086,13 @@ The most common attachment type is 'file'.
 }
 ```
 **Web Page Attachment**
-```
+```json
 {
   * "type" : "htmlpage",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  * "filename" : <string>,
-  "size" : <int>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  * "filename" : "<string>",
+  "size" : "<int>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1100,16 +1100,16 @@ The most common attachment type is 'file'.
 }
 ```
 **Google Books Attachment**
-```
+```json
 {
   * "type" : "googlebook",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  "bookId" : <string>,
-  "viewUrl" : <string>,
-  "thumbUrl" : <string>,
-  "publishedDate" : <string>,
-  "pages" : <string>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  "bookId" : "<string>",
+  "viewUrl" : "<string>",
+  "thumbUrl" : "<string>",
+  "publishedDate" : "<string>",
+  "pages" : "<string>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1117,18 +1117,18 @@ The most common attachment type is 'file'.
 }
 ```
 **YouTube Attachment**
-```
+```json
 {
   * "type" : "youtube",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  "videoId" : <string>,
-  "uploader" : <string>,
-  "uploadedDate" : <date>,
-  "viewUrl" : <string>,
-  "thumbUrl" : <string>,
-  "tags" : <string>,
-  "duration" : <int>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  "videoId" : "<string>",
+  "uploader" : "<string>",
+  "uploadedDate" : "<date>",
+  "viewUrl" : "<string>",
+  "thumbUrl" : "<string>",
+  "tags" : "<string>",
+  "duration" : "<int>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1136,21 +1136,21 @@ The most common attachment type is 'file'.
 }
 ```
 **Flickr Attachment**
-```
+```json
 {
   * "type" : "flickr",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  "author" : <string>,
-  "datePosted" : <date>,
-  "dateTaken" : <date>,
-  "licenseName" : <string>,
-  "viewUrl" : <string>,
-  "thumbUrl" : <string>,
-  "licenseCode" : <string>,
-  "licenseKey" : <string>,
-  "photoId" : <string>,
-  "mediumUrl" : <string>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  "author" : "<string>",
+  "datePosted" : "<date>",
+  "dateTaken" : "<date>",
+  "licenseName" : "<string>",
+  "viewUrl" : "<string>",
+  "thumbUrl" : "<string>",
+  "licenseCode" : "<string>",
+  "licenseKey" : "<string>",
+  "photoId" : "<string>",
+  "mediumUrl" : "<string>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1158,13 +1158,13 @@ The most common attachment type is 'file'.
 }
 ```
 **iTunesU Attachment**
-```
+```json
 {
   * "type" : "itunesu",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  * "playUrl" : <string>,
-  "trackName" : <string>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  * "playUrl" : "<string>",
+  "trackName" : "<string>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1172,13 +1172,13 @@ The most common attachment type is 'file'.
 }
 ```
 **Package Resource Attachment**
-```
+```json
 {
   * "type" : "package-res",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  * "filename" : <string>,
-  "size" : <int>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  * "filename" : "<string>",
+  "size" : "<int>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1186,13 +1186,13 @@ The most common attachment type is 'file'.
 }
 ```
 **Content Package Attachment**
-```
+```json
 {
   * "type" : "package",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  "size" : <int>,
-  * "packageFile" : <string>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  "size" : "<int>",
+  * "packageFile" : "<string>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1200,18 +1200,18 @@ The most common attachment type is 'file'.
 }
 ```
 **Kaltura Attachment**
-```
+```json
 {
   * "type" : "kaltura",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  "mediaId" : <string>,
-  "title" : <string>,
-  "uploadedDate" : <date>,
-  "thumbUrl" : <string>,
-  "dataUrl" : <string>,
-  "tags" : <string>,
-  "duration" : <int>,
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  "mediaId" : "<string>",
+  "title" : "<string>",
+  "uploadedDate" : "<date>",
+  "thumbUrl" : "<string>",
+  "dataUrl" : "<string>",
+  "tags" : "<string>",
+  "duration" : "<int>",
   "links" : {
     "thumbnail" : ".../thumbs/[uuid]/[version]/[attach uuid]",
     "view" : ".../items/[uuid]/[version]/?attachment.uuid=[attach uuid]"
@@ -1219,56 +1219,56 @@ The most common attachment type is 'file'.
 }
 ```
 **QTI Attachment**
-```
+```json
 {
   * "type" : "qtitest",
-  "uuid" : <uuid>,
-  * "description" : <string>,
-  * "xmlFullPath" : <string>,
-  "testUuid" : <string>,
-  "toolName" : <string>,
-  "toolVersion" : <string>,
-  "maxTime" : <long>,
-  "questionCount" : <int>,
-  "sectionCount" : <int>,
-  "navigationMode" : <string>,
-  * "manifestPath" : <string>
+  "uuid" : "<uuid>",
+  * "description" : "<string>",
+  * "xmlFullPath" : "<string>",
+  "testUuid" : "<string>",
+  "toolName" : "<string>",
+  "toolVersion" : "<string>",
+  "maxTime" : "<long>",
+  "questionCount" : "<int>",
+  "sectionCount" : "<int>",
+  "navigationMode" : "<string>",
+  * "manifestPath" : "<string>"
 }
 ```
 ##### Comment
-```
+```json
 {
-  "uuid" : <uuid>,
-  "rating" : <int>,
-  "anonymous" : <boolean>,
-  "comment" : <string>,
-  "postedBy" : <User>,
-  "postedDate" : <date>
+  "uuid" : "<uuid>",
+  "rating" : "<int>",
+  "anonymous" : "<boolean>",
+  "comment" : "<string>",
+  "postedBy" : "<User>",
+  "postedDate" : "<date>"
 }
 ```
 ##### History Event
-```
+```json
 {
-  "user" : <User>,
-  "date" : <date>,
-  "step" : <uuid>,
-  "toStep" : <uuid>,
-  "stepName" : <string>,
-  "toStepName" : <string>,
-  "comment" : <string>,
-  "type" : <string>,
-  "state" : <string>
+  "user" : "<User>",
+  "date" : "<date>",
+  "step" : "<uuid>",
+  "toStep" : "<uuid>",
+  "stepName" : "<string>",
+  "toStepName" : "<string>",
+  "comment" : "<string>",
+  "type" : "<string>",
+  "state" : "<string>"
 }
 ```
 ##### File Area
-```
+```json
 {
   "type" : "root",
   "filename" : "",
   "parent" : "",
-  "files" : [ <File>, ... ],
-  "folders" : [ <Directory>, ... ],
-  "uuid" : <uuid>,
+  "files" : [ "<File>", "..." ],
+  "folders" : [ "<Directory>", "..." ],
+  "uuid" : "<uuid>",
   "links" : {
     "content" : ".../api/file/[uuid]/content",
     "dir" : ".../api/file/[uuid]/dir",
@@ -1277,13 +1277,13 @@ The most common attachment type is 'file'.
 }
 ```
 ##### Directory
-```
+```json
 {
   "type" : "folder",
-  "filename" : <string>,
-  "parent" : <string>,
-  "files" : [ <File>, ... ],
-  "folders" : [ <Directory>, ... ],
+  "filename" : "<string>",
+  "parent" : "<string>",
+  "files" : [ "<File>", "..." ],
+  "folders" : [ "<Directory>", "..." ],
   "links" : {
     "content" : ".../api/file/[uuid]/content/[path]",
     "dir" : ".../api/file/[uuid]/dir/[path]",
@@ -1292,12 +1292,12 @@ The most common attachment type is 'file'.
 }
 ```
 ##### File
-```
+```json
 {
-  "type" : "file",
-  "filename" : <string>,
-  "parent" : <string>,
-  "size" : <int>
+  "type" : "<file>",
+  "filename" :" <string>",
+  "parent" : "<string>",
+  "size" : "<int>",
   "links" : {
     "content" : ".../api/file/[uuid]/content/[path]",
     "dir" : ".../api/file/[uuid]/dir/[path]",
@@ -1306,10 +1306,10 @@ The most common attachment type is 'file'.
 }
 ```
 ##### Item Lock
-```
+```json
 {
-  "uuid": <uuid>,
-  "user": <User>,
+  "uuid": "<uuid>",
+  "user": "<User>",
   "links": [{
     "self": ".../api/item/[uuid]/[version]/lock/"
   }]
@@ -1317,90 +1317,90 @@ The most common attachment type is 'file'.
 ```
 ##### Navigation
 NOTE: showUnreferencedAttachments is deprecated due to faulty reverse Boolean logic being applied, and is maintained for compatibility only. The new field is hideUnreferencedAttachments
-```
+```json
 {
-  "showUnreferencedAttachments" : <boolean>,
-  "hideUnreferencedAttachments" : <boolean>,
-  "showSplitOption" : <boolean>,
-  "nodes" : [ <Navigation Node>, ... ]
+  "showUnreferencedAttachments" : "<boolean>",
+  "hideUnreferencedAttachments" : "<boolean>",
+  "showSplitOption" : "<boolean>",
+  "nodes" : [ "<Navigation Node>", "..." ]
 }
 ```
 **Navigation Node**
-```
+```json
 {
-  "uuid" : <uuid>,
-  "name" : <string>,
-  "icon" : <string>,
-  "imsId" : <string>,
-  "tabs" : [ <Navigation Tab>, ... ],
-  "nodes" : [ <Navigation Node>, ... ]
+  "uuid" : "<uuid>",
+  "name" : "<string>",
+  "icon" : "<string>",
+  "imsId" : "<string>",
+  "tabs" : [ "<Navigation Tab>", "..." ],
+  "nodes" : [ "<Navigation Node>", "..." ]
 }
 ```
 **Navigation Tab**
-```
+```json
 {
-  "name" : <string>,
-  "viewer" : <string>,
-  "$ref" : <UUID Reference>
+  "name" : "<string>",
+  "viewer" : "<string>",
+  "$ref" : "<UUID Reference>"
 }
 ```
 **UUID Reference**
-```
+```json
 {
-  "$ref" : <uuid>
+  "$ref" : "<uuid>"
 }
 ```
 ##### DRM
-```
+```json
 {
-  "options" : <DRM Options>
+  "options" : "<DRM Options>"
 }
 ```
 **DRM Options**
-```
+```json
 {
-  "drmPageUuid" : <string>,
-  "hideLicencesFromOwner" : <boolean>,
-  "showLicenceCount" : <boolean>,
-  "allowSummary" : <boolean>,
-  "ownerMustAccept" : <boolean>,
-  "studentsMustAcceptIfInCompilation" : <boolean>,
-  "previewAllowed" : <boolean>,
-  "attributionOfOwnership" : <boolean>,
-  "enforceAttribution" : <boolean>,
-  "contentOwners" : [ <DRM Party>, ... ],
-  "usages" : [ <string>, ... ],
-  "termsOfAgreement" : <string>,
-  "requireAcceptanceFrom" : <string>,
-  "restriction" : <DRM Restrictions>
+  "drmPageUuid" : "<string>",
+  "hideLicencesFromOwner" : "<boolean>",
+  "showLicenceCount" : "<boolean>",
+  "allowSummary" : "<boolean>",
+  "ownerMustAccept" : "<boolean>",
+  "studentsMustAcceptIfInCompilation" : "<boolean>",
+  "previewAllowed" : "<boolean>",
+  "attributionOfOwnership" : "<boolean>",
+  "enforceAttribution" : "<boolean>",
+  "contentOwners" : [ "<DRM Party>", "..." ],
+  "usages" : [ "<string>", "..." ],
+  "termsOfAgreement" : "<string>",
+  "requireAcceptanceFrom" : "<string>",
+  "restriction" : "<DRM Restrictions>"
 }
 ```
 **DRM Party**
-```
+```json
 {
-  "userId" : <string>,
-  "name" : <string>,
-  "email" : <string>,
-  "owner" : <boolean>
+  "userId" : "<string>",
+  "name" : "<string>",
+  "email" : "<string>",
+  "owner" : "<boolean>"
 }
 ```
 **DRM Restrictions**
-```
+```json
 {
-  "network" : <DRM Network>,
-  "startDate" : <date>,
-  "endDate" : <date>,
-  "usersExpression" : [ <string>, ... ],
-  "educationalSector" : <boolean>,
-  "maximumUsage" : <int>
+  "network" : "<DRM Network>",
+  "startDate" : "<date>",
+  "endDate" : "<date>",
+  "usersExpression" : [ "<string>", "..." ],
+  "educationalSector" : "<boolean>",
+  "maximumUsage" : "<int>"
 }
 ```
 **DRM Network**
-```
+```json
 {
-  "name" : <string>,
-  "startAddress" : <string>,
-  "endAddress" : <string>
+  "name" : "<string>",
+  "startAddress" : "<string>",
+  "endAddress" : "<string>"
 }
 ```
 ## Notifications
@@ -1424,13 +1424,13 @@ To clear a notification send a DELETE request to the .../api/notification/[id] e
 ### Format
 
 #### Notification
-```
+```json
 {
-  "id" : <int>,
-  "reason" : <string>,
-  "userTo" : <string>,
-  "date" : <date>,
-  "item" : <Item>
+  "id" : "<int>",
+  "reason" : "<string>",
+  "userTo" : "<string>",
+  "date" : "<date>",
+  "item" : "<Item>"
 }
 ```
 
@@ -1456,26 +1456,26 @@ POST .../api/item/e48edefa-e1fc-4ebe-946f-ff65938c9fae/1/task/723d03cf-deb9-4033
 ```
 ### Format
 #### Task Status
-```
+```json
 {
-  "task" : <Task>,
-  "item" : <Item>,
-  "assignedTo" : <User>,
-  "acceptedUsers" : [ <User>, ... ],
-  "dueDate" :<date>,
-  "startDate" : <date>,
-  "overdue" : <boolean>
+  "task" : "<Task>",
+  "item" : "<Item>",
+  "assignedTo" : "<User>",
+  "acceptedUsers" : [ "<User>", "..." ],
+  "dueDate" : "<date>",
+  "startDate" : "<date>",
+  "overdue" : "<boolean>"
 }
 ```
 #### Task
-```
+```json
 {
-  "uuid" : <uuid>,
-  "name" : <string>,
-  "description" : <string>,
-  "priority" : <int>,
-  "unanimous : <boolean>,
-  "workflow" : <Workflow>
+  "uuid" : "<uuid>",
+  "name" : "<string>",
+  "description" : "<string>",
+  "priority" : "<int>",
+  "unanimous" : "<boolean>",
+  "workflow" : "<Workflow>"
 }
 ```
 #### Workflow
@@ -1527,51 +1527,51 @@ You should specify the minimum information that you need.  Use of 'all' is not r
 
 ### Format
 #### Hierarchy Topic
-```
+```json
 {
-  "uuid" : <string>,
-  "name" : <string>,
-  "description" : <string>,
-  "shortDescription" : <string>,
-  "longDescription" : <string>,
-  "subTopicsSectionName" : <string>,
-  "resultsSectionName" : <string>,
-  "powerSearchUuid" : <string>,
-  "freetext" : <string>,
-  "parent" : <Hierarchy Topic>,
-  "showResults" : <boolean>,
-  "inheritFreetext" : <boolean>,
-  "hideSubtopicsWithNoResults" : <boolean>,
-  "virtualisationPath" : <string>,
-  "virtualisationId" : <string>,
-  "subTopics" : [ <Hierarchy Topic>, ... ],
-  "keyResources" : [ <Item>, ... ],
-  "inheritedSchemaScripts" : [ <Schema Script>, ... ],
-  "additionalSchemaScripts" : [ <Schema Script>, ... ],
-  "eligibleSchemaScripts" : [ <Schema Script>, ... ],
-  "inheritedCollectionScripts" : [ <Collection Script>, ... ],
-  "additionalCollectionScripts" : [ <Collection Script>, ... ],
-  "eligibleCollectionScripts" : [ <Collection Script>, ... ],
+  "uuid" : "<string>",
+  "name" : "<string>",
+  "description" : "<string>",
+  "shortDescription" : "<string>",
+  "longDescription" : "<string>",
+  "subTopicsSectionName" : "<string>",
+  "resultsSectionName" : "<string>",
+  "powerSearchUuid" : "<string>",
+  "freetext" : "<string>",
+  "parent" : "<Hierarchy Topic>",
+  "showResults" : "<boolean>",
+  "inheritFreetext" : "<boolean>",
+  "hideSubtopicsWithNoResults" : "<boolean>",
+  "virtualisationPath" : "<string>",
+  "virtualisationId" : "<string>",
+  "subTopics" : [ "<Hierarchy Topic>", "..." ],
+  "keyResources" : [ "<Item>", "..." ],
+  "inheritedSchemaScripts" : [ "<Schema Script>", "..." ],
+  "additionalSchemaScripts" : [ "<Schema Script>", "..." ],
+  "eligibleSchemaScripts" : [ "<Schema Script>", "..." ],
+  "inheritedCollectionScripts" : [ "<Collection Script>", "..." ],
+  "additionalCollectionScripts" : [ "<Collection Script>", "..." ],
+  "eligibleCollectionScripts" : [ "<Collection Script>", "..." ],
   "links" : {
-    "self" : <string>
+    "self" : "<string>"
   }
 }
 ```
 #### Hierarchy Browse Topic
 Hierarchy Browse Topics are entirely read-only.
-```
+```json
 {
-  "uuid" : <string>,
-  "name" : <string>,
-  "shortDescription" : <string>,
-  "longDescription" : <string>,
-  "subTopicsSectionName" : <string>,
-  "resultsSectionName" : <string>,
-  "powerSearchUuid" : <string>,
-  "parent" : <Hierarchy Browse Topic>,
-  "keyResources" : [ <Item>, ... ],
-  "searchResults" : <Search Results> (of <Item>),
-  "subTopics" : [ <Hierarchy Browse Topic>, ... ]
+  "uuid" : "<string>",
+  "name" : "<string>",
+  "shortDescription" : "<string>",
+  "longDescription" : "<string>",
+  "subTopicsSectionName" : "<string>",
+  "resultsSectionName" : "<string>",
+  "powerSearchUuid" : "<string>",
+  "parent" : "<Hierarchy Browse Topic>",
+  "keyResources" : [ "<Item>", "..." ],
+  "searchResults" : "<Search Results> (of <Item>)",
+  "subTopics" : [ "<Hierarchy Browse Topic>", "..." ]
 }
 ```
 
@@ -1603,13 +1603,13 @@ NOTE: A 200 (success) response can be returned even in the event of failure, sin
 ### Format
 Many types contain references to User objects, typically as an owner or an assignee.
 #### User
-```
+```json
 {
-  * "id" : <string>,
-  "username" : <string>,
-  "firstName" : <string>,
-  "lastName" : <string>,
-  "emailAddress" : <string>
+  * "id" : "<string>",
+  "username" : "<string>",
+  "firstName" : "<string>",
+  "lastName" : "<string>",
+  "emailAddress" : "<string>"
 }
 ```
 
@@ -1639,12 +1639,12 @@ Similarly you can change all references of a group ID to another ID assigned by 
 NOTE: A 200 (success) response can be returned even in the event of failure, since the task is run in the background.
 ### Format
 #### Group
-```
+```json
 {
-  "id" : <string>,
-  "name" : <string>,
-  "parentId" : <string>,
-  "users" : [ <string>, ... ]
+  "id" : "<string>",
+  "name" : "<string>",
+  "parentId" : "<string>",
+  "users" : [ "<string>", "..." ]
 }
 ```
 
@@ -1657,38 +1657,38 @@ Use .../api/status as the health check URL for your load balancer. Currently an 
 ### Formats
 #### Search Results
 Note that the Search Results type is used on several endpoints and the results array may not contain Items, but the type relevant to the endpoint. E.g. the results field is an array of Notifications on the .../api/notification endpoint.
-```
+```json
 {
-  "start": <int>,
-  "length": <int>,
-  "available": <int>,
-  "results": [ <Item>, ...  ]
+  "start": "<int>",
+  "length": "<int>",
+  "available": "<int>",
+  "results": [ "<Item>", "..."  ]
 }
 ```
 #### Search Definition
-```
+```json
 {
-  "id" : <string>,
-  "name" : <string>
+  "id" : "<string>",
+  "name" : "<string>"
 }
 ```
 #### Schema Script
-```
+```json
 {
-  "schema" : <Schema>,
-  "script" : <string>
+  "schema" : "<Schema>",
+  "script" : "<string>"
 }
 ```
 #### Collection Script
-```
+```json
 {
-  "collection" : <Collection>,
-  "script" : <string>
+  "collection" : "<Collection>",
+  "script" : "<string>"
 }
 ```
 ### Examples
 #### Item Example
-```
+```json
 {
   "uuid" : "2f6e9be8-897d-45f1-98ea-7aa31b449c0e",
   "version" : 1,
@@ -1989,4 +1989,4 @@ The openEQUELLA REST API reference lists Endpoints (search, item-lock, item-acti
 
 An example of the search endpoint operation ‘search’ parameter dialog is shown.
 
-Enter parameters and click Try It Out to display the result of the operation. 
+Enter parameters and click Try It Out to display the result of the operation.

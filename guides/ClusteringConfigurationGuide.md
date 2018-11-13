@@ -1,8 +1,8 @@
 # Clustering Configuration Guide
 Table of Contents
 * [openEQUELLA clustering overview](#openequella-clustering-overview)
-* [Clustering environment](#clustering-environment) 
-* [Install Apache Zookeeper](#install-apache-zookeeper) 
+* [Clustering environment](#clustering-environment)
+* [Install Apache Zookeeper](#install-apache-zookeeper)
 * [Configure openEQUELLA on the first host](#configure-openequella-on-the-first-host)
 * [Configure openEQUELLA on subsequent hosts](#configure-openequella-on-subsequent-hosts)
 * [Test the clustered environment](#test-the-clustered-environment)
@@ -12,7 +12,7 @@ Table of Contents
 ## openEQUELLA clustering overview
 The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA clustering process.
 
-openEQUELLA clustering involves two or more openEQUELLA instances sharing a common Apache Zookeeper, database and filestore behind a load balancer. The load balancer directs clients to one of the members (openEQUELLA instances) of the cluster. 
+openEQUELLA clustering involves two or more openEQUELLA instances sharing a common Apache Zookeeper, database and filestore behind a load balancer. The load balancer directs clients to one of the members (openEQUELLA instances) of the cluster.
 
 Each of these components will typically be on dedicated hardware.
 
@@ -51,7 +51,7 @@ server.2=zoo2:2888:3888
 server.3=zoo3:2888:3888
 4. On each Zookeeper node create a myid file in the dataDir set in the zoo.conf file containing the number <n> assigned to the node in the zoo.conf. For example when configuring the zoo1 node the myid file would contain a 1 as that is the ID listed in the zoo.conf.
 5. Restart each Zookeeper node.
-6. 
+6.
 Further information on Zookeeper customization can be found at http://zookeeper.apache.org/doc/trunk/zookeeperStarted.html
 
 ## Configure openEQUELLA on the first host
@@ -63,39 +63,39 @@ Edit the following files, substituting the correct values for the variables. (Al
 
 #### mandatory-config.properties
 In the <path-to-equella>\learningedge-config\mandatory-config.properties file edit the filestore.root property to the network location of the shared file store. For example, a Windows system using an SMB share would look like:
-```
+```properties
 filestore.root = //some.host/share.name/
 ```
 Edit the admin.url property to be the openEQUELLA address of the hosting server:
-```
+```properties
 admin.url = http://equellaadmin.myinstitution.com
 ```
 If Apache HTTP Server is being used as a load balancer, and AJP is being used to communicate with the application servers, then the ajp.port property should be uncommented and set to the relevant port:
-```
+```properties
 ajp.port = 8009
 ```
 
 #### optional-config.properties
 In the <path-to-equella>\learningedge-config\optional-config.properties file, edit the zookeeper.instances variable to include the <address>:<port> of the Zookeeper instance. The <address> portion can be an IP address or hostname. Multiple Zookeeper instances should be separated by commas:
-```
+```properties
 zookeeper.instances = 192.168.1.177:2181,zookeeper2.my.lan:2181
 ```
 If you are using the Zookeeper quorum for more than one openEQUELLA cluster, then the zookeeper.prefix property must be set with a unique name for the cluster:
 zookeeper.prefix = equella63staging
 The property zookeeper.nodeId can be set in order to append a human readable string to the NODE ID which makes identifying nodes much easier. If this property is not set, the openEQUELLA application will try to use the hostname of the server on which openEQUELLA is running. Failing that, it will revert to a plain UUID NODE ID. Note that this string should be unique between cluster nodes.
-```
+```properties
 zookeeper.nodeId = nodeX
 ```
 openEQUELLA will do its best to determine the public IP address of the machine it is running on. If the machine has more than one up, non-virtual network interface then openEQUELLA will present an error in its logs and fail to start. To resolve this, the messaging.bindAddress property must be set with an IP address accessible by the other application server nodes:
-```
+```properties
 messaging.bindAddress = 192.168.1.100
 ```
 Finally, openEQUELLA will attempt to bind to port 8999 for communications between application servers. If this port is already bound to by another service, then the messaging.bindPort property may be set to an alternative. Note that this port does not need to match other application servers:
-```
+```properties
 messaging.bindAddress = 192.168.1.100
 ```
 If AJP is the chosen protocol for communications between the load balancer and the application servers, the jvmroute.id property should be set to a unique value for each node in the cluster which facilitates sticky sessions:
-```
+```properties
 jvmroute.id = NODE1
 ```
 NOTE: Although AJP is a supported protocol, it is not recommended.
@@ -111,11 +111,11 @@ The following tests ensure the clustered environment is working correctly by tes
 To view details about all of the registered application nodes in the cluster:
 1. Login to the openEQUELLA server administration.
 2. Select Health check.
-You can also select the Enable cluster debugging checkbox to show debug information in the page footer. 
+You can also select the Enable cluster debugging checkbox to show debug information in the page footer.
 
 Test cluster node server configuration
 
-Additionally, further information about each node’s services can be found by clicking the drop-down arrow. 
+Additionally, further information about each node’s services can be found by clicking the drop-down arrow.
 
 To test each server is running and being called correctly:
 1. Log in to an openEQUELLA instance and identify the unique cluster ID that is displayed in the bottom left-hand corner of the window, and then stop that instance.
@@ -148,48 +148,48 @@ Download Apache HTTP 2.4 appropriate for your machine’s architecture from http
 
 ### To configure Apache as a load balancer
 Create a virtual host file for your site, where you can configure the load balancing proxy, or create one in Apache’s httpd.conf file (or equivalent).
-```
+```apache
 <VirtualHost *:80>
-ServerName <EXTERNAL-SERVER-NAME>
-ProxyPass / balancer://mycluster/ nocanon
-ProxyPreserveHost On
-# Using mod header (cookie created by loadbalancer)
-Header add Set-Cookie \
-"ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/" \
-env=BALANCER_ROUTE_CHANGED
-<Proxy balancer://mycluster/ >
-BalancerMember http://<NODE-1>:<port> route=1
-BalancerMember http://<NODE-2>:<port> route=2
-BalancerMember http://<NODE-3>:<port> route=3
-ProxySet stickysession=ROUTEID
-</Proxy>
+  ServerName <EXTERNAL-SERVER-NAME>
+  ProxyPass / balancer://mycluster/ nocanon
+  ProxyPreserveHost On
+  # Using mod header (cookie created by loadbalancer)
+  Header add Set-Cookie \
+  "ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/" \
+  env=BALANCER_ROUTE_CHANGED
+  <Proxy balancer://mycluster/ >
+    BalancerMember http://<NODE-1>:<port> route=1
+    BalancerMember http://<NODE-2>:<port> route=2
+    BalancerMember http://<NODE-3>:<port> route=3
+    ProxySet stickysession=ROUTEID
+  </Proxy>
 </VirtualHost>
 ```
 ### To configure Apache as load balancer and SSL terminator
 When using Apache to terminate SSL and act as the cluster load balancer, the https.port property should first be uncommented in the <path-to-equella>\learningedge-config\mandatory-config.properties file.
-```
+```properties
 https.port = 8443
 ```
 The following example configuration will terminate SSL and direct the then non-secure communications to EQUELLA. You will also need to ensure that mod_ssl is enabled:
-```
+```apache
 <VirtualHost *:443>
-ServerName <EXTERNAL-SERVER-NAME>
-EQUELLA 6.4 Clustering Configuration Guide 12 | P a g e
-ProxyPass / balancer://mycluster/ nocanon
-ProxyPreserveHost On
-# Using mod header (cookie created by loadbalancer)
-Header add Set-Cookie \
-"ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/" \
-env=BALANCER_ROUTE_CHANGED
-<Proxy balancer://mycluster/ >
-BalancerMember http://<NODE-1>:<https.port> route=1
-BalancerMember http://<NODE-2>:<https.port> route=2
-BalancerMember http://<NODE-3>:<https.port> route=3
-ProxySet stickysession=ROUTEID
-</Proxy>
-SSLEngine On
-SSLProxyEngine On
-SSLCertificateFile <path-to-cert.pem>
-SSLCertificateKeyFile <path-to-cert.key>
+  ServerName <EXTERNAL-SERVER-NAME>
+  EQUELLA 6.4 Clustering Configuration Guide 12 | P a g e
+  ProxyPass / balancer://mycluster/ nocanon
+  ProxyPreserveHost On
+  # Using mod header (cookie created by loadbalancer)
+  Header add Set-Cookie \
+  "ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/" \
+  env=BALANCER_ROUTE_CHANGED
+  <Proxy balancer://mycluster/ >
+    BalancerMember http://<NODE-1>:<https.port> route=1
+    BalancerMember http://<NODE-2>:<https.port> route=2
+    BalancerMember http://<NODE-3>:<https.port> route=3
+    ProxySet stickysession=ROUTEID
+  </Proxy>
+  SSLEngine On
+  SSLProxyEngine On
+  SSLCertificateFile <path-to-cert.pem>
+  SSLCertificateKeyFile <path-to-cert.key>
 </VirtualHost>
 ```

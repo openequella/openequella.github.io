@@ -15,8 +15,7 @@ The purpose of this guide is to provide users with information regarding the pro
 ## Install ExifTool
 ExifTool, a free, third-party tool needs to be downloaded and installed on the openEQUELLA server, and a configuration file edited.
 
-**To install ExifTool and update configuration
-**
+**To install ExifTool and update configuration**
 1. Go to http://www.sno.phy.queensu.ca/~phil/exiftool/ and download the relevant ExifTool zip file version for your server’s operating system.
 2. Follow the instructions on the website for installing the tool for your operating system.
 3. Navigate to the learningedge-config directory found in your openEQUELLA directory and open the optional-config.properties file with an editor.
@@ -29,7 +28,7 @@ Metadata nodes must be created in the relevant schema in openEQUELLA for the ext
 
 ## Add a Save script
 A Save script to extract the required data and input it into the relevant schema needs to be written and added on the Expert scripting tab of the image collection in the Collection Definition Editor. An example is shown below:
-```
+```js
 if(staging.isAvailable())
 {
 var att = attachments.list().get(0); var mtdt = metadata.getMetadata(att); if(!mtdt.isEmpty()) { xml.set('/item/itembody/description', mtdt.get('XMP', 'Description'));
@@ -64,13 +63,13 @@ Knowing what data can be extracted can be confusing. Once ExifTool is installed 
 
 NOTE: If you don’t have access to your openEQUELLA server, install the ExifTool on your local PC to be able to run the following command.
 ```
-exiftool -g -j -q -sort -u -x Directory -x 
-FilePermissions -x ExifToolVersion -x Error <image>, 
+exiftool -g -j -q -sort -u -x Directory -x
+FilePermissions -x ExifToolVersion -x Error <image>,
 where <image> is the path to your image.
 ```
 
 ## View custom display data
-Based on the Save script example above, the following extracted metadata can be viewed from the attachment metadata drop-down. 
+Based on the Save script example above, the following extracted metadata can be viewed from the attachment metadata drop-down.
 
 * Type
 * Filename
@@ -84,6 +83,6 @@ Based on the Save script example above, the following extracted metadata can be 
 
 This would differ depending on what metadata has been extracted, saved and configured to display in openEQUELLA.
 
-Some of the additional metadata fields may be configured to display on the Resource summary template (e.g Photographer, Location, Title, Caption, Resolution – width and Resolution height). 
+Some of the additional metadata fields may be configured to display on the Resource summary template (e.g Photographer, Location, Title, Caption, Resolution – width and Resolution height).
 
-This is done from the Display, Resource Summary Display Template tab in the Collection Definition Editor. 
+This is done from the Display, Resource Summary Display Template tab in the Collection Definition Editor.

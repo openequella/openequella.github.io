@@ -49,7 +49,7 @@ Notes:
 * The server url should be eqinstall /p/oai
 * OAI harvesting only brings over the metadata - attachments are not included.
 * The target schema will need a searchable (Indexed for advanced search) attribute at /xml/item/oai/@id
-* The source schema / collection can also be setup to build the /xml/item/oai/@id from the item uuid and version 
+* The source schema / collection can also be setup to build the /xml/item/oai/@id from the item uuid and version
 
 ## Bulk Update Of User Email Notification Option
 
@@ -169,4 +169,4 @@ connection.
 
 If you run into problems connecting, here are some troubleshooting steps:
 * Request the client open up the specified debugging port to your external ip on their firewall.
-* If you get an error stating "Problem Occurred:  'Launching 62gatest1-21sc has encountered a problem. Failed to connect to remote VM, Connection timed out.', try increasing your debugger timeout 
+* If you get an error stating "Problem Occurred:  'Launching 62gatest1-21sc has encountered a problem. Failed to connect to remote VM, Connection timed out.', try increasing your debugger timeout
