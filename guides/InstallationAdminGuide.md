@@ -122,7 +122,7 @@ Install the program, taking note of the name and location of the folder in which
 ### To install and configure Libav for Linux - Ubuntu
 Install Libav from <https://libav.org/download.html>. libvo_aacenc and libx264 dependencies are also required for video previews to be generated correctly.
 
-1. Install required packages; here we install an assembler,t he audio codec we need and the video codec we encode with.
+1. Install required packages; here we install packages required for building, an assembler, the audio codec we need and the video codec we encode with.
 
 ```
 sudo apt-get install build-essential pkg-config
