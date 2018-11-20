@@ -1,1 +1,1 @@
-_wrs_baseURL = '${pluginUrl}';
+_wrs_baseURL = "${pluginUrl}";

@@ -1,11 +1,11 @@
 ## The basics - primary keys and UUIDs
 
-The goal of each tutorial is to produce an SQL result set which retrieves the data we want. 
-These queries aren't specific to the BIRT JDBC dataset apart from the [CURRENT_INSTITUTION](#current_institution) 
+The goal of each tutorial is to produce an SQL result set which retrieves the data we want.
+These queries aren't specific to the BIRT JDBC dataset apart from the [CURRENT_INSTITUTION](#current_institution)
 macro which you can easily replace if you aren't using BIRT.
 
-The goal of this tutorial will be to create a query which queries the last 10 items by 
-modification date in a particular collection based on the UUID of the collection. 
+The goal of this tutorial will be to create a query which queries the last 10 items by
+modification date in a particular collection based on the UUID of the collection.
 
 ### Initial query
 
@@ -15,8 +15,8 @@ To start with let's create a query which just gets the latest 10 items modified 
 
 ```sql
 SELECT i.id AS item_id, i.uuid, i.version, i.name_id
-FROM item i 
-WHERE i.institution_id = CURRENT_INSTITUTION 
+FROM item i
+WHERE i.institution_id = CURRENT_INSTITUTION
 ORDER BY i.date_modified DESC
 LIMIT 10
 ```
@@ -31,7 +31,7 @@ Next up we need to limit the query to a specific collection by UUID. This requir
 
 ```sql
 SELECT i.id AS item_id, i.uuid, i.version, i.name_id, be.name_id as col_name_id
-FROM item i 
+FROM item i
 INNER JOIN base_entity be on be.id = i.item_definition_id
 WHERE i.institution_id = CURRENT_INSTITUTION
   AND be.uuid = '20d5d5eb-af16-43b0-a42b-962c57fe87f2'
@@ -39,18 +39,17 @@ ORDER BY i.date_modified DESC
 LIMIT 10
 ```
 
-UUIDs for collections, schemas, items etc.. are consider stable identifiers which survive export/importing/cloning of an institution. In contrast primary key columns (item.id, base\_entity.id) will not survive across import/export so should not be hard coded into a query.
+UUIDs for collections, schemas, items etc.. are consider stable identifiers which survive export/importing/cloning of an institution. In contrast primary key columns (item.id, base_entity.id) will not survive across import/export so should not be hard coded into a query.
 
-So we have some "name\_id" and "col\_name\_id" columns now but that's not particular useful to look at, so we need to learn how to get the text. 
+So we have some "name_id" and "col_name_id" columns now but that's not particular useful to look at, so we need to learn how to get the text.
 
 **Limiting the number of results**
 
 I've used Postgres syntax for limiting the number of results but each database has a slightly syntax:
- 
 
-Postgres|SQLServer|Oracle
-:----|---|---|
-`SELECT ... LIMIT 10`| `SELECT TOP 10 ...` | `SELECT ... WHERE ROWNUM <= 10`|
+| Postgres              | SQLServer           | Oracle                          |
+| :-------------------- | ------------------- | ------------------------------- |
+| `SELECT ... LIMIT 10` | `SELECT TOP 10 ...` | `SELECT ... WHERE ROWNUM <= 10` |
 
 **Next tutorial** : [Querying strings](QueryingStrings.md)
 
@@ -66,7 +65,7 @@ E.g. you could either hardcode it or look it up by joining on the institution ta
 
 ```sql
 SELECT i.id AS item_id, i.uuid, i.version, i.name_id
-FROM item i 
+FROM item i
 WHERE i.institution_id = (select id from institution where url = 'https://betadev.equella.net/reports/')
 ORDER BY i.date_modified DESC
 LIMIT 10

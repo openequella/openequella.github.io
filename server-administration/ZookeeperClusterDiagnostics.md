@@ -2,24 +2,26 @@
 
 Table of Contents
 
-* [Introduction](#introduction)
-* [openEquella Network Failure](#equella-network-failure) 
-* [Unique IDs for openEquella Nodes](#unique-ids-for-equella-nodes)
-* [openEquella Session Failover](#equella-session-failover)
-* [Failure to Connect to Zookeeper on Startup](#failure-to-connect-to-zookeeper-on-startup)
-* [Rolling Restart of openEquella](#rolling-restart-of-equella)
-* [Rolling Restart of Zookeeper](#rolling-restart-of-zookeeper)
-* [Running Zookeeper in a Degraded State](#running-zookeeper-in-a-degraded-state)
-* [Appendix: Healthy Cluster State](#appendix-healthy-cluster-state)
+- [Introduction](#introduction)
+- [openEquella Network Failure](#equella-network-failure)
+- [Unique IDs for openEquella Nodes](#unique-ids-for-equella-nodes)
+- [openEquella Session Failover](#equella-session-failover)
+- [Failure to Connect to Zookeeper on Startup](#failure-to-connect-to-zookeeper-on-startup)
+- [Rolling Restart of openEquella](#rolling-restart-of-equella)
+- [Rolling Restart of Zookeeper](#rolling-restart-of-zookeeper)
+- [Running Zookeeper in a Degraded State](#running-zookeeper-in-a-degraded-state)
+- [Appendix: Healthy Cluster State](#appendix-healthy-cluster-state)
 
 ## Introduction
-**Zookeeper failover:**  Zookeeper requires a majority of its quorum nodes to be responsive in order to be available to openEquella. For the following scenarios, we’ll assume the Zookeeper quorum has 3 nodes.
 
-**openEquella failover:**  openEquella does not have a majority requirement for active nodes in its cluster. It does however have a delay of roughly 30 seconds to persist user sessions / state (such as wizards) to the database. Note that Bulk Operations will not failover to other openEquella nodes. For the following scenarios, we’ll assume the openEquella cluster has 2 nodes.
+**Zookeeper failover:** Zookeeper requires a majority of its quorum nodes to be responsive in order to be available to openEquella. For the following scenarios, we’ll assume the Zookeeper quorum has 3 nodes.
+
+**openEquella failover:** openEquella does not have a majority requirement for active nodes in its cluster. It does however have a delay of roughly 30 seconds to persist user sessions / state (such as wizards) to the database. Note that Bulk Operations will not failover to other openEquella nodes. For the following scenarios, we’ll assume the openEquella cluster has 2 nodes.
 
 ## Tests
 
-## openEquella Network Failure 
+## openEquella Network Failure
+
 ### Less than 10 seconds
 
 For a short network failure, no visible change should occur in openEquella.
@@ -36,6 +38,7 @@ For a short network failure, no visible change should occur in openEquella.
 10. Verify cluster health.
 
 ### More than 10 seconds
+
 For a longer network failure, the nodes that had trouble communicating with
 Zookeeper will refresh its ‘Active Tasks’ state. To do so, any tasks on the affected
 node(s) will be stopped (after completion of the current execution, provided the
@@ -55,15 +58,19 @@ Zookeeper.
 10. Verify cluster health.
 
 ## Unique IDs for openEquella Nodes
-Covered in the openEquella Clustering Guide. 
+
+Covered in the openEquella Clustering Guide.
 Note that in 6.3+ the first part of the cluster id can be specified in optional-config.
 
 ## openEquella Session Failover
+
 Covered in the openEquella Clustering Guide.
 
 ## Failure to Connect to Zookeeper On Startup
+
 openEquella should wait for Zookeeper to start up and proceed as normal once connected to
 Zookeeper.
+
 1. Turn off openEquella (2 node cluster).
 2. Turn off a majority of the Zookeeper nodes.
 3. Turn on both openEquella nodes (should not fully start up - i.e. the website will not be accessible).
@@ -72,7 +79,9 @@ Zookeeper.
 6. Verify cluster health.
 
 ## Rolling Restart of openEquella
+
 openEquella should operate as normal when performing rolling restarts for a majority of use cases, which includes cluster health.
+
 1. Assuming a 2 node cluster, take note of the Active Tasks details.
 2. Stop node A, wait 15 seconds, start node A, wait 30 seconds.
 3. Verify the Active Tasks are now running on node B.
@@ -81,10 +90,12 @@ openEquella should operate as normal when performing rolling restarts for a majo
 6. Verify cluster health.
 
 ## Rolling Restart of Zookeeper
+
 Zookeeper is highly robust in terms of failover, and as such, rolling restarts are appropriate. As long as the majority of the Zookeeper nodes are always active, openEquella should operate as normal, but will need to reconnect to Zookeeper when its current Zookeeper node is bounced. This is similar to the scenario of a network failure scenario lasting less than 10 seconds.
+
 1. Take note of the Active Tasks details.
 2. Login to openEquella and start a Bulk Op that will go for at least 30 seconds longer than the rolling restart of
-Zookeeper will take.
+   Zookeeper will take.
 3. Perform the rolling restart of Zookeeper (bounce a Zookeeper node, wait 30 seconds, continue). For testing failover, try to bounce the Zookeeper leader node if possible.
 4. Ensure the Active Tasks details remain as before, and that the Bulk Op task is on the list.
 5. Ensure the Bulk Op dialog completes.
@@ -93,6 +104,7 @@ Zookeeper will take.
 8. Verify cluster health.
 
 ## Running Zookeeper in a Degraded State
+
 Zookeeper needs a majority of its nodes responding to have the quorum be available to
 openEquella. Assuming a 3 node Zookeeper configuration, this means 2 nodes have to be
 responsive. openEquella should run as normal as long as the quorum is available, even if not
@@ -103,13 +115,14 @@ all Zookeeper nodes are responsive.
 3. Verify cluster health - let enough time pass that the hourly scheduled tasks run.
 
 ## Appendix Healthy Cluster State
+
 To verify a ‘healthy’ openEquella cluster (assuming a 2 node cluster):
 
 1. Verify scheduled tasks are running (via the logs) every hour.
-Perform the add-item test:
+   Perform the add-item test:
 2. Add an item (can be in draft) with an attachment on the first node
 3. Access ‘Manage Resources’ from another node - ensure the item shows up
-immediately after it’s created
+   immediately after it’s created
 4. Perform the add-item test for each node
 5. Verify disabling / enabling an institution works on both nodes.
 6. Verify the logged in users are roughly equivalent (can be up to a 60 second delay).
@@ -117,9 +130,10 @@ immediately after it’s created
 8. Verify the ‘Active Tasks’ section on the cluster health page is as expected.
 
 Monitor the logs:
-  * Ensure openEquella isn’t reconnecting to Zookeeper or other openEquella nodes a lot
+
+- Ensure openEquella isn’t reconnecting to Zookeeper or other openEquella nodes a lot
   (openEquella should rarely need to reconnect unless a network failure or app failure
   occurs)
-  * Ensure the Zookeeper logs are clean (We’ve seen cases where the Zookeeper quorum
+- Ensure the Zookeeper logs are clean (We’ve seen cases where the Zookeeper quorum
   had insufficient resources / configs, and was performing inter-quorum reconnections a
   lot)

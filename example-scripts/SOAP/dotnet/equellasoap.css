@@ -1,50 +1,40 @@
-FORM
-{
-	font-family: sans-serif;
-	padding-left: 10%;
-	padding-right: 10%;
+form {
+  font-family: sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-FIELDSET
-{
-	width: 100%;
+fieldset {
+  width: 100%;
 }
 
-SELECT
-{
-	width: 100%;
+select {
+  width: 100%;
 }
 
-INPUT[type='text']
-{
-	width: 100%;
+input[type="text"] {
+  width: 100%;
 }
 
-INPUT[type='file']
-{
-	width: 100%;
+input[type="file"] {
+  width: 100%;
 }
 
-LABEL
-{
+label {
 }
 
-LEGEND
-{
-	color: #000070;
+legend {
+  color: #000070;
 }
 
-.help
-{
-	font-size: 80%;
+.help {
+  font-size: 80%;
 }
 
-.help CODE
-{
-	font-size: 120%;
+.help code {
+  font-size: 120%;
 }
 
-.formfield
-{
-	padding-bottom: 1em;
+.formfield {
+  padding-bottom: 1em;
 }

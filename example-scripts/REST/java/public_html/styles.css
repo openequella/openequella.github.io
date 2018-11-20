@@ -1,81 +1,64 @@
-BODY
-{
-	font-family: sans-serif;
-	background-color: #EEEEFF;
+body {
+  font-family: sans-serif;
+  background-color: #eeeeff;
 }
 
-DIV.nav
-{
-	float: left;
-	width: 100px;
-	margin-left: 20px;
-	margin-right: 20px;
-	background-color: #FFAA00;
+div.nav {
+  float: left;
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #ffaa00;
 }
 
-DIV.nav DIV.navlink
-{
-	padding: 10px;
+div.nav div.navlink {
+  padding: 10px;
 }
 
-DIV.container
-{
-	float: left;
-	width: 800px;
-	/*
+div.container {
+  float: left;
+  width: 800px;
+  /*
 	position: absolute;
 	left: 50%;
 	margin-left: -500px;
 	width: 1000px;*/
-	
 }
 
-H1
-{
-	
+h1 {
 }
 
-FIELDSET
-{
-	
+fieldset {
 }
 
-LEGEND
-{
-	color: #000070;
+legend {
+  color: #000070;
 }
 
-.formfield
-{
-	padding-bottom: 1em;
+.formfield {
+  padding-bottom: 1em;
 }
 
-.formfield LABEL
-{
-	font-weight: bold;
+.formfield label {
+  font-weight: bold;
 }
 
-SELECT
-{
-	width: 100%;
+select {
+  width: 100%;
 }
 
-INPUT[type='text']
-{
-	width: 100%;
+input[type="text"] {
+  width: 100%;
 }
 
-INPUT[type='file']
-{
-	width: 100%;
+input[type="file"] {
+  width: 100%;
 }
 
-DIV.help
-{
-	font-size: 80%;
+div.help {
+  font-size: 80%;
 }
 
-DIV.help CODE
-{
-	font-size: 120%;
+div.help code {
+  font-size: 120%;
 }

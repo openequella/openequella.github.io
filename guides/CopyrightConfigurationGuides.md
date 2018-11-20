@@ -38,21 +38,23 @@ websites, including those of CA and CLNZ, the Australian Copyright Council, the 
 Council of New Zealand, and AUSTLII.
 
 The examples in this guide are based on the schemas, citations, XSL transformations,
-collections, courses, remote repository searches, advanced searches and security that are provided with the openEQUELLA Vanilla Copyright Collections and provide a starting point for creating custom configurations that closely fit the institution’s purpose. 
+collections, courses, remote repository searches, advanced searches and security that are provided with the openEQUELLA Vanilla Copyright Collections and provide a starting point for creating custom configurations that closely fit the institution’s purpose.
 
 Please note that this guide is based on Australian and New Zealand Copyright regulations. It has been developed to reflect the full capabilities of openEQUELLA and as such may differ in appearance from your own installation.
 
 ### Copyright compliance configuration process
+
 In this guide the user will:
-* either upload the default copyright metadata schema using the Metadata Schemas
-tool in the Administration Console
-* or add the required copyright metadata schema nodes to an existing schema, as
-specified in this document, by using the Metadata Schemas tool in the
-Administration Console
-* either upload the three default copyright collection definitions using the Collection
-Definitions tool in the Administration Console
-* or create the three copyright collection definitions as required to manage copyright in
-openEQUELLA, using the Collection Definitions tool in the Administration Console.
+
+- either upload the default copyright metadata schema using the Metadata Schemas
+  tool in the Administration Console
+- or add the required copyright metadata schema nodes to an existing schema, as
+  specified in this document, by using the Metadata Schemas tool in the
+  Administration Console
+- either upload the three default copyright collection definitions using the Collection
+  Definitions tool in the Administration Console
+- or create the three copyright collection definitions as required to manage copyright in
+  openEQUELLA, using the Collection Definitions tool in the Administration Console.
 
 NOTE: the collections must follow the requirements specified in this document. Failing to do so may mean that the copyright software which sits within openEQUELLA will be
 unable to calculate percentages and will therefore be unable to block activations which
@@ -60,28 +62,31 @@ would breach copyright.
 
 Once the schema nodes and copyright collection wizards are in place the
 administrator will:
-* Configure copyright licensing using the Collection Definitions tool to edit the
-Extensions tab in the collection wizards
-* Add course details using the Courses tool
-* Configure user permissions by assigning the copyright privileges appropriate for the
-user, using the Security Manager tool
-* Upload the Electronic Use Survey report using the Reporting tool
-* Create searches for library and other compliant databases using the Remote
-Repositories tool
-  * Link the appropriate XSLT and parent (holding) collection to each remote search
-* If required, create advanced searches using the Advanced Searches tool
-* If required, create browse hierarchies using the Hierarchy Editor tool
+
+- Configure copyright licensing using the Collection Definitions tool to edit the
+  Extensions tab in the collection wizards
+- Add course details using the Courses tool
+- Configure user permissions by assigning the copyright privileges appropriate for the
+  user, using the Security Manager tool
+- Upload the Electronic Use Survey report using the Reporting tool
+- Create searches for library and other compliant databases using the Remote
+  Repositories tool
+  - Link the appropriate XSLT and parent (holding) collection to each remote search
+- If required, create advanced searches using the Advanced Searches tool
+- If required, create browse hierarchies using the Hierarchy Editor tool
 
 ## Administration console
+
 The openEQUELLA Administration Console provides a range of tools and plug-ins that simplify the
 management and configuration of openEQUELLA.
 
 To access openEQUELLA and open the Administration Console
-1. From the navigation menu, select Settings, Administration Console. 
+
+1. From the navigation menu, select Settings, Administration Console.
 2. The Administration console displays.
 
 The number of tools available to a user in the Administration Console depends on the
-privileges associated with that user’s account. 
+privileges associated with that user’s account.
 
 All available tools are displayed on the left-hand side of the page.
 
@@ -89,8 +94,8 @@ For the examples in this guide the Metadata Schemas, Collection Definitions,
 Courses, Remote Repositories, Advanced Searches and Reporting tools are
 required.
 
-
 ## Copyright metadata schema
+
 A metadata schema (schema) is a storage structure used to hold a resource’s metadata.
 Resource metadata is used in searching and managing resources within the openEQUELLA
 repository. A schema that conforms to an available standard increases the utility and
@@ -104,34 +109,40 @@ Vanilla Institution and it provides a starting point for creating custom metadat
 To enable the copyright compliance features in openEQUELLA to function correctly, a specific Copyright schema is required.
 
 ### Create the copyright schema
+
 Metadata schemas are created and modified using the Metadata Schemas tool available
 in the Administration Console.
 
 To create a new openEQUELLA copyright metadata schema from scratch
+
 1. Select the Metadata Schemas tool in the Administration Console.
 2. Select the default schema
 3. Click Edit to display the Schema Editor.
 
 The Schema Editor provides an interface for schema creation with the following tabs:
-* Details—includes general information for the schema and association of resource
-paths.
-* Editor—creates a schema to gather the metadata.
-* Transformations—enables the conversion of metadata from uploaded schemas to
-facilitate import and export of metadata and attachments between repositories.
-* Citations—gathers citation information from the schema metadata and transforms it
-into the appropriate format from uploaded XSLTs.
-* Access Control—controls access to the schema.
+
+- Details—includes general information for the schema and association of resource
+  paths.
+- Editor—creates a schema to gather the metadata.
+- Transformations—enables the conversion of metadata from uploaded schemas to
+  facilitate import and export of metadata and attachments between repositories.
+- Citations—gathers citation information from the schema metadata and transforms it
+  into the appropriate format from uploaded XSLTs.
+- Access Control—controls access to the schema.
 
 ### Details tab
+
 The Details page includes general information for the schema and association of resource
 paths.
+
 4. Enter a Schema Name (e.g. Generic schema - CAL) and Description for the schema
-on the Details page. 
+   on the Details page.
 
 The Resource Name Path and Resource Description Path are pre-selected in the
 default schema, once the relevant nodes have been created in the schema. These nodes must be mapped into the ‘title’ edit box controls in each of the three copyright collections to avoid the record display showing the openEQUELLA uuid in place of the title.
 
 ### Editor tab
+
 All schemas have the base node xml and must contain a node for the name and description of contributed resources (which are recorded in the Resource Name Path and Resource Description Path fields on the Details tab). Further nodes specific to copyright can be added.
 
 Some schema nodes need to be checked as Searchable by Free Text (searchable) and
@@ -140,6 +151,7 @@ Index for Advanced Searches (index) during creation.
 (NOTE: The nodes indexed for advanced searches are used for advanced searches and duplication and uniqueness checking.)
 
 To enter the Copyright schema in the Hierarchy pane
+
 1. Select the Editor tab to display the Editor page.
 2. Select the xml node.
 3. Click Child to display the Target Details section.
@@ -155,13 +167,13 @@ To enter the Copyright schema in the Hierarchy pane
 13. Click to Sibling create a new node.
 14. Enter the node Name (e.g. description) and select the Type (e.g. text).
 15. Check the Searchable by Free Text checkbox, an example is shown in Figure 6.
-Figure 6 Editor page—example description node
+    Figure 6 Editor page—example description node
 16. Select the node (e.g. copyright).
 17. Click Attribute to create a new attribute child node. (NOTE: The other
-buttons are inactive when an attribute node is selected.)
+    buttons are inactive when an attribute node is selected.)
 18. Enter the node Name (e.g. type) and select the Type (e.g. text).
 19. Check the Searchable by Free Text and Index for Advanced Searches
-checkboxes.
+    checkboxes.
 20. Select the node (e.g. copyright).
 21. Click the button to create a new attribute child node.
 22. Enter the node Name (e.g. parenttype) and select the Type (e.g. text).
@@ -169,8 +181,8 @@ checkboxes.
 24. Click to create a new child node.
 25. Enter the node Name (e.g. title) and select the Type (e.g. text).
 26. Check the Searchable by Free Text and Index for Advanced Searches
-checkboxes.
-27. Add further nodes to complete the schema. 
+    checkboxes.
+27. Add further nodes to complete the schema.
 
 Nodes can be rearranged using the up and down arrows on the left of the editor pane.
 
@@ -183,19 +195,22 @@ attributes to be added to locked nodes.
 collection resources are not updated and can exhibit unexpected behaviour.)
 
 ### Transformations tab
+
 Importing an Extensible Stylesheet Language Transformation (XSLT) can transform
 resource metadata, for example to provide a link between a search and resources in a
 Parent (holding) collection. Transformations are added in the Transformations page.
 Example import transformations are provided with the openEQUELLA Vanilla Institution.
 
 To add an import transformation
+
 1. Select the Transformations tab in the Schema Editor to display the
-Transformations page.
+   Transformations page.
 2. Click Add in the Import Transformations section to display a Schema Transformation dialog.
 3. Enter an appropriate name in the Schema Name field (e.g. MARCXML to Book).
 4. Click to find and open the XSL transformation file (e.g. marcxml_to_book.xslt) then click the button.
 
 ### Citations tab
+
 When citing licensed material and institution-preferred style can be selected to display in
 the LMS. Citations can be configured in the Citations page. Various citation styles can be
 added (APA, Chicago, Harvard, etc.) for use with resources associated with the schema
@@ -203,23 +218,26 @@ added (APA, Chicago, Harvard, etc.) for use with resources associated with the s
 citation styles are provided with the openEQUELLA Vanilla Institution.
 
 To add a citation
+
 1. Select the Citations tab in the Schema Editor to display the Citations page.
 2. Click Add.
 3. Click in the blank Citation field to display a drop-down menu of available citation
-styles.
+   styles.
 4. Select the required citation or enter a citation name (e.g. Generic).
 5. Click in the blank Transformation field to display a browse dialog enabling selection
-of an XSLT file (e.g. generic_citation.xsl). 
+   of an XSLT file (e.g. generic_citation.xsl).
 
 ### Access Control tab
+
 Schema collaborators (users that can perform various operations on a schema) are
 managed with the Access Control page. Collaborators can be selected individually, as
 groups or by role to be granted permissions to perform actions on the schema. Further
 information on managing privileges is provided in the openEQUELLA Security Guide.
 The schema privileges include:
-* CREATE_SCHEMA = create a schema
-* DELETE_SCHEMA = delete this schema
-* EDIT_SCHEMA = edit this schema
+
+- CREATE_SCHEMA = create a schema
+- DELETE_SCHEMA = delete this schema
+- EDIT_SCHEMA = edit this schema
 
 These privileges are typically granted to Administrators.
 
@@ -227,10 +245,12 @@ By clicking the Advanced radio button the details of the limited set of users, g
 and/or roles is displayed….
 
 Save the schema settings
+
 1. Click Save to save the configuration details.
 2. Click Close to close the Schema Editor.
 
 ## Collection definitions
+
 Collection Definitions (collections) associate important information (metadata) and processes
 with uploaded files or external web sites, and in the case of the eReserve Collection, with a
 resource in either the Book or the Journal parent (holding) collection as appropriate for the particular e-reading. openEQUELLA Contribution Wizards gather this information during the
@@ -244,6 +264,7 @@ Parent (holding) collections are used to easily differentiate the types of copyr
 openEQUELLA provides copyright compliant collections with the openEQUELLA Vanilla Institution and they provide a starting point for creating custom collections that closely fit the institution’s purpose. The examples in this section are based on two Parent (holding) collections called Books and Journals and a portion collection called eReserve articles.
 
 ### Create collection definitions
+
 Creating a collection definition requires that the metadata schema has been defined.
 
 The Collection Definition Editor allows the entry of general collection information such as name, description and wizard category. Much of this information is displayed to the user
@@ -251,18 +272,19 @@ when contributing resources, enabling them to select a suitable collection for t
 contribution.
 
 Collections are created and modified using the Collection Definitions tool available in
-the Administration Console. 
+the Administration Console.
 
 To create a collection
+
 1. Select Collection Definitions from the Administration Console.
-2. Click Add to display the Collection Definition Editor. 
+2. Click Add to display the Collection Definition Editor.
 
 The Collection Definition Editor provides an interface for collection creation. The following tabs are described in this section:
-* Details—provides general information for the collection, association of a metadata schema and workflow template.
-* Wizard—creates a wizard to gather the metadata about the resource.
-* Extensions—configures copyright licensing compliance, activation options and
-customised error messages and agreements.
 
+- Details—provides general information for the collection, association of a metadata schema and workflow template.
+- Wizard—creates a wizard to gather the metadata about the resource.
+- Extensions—configures copyright licensing compliance, activation options and
+  customised error messages and agreements.
 
 ## Copyright compliant collections
 
@@ -273,9 +295,10 @@ collections for Parent (holding) resources (books, journals, etc.) and portion r
 openEQUELLA copyright compliant collections do not restrict the amount of resources that can
 be stored in the repository but do restrict the number of portion resources that can be
 viewed by course users. The following restrictions are applied:
-* For books—usually 10% (this percentage is configurable) or one chapter,
-whichever is the greater.
-* For journals—one article or multiple articles with the same topic.
+
+- For books—usually 10% (this percentage is configurable) or one chapter,
+  whichever is the greater.
+- For journals—one article or multiple articles with the same topic.
 
 To initiate the activation rules the portion resources must be linked to a relevant parent
 (holding) resource during the portion resource contribution process.
@@ -285,69 +308,73 @@ Copyright compliance collection creation typically includes the following steps:
 1. Create a Parent (holding) collection (e.g. Books).
 2. Create another Parent (holding) collection (e.g. Journals).
 3. Create a portion collection (e.g. eReserve articles) for extracts such as book chapters
-and journal articles.
+   and journal articles.
 
 The first step is to create a Parent (holding) collection.
 
 ### Create a Parent (holding) collection
+
 The Parent (holding) collection created in this section using the Collections Definition
 Editor is called Books.
 
 To add the collection definition details
+
 1. Enter the following in the Details page.
-  
-  a. Collection name—enter a unique display name for the collection (e.g. Books).
-  Collection details are displayed to users on the Contribute page in the openEQUELLA
-  Digital Repository. 
-  
-  b. Collection description—enter a description for this collection. This description is
-  displayed to help contributors choose a collection during the contribution process.
-  
-  c. Collection owner—defaults to the current user. To change click Search then browse and select a new owner.
-  
-  d. Select metadata schema—select a metadata schema from the drop-down list (e.g. Generic Schema).
-  
-  e. Allow SCORM Packaging—select from the drop-down list to allow resources in the collection to be downloaded as a SCORM-compliant package.
-  
-  f. Map to a workflow—select from the drop-down list to allow resources in this collection to automatically enter the selected workflow.
-  
-  g. Select review period— select from the drop-down list to allow the period between moderation reviews to be set to ensure the resource remains current.
-  This option is only available for collections that have an associated workflow.
-  
-  h. Select wizard category— select a category from the drop-down list to allow a means for grouping collection definitions. Categories are displayed on the user contribution page in the openEQUELLA Digital Repository. Select a wizard category (e.g. Demonstration) from the list. If there is no suitable category, new ones can be created by clicking the Add... link. 
+
+a. Collection name—enter a unique display name for the collection (e.g. Books).
+Collection details are displayed to users on the Contribute page in the openEQUELLA
+Digital Repository.
+
+b. Collection description—enter a description for this collection. This description is
+displayed to help contributors choose a collection during the contribution process.
+
+c. Collection owner—defaults to the current user. To change click Search then browse and select a new owner.
+
+d. Select metadata schema—select a metadata schema from the drop-down list (e.g. Generic Schema).
+
+e. Allow SCORM Packaging—select from the drop-down list to allow resources in the collection to be downloaded as a SCORM-compliant package.
+
+f. Map to a workflow—select from the drop-down list to allow resources in this collection to automatically enter the selected workflow.
+
+g. Select review period— select from the drop-down list to allow the period between moderation reviews to be set to ensure the resource remains current.
+This option is only available for collections that have an associated workflow.
+
+h. Select wizard category— select a category from the drop-down list to allow a means for grouping collection definitions. Categories are displayed on the user contribution page in the openEQUELLA Digital Repository. Select a wizard category (e.g. Demonstration) from the list. If there is no suitable category, new ones can be created by clicking the Add... link.
 
 To create a collection definition wizard
 
-The Wizard page enables the construction of a Contribution Wizard. 
+The Wizard page enables the construction of a Contribution Wizard.
 
-Contribution Wizards are used to assist contributors in providing the details appropriate for the contributed resources. The wizard is displayed when the collection is selected from the Contribute page the openEQUELLA Digital Repository. 
+Contribution Wizards are used to assist contributors in providing the details appropriate for the contributed resources. The wizard is displayed when the collection is selected from the Contribute page the openEQUELLA Digital Repository.
 
 To add the wizard controls
+
 1. Select the Wizard tab in the Collection Definition Editor to display the Wizard page.
 2. Click Add to display the Select a control… dialog.
 3. Select a Page control from the list then click OK to display the new page as a child
-node of the Wizard node.
+   node of the Wizard node.
 4. Enter the Title (e.g. Book details) in the Control Editor pane. This name is displayed
-to users on the corresponding wizard tab or sidebar list.
+   to users on the corresponding wizard tab or sidebar list.
 
-Other controls can be added to this wizard page. 
+Other controls can be added to this wizard page.
 
 To add controls to a page
+
 1. Select the page control (e.g. Book details) in the Hierarchy pane.
-2. Click Add to display the Select a control… dialog. 
+2. Click Add to display the Select a control… dialog.
 3. Select a Shuffle List control then click OK to display the control in the hierarchy
-pane. This control allows users to add any number of elements to a list.
+   pane. This control allows users to add any number of elements to a list.
 4. Enter the Title (e.g. ISBN).
 5. Enter a Description (e.g. Enter ISBN then click ‘Add’). When a title is selfexplanatory
-the description is not required.
+   the description is not required.
 6. Check the Warn the contributor if data in this field is not unique for resources in this collection checkbox. (NOTE: The schema element must also be indexed for advanced searching.)
 7. Click Add in the Select metadata target(s) for this control: section to display
-the Choose a Schema element? dialog.
+   the Choose a Schema element? dialog.
 8. Click the + symbols to expand the tree.
 9. Select the schema element (e.g. item/copyright/issn) then click to display the
-selected schema element in the Select metadata target(s) for this control: section.
+   selected schema element in the Select metadata target(s) for this control: section.
 10. Select the Page control (e.g. Journal Details).
-When adding the following controls, leave the default values unless stated.
+    When adding the following controls, leave the default values unless stated.
 11. Click then select an Edit Box control and enter the following:
 
 a. Title—(e.g. Journal Title).
@@ -424,22 +451,24 @@ c. Number of rows—(e.g. 2).
 
 d. Select metadata target(s) for this control—(e.g. item/copyright/internalnotes).
 
-e. Scripting—(e.g. if Issue type = ‘number’). 
+e. Scripting—(e.g. if Issue type = ‘number’).
 
 NOTE: The red dot next to the Editors control indicates that the control has an associated script, which displays the control only if certain other conditions set in a previous control in the wizard, are ‘true’.
 
 To add a script
-1. Click to display the Script Editor. 
-All wizard control scripts must start with ‘if’
+
+1. Click to display the Script Editor.
+   All wizard control scripts must start with ‘if’
 2. Click the ... button to display the What is being evaluated? dialog.
-3. Select the radio button option (e.g. Role of User). 
+3. Select the radio button option (e.g. Role of User).
 4. Click OK to add the selected option as the test term.
 5. Select an option from the relational operator drop-down list (e.g. =).
 6. Select the test value from the drop-down list (e.g. Content Administrator Role). (NOTE: A test value can be entered for test terms with a selected schema node.)
 7. Click Add to display the script in the Script area. The ‘end if’ has been automatically added by the script editor.
-8. Click OK to save and close the Script Editor. 
+8. Click OK to save and close the Script Editor.
 
 To add further controls
+
 1. Add a Raw HTML control then enter the following:
 
 a. User Defined HTML—(e.g. <hr>).
@@ -503,33 +532,38 @@ a. Title—(e.g. Conference date).
 b. Select metadata target(s) for this control—(e.g. item/copyright/conference/year).
 
 ### Incorporate a Static Metadata control
+
 The Static Metadata control is used to store metadata that is fixed for all resources of a
 collection, for example the name of a faculty or school that remains the same across the
 entire collection.
 
 To add a Static Metadata control
+
 1. Select the Page control (e.g. Book details).
 2. Click Add to display the Select a control…dialog.
 3. Select a Static Metadata control then click to display the control in the
-Hierarchy pane.
+   Hierarchy pane.
 4. Click Browse in the Metadata target section to display the Choose a schema
-element? dialog.
+   element? dialog.
 5. Click the + symbol to expand the tree.
 6. Select the node (e.g. @type) then click OK.
 7. Enter a Metadata Value (e.g. Book).
-8. Click to add the metadata value to the metadata target and display the associated list. 
+8. Click to add the metadata value to the metadata target and display the associated list.
 
 ### Incorporate Copyright licensing extensions
+
 Copyright compliant collection definitions are simple to configure and the copyright usage
 data is automatically recorded. To create a copyright compliant collection definition, the
 Copyright Licensing checkbox must be selected on the Extensions page in the Collection Definition Editor.
 
 To incorporate Copyright licensing
+
 1. Select the Extensions tab in the Collection Definitions Editor to display the Extensions
-page.
+   page.
 2. Check the Copyright Licensing checkbox.
 
 Customised activation error or inactive messages and licence text for display to users can also be added to the Parent (holding) collection.
+
 1. Click to display the Copyright Licensing dialog.
 2. Enter error messages in the Activation Error and Inactive Error panes respectively.
 
@@ -544,67 +578,78 @@ resource such as a journal article that is not activated. If the user has suffic
 privileges, they will be able to activate the resource themselves.
 
 ### Restrict activations
+
 The default activation restrictions can be overridden by administrators with options to
 restrict activation to a single portion resource per Parent (holding) resource and apply the activations per course rather than institution wide.
 
 To restrict activation to a single portion per Parent (holding) resource
+
 1. Select the Restrict activation to a single portion per holding (i.e. parent resource) checkbox.
 
 To restrict activations per course
+
 1. Select the Restrictions are per course checkbox.
 
 ### Copyright status agreement
+
 An agreement can be uploaded that is displayed to users who must accept the agreement
 terms before they can view an activated portion resource.
 
 To add a copyright status agreement
+
 1. Check the Resources with copyright status require agreement? checkbox.
 2. Click the Upload button and upload the agreement (in HTML format) from the local
-computer or network.
+   computer or network.
 
 To save the licensing settings
+
 1. Click OK to save the details and close the Copyright Licensing dialog.
 
 ### Save the collection definition settings
+
 1. Click Save to save the configuration details.
 2. Click Close to close the Collection Definition Editor.
 
-The copyright compliant Books Parent (holding) collection is now complete. 
+The copyright compliant Books Parent (holding) collection is now complete.
 
 The next step is to create a Parent (holding) collection for journals.
 
 ### Create another Parent (holding) collection
+
 The Parent (holding) collection created in this section using the Collections Definition
 Editor is called Journals. The Books collection has similar controls so the Journals collection will be created by cloning and editing the Books collection.
 
 To create the Journals Parent (holding) collection
+
 1. Select Collection Definitions in the Administration Console then collection.
 2. Click Clone to display the Clone? dialog.
 3. Click Yes to confirm then click OK to add a new collection (e.g. Copy of Books) to the Collection Definitions list.
 4. Select the collection (e.g. Copy of Books) then click to display the Collection Definition Editor.
 
 To edit the collection definition details
-1. Enter appropriate information in the Details page. 
+
+1. Enter appropriate information in the Details page.
 
 a. Collection name—enter a unique name for the collection (e.g. Journals).
 
 b. Collection description—enter a brief description for this collection.
 
 To edit a collection definition wizard
+
 1. Select the Wizard tab to display the Wizard editor page.
 2. Select the page control (e.g. Book details) in the Hierarchy pane to display the control
-editor pane. 
+   editor pane.
 3. Edit the Title (e.g. Journal Issue details).
 4. Select the next control (e.g. ISBN).
 5. Edit the Title (e.g. ISSN).
 6. Edit the Description (e.g. Enter ISSN then click ‘Add’). When a title is selfexplanatory
-the description is not required.
+   the description is not required.
 7. Select the target in the Select metadata target(s) for this control: section (e.g.
-item/copyright/isbn) then click Browse.
+   item/copyright/isbn) then click Browse.
 8. Click Add to display the Choose a Schema element? dialog.
-9. Click the + symbols to expand the tree. 
+9. Click the + symbols to expand the tree.
 10. Select the schema element (e.g. item/copyright/issn) then click to display the
-selected schema element in the Select metadata target(s) for this control: section.
+    selected schema element in the Select metadata target(s) for this control: section.
 11. Select the (e.g. Book Title) control then edit the following:
 
 a. Title—(e.g. Journal Issue Title).
@@ -631,13 +676,13 @@ a. Title—(e.g. Year of publication of journal issue).
 26. Remove the (e.g. Raw HTML) control.
 27. Remove the (e.g. Conference name) control.
 28. Select the (e.g. Conference number) control then edit the following:
-a. Title—(e.g. Volume number).
+    a. Title—(e.g. Volume number).
 29. Select the target in the Select metadata target(s) for this control: section (e.g.
-item/copyright/conference/number) then click Remove .
+    item/copyright/conference/number) then click Remove .
 30. Click Add to display the Choose a Schema element? dialog.
 31. Select the schema element (e.g. item/copyright/volume) then click to display the
-selected schema element in the Select metadata target(s) for this control:
-section.
+    selected schema element in the Select metadata target(s) for this control:
+    section.
 32. Select the (e.g. Conference location) control then edit the following:
 
 a. Title—(e.g. Issue number).
@@ -647,13 +692,13 @@ or Summer).
 
 c. Select metadata target(s) for this control:— (e.g. item/copyright/issue/value).
 
-d. Scripting—(e.g. if /item/copyright/issue/type != 'date'). 
+d. Scripting—(e.g. if /item/copyright/issue/type != 'date').
 
 33. Remove the (e.g. Conference date) control.
 34. Select the page control (e.g. Journal Issue details) in the Hierarchy pane.
 35. Click Add to display the Select a control… dialog.
 36. Select a Radio Button Group control then click OK to display the control in the
-Hierarchy pane. This control allows users to select one element from a group.
+    Hierarchy pane. This control allows users to select one element from a group.
 
 a. Enter the Title (e.g. Issue type).
 
@@ -685,7 +730,7 @@ k. Add an extra name (e.g. Issue date) and value (e.g. date) to the list.
 37. Click the up arrow button to move the Issue type control above the Issue number control.
 38. Select the page control (e.g. Journal Issue details) in the Hierarchy pane.
 39. Click Add to add a Calendar control that allows users to select a date then click
-OK and enter the following:
+    OK and enter the following:
 
 a. Title—(e.g. Issue date (dd/mm/yyyy)).
 
@@ -696,32 +741,37 @@ c. Scripting—(e.g. if /item/copyright/issue/type = 'date').
 40. Select the Static Metadata control.
 41. Select the Schema path (e.g. item/copyright/@type) then click Remove.
 42. Click Browse in the Metadata target section to display the Choose a schema
-element? dialog.
+    element? dialog.
 43. Select the node (e.g. item/copyright/@type) then click OK.
 44. Enter a Metadata value (e.g. Journal).
 45. Click Add to add the metadata value to the metadata target and display the
-association list.
+    association list.
 
 ### Incorporate Copyright licensing extensions
+
 To create a copyright compliant collection definition, the Copyright Licensing checkbox
 must be selected on the Extensions page in the Collection Definition Editor.
 
-
 ### Add error or agreement messages
-Customised activation error or inactive messages and licence text for display to users can also be added to the Parent (holding) collection. 
+
+Customised activation error or inactive messages and licence text for display to users can also be added to the Parent (holding) collection.
 
 ### Restrict activations
+
 The default activation restrictions can be overridden by administrators with options to
-restrict activation to a single portion resource per Parent (holding) resource and apply the activations per course rather than institution wide. 
+restrict activation to a single portion resource per Parent (holding) resource and apply the activations per course rather than institution wide.
 
 ### Copyright status agreement
+
 An agreement can be uploaded that is displayed to users who must accept the agreement
 terms before they can view an activated portion resource.
 
 To save the licensing settings
+
 1. Click OK to save the details and close the Copyright Licensing dialog.
 
 ### Save the collection definition settings
+
 1. Click Save to save the configuration details.
 2. Click Close to close the Collection Definition Editor.
 
@@ -736,12 +786,13 @@ The portion collection created in this section using the Collections Definition 
 called eReserve articles.
 
 To add an eReserve articles portions collection
+
 1. Click Add in the Administration Console to display the Collection Definition
-Editor. 
+   Editor.
 
 To add the collection definition details
 
-2. Enter appropriate information in the Details page. 
+2. Enter appropriate information in the Details page.
 
 a. Collection name—enter a unique display name for the collection (e.g. eReserve
 articles). Collections details are displayed to users on the Contribute page in the
@@ -778,14 +829,14 @@ The Wizard page enables the construction of a Contribution Wizard. The controls 
 red dot have an associated script.
 
 The wizard is displayed to contributors in the openEQUELLA Digital Repository when the
-collection definition (e.g. eReserve articles) is selected. 
+collection definition (e.g. eReserve articles) is selected.
 
 To add the wizard controls
 
 1. Select the Wizard tab to display a Wizard page. Configure this wizard using the same process as outlined in the To add controls to a page section.
-2. Click Add to display the Select a control… dialog. 
+2. Click Add to display the Select a control… dialog.
 3. Select a Page control from the list then click to display the new page as a child
-node of the Wizard node.
+   node of the Wizard node.
 4. Enter the Title (e.g. Book chapter or journal article) in the Control editor pane. This name is displayed to users on the corresponding wizard tab or sidebar list.
 
 To add controls to a page
@@ -803,12 +854,13 @@ c. Maximum number of repeats—(e.g. 50).
 d. Select metadata target(s) for this control—(e.g. /item/copyright/portions/portion/sections/section).
 
 The Repeater control creates a field that can be duplicated. It is beneficial for copyright
-collections where each section consists of repeated input elements. 
+collections where each section consists of repeated input elements.
 
 A repeater control requires at least one child to be added as it cannot be used in
 isolation.
 
 To add child controls to the repeater
+
 1. Add a Radio Button Group control then click OK to display the control in the Hierarchy pane. This control allows users to select one element from a group.
 
 a. Number of columns—(e.g. 2).
@@ -839,7 +891,7 @@ b. This control is mandatory—check the box.
 c. Select metadata target(s) for this control—(e.g. section/attachment)
 
 d. Scripting—(e.g. if /item/copyright/portions/portion/sections/section/type !=
-‘url’). 
+‘url’).
 
 3. Add a Single URL Link control then enter the following:
 
@@ -955,8 +1007,8 @@ c. Check Box Name—(e.g. Does this have an Illustration/Table?).
 
 d. Check Box Value—(e.g. illustration).
 
-
 To add child controls to the page control
+
 1. Select the page control (e.g. Book chapter or journal article) in the Hierarchy pane.
 2. Add a List Box control then enter the following:
 
@@ -973,7 +1025,6 @@ e. List Box Option Name—(e.g. Journal article).
 f. List Box Option Value—(e.g. Journal).
 
 g. List Box Option Name—(e.g. Book extract).
-
 
 h. List Box Option Value—(e.g. Book).
 
@@ -1000,7 +1051,7 @@ i. Restrict searching to the following dynamic collections—check to limit the 
 
 j. Restrict contribution to the collections—check to limit the collections available
 for contribution. Select collections (e.g. Books) that can be contributed to by using
-the arrow buttons. When a search or contribution option has been restricted but no collections, searches or sources are selected, that option is not be available in the Resource Selector selection page. 
+the arrow buttons. When a search or contribution option has been restricted but no collections, searches or sources are selected, that option is not be available in the Resource Selector selection page.
 
 4. Add a Resource Selector control then enter the following:
 
@@ -1013,7 +1064,7 @@ c. Scripting—(e.g. if /item/copyright/@parenttype = ‘Journal’).
 d. Selected resources are—(e.g. Copyright Holdings) to restrict resource selection.
 (NOTE: this is a mandatory selection for CAL.)
 
-e. Show home screen—check the box to display 
+e. Show home screen—check the box to display
 the selection Home page.
 
 f. Show ‘My Favourites’—check the box to make user’s My Favourites content available for selection.
@@ -1104,18 +1155,20 @@ h. Radio Button Value—(e.g. online).
 To incorporate Copyright licensing
 
 1. Select the Extensions tab in the Collection Definitions Editor to display the Extensions
-page.
+   page.
 2. Check the Copyright Licensing checkbox.
 3. (NOTE: Copyright licensing messages and restrictions are applied to the Parent (holding) collections and not the portion collection, refer to the Add error or agreement messages section for more information.)
 
 Save the collection definition settings
+
 1. Click Save to save the configuration details.
 2. Click Close to close the Collection Definition Editor.
-The copyright compliant eReserve articles portion collection is now complete. The wizard
-is displayed to contributors in the openEQUELLA Digital Repository when the collection
-definition (e.g. eReserve articles) is selected. 
+   The copyright compliant eReserve articles portion collection is now complete. The wizard
+   is displayed to contributors in the openEQUELLA Digital Repository when the collection
+   definition (e.g. eReserve articles) is selected.
 
 ## Courses
+
 openEQUELLA Courses are used for copyright licence activation to show where the licensed
 content is used. Courses in openEQUELLA should reflect the courses (by using the same course
 codes) used by any associated Learning Management System (LMS) such as Blackboard™ or
@@ -1124,22 +1177,27 @@ E
 QUELLA provides a sample course called openEQUELLA 101 with the openEQUELLA Vanilla Institution
 and it provides a starting point for creating custom courses that closely fit the institution’s purpose. The examples in this section are based on the openEQUELLA 101 Course.
 openEQUELLA courses can be archived for future use or multiple courses can be imported in
-bulk by uploading a CSV file with appropriate information. 
+bulk by uploading a CSV file with appropriate information.
 
 ### Create a course
+
 Courses are created and modified using the Courses tool available in the Administration Console.
 
 To create a course
+
 1. Select the Courses tool in the Administration Console.
 2. Click Add to display the Course Editor.
-The Course Editor provides an interface for course configuration with the following tabs:
-* Details—includes general information for a course.
-* Resource Selection—provides choices for viewing resources.
-* Access Control—controls access to a course.
+   The Course Editor provides an interface for course configuration with the following tabs:
+
+- Details—includes general information for a course.
+- Resource Selection—provides choices for viewing resources.
+- Access Control—controls access to a course.
+
 ### Details tab
+
 The Details page provides general information and configurable elements for a course.
 
-3. Enter appropriate information in the Details page. 
+3. Enter appropriate information in the Details page.
 
 a. Course Name —enter an appropriate course name (e.g. openEQUELLA 101). This name is displayed to users when activating and managing copyright resources.
 
@@ -1152,10 +1210,10 @@ d. Course Owner—defaults to the course creator. Clicking displays the Select R
 e. Code—enter an ID for linking the course to a LMS such as Blackboard™ or Moodle™. (NOTE: The openEQUELLA course code should be exactly the same as the course code used in the integrated system.)
 
 f. Start Date—selecting the course start date is optional. If this field is blank the
-course start date is determined by dates selected in the Settings Course Defaults options. 
+course start date is determined by dates selected in the Settings Course Defaults options.
 
 g. End Date—selecting the course end date is optional. If this field is blank the
-course start date is determined by dates selected in the Settings Course Defaults options. 
+course start date is determined by dates selected in the Settings Course Defaults options.
 
 h. Unique Individuals—enter the number of participants for the course (e.g. 25).
 
@@ -1166,67 +1224,77 @@ j. Course Type—select an appropriate course type from the drop-down list (e.g.
 k. Archived—leave this box unchecked. Checking this box prevents a course from displaying to users when activating and managing copyright resources.
 
 ### Resource selection tab
+
 The Resource Selection page provides institution-wide and course specific settings for resource version selection. Resource selection configuration is used to determine which version of a resource is displayed when a resource is selected. These settings are applicable to resources selected and saved when using an Attachments control with openEQUELLA Resources selected in a Contribution Wizard, and when openEQUELLA is integrated with a LMS such as Blackboard™ or Moodle™.
 
-1. Select the Resource Selection tab to display the Resource Selection page. 
+1. Select the Resource Selection tab to display the Resource Selection page.
 2. Select one of the following options that is applicable for your institution:
-* Use the institution wide settings—(default option) - select to apply the configured
-settings from the Settings - Selection sessions option.
-* Force selection to be the resource version the user is viewing—select to display
-the saved version of a resource.
-* Force selection to always be the latest live resource version—select to display
-the most recent live version of a resource even if the saved resource is for an older
-version.
-* Select the resource version the user is currently viewing—select to allow the
-user to choose between the saved resource version and most recent live version. This
-option defaults to the saved resource version.
-* Always use the latest live resource version—select to allow the user to choose
-between the saved resource version and most recent live version. This option defaults
-to the most recent resource version.
+
+- Use the institution wide settings—(default option) - select to apply the configured
+  settings from the Settings - Selection sessions option.
+- Force selection to be the resource version the user is viewing—select to display
+  the saved version of a resource.
+- Force selection to always be the latest live resource version—select to display
+  the most recent live version of a resource even if the saved resource is for an older
+  version.
+- Select the resource version the user is currently viewing—select to allow the
+  user to choose between the saved resource version and most recent live version. This
+  option defaults to the saved resource version.
+- Always use the latest live resource version—select to allow the user to choose
+  between the saved resource version and most recent live version. This option defaults
+  to the most recent resource version.
 
 ### Access control tab
+
 The Access Control page allows configuration of security properties associated with the
-selected course. 
+selected course.
 
 The course privileges include:
-* CREATE_COURSE_INFO = create a course
-* DELETE_COURSE_INFO = delete this course
-* EDIT_COURSE_INFO = edit this course
-These privileges are typically granted to Administrators responsible for running bulk
-imports.
+
+- CREATE_COURSE_INFO = create a course
+- DELETE_COURSE_INFO = delete this course
+- EDIT_COURSE_INFO = edit this course
+  These privileges are typically granted to Administrators responsible for running bulk
+  imports.
 
 ### Save the course settings
+
 1. Click Save to save the configuration details.
 2. Click Close to close the Course Editor.
 
 ## Copyright privileges
+
 A system administrator can implement the security settings required by their institution.
 
 Security settings are granted and revoked as is applicable for each institution. Copyright
 privileges can be set at Institution, Collection and Resource levels. This section provides typical practices that are suitable for most institutions.
 
 ### Grant copyright permissions
+
 openEQUELLA provides the following copyright privileges:
-* COPYRIGHT_ITEM = edit copyright on resources
-* VIEW_ACTIVATION_ITEM = view activation request on resources
-* DEACTIVATE_ACTIVATION_ITEM = deactivate activation request on resources
-* DELETE_ACTIVATION_ITEM = delete activation request on resources
+
+- COPYRIGHT_ITEM = edit copyright on resources
+- VIEW_ACTIVATION_ITEM = view activation request on resources
+- DEACTIVATE_ACTIVATION_ITEM = deactivate activation request on resources
+- DELETE_ACTIVATION_ITEM = delete activation request on resources
 
 The copyright permissions are typically defined in terms of roles and not users or groups.
-* Copyright item privilege—typically granted to content contributors such as lecturers
-and teachers or librarians to create, edit and roll-over activations. Activation is
-initiated from the Resource Summary page of either the portion resource or Parent
-(holding) resource. Resource activations can be rolled-over from the Manage Activations page. Portion resources are generally activated from the start to end date of a term or semester. The resource becomes inactive at the end date of the activation period and can be rolled-over for the next term or semester, for the same or another course.
-* View activation item privilege—allows resource activations to be tracked from the
-Resource Summary Copyright page. It is typically granted to content contributors such as lecturers and teachers or librarians to verify an resource’s status before activating the resource.
-* Deactivate activations item privilege configures the deactivate option in the Manage Activations page. When an resource is deactivated the end date of active activations is set to the current date and the resource becomes inactive. The final period of activation in the Copyright report for that portion resource is from the initial date of activation through to and including the date of deactivation. For example, if a lecturer activates one article from a journal for a year but it is only used in semester
-one, then a copyright or content administrator with this privilege could deactivate the
-resource at the end of the semester. It is typically granted to members of the content
-or copyright management groups.
-* Delete activations item privilege—enables the delete activate option in the
-Manage Activations link and Copyright page. It is used in rare cases where an institution may wish to delete activations that have been mistakenly created, for example a lecturer who incorrectly activates a single portion resource multiple times while trying to add it to their course. (NOTE: This privilege should be highly restricted as the record of the prior activation period for that portion resource is erased and so the activation period does not appear in the Copyright Report. It is typically only granted to a system administrator or one or two handpicked librarians who are in charge of the Copyright Report.)
+
+- Copyright item privilege—typically granted to content contributors such as lecturers
+  and teachers or librarians to create, edit and roll-over activations. Activation is
+  initiated from the Resource Summary page of either the portion resource or Parent
+  (holding) resource. Resource activations can be rolled-over from the Manage Activations page. Portion resources are generally activated from the start to end date of a term or semester. The resource becomes inactive at the end date of the activation period and can be rolled-over for the next term or semester, for the same or another course.
+- View activation item privilege—allows resource activations to be tracked from the
+  Resource Summary Copyright page. It is typically granted to content contributors such as lecturers and teachers or librarians to verify an resource’s status before activating the resource.
+- Deactivate activations item privilege configures the deactivate option in the Manage Activations page. When an resource is deactivated the end date of active activations is set to the current date and the resource becomes inactive. The final period of activation in the Copyright report for that portion resource is from the initial date of activation through to and including the date of deactivation. For example, if a lecturer activates one article from a journal for a year but it is only used in semester
+  one, then a copyright or content administrator with this privilege could deactivate the
+  resource at the end of the semester. It is typically granted to members of the content
+  or copyright management groups.
+- Delete activations item privilege—enables the delete activate option in the
+  Manage Activations link and Copyright page. It is used in rare cases where an institution may wish to delete activations that have been mistakenly created, for example a lecturer who incorrectly activates a single portion resource multiple times while trying to add it to their course. (NOTE: This privilege should be highly restricted as the record of the prior activation period for that portion resource is erased and so the activation period does not appear in the Copyright Report. It is typically only granted to a system administrator or one or two handpicked librarians who are in charge of the Copyright Report.)
 
 ### Configure user access
+
 The example in this section grants the copyright privileges to a specific Collection.
 Depending on the security settings required for your institution, a system administrator
 can implement the privileges at Institution, Collection and Resource levels. The example
@@ -1237,17 +1305,20 @@ Copyright privileges are granted or revoked in the Administration Console Securi
 Manager tool.
 
 ### Add copyright privileges
+
 1. Select the Security Manager tool in the Administration Console to display the
-Security Manager.
+   Security Manager.
 2. Select an object group (e.g. Collections).
-3. Select an object (e.g. eReserve articles) to display the View/Modify ACLs page. 
+3. Select an object (e.g. eReserve articles) to display the View/Modify ACLs page.
 
 In this example typical actions for copyright collections are added to allow a:
-* Contributor to create, view and edit copyright resources.
-* Content Administrator to deactivate copyright resources.
-* System Administrator to delete copyright resources.
+
+- Contributor to create, view and edit copyright resources.
+- Content Administrator to deactivate copyright resources.
+- System Administrator to delete copyright resources.
 
 To add the create privilege
+
 1. Click Add then:
 
 a. Select the Action field then select Grant from the drop-down list. (NOTE: The default is Grant).
@@ -1260,13 +1331,14 @@ d. Click Search to display a list of available roles to choose from. Alternative
 
 e. Select a role (e.g. Contributor Role).
 
-f. Move it to the right-hand pane using the  arrow button.
+f. Move it to the right-hand pane using the arrow button.
 
 g. Remove Everyone by selecting it and clicking the arrow button.
 
 h. Click OK to display the privilege in the access control list.
 
 To add the view privilege
+
 1. Click Add to populate the list with previously listed data. Only the Privilege field require changes:
 
 a. Select the Privilege field and select VIEW_ACTIVATION_ITEM.
@@ -1274,8 +1346,9 @@ a. Select the Privilege field and select VIEW_ACTIVATION_ITEM.
 Actions can now be added to allow a Content Administrator to deactivate copyright resources.
 
 To add the deactivate privilege
+
 1. Click Add to populate the list with previously listed data. Only the Privilege and
-Who? fields require changes:
+   Who? fields require changes:
 
 a. Select the Privilege field then select DEACIVATE_ACTIVATION_ITEM.
 
@@ -1288,6 +1361,7 @@ d. Remove Contributor Role then click OK.
 Actions can now be added to allow a System Administrator to delete copyright resources.
 
 To add the delete privilege
+
 1. Click Add button to populate the list with previously listed data. Only the Privilege and Who? fields require changes:
 
 a. Select the Privilege field and select DELETE_ACTIVATION_ITEM.
@@ -1309,16 +1383,19 @@ The access control list can be rearranged using the up and down buttons on the r
 the Security Manager.
 
 Save the security settings
+
 1. Click Save to save the configuration details.
 2. Click Close to close the Security Manager.
 
 ## Manage activations
+
 Administrators can conveniently control activated resources through the Manage Activations page.
 
 The Manage Activations page is accessed from the navigation menu, and allows the user to
-view a list of previously activated resources. The results list can be filtered by course, owner or date range. Activated resources can be deactivated, deleted or rolled-over, individually or in bulk. 
+view a list of previously activated resources. The results list can be filtered by course, owner or date range. Activated resources can be deactivated, deleted or rolled-over, individually or in bulk.
 
 ## Reporting
+
 openEQUELLA provides a Copyright report that shows all activated content for the reporting period. The reports are presented using Copyright layout in HTML or PDF format and are
 appropriate for the Copyright Agency Limited (CAL).
 
@@ -1330,37 +1407,44 @@ Reports are uploaded to the openEQUELLA Administration Console and generated in 
 openEQUELLA Digital Repository.
 
 ### Upload a report
+
 Reports are uploaded using the Reporting tool available in the Administration Console.
 
 To upload a report
+
 1. Select Reporting in the Administration Console.
-2. Click Add to display the Report Editor. 
+2. Click Add to display the Report Editor.
 3. Enter a Report Name (e.g. The Copyright Agency (CA) EUS Report) and Description
-for the report.
+   for the report.
 4. Click the Upload button and navigate to and select the rptdesign file. E.g. CAL.rptdesign
 
 ### Access Control tab
+
 The Access Control page allows the administrator to configure user access to reports.
 
 The report privileges include:
-* CREATE_REPORT = create a report
-* DELETE_REPORT = delete this report
-* DESIGN_REPORT = design this report
-* EDIT_REPORT = edit this report
-* EXECUTE_REPORT = execute this report
+
+- CREATE_REPORT = create a report
+- DELETE_REPORT = delete this report
+- DESIGN_REPORT = design this report
+- EDIT_REPORT = edit this report
+- EXECUTE_REPORT = execute this report
 
 These privileges are typically granted to administrators.
 
 Save the configuration details
+
 1. Click the Save button to save the configuration details.
 2. Click the Close button to close the Reporting Editor.
 
 ### Generate the report
+
 Reports are generated in from the Reports option accessed from the navigation menu.
 Copyright compliance reporting collates copyright usage data recorded by the copyright
 compliant features and aggregates it by Parent (holding) resource type.
 
 ## Remote repositories
+
 Remote repository searches search external repositories. The returned information from a
 Z39.50 remote repository search can be used to automatically add information to fields in
 the Parent (holding) contribution wizard. When configured an import option is provided to the
@@ -1374,7 +1458,7 @@ contribution wizard. Advanced or basic searches can be configured depending on t
 openEQUELLA provides a sample remote repository search called Books – Libraries Australia with
 the openEQUELLA Vanilla Institution and it provides a starting point for creating custom remote repository searches that closely fit the institution’s purpose. The examples in this section are based on the Books – Libraries Australia remote repository search.
 
-### Create a remote repository search 
+### Create a remote repository search
 
 Remote repository searches are created and modified using the Remote Repositories tool available in the Administration Console. F
 
@@ -1383,55 +1467,60 @@ requires that an XSL Transformation (XSLT) is defined for this purpose and added
 Copyright schema and that the federated search is linked to the Parent (holding) collection.
 
 To create a remote repository search
+
 1. Select the Remote Repositories tool in the Administration Console.
-2. Click Add to display the Repository Types dialog. 
+2. Click Add to display the Repository Types dialog.
 3. Select the Z3950 search type and click OK to display the Remote Repository Editor.
-Z39.50 is a client/server protocol for locating information from remote computer
-databases, for example a university library title database.
+   Z39.50 is a client/server protocol for locating information from remote computer
+   databases, for example a university library title database.
 
 To add remote repository details
-1. Enter a Remote repository Name (e.g. Books – Libraries Australia) and Description. 
+
+1. Enter a Remote repository Name (e.g. Books – Libraries Australia) and Description.
 2. Select a Parent (holding) collection (e.g. Books) to import the results to, from the
-Contribute to this collection drop-down list.
-3. Select an XSLT (e.g. MARCXML to Book) from the Use this import transform dropdown list. The list contains XSLTs that were added during the metadata schema creation. 
+   Contribute to this collection drop-down list.
+3. Select an XSLT (e.g. MARCXML to Book) from the Use this import transform dropdown list. The list contains XSLTs that were added during the metadata schema creation.
 4. Click to select a custom transformation as the Display XSLT. This sets how the results from the server are displayed. Click to change the transformation.
 5. Enter the Host address of the search gateway. This can be either a host name or an
-IP address.
+   IP address.
 6. Enter the Port access port. The default port is 210, although some Z39.50 hosts use
-very high port numbers.
-NOTE: If there are problems saving high port numbers please contact Support or your
-openEQUELLA Consultant.
+   very high port numbers.
+   NOTE: If there are problems saving high port numbers please contact Support or your
+   openEQUELLA Consultant.
 7. Enter the Database name of the database to be searched.
 8. Enter the Username and Password used to access the repository (if authentication
-is required).
+   is required).
 9. Select a suitable MODS or MARC standard from the Import Record Format dropdown
-list to set how the record is displayed.
+   list to set how the record is displayed.
 10. Click Select to load default attributes – these may not work for all Z39.50 targets, in
-which case specific attributes can be configured using the Advanced search fields
+    which case specific attributes can be configured using the Advanced search fields
 11. Check the Allow Advanced searching checkbox to provide the user with a greater
-selection of search conditions in a library search query. (NOTE: The Z39.50 host must
-support advanced searching for this option to be utilised.)
+    selection of search conditions in a library search query. (NOTE: The Z39.50 host must
+    support advanced searching for this option to be utilised.)
 12. Advanced search fields can be configured to exactly match the attributes supported by
-the remote target. To configure these options an understanding of the Z39.50
-specification is required (http://www.loc.gov/z3950/agency/Z39-50-2003.pdf), as well
-as information about the configurations set up in the remote target. This information
-can be found in the web: e.g. for the National Library of Australia see
-http://www.nla.gov.au/librariesaustralia/services/search/z3950/database-connectiondetails/
+    the remote target. To configure these options an understanding of the Z39.50
+    specification is required (http://www.loc.gov/z3950/agency/Z39-50-2003.pdf), as well
+    as information about the configurations set up in the remote target. This information
+    can be found in the web: e.g. for the National Library of Australia see
+    http://www.nla.gov.au/librariesaustralia/services/search/z3950/database-connectiondetails/
 
 ### Access Control tab
+
 The Access Control page allows the administrator to configure user access to the
-selected search. 
+selected search.
 
 The federated search privileges include:
-* CREATE_FEDERATED_SEARCH = create a federated search
-* DELETE_FEDERATED _SEARCH = delete this remote repository
-* EDIT_FEDERATED _SEARCH = edit this remote repository
-* SEARCH_FEDERATED _SEARCH = search for records using this remote repository.
+
+- CREATE_FEDERATED_SEARCH = create a federated search
+- DELETE_FEDERATED \_SEARCH = delete this remote repository
+- EDIT_FEDERATED \_SEARCH = edit this remote repository
+- SEARCH_FEDERATED \_SEARCH = search for records using this remote repository.
 
 These privileges are typically granted to administrators and users with the ereserve
 manager of contributor role.
 
 Save the configuration details
+
 1. Click Save to save the configuration details.
 2. Click Close to close the Federated Search Editor.
 
@@ -1446,62 +1535,68 @@ A collection could be made up of hundreds of resources, making a refined search 
 useful tool.
 
 openEQUELLA provides a sample advanced search called eReserve with the openEQUELLA Vanilla
-Institution and it provides a starting point for creating custom advanced searches that closely fit the institution’s purpose. The examples in this section are based on the eReserve advanced search that is linked to the Parent (holding) resources (Books and Journals) and the portion resource (eReserve articles) collections. (NOTE: Alternatively a separate advanced search can be configured for each collection.) 
+Institution and it provides a starting point for creating custom advanced searches that closely fit the institution’s purpose. The examples in this section are based on the eReserve advanced search that is linked to the Parent (holding) resources (Books and Journals) and the portion resource (eReserve articles) collections. (NOTE: Alternatively a separate advanced search can be configured for each collection.)
 
 ### Create an advanced search
+
 Advanced searches are created and modified using the Advanced Searches tool
 available in the Administration Console.
 
 To create an advanced search
+
 1. Select the Advanced Searches tool in the Administration Console.
 2. Click Add to display the Advnaced Search Editor.
-The Advanced Search Editor provides an interface for search configuration with the
-following tabs:
-* Details—includes general information for a advanced search.
-* Editor—provides an editor to add controls that create a wizard.
-* Access Control—controls access to a advanced search.
+   The Advanced Search Editor provides an interface for search configuration with the
+   following tabs:
+
+- Details—includes general information for a advanced search.
+- Editor—provides an editor to add controls that create a wizard.
+- Access Control—controls access to a advanced search.
 
 ### Details tab
+
 General information, and the schema and collections to be associated with the advanced
 search are configured on the Details page.
+
 1. Enter an Advanced search name (e.g. eReserve) and Description for the search on
-the Details page. 
+   the Details page.
 2. Select the schema (e.g. Generic Schema) from the You must select a schema to
-continue drop-down list to populate the Select collections to search list with
-collections associated to the selected schema.
+   continue drop-down list to populate the Select collections to search list with
+   collections associated to the selected schema.
 3. Select the Parent (holding) (e.g. Books, Journals) and portion (e.g. eReserve article)
-collections and click up arrow button.
+   collections and click up arrow button.
 4. Select the Editor tab to display the Editor page.
 
 ### Editor tab
-The Editor page is where the advanced search page viewed by the user is created. Each
-control on the advanced search page targets a specific schema node. Nodes must be indexed for advanced searching when the schema is created otherwise they are not available to choose as a schema element. 
 
-Any number of controls can be added. 
+The Editor page is where the advanced search page viewed by the user is created. Each
+control on the advanced search page targets a specific schema node. Nodes must be indexed for advanced searching when the schema is created otherwise they are not available to choose as a schema element.
+
+Any number of controls can be added.
 
 1. Click Add to display the Select a control… dialog.
 2. Select an Edit Box control then click OK to display the control in the control list.
-This control searches book or journal titles.
-The Search checkbox is selected by default and regulates whether the search control is
-displayed to the user. An unchecked control requires an associated script to be evaluated
-(and return true) to be displayed. Leave the Search checkbox ticked for all the controls
-added in this example.
-3. Select the control to display the editor pane on the right-hand side. 
+   This control searches book or journal titles.
+   The Search checkbox is selected by default and regulates whether the search control is
+   displayed to the user. An unchecked control requires an associated script to be evaluated
+   (and return true) to be displayed. Leave the Search checkbox ticked for all the controls
+   added in this example.
+3. Select the control to display the editor pane on the right-hand side.
 4. Enter the Title (e.g. Title of book or journal issue).
-5. Click Add in the Select metadata target(s) for this control: section to display the Choose a Schema element? Dialog. 
+5. Click Add in the Select metadata target(s) for this control: section to display the Choose a Schema element? Dialog.
 6. Click the + symbols to expand the tree. (NOTE: Only the schema nodes indexed for
-advanced searching are available for selection.)
+   advanced searching are available for selection.)
 7. Select the schema element (e.g. item/copyright/title) then click OK to display the
-selected schema element in the Select metadata target(s) for this control: section.  When adding the following controls, leave the default values unless stated:
+   selected schema element in the Select metadata target(s) for this control: section. When adding the following controls, leave the default values unless stated:
 8. Click Add to add an Edit Box control then click . This control searches for
-book or journal authors. Select the control and enter the following:
+   book or journal authors. Select the control and enter the following:
 
 a. Title—(e.g. Author of book or journal issue).
 
 b. Select metadata target(s) for this control—(e.g. item/copyright/authors/author).
 
 9. Click Add to add a Check Box Group control then click . This control
-searches various values relating to copyright status.
+   searches various values relating to copyright status.
 
 a. Title—(e.g. Copyright Status).
 
@@ -1512,7 +1607,7 @@ c. Select metadata target(s) for this control—(e.g. item/copyright/portions/po
 d. Add Check Box Names and Check Box Values.
 
 10. Click Add to add an Edit Box control then click OK. This control searches the
-book chapter or journal article titles.
+    book chapter or journal article titles.
 
 a. Title—(e.g. Title of article/book chapter).
 
@@ -1538,7 +1633,7 @@ b. Number of columns—(e.g. 2).
 
 c. Select metadata target(s) for this control—(e.g. item/copyright/portions/portion/sections/section/type).
 
-d. Check Box Names and Check Box Values—(e.g. File and URL). 
+d. Check Box Names and Check Box Values—(e.g. File and URL).
 
 14. Click Add to add a Check Box Group control then click OK. This control searches for illustrations.
 
@@ -1559,26 +1654,32 @@ a. Title—(e.g. Year of publication).
 b. Select metadata target(s) for this control—(e.g. item/copyright/publication/year).
 
 ### Access Control tab
+
 The Access Control page allows the administrator to configure user access to the
-selected search. 
+selected search.
 
 The advanced search privileges include:
-* CREATE_POWER_SEARCH = create an advanced search
-* DELETE_POWER_SEARCH = delete this advanced search
-* EDIT_POWER_SEARCH = edit this advanced search
-* SEARCH_POWER_SEARCH = search for resources with this advanced search.
+
+- CREATE_POWER_SEARCH = create an advanced search
+- DELETE_POWER_SEARCH = delete this advanced search
+- EDIT_POWER_SEARCH = edit this advanced search
+- SEARCH_POWER_SEARCH = search for resources with this advanced search.
 
 These privileges are typically granted to administrators and users with a searcher or
 viewer role.
 
 ### Save the configuration details
+
 1. Click Save to save the configuration details.
 2. Click Close to close the Advanced Search Editor.
-3. 
+3.
+
 The eReserve advanced search is now complete. All controls configured for the advanced
 search (e.g. eReserve) are displayed to the user when the Advanced Search is selected in
-the openEQUELLA Digital Repository. 
+the openEQUELLA Digital Repository.
 
 ## Close the Administration Console
+
 To log out of the Administration Console
+
 1. Click Exit Console the button.
