@@ -14,7 +14,7 @@ us on one of the following platforms:
   active, best for more usage centric questions
 * [Developer mailing list](https://groups.google.com/a/apereo.org/forum/#!forum/equella-dev) - For
   discussing work on the code
-* \#Equella channel in [Apereo's slack](https://apereo.slack.com/)
+* \#Equella channel in [Apereo's slack](https://apereo.slack.com/messages/C4KLR0C4U)
 
 ## Submitting Issues
 
