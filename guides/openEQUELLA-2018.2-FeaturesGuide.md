@@ -12,23 +12,25 @@ Table of Contents
 
 ## openEQUELLA 2018.2 Features Overview
 This guide provides an overview of the features released in openEQUELLA 2018.2.
+
 The following features are included:
-* Views counts for summary pages and attachments – Views counts can now be displayed for
+* **Views counts for summary pages and attachments** - Views counts can now be displayed for
 summary pages and attachments. See [Usage Counts](#usage-counts).
-* Streamlined process for attaching openEQUELLA resources during contribution – an option to
+* **Streamlined process for attaching openEQUELLA resources during contribution** - an option to
 remove a number of dialogs during the selection of EQUELLA resources during contribution has
 been added. See [Streamlined openEQUELLA Resource Attachments](#streamlined-openequella-resource-attachments).
-* Course selector updated across openEQUELLA – the course selector has been updated to allow
+* **Course selector updated across openEQUELLA** - the course selector has been updated to allow
 searching of Title, Code and Description with a scrollable list. See [Course Selector](#course-selector).
-* HTTP Referrers added to log – HTTP referrers are now captured in the audit log to enable
+* **HTTP Referrers added to log** - HTTP referrers are now captured in the audit log to enable
 identification of an item’s LMS usage. See [HTTP Referrers](#http-referrers).
-* Theme Editor – a new Theme Editor is available to apply colour schemes to the new UI template
+* **Theme Editor** - a new Theme Editor is available to apply colour schemes to the new UI template
 and search page components and to upload logos. See [Theme Editor](#theme-editor).
 
 ### Important note regarding facet configuration
 In openEQUELLA 6.6, when enabling the new Search UI page prototype, a simple facet search editor
 enabled configuration of facet searches. Due to the further development of the new Search UI and
 the creation of APIs for facets, openEQUELLA 2018.2 no longer has the facet search editor available.
+
 Additionally, if facets were configured in your openEQUELLA 6.6 Search UI, upgrading to
 openEQUELLA 2018.2 will result in those facets no longer displaying on the new Search UI page.
 However, facets can be re-configured or created using REST APIs. It is expected that a user-friendly
@@ -71,10 +73,11 @@ new VIEW_VIEWCOUNT privilege granted. An example is shown in Figure 3.
 
 **Figure 3 Attachment View Count**
 
-### Smart vs Normal logging
+### Smart vs Normal Logging
 Logging type (SMART or NORMAL) can be set in the  *mandatory.properties* file. Setting SMART logging
 allows usage counts to occur per session rather than each time a user opens a summary page or an
 attachment.
+
 For example, if SMART logging is set, when a specific item summary page is opened multiple times by
 a user in one session, the count will only go up by 1. If NORMAL logging is set, the count will increase
 by one each time the user opens that item’s summary page during that session.
@@ -84,7 +87,7 @@ When selecting existing openEQUELLA resources as attachments for an item, an opt
 reduce the number of pages that display during the process. Removing these pages provides a more
 streamlined experience for contributors.
 
-### Set Skip checkout page option
+### Set Skip Checkout Page Option
 A new option to **Skip checkout page** displays on the Attachments page in the Collection Definition
 Editor.
 
@@ -105,6 +108,7 @@ attachment types:** section.
 ### Attach openEQUELLA Resources With New Option Selected
 Once this option has been saved, the checkout page no longer displays during the contribution
 process.
+
 An example of the pages that display when selecting and returning openEQUELLA resources during
 contribution when the new option is selected are shown in Figure 5 and Figure 6.
 
@@ -153,7 +157,10 @@ Examples of a Postgres database with LMS HTTP referrers are shown in Figure 9 an
 The new Theme Editor enables administration users to apply theming to the new openEQUELLA UI
 template, by selecting a colour scheme for page components and uploading a logo.
 
-### To Access the Theme Editor
+### Accessing the Theme Editor
+The Theme Editor is accessed from the UI category of the Settings page.
+
+#### To Access the Theme Editor
 From the UI category of the Settings page, select the Edit Theme Settings button. An example is
 shown in Figure 11.
 
