@@ -49,7 +49,7 @@ The Summary page **Views** count displays in the Details section of an item summ
 with the new VIEW_VIEWCOUNT privilege granted. An example is shown in Figure 1.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure1SummaryPageViewCount.png "Figure 1 Summary Page View Count")
-**Figure 1 Summary Page View Count**
+*Figure 1 Summary Page View Count*
 
 The **Views** count shows the total number of views for the currently opened version of the item. The
 number of views for each version of an item can also be viewed.
@@ -59,7 +59,7 @@ To view the Views counts for all item versions
 1. Click the **show all** link in the *Details* section, next to the *Version* number. The **Versions of this item** page displays, showing the **Views** for each version. An example is shown in Figure 2.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure2VersionsOfThisItemViewsCount.png "Figure 2 Versions of This Item - Views Count")
-**Figure 2 Versions of This Item - Views Count**
+*Figure 2 Versions of This Item - Views Count*
 
 ### View Attachment View Counts
 Attachment view counts display in the attachment drop-down for each attachment for users with the
