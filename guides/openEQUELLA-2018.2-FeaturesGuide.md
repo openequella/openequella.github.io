@@ -68,6 +68,7 @@ Attachment view counts display in the attachment drop-down for each attachment f
 new VIEW_VIEWCOUNT privilege granted. An example is shown in Figure 3.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure3AttachmentViewCount.png "Figure 3 Attachment View Count")
+
 **Figure 3 Attachment View Count**
 
 ### Smart vs Normal logging
@@ -92,12 +93,14 @@ To set the 'Skip checkout page' option
 Console.
 1. From the *Wizard* tab, select the relevant **File attachment** wizard control. An example is shown in
 Figure 4.
-![alt text](images/OpenEquella20182FeaturesGuide/Figure4NewOpenEquellaResourcesOptionOnTheAttachmentsWizardPage.png "Figure 4 New openEQUELLA Resources Option on the Attachments Wizard Page")
-**Figure 4 New openEQUELLA Resources Option on the Attachments Wizard Page**
 1. Make sure the **openEQUELLA Resources** attachment type is selected in the **Allow the following
 attachment types:** section.
 1. In the openEQUELLA Resources configuration section, select **Skip checkout page**.
 1. Select **Save**.
+
+![alt text](images/OpenEquella20182FeaturesGuide/Figure4NewOpenEquellaResourcesOptionOnTheAttachmentsWizardPage.png "Figure 4 New openEQUELLA Resources Option on the Attachments Wizard Page")
+
+**Figure 4 New openEQUELLA Resources Option on the Attachments Wizard Page**
 
 ### Attach openEQUELLA Resources With New Option Selected
 Once this option has been saved, the checkout page no longer displays during the contribution
@@ -106,9 +109,11 @@ An example of the pages that display when selecting and returning openEQUELLA re
 contribution when the new option is selected are shown in Figure 5 and Figure 6.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure5ResourcesSelected.png "Figure 5 Resources Selected")
+
 **Figure 5 Resources Selected**
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure6ContributionWizardPageWithReturnedOpenEquellaResources.png "Figure 6 Contribution Wizard Page With Returned openEQUELLA Resources")
+
 **Figure 6 Contribution Wizard Page With Returned openEQUELLA Resources**
 
 If required, the **Edit** link beside each attachment can be used to make changes to the display name of the attachment.
@@ -121,11 +126,13 @@ instances of the Course Selector within openEQUELLA have been updated.
 An example with the scroll bar displayed is shown in Figure 7.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure7CourseSelectorWithScrollBar.png "Figure 7 Course Selector With Scroll Bar")
+
 **Figure 7 Course Selector With Scroll Bar**
 
 An example with search terms and results is shown in Figure 8.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure8CourseSelectorWithSearchTermsAndResults.png "Figure 8 Course Selector With Search Terms and Results")
+
 **Figure 8 Course Selector With Search Terms and Results**
 
 ## HTTP Referrers
@@ -135,9 +142,11 @@ of the integrated LMS instances in which an item is being used.
 Examples of a Postgres database with LMS HTTP referrers are shown in Figure 9 and Figure 10.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure9PostgresHttpReferrersForIntegratedLmss.png "Figure 9 Postgres - HTTP Referrers for Integrated LMSs")
+
 **Figure 9 Postgres - HTTP Referrers for Integrated LMSs**
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure10PostgresHttpReferrersForIntegratedLmssMagnified.png "Figure 10 Postgres - HTTP referrers for Integrated LMSs - Magnified")
+
 **Figure 10 Postgres - HTTP referrers for Integrated LMSs - Magnified**
 
 ## Theme Editor
@@ -149,6 +158,7 @@ From the UI category of the Settings page, select the Edit Theme Settings button
 shown in Figure 11.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure11UiSettingsEditThemeSettings.png "Figure 11 UI Settings - Edit Theme Settings")
+
 **Figure 11 UI Settings - Edit Theme Settings**
 
 *NOTE: At a minimum, the **Enable new UI** needs to be turned on to access the Theme Editor.*
@@ -156,6 +166,7 @@ shown in Figure 11.
 The **Theme Settings** page displays. An example is shown in Figure 12.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure12ThemeSettingsPage.png "Figure 12 Theme Settings Page")
+
 **Figure 12 Theme Settings Page**
 
 ### Applying a Colour Scheme
@@ -174,16 +185,22 @@ The **Reset to default** button is used to return to openEQUELLA default colours
 ##### To Apply New Colours
 1. Click the colour panel of the page component to be changed (for example, Primary Colour). A
 colour selector displays, as shown in Figure 13.
-![alt text](images/OpenEquella20182FeaturesGuide/Figure13ColourSelector.png "Figure 13 Colour Selector")
-**Figure 13 Colour Selector**
 1. Select the required colour by entering the HEX or RGB codes, if known, or by clicking one of the
 solid colour squares at the bottom, which will change the colour palette. Select the required
 colour by clicking in the colour palette. An example is shown in Figure 14.
-![alt text](images/OpenEquella20182FeaturesGuide/Figure14ColourSelectorWithChangedPalette.png "Figure 14 Colour Selector With Changed Palette")
-**Figure 14 Colour Selector With Changed Palette**
-3. Click the **Apply** button. The changes are applied to the relevant page component. An example is
+1. Click the **Apply** button. The changes are applied to the relevant page component. An example is
 shown in Figure 15.
+
+![alt text](images/OpenEquella20182FeaturesGuide/Figure13ColourSelector.png "Figure 13 Colour Selector")
+
+**Figure 13 Colour Selector**
+
+![alt text](images/OpenEquella20182FeaturesGuide/Figure14ColourSelectorWithChangedPalette.png "Figure 14 Colour Selector With Changed Palette")
+
+**Figure 14 Colour Selector With Changed Palette**
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure15PrimaryColourChangeApplied.png "Figure 15 Primary Colour Change Applied")
+
 **Figure 15 Primary Colour Change Applied**
 
 #### Colour Scheme Components
@@ -192,45 +209,61 @@ There are seven colour scheme components that can be changed:
 ##### Primary Colour
 Changing the **Primary Colour** applies the new colour to the background of the main banner at the top
 of each page, and the Title text on the new Search page. An example is shown in Figure 16.
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure16PrimaryColourChangeNewSearchPage.png "Figure 16 Primary Colour Change – New Search Page")
+
 **Figure 16 Primary Colour Change – New Search Page**
 
 ##### Secondary Colour
 Changing the **Secondary Colour** changes small control components such as the buttons to toggle
 functionality and the Add button on the Courses page. An example is shown in Figure 17.
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure17SecondaryColourComponents.png "Figure 17 Secondary Colour Components")
+
 **Figure 17 Secondary Colour Components**
 
 ##### Text Colour
 Changing the **Text Colour** changes some text. It does not affect text on the original search page.
 Examples are shown in Figure 18 and Figure 19.
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure18TextColourChangeNewSearchPage.png "Figure 18 Text Colour Change - New Search Page")
+
 **Figure 18 Text Colour Change - New Search Page**
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure19TextColourChangeSettingsPage.png "Figure 19 Text Colour Change - Settings Page")
+
 **Figure 19 Text Colour Change - Settings Page**
 
 ##### Menu Background Colour
 Changing the **Menu Background Colour** changes the background of all menu panels, including the
 navigation menu, results panel and filter panel. An example is shown in Figure 20.
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure20MenuBackgroundColourChangeNewSearchPage.png "Figure 20 Menu Background Colour Change - New Search Page")
+
 **Figure 20 Menu Background Colour Change - New Search Page**
 
 ##### Sidebar Text Colour
 Changing the **Sidebar Text Colour** changes the text on the navigation menu, the filter panel and the
 number of results text at the top of the results panel. An example is shown in Figure 21.
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure21SidebarTextColourChangeNewSearchUi.png "Figure 21 Sidebar Text Colour Change - New Search UI")
+
 **Figure 21 Sidebar Text Colour Change - New Search UI**
 
 ##### Sidebar Icon Colour
 Changing the **Sidebar Icon Colour** changes the colour of the icons on the navigation menu and some
 other places. An example is shown in Figure 22.
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure22SidebarIconColourChangeNewSearchUi.png "Figure 22 Sidebar Icon Colour Change - New Search UI")
+
 **Figure 22 Sidebar Icon Colour Change - New Search UI**
 
 ##### Background Colour
 Changing the **Background Colour** changes the background colour of all pages. An example is shown in
 Figure 23.
+
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure23BackgroundColourChangeNewSearchUi.png "Figure 23 Background Colour Change - New Search UI")
+
 **Figure 23 Background Colour Change - New Search UI**
 
 ## Logo Settings
@@ -244,11 +277,13 @@ To Upload a New logo
 1. Click **Apply**. An example is shown in Figure 24.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure24LogoSettings.png "Figure 24 Logo Settings")
+
 **Figure 24 Logo Settings**
 
 The new logo displays. An example is shown in Figure 25.
 
 ![alt text](images/OpenEquella20182FeaturesGuide/Figure25UploadedLogoDisplayed.png "Figure 25 Uploaded Logo Displayed")
+
 **Figure 25 Uploaded Logo Displayed**
 
 Click **Reset to default** to return to the original logo.
