@@ -65,7 +65,7 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 
 ## 2018.2 Release guides (PDF)
 
-* [Features Guide - DRAFT](guides/EQUELLA%202018.2%20Features%20Guide%20-%20DRAFT.pdf)
+* [Features Guide](guides/openEQUELLA-2018.2-FeaturesGuide.pdf)
 
 ## 6.6 Release guides (PDF)
 
