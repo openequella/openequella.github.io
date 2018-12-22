@@ -9,6 +9,8 @@ Table of Contents
 * [Course Selector](#course-selector)
 * [HTTP Referrers](#http-referrers)
 * [Theme Editor](#theme-editor)
+* [Scripting API](#scripting-api)
+* [Docker](#docker)
 
 ## openEQUELLA 2018.2 Features Overview
 This guide provides an overview of the features released in openEQUELLA 2018.2.
@@ -25,6 +27,8 @@ searching of Title, Code and Description with a scrollable list. See [Course Sel
 identification of an item’s LMS usage. See [HTTP Referrers](#http-referrers).
 * **Theme Editor** - a new Theme Editor is available to apply colour schemes to the new UI template
 and search page components and to upload logos. See [Theme Editor](#theme-editor).
+* **Scripting API** - Navigation of Control and XML objects are now enhanced.  See [Scripting API](#scripting-api).
+* **Docker** - Enhanced runtime environment and a build environment are now available.  See [Docker](#docker).
 
 ### Important note regarding facet configuration
 In openEQUELLA 6.6, when enabling the new Search UI page prototype, a simple facet search editor
@@ -294,3 +298,32 @@ The new logo displays. An example is shown in Figure 25.
 **Figure 25 Uploaded Logo Displayed**
 
 Click **Reset to default** to return to the original logo.
+
+## Scripting API
+
+### Scripting API SBT Task
+You can now build the 'Scripting API' documentation from the current codebase.  
+
+From a clone of the Equella repository, run ```sbt writeScriptingJavadoc```.  The javadoc API will be placed in Equella/target . 
+
+### New XMLScriptType API Methods
+
+New methods were added to the XML script object to allow ease of traversing the XML tree:
+* XmlScriptType getParent()
+* List<XmlScriptType> getChildren()
+* String getName()
+
+A code example of using these API calls can be found in [PR #545](https://github.com/equella/Equella/pull/545).
+
+### New ControlScriptObject Methods
+
+New methods were added to the Control script object to allow ease of navigating controls in repeaters / groups:
+* ControlScriptObject getParent();
+* int getIndex(ControlScriptObject child);
+
+A code example of using these API calls can be found in the issue thread for [#475](https://github.com/equella/Equella/issues/475).
+
+## Docker
+
+Docker abilities were enhanced to allow a more consistent environment for building Production worthy installers / upgraders, and to provide a consistent runtime environment.  Please see the /docker folder's README for the Docker openEQUELLA [runtime environment](https://github.com/equella/Equella/tree/master/docker#default-dockerfile) and [build environment](https://github.com/equella/Equella/tree/master/docker#docker-build).
+
