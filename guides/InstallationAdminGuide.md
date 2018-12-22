@@ -227,23 +227,21 @@ openEQUELLA provides files for installation that can be used on all platforms. T
 
 This information is required to successfully install openEQUELLA. Incomplete details will cause the installation to fail.
 
-### PLACEHOLDER FOR INSTRUCTIONS ON CREATING/OBTAINING INSTALLATION FILES FOR OPEN openEQUELLA VIA APEREO
-
-1.  ... In Progress...  Need to insert steps required to get install files
-
-### Begin openEQUELLA Installation
+### Begin openEQUELLA Installation 
 
 This procedure describes installing openEQUELLA using a graphical interface. The examples shown are using Windows although other GUIs such as X-windows will be similar. The wizard pages provide information on the required details. Read each page before entering information.
 
-1. PLACEHOLDER FOR WHERE THE INDIVIDUAL CAN DOWNLOAD THE equella-6.4-GAx Installer file.
-2. Extract the equella-installer-xxxx.zip file to a temporary directory.
-3. Navigate to the installer temporary directory and double-click on the enterprise-install file to start the installation.
-4. Click Next to display the Java Development Kit page.
-5. Click Browse and navigate to the directory in which the JDK is installed.
-6. Click Next to display the Install Directory page.
-7. Click Browser to select the location where openEQUELLA will be installed (e.g. ‘c:\equella’).
-8. Click Next to display the Database Server page.  The database server group and database type must be entered to configure openEQUELLA with an empty database ready for use.
-9. Select the database type from the drop-down list (e.g. ‘SQL Server’).
+Note: It is possible to install without requiring a GUI.  While not widespread as a production installation method, it's consistently used in the docker logic; see https://groups.google.com/a/apereo.org/d/msg/equella-users/v-MMOuoa7mk/UDbmSkKRAwAJ for discussion if this is important to you.
+
+1. Obtain an openEQUELLA installer. You can either download a demo installer from https://github.com/equella/Equella/releases or build a production installer via sbt. Demo installers do not contain Kaltura integration or Oracle DB drivers, and use a self-signed Java signing certificate. The file format is equella-installer-x.y.zip (substitute x for the current major version, and y for the current minor version)
+2. Extract the equella-installer-x.x.zip file to a temporary directory.
+3. Navigate to the installer temporary directory and double-click on the enterprise-install file to start the installation. 
+4. Click Next to display the Java Development Kit selection screen.
+5. If unset or incorrect, click Browse and navigate to the directory in which the JDK is installed.
+6. Click Next to display the EQUELLA Install Directory page.
+7. If the path is incorrect, either type in an updated location or click "Browse" to select the location where openEQUELLA will be installed (e.g. ‘c:\equella’).
+8. Click Next to display the Database Server page.  The database server group and database type must be entered to configure openEQUELLA with an empty database ready for use. 
+9. Select the database type from the drop-down list (e.g. ‘SQL Server’). 
 10. Select a Database Server from the following options:
 * This machine — select this option if the database server is on the local machine.
 * A different server — select this option if the database server is not on this machine and enter the IP address or hostname of the server.
