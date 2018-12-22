@@ -1,0 +1,9 @@
+# Set line endings for known text files
+*.css       text eol=lf
+*.html      text eol=lf
+*.js        text eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+*.php       text eol=lf
+*.sh        text eol=lf
+*.txt       text eol=lf
