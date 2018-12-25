@@ -41,6 +41,7 @@ these tutorials.
 Postgres:
 1. [Querying with the native XML type](postgres/QueryingXMLType.md)
 1. [Querying repeated metadata](postgres/RepeatedMetadata.md)
+1. [Querying with named parameters](postgres/NamingParameters.md)
 
 SQLServer:
 1. [Querying with the native XML type](sqlserver/QueryingXMLType.md)
