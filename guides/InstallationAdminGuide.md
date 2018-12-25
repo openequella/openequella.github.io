@@ -98,7 +98,7 @@ Installations using a PostgreSQL (8.0 or higher) database must create an openEQU
 These requirements are met by the following commands when run as the `postgresql` user from a terminal
 
 ```sh
-createuser --createdb --superuser --pwprompt equellauser
+createuser --pwprompt equellauser
 createdb -O equellauser -D pg_default -E UTF-8 equella
 ```
 
