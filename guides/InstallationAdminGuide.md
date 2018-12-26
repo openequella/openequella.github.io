@@ -115,7 +115,7 @@ Install the program, taking note of the name and location of the folder in which
 Install the program, taking note of the name and location of the folder in which the avconv and avprobe executable files have been installed, as the openEQUELLA installation will require these details to properly configure and run openEQUELLA.
 
 ### To install Libav for Windows
-1. Go to <http://builds.libav.org/windows/release-gpl/> and download the relevant release build. (e.g. libav-11.12-win64.7z)
+1. Go to <http://builds.libav.org/windows/release-gpl/> and download the relevant release build. (e.g. libav-11.3-win64.7z)
 2. Unzip to a directory of choice (e.g. Program Files) taking note of the name and location of the folder in which the avconv.exe and avprobe.exe files have been installed, as the openEQUELLA installation will require these details to properly configure and run openEQUELLA.
 3. You will use that folder location plus "win64/usr/bin/" to direct openEQUELLA to that version of libav (either via the installer or in optional-config.properties). Note: Make sure the path you enter in the installation contains the following avconv.exe and avprobe.exe
 
@@ -137,13 +137,13 @@ cd scratch
 
 3. download and extract the tar.gz file, e.g
 ```bash
-wget https://libav.org/releases/libav-11.12.tar.gz
-tar -zxf libav-11.12.tar.gz
+wget https://libav.org/releases/libav-11.3.tar.gz
+tar -zxf libav-11.3.tar.gz
 ```
 
-4. change into libav-11.12
+4. change into libav-11.3
 ```bash
-cd libav-11.12
+cd libav-11.3
 ```
 
 5. configure and make libav; these do NOT need sudo
@@ -165,11 +165,11 @@ sudo apt-get remove libx264-dev libvo-aacenc-dev yasm
 
 2. Remove libav
 ```bash
-cd scratch/libav-11.12
+cd scratch/libav-11.3
 sudo make uninstall
 ```
 
-3. delete the libav-11.12 directory and libav-11.12.tar.gz file.
+3. delete the libav-11.3 directory and libav-11.3.tar.gz file.
 ```bash
 cd
 rm -r scratch/libav*
@@ -197,7 +197,7 @@ specific operating system and adherence to any applicable laws and regulations b
 * ./configure –enable-static
 * make
 * make install
-* Download libav (For Example: 11.12 - libav-11.12.tar.gz, md5: 1a2eb461b98e0f1d1d6c4d892d51ac9b)
+* Download libav (For Example: 11.3 - libav-11.3.tar.gz, md5: 1a2eb461b98e0f1d1d6c4d892d51ac9b)
 * Extract the tar ball, and cd to the directory
 * Run
 * Run 'avconv' from your home directory to ensure it's installed
