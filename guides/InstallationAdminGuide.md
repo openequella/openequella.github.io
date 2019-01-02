@@ -111,13 +111,11 @@ The JDK can be obtained from Oracle at <http://www.oracle.com/technetwork/java/j
 
 During installation the name and location of the folder in which the JDK is installed is needed to properly configure and run openEQUELLA.
 
-The next step in the installation is to install ImageMagick.
 
 ## Install ImageMagick
 
-ImageMagick can be obtained from <http://www.imagemagick.org/> . Download the platform-specific installer. openEQUELLA requires version 6.4 or greater to be installed.
-
-NOTE: openEQUELLA requires Imagemagick version 6.8.9 or higher for digital camera RAW image files. Additionally, a third party plugin called Ghostscript is required by Imagemagick to enable the generation of thumbnails for some file types (for example, pdfs). Go to <http://ghostscript.com> to download and install.
+NOTE: openEQUELLA requires Imagemagick version 6.4 or greater be installed; 6.8.9 or higher for digital camera RAW image files. ImageMagick can be obtained from <http://www.imagemagick.org/> ; download the platform-specific installer.  **If using a platform with package management check the available version of Imagemagick before installing from source; its highly likely packages exist already.**
+Additionally, a third party plugin called Ghostscript is required by Imagemagick to enable the generation of thumbnails for some file types (for example, pdfs). Go to <http://ghostscript.com> to download and install. 
 
 For a full list of image file types supported by Imagemagick, go to <http://imagemagick.sourceforge.net/http/www/formats.html>.
 
@@ -130,61 +128,69 @@ Install the program, taking note of the name and location of the folder in which
 ### To install Libav for Windows
 1. Go to <http://builds.libav.org/windows/release-gpl/> and download the relevant release build. (e.g. libav-11.3-win64.7z)
 2. Unzip to a directory of choice (e.g. Program Files) taking note of the name and location of the folder in which the avconv.exe and avprobe.exe files have been installed, as the openEQUELLA installation will require these details to properly configure and run openEQUELLA.
-3. You will use that folder location plus "win64/usr/bin/ to direct openEQUELLA to that version of libav (either via the installer or in optional-config.properties). Note: Make sure the path you enter in the installation contains the following avconv.exe and avprobe.exe
+3. You will use that folder location plus "win64/usr/bin/" to direct openEQUELLA to that version of libav (either via the installer or in optional-config.properties). Note: Make sure the path you enter in the installation contains the following avconv.exe and avprobe.exe
 
 ### To install and configure Libav for Linux - Ubuntu
-1. Install Libav from <https://libav.org/download.html>
-libvo_aacenc and libx264 dependencies are also required for video previews to be generated correctly. Take note of the name and location of the folder in which the avconv and avprobe executables have been installed, as the openEQUELLA installation will require these details to properly configure and run openEQUELLA.
+Install Libav from <https://libav.org/download.html>. libvo_aacenc and libx264 dependencies are also required for video previews to be generated correctly.
 
-To install:
-1. run 'sudo apt-get install yasm'
-2. run 'sudo apt-get install libvo-aacenc-dev' (that's the audio codec we need)
-3. run 'sudo apt-get install libx264-dev' (that's the video codec we encode with)
-4. cd to the directory you want to download libav into.
-5. download the tar.gz file (e.g. <https://libav.org/releases/libav-11.3.tar.gz>)
-6. run 'tar -zxf libav-11.3.tar.gz'
-7. cd into libav-11.3
-8. run './configure --enable-libvo-aacenc --enable-version3 --enable-libx264 --enable-gpl'
-9. run 'make'
-10. run 'sudo make install'
+1. Install required packages; here we install packages required for building, an assembler, the audio codec we need and the video codec we encode with.
+
+```bash
+sudo apt-get install build-essential pkg-config
+sudo apt-get install yasm libvo-aacenc-dev libx264-dev
+```
+
+2. change to the directory you want to download libav into.
+```bash
+mkdir scratch
+cd scratch
+```
+
+3. download and extract the tar.gz file, e.g
+```bash
+wget https://libav.org/releases/libav-11.3.tar.gz
+tar -zxf libav-11.3.tar.gz
+```
+
+4. change into libav-11.3
+```bash
+cd libav-11.3
+```
+
+5. configure and make libav; these do NOT need sudo
+```bash
+./configure --enable-libvo-aacenc --enable-version3 --enable-libx264 --enable-gpl --prefix=/usr/local
+make
+```
+
+Finally, with sudo, install libav.
+```bash
+sudo make install
+```
 
 To remove:
-1. cd in the libav-11.3 directory:
-2. run 'sudo make uninstall'
-3. run 'sudo apt-get remove libx264-dev'
-4. run 'sudo apt-get remove libvo-aacenc-dev'
-5. run 'sudo apt-get remove yasm'
-6. delete the libav-11.3 directory and libav-11.3.tar.gz file.
+1. Remove the build dependencies
+```bash
+sudo apt-get remove libx264-dev libvo-aacenc-dev yasm
+```
+
+2. Remove libav
+```bash
+cd scratch/libav-11.3
+sudo make uninstall
+```
+
+3. delete the libav-11.3 directory and libav-11.3.tar.gz file.
+```bash
+cd
+rm -r scratch/libav*
+```
 
 ### To install and configure Libav for Linux - CentOS 7
 
 You should ensure compatibility of your
 specific operating system and adherence to any applicable laws and regulations before downloading the packages outlined here.
 
-To install the prerequisites for openEQUELLA  on CentOS:
-* sudo yum update
-* sudo yum install wget from "http://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/#"
-  * cd /opt/
-  * wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F;
-  oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz"
-  * tar -xzf jdk-8u91-linux-x64.tar.gz
-* From "https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-centos-7"
-  * sudo yum install postgresql-server postgresql-contrib
-  * sudo postgresql-setup initdb
-  * via sudo vi /var/lib/pgsql/data/pg_hba.conf, change 'ident' to 'md5'
-  * sudo systemctl start postgresql
-  * sudo systemctl enable postgresql
-  * change the postgres password
-  * Create a user for openEQUELLA (I did a superuser), and an empty database.
-* sudo yum install ImageMagick
-* Drop an existing 6.4-QA1 install of openEQUELLA into the OS, and confirm openEQUELLA runs.
-* Open your port for tomcat:
-  * firewall-cmd --permanent --add-port=8641/tcp
-  * firewall-cmd --reload
-
-Note: At this point, check your openEQUELLA install that it works and images can be thumbed.
-
-To install Libav:
 * Confirm the 'extras' repo is enabled (sudo yum repolist)
 * sudo yum install epel-release
 * sudo yum install yasm
