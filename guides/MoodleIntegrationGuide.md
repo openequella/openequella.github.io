@@ -125,11 +125,11 @@ The next step in the integration process is to download the openEQUELLA Moodle M
 This section describes the required configuration changes to Moodle to support the integration. openEQUELLA provides a module that allows Moodle users to easily contribute, search and select openEQUELLA items, and link them to a course. 
 
 ### Download and install the openEQUELLA Moodle Modules
-Download the **openEQUELLA Moodle Module** [here](https://github.com/equella/moodle-mod_equella/archive/master.zip). This module allows users to add openEQUELLA content as resources or activities zip are the files for the standard module functionality to integrate Moodle with openEQUELLA (referred to in this guide as the openEQUELLA Resource module).
+Download the **openEQUELLA Moodle Module** [here](https://github.com/equella/moodle-mod_equella/archive/master.zip). This module allows users to add openEQUELLA content as resources or activities (referred to in this guide as the openEQUELLA Resource module).
 
 Download the **openEQUELLA Search Block** [here](https://github.com/equella/moodle-block_equella_search.git). This block allows users to search openEQUELLA directly.
 
-Download the **openEQUELLA Tasks Block** [here](https://github.com/equella/moodle-block_equella_tasks/archive/master.zip).  This block users to view their openEQUELLA tasks and notifications zips are the files to add portlets to the Moodle front and course pages
+Download the **openEQUELLA Tasks Block** [here](https://github.com/equella/moodle-block_equella_tasks/archive/master.zip).  This block enables users to view their openEQUELLA tasks and notifications. This can be added as portlets to the Moodle front and course pages.
 
 For complete installation the contents of each zip file need to be extracted to the corresponding folder in the Moodle filesystem.
 

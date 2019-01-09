@@ -14,7 +14,7 @@ The following dependencies are required to successfully install openEQUELLA.
 
 - Database Server
 
-- - PostgreSQL
+  - PostgreSQL
   - Microsoft SQL 
   - Oracle
 
