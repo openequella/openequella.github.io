@@ -5,18 +5,19 @@
 ## Environment setup
 The following dependencies are required to successfully install openEQUELLA.
 
-- [Java 8 JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 
+- [Java 8 JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (Latest version)
 
-- [ImageMagick](https://www.imagemagick.org/script/download.php)
+- [ImageMagick](https://www.imagemagick.org/script/download.php) (Tested with ImageMagick 6.9.8 Q8)
 
-- [LibAV](https://libav.org/download/) (**Note:** This is not a compulsory step if video file attachments will not be used in your
-  institution or you don’t require them to display in the Videos gallery view.)
+- [LibAV](https://libav.org/download/) (tested with 11.7)
+
+  (**Note:** This is not a compulsory step if video file attachments will not be used in your institution or you don’t require them to display in the Videos gallery view.)
 
 - Database Server
 
-  - PostgreSQL
-  - Microsoft SQL 
-  - Oracle
+  - PostgreSQL (8 or higher)
+  - Microsoft SQL (2008 or higher)
+  - Oracle (11g or higher)
 
 
 
@@ -55,7 +56,7 @@ To stop openEQUELLA, run the same command to start the application, but pass in 
 
 **Note:** The primary log to watch is located under: 
 
-{install_location}/logs/resource-centre/{current_date}/application.{X.}html
+`{install_location}/logs/resource-centre/{current_date}/application.{X.}html`
 
 
 
@@ -74,3 +75,7 @@ At this point, openEQUELLA is 'running', but still needs an institution to be us
 1. After the import completes, click '**Return to Institution Management**'
 1. Your newly imported institution should be enabled on the '**Institutions**' page.  Click '**Login**' under '**Actions**'
 1. Login with the openEQUELLA super user **TLE_ADMINISTRATOR**, and use the institution password you set when configuring the institution import.
+
+
+
+For further information about openEQUELLA installation, please refer to the [Full Installation Guide](http://equella.github.io/guides/InstallationAdminGuide.html).
