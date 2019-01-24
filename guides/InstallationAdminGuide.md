@@ -351,7 +351,7 @@ Note: If there is no current institution (for example on a test/demo server) dow
 The Import New Institution page allows for arbitrary base URLs and the renaming of the institution.
 4. To continue the import, if multiple databases have been configured, click Select Database and select the required database in the Target database field. Otherwise the system defaults to the database set up during installation.
 5. Enter an Institution name for the institution. The institution name must be unique for the openEQUELLA server.
-6. Enter an Institution URL for the institution.  Server administrators are able to give institutions an arbitrary base URL but it is recommended that they contain a context (`/something/` after the address) and be fully qualified (including both host and domain name).
+6. Enter an Institution URL for the institution.  Server administrators are able to give institutions an arbitrary base URL but it is suggested that they contain a context (`/something/` after the address) and be fully qualified (including both host and domain name).
 For example, the following base URLs would be valid for institutions on the same server: 
   * http://some.host.com/  	(See note below)
   * http://another.host.com/ 	(See note below)
