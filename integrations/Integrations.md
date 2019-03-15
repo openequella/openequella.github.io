@@ -28,7 +28,7 @@ openEquella has a number of ways to integrate with 3rd party systems
 
 ## APIs
 * REST API can be found at {{your Equella institution}}/apidocs.do
-* [SOAP API](../api-docs/Script/api%20reference.html)
+* [SOAP API](../api-docs/SOAP/api%20reference.html)
 * [Script API](../api-docs/Script/api%20reference.html)
 
 ## API Guides / Tutorials
