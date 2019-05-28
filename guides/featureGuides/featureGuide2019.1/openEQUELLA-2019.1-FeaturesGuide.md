@@ -2,4 +2,5 @@
 
 In Progress!
 
-![Test Image](TestImage.png "A Wintery Scene")
+![Test Image](TestImage.png)
+**Test Figure A.3**
