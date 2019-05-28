@@ -4,3 +4,6 @@ In Progress!
 
 ![Test Image](TestImage.png)
 **Test Figure A.3**
+
+![Test Fruit]( 	ForestFruitBackground.jpg)
+**Test Caption**
