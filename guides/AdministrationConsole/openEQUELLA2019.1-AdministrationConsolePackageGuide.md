@@ -38,7 +38,7 @@ to create a shortcut for this file as you will use it each time to access an
 Administration Console. The **openEQUELLA Administration Console Launcher**
 displays. An example is shown in Figure 1.
 
-![](media/d6cc9beaf9b7d7577557f66702dd8115.png)
+![Launcher](1launcher.png)
 
 Figure 1 openEQUELLA Administration Console Launcher
 
@@ -83,7 +83,7 @@ server, a server record must be added for each institution.
 2.  Select **Add Server.** The **Server Editor** dialog displays, as shown in
     Figure 2.
 
-![](media/fb2b95c0f144a08b6919e83791033120.png)
+![Server](2server.png)
 
 Figure 2 Server Editor
 
@@ -120,17 +120,17 @@ Console for that institution can be opened.
 2.  Select **Launch** to open the Admin Console for the selected
     server/institution. An example is shown in Figure 3.
 
-![](media/e32e8baf0db88c77606106c1f0ae2ee6.png)
+![LaunchAdminConsole](3numbers.png)
 
 Figure 3 Launch the Admin Console
 
 The **Enter login credentials** dialog displays. An example is shown in Figure 4
 
-![](media/2df1357a0fdaed2fc4462592d7b64123.png)
+![Credential](4creds.png)
 
 Figure 4 Enter login credential dialog
 
-1.  Enter your login credentials
+3.  Enter your login credentials
 
 NOTE: Login credentials will be requested each time an Administration Console is
 launched.
