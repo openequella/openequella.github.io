@@ -144,18 +144,18 @@ The Administration Console for the selected Server/Institution opens.
 Login Notice Editor
 -------------------
 
-The ability to create and display a notice on the Login page will be included as
+The ability to create and display a notice on the Login page is included as
 part of the openEQUELLA 2019.1 release, and is now ready for beta testing. This
 feature enables administrators to create a notice to display on the Login page
-using a rich text editor (TinyMCE 5.0.2), including adding images, links,
+using a rich text editor (TinyMCE 5.0.2), including images, links,
 embedded videos and more, as well as being able to schedule the notice to
 display within configured date and time parameters.
 
 Please note that the Login page notice is in addition to the existing
 functionality which allows a simple text message to display in a popup after a
 user has logged in. This functionality has not changed, however access to the
-configuration setting for this function has been incorporated into one setting
-called **Login notice editor**.
+configuration setting for this function has been incorporated with the new functionality into
+the one **Login notice editor** setting.
 
 An example of the new **Before login notice** is shown in Figure 1 and the
 existing **After login notice** is shown in Figure 2.
@@ -209,7 +209,7 @@ An example showing content added using the rich text editor is shown in Figure
 
 #### Schedule settings
 
-The Schedule settings section enables the Before login notice to be set to:
+The **Schedule settings** section enables the Before login notice to be set to:
 
 -   **On** – the notice always displays on the login page.
 
