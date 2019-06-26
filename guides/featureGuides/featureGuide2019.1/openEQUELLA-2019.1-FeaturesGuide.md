@@ -160,7 +160,7 @@ the one **Login notice editor** setting.
 An example of the new **Before login notice** is shown in Figure 1 and the
 existing **After login notice** is shown in Figure 2.
 
-![Login Notice](ExampleLoginNotice.png)
+![Login Notice](ExampleLoginNoticeNew.png)
 **Figure 1 New ‘Before login’ notice**
 
 ![After Notice](ExampleAfterNotice.png)
@@ -204,7 +204,7 @@ scheduling options selected. The tab includes:
 An example showing content added using the rich text editor is shown in Figure
 5.
 
-![Before Login](BeforeLoginNotice.png)
+![Before Login](BeforeLoginNoticeNew.png)
 **Figure 5 BEFORE LOGIN NOTICE tab**
 
 #### Schedule settings
