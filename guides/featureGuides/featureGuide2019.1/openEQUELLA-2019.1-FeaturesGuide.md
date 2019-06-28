@@ -245,4 +245,37 @@ An example is shown in Figure 7.
 **Figure 7 AFTER LOGIN NOTICE tab**
 
 
+Support for languages other than English
+----------------------------------------
+
+In openEQUELLA, language packs can be used to control the language within
+display areas of the system. openEQUELLA 2019.1 expands its support for
+languages other than English in its search capabilities (such as recognising the
+specified language’s stop words, stemming etc.)
+
+The default openEQUELLA search language is English, but this can be changed by
+editing the optional-config.properties file to specify the required default
+search language (using the [Alpha-2 country
+code](https://www.iban.com/country-codes)).
+
+##### To edit the default search language
+
+1.  Go to the openEQUELLA directory on your system and open the
+    **learningedge-config** folder.
+
+2.  Open the **optional-config.properties** file using your text editor of
+    choice.
+
+3.  At the bottom of this file, uncomment (remove the **\#** in front of) the
+    **freetext.analyzer.language** property and add **= [countrycode]** at the
+    end**.**
+
+Note that the Alpha-2 country code must be entered in lower case
+
+1.  Restart the openEQUELLA server
+
+An example where the required search language is German is shown below.
+
+![Language](language.png)
+**Figure 8 optional-config.properties file – ‘freetext.analyzer.language’ property**
 
