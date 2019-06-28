@@ -278,7 +278,7 @@ Note that the Alpha-2 country code must be entered in lower case
 
 An example where the required search language is German is shown below.
 
-![Language](lanuage.png)
+![Language](language.png)
 
 **Figure 8 optional-config.properties file – ‘freetext.analyzer.language’ property**
 
