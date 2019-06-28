@@ -245,7 +245,9 @@ An example is shown in Figure 7.
 **Figure 7 AFTER LOGIN NOTICE tab**
 
 
-Support for languages other than English
+
+
+Support for Languages other than English
 ----------------------------------------
 
 In openEQUELLA, language packs can be used to control the language within
