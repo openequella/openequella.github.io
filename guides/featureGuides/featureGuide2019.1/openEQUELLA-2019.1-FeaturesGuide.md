@@ -1,6 +1,8 @@
 # openEQUELLA 2019.1 Features Guide
 
-
+Table of Contents
+* [Administration Console Package](#administration-console-package)
+* [Login Notice Editor](#login-notice-editor)
 
 Administration Console Package
 ------------------------------
