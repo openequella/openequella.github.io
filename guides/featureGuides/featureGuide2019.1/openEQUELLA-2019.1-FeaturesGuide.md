@@ -3,6 +3,7 @@
 Table of Contents
 * [Administration Console Package](#administration-console-package)
 * [Login Notice Editor](#login-notice-editor)
+* [Support for Languages other than English](#support-for-languages-other-thank-english)
 
 Administration Console Package
 ------------------------------
