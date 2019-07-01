@@ -269,8 +269,9 @@ code](https://www.iban.com/country-codes)).
     choice.
 
 3.  At the bottom of this file, uncomment (remove the **\#** in front of) the
-    **freetext.analyzer.language** property and add **= [countrycode]** at the
-    end**.**
+    **freetext.analyzer.language** property 
+    and add **= [countrycode]** at the
+    end.
 
 Note that the Alpha-2 country code must be entered in lower case
 
