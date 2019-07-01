@@ -269,13 +269,11 @@ code](https://www.iban.com/country-codes)).
     choice.
 
 3.  At the bottom of this file, uncomment (remove the **\#** in front of) the
-    **freetext.analyzer.language** property 
-    and add **= [countrycode]** at the
-    end.
+    **freetext.analyzer.language** property and add **= xx** (where **xx** is the Alpha-2 country code) (see example below).
 
-Note that the Alpha-2 country code must be entered in lower case
+Note that the Alpha-2 country code must be entered in lower case.
 
-1.  Restart the openEQUELLA server
+4.  Restart the openEQUELLA server.
 
 An example where the required search language is German is shown below.
 
