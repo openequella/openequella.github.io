@@ -4,9 +4,12 @@ Table of Contents
 * [Administration Console Package](#administration-console-package)
 * [Login Notice Editor](#login-notice-editor)
 * [Support for Languages other than English](#support-for-languages-other-than-english)
+* [REST API Enhancements](#rest-api-enhancements)
+* [Cloud Providers](#cloud-providers)
+* [UI Migration](#ui-migration)
+* [New Blackboard Integration](#new-blackboard-integration)
 
-Administration Console Package
-------------------------------
+# Administration Console Package
 
 In openEQUELLA versions prior to 2019.1, the Administration Console was launched
 from the openEQUELLA Settings page using a mechanism that is planned to be
@@ -144,8 +147,7 @@ launched.
 
 The Administration Console for the selected Server/Institution opens.
 
-Login Notice Editor
--------------------
+# Login Notice Editor
 
 The ability to create and display a notice on the Login page is included as
 part of the openEQUELLA 2019.1 release, and is now ready for beta testing. This
@@ -247,8 +249,7 @@ An example is shown in Figure 7.
 
 
 
-Support for Languages other than English
-----------------------------------------
+# Support for Languages other than English
 
 In openEQUELLA, language packs can be used to control the language within
 display areas of the system. openEQUELLA 2019.1 expands its support for
@@ -280,4 +281,24 @@ An example where the required search language is German is shown below.
 ![Language](language.png)
 
 **Figure 8 optional-config.properties file – ‘freetext.analyzer.language’ property**
+
+# REST API Enhancements
+See 
+* https://github.com/apereo/openEQUELLA/issues/730
+* https://github.com/apereo/openEQUELLA/issues/873
+TODO
+
+# Cloud Providers
+See - https://github.com/apereo/openEQUELLA/issues/760
+TODO - Cath
+
+# UI Migration
+Todo - Any specific issue tickets?
+TODO - Cath
+
+# New Blackboard Integration
+** In Beta - MVP scheduled for oEQ 2019.2**
+https://github.com/apereo/openEQUELLA/issues/598
+TODO - Cbeach
+
 
