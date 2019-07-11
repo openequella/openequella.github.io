@@ -283,22 +283,33 @@ An example where the required search language is German is shown below.
 **Figure 8 optional-config.properties file – ‘freetext.analyzer.language’ property**
 
 # REST API Enhancements
+
 See 
+
 * https://github.com/apereo/openEQUELLA/issues/730
+
 * https://github.com/apereo/openEQUELLA/issues/873
+
 TODO
 
 # Cloud Providers
+
 See - https://github.com/apereo/openEQUELLA/issues/760
+
 TODO - Cath
 
 # UI Migration
+
 Todo - Any specific issue tickets?
+
 TODO - Cath
 
 # New Blackboard Integration
+
 ** In Beta - MVP scheduled for oEQ 2019.2**
+
 https://github.com/apereo/openEQUELLA/issues/598
+
 TODO - Cbeach
 
 
