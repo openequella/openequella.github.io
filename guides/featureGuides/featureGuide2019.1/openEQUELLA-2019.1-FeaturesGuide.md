@@ -7,7 +7,7 @@ Table of Contents
 * [REST API Enhancements](#rest-api-enhancements)
 * [Cloud Providers](#cloud-providers)
 * [UI Migration](#ui-migration)
-* [New Blackboard Integration](#new-blackboard-integration)
+* [Enhanced Blackboard Integration](#enhanced-blackboard-integration)
 
 # Administration Console Package
 
@@ -304,12 +304,82 @@ Todo - Any specific issue tickets?
 
 TODO - Cath
 
-# New Blackboard Integration
+# Enhanced Blackboard Integration
+**_Work in Progress - Cbeach_**
 
-** In Beta - MVP scheduled for oEQ 2019.2**
+The openEQUELLA (oEQ) / Blackboard (Bb) integration has historically been achieved with a building block (B2) and web service (WS) that was uploaded into the Bb site.  This presented some difficulties and Bb is retiring their SOAP Web Services in Q2 2020 which will effectively break the oEQ WS.  Due to this upcoming loss of functionality, and the complexity of maintaining the B2/WS, a pure LTI / REST integration is being developed.  This integration is available in this release as a minimal set of features as a 'beta' feature release, and will be enhanced for 2019.2.
 
-https://github.com/apereo/openEQUELLA/issues/598
+As part of migrating from the B2/WS integration to the LTI/REST integration, adopters will have access to the following Bb abilities:
+* Course Content Deep Linking Tool
+* TODO - list the other abilities
 
-TODO - Cbeach
+Adopters will no longer be able to use the 'My Institution' integration that was part of the B2/WS integration.
+
+## Enable Using Blackboard REST APIs
+In order to make REST calls into a Bb site, adopters will need to obtain a REST Application ID via https://developer.blackboard.com/ .  This REST Application ID will then be used (via the same site), to create a REST Application key and secret.  You will need this key and secret when configuring the integration in Bb.
+
+## Configure openEQUELLA
+
+### Configure a New LTI Consumer
+
+WIP
+
+### Configure a New External System Connector
+
+WIP
+
+## Configure Blackboard
+
+### Register the Provider Domain
+
+1. Under 'LTI Tool Provider', select 'Register Provider Domain'
+2.  Configure Provider domain (omit protocol and context path)
+3.  Set Provider Domain Status to Approved
+  * default configuration > set globally
+4. Configure TP Key and Secret
+  * No custom parameters needed
+  * Set 'Send User Data' to 'Send user data over any connection'
+  * Set 'User Fields to Send' to 'Role in Course, Name, and Email Address'
+  * Set 'Allow Membership Service Access' to 'Yes'
+
+### Configure Course Content Tool Placement
+
+1. Under the newly registered provider domain, select 'Manage Placements'
+2. Select 'Create Placement'
+3. Configure the label and description.
+4. Configure the handle (this cannot change after the placement is created).
+  * Set 'Availability' to 'Yes'
+  * Set 'Type' to 'Course content tool', and then select 'Allows Deep Linking'
+  * Set the 'Tool Provider URL' to 'http://your.oE.domain.xyz/demo/blackboardltisignon.do'
+5. Configure the 'Tool Provider Custom Parameters' with:
+```properties
+bb_user_login_id=@X@user.id@X@
+bb_user_id=@X@user.batch_uid@X@"
+```
+TODO - CONFIRM THOSE PARAMETERS ARE NEEDED.
+
+### Add an oEQ Content Link with the Course Content Tool Placement
+
+Navigate into your course > Information > Build Content > your-oE-CTT-placement
+
+### Other Integration Abilities
+
+The rest of the integration abilities are similar to the B2/WS flows:
+* 'Push to LMS'
+  * From oEQ, select courses / folders to integrate content links from a given oEQ resource
+* MER
+* FU
+* ...
+
+## Further Details
+
+Since this is in 'beta', adopters that plan to switch from the B2/WS integration to the LTI/REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their oEQ / Bb integration user scenarios. 
+
+## Tickets
+[2019.1 Enhancements](https://github.com/apereo/openEQUELLA/issues/598)
+
+[All Identified Possible Enhancements](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22)
+
+[Enhancements Planned for 2019.2](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22+milestone%3A2019.2)
 
 
