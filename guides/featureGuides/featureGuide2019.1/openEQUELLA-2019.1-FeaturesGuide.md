@@ -322,25 +322,39 @@ In order to make REST calls into a Bb site, adopters will need to obtain a REST 
 
 ### Configure a New LTI Consumer
 
-WIP
+This is a standard LTI Consumer in oEQ, as such just a high level review is given.
+
+1. Under 'Settings' > 'Integrations' > 'LTI Consumers', click on 'Create new LTI consumer'
+2. You can leave the 'Consumer key' and 'Consumer secret' with the system-generated values, or specify your own
+3. Choose your SSO configuration and role mappings.  For testing, leave 'Useable by' as 'Everyone', and set 'Unknown user handling' to 'Create local user and add them to the following groups...'.  Then choose a group for all 'new' Bb users crossing over to oEQ to be added to.
 
 ### Configure a New External System Connector
 
-WIP
+1. Under 'Settings' > 'External system connectors', click on 'Add new connector'.
+2. Select 'Blackboard REST'
+3. Configure a 'Connector name,', and provide a 'Blackboard REST URL'
+4. Click on 'Test URL'.  Ignore the 'Test web service' button.  This will be removed in 2019.2.
+5. Specify the 'REST API Key' and 'REST API Secret' from https://developer.blackboard.com/ .
+6. The rest of the configuration is standard External System Connector details.  
 
 ## Configure Blackboard
 
 ### Register the Provider Domain
 
 1. Under 'System Admin' > 'LTI Tool Providers', select 'Register Provider Domain'
-2. Configure Provider domain (omit protocol and context path)
-3. Set Provider Domain Status to Approved
-  * default configuration > set globally
-4. Configure TP Key and Secret
-  * No custom parameters needed
-  * Set 'Send User Data' to 'Send user data over any connection'
-  * Set 'User Fields to Send' to 'Role in Course, Name, and Email Address'
-  * Set 'Allow Membership Service Access' to 'Yes'
+2. Configure Provider domain.  So for `https://my.learning.center/oeq`, you would put `my.learning.center`.
+3. Set Provider Domain Status to `Approved`
+4. Under 'Default Configuration', set 'Default Configuration' to 'Set globally'
+5. Configure the 'Tool Provider Key' and 'Tool Provider Secret' with the values you configured in the `oEQ LTI Consumer`
+6. Configure the 'Tool Provider Custom Parameters' with the following.  Note, omitting the `bb_user_login_id` line will result in the LTI crossover (SSO into oEQ) using the Bb user's `externalId` instead of the `userName`.
+```properties
+bb_user_login_id=@X@user.id@X@
+bb_user_id=@X@user.batch_uid@X@
+```
+7. Under 'Institution Policies', set 'Send User Data' to 'Send user data only over SSL'
+  * Note:  You can select 'Send user data over any connection', but it's not recommended for a Production install
+8. Set 'User Fields to Send' to 'Role in Course', 'Name', and 'Email Address'
+9. Set 'Allow Membership Service Access' to 'Yes'
 
 ### Configure Course Content Tool Placement
 
@@ -348,27 +362,30 @@ WIP
 2. Select 'Create Placement'
 3. Configure the label and description.
 4. Configure the handle (this cannot change after the placement is created).
-5. Set 'Availability' to 'Yes'
+5. Leave 'Availability' set to 'Yes'
 6. Set 'Type' to 'Course content tool', and then select 'Supports deep linking'
 7. Under 'Tool Provider Information', set the 'Tool Provider URL' to 'http://your.oE.domain.xyz/demo/blackboardltisignon.do'
-8. Configure the 'Tool Provider Key' and 'Tool Provider Secret' with the values you configured in the `oEQ LTI Consumer`.
-8. Configure the 'Tool Provider Custom Parameters' with:
-```properties
-bb_user_login_id=@X@user.id@X@
-bb_user_id=@X@user.batch_uid@X@"
-```
-TODO - CONFIRM THOSE PARAMETERS ARE NEEDED.
+8. The 'Tool Provider Key' and 'Tool Provider Secret' will be preconfigured (and readonly)
+
+### Config the REST Application in Blackboard
+
+1. Under 'System Admin' > 'REST API Integrations', select 'Create Integration'
+2. Configure the Application ID from your registration on https://developer.blackboard.com/ 
+3. Select a 'Learn User' that has sufficient permissions
+4. Leave 'End User Access' as the default 'Yes'
+5. Leave the 'Authorized To Act As User' as the default 'Service Default (No)'
 
 ## Usage
 
-* Grant your oEQ user:
+* Grant your oEQ users:
   * `EXPORT_VIA_CONNECTOR` - Push to LMS 
   * `VIEW_VIA_CONNECTOR` - Find Uses / Manage External Resources
-  * `DISCOVER_ITEM` - LTI launch from Bb - both the selection session and accessing a link
-* Grant your Bb user:
-  * Access to the LTI Tool Provider instance for oEQ.
+  * `INTEGRATION_SELECTION_SESSION` - LTI launch from Bb to oEQ to the selection session page
+  * `DISCOVER_ITEM` - Discover oEQ items in a search (such as from the selection session).  Allows some of the metadata to show
+  * `VIEW_ITEM` - View attachments from an LTI launch, view attachments from a selection session
 
-TODO - verify these are the only permissions needed!
+1. In your Bb Course, select a content area / folder
+2. Select 'Build Content', and then select the course content tool you created.
 
 ### Add an oEQ Content Link with the Course Content Tool Placement
 
@@ -379,9 +396,8 @@ Navigate into your course > Information > Build Content > your-oE-CTT-placement
 The rest of the integration abilities are similar to the B2/WS flows:
 * 'Push to LMS'
   * From oEQ, select courses / folders to integrate content links from a given oEQ resource
-* MER
-* FU
-* ...
+* Manage External Resources
+* Find Uses
 
 ## Notes
 
@@ -389,6 +405,7 @@ The rest of the integration abilities are similar to the B2/WS flows:
 * The Bb REST integration can be enabled / disabled with the `Available` flag in Bb.
 * A good write up of the configuration options for Bb REST applications is [here](https://community.blackboard.com/community/developers/learn/blog/2019/02/12/end-user-access-authorized-to-act-as-user).
 * Since this is in 'beta', adopters that plan to switch from the B2/WS integration to the LTI/REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their oEQ / Bb integration user scenarios. 
+* If you get an error in oEQ `CacheLoader returned null for key TOKEN.`, confirm your Bb REST Application is configured and available.
 
 ## Bb Integration Tickets
 [2019.1 Enhancements](https://github.com/apereo/openEQUELLA/issues/598)
