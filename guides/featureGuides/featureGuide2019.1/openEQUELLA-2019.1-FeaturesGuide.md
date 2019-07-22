@@ -307,7 +307,7 @@ TODO - Cath
 # Enhanced Blackboard Integration
 **_Work in Progress - Cbeach_**
 
-The openEQUELLA (oEQ) / Blackboard (Bb) integration has historically been achieved with a building block (B2) and web service (WS) that was uploaded into the Bb site.  This presented some difficulties and Bb is retiring their SOAP Web Services in Q2 2020 which will effectively break the oEQ WS.  Due to this upcoming loss of functionality, and the complexity of maintaining the B2/WS, a pure LTI / REST integration is being developed.  This integration is available in this release as a minimal set of features as a 'beta' feature release, and will be enhanced for 2019.2.
+The openEQUELLA (oEQ) / Blackboard (Bb) integration has historically been achieved with a building block (B2) and web service (WS) that was uploaded into the Bb site.  This has historically presented some difficulties and Bb is retiring their SOAP Web Services in Q2 2020 which will effectively break the oEQ WS.  Due to this upcoming loss of functionality, and the complexity of maintaining the B2 / WS, a pure LTI / REST integration is being developed.  This integration is available in this release as a minimal set of features as a 'beta' feature release, and will be enhanced for 2019.2.
 
 As part of migrating from the B2/WS integration to the LTI/REST integration, adopters will have access to the following Bb abilities:
 * Course Content Deep Linking Tool
@@ -316,7 +316,7 @@ As part of migrating from the B2/WS integration to the LTI/REST integration, ado
 Adopters will no longer be able to use the 'My Institution' integration that was part of the B2/WS integration.
 
 ## Enable Using Blackboard REST APIs
-In order to make REST calls into a Bb site, adopters will need to obtain a REST Application ID via https://developer.blackboard.com/ .  This REST Application ID will then be used (via the same site), to create a REST Application key and secret that is tied to your Bb site URL.  You will need this key and secret when configuring the integration in Bb.  Please read this [post](https://community.blackboard.com/docs/DOC-4258-developer-groups-site-quotas-and-rate-limits) for more information.
+In order to make REST calls into a Bb site, adopters will need to obtain a REST Application ID via https://developer.blackboard.com/ .  This REST Application ID will then be used (via the same site), to create a REST Application key and secret that is tied to your Bb site URL.  You will need this key and secret when configuring the integration in Bb.  Please read this [post](https://community.blackboard.com/docs/DOC-4258-developer-groups-site-quotas-and-rate-limits) for more information on how Bb handles REST Application IDs.
 
 ## Configure openEQUELLA
 
@@ -332,9 +332,9 @@ WIP
 
 ### Register the Provider Domain
 
-1. Under 'LTI Tool Provider', select 'Register Provider Domain'
-2.  Configure Provider domain (omit protocol and context path)
-3.  Set Provider Domain Status to Approved
+1. Under 'System Admin' > 'LTI Tool Providers', select 'Register Provider Domain'
+2. Configure Provider domain (omit protocol and context path)
+3. Set Provider Domain Status to Approved
   * default configuration > set globally
 4. Configure TP Key and Secret
   * No custom parameters needed
@@ -348,10 +348,11 @@ WIP
 2. Select 'Create Placement'
 3. Configure the label and description.
 4. Configure the handle (this cannot change after the placement is created).
-  * Set 'Availability' to 'Yes'
-  * Set 'Type' to 'Course content tool', and then select 'Allows Deep Linking'
-  * Set the 'Tool Provider URL' to 'http://your.oE.domain.xyz/demo/blackboardltisignon.do'
-5. Configure the 'Tool Provider Custom Parameters' with:
+5. Set 'Availability' to 'Yes'
+6. Set 'Type' to 'Course content tool', and then select 'Supports deep linking'
+7. Under 'Tool Provider Information', set the 'Tool Provider URL' to 'http://your.oE.domain.xyz/demo/blackboardltisignon.do'
+8. Configure the 'Tool Provider Key' and 'Tool Provider Secret' with the values you configured in the `oEQ LTI Consumer`.
+8. Configure the 'Tool Provider Custom Parameters' with:
 ```properties
 bb_user_login_id=@X@user.id@X@
 bb_user_id=@X@user.batch_uid@X@"
@@ -389,7 +390,7 @@ The rest of the integration abilities are similar to the B2/WS flows:
 * A good write up of the configuration options for Bb REST applications is [here](https://community.blackboard.com/community/developers/learn/blog/2019/02/12/end-user-access-authorized-to-act-as-user).
 * Since this is in 'beta', adopters that plan to switch from the B2/WS integration to the LTI/REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their oEQ / Bb integration user scenarios. 
 
-## Tickets
+## Bb Integration Tickets
 [2019.1 Enhancements](https://github.com/apereo/openEQUELLA/issues/598)
 
 [All Identified Possible Enhancements](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22)
