@@ -316,7 +316,7 @@ As part of migrating from the B2/WS integration to the LTI/REST integration, ado
 Adopters will no longer be able to use the 'My Institution' integration that was part of the B2/WS integration.
 
 ## Enable Using Blackboard REST APIs
-In order to make REST calls into a Bb site, adopters will need to obtain a REST Application ID via https://developer.blackboard.com/ .  This REST Application ID will then be used (via the same site), to create a REST Application key and secret.  You will need this key and secret when configuring the integration in Bb.
+In order to make REST calls into a Bb site, adopters will need to obtain a REST Application ID via https://developer.blackboard.com/ .  This REST Application ID will then be used (via the same site), to create a REST Application key and secret that is tied to your Bb site URL.  You will need this key and secret when configuring the integration in Bb.  Please read this [post](https://community.blackboard.com/docs/DOC-4258-developer-groups-site-quotas-and-rate-limits) for more information.
 
 ## Configure openEQUELLA
 
@@ -358,6 +358,17 @@ bb_user_id=@X@user.batch_uid@X@"
 ```
 TODO - CONFIRM THOSE PARAMETERS ARE NEEDED.
 
+## Usage
+
+* Grant your oEQ user:
+  * `EXPORT_VIA_CONNECTOR` - Push to LMS 
+  * `VIEW_VIA_CONNECTOR` - Find Uses / Manage External Resources
+  * `DISCOVER_ITEM` - LTI launch from Bb - both the selection session and accessing a link
+* Grant your Bb user:
+  * Access to the LTI Tool Provider instance for oEQ.
+
+TODO - verify these are the only permissions needed!
+
 ### Add an oEQ Content Link with the Course Content Tool Placement
 
 Navigate into your course > Information > Build Content > your-oE-CTT-placement
@@ -371,9 +382,12 @@ The rest of the integration abilities are similar to the B2/WS flows:
 * FU
 * ...
 
-## Further Details
+## Notes
 
-Since this is in 'beta', adopters that plan to switch from the B2/WS integration to the LTI/REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their oEQ / Bb integration user scenarios. 
+* The default REST Application ID adopters obtain are 'developer' level - there is a 7 Bb site limit, and API call rate limits.  It is recommended oEQ/Bb adopters reach out to their Bb Support contacts to discuss the appropriate REST Application ID level for their institution.
+* The Bb REST integration can be enabled / disabled with the `Available` flag in Bb.
+* A good write up of the configuration options for Bb REST applications is [here](https://community.blackboard.com/community/developers/learn/blog/2019/02/12/end-user-access-authorized-to-act-as-user).
+* Since this is in 'beta', adopters that plan to switch from the B2/WS integration to the LTI/REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their oEQ / Bb integration user scenarios. 
 
 ## Tickets
 [2019.1 Enhancements](https://github.com/apereo/openEQUELLA/issues/598)
@@ -381,5 +395,3 @@ Since this is in 'beta', adopters that plan to switch from the B2/WS integration
 [All Identified Possible Enhancements](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22)
 
 [Enhancements Planned for 2019.2](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22+milestone%3A2019.2)
-
-
