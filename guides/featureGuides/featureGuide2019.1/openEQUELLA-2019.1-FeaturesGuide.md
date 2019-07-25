@@ -305,13 +305,13 @@ Todo - Any specific issue tickets?
 TODO - Cath
 
 # Enhanced Blackboard Integration
-**_Work in Progress - Cbeach_**
 
 The openEQUELLA (oEQ) / Blackboard (Bb) integration has historically been achieved with a building block (B2) and web service (WS) that was uploaded into the Bb site.  This has historically presented some difficulties and Bb is retiring their SOAP Web Services in Q2 2020 which will effectively break the oEQ WS.  Due to this upcoming loss of functionality, and the complexity of maintaining the B2 / WS, a pure LTI / REST integration is being developed.  This integration is available in this release as a minimal set of features as a 'beta' feature release, and will be enhanced for 2019.2.
 
 As part of migrating from the B2/WS integration to the LTI/REST integration, adopters will have access to the following Bb abilities:
-* Course Content Deep Linking Tool
-* TODO - list the other abilities
+* Course Content Deep Linking Tool (works in 2019.1)
+* Course Tool (on the roadmap)
+* System Tool (on the roadmap)
 
 Adopters will no longer be able to use the 'My Institution' integration that was part of the B2/WS integration.
 
@@ -377,27 +377,27 @@ bb_user_id=@X@user.batch_uid@X@
 
 ## Usage
 
-* Grant your oEQ users:
-  * `EXPORT_VIA_CONNECTOR` - Push to LMS 
-  * `VIEW_VIA_CONNECTOR` - Find Uses / Manage External Resources
+### Permissions
+Grant the following to your oEQ users
+  * `EXPORT_VIA_CONNECTOR`, `EXPORT_TO_LMS_ITEM`, `VIEWCONTENT_VIA_CONNECTOR`, `FIND_USES_ITEM` - Push to LMS / Find Uses / Manage External Resources
   * `INTEGRATION_SELECTION_SESSION` - LTI launch from Bb to oEQ to the selection session page
   * `DISCOVER_ITEM` - Discover oEQ items in a search (such as from the selection session).  Allows some of the metadata to show
   * `VIEW_ITEM` - View attachments from an LTI launch, view attachments from a selection session
 
-1. In your Bb Course, select a content area / folder
-2. Select 'Build Content', and then select the course content tool you created.
-
 ### Add an oEQ Content Link with the Course Content Tool Placement
 
-Navigate into your course > Information > Build Content > your-oE-CTT-placement
+In an original Bb course, navigate into your course > Information > Build Content > your-oE-CTT-placement .  This is known as 'Pull to LMS'.  Currently only works for original Bb course.  Ultra courses are planned for 2019.2.
 
 ### Other Integration Abilities
 
 The rest of the integration abilities are similar to the B2/WS flows:
 * 'Push to LMS'
   * From oEQ, select courses / folders to integrate content links from a given oEQ resource
-* Manage External Resources
+  * Currently only works for original Bb course.  Ultra courses are planned for 2019.2.
+* Manage External Resources 
+  * Not working in 2019.1
 * Find Uses
+  * Not working in 2019.1
 
 ## Notes
 
