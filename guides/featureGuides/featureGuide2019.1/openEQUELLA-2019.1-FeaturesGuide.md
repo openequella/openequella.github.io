@@ -32,7 +32,7 @@ for Windows, MAC and Linux operating systems.
 ##### To download the package
 
 1.  Go to https://github.com/apereo/openEQUELLA-admin-console-package/releases
-    and download the required operating system package.
+    and download the latest package for your operating system.
 
 2.  Extract the package files to your preferred location on your local drive.
 
