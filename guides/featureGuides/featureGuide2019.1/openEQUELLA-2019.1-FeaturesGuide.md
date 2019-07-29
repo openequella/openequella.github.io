@@ -242,7 +242,7 @@ display to users in a popup dialog box once they’ve logged in. The tab include
 
 An example is shown in Figure 7.
 
-![After Notice](AfterLoginNotice.png)
+![After Notice](AfterLoginNoticeNew.png)
 **Figure 7 AFTER LOGIN NOTICE tab**
 
 
