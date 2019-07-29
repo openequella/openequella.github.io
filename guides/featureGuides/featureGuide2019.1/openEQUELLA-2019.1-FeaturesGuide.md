@@ -6,7 +6,6 @@ Table of Contents
 * [Support for Languages other than English](#support-for-languages-other-than-english)
 * [REST API Enhancements](#rest-api-enhancements)
 * [Cloud Providers](#cloud-providers)
-* [UI Migration](#ui-migration)
 * [Enhanced Blackboard Integration](#enhanced-blackboard-integration)
 
 # Administration Console Package
@@ -317,7 +316,7 @@ administrators before they can register a new Cloud provider. This is done
 through the Security Manager, accessed via the Administration Console. An
 example is shown in Figure 9.
 
-![](media/b731253db1a4a103391f6ebd30e57e65.png)
+![acl](cloudacl.png)
 
 Figure 9 Security Manager - Cloud providers
 
@@ -328,13 +327,13 @@ Figure 9 Security Manager - Cloud providers
 1.  From the openEQUELLA **Settings** page, select **Integrations**, **Cloud
     Providers.**
 
-![](media/71840253e1aeb3f3bc736848087ac132.png)
+![cloudsettings](cloudsettings.png)
 
 Figure 10 Settings, Integrations, Cloud providers
 
 The **Cloud Providers** page displays. An example is shown in Figure 11.
 
-![](media/3fe2af484a1e40838577f636965d861c.png)
+![cloudrego](cloudrego.png)
 
 Figure 11 Cloud Provider registration page
 
@@ -348,7 +347,7 @@ Figure 11 Cloud Provider registration page
     information may display, depending on the Cloud Provider’s process. An
     example of the Edalex Content Services registration form is shown below:
 
-![](media/d4e83e46ce8bac6d3c3cf3082e8a58df.png)
+![cloudform](cloudform.png)
 
 Figure 12 Example registration form
 
@@ -359,7 +358,7 @@ The registration and authentication process occurs in the background and once
 completed successfully, the Cloud provider information displays on the **Cloud
 providers** page. An example is shown in Figure 13.
 
-![](media/3e489be52d0f8113d6bc9a5323a84536.png)
+![cloudpage](cloudpage.png)
 
 Figure 13 Cloud providers page with registered Cloud provider
 
