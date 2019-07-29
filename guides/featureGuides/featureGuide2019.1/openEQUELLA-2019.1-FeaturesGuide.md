@@ -285,9 +285,9 @@ An example where the required search language is German is shown below.
 
 See 
 
-* https://github.com/apereo/openEQUELLA/issues/730
+* [Search API documentation updates](https://github.com/apereo/openEQUELLA/issues/730)
 
-* https://github.com/apereo/openEQUELLA/issues/873
+* [Editing of attachments and metadata](https://github.com/apereo/openEQUELLA/issues/873)
 
 
 
