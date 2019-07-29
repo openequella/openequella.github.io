@@ -290,19 +290,79 @@ See
 
 * https://github.com/apereo/openEQUELLA/issues/873
 
-TODO
+
 
 # Cloud Providers
 
-See - https://github.com/apereo/openEQUELLA/issues/760
 
-TODO - Cath
+openEQUELLA introduces the ability to add a Cloud provider. Cloud providers can
+be developed by third parties in order to deliver cloud services to openEQUELLA.
 
-# UI Migration
+The process of signing up for a Cloud provider service (for example, ECS
+AutoTag) takes place outside of openEQUELLA, and as part of that process the
+Cloud provider supplies a service URL and possibly credentials for the
+registration process. During registration, openEQUELLA and the Cloud provider
+authenticate using these credentials resulting in a bi-directional communication
+channel.
 
-Todo - Any specific issue tickets?
+Once openEQUELLA is successfully registered, the Cloud provider has the means to
+automatically add and update wizard controls in the Collection Definition Editor
+(e.g. the ECS AutoTag control), which enables the service to be incorporated in
+contribution wizards.
 
-TODO - Cath
+### Cloud provider permissions
+
+The **MANAGE_CLOUD_PROVIDER** ACL needs to be granted to the relevant
+administrators before they can register a new Cloud provider. This is done
+through the Security Manager, accessed via the Administration Console. An
+example is shown in Figure 9.
+
+![](media/b731253db1a4a103391f6ebd30e57e65.png)
+
+Figure 9 Security Manager - Cloud providers
+
+### Registering a Cloud provider
+
+##### To register a Cloud provider
+
+1.  From the openEQUELLA **Settings** page, select **Integrations**, **Cloud
+    Providers.**
+
+![](media/71840253e1aeb3f3bc736848087ac132.png)
+
+Figure 10 Settings, Integrations, Cloud providers
+
+The **Cloud Providers** page displays. An example is shown in Figure 11.
+
+![](media/3fe2af484a1e40838577f636965d861c.png)
+
+Figure 11 Cloud Provider registration page
+
+1.  Click the Add (Plus) button to open the **Register a new cloud provider**
+    dialog.
+
+2.  Enter the registration **URL** supplied by your Cloud Provider, view the
+    **Cloud provider disclaimer** then click **REGISTER.**
+
+3.  A registration form requiring you to enter credentials or displaying other
+    information may display, depending on the Cloud Provider’s process. An
+    example of the Edalex Content Services registration form is shown below:
+
+![](media/d4e83e46ce8bac6d3c3cf3082e8a58df.png)
+
+Figure 12 Example registration form
+
+1.  Enter the required information (e.g. username and password provided to you
+    by the Cloud provider) then click **REGISTER**.
+
+The registration and authentication process occurs in the background and once
+completed successfully, the Cloud provider information displays on the **Cloud
+providers** page. An example is shown in Figure 13.
+
+![](media/3e489be52d0f8113d6bc9a5323a84536.png)
+
+Figure 13 Cloud providers page with registered Cloud provider
+
 
 # Enhanced Blackboard Integration
 
