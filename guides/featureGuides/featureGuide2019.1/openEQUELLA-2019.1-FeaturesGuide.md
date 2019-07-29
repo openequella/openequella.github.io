@@ -297,8 +297,8 @@ See
 openEQUELLA introduces the ability to add a Cloud provider. Cloud providers can
 be developed by third parties in order to deliver cloud services to openEQUELLA.
 
-The process of signing up for a Cloud provider service (for example, ECS
-AutoTag) takes place outside of openEQUELLA, and as part of that process the
+The process of signing up for a Cloud provider service (for example, [ECS
+AutoTag](https://www.edalex.com/autotag)) takes place outside of openEQUELLA, and as part of that process the
 Cloud provider supplies a service URL and possibly credentials for the
 registration process. During registration, openEQUELLA and the Cloud provider
 authenticate using these credentials resulting in a bi-directional communication
