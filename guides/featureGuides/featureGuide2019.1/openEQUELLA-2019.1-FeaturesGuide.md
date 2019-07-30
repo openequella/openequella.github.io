@@ -11,8 +11,7 @@ Table of Contents
 # Administration Console Package
 
 In openEQUELLA versions prior to 2019.1, the Administration Console was launched
-from the openEQUELLA Settings page using a mechanism that is planned to be
-removed in the latest version of Java. As time progresses, there are an
+from the openEQUELLA Settings page using Java Web Start. As time progresses, there are an
 increasing number of organisations who would prefer not to have Java installed
 on the client side as part of the Standard Operating Environment (SOE).
 
@@ -27,7 +26,7 @@ the Administration Console from openEQUELLA 2019.1 forward.
 ### Downloading the package
 
 There are three Administration Console Packages available on GitHub, one each
-for Windows, MAC and Linux operating systems.
+for Windows, Mac, and Linux operating systems.
 
 ##### To download the package
 
@@ -42,7 +41,7 @@ The Launcher enables the configuration of openEQUELLA servers and the launching
 of their respective Administration Consoles, as well as various other functions.
 
 To open the Launcher, double-click the relevant launcher file
-(*Windows-launcher.bat, Mac-launcher.sh* or *Linux-launcher.sh*). You may wish
+(`Windows-launcher.bat`, `Mac-launcher.sh`, or `Linux-launcher.sh`). You may wish
 to create a shortcut for this file as you will use it each time to access an
 Administration Console. The **openEQUELLA Administration Console Launcher**
 displays. An example is shown in Figure 8.
@@ -86,8 +85,8 @@ server, a server record must be added for each institution.
 
 ##### To add a server
 
-1.  Open the Launcher using the relevant launcher file (W*indows-launcher.bat,
-    Mac-launcher.sh* or *Linux-launcher.sh*).
+1.  Open the Launcher using the relevant launcher file (`Windows-launcher.bat`,
+    `Mac-launcher.sh`, or `Linux-launcher.sh`).
 
 2.  Select **Add Server.** The **Server Editor** dialog displays, as shown in
     Figure 9.
@@ -101,7 +100,7 @@ Figure 9 Server Editor
 
 2.  Enter the **Server URL -** the full openEQUELLA domain, including the
     institution name. For example,
-    *https://myorganisation.openequella.com/institution1*.
+    `https://myorganisation.openequella.com/institution1`.
 
 3.  Click **Save.**
 
@@ -152,7 +151,7 @@ The ability to create and display a notice on the Login page is included as
 part of the openEQUELLA 2019.1 release, and is now ready for beta testing. This
 feature enables administrators to create a notice to display on the Login page
 using a rich text editor (TinyMCE 5.0.2), including images, links,
-embedded videos and more, as well as being able to schedule the notice to
+embedded videos, and more; as well as being able to schedule the notice to
 display within configured date and time parameters.
 
 Please note that the Login page notice is in addition to the existing
@@ -172,7 +171,7 @@ existing **After login notice** is shown in Figure 2.
 
 ### Accessing the Login notice editor
 
-The Login notice editor is accessed from **Settings, General settings, Login
+The Login notice editor is accessed from **Settings > General settings > Login
 notice editor**. An example is shown in Figure 3.
 
 ![Settings](Settings.png)
@@ -253,23 +252,23 @@ An example is shown in Figure 7.
 In openEQUELLA, language packs can be used to control the language within
 display areas of the system. openEQUELLA 2019.1 expands its support for
 languages other than English in its search capabilities (such as recognising the
-specified language’s stop words, stemming etc.)
+specified language’s stop words, stemming, etc.)
 
 The default openEQUELLA search language is English, but this can be changed by
-editing the optional-config.properties file to specify the required default
+editing the `optional-config.properties` file to specify the required default
 search language (using the [Alpha-2 country
 code](https://www.iban.com/country-codes)).
 
 ##### To edit the default search language
 
 1.  Go to the openEQUELLA directory on your system and open the
-    **learningedge-config** folder.
+    `learningedge-config` folder.
 
-2.  Open the **optional-config.properties** file using your text editor of
+2.  Open the `optional-config.properties` file using your text editor of
     choice.
 
-3.  At the bottom of this file, uncomment (remove the **\#** in front of) the
-    **freetext.analyzer.language** property and add **= xx** (where **xx** is the Alpha-2 country code) (see example below).
+3.  At the bottom of this file, uncomment (remove the `\#` in front of) the
+    `freetext.analyzer.language` property and add `= xx` (where **xx** is the Alpha-2 country code) (see example in Figure 8).
 
 Note that the Alpha-2 country code must be entered in lower case.
 
@@ -311,7 +310,7 @@ contribution wizards.
 
 ### Cloud provider permissions
 
-The **MANAGE_CLOUD_PROVIDER** ACL needs to be granted to the relevant
+The `MANAGE_CLOUD_PROVIDER` ACL needs to be granted to the relevant
 administrators before they can register a new Cloud provider. This is done
 through the Security Manager, accessed via the Administration Console. An
 example is shown in Figure 9.
@@ -324,27 +323,26 @@ Figure 9 Security Manager - Cloud providers
 
 ##### To register a Cloud provider
 
-1.  From the openEQUELLA **Settings** page, select **Integrations**, **Cloud
-    Providers.**
+1.  From the openEQUELLA **Settings** page, select **Integrations > Cloud providers**.
 
 ![cloudsettings](cloudsettings.png)
 
 Figure 10 Settings, Integrations, Cloud providers
 
-The **Cloud Providers** page displays. An example is shown in Figure 11.
+The **Cloud providers** page displays. An example is shown in Figure 11.
 
 ![cloudrego](cloudrego.png)
 
-Figure 11 Cloud Provider registration page
+Figure 11 Cloud provider registration page
 
 1.  Click the Add (Plus) button to open the **Register a new cloud provider**
     dialog.
 
-2.  Enter the registration **URL** supplied by your Cloud Provider, view the
-    **Cloud provider disclaimer** then click **REGISTER.**
+2.  Enter the registration **URL** supplied by your Cloud provider, view the
+    **Cloud provider disclaimer** then click **REGISTER**.
 
 3.  A registration form requiring you to enter credentials or displaying other
-    information may display, depending on the Cloud Provider’s process. An
+    information may display, depending on the Cloud provider’s process. An
     example of the Edalex Content Services registration form is shown below:
 
 ![cloudform](cloudform.png)
@@ -365,7 +363,7 @@ Figure 13 Cloud providers page with registered Cloud provider
 
 # Enhanced Blackboard Integration
 
-The openEQUELLA / Blackboard integration has historically been achieved with a building block and web service that was uploaded into the Blackboard site.  This has historically presented some difficulties and Blackboard is retiring their SOAP Web Services in Q2 2020 which will effectively break the openEQUELLA web service.  Due to this upcoming loss of functionality, and the complexity of maintaining the building block and web service, a pure LTI / REST integration is being developed.  This integration is available in this release as a minimal set of features as a 'beta' feature release, and will be enhanced for 2019.2.
+The openEQUELLA / Blackboard integration has historically been achieved with a building block and web service that was uploaded into the Blackboard site.  This has historically presented some difficulties and Blackboard is retiring their SOAP Web Services in Q2 2020 which will effectively break the openEQUELLA web service.  Due to this upcoming loss of functionality, and the complexity of maintaining the building block and web service, a pure LTI / REST integration is being developed.  This integration is available in this release as a 'beta' feature with a minimal set of functionality, and will be enhanced for 2019.2.
 
 As part of migrating from the building block and web service integration to the LTI / REST integration, adopters will have access to the following Blackboard abilities:
 * Course Content Deep Linking Tool (works in 2019.1)
@@ -379,91 +377,91 @@ In order to make REST calls into a Blackboard site, adopters will need to obtain
 
 ## Configure openEQUELLA
 
-### Configure a New LTI Consumer
+### Configure a new LTI Consumer
 
-This is a standard LTI Consumer in openEQUELLA, as such just a high level review is given.
+This is a standard LTI Consumer in openEQUELLA, so only a high level review is provided.
 
-1. Under 'Settings' > 'Integrations' > 'LTI Consumers', click on 'Create new LTI consumer'
-2. You can leave the 'Consumer key' and 'Consumer secret' with the system-generated values, or specify your own
-3. Choose your SSO configuration and role mappings.  For testing, leave 'Useable by' as 'Everyone', and set 'Unknown user handling' to 'Create local user and add them to the following groups...'.  Then choose a group for all 'new' Blackboard users crossing over to openEQUELLA to be added to.
+1. Under **Settings > Integrations > LTI Consumers**, click on **Create new LTI consumer**.
+2. You can leave the 'Consumer key' and 'Consumer secret' with the system-generated values, or specify your own.
+3. Choose your SSO configuration and role mappings.  For testing, leave **Useable by** as **Everyone**, and set **Unknown user handling** to **Create local user and add them to the following groups...**.  Then choose a group for all 'new' Blackboard users crossing over to openEQUELLA to be added to.
 
-### Configure a New External System Connector
+### Configure a new External System Connector
 
-1. Under 'Settings' > 'External system connectors', click on 'Add new connector'.
-2. Select 'Blackboard REST'
-3. Configure a 'Connector name,', and provide a 'Blackboard REST URL'
-4. Click on 'Test URL'.  Ignore the 'Test web service' button.  This will be removed in 2019.2.
-5. Specify the 'REST API Key' and 'REST API Secret' from https://developer.blackboard.com/ .
+1. Under **Settings > External system connectors**, click on **Add new connector**.
+2. Select **Blackboard REST**.
+3. Configure a **Connector name**, and provide a **Blackboard REST URL**.
+4. Click on **Test URL**.  Ignore the **Test web service** button.  This will be removed in 2019.2.
+5. Specify the **REST API Key** and **REST API Secret** from https://developer.blackboard.com/ .
 6. The rest of the configuration is standard External System Connector details.  
 
 ## Configure Blackboard
 
 ### Register the Provider Domain
 
-1. Under 'System Admin' > 'LTI Tool Providers', select 'Register Provider Domain'
-2. Configure Provider domain.  So for `https://my.learning.center/oeq`, you would put `my.learning.center`.
-3. Set Provider Domain Status to `Approved`
-4. Under 'Default Configuration', set 'Default Configuration' to 'Set globally'
-5. Configure the 'Tool Provider Key' and 'Tool Provider Secret' with the values you configured in the `openEQUELLA LTI Consumer`
-6. Configure the 'Tool Provider Custom Parameters' with the following.  Note, omitting the `bb_user_login_id` line will result in the LTI crossover (SSO into openEQUELLA) using the Blackboard user's `externalId` instead of the `userName`.
+1. Under **System Admin > LTI Tool Providers**, select **Register Provider Domain**.
+2. Configure the Provider domain.  So for `https://my.learning.center/oeq`, you would put `my.learning.center`.
+3. Set **Provider Domain Status** to `Approved`.
+4. Under **Default Configuration**, set **Default Configuration** to **Set globally**.
+5. Configure the **Tool Provider Key** and **Tool Provider Secret** with the values you configured in the `openEQUELLA LTI Consumer`.
+6. Configure the **Tool Provider Custom Parameters** with the following.  Note, omitting the `bb_user_login_id` line will result in the LTI crossover (SSO into openEQUELLA) using the Blackboard user's `externalId` instead of the `userName`.
 ```properties
 bb_user_login_id=@X@user.id@X@
 bb_user_id=@X@user.batch_uid@X@
 ```
-7. Under 'Institution Policies', set 'Send User Data' to 'Send user data only over SSL'
-  * Note:  You can select 'Send user data over any connection', but it's not recommended for a Production install
-8. Set 'User Fields to Send' to 'Role in Course', 'Name', and 'Email Address'
-9. Set 'Allow Membership Service Access' to 'Yes'
+7. Under **Institution Policies**, set **Send User Data** to **Send user data only over SSL**.
+  * Note:  You can select **Send user data over any connection**, but it is not recommended for a Production install.
+8. Set **User Fields to Send** to **Role in Course, Name, and Email Address**.
+9. Set **Allow Membership Service Access** to **Yes**.
 
 ### Configure Course Content Tool Placement
 
-1. Under the newly registered provider domain, select 'Manage Placements'
-2. Select 'Create Placement'
+1. Under the newly registered provider domain, select **Manage Placements**.
+2. Select **Create Placement**.
 3. Configure the label and description.
 4. Configure the handle (this cannot change after the placement is created).
-5. Leave 'Availability' set to 'Yes'
-6. Set 'Type' to 'Course content tool', and then select 'Supports deep linking'
-7. Under 'Tool Provider Information', set the 'Tool Provider URL' to 'http://your.oE.domain.xyz/demo/blackboardltisignon.do'
-8. The 'Tool Provider Key' and 'Tool Provider Secret' will be preconfigured (and readonly)
+5. Leave **Availability** set to **Yes**.
+6. Set **Type** to **Course content tool**, and then select **Supports deep linking**.
+7. Under **Tool Provider Information**, set the **Tool Provider URL** to `{https://your.oE.domain.xyz/demo/}blackboardltisignon.do`.
+8. The **Tool Provider Key** and **Tool Provider Secret** will be preconfigured (and readonly).
 
-### Config the REST Application in Blackboard
+### Configure the REST Application in Blackboard
 
-1. Under 'System Admin' > 'REST API Integrations', select 'Create Integration'
-2. Configure the Application ID from your registration on https://developer.blackboard.com/ 
-3. Select a 'Learn User' that has sufficient permissions
-4. Leave 'End User Access' as the default 'Yes'
-5. Leave the 'Authorized To Act As User' as the default 'Service Default (No)'
+1. Under **System Admin > REST API Integrations**, select **Create Integration**.
+2. Configure the Application ID from your registration on https://developer.blackboard.com/ .
+3. Select a 'Learn User' that has sufficient permissions.
+4. Leave **End User Access** as the default **Yes**.
+5. Leave the **Authorized To Act As User** as the default **Service Default (No)**.
 
 ## Usage
 
 ### Permissions
 Grant the following to your openEQUELLA users
-  * `EXPORT_VIA_CONNECTOR`, `EXPORT_TO_LMS_ITEM`, `VIEWCONTENT_VIA_CONNECTOR`, `FIND_USES_ITEM` - Push to LMS / Find Uses / Manage External Resources
-  * `INTEGRATION_SELECTION_SESSION` - LTI launch from Bb to openEQUELLA to the selection session page
-  * `DISCOVER_ITEM` - Discover openEQUELLA items in a search (such as from the selection session).  Allows some of the metadata to show
-  * `VIEW_ITEM` - View attachments from an LTI launch, view attachments from a selection session
+  * `EXPORT_VIA_CONNECTOR`, `EXPORT_TO_LMS_ITEM`, `VIEWCONTENT_VIA_CONNECTOR`, `FIND_USES_ITEM` - Push to LMS / Find Uses / Manage External Resources.
+  * `INTEGRATION_SELECTION_SESSION` - LTI launch from Blackboard to openEQUELLA to the selection session page
+  * `DISCOVER_ITEM` - Discover openEQUELLA items in a search (such as from the selection session).  Allows some of the metadata to show.
+  * `VIEW_ITEM` - View attachments from an LTI launch, view attachments from a selection session.
 
-### Add an openEQUELLA Content Link with the Course Content Tool Placement
+### Add an openEQUELLA content link with the Course Content Tool Placement
 
-In an original Blackboard course, navigate into your course > Information > Build Content > your-oEQ-CTT-placement .  This is known as 'Pull to LMS'.  Currently only works for original Blackboard course.  Ultra courses are planned for 2019.2.
+In an original Blackboard course, navigate into **{your course} > Information > Build Content > your-oEQ-CTT-placement** .  This is known as 'Pull to LMS'.  Currently only works for original Blackboard courses.  Ultra courses are planned for 2019.2.
 
-### Other Integration Abilities
+### Other integration abilities
 
 The rest of the integration abilities are similar to the building block and web service flows:
 * 'Push to LMS'
-  * From openEQUELLA, select courses / folders to integrate content links from a given openEQUELLA resource
+  * From openEQUELLA, select courses / folders to integrate content links from a given openEQUELLA resource.
   * Currently only works for original Blackboard course.  Ultra courses are planned for 2019.2.
 * Manage External Resources 
-  * Not working in 2019.1
+  * Not working in 2019.1.
 * Find Uses
-  * Not working in 2019.1
+  * Not working in 2019.1.
 
 ## Notes
 
 * The default REST Application ID adopters obtain is at the 'developer' level - there is a 7 Blackboard site limit, and API call rate limits.  It is recommended openEQUELLA / Blackboard adopters reach out to their Blackboard Support contacts to discuss the appropriate REST Application ID level for their institution.
-* The Blackboard REST integration can be enabled / disabled with the `Available` flag in Blackboard.
+* The Blackboard REST integration can be enabled / disabled with the **Available** flag in Blackboard.
 * A good write up of the configuration options for Blackboard REST applications is [here](https://community.blackboard.com/community/developers/learn/blog/2019/02/12/end-user-access-authorized-to-act-as-user).
-* Since this is in 'beta', adopters that plan to switch from the building block and web service integration to the LTI/REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their openEQUELLA / Blackboard integration user scenarios. 
+* Since this feature is in 'beta', adopters that plan to switch from the building block and web service integration to the LTI / REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their openEQUELLA / Blackboard integration user scenarios. 
 * If you get an error in openEQUELLA `CacheLoader returned null for key TOKEN.`, confirm your Blackboard REST Application is configured and available.
 
 ## Blackboard Integration Tickets
