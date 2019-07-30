@@ -464,7 +464,7 @@ The rest of the integration abilities are similar to the building block and web 
 * Since this feature is in 'beta', adopters that plan to switch from the building block and web service integration to the LTI / REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their openEQUELLA / Blackboard integration user scenarios. 
 * If you get an error in openEQUELLA `CacheLoader returned null for key TOKEN.`, confirm your Blackboard REST Application is configured and available.
 
-## Blackboard Integration Tickets
+## Blackboard integration tickets
 [2019.1 Enhancements](https://github.com/apereo/openEQUELLA/issues/598)
 
 [All Identified Possible Enhancements](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22)
