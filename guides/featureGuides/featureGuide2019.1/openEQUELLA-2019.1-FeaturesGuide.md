@@ -365,27 +365,27 @@ Figure 13 Cloud providers page with registered Cloud provider
 
 # Enhanced Blackboard Integration
 
-The openEQUELLA (oEQ) / Blackboard (Bb) integration has historically been achieved with a building block (B2) and web service (WS) that was uploaded into the Bb site.  This has historically presented some difficulties and Bb is retiring their SOAP Web Services in Q2 2020 which will effectively break the oEQ WS.  Due to this upcoming loss of functionality, and the complexity of maintaining the B2 / WS, a pure LTI / REST integration is being developed.  This integration is available in this release as a minimal set of features as a 'beta' feature release, and will be enhanced for 2019.2.
+The openEQUELLA / Blackboard integration has historically been achieved with a building block and web service that was uploaded into the Blackboard site.  This has historically presented some difficulties and Blackboard is retiring their SOAP Web Services in Q2 2020 which will effectively break the openEQUELLA web service.  Due to this upcoming loss of functionality, and the complexity of maintaining the building block and web service, a pure LTI / REST integration is being developed.  This integration is available in this release as a minimal set of features as a 'beta' feature release, and will be enhanced for 2019.2.
 
-As part of migrating from the B2/WS integration to the LTI/REST integration, adopters will have access to the following Bb abilities:
+As part of migrating from the building block and web service integration to the LTI / REST integration, adopters will have access to the following Blackboard abilities:
 * Course Content Deep Linking Tool (works in 2019.1)
 * Course Tool (on the roadmap)
 * System Tool (on the roadmap)
 
-Adopters will no longer be able to use the 'My Institution' integration that was part of the B2/WS integration.
+Adopters will no longer be able to use the 'My Institution' integration that was part of the building block and web service integration.
 
 ## Enable Using Blackboard REST APIs
-In order to make REST calls into a Bb site, adopters will need to obtain a REST Application ID via https://developer.blackboard.com/ .  This REST Application ID will then be used (via the same site), to create a REST Application key and secret that is tied to your Bb site URL.  You will need this key and secret when configuring the integration in Bb.  Please read this [post](https://community.blackboard.com/docs/DOC-4258-developer-groups-site-quotas-and-rate-limits) for more information on how Bb handles REST Application IDs.
+In order to make REST calls into a Blackboard site, adopters will need to obtain a REST Application ID via https://developer.blackboard.com/ .  This REST Application ID will then be used (via the same site), to create a REST Application key and secret that is tied to your Blackboard site URL.  You will need this key and secret when configuring the integration in Blackboard.  Please read this [post](https://community.blackboard.com/docs/DOC-4258-developer-groups-site-quotas-and-rate-limits) for more information on how Blackboard handles REST Application IDs.
 
 ## Configure openEQUELLA
 
 ### Configure a New LTI Consumer
 
-This is a standard LTI Consumer in oEQ, as such just a high level review is given.
+This is a standard LTI Consumer in openEQUELLA, as such just a high level review is given.
 
 1. Under 'Settings' > 'Integrations' > 'LTI Consumers', click on 'Create new LTI consumer'
 2. You can leave the 'Consumer key' and 'Consumer secret' with the system-generated values, or specify your own
-3. Choose your SSO configuration and role mappings.  For testing, leave 'Useable by' as 'Everyone', and set 'Unknown user handling' to 'Create local user and add them to the following groups...'.  Then choose a group for all 'new' Bb users crossing over to oEQ to be added to.
+3. Choose your SSO configuration and role mappings.  For testing, leave 'Useable by' as 'Everyone', and set 'Unknown user handling' to 'Create local user and add them to the following groups...'.  Then choose a group for all 'new' Blackboard users crossing over to openEQUELLA to be added to.
 
 ### Configure a New External System Connector
 
@@ -404,8 +404,8 @@ This is a standard LTI Consumer in oEQ, as such just a high level review is give
 2. Configure Provider domain.  So for `https://my.learning.center/oeq`, you would put `my.learning.center`.
 3. Set Provider Domain Status to `Approved`
 4. Under 'Default Configuration', set 'Default Configuration' to 'Set globally'
-5. Configure the 'Tool Provider Key' and 'Tool Provider Secret' with the values you configured in the `oEQ LTI Consumer`
-6. Configure the 'Tool Provider Custom Parameters' with the following.  Note, omitting the `bb_user_login_id` line will result in the LTI crossover (SSO into oEQ) using the Bb user's `externalId` instead of the `userName`.
+5. Configure the 'Tool Provider Key' and 'Tool Provider Secret' with the values you configured in the `openEQUELLA LTI Consumer`
+6. Configure the 'Tool Provider Custom Parameters' with the following.  Note, omitting the `bb_user_login_id` line will result in the LTI crossover (SSO into openEQUELLA) using the Blackboard user's `externalId` instead of the `userName`.
 ```properties
 bb_user_login_id=@X@user.id@X@
 bb_user_id=@X@user.batch_uid@X@
@@ -437,22 +437,22 @@ bb_user_id=@X@user.batch_uid@X@
 ## Usage
 
 ### Permissions
-Grant the following to your oEQ users
+Grant the following to your openEQUELLA users
   * `EXPORT_VIA_CONNECTOR`, `EXPORT_TO_LMS_ITEM`, `VIEWCONTENT_VIA_CONNECTOR`, `FIND_USES_ITEM` - Push to LMS / Find Uses / Manage External Resources
-  * `INTEGRATION_SELECTION_SESSION` - LTI launch from Bb to oEQ to the selection session page
-  * `DISCOVER_ITEM` - Discover oEQ items in a search (such as from the selection session).  Allows some of the metadata to show
+  * `INTEGRATION_SELECTION_SESSION` - LTI launch from Bb to openEQUELLA to the selection session page
+  * `DISCOVER_ITEM` - Discover openEQUELLA items in a search (such as from the selection session).  Allows some of the metadata to show
   * `VIEW_ITEM` - View attachments from an LTI launch, view attachments from a selection session
 
-### Add an oEQ Content Link with the Course Content Tool Placement
+### Add an openEQUELLA Content Link with the Course Content Tool Placement
 
-In an original Bb course, navigate into your course > Information > Build Content > your-oE-CTT-placement .  This is known as 'Pull to LMS'.  Currently only works for original Bb course.  Ultra courses are planned for 2019.2.
+In an original Blackboard course, navigate into your course > Information > Build Content > your-oEQ-CTT-placement .  This is known as 'Pull to LMS'.  Currently only works for original Blackboard course.  Ultra courses are planned for 2019.2.
 
 ### Other Integration Abilities
 
-The rest of the integration abilities are similar to the B2/WS flows:
+The rest of the integration abilities are similar to the building block and web service flows:
 * 'Push to LMS'
-  * From oEQ, select courses / folders to integrate content links from a given oEQ resource
-  * Currently only works for original Bb course.  Ultra courses are planned for 2019.2.
+  * From openEQUELLA, select courses / folders to integrate content links from a given openEQUELLA resource
+  * Currently only works for original Blackboard course.  Ultra courses are planned for 2019.2.
 * Manage External Resources 
   * Not working in 2019.1
 * Find Uses
@@ -460,15 +460,15 @@ The rest of the integration abilities are similar to the B2/WS flows:
 
 ## Notes
 
-* The default REST Application ID adopters obtain are 'developer' level - there is a 7 Bb site limit, and API call rate limits.  It is recommended oEQ/Bb adopters reach out to their Bb Support contacts to discuss the appropriate REST Application ID level for their institution.
-* The Bb REST integration can be enabled / disabled with the `Available` flag in Bb.
-* A good write up of the configuration options for Bb REST applications is [here](https://community.blackboard.com/community/developers/learn/blog/2019/02/12/end-user-access-authorized-to-act-as-user).
-* Since this is in 'beta', adopters that plan to switch from the B2/WS integration to the LTI/REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their oEQ / Bb integration user scenarios. 
-* If you get an error in oEQ `CacheLoader returned null for key TOKEN.`, confirm your Bb REST Application is configured and available.
+* The default REST Application ID adopters obtain is at the 'developer' level - there is a 7 Blackboard site limit, and API call rate limits.  It is recommended openEQUELLA / Blackboard adopters reach out to their Blackboard Support contacts to discuss the appropriate REST Application ID level for their institution.
+* The Blackboard REST integration can be enabled / disabled with the `Available` flag in Blackboard.
+* A good write up of the configuration options for Blackboard REST applications is [here](https://community.blackboard.com/community/developers/learn/blog/2019/02/12/end-user-access-authorized-to-act-as-user).
+* Since this is in 'beta', adopters that plan to switch from the building block and web service integration to the LTI/REST integration by Q2 2020 are encouraged to try out the new functionality, and along with the functionality mentioned in the 2019.2 Milestone, ensure it will be sufficient for their openEQUELLA / Blackboard integration user scenarios. 
+* If you get an error in openEQUELLA `CacheLoader returned null for key TOKEN.`, confirm your Blackboard REST Application is configured and available.
 
-## Bb Integration Tickets
+## Blackboard Integration Tickets
 [2019.1 Enhancements](https://github.com/apereo/openEQUELLA/issues/598)
 
 [All Identified Possible Enhancements](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22)
 
-[Enhancements Planned for 2019.2](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22+milestone%3A2019.2)
+[Enhancements Currently on the 2019.2 Roadmap](https://github.com/apereo/openEQUELLA/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+-+Bb+LTI%2FREST%22+milestone%3A2019.2)
