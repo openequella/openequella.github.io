@@ -2,8 +2,7 @@ Administration Console Package
 ------------------------------
 
 In openEQUELLA versions prior to 2019.1, the Administration Console was launched
-from the openEQUELLA Settings page using a mechanism that is planned to be
-removed in the latest version of Java. As time progresses, there are an
+from the openEQUELLA Settings page using Java Web Start. As time progresses, there are an
 increasing number of organisations who would prefer not to have Java installed
 on the client side as part of the Standard Operating Environment (SOE).
 
@@ -18,7 +17,7 @@ the Administration Console from openEQUELLA 2019.1 forward.
 ### Downloading the package
 
 There are three Administration Console Packages available on GitHub, one each
-for Windows, MAC and Linux operating systems.
+for Windows, Mac and Linux operating systems.
 
 ##### To download the package
 
@@ -33,7 +32,7 @@ The Launcher enables the configuration of openEQUELLA servers and the launching
 of their respective Administration Consoles, as well as various other functions.
 
 To open the Launcher, double-click the relevant launcher file
-(*Windows-launcher.bat, Mac-launcher.sh* or *Linux-launcher.sh*). You may wish
+(`Windows-launcher.bat`, `Mac-launcher.sh`, or `Linux-launcher.sh`). You may wish
 to create a shortcut for this file as you will use it each time to access an
 Administration Console. The **openEQUELLA Administration Console Launcher**
 displays. An example is shown in Figure 1.
@@ -77,8 +76,8 @@ server, a server record must be added for each institution.
 
 ##### To add a server
 
-1.  Open the Launcher using the relevant launcher file (W*indows-launcher.bat,
-    Mac-launcher.sh* or *Linux-launcher.sh*).
+1.  Open the Launcher using the relevant launcher file (`Windows-launcher.bat`,
+    `Mac-launcher.sh`, or `Linux-launcher.sh`).
 
 2.  Select **Add Server.** The **Server Editor** dialog displays, as shown in
     Figure 2.
@@ -92,7 +91,7 @@ Figure 2 Server Editor
 
 2.  Enter the **Server URL -** the full openEQUELLA domain, including the
     institution name. For example,
-    *https://myorganisation.openequella.com/institution1*.
+    `https://myorganisation.openequella.com/institution1`.
 
 3.  Click **Save.**
 
