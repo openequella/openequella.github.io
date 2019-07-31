@@ -47,6 +47,7 @@ Administration Console. The **openEQUELLA Administration Console Launcher**
 displays. An example is shown in Figure 1.
 
 ![Launcher](1launcher.png)
+
 **Figure 1 openEQUELLA Administration Console Launcher**
 
 #### openEQUELLA Administration Console Launcher components
@@ -91,6 +92,7 @@ server, a server record must be added for each institution.
     Figure 2.
 
 ![Server](2server.png)
+
 **Figure 2 Server Editor**
 
 1.  Enter a **Server Name** - a descriptive name for the openEQUELLA
@@ -127,11 +129,13 @@ Console for that institution can be opened.
     server/institution. An example is shown in Figure 3.
 
 ![LaunchAdminConsole](3numbers.png)
+
 **Figure 3 Launch the Admin Console**
 
 The **Enter login credentials** dialog displays. An example is shown in Figure 4
 
 ![Credential](4creds.png)
+
 **Figure 4 Enter login credential dialog**
 
 3.  Enter your login credentials
@@ -337,6 +341,7 @@ The **Cloud providers** page displays. An example is shown in Figure 13.
     example of the Edalex Content Services registration form is shown below:
 
 ![cloudform](cloudform.png)
+
 **Figure 16 Example registration form**
 
 1.  Enter the required information (e.g. username and password provided to you
