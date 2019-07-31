@@ -147,10 +147,8 @@ The Administration Console for the selected Server/Institution opens.
 
 # Login Notice Editor
 
-The ability to create and display a notice on the Login page is included as
-part of the openEQUELLA 2019.1 release, and is now ready for beta testing. This
-feature enables administrators to create a notice to display on the Login page
-using a rich text editor (TinyMCE 5.0.2), including images, links,
+openEQUELLA 2019.1 introduces the ability to create and display a notice on the Login page.
+This feature enables administrators to create content to display on the notice using a rich text editor (TinyMCE 5.0.2), including images, links,
 embedded videos, and more; as well as being able to schedule the notice to
 display within configured date and time parameters.
 
