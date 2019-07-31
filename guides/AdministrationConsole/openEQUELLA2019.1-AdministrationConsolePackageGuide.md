@@ -39,7 +39,7 @@ displays. An example is shown in Figure 1.
 
 ![Launcher](1launcher.png)
 
-Figure 1 openEQUELLA Administration Console Launcher
+**Figure 1 openEQUELLA Administration Console Launcher**
 
 #### openEQUELLA Administration Console Launcher components
 
@@ -84,7 +84,7 @@ server, a server record must be added for each institution.
 
 ![Server](2server.png)
 
-Figure 2 Server Editor
+**Figure 2 Server Editor**
 
 1.  Enter a **Server Name** - a descriptive name for the openEQUELLA
     institution.
@@ -121,13 +121,13 @@ Console for that institution can be opened.
 
 ![LaunchAdminConsole](3numbers.png)
 
-Figure 3 Launch the Admin Console
+**Figure 3 Launch the Admin Console**
 
 The **Enter login credentials** dialog displays. An example is shown in Figure 4
 
 ![Credential](4creds.png)
 
-Figure 4 Enter login credential dialog
+**Figure 4 Enter login credential dialog**
 
 3.  Enter your login credentials
 
