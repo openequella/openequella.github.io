@@ -250,7 +250,7 @@ An example is shown in Figure 11.
 In openEQUELLA, language packs can be used to control the language within
 display areas of the system. openEQUELLA 2019.1 expands its support for
 languages other than English in its search capabilities (such as recognising the
-specified language’s stop words, stemming, etc.)
+specified language’s stop words, stemming, etc.).
 
 The default openEQUELLA search language is English, but this can be changed by
 editing the `optional-config.properties` file to specify the required default
