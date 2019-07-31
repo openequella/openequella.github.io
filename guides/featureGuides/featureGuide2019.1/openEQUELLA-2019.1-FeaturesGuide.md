@@ -330,13 +330,13 @@ The **Cloud providers** page displays. An example is shown in Figure 13.
 ![cloudrego](cloudrego.png)
 **Figure 15 Cloud provider registration page**
 
-1.  Click the Add (Plus) button to open the **Register a new cloud provider**
+2.  Click the Add (Plus) button to open the **Register a new cloud provider**
     dialog.
 
-2.  Enter the registration **URL** supplied by your Cloud provider, view the
+3.  Enter the registration **URL** supplied by your Cloud provider, view the
     **Cloud provider disclaimer** then click **REGISTER**.
 
-3.  A registration form requiring you to enter credentials or displaying other
+4.  A registration form requiring you to enter credentials or displaying other
     information may display, depending on the Cloud provider’s process. An
     example of the Edalex Content Services registration form is shown below:
 
@@ -344,7 +344,7 @@ The **Cloud providers** page displays. An example is shown in Figure 13.
 
 **Figure 16 Example registration form**
 
-1.  Enter the required information (e.g. username and password provided to you
+5.  Enter the required information (e.g. username and password provided to you
     by the Cloud provider) then click **REGISTER**.
 
 The registration and authentication process occurs in the background and once
