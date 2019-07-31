@@ -63,11 +63,15 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 * [Advanced Search Configuration](guides/AdvancedSearchConfiguration.md)
 * [Glossary of Terms](guides/GlossaryOfTerms.md)
 
-## 2018.2 Feature Guide
+## 2019.1 Features Guide
+
+
+
+## 2018.2 Features Guide
 
 * [Features Guide](guides/openEQUELLA-2018.2-FeaturesGuide.md)
 
-## 6.6 Feature Guide
+## 6.6 Features Guide
 
 * [Features Guide](guides/EQUELLA%206.6%20Features%20Guide.pdf)
 
