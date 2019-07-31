@@ -44,11 +44,10 @@ To open the Launcher, double-click the relevant launcher file
 (`Windows-launcher.bat`, `Mac-launcher.sh`, or `Linux-launcher.sh`). You may wish
 to create a shortcut for this file as you will use it each time to access an
 Administration Console. The **openEQUELLA Administration Console Launcher**
-displays. An example is shown in Figure 8.
+displays. An example is shown in Figure 1.
 
 ![Launcher](1launcher.png)
-
-Figure 8 openEQUELLA Administration Console Launcher
+**Figure 1 openEQUELLA Administration Console Launcher**
 
 #### openEQUELLA Administration Console Launcher components
 
@@ -89,11 +88,10 @@ server, a server record must be added for each institution.
     `Mac-launcher.sh`, or `Linux-launcher.sh`).
 
 2.  Select **Add Server.** The **Server Editor** dialog displays, as shown in
-    Figure 9.
+    Figure 2.
 
 ![Server](2server.png)
-
-Figure 9 Server Editor
+**Figure 2 Server Editor**
 
 1.  Enter a **Server Name** - a descriptive name for the openEQUELLA
     institution.
@@ -126,17 +124,15 @@ Console for that institution can be opened.
     required Server.
 
 2.  Select **Launch** to open the Admin Console for the selected
-    server/institution. An example is shown in Figure 10.
+    server/institution. An example is shown in Figure 3.
 
 ![LaunchAdminConsole](3numbers.png)
+**Figure 3 Launch the Admin Console**
 
-Figure 10 Launch the Admin Console
-
-The **Enter login credentials** dialog displays. An example is shown in Figure 11
+The **Enter login credentials** dialog displays. An example is shown in Figure 4
 
 ![Credential](4creds.png)
-
-Figure 11 Enter login credential dialog
+**Figure 4 Enter login credential dialog**
 
 3.  Enter your login credentials
 
@@ -158,22 +154,22 @@ user has logged in. This functionality has not changed, however access to the
 configuration setting for this function has been incorporated with the new functionality into
 the one **Login notice editor** setting.
 
-An example of the new **Before login notice** is shown in Figure 1 and the
-existing **After login notice** is shown in Figure 2.
+An example of the new **Before login notice** is shown in Figure 5 and the
+existing **After login notice** is shown in Figure 6.
 
 ![Login Notice](ExampleLoginNoticeNew.png)
-**Figure 1 New ‘Before login’ notice**
+**Figure 5 New ‘Before login’ notice**
 
 ![After Notice](ExampleAfterNotice.png)
-**Figure 2 Existing 'After login’ notice**
+**Figure 6 Existing 'After login’ notice**
 
 ### Accessing the Login notice editor
 
 The Login notice editor is accessed from **Settings > General settings > Login
-notice editor**. An example is shown in Figure 3.
+notice editor**. An example is shown in Figure 7.
 
 ![Settings](Settings.png)
-**Figure 3 Accessing the Login notice editor**
+**Figure 7 Accessing the Login notice editor**
 
 ### Login notice editor page 
 
@@ -181,10 +177,10 @@ The Login notice editor page displays two tabs, **BEFORE LOGIN NOTICE** and
 **AFTER LOGIN NOTICE**. It also displays a **Back** arrow beside the page
 heading in the top left (*Login notice editor*) that is used to return to the
 Settings page without saving any changes made in the Login notice editor. An
-example is shown in Figure 4.
+example is shown in Figure 8.
 
 ![Editor](LoginNoticeEditor.png)
-**Figure 4 Login notice editor page**
+**Figure 8 Login notice editor page**
 
 ### Before login notice tab
 
@@ -203,10 +199,10 @@ scheduling options selected. The tab includes:
 -   **SAVE button** – saves changes.
 
 An example showing content added using the rich text editor is shown in Figure
-5.
+9.
 
 ![Before Login](BeforeLoginNoticeNew.png)
-**Figure 5 BEFORE LOGIN NOTICE tab**
+**Figure 9 BEFORE LOGIN NOTICE tab**
 
 #### Schedule settings
 
@@ -221,10 +217,10 @@ The **Schedule settings** section enables the Before login notice to be set to:
     fields displays a date and time picker. Once the end date and time is
     reached, the notice no longer displays.
 
-An example is shown in Figure 6.
+An example is shown in Figure 10.
 
 ![Schedule](ScheduleSettings.png)
-**Figure 6 Schedule settings with Date/Time picker**
+**Figure 10 Schedule settings with Date/Time picker**
 
 ### After Login Notice tab
 
@@ -237,10 +233,10 @@ display to users in a popup dialog box once they’ve logged in. The tab include
 
 -   **SAVE button** – saves changes.
 
-An example is shown in Figure 7.
+An example is shown in Figure 11.
 
 ![After Notice](AfterLoginNoticeNew.png)
-**Figure 7 AFTER LOGIN NOTICE tab**
+**Figure 11 AFTER LOGIN NOTICE tab**
 
 
 
@@ -276,7 +272,7 @@ An example where the required search language is German is shown below.
 
 ![Language](language.png)
 
-**Figure 8 optional-config.properties file – ‘freetext.analyzer.language’ property**
+**Figure 12 optional-config.properties file – ‘freetext.analyzer.language’ property**
 
 # REST API Enhancements
 
@@ -311,11 +307,10 @@ contribution wizards.
 The `MANAGE_CLOUD_PROVIDER` ACL needs to be granted to the relevant
 administrators before they can register a new Cloud provider. This is done
 through the Security Manager, accessed via the Administration Console. An
-example is shown in Figure 9.
+example is shown in Figure 13.
 
 ![acl](cloudacl.png)
-
-Figure 9 Security Manager - Cloud providers
+**Figure 13 Security Manager - Cloud providers**
 
 ### Registering a Cloud provider
 
@@ -324,14 +319,12 @@ Figure 9 Security Manager - Cloud providers
 1.  From the openEQUELLA **Settings** page, select **Integrations > Cloud providers**.
 
 ![cloudsettings](cloudsettings.png)
+**Figure 14 Settings, Integrations, Cloud providers**
 
-Figure 10 Settings, Integrations, Cloud providers
-
-The **Cloud providers** page displays. An example is shown in Figure 11.
+The **Cloud providers** page displays. An example is shown in Figure 13.
 
 ![cloudrego](cloudrego.png)
-
-Figure 11 Cloud provider registration page
+**Figure 15 Cloud provider registration page**
 
 1.  Click the Add (Plus) button to open the **Register a new cloud provider**
     dialog.
@@ -344,19 +337,17 @@ Figure 11 Cloud provider registration page
     example of the Edalex Content Services registration form is shown below:
 
 ![cloudform](cloudform.png)
-
-Figure 12 Example registration form
+**Figure 16 Example registration form**
 
 1.  Enter the required information (e.g. username and password provided to you
     by the Cloud provider) then click **REGISTER**.
 
 The registration and authentication process occurs in the background and once
 completed successfully, the Cloud provider information displays on the **Cloud
-providers** page. An example is shown in Figure 13.
+providers** page. An example is shown in Figure 17.
 
 ![cloudpage](cloudpage.png)
-
-Figure 13 Cloud providers page with registered Cloud provider
+**Figure 17 Cloud providers page with registered Cloud provider**
 
 
 # Enhanced Blackboard Integration
