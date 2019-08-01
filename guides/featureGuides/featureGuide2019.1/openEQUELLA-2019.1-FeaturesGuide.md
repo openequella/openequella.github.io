@@ -91,14 +91,14 @@ server, a server record must be added for each institution.
 2.  Select **Add Server.** The **Server Editor** dialog displays, as shown in
     Figure 2.
 
-![Server](2server.png)
+    ![Server](2server.png)
 
-**Figure 2 Server Editor**
+    **Figure 2 Server Editor**
 
-1.  Enter a **Server Name** - a descriptive name for the openEQUELLA
+3.  Enter a **Server Name** - a descriptive name for the openEQUELLA
     institution.
 
-2.  Enter the **Server URL -** the full openEQUELLA domain, including the
+4.  Enter the **Server URL -** the full openEQUELLA domain, including the
     institution name. For example,
     `https://myorganisation.openequella.com/institution1`.
 
@@ -128,15 +128,15 @@ Console for that institution can be opened.
 2.  Select **Launch** to open the Admin Console for the selected
     server/institution. An example is shown in Figure 3.
 
-![LaunchAdminConsole](3numbers.png)
+    ![LaunchAdminConsole](3numbers.png)
 
-**Figure 3 Launch the Admin Console**
+    **Figure 3 Launch the Admin Console**
 
-The **Enter login credentials** dialog displays. An example is shown in Figure 4
+    The **Enter login credentials** dialog displays. An example is shown in Figure 4.
 
-![Credential](4creds.png)
+    ![Credential](4creds.png)
 
-**Figure 4 Enter login credential dialog**
+    **Figure 4 Enter login credential dialog**
 
 3.  Enter your login credentials
 
@@ -268,7 +268,7 @@ code](https://www.iban.com/country-codes)).
 3.  At the bottom of this file, uncomment (remove the `\#` in front of) the
     `freetext.analyzer.language` property and add `= xx` (where **xx** is the Alpha-2 country code) (see example in Figure 8).
 
-Note that the Alpha-2 country code must be entered in lower case.
+    Note that the Alpha-2 country code must be entered in lower case.
 
 4.  Restart the openEQUELLA server.
 
@@ -322,13 +322,13 @@ example is shown in Figure 13.
 
 1.  From the openEQUELLA **Settings** page, select **Integrations > Cloud providers**.
 
-![cloudsettings](cloudsettings.png)
-**Figure 14 Settings, Integrations, Cloud providers**
+    ![cloudsettings](cloudsettings.png)
+    **Figure 14 Settings, Integrations, Cloud providers**
 
-The **Cloud providers** page displays. An example is shown in Figure 13.
+    The **Cloud providers** page displays. An example is shown in Figure 13.
 
-![cloudrego](cloudrego.png)
-**Figure 15 Cloud provider registration page**
+    ![cloudrego](cloudrego.png)
+    **Figure 15 Cloud provider registration page**
 
 2.  Click the Add (Plus) button to open the **Register a new cloud provider**
     dialog.
@@ -340,9 +340,9 @@ The **Cloud providers** page displays. An example is shown in Figure 13.
     information may display, depending on the Cloud provider’s process. An
     example of the Edalex Content Services registration form is shown below:
 
-![cloudform](cloudform.png)
+    ![cloudform](cloudform.png)
 
-**Figure 16 Example registration form**
+    **Figure 16 Example registration form**
 
 5.  Enter the required information (e.g. username and password provided to you
     by the Cloud provider) then click **REGISTER**.
