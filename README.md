@@ -27,6 +27,7 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 * Oracle DB
 
 ## Administrative and User Guides
+* [Administration Console Package Guide](guides/AdministrationConsole/openEQUELLA2019.1-AdministrationConsolePackageGuide.md)
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
     * [openEquella Schema Info](guides/equella_schema.zip)
     * [Additional General Info and Help](guides/AdditionalGeneralInfoHelp.md)
