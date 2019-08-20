@@ -21,8 +21,7 @@ for Windows, Mac and Linux operating systems.
 
 ##### To download the package
 
-1.  Go to https://github.com/openequella/openEQUELLA-admin-console-package/releases
-    and download the required operating system package.
+1.  Go to [https://github.com/openequella/openEQUELLA-admin-console-package/releases](https://github.com/openequella/openEQUELLA-admin-console-package/releases) and download the required operating system package.
 
 2.  Extract the package files to your preferred location on your local drive.
 
