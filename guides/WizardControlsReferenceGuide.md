@@ -92,7 +92,7 @@ To maintain control configuration consistency, some panes, fields and buttons ar
 
 #### Title
 Enter a succinct and descriptive title name for the control (e.g. Title) in the Title field. The title is displayed to users above the control. HTML tags can be used if required, such as 
-```
+```html
 <b></b>
 ```
  
