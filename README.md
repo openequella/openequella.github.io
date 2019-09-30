@@ -63,6 +63,8 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 * [Searching User Guide](guides/SearchingUserGuide.md)
 * [Advanced Search Configuration](guides/AdvancedSearchConfiguration.md)
 * [Glossary of Terms](guides/GlossaryOfTerms.md)
+* [REST API Guide](guides/RestAPIGuide.md)
+* [Java SOAP Tutorial](guides/JavaSOAPTutorial.md)
 
 ## 2019.1 Feature Guide
 
