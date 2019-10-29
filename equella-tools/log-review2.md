@@ -1,5 +1,6 @@
 # Log Review 2
-*** Recommended for use only by individuals with a strong understanding of the Equella system ***
+
+**_ Recommended for use only by individuals with a strong understanding of the Equella system _**
 
 This is a Java utility that loops through the file directory structure of a cluster of Equella resource-centre logs, and reports on the 'search facets'
 found. Due to the sheer number of log messages possible in a cluster of EQ nodes over days, this utility uses a PostgreSQL DB to build the
@@ -10,22 +11,25 @@ reports.
 Note: Releases of LogReview2 files are stored in the Equella Tools directory
 
 #### Needed Files
-* LogReview2 jar
-* control.json (see Config Details for contents)
-* creds.properties (see Config Details for contents)
 
-####  General
+- LogReview2 jar
+- control.json (see Config Details for contents)
+- creds.properties (see Config Details for contents)
+
+#### General
+
 The utility outputs 3 files: A file with all log review details, a file with only the log review details of 'found' search facets, and a file for 'unknown' errors / warnings.
 
 Ensure a PostgreSQL DB is running.
 
 To invoke, run this utility as follows:
 
-```
+```bash
 $ java -jar logReview2_v[[latest version]].jar control.json creds.properties
 ```
 
 #### Example file directory structure
+
 ```
 server1
   2017-01-01
@@ -50,10 +54,12 @@ server2
 Initial version
 
 ### Config Details
+
 Reflects version 1.0.
 
 Control.json
-```
+
+```json
 {
 "logDirectory":"/full/path/to/equella/logs",
 "outputDirectory":"/full/path/to/output/folder",
@@ -89,8 +95,10 @@ connection."},
 ]
 }
 ```
+
 creds.properties
-```
+
+```properties
 db.username=my_db_username
 db.password=my_db_password
 ```
