@@ -29,48 +29,49 @@ sections for *Files* and *URL Links* attachment types.
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 1
 
-![](073690b9817231fc53b3a84243a2bc8b.png)
+   ![](073690b9817231fc53b3a84243a2bc8b.png)
 
-Figure 1 Administration Console - Collection Definitions
+   Figure 1 Administration Console - Collection Definitions
 
-1.  Double click the collection containing the relevant attachment control (or
+2.  Double click the collection containing the relevant attachment control (or
     highlight and select **Edit)**.
 
-2.  From the **Wizard** tab, select the attachment control with the *Files*
+3.  From the **Wizard** tab, select the attachment control with the *Files*
     attachment type that requires duplicate checking to be applied.
 
-3.  Scroll to the **Files** configuration section and check **Enable duplicate
+4.  Scroll to the **Files** configuration section and check **Enable duplicate
     checking.** An example is shown in Figure 2.
 
-![](2c1acfdd4388b5c76a2f5317160c2d69.png)
+   ![](2c1acfdd4388b5c76a2f5317160c2d69.png)
 
 Figure 2 Attachment control – Files configuration
 
-1.  Click **Save.**
+5.  Click **Save.**
 
 ##### To enable URL duplicate checking
 
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 3.
 
-![](073690b9817231fc53b3a84243a2bc8b.png)
+   ![](073690b9817231fc53b3a84243a2bc8b.png)
 
-Figure 3 Administration Console - Collection Definitions
+   Figure 3 Administration Console - Collection Definitions
 
-1.  Double click the collection containing the relevant attachment control (or
+2.  Double click the collection containing the relevant attachment control (or
     highlight and select **Edit)**.
 
-2.  From the **Wizard** tab, select the attachment control with the *URL Links*
+3.  From the **Wizard** tab, select the attachment control with the *URL Links*
     attachment type that requires duplicate checking to be applied.
 
-3.  Scroll to the **URL Links** configuration section and check **Enable
+4.  Scroll to the **URL Links** configuration section and check **Enable
     duplicate checking.** An example is shown in Figure 4.
 
-![](d953b93a1cce8d937d00457cc97ddc22.png)
+   ![](d953b93a1cce8d937d00457cc97ddc22.png)
 
-Figure 4 File attachment control – URL Links configuration
+   Figure 4 File attachment control – URL Links configuration
 
-1.  Click **Save.**
+
+5.  Click **Save.**
 
 ### Edit boxes
 
@@ -94,24 +95,24 @@ existing item descriptions within the collection.
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 5.
 
-![](073690b9817231fc53b3a84243a2bc8b.png)
+   ![](073690b9817231fc53b3a84243a2bc8b.png)
 
-Figure 5 Administration Console - Collection Definitions
+   Figure 5 Administration Console - Collection Definitions
 
-1.  Double click the collection containing the relevant edit box (or highlight
+2.  Double click the collection containing the relevant edit box (or highlight
     and select **Edit)**.
 
-2.  From the **Wizard** tab, select the edit box that requires duplicate
+3.  From the **Wizard** tab, select the edit box that requires duplicate
     checking to be applied.
 
-3.  Select **Warn contributor if data in this field is not unique for resources
+4.  Select **Warn contributor if data in this field is not unique for resources
     in this collection.** An example is shown in Figure 6.
 
-![](e3554c57501257ab68ac24a0482d7184.png)
+   ![](e3554c57501257ab68ac24a0482d7184.png)
 
-Figure 6 Collection Definition Editor - Wizard tab
+   Figure 6 Collection Definition Editor - Wizard tab
 
-1.  Click **Save.**
+5.  Click **Save.**
 
 Duplicate checking during contribution
 --------------------------------------
@@ -272,13 +273,13 @@ for a selected taxonomy level.
 1.  From the **Administration Console**, select **Taxonomies**. An example is
     shown in Figure 19.
 
-![](1498fbb4f763ccfcacb33d1c72024ba4.png)
+   ![](1498fbb4f763ccfcacb33d1c72024ba4.png)
 
-Figure 19 Administration Console - Taxonomies
+   Figure 19 Administration Console - Taxonomies
 
-1.  Double click the taxonomy to be sorted (or highlight and select **Edit)**.
+2.  Double click the taxonomy to be sorted (or highlight and select **Edit)**.
 
-2.  From the **Terms** tab, right click on a taxonomy level to sort the child
+3.  From the **Terms** tab, right click on a taxonomy level to sort the child
     terms for that level then select **Sort Child Terms**. An example before
     sorting is shown in Figure 20.
 
@@ -304,13 +305,13 @@ Figure 22 Sorted child terms
 1.  From the **Administration Console**, select **Taxonomies**. An example is
     shown in Figure 23.
 
-![](1498fbb4f763ccfcacb33d1c72024ba4.png)
+   ![](1498fbb4f763ccfcacb33d1c72024ba4.png)
 
-Figure 23 Administration Console - Taxonomies
+   Figure 23 Administration Console - Taxonomies
 
-1.  Double click the taxonomy to be sorted (or highlight and select **Edit)**.
+2.  Double click the taxonomy to be sorted (or highlight and select **Edit)**.
 
-2.  From the **Terms** tab, right click on any taxonomy level then select **Sort
+3.  From the **Terms** tab, right click on any taxonomy level then select **Sort
     Whole Taxonomy**. An example before sorting is shown in Figure 24.
 
 ![](601436ed4ab5a67b73daca67c9eb2a67.png)
@@ -331,4 +332,6 @@ An example after the terms have been sorted is shown in Figure 26.
 ![](47e9d5e08186240580a15e91d9f6ef46.png)
 
 Figure 26 Sorted taxonomy
+
+
 
