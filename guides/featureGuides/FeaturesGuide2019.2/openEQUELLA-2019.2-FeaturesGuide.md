@@ -29,7 +29,7 @@ sections for *Files* and *URL Links* attachment types.
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 1
 
-   ![](073690b9817231fc53b3a84243a2bc8b.png)
+   ![](d41cade4d1f6dd6215e7bd23ff4721ee.png)
 
    Figure 1 Administration Console - Collection Definitions
 
@@ -42,9 +42,9 @@ sections for *Files* and *URL Links* attachment types.
 4.  Scroll to the **Files** configuration section and check **Enable duplicate
     checking.** An example is shown in Figure 2.
 
-   ![](2c1acfdd4388b5c76a2f5317160c2d69.png)
+   ![](47728058a4a5ea6bdbd876893bb76283.png)
 
-Figure 2 Attachment control – Files configuration
+   Figure 2 Attachment control – Files configuration
 
 5.  Click **Save.**
 
@@ -53,7 +53,7 @@ Figure 2 Attachment control – Files configuration
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 3.
 
-   ![](073690b9817231fc53b3a84243a2bc8b.png)
+   ![](19c08edce8b248eb92e06e306e3fc0c1.png)
 
    Figure 3 Administration Console - Collection Definitions
 
@@ -66,10 +66,9 @@ Figure 2 Attachment control – Files configuration
 4.  Scroll to the **URL Links** configuration section and check **Enable
     duplicate checking.** An example is shown in Figure 4.
 
-   ![](d953b93a1cce8d937d00457cc97ddc22.png)
+   ![](a3edbfe5796766ef06607412e26451d4.png)
 
    Figure 4 File attachment control – URL Links configuration
-
 
 5.  Click **Save.**
 
@@ -95,7 +94,7 @@ existing item descriptions within the collection.
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 5.
 
-   ![](073690b9817231fc53b3a84243a2bc8b.png)
+   ![](9f47579d029f2710f525f606f5bac514.png)
 
    Figure 5 Administration Console - Collection Definitions
 
@@ -108,7 +107,7 @@ existing item descriptions within the collection.
 4.  Select **Warn contributor if data in this field is not unique for resources
     in this collection.** An example is shown in Figure 6.
 
-   ![](e3554c57501257ab68ac24a0482d7184.png)
+   ![](5143272a4d1f58ea06f6862495993581.png)
 
    Figure 6 Collection Definition Editor - Wizard tab
 
@@ -133,7 +132,7 @@ the status of Deleted, Suspended, Archived or Rejected.
 
 An example is shown in Figure 7.
 
-![](df16a9316d225580aed2d34bd931c616.png)
+![](0ff90b0a323b5d7b4e06087e31d53a60.png)
 
 Figure 7 File duplicate warning
 
@@ -141,7 +140,7 @@ Click on the **Click here to view existing items that contain duplicates** link
 to open the **Duplicate data** page. A list of items containing matching text
 displays. An example is shown in Figure 8.
 
-![](ce1798d3dfc9d8cde030baf0e060e236.png)
+![](e0348769a9f18099d52bb4af463b655e.png)
 
 Figure 8 Duplicate data page
 
@@ -154,7 +153,7 @@ Click on the item links to open the items in new tabs.
 The **Duplicate data** page can also be accessed from the pages box and using
 the navigation button.
 
-![](cdd366d5a499d233bdae4d55d9147d5b.png)
+![](08a852031b53d14a73565a720f18e650.png)
 
 Figure 9 Navigating to Duplicate data page
 
@@ -164,7 +163,7 @@ A duplicate warning displays as soon as the focus moves from the edit box when
 an exact match is identified in one or more items in the same collection. An
 example is shown in Figure 10.
 
-![](41fcafeb04a0da69a4ebcb89eb233967.png)
+![](cd92c4c9339b4acaf0b33c16f142718d.png)
 
 Figure 10 Edit box duplicate warning
 
@@ -176,7 +175,7 @@ Click on the **Click here to view existing items that contain duplicates** link
 to open the **Duplicate data** page. A list of items containing matching text
 displays. An example is shown in Figure 11.
 
-![](03b17822d3516311530c303a20218aff.png)
+![](39a2a465054b3952c1fdfdd76c1f9d28.png)
 
 Figure 11 Duplicate data page
 
@@ -185,7 +184,7 @@ Click on the item links to open the items in new tabs.
 The **Duplicate data** page can also be accessed from the pages box and using
 the navigation button. An example is shown in Figure 12.
 
-![](181b7229e5fbef2a8a65f3e4345b6932.png)
+![](0475010c854f98d726e44c1930c893e4.png)
 
 Figure 12 Navigating to Duplicate data page
 
@@ -195,7 +194,7 @@ In the case of the detection of multiple duplicates across edit boxes and
 attachment controls during contribution, openEQUELLA shows multiple duplicate
 warnings. An example is shown in Figure 13.
 
-![](abb98dd54af719e0be2db00931963091.png)
+![](01ec08edbf93356df85e4ee1d5e3bba2.png)
 
 Figure 13 Item contribution with multiple duplicate warnings
 
@@ -203,7 +202,7 @@ The **Duplicate data** page displays the duplicate items for each wizard control
 separately. Additionally, for multiple attachment duplicates, each attachment is
 listed separately. An example is shown in Figure 14.
 
-![](2a5903d948bcdad239e40ee3ed3e6be4.png)
+![](fca07aed3bbf5962601f7edbf3a9a72f.png)
 
 Figure 14 Duplicate data page with multiple duplicate lists
 
@@ -225,14 +224,14 @@ and users managed by integrated external user management systems such as LDAP.
 An example of the Resource summary page for an item with a deleted owner is
 shown in Figure 15.
 
-![](1d3387b927789878c8470e52cb32e676.png)
+![](b745ce1a26f4ff20693f05a43b0d4f5b.png)
 
 Figure 15 Owner field with deleted user's details
 
 An example of the Moderation history page (accessed from Details, Moderation
 History) with a deleted user’s details is shown in Figure 16.
 
-![](3cb1f7f4cdd8ad1486d96d4f06c9ea60.png)
+![](c090e1e21d381e6944642956a89ac1f7.png)
 
 Figure 16 Moderation history page with deleted user details
 
@@ -240,10 +239,10 @@ NOTE: If an item has been through a workflow process, the details of any
 workflow task moderators that have been removed from the system display on this
 page.
 
-An example of the Owner and collaborators page (accessed from Actions, Change
-ownership) is shown in Figure 17.
+An example of the **Owner and collaborators** page (accessed from **Actions,
+Change ownership**) is shown in Figure 17.
 
-![](740d92deb34869c4199f275dc69111ed.png)
+![](78ed1e8ec4ed4fe4ff39e5f7d9d718f9.png)
 
 Figure 17 Owners and collaborators page with deleted user details
 
@@ -257,7 +256,7 @@ deleted prior to the openEQUELLA 2019.2 update.
 
 An example is shown in Figure 18.
 
-![](1d606d1e5ed129fdc75b69b1d5d0a3e2.png)
+![](4c665d03ea64fd5c12c33976ed33407f.png)
 
 Figure 18 Manage resources - Show items with no owner filter option
 
@@ -273,7 +272,7 @@ for a selected taxonomy level.
 1.  From the **Administration Console**, select **Taxonomies**. An example is
     shown in Figure 19.
 
-   ![](1498fbb4f763ccfcacb33d1c72024ba4.png)
+   ![](dcc2461eb4a852dede2369dae6ddd433.png)
 
    Figure 19 Administration Console - Taxonomies
 
@@ -283,20 +282,20 @@ for a selected taxonomy level.
     terms for that level then select **Sort Child Terms**. An example before
     sorting is shown in Figure 20.
 
-![](70c827b2f650d9a79f6357cd856064fc.png)
+![](2c6f58d2fdad71840a13d8a207f2a511.png)
 
 Figure 20 Selected taxonomy level
 
 An example of the right-click menu with the sorting option in shown in Figure
 21.
 
-![](86a24bc6d7d472855b32930c00b4e9df.png)
+![](effcbf98e1ef482f35164416d3f7378b.png)
 
 Figure 21 Right-click menu - Sort Child Terms
 
 An example after the terms have been sorted is shown in Figure 22.
 
-![](470c3a034f39c27856d73ccff9ac132a.png)
+![](a43a65446db51941d369218413c4e81f.png)
 
 Figure 22 Sorted child terms
 
@@ -305,7 +304,7 @@ Figure 22 Sorted child terms
 1.  From the **Administration Console**, select **Taxonomies**. An example is
     shown in Figure 23.
 
-   ![](1498fbb4f763ccfcacb33d1c72024ba4.png)
+   ![](e836e74ac96493e51fc8719c628a9858.png)
 
    Figure 23 Administration Console - Taxonomies
 
@@ -314,14 +313,14 @@ Figure 22 Sorted child terms
 3.  From the **Terms** tab, right click on any taxonomy level then select **Sort
     Whole Taxonomy**. An example before sorting is shown in Figure 24.
 
-![](601436ed4ab5a67b73daca67c9eb2a67.png)
+![](f43e28804277f76dc9e73083e3a6bc4f.png)
 
 Figure 24 Sort Whole Taxonomy menu option
 
 An example of the right-click menu with the sorting option in shown in Figure
 25.
 
-![](06ec65b26590fb9ef6eff6562fb3ea64.png)
+![](82293b902625b8bdfebedca6b9eb1a61.png)
 
 Figure 25 Right-click menu - Sort Whole Taxonomy
 
@@ -329,9 +328,6 @@ NOTE: Every level of taxonomy is sorted alphabetically.
 
 An example after the terms have been sorted is shown in Figure 26.
 
-![](47e9d5e08186240580a15e91d9f6ef46.png)
+![](c49dfbf5573e87421681b9f884a0c589.png)
 
 Figure 26 Sorted taxonomy
-
-
-
