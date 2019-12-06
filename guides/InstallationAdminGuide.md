@@ -559,16 +559,20 @@ An example directive is:
 ```
 
 ### Configure openEQUELLA with SSL
-1. Open mandatory-config.properties and ensure the https.port is enabled (uncommented).
-2. Ensure the Apache modules mod_proxy and mod_proxy_http have been installed.
-3. Open the Apache httpd.conf file and add a ‘ProxyPass’ directive to the VirtualHost element, and the additional SSL directives:
 
+1. Open **mandatory-config.properties** and ensure the https.port is enabled (uncommented).
+2. Open **optional-config.properties** and ensure the *userService.useXForwardedFor* is set to **true**.
+3. Ensure the Apache *modules mod_proxy, mod_proxy_http, ssl and headers* have been installed and enabled.
+4. Open the Apache **httpd.conf file** and add a **‘ProxyPass'** directive to the VirtualHost element, and the additional SSL directives:
+​
 ```apache
 <VirtualHost *:443>
   ServerName {external-server-name}
   ProxyPass / http://{equella-host}:{http-port}/ nocanon
   ProxyPreserveHost On
-
+​
+  RequestHeader set "X-Forwarded-Proto" "https"
+​
   ## SSL
   SSLEngine on
   SSLProxyEngine on
@@ -576,32 +580,36 @@ An example directive is:
   SSLCertificateKeyFile {path-to-cert.key}
 </VirtualHost>
 ```
-
+​
 Where:
-*‘external-server-name’ must be either the hostname of an institution, or the hostname in mandatory-config.properties.
+* ‘external-server-name’ must be either the hostname of an institution, or the hostname in mandatory-config.properties.
 * ‘equellahost’ is the host with the openEQUELLA installation (if it is on the same machine as the apache server, this would normally be localhost).
 * ‘https.port’ is the property specified in mandatory-config.properties (defaults to port 8443).
 * ‘nocanon’ ensures URLs are passed through to the host without processing.
-
+​
 An example directive is:
-
+​
 ```apache
 <VirtualHost *:443>
-  ServerName {external-server-name}
-  ProxyPass / http://{equella-host}:{http-port}/ nocanon
+  ServerName equella.example.com
+  ProxyPass / http://equella.example.com:8443/ nocanon
   ProxyPreserveHost On
-
+​
+  RequestHeader set "X-Forwarded-Proto" "https"
+​
   ## SSL
   SSLEngine on
   SSLProxyEngine on
-  SSLCertificateFile    {path-to-cert.pem}
-  SSLCertificateKeyFile {path-to-cert.key}
+  SSLCertificateFile    /etc/ssl/mycert.crt
+  SSLCertificateKeyFile /etc/ssl/mycert.key
 </VirtualHost>
 ```
-
+​
 5. Update the institution URL for https://... (e.g. https://equella.com).
 
+​
 NOTE: The above examples are for Apache HTTPD, but hardware SSL terminators (e.g. F5 load balancer) or other software terminators (e.g. Nginx) may be used.
+
 
 ## Customize the openEQUELLA Digital Repository
 
