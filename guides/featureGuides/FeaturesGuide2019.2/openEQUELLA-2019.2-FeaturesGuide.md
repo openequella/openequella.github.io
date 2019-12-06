@@ -1,3 +1,12 @@
+# openEQUELLA 2019.2 Features Guide
+
+Table of Contents
+* [Duplicate checking](#duplicate-checking)
+* [Displaying deleted user names](#displaying-deleted-user-names)
+* [Taxonomy term sorting](#taxonomy-term-sorting)
+* [New default UI CSS](#)
+
+
 # Duplicate checking
 
 openEQUELLA 2019.2 sees the introduction of attachment duplicate checking, as
