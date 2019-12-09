@@ -4,7 +4,7 @@ Table of Contents
 * [Duplicate checking](#duplicate-checking)
 * [Displaying deleted user names](#displaying-deleted-user-names)
 * [Taxonomy term sorting](#taxonomy-term-sorting)
-* [New default UI CSS](#)
+* [New UI default CSS](#new-ui-default-CSS)
 
 
 # Duplicate checking
@@ -335,3 +335,16 @@ An example after the terms have been sorted is shown in Figure 26.
 ![](c49dfbf5573e87421681b9f884a0c589.png)
 
 **Figure 26 Sorted taxonomy**
+
+# New User Interface (UI) default CSS
+
+When the new UI is switched on in openEQUELLA 2019.2, a new, modern UI is displayed for all legacy UI areas by default via a new CSS. This provides a seamless and unified user interface experience, matching the areas that have not yet had the new UI technologies applied to those that have.
+
+**NOTE: This is a transitionary measure until the new React with Material Design technology is applied across openEQUELLA and released in forthcoming versions.**
+
+When turning on the new UI in openEQUELLA 2019.1:
+
+* The new default CSS is used by default
+* The Theming Editor now applies to all areas in openEQUELLA (not just the new UI areas as per prior releases)
+* Customisations can still be applied using CSS
+
