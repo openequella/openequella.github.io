@@ -89,7 +89,7 @@ message if the text they have entered for the title is an exact match to the
 text in the ‘Title’ field for one or more existing items in the same collection.
 A link is provided to those items so they can be viewed before proceeding.
 
-Duplicate checking can be switched on for multiple edit box wizard control in
+Duplicate checking can be switched on for multiple edit box wizard controls in
 one collection. For example, duplicate checking could be enabled for both the
 ‘Title’ and ‘Description’ fields in one contribution wizard. Any text entered in
 the ‘Title’ field would be matched against existing item titles within the
@@ -253,7 +253,7 @@ Change ownership**) is shown in Figure 17.
 
 ### Filtering items with deleted owners
 
-The existing **Show items with not owner** filtering option accessed from the
+The existing **Show items with no owner** filtering option accessed from the
 **Filter** panel on the Manage Resources page can be used to view only items
 that have a deleted user recorded as the owner. It will also return any records
 that have the original ‘Unknown user’ label displaying for users that were
@@ -267,7 +267,7 @@ An example is shown in Figure 18.
 
 # Taxonomy term sorting
 
-A new option has been added to the Taxonomy editor, Terms page to allow taxonomy
+A new option has been added to the **Terms** tab in the *Taxonomy editor* to allow taxonomy
 terms to be sorted alphabetically across the whole taxonomy or the child terms
 for a selected taxonomy level.
 
