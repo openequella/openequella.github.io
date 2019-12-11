@@ -4,7 +4,7 @@ Table of Contents
 * [Duplicate checking](#duplicate-checking)
 * [Displaying deleted user names](#displaying-deleted-user-names)
 * [Taxonomy term sorting](#taxonomy-term-sorting)
-* [New UI default CSS](#new-ui-default-CSS)
+* [Comprehensive modern theme for new User Interface (UI)](#comprehensive-modern-theme-for-new-user-interface-(ui))
 
 
 # Duplicate checking
