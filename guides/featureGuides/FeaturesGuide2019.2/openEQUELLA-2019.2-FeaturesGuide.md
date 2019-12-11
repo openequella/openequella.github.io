@@ -342,7 +342,7 @@ When the new user interface (UI) is switched on in openEQUELLA 2019.2, a modern 
 
 **NOTE: This is a transitionary measure until the new React with Material Design technology is applied across the openEQUELLA UI and released in forthcoming versions.**
 
-When turning on the new UI in openEQUELLA 2019.1:
+When turning on the new UI in openEQUELLA 2019.2:
 
 * The new theme is used by default when the new UI is switched on
 * The Theming Editor now applies to all areas in openEQUELLA (not just the new UI areas as per prior releases)
