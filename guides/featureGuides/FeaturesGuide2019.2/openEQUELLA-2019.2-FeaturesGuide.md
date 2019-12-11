@@ -338,9 +338,9 @@ An example after the terms have been sorted is shown in Figure 26.
 
 # Comprehensive modern theme for new UI 
 
-When the new UI is switched on in openEQUELLA 2019.2, a new, modern UI is displayed for all content by default via a new CSS. This provides a seamless and unified user experience, matching the areas that have not yet had the new UI technologies applied to those that have.
+When the new user interface (UI) is switched on in openEQUELLA 2019.2, a modern UI theme is now displayed for all content by default via a new CSS. This provides a seamless and unified user experience, matching the areas that have not yet had the new UI technologies applied to those that have.
 
-**NOTE: This is a transitionary measure until the new React with Material Design technology is applied across openEQUELLA and released in forthcoming versions.**
+**NOTE: This is a transitionary measure until the new React with Material Design technology is applied across the openEQUELLA UI and released in forthcoming versions.**
 
 When turning on the new UI in openEQUELLA 2019.1:
 
