@@ -217,8 +217,8 @@ listed separately. An example is shown in Figure 14.
 openEQUELLA 2019.2 now stores owner details in the database so that if a user is
 deleted, past ownership and moderation information are not lost.
 
-NOTE: Users must log in to openEQUELLA at least once prior to their deletion for
-this functionality to apply.
+**NOTE: Users must log in to openEQUELLA at least once prior to their deletion for
+this functionality to apply.**
 
 When a user is removed from openEQUELLA, the system will now display the deleted
 user’s name with the word ‘*removed’* in brackets e.g. *Joe Bloggs (removed)*
