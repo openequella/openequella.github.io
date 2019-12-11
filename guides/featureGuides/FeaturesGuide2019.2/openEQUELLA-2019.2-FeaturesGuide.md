@@ -4,7 +4,7 @@ Table of Contents
 * [Duplicate checking](#duplicate-checking)
 * [Displaying deleted user names](#displaying-deleted-user-names)
 * [Taxonomy term sorting](#taxonomy-term-sorting)
-* [Comprehensive modern theme for new User Interface (UI)](#comprehensive-modern-theme-for-new-user-interface-(ui))
+* [Comprehensive modern theme for new UI)](#comprehensive-modern-theme-for-new-ui)
 
 
 # Duplicate checking
@@ -336,7 +336,7 @@ An example after the terms have been sorted is shown in Figure 26.
 
 **Figure 26 Sorted taxonomy**
 
-# Comprehensive modern theme for new User Interface (UI) 
+# Comprehensive modern theme for new UI 
 
 When the new UI is switched on in openEQUELLA 2019.2, a new, modern UI is displayed for all content by default via a new CSS. This provides a seamless and unified user experience, matching the areas that have not yet had the new UI technologies applied to those that have.
 
