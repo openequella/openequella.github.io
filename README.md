@@ -67,6 +67,10 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 * [Java SOAP Tutorial](guides/JavaSOAPTutorial.md)
 * [Advanced Scripting Guide](guides/AdvancedScriptingGuide.md)
 
+## 2019.2 Feature Guide
+
+* [Features Guide](/.md)
+
 ## 2019.1 Feature Guide
 
 * [Features Guide](/guides/featureGuides/featureGuide2019.1/openEQUELLA-2019.1-FeaturesGuide.md)
