@@ -4,6 +4,7 @@ Table of Contents
 * [Duplicate checking](#duplicate-checking)
 * [Displaying deleted user names](#displaying-deleted-user-names)
 * [Taxonomy term sorting](#taxonomy-term-sorting)
+* [New taxonomy REST APIs](#new-taxonomy-rest-apis)
 * [Comprehensive modern theme for new UI)](#comprehensive-modern-theme-for-new-ui)
 
 
@@ -335,6 +336,19 @@ An example after the terms have been sorted is shown in Figure 26.
 ![](c49dfbf5573e87421681b9f884a0c589.png)
 
 **Figure 26 Sorted taxonomy**
+
+# New taxonomy REST APIs
+
+There are now REST APIs to:
+
+* Create a new taxonomy
+* Edit a taxonomy
+* Sort each level of the whole taxonomy
+* Sort child terms
+* List global taxonomy ACLs
+* Edit global taxonomy ACLs
+
+To view more information and try these APIs, go to the API documentation accessed by adding **apidocs.do** to the end of your openEQUELLA institution's URL (e.g. *https//myuniversity.edalex.com/institution/apidocs.do*)
 
 # Comprehensive modern theme for new UI 
 
