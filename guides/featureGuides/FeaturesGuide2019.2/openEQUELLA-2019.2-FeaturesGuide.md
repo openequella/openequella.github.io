@@ -5,7 +5,7 @@ Table of Contents
 * [Displaying deleted user names](#displaying-deleted-user-names)
 * [Taxonomy term sorting](#taxonomy-term-sorting)
 * [New taxonomy REST APIs](#new-taxonomy-rest-apis)
-* [Comprehensive modern theme for new UI)](#comprehensive-modern-theme-for-new-ui)
+* [Comprehensive modern theme for new UI](#comprehensive-modern-theme-for-new-ui)
 
 
 # Duplicate checking
