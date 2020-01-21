@@ -89,7 +89,7 @@ Custom User ID:  custom_bb_username
 Custom Username: custom_bb_user_id
 ```
 _Note: Blackboard prepends `custom_` to each custom parameter._
-_Note: openEQUELLA prepends a unique value ...............................
+_Note: openEQUELLA prepends a unique value (by **LTI Consumer**) to the user ID.  Unticking the checkbox in the **LTI Consumer** config will force openEQUELLA to use the user ID exactly as it is given.
 7. Under **Institution Policies**, set **Send User Data** to **Send user data only over SSL**.
   * Note:  You can select **Send user data over any connection**, but it is not recommended for a Production install.
 8. Set **User Fields to Send** to **Role in Course, Name, and Email Address**.
