@@ -25,7 +25,7 @@ Please note that this guide has been developed to best reflect the full capabili
 Configuring language settings can be broken into the following steps:
 1. Create a language pack using a Text Editor:
 
-  a. Download and unzip the language pack file from the openEQUELLA Service Desk.
+  a. Download and unzip the appropriate language pack file from [the list of openEQUELLA releases](https://github.com/openequella/openEQUELLA/releases).
   
   b. Create new text files that contain customised strings for the display controls.
   
@@ -57,7 +57,7 @@ A language pack is a zip archive that comprises text files that map language str
 * resource-centre.properties—maps language strings to Digital Repository display controls.
 
 ### Download the language pack file
-A language pack zip archive can be obtained from github and contains text file templates that can be used to customise the required language strings.
+Language pack zip archives can be obtained from openEQUELLA github on the [releases page](https://github.com/openequella/openEQUELLA/releases) and contain text file templates that can be used to customise the required language strings.
 
 
 ### Customise the display interface
