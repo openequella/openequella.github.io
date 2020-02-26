@@ -21,7 +21,7 @@ The purpose of this guide is to provide system administrators with an understand
 
 Please note this guide has been developed using Blackboard version v3800 and, as such, may differ in appearance to your own installation. 
 
-The openEQUELLA / Blackboard integration has historically been achieved with a building block and web service that was uploaded into the Blackboard site. This has presented some difficulties in the past and Blackboard retired their SOAP Web Services in Q2 2020 which effectively broke the openEQUELLA web service. Due to this upcoming loss of functionality, and the complexity of maintaining the building block and web service, a pure LTI / REST integration was developed.
+The openEQUELLA / Blackboard integration has historically been achieved with a building block and web service that was uploaded into the Blackboard site. This has presented some difficulties in the past and Blackboard retired their [SOAP Web Services in Q2 2020](https://help.blackboard.com/node/28021) which effectively broke the openEQUELLA web service. Due to this upcoming loss of functionality, and the complexity of maintaining the building block and web service, a pure LTI / REST integration was developed.
 
 As part of migrating from the building block and web service integration to the LTI / REST integration, a [migration building block](https://github.com/openequella/openEQUELLA-blackboard-integration) was developed to aid in the process.
 
