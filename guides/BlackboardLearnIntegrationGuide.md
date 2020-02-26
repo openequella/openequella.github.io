@@ -59,7 +59,7 @@ Use the standard LTI launch endpoint  `/ltisignon.do`.
 2. Select **Blackboard REST**
 3. Configure a Connector name, and provide a Blackboard REST URL
 4. Click on **Test URL**
-5. Specify the REST API Key and REST API Secret from https://developer.blackboard.com/ .
+5. Specify the REST API Key and REST API Secret from <https://developer.blackboard.com>.
 6. The rest of the configuration is standard **External System Connector** details
 
 ### Permissions
