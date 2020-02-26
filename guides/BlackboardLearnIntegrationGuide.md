@@ -12,6 +12,7 @@ Table of Contents
 * [Configure Blackboard](#configure-blackboard)
 * [Usage](#usage)
 * [Notes](#notes)
+* [Migration from B2 to LTI Links](#migration-from-b2-to-lti-links)
 
 
 ## openEQUELLA Blackboard Learn Integration Overview
@@ -135,3 +136,29 @@ The rest of the integration abilities are similar to the building block and web 
 * The Blackboard REST integration can be enabled / disabled with the **Available** flag in Blackboard.
 * A good write up of the configuration options for Blackboard REST applications is [here](https://community.blackboard.com/community/developers/learn/blog/2019/02/12/end-user-access-authorized-to-act-as-user).
 * If you get an error in openEQUELLA `CacheLoader returned null for key TOKEN.`, confirm your Blackboard REST Application is configured and available.
+
+## Migration From B2 to LTI Links
+The building block / web service approach is now deprecated and as of April, 2020 will no longer work properly in Blackboard instances running the version on Blackboard's SaaS installs.  It is recommended to upgrade to an openEQUELLA version that supports the integration via LTI and REST.  As part of that upgrade and conversion from building block linking to LTI linking, a migration effort needs to occur.  This can be accomplished with the [oEQ LTI Migration B2](https://github.com/openequella/openEQUELLA-blackboard-integration/releases/).
+
+### Notes
+* Technically openEQUELLA building block Links are LTI, so this enhancement removes the use of the building block when selecting openEQUELLA links and accessing linked openEQUELLA content from Blackboard.
+* It's recommended to backup your Blackboard institution before beginning, and if possible, test the migrations on a Test environment.
+* The migration can run institution-wide or by course.  It's recommended to run by course for a representative set and do more in-depth testing prior to an institution-wide migration.
+* It's supported to re-run a migration over courses.
+* The migration utility is a single instance for the institition, so only 1 instance can run at any given time.
+
+### Quick Start
+1. Download the latest version of the migration building block from the github releases page
+2. Upload the migration building block into the Blackboard instance you want to migrate
+3. Access the building block `Settings` option
+4. Your Institution URL is pulled from the primary openEQUELLA integration building block and can only be changed via the primary integration building block.
+5. Specify the Placement handle.  This is your _NEW_ Blackboard LTI Tool Provider placement handle.  Should be something like `apereo/oeq`.
+6. Course ID (optional) - when you access your course, the URL contains the course ID (in this case `_1234_1`):
+```
+https://my.blackboard.com/ultra/courses/_1234_1/cl/outline
+```
+7. Tick the checkbox to allow the migration to run
+8. Click 'Submit'.  To refresh for updated status, click 'Submit'.
+9. Once the migration completes (or errors), you can reset the migration utility (and logs) by ticking the checkbox under the 'RESET' section. 
+
+
