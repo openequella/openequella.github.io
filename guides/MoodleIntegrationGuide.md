@@ -1,4 +1,4 @@
-[Home](https://equella.github.io/)
+[Home](https://openequella.github.io/)
 
 # Moodle Configuration Guide  
 
@@ -19,16 +19,29 @@
 
 ## Integration overview 
 
-openEQUELLA integrates easily with Moodle™ by using the openEQUELLA Moodle Module to create a seamless system for users. Additionally the openEQUELLA Shared Secret functionality provides a single sign-on for users.
+openEQUELLA integrates easily with Moodle™ by using the openEQUELLA Moodle Module to create a
+seamless system for users. Additionally the openEQUELLA Shared Secret functionality provides a
+single sign-on for users.
 
-The purpose of this guide is to provide system administrators with an understanding of the openEQUELLA Moodle integration process to enable successful integration. 
+The purpose of this guide is to provide system administrators with an understanding of the
+openEQUELLA Moodle integration process to enable successful integration. 
 
-Please note that this guide has been developed for Moodle version 2.9 and, as such, may differ in appearance to your own installation.
+Please note that this guide has been developed for Moodle version 2.9 and, as such, may differ in
+appearance to your own installation.
 
 
 ## Open source  
 
-he Moodle module, blocks and legacy repository plug-in are available under the GPLv3 license. The source code for these projects can be found at <https://github.com/equella/>.
+The Moodle module, blocks and legacy repository plug-in are available under the GPLv3 license. The
+source code for these projects can be found at <https://github.com/openequella>.
+
+Specifically:
+
+* Moodle module - <https://github.com/openequella/moodle-mod_openEQUELLA>
+* Moodle search block - <https://github.com/openequella/moodle-block_openEQUELLA_search>
+* Moodle tasks block - <https://github.com/openequella/moodle-block_openEQUELLA_tasks>
+* Moodle links block - <https://github.com/openequella/moodle-block_openEQUELLA_links>
+* Supporting diagnostic tool - <https://github.com/openequella/moodle-mod_openEQUELLA-tools>
 
 ## Prerequisites 
 
@@ -38,10 +51,14 @@ To successfully complete this installation the system administrator will require
 * privileges to unzip and create files on the Moodle file system.
 
 #### System prerequisites for integration
-•  openEQUELLA opens source and Moodle version 2.6, 2.7 or 2.8 must be installed and running. Further information on installing openEQUELLA is provided in the openEQUELLA Installation and Administration Guide.
-•  Ensure the time settings of the servers are set correctly, including DST, for the relevant time zone.
-•  To access the openEQUELLA Dashboard page at least one course must have been created in Moodle. Refer to the Moodle documentation for more information. 
 
+* openEQUELLA opens source and Moodle version 2.6, 2.7 or 2.8 must be installed and running. Further
+  information on installing openEQUELLA is provided in the openEQUELLA Installation and
+  Administration Guide.
+* Ensure the time settings of the servers are set correctly, including DST, for the relevant time
+  zone.
+* To access the openEQUELLA Dashboard page at least one course must have been created in Moodle.
+  Refer to the Moodle documentation for more information.
 
 ## Integration procedure  
 
@@ -54,67 +71,98 @@ openEQUELLA Moodle integration can be broken into the following steps:
  
 
 ## Configure openEQUELLA  
-This section describes the required configuration changes to openEQUELLA to support a seamless integration. To achieve this, an openEQUELLA LTI Consumer needs to be registered, along with a Shared Secret configuration.
-Register an LTI consumer
+
+This section describes the required configuration changes to openEQUELLA to support a seamless
+integration. To achieve this, an openEQUELLA LTI Consumer needs to be registered, along with a
+Shared Secret configuration.
+
+### Register an LTI consumer
 
 LTI consumer client registrations are registered from the Settings page in openEQUELLA.
 
-To create a new LTI consumer
-1.  Select Settings from the navigation menu, and either type LTI in the filter box, then select LTI consumers from the results or scroll down to LTI consumers on the Settings list.
+### To create a new LTI consumer
+
+1. Select Settings from the navigation menu, and either type LTI in the filter box, then select LTI
+   consumers from the results or scroll down to LTI consumers on the Settings list.
 2. Select the Create new LTI consumer link to open the Create new LTI consumer page. 
 3. Enter a Title (e.g. Moodle LTI) and a Description (optional).
-4.  A default Consumer key displays. This can be changed as desired (e.g. moodleint). Take note as the Consumer key is entered in Moodle during integration configuration.
-5.  A default Consumer secret displays. This can be changed as desired. Take note as the Client secret is entered in Moodle during integration configuration.
+4. A default Consumer key displays. This can be changed as desired (e.g. moodleint). Take note as
+   the Consumer key is entered in Moodle during integration configuration.
+5. A default Consumer secret displays. This can be changed as desired. Take note as the Client
+   secret is entered in Moodle during integration configuration.
 
 Other options can be enabled as required. 
 
 ### LTI/LIS Role Mappings
-When logging into Moodle, users are assigned a Moodle role which can be Teacher or another role. Moodle’s Teacher role is translated as Instructor for LTI purposes, and all other roles as Other. LTI ‘Instructor’ and ‘Other’ roles need to be mapped to the relevant openEQUELLA roles for openEQUELLA permissions to apply. Additionally, it is wise to map Unknown roles that may be sent to openEQUELLA. This is done from the LTI/LIS Role Mappings section of the Add new LTI consumer or Edit LTI consumer pages. 
+
+When logging into Moodle, users are assigned a Moodle role which can be Teacher or another role.
+Moodle’s Teacher role is translated as Instructor for LTI purposes, and all other roles as Other.
+LTI ‘Instructor’ and ‘Other’ roles need to be mapped to the relevant openEQUELLA roles for
+openEQUELLA permissions to apply. Additionally, it is wise to map Unknown roles that may be sent to
+openEQUELLA. This is done from the LTI/LIS Role Mappings section of the Add new LTI consumer or Edit
+LTI consumer pages. 
 
 The LTI/LIS Role Mappings section has three areas:
 * Instructor role – map the Moodle ‘Teacher’ role to openEQUELLA role/s.
-* Other roles –this area is used to map all other roles that might be used in the integration. A list of the standard LTI/LIS roles is supplied, of which ‘Other’ is one. 
-* Unknown roles – use this area to select the openEQUELLA roles to default to when an unknown role is sent to openEQUELLA. 
+* Other roles –this area is used to map all other roles that might be used in the integration. A
+  list of the standard LTI/LIS roles is supplied, of which ‘Other’ is one. 
+* Unknown roles – use this area to select the openEQUELLA roles to default to when an unknown role
+  is sent to openEQUELLA. 
 
 #### Mapping the Instructor and Unknown roles
-In the Instructor and Unknown roles fields, the Add roles link is used to select the openEQUELLA roles to be used in the mappings. An example using the Instructor role is shown below:
+
+In the Instructor and Unknown roles fields, the Add roles link is used to select the openEQUELLA
+roles to be used in the mappings. An example using the Instructor role is shown below:
 
 To map to openEQUELLA role/s
-1.  Click the Add roles link under the Instructor role field. The Select role(s) dialog displays. 
-2.  Enter a search query then click Search. Matching results display. 
-3.  Select the required role/s, then click Select these roles. The mapping/s displays in the Instructor role field. 
+1. Click the Add roles link under the Instructor role field. The Select role(s) dialog displays. 
+2. Enter a search query then click Search. Matching results display. 
+3. Select the required role/s, then click Select these roles. The mapping/s displays in the
+   Instructor role field. 
 4. Select the Add roles link to add more mappings.
 
 #### Mapping the ‘Other’ role
-The Other roles section is used to map LTI/LIS standard roles (including the role ‘Other’ which is used in the Moodle integration) to openEQUELLA roles. 
+
+The Other roles section is used to map LTI/LIS standard roles (including the role ‘Other’ which is
+used in the Moodle integration) to openEQUELLA roles. 
 
 To map the ‘Other’ role
-1.  In the Other roles area, start typing the required LTI/LIS role (Other) in the Enter LTI/LIS role field. A list of all the standard LTI/LIS roles displays in a drop-down list.
-2.  Select Other from the drop-down list.
-3.  Click the Add roles link next to the selected LTI/LIS role.  The Select role(s) dialog displays. 
-4.  Enter a search query then click Search. Matching results display.
-5. Select the required role/s, then click Select these roles . The mapping/s displays in the Other roles field. 
-6. To add further openEQUELLA roles to ‘Other’ roles that have existing mappings or to add another LTI/LIS role mapping, repeat steps 1 to 5.
+1. In the Other roles area, start typing the required LTI/LIS role (Other) in the Enter LTI/LIS role
+   field. A list of all the standard LTI/LIS roles displays in a drop-down list.
+2. Select Other from the drop-down list.
+3. Click the Add roles link next to the selected LTI/LIS role.  The Select role(s) dialog displays. 
+4. Enter a search query then click Search. Matching results display.
+5. Select the required role/s, then click Select these roles . The mapping/s displays in the Other
+   roles field. 
+6. To add further openEQUELLA roles to ‘Other’ roles that have existing mappings or to add another
+   LTI/LIS role mapping, repeat steps 1 to 5.
 
 ### Configure a shared secret
+
 Shared secrets are configured in the openEQUELLA Administration Console.
 
 To open the Administration Console
-1.  Open a browser and enter your openEQUELLA URL (e.g. ‘<http://equella.myequellainstitution.edu>’).
-2.  Log in to openEQUELLA as an administrator, select Settings then Administration console. 
+1. Open a browser and enter your openEQUELLA URL (e.g. ‘<http://equella.myequellainstitution.edu>’).
+2. Log in to openEQUELLA as an administrator, select Settings then Administration console. 
 3. The Administration console displays. Select User Management to display a list of plug-ins. 
-4.  Highlight the Shared Secrets user management plug-in, then click Configure. The Shared Secrets dialog displays. 
-5.  Click + Add  to create a new shared secret. The Shared Secrets dialog now displays a new shared secret named ‘DEFAULT’ in the left-hand pane, and the configuration elements to the right of the pane. 
-6.  Enter a unique Identifier (ID) (e.g. moodle). 
-7.  Enter a shared secret (e.g. mS3cr3t). The secret may be any combination of characters and numbers, but strings longer than eight characters consisting of upper and lower case alphanumeric characters are recommended. 
-8.  Make a note of the identifier and shared secret as they will be needed to complete the Activate the openEQUELLA Resource module steps later. Other options can be enabled as required. 
+4. Highlight the Shared Secrets user management plug-in, then click Configure. The Shared Secrets
+   dialog displays. 
+5. Click + Add  to create a new shared secret. The Shared Secrets dialog now displays a new shared
+   secret named ‘DEFAULT’ in the left-hand pane, and the configuration elements to the right of the
+   pane. 
+6. Enter a unique Identifier (ID) (e.g. moodle). 
+7. Enter a shared secret (e.g. mS3cr3t). The secret may be any combination of characters and
+   numbers, but strings longer than eight characters consisting of upper and lower case alphanumeric
+   characters are recommended. 
+8. Make a note of the identifier and shared secret as they will be needed to complete the Activate
+   the openEQUELLA Resource module steps later. Other options can be enabled as required. 
 9. Click Save.
-10.  Click Close to close the dialog.
+10. Click Close to close the dialog.
 
 The Shared Secrets plug-in must be enabled (checked). If not already, enable the plug-in:
-1.  Check the Enabled checkbox for the Shared Secret plug-in.
-2.  Click Yes  to confirm.
-3.  Click Exit Console  to close the Administration Console.
+1. Check the Enabled checkbox for the Shared Secret plug-in.
+2. Click Yes  to confirm.
+3. Click Exit Console  to close the Administration Console.
 
 NOTE: Only trusted users should be able to see the shared secret, as this information can be used to impersonate any user within openEQUELLA.
 
@@ -125,28 +173,52 @@ The next step in the integration process is to download the openEQUELLA Moodle M
 This section describes the required configuration changes to Moodle to support the integration. openEQUELLA provides a module that allows Moodle users to easily contribute, search and select openEQUELLA items, and link them to a course. 
 
 ### Download and install the openEQUELLA Moodle Modules
+
 The Moodle Modules are available from the Downloads page in the openEQUELLA Github repository
+The Moodle Modules are available from each of their Github repositories:
 
-To download the Moodle Modules
-1.  Navigate to the [Downloads Page](../IntegrationsDownloads.md) in the openEQUELLA Github Repository
+* Moodle module - <https://github.com/openequella/moodle-mod_openEQUELLA>
+* Moodle search block - <https://github.com/openequella/moodle-block_openEQUELLA_search>
+* Moodle tasks block - <https://github.com/openequella/moodle-block_openEQUELLA_tasks>
+* Moodle links block - <https://github.com/openequella/moodle-block_openEQUELLA_links>
+* Supporting diagnostic tool - <https://github.com/openequella/moodle-mod_openEQUELLA-tools>
 
-The openEQUELLA Moodle components are made up of three zip files. Each zip contains files relevant to specific sections of the Moodle site. 
+To download the main Moodle Module, simple download the [latest
+release](https://github.com/openequella/moodle-mod_openEQUELLA/releases/latest) from the [releases
+page](https://github.com/openequella/moodle-mod_openEQUELLA/releases). For the blocks and the
+diagnostic tool, you will need to go to use the green Github 'Clone or download' button.
 
-Inside the Module to add openEQUELLA content as resources or activities zip are the files for the standard module functionality to integrate Moodle with openEQUELLA (referred to in this guide as the openEQUELLA Resource module).
+The openEQUELLA Moodle components are made up of three zip files. Each zip contains files relevant
+to specific sections of the Moodle site. 
 
-Inside the Block for users to search openEQUELLA directly and Block for users to view their openEQUELLA tasks and notifications zips are the files to add portlets to the Moodle front and course pages, allowing direct openEQUELLA access (openEQUELLA Blocks). 
+Inside the Module to add openEQUELLA content as resources or activities zip are the files for the
+standard module functionality to integrate Moodle with openEQUELLA (referred to in this guide as the
+openEQUELLA Resource module).
 
-For complete installation the contents of each zip file need to be extracted to the corresponding folder in the Moodle filesystem.
+Inside the Block for users to search openEQUELLA directly and Block for users to view their
+openEQUELLA tasks and notifications zips are the files to add portlets to the Moodle front and
+course pages, allowing direct openEQUELLA access (openEQUELLA Blocks). 
+
+For complete installation the contents of each zip file need to be extracted to the corresponding
+folder in the Moodle filesystem.
 
 ### Install the openEQUELLA Resource Module
-1.  To install the openEQUELLA Resource module, download the relevant module version of Module to add openEQUELLA content as resources or activities and unzip into a newly created path-to-moodle/mod/equella directory.
+
+1. To install the openEQUELLA Resource module, download the relevant module version of Module to add
+   openEQUELLA content as resources or activities and unzip into a newly created
+   path-to-moodle/mod/equella directory.
 
 (NOTE: If installing the Moodle Module on UNIX, ensure the ownership and file permissions match those of the /var/www/moodledirectory/directory.)
 
 ### Install the openEQUELLA Blocks
-1.  To install the openEQUELLA Blocks, download the two blocks zips (Block for users to search openEQUELLA directly and Block for users to view their openEQUELLA tasks and notifications) and unzip them into a newly created path-to-moodle/blocks/equella_search and path-to-moodle/blocks/equella_tasks directories respectively.
+
+1. To install the openEQUELLA Blocks, download the two blocks zips (Block for users to search
+   openEQUELLA directly and Block for users to view their openEQUELLA tasks and notifications) and
+   unzip them into a newly created path-to-moodle/blocks/equella_search and
+   path-to-moodle/blocks/equella_tasks directories respectively.
 
 ### Activate the openEQUELLA Resource module
+
 To access Moodle
 1.  Open a browser and enter your Moodle URL (e.g. ‘<http://moodle.myequellainstitution.edu>’).
 2.  Log in to Moodle as an administrative user.
