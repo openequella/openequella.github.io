@@ -23,7 +23,7 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 * [Reporting wiki space](tutorials/reporting/README.md)
 
 ## Optional Functionality
-* [Kaltura](https://github.com/equella/Equella-Kaltura)
+* [Kaltura](https://github.com/openequella/Equella-Kaltura)
 * Oracle DB
 
 ## Administrative and User Guides

@@ -1,10 +1,10 @@
 # Performance Benchmarks > General Guide
 Disclaimer:  The performance benchmark scripts are provided as-is and without warrenty, and meant for an enviroment without client / user data (ie some of the scripts are invasive / destructive).  That being said, the scripts use standard Equella APIs and Equella web UI screens and efforts have been made to externalize the scripts that can change across institutions.
 
-* [Test Platform](https://github.com/equella/equella.github.io/blob/master/equella-tools/performance-benchmarks-general.md#test-platform)
-* [Test Institution](https://github.com/equella/equella.github.io/blob/master/equella-tools/performance-benchmarks-general.md#test-institution)
-* [Test Assets](https://github.com/equella/equella.github.io/blob/master/equella-tools/performance-benchmarks-general.md#test-assets)
-* [Performing Tests](https://github.com/equella/equella.github.io/blob/master/equella-tools/performance-benchmarks-general.md#performing-tests)
+* [Test Platform](https://github.com/openequella/openequella.github.io/blob/master/equella-tools/performance-benchmarks-general.md#test-platform)
+* [Test Institution](https://github.com/openequella/openequella.github.io/blob/master/equella-tools/performance-benchmarks-general.md#test-institution)
+* [Test Assets](https://github.com/openequella/openequella.github.io/blob/master/equella-tools/performance-benchmarks-general.md#test-assets)
+* [Performing Tests](https://github.com/openequella/openequella.github.io/blob/master/equella-tools/performance-benchmarks-general.md#performing-tests)
 
 ## Test Platform
 All scripts utilize JMeter and were developed on a Ubuntu enviroment with JMeter 2.10 and Oracle Java 7u25.  I haven't found an issue running with later versions of JMeter or Java, but some of the file handling gets wierd when run on Windows.
@@ -35,7 +35,7 @@ You'll need to configure your target Equella install to run these scripts.  You 
 ## Test Assets
 The performance tests need a small set of assets / files.  Due to the open sourcing effort, some of these needed to be removed.  The following is the manifest to rebuild the assets.  Note - some of the scripts' properties files will need to be adjusted to handle the rebuilt assets being a different size.  The scripts will fail on the size assertion if it is affected by the asset rebuild.
 
-Github repo folder:  [Test Assets](https://github.com/equella/Equella-Tools/tree/master/performance-benchmarks/assets)
+Github repo folder:  [Test Assets](https://github.com/openequella/Equella-Tools/tree/master/performance-benchmarks/assets)
 
 * eqTestHtml1.html
   * Rebuilt and in the repo

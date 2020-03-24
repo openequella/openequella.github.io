@@ -1,9 +1,9 @@
-[Home](https://equella.github.io/)
+[Home](https://openequella.github.io/)
 
 # Installing openEQUELLA
 
 ## Environment setup
-Assuming you are building and installing openEQUELLA in the same environment, the following should be setup.  Details can be found in the [openEQUELLA Dev Setup](https://github.com/equella/Equella#download-required-software) guide.
+Assuming you are building and installing openEQUELLA in the same environment, the following should be setup.  Details can be found in the [openEQUELLA Dev Setup](https://github.com/openequella/Equella#download-required-software) guide.
 
 - Java 8 (Oracle)
 - ImageMagick
@@ -16,7 +16,7 @@ Needed if you are building your own install binary:
 
 ## Build the Installer
 
-If you don't have / don't want to use a pre-built binary, you can build openEQUELLA from source yourself by following the instructions on the main [openEQUELLA repo](https://github.com/equella/Equella).
+If you don't have / don't want to use a pre-built binary, you can build openEQUELLA from source yourself by following the instructions on the main [openEQUELLA repo](https://github.com/openequella/Equella).
 
 ## Install openEQUELLA
 1. Unzip the openEQUELLA install zip binary.
@@ -60,7 +60,7 @@ The installation process will need to be completed in the server admin pages.  P
 At this point, openEQUELLA is 'running', but still needs an institution to be useful.
 
 ## Import an Institution
-1. Download the [6.4 vanilla](https://github.com/equella/equella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz) institution.
+1. Download the [6.4 vanilla](https://github.com/openequella/openequella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz) institution.
 1. Using the server admin pages, import the institution
 1. After the import completes, click 'Return to Institution Management'
 1. Your newly imported institution should be enabled on the 'Institutions' page.  Click 'Login' under 'Actions'
