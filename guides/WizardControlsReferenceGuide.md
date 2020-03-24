@@ -1,4 +1,4 @@
-[Home](https://equella.github.io/)
+[Home](https://openequella.github.io/)
 
 # Wizard Controls Reference Guide
 

@@ -1,4 +1,4 @@
-[Home](https://equella.github.io/)
+[Home](https://openequella.github.io/)
 
 # Reporting User Guide
 
@@ -43,7 +43,7 @@ Additionally it is strongly recommended that training start with the online Ecli
 
 ## Installation
 
-Versions of the openEQUELLA Report Designer are available for download from the open source community [here](https://github.com/equella/equella-reporting-plugin/releases/tag/v6.4). These versions are supported by openEQUELLA and use BIRT 2.6.1.
+Versions of the openEQUELLA Report Designer are available for download from the open source community [here](https://github.com/openequella/equella-reporting-plugin/releases/tag/v6.4). These versions are supported by openEQUELLA and use BIRT 2.6.1.
 
 ### Install the openEQUELLA Report Designer
 Download the Report Designer files
@@ -79,7 +79,7 @@ A single instance of the Report Designer can be used to create reports for multi
 
 ## Example reports
 
-The standard example reports can be found [here](https://github.com/equella/Equella/tree/master/Source/Reporting/reports).  Community 'open source' example reports can be found (TBD).
+The standard example reports can be found [here](https://github.com/openequella/openEQUELLA/tree/master/Source/Reporting/reports).  Community 'open source' example reports can be found (TBD).
 
 ## Create a report
 
@@ -603,4 +603,4 @@ Typically openEQUELLA reports would require improved formatting before being upl
 User and Group information queries require careful implementation as each record of the JDBC data set causes a search of the User Management system. When the returned JDBC data set is large, the time to run the report can be great as each record causes a request to openEQUELLA. When openEQUELLA is using the internal user management plug-in the TLEUSER and TLEGROUP tables can be joined to improve query reporting.
 
 # Creating an openEQUELLA-Enabled BIRT Report Designer Binary
-A given BIRT RD openEQUELLA release binary is comprised of a standard binary of BIRT RD, along with the openEQUELLA plugins from [equella/equella-reporting-plugin](https://github.com/equella/equella-reporting-plugin).  These plugins are the same plugins used in the Equella application to receive requests from BIRT RD, and to run the reports that have been added to Equella.
+A given BIRT RD openEQUELLA release binary is comprised of a standard binary of BIRT RD, along with the openEQUELLA plugins from [equella/equella-reporting-plugin](https://github.com/openequella/equella-reporting-plugin).  These plugins are the same plugins used in the Equella application to receive requests from BIRT RD, and to run the reports that have been added to Equella.

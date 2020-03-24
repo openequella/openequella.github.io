@@ -1,4 +1,4 @@
-[Home](https://equella.github.io/)
+[Home](https://openequella.github.io/)
 
 # Open Source EQUELLA® Installation and Administration Guide
 
@@ -250,7 +250,7 @@ This procedure describes installing openEQUELLA using a graphical interface. The
 
 Note: It is possible to install without requiring a GUI.  While not widespread as a production installation method, it's consistently used in the docker logic; see https://groups.google.com/a/apereo.org/d/msg/equella-users/v-MMOuoa7mk/UDbmSkKRAwAJ for discussion if this is important to you.
 
-1. Obtain an openEQUELLA installer. You can either download a demo installer from https://github.com/equella/Equella/releases or build a production installer via sbt. Demo installers do not contain Kaltura integration or Oracle DB drivers, and use a self-signed Java signing certificate. The file format is equella-installer-x.y.zip (substitute x for the current major version, and y for the current minor version)
+1. Obtain an openEQUELLA installer. You can either download a demo installer from https://github.com/openequella/openEQUELLA/releases or build a production installer via sbt. Demo installers do not contain Kaltura integration or Oracle DB drivers, and use a self-signed Java signing certificate. The file format is equella-installer-x.y.zip (substitute x for the current major version, and y for the current minor version)
 2. Extract the equella-installer-x.x.zip file to a temporary directory.
 3. Navigate to the installer temporary directory and double-click on the enterprise-install file to start the installation. 
 4. Click Next to display the Java Development Kit selection screen.
@@ -363,7 +363,7 @@ as `admin.url` and defaults to '/'. It is recommended `admin.url` be set to a di
 ## Import a New Institution
 1. Select Import institution from the navigation menu to display the Import new institution page
 2. Click Browse to select the institution zip file to import (e.g. institution-....tgz)
-Note: If there is no current institution (for example on a test/demo server) download a vanilla reference institution from https://github.com/equella/equella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz
+Note: If there is no current institution (for example on a test/demo server) download a vanilla reference institution from https://github.com/openequella/openequella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz
 3. Click to start the import. The Import new institution page displays.
 The Import New Institution page allows for arbitrary base URLs and the renaming of the institution.
 4. To continue the import, if multiple databases have been configured, click Select Database and select the required database in the Target database field. Otherwise the system defaults to the database set up during installation.

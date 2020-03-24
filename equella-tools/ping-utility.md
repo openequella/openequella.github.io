@@ -1,6 +1,6 @@
 # openEQUELLA Ping Utility
 
-Code: [Equella-Tools/ping-utility](https://github.com/equella/Equella-Tools/tree/master/ping-equella)
+Code: [Equella-Tools/ping-utility](https://github.com/openequella/Equella-Tools/tree/master/ping-equella)
 
 _Recommended for use only with a strong understanding of the system and the potential impact of the utility_
 
