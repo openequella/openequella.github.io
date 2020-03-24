@@ -1,0 +1,33 @@
+{
+  "name": "openequella.github.io",
+  "version": "0.0.0",
+  "description": "scripts used for maintaining documentation pages",
+  "private": true,
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "run-s lint:*",
+    "lint:md-style": "prettier --check \"**/*.md\"",
+    "lint:md-structure": "remark .",
+    "format": "run-s format:*",
+    "format:md-style": "prettier --write \"**/*.md\""
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.2",
+    "remark-cli": "^7.0.1",
+    "remark-lint-no-dead-urls": "^1.0.2",
+    "remark-preset-lint-consistent": "^2.0.4",
+    "remark-preset-lint-recommended": "^3.0.4",
+    "remark-preset-prettier": "^0.4.0",
+    "remark-validate-links": "^10.0.0"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-consistent",
+      "remark-preset-lint-recommended",
+      "remark-preset-prettier",
+      "remark-lint-no-dead-urls",
+      "remark-validate-links"
+    ]
+  }
+}
