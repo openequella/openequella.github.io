@@ -375,6 +375,7 @@ For shallow, simple sub-trees using XPath indexes rather than XML Fragments is o
 #### Example 2: Associating Language Attributes to Textual Elements
 
 openEQUELLA supports a multi-language edit box control that allows a contributor to complete a field in multiple languages. The metadata produced by this control requires an attribute for each value indicating what language each element represents. For example:
+
 ```xml
 <metadata> <title> <string language="en">Hello!</string> <string language="fr">Bonjour!</string> <string language="de">Guten tag!</string>
 34

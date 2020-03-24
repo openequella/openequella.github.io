@@ -191,9 +191,9 @@ The Actions page elements include:
 
   c. The harvester is now running in the background and will not require further user input. Harvester actions are logged in the resource-centre logs and can be viewed by accessing the file:
 
-    ```
-    C:\<path-to-openEQUELLA-install-directory>\logs\resource-centre\<date>\application.html
-    ```
+  ```
+  C:\<path-to-openEQUELLA-install-directory>\logs\resource-centre\<date>\application.html
+  ```
 
   d. In this file harvester actions are recorded and can be viewed.
 

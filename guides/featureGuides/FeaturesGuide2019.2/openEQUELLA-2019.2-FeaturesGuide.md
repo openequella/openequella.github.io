@@ -1,12 +1,12 @@
 # openEQUELLA 2019.2 Features Guide
 
 Table of Contents
-* [Duplicate checking](#duplicate-checking)
-* [Displaying deleted user names](#displaying-deleted-user-names)
-* [Taxonomy term sorting](#taxonomy-term-sorting)
-* [New taxonomy REST APIs](#new-taxonomy-rest-apis)
-* [Comprehensive modern theme for new UI](#comprehensive-modern-theme-for-new-ui)
 
+- [Duplicate checking](#duplicate-checking)
+- [Displaying deleted user names](#displaying-deleted-user-names)
+- [Taxonomy term sorting](#taxonomy-term-sorting)
+- [New taxonomy REST APIs](#new-taxonomy-rest-apis)
+- [Comprehensive modern theme for new UI](#comprehensive-modern-theme-for-new-ui)
 
 # Duplicate checking
 
@@ -21,8 +21,8 @@ in the Collection Definition Editor, accessed from the Administration Console.
 ### Attachments
 
 Attachment duplicate checking allows administrators to notify contributors of
-existing items that have the same attachments. This includes *Files* and *URL
-Links* attachment types. For example, if duplicate checking is enabled for
+existing items that have the same attachments. This includes _Files_ and _URL
+Links_ attachment types. For example, if duplicate checking is enabled for
 ‘Files’ in an attachment control in a contribution wizard, the contributor sees
 a **Duplicate warning** message if a file a contributor uploads is an exact
 match to a file that has been uploaded in one or more existing items in the same
@@ -30,29 +30,29 @@ collection. A link is provided to those items so they can be viewed before
 proceeding.
 
 The duplicate checking for attachments is switched on in the configuration
-sections for *Files* and *URL Links* attachment types.
+sections for _Files_ and _URL Links_ attachment types.
 
 #### To enable File duplicate checking
 
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 1
 
-   ![](d41cade4d1f6dd6215e7bd23ff4721ee.png)
+![](d41cade4d1f6dd6215e7bd23ff4721ee.png)
 
-   **Figure 1 Administration Console - Collection Definitions**
+**Figure 1 Administration Console - Collection Definitions**
 
 2.  Double click the collection containing the relevant attachment control (or
     highlight and select **Edit)**.
 
-3.  From the **Wizard** tab, select the attachment control with the *Files*
+3.  From the **Wizard** tab, select the attachment control with the _Files_
     attachment type that requires duplicate checking to be applied.
 
 4.  Scroll to the **Files** configuration section and check **Enable duplicate
     checking.** An example is shown in Figure 2.
 
-   ![](47728058a4a5ea6bdbd876893bb76283.png)
+![](47728058a4a5ea6bdbd876893bb76283.png)
 
-   **Figure 2 Attachment control – Files configuration**
+**Figure 2 Attachment control – Files configuration**
 
 5.  Click **Save.**
 
@@ -61,22 +61,22 @@ sections for *Files* and *URL Links* attachment types.
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 3.
 
-   ![](19c08edce8b248eb92e06e306e3fc0c1.png)
+![](19c08edce8b248eb92e06e306e3fc0c1.png)
 
-   **Figure 3 Administration Console - Collection Definitions**
+**Figure 3 Administration Console - Collection Definitions**
 
 2.  Double click the collection containing the relevant attachment control (or
     highlight and select **Edit)**.
 
-3.  From the **Wizard** tab, select the attachment control with the *URL Links*
+3.  From the **Wizard** tab, select the attachment control with the _URL Links_
     attachment type that requires duplicate checking to be applied.
 
 4.  Scroll to the **URL Links** configuration section and check **Enable
     duplicate checking.** An example is shown in Figure 4.
 
-   ![](a3edbfe5796766ef06607412e26451d4.png)
+![](a3edbfe5796766ef06607412e26451d4.png)
 
-   **Figure 4 File attachment control – URL Links configuration**
+**Figure 4 File attachment control – URL Links configuration**
 
 5.  Click **Save.**
 
@@ -102,9 +102,9 @@ existing item descriptions within the collection.
 1.  From the **Administration Console**, select **Collection Definitions**. An
     example is shown in Figure 5.
 
-   ![](9f47579d029f2710f525f606f5bac514.png)
+![](9f47579d029f2710f525f606f5bac514.png)
 
-   **Figure 5 Administration Console - Collection Definitions**
+**Figure 5 Administration Console - Collection Definitions**
 
 2.  Double click the collection containing the relevant edit box (or highlight
     and select **Edit)**.
@@ -115,9 +115,9 @@ existing item descriptions within the collection.
 4.  Select **Warn contributor if data in this field is not unique for resources
     in this collection.** An example is shown in Figure 6.
 
-   ![](5143272a4d1f58ea06f6862495993581.png)
+![](5143272a4d1f58ea06f6862495993581.png)
 
-   **Figure 6 Collection Definition Editor - Wizard tab**
+**Figure 6 Collection Definition Editor - Wizard tab**
 
 5.  Click **Save.**
 
@@ -222,7 +222,7 @@ deleted, past ownership and moderation information are not lost.
 this functionality to apply.**
 
 When a user is removed from openEQUELLA, the system will now display the deleted
-user’s name with the word ‘*removed’* in brackets e.g. *Joe Bloggs (removed)*
+user’s name with the word ‘_removed’_ in brackets e.g. _Joe Bloggs (removed)_
 instead of ‘Unknown user’ in the Owner field, the Moderation history page and
 the Owners and collaborators page. This applies to both local openEQUELLA users
 and users managed by integrated external user management systems such as LDAP.
@@ -268,7 +268,7 @@ An example is shown in Figure 18.
 
 # Taxonomy term sorting
 
-A new option has been added to the **Terms** tab in the *Taxonomy editor* to allow taxonomy
+A new option has been added to the **Terms** tab in the _Taxonomy editor_ to allow taxonomy
 terms to be sorted alphabetically across the whole taxonomy or the child terms
 for a selected taxonomy level.
 
@@ -277,9 +277,9 @@ for a selected taxonomy level.
 1.  From the **Administration Console**, select **Taxonomies**. An example is
     shown in Figure 19.
 
-   ![](dcc2461eb4a852dede2369dae6ddd433.png)
+![](dcc2461eb4a852dede2369dae6ddd433.png)
 
-   **Figure 19 Administration Console - Taxonomies**
+**Figure 19 Administration Console - Taxonomies**
 
 2.  Double click the taxonomy to be sorted (or highlight and select **Edit)**.
 
@@ -291,8 +291,7 @@ for a selected taxonomy level.
 
 **Figure 20 Selected taxonomy level**
 
-An example of the right-click menu with the sorting option in shown in Figure
-21.
+An example of the right-click menu with the sorting option in shown in Figure 21.
 
 ![](effcbf98e1ef482f35164416d3f7378b.png)
 
@@ -309,9 +308,9 @@ An example after the terms have been sorted is shown in Figure 22.
 1.  From the **Administration Console**, select **Taxonomies**. An example is
     shown in Figure 23.
 
-   ![](e836e74ac96493e51fc8719c628a9858.png)
+![](e836e74ac96493e51fc8719c628a9858.png)
 
-   **Figure 23 Administration Console - Taxonomies**
+**Figure 23 Administration Console - Taxonomies**
 
 2.  Double click the taxonomy to be sorted (or highlight and select **Edit)**.
 
@@ -322,8 +321,7 @@ An example after the terms have been sorted is shown in Figure 22.
 
 **Figure 24 Sort Whole Taxonomy menu option**
 
-An example of the right-click menu with the sorting option in shown in Figure
-25.
+An example of the right-click menu with the sorting option in shown in Figure 25.
 
 ![](82293b902625b8bdfebedca6b9eb1a61.png)
 
@@ -341,16 +339,16 @@ An example after the terms have been sorted is shown in Figure 26.
 
 There are now REST APIs to:
 
-* Create a new taxonomy
-* Edit a taxonomy
-* Sort each level of the whole taxonomy
-* Sort child terms
-* List global taxonomy ACLs
-* Edit global taxonomy ACLs
+- Create a new taxonomy
+- Edit a taxonomy
+- Sort each level of the whole taxonomy
+- Sort child terms
+- List global taxonomy ACLs
+- Edit global taxonomy ACLs
 
-To view more information and try these APIs, go to the API documentation accessed by adding **apidocs.do** to the end of your openEQUELLA institution's URL (e.g. *https//myuniversity.edalex.com/institution/apidocs.do*)
+To view more information and try these APIs, go to the API documentation accessed by adding **apidocs.do** to the end of your openEQUELLA institution's URL (e.g. _https//myuniversity.edalex.com/institution/apidocs.do_)
 
-# Comprehensive modern theme for new UI 
+# Comprehensive modern theme for new UI
 
 When the new user interface (UI) is switched on in openEQUELLA 2019.2, a modern UI theme is now displayed for all content by default via a new CSS. This provides a seamless and unified user experience, matching the areas that have not yet had the new UI technologies applied to those that have.
 
@@ -358,7 +356,6 @@ When the new user interface (UI) is switched on in openEQUELLA 2019.2, a modern 
 
 When turning on the new UI in openEQUELLA 2019.2:
 
-* The new theme is used by default when the new UI is switched on
-* The Theming Editor now applies to all areas in openEQUELLA (not just the new UI areas as per prior releases)
-* Customisations can still be applied using CSS
-
+- The new theme is used by default when the new UI is switched on
+- The Theming Editor now applies to all areas in openEQUELLA (not just the new UI areas as per prior releases)
+- Customisations can still be applied using CSS

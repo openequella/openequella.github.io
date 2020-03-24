@@ -4,4 +4,4 @@
 .bundle/
 _site/
 vendor/
-
+node_modules/

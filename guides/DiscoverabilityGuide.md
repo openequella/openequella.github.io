@@ -40,7 +40,7 @@ For example, the following will add both a Google +1 button and a Facebook Like 
 
 ```html
 <script type="text/javascript">
-  (function() {
+  (function () {
     var po = document.createElement("script");
     po.type = "text/javascript";
     po.async = true;
@@ -52,7 +52,7 @@ For example, the following will add both a Google +1 button and a Facebook Like 
 
 <div id="fb-root"></div>
 <script>
-  (function(d, s, id) {
+  (function (d, s, id) {
     var js,
       fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;

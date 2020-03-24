@@ -10,11 +10,11 @@ do, please take a moment to review the following.
 If before contributing, you would first like to discuss an issue or update then please come and have
 a chat with us on one of the following platforms:
 
-* [Users mailing list](https://groups.google.com/a/apereo.org/forum/#!forum/equella-users) - Most
+- [Users mailing list](https://groups.google.com/a/apereo.org/forum/#!forum/equella-users) - Most
   active, best for more usage centric questions
-* [Developer mailing list](https://groups.google.com/a/apereo.org/forum/#!forum/equella-dev) - For
+- [Developer mailing list](https://groups.google.com/a/apereo.org/forum/#!forum/equella-dev) - For
   discussing work on the code
-* \#Equella channel in [Apereo's slack](https://apereo.slack.com/messages/C4KLR0C4U)
+- \#Equella channel in [Apereo's slack](https://apereo.slack.com/messages/C4KLR0C4U)
 
 ## Submitting Issues
 
@@ -26,7 +26,7 @@ welcome.
 
 ## Contributing Code / Pull Requests
 
-As per standard Apereo projects:  If you wish to contribute to openEQUELLA itself, you should first
+As per standard Apereo projects: If you wish to contribute to openEQUELLA itself, you should first
 subscribe to the openEQUELLA Google Group as outlined above and discuss your contributions with
 the other developers. You will also need to sign a
 [Contributor License Agreement](https://www.apereo.org/node/676).

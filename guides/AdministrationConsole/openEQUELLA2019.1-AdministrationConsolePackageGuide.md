@@ -1,5 +1,4 @@
-Administration Console Package
-------------------------------
+## Administration Console Package
 
 In openEQUELLA versions prior to 2019.1, the Administration Console was launched
 from the openEQUELLA Settings page using Java Web Start. As time progresses, there are an
@@ -25,7 +24,7 @@ for Windows, Mac and Linux operating systems.
 
 2.  Extract the package files to your preferred location on your local drive.
 
-### Opening the Launcher 
+### Opening the Launcher
 
 The Launcher enables the configuration of openEQUELLA servers and the launching
 of their respective Administration Consoles, as well as various other functions.
@@ -44,25 +43,25 @@ displays. An example is shown in Figure 1.
 
 The **openEQUELLA Administration Console Launcher** has the following functions:
 
--   **Add Server** – enables the openEQUELLA servers and their institutions to
-    be configured so that their Administration Consoles can be launched. See
-    [Adding servers](#adding-servers).
+- **Add Server** – enables the openEQUELLA servers and their institutions to
+  be configured so that their Administration Consoles can be launched. See
+  [Adding servers](#adding-servers).
 
--   **Proxy Settings –** enables the details of a Proxy Host to be configured to
-    allow access to the Administration Console.
+- **Proxy Settings –** enables the details of a Proxy Host to be configured to
+  allow access to the Administration Console.
 
--   **Server** – a drop-down list of configured openEQUELLA servers and their
-    institutions.
+- **Server** – a drop-down list of configured openEQUELLA servers and their
+  institutions.
 
--   **Edit** – enables the details of the currently selected Server to be
-    modified.
+- **Edit** – enables the details of the currently selected Server to be
+  modified.
 
--   **Remove** – removes the currently selected Server.
+- **Remove** – removes the currently selected Server.
 
--   **Make Default** – click to make the currently selected Server display as
-    the default when the Launcher app is opened.
+- **Make Default** – click to make the currently selected Server display as
+  the default when the Launcher app is opened.
 
--   **Launch** – launches the Administration Console for the selected Server.
+- **Launch** – launches the Administration Console for the selected Server.
 
 ### Adding servers
 

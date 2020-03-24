@@ -117,8 +117,7 @@ All regular script variables are available in the FreeMarker panes, such as xml,
 - On the server, to detect if this submit button was pressed you would use code similar the following in your server-side On-Submit Script:
 
 ```js
-if ( request.get('mySubmit') != null )
-{
+if (request.get("mySubmit") != null) {
   // Do something
 }
 ```
@@ -144,15 +143,14 @@ If you use any FreeMarker code in the On-Submit JavaScript pane it will be evalu
 All regular script variables are available in the server-side script panes, such as xml, page and user. The On Submit script has an additional request variable available to read submitted values from your mark-up. Only fields prefixed with the \${prefix} variable in your Display Template will be available in the request object. When reading from the request object there is no need to specify the prefix. For example:
 
 ```js
-var myInput = request.get('myInput');
+var myInput = request.get("myInput");
 ```
 
 Or to detect if a custom submit button has been clicked:
 
 ```js
-if ( request.get('mySubmit') != null)
-{
-// Do something
+if (request.get("mySubmit") != null) {
+  // Do something
 }
 ```
 
@@ -248,7 +246,7 @@ The names of the available script objects are listed below. For a full descripti
 - com.tle.web.wizard.scripting.objects
 - PageScriptObject
 
-**request** - Available in an Advanced Script Control context only. Used for retrieving submitted values from the page.  
+**request** - Available in an Advanced Script Control context only. Used for retrieving submitted values from the page.
 
 - com.tle.web.controls.advancedscript.scripting.objects
 - RequestMapScriptObject
@@ -323,20 +321,21 @@ If you wish retrieve the contents of an external URL within an Advanced Scriptin
 
 ```html
 <script type="text/javascript">
-function showHtml(myExternalUrl)
-{
-  // Get the page from a remote server
-  $.get('p/geturl', {'url': myExternalUrl},
-    function(html)
-    {
-      alert(html);
-    }
-    , 'html');
-}
+  function showHtml(myExternalUrl) {
+    // Get the page from a remote server
+    $.get(
+      "p/geturl",
+      { url: myExternalUrl },
+      function (html) {
+        alert(html);
+      },
+      "html"
+    );
+  }
 </script>
 
-<input type="text" id="myUrl" value="http://www.yahoo.com/">
-<input type="button" value="Get HTML!" onclick="showHtml($('#myUrl').val());">
+<input type="text" id="myUrl" value="http://www.yahoo.com/" />
+<input type="button" value="Get HTML!" onclick="showHtml($('#myUrl').val());" />
 ```
 
 Although this example has very little real-world use, it shows some slightly more advanced features of JQuery to access the redirection servlet. The showHtml function above uses the \$.get() function, which is a core JQuery function to retrieve data from a URL.
