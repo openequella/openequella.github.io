@@ -30,6 +30,7 @@ Unless otherwise noted:
 | can.access.internet | true | ~6.1-QA2 | | Allows the URL checker to run. |
 | com.tle.core.tasks.RemoveOldAuditLogs.daysBeforeRemoval | 120 | ~6.0-QA3 | | Set the number of days to keep audit logs in openEQUELLA before the scheduled task truncates them. |
 | com.tle.core.tasks.RemoveDeletedItems.daysBeforeRemoval | 7 | ~6.4-QA3 | | Set the number of days to keep deleted items in openEQUELLA before the scheduled task purges them. | 
+| tomcat.internalProxies | N/A | 2019.1.3 / 2019.2.0 | | Sets the Tomcat RemoteIpValve > InternalProxies.  This is needed when uploading files in the modern UI in some environments | 
 
 ## Lucene Optional Config
 **Location:** `{oeq-install-dir}/plugins/com.tle.core.freetext/optional.properties`
