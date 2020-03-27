@@ -2,11 +2,11 @@
 
 # openEQUELLA Server Configurations
 
-[Primary Mandatory Config](#primary-mandatory-config)
+* [Primary Mandatory Config](#primary-mandatory-config)
 
-[Primary Optional Config](#primary-optional-config)
+* [Primary Optional Config](#primary-optional-config)
 
-[Lucene Optional Config](#lucene-optional-config)
+* [Lucene Optional Config](#lucene-optional-config)
 
 
 Unless otherwise noted:
