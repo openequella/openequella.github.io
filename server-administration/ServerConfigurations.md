@@ -3,8 +3,11 @@
 # openEQUELLA Server Configurations
 
 [Primary Mandatory Config](#primary-mandatory-config)
+
 [Primary Optional Config](#primary-optional-config)
+
 [Lucene Optional Config](#lucene-optional-config)
+
 
 Unless otherwise noted:
 * Configuration 'versions' with a `~` means 'at least', so, `~6.4-QA3` means the config is at least in versions 6.4-QA3, but could be in versions earlier than 6.4-QA3
