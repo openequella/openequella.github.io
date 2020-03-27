@@ -17,6 +17,7 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 
 ## Getting Started
 * [Installing openEquella - Quick Start Guide](gettingstarted/InstallingEquella.md)
+* [Known Working Supporting Software](server-administration/KnownWorkingSupportingSoftware.md)
 
 ## Tutorials
 
