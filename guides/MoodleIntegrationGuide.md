@@ -68,7 +68,7 @@ openEQUELLA Moodle integration can be broken into the following steps:
 3.  Install the openEQUELLA Moodle Module to the Moodle directory.
 4.  Activate the openEQUELLA Resource Module in Moodle.
 5.  Test the installation.
- 
+
 
 ## Configure openEQUELLA  
 
@@ -174,7 +174,6 @@ This section describes the required configuration changes to Moodle to support t
 
 ### Download and install the openEQUELLA Moodle Modules
 
-The Moodle Modules are available from the Downloads page in the openEQUELLA Github repository
 The Moodle Modules are available from each of their Github repositories:
 
 * Moodle module - <https://github.com/openequella/moodle-mod_openEQUELLA>
