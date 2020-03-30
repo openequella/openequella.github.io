@@ -7,7 +7,7 @@ summary in the community.
 | ------------------ | --------------- | ---------------------------- |
 | ImageMagick        | TBD             | 6.9.8 Q8                     |
 | Java (server side) | TBD             | OpenJDK 8                    |
-| LibAV (1)          | TBD             | 11.7                         |
+| LibAV (1)          | 11.3            | 11.7                         |
 | MS SQL             | TBD             | 2008+                        |
 | Oracle             | TBD             | 11g+                         |
 | Postgres           | 9.4.X           | 9.6.11                       |
