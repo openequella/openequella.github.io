@@ -1,4 +1,4 @@
-[Home](https://equella.github.io/)
+[Home](https://openequella.github.io/)
 
 # LTI Consumer Configuration Guide
 
@@ -17,6 +17,7 @@ LTI consumer client registrations can be created in openEQUELLA and used with LM
 
 This guide details the configuration of LTI consumers in openEQUELLA, and the LTI/LIS role mappings to openEQUELLA roles.
 
+The standard, non-vendor specific LTI endpoint is `/ltisignon.do`.  There are a couple specific LTI endpoints (Canvas and Desire 2 Learn) that have their own LTI endpoints (and accompanying LTI custom logic), but are configured from the same `LTI Consumer`.
 
 ## LTI consumer ACLs
 
@@ -37,8 +38,12 @@ To create a new LTI consumer
 4.  A default Consumer key displays. This can be changed as desired. The Consumer key is entered in the LMS/LTI tool during integration configuration.
 5.  A default Consumer secret displays. This can be changed as desired. The Consumer secret is entered in the LMS/LTI tool during integration configuration.
 6.  If required, enter a unique Username prefix (e.g. mdl_) or Username postfix (e.g._mdl) for this LTI consumer. This prefix or postfix is added when new users are created to distinguish those users accessing openEQUELLA from this LTI consumer.
-7.  The Usable by field allows administrators to restrict who can use this LTI consumer. The default is Everyone. Click Change to open the Select recipients… dialog to select users, groups or roles from the Home tab, or other options, such as Guest users, specific IP address etc. from the Other tab. 
-8.  From the Unknown user handling drop-down, select the system behavior when an attempt is made to logon to openEQUELLA with a username that doesn’t exist. Options are:
+7.  The following 3 configuration points only apply for standard LTI connections ( that are configured with `/ltisignon.do` ).  All three are optional.
+  1.  `Custom user ID` - Allows configuration of a custom LTI parameter to provide the user ID.
+  2.  `Custom username` - Allows configuration of a custom LTI parameter to provide the username.
+  3.  The checkbox to configure the prefix for the user ID allows the system to prepend a hash of the consumer's unique system ID to the user ID to help avoid user ID and username collisions.
+8.  The Usable by field allows administrators to restrict who can use this LTI consumer. The default is Everyone. Click Change to open the Select recipients… dialog to select users, groups or roles from the Home tab, or other options, such as Guest users, specific IP address etc. from the Other tab. 
+9.  From the Unknown user handling drop-down, select the system behavior when an attempt is made to logon to openEQUELLA with a username that doesn’t exist. Options are:
 * Deny access and present error message
 * Treat user as a guest
 * Create local user and add them to the following groups…

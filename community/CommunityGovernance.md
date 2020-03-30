@@ -52,7 +52,7 @@ Involvement includes:
 * Participate actively in scheduled calls in areas of release management, maintenance, QA, Accessibility, etc.
 * Contribute actively to openEquella planning, design, development, testing, release, etc.
 * Contribute actively to openEquella software maintenance (contribute patches, QA testing, etc.)
-* Contribute actively to community documentation  (<https://equella.github.io/> )
+* Contribute actively to community documentation  (<https://openequella.github.io/> )
 
 There is no set term ("merit never expires") for PMC members.
 

@@ -1,4 +1,4 @@
-[Home](https://equella.github.io/)
+[Home](https://openequella.github.io/)
 
 # openEQUELLA 2018.2 Features Guide
 
@@ -313,7 +313,7 @@ New methods were added to the XML script object to allow ease of traversing the 
 * List<XmlScriptType> getChildren()
 * String getName()
 
-A code example of using these API calls can be found in [PR #545](https://github.com/equella/Equella/pull/545).
+A code example of using these API calls can be found in [PR #545](https://github.com/openequella/openEQUELLA/pull/545).
 
 ### New ControlScriptObject Methods
 
@@ -321,9 +321,9 @@ New methods were added to the Control script object to allow ease of navigating 
 * ControlScriptObject getParent();
 * int getIndex(ControlScriptObject child);
 
-A code example of using these API calls can be found in the issue thread for [#475](https://github.com/equella/Equella/issues/475).
+A code example of using these API calls can be found in the issue thread for [#475](https://github.com/openequella/openEQUELLA/issues/475).
 
 ## Docker
 
-Docker abilities were enhanced to allow a more consistent environment for building Production worthy installers / upgraders, and to provide a consistent runtime environment.  Please see the /docker folder's README for the Docker openEQUELLA [runtime environment](https://github.com/equella/Equella/tree/master/docker#default-dockerfile) and [build environment](https://github.com/equella/Equella/tree/master/docker#docker-build).
+Docker abilities were enhanced to allow a more consistent environment for building Production worthy installers / upgraders, and to provide a consistent runtime environment.  Please see the /docker folder's README for the Docker openEQUELLA [runtime environment](https://github.com/openequella/openEQUELLA/tree/master/docker#default-dockerfile) and [build environment](https://github.com/openequella/openEQUELLA/tree/master/docker#docker-build).
 

@@ -1,64 +1,75 @@
-# openEQUELLA Ping Utility 
+# openEQUELLA Ping Utility
 
-Code:  [Equella-Tools/ping-utility](https://github.com/equella/Equella-Tools/tree/master/ping-equella)
+Code: [Equella-Tools/ping-utility](https://github.com/openequella/Equella-Tools/tree/master/ping-equella)
 
-*Recommended for use only with a strong understanding of the system and the potential impact of the utility*
+_Recommended for use only with a strong understanding of the system and the potential impact of the utility_
 
 This is a Java utility that loops through openEQUELLA items (optionally filtered by institution and/or collection), checking if the item's attachment exist.
 
 There are three run modes:
-* 'attachments' mode relies on the REST API and will check the attachments of each item via an HTTP GET call. Based on the response
-code, it will decide if the attachment exists. This has some known concerns (such as a longer run duration and some false positives), but can be run from any computer that can access the external openEQUELLA site. It does not completely pull the content. It has only been tested on non-DRM items.
-* 'direct-query-batched-items-attachments-per-item' mode uses the filestore and database via batched queries (ie your openEQUELLA install would not even need to be running to use this mode). It will make roughly (n/100)+n database calls, where n is number of items in your database.
-* 'direct-query-all-items-all-attachments' is similar to 'direct-query-batched-items-attachments-per-item', but will make a single query for the items, and a single query for the attachments, for a total of 5 DB calls to build the report. This originally was developed as a workaround to an issue with pagination in SQL Server 2008.
+
+- 'attachments' mode relies on the REST API and will check the attachments of each item via an HTTP GET call. Based on the response
+  code, it will decide if the attachment exists. This has some known concerns (such as a longer run duration and some false positives), but can be run from any computer that can access the external openEQUELLA site. It does not completely pull the content. It has only been tested on non-DRM items.
+- 'direct-query-batched-items-attachments-per-item' mode uses the filestore and database via batched queries (ie your openEQUELLA install would not even need to be running to use this mode). It will make roughly (n/100)+n database calls, where n is number of items in your database.
+- 'direct-query-all-items-all-attachments' is similar to 'direct-query-batched-items-attachments-per-item', but will make a single query for the items, and a single query for the attachments, for a total of 5 DB calls to build the report. This originally was developed as a workaround to an issue with pagination in SQL Server 2008.
 
 ### Setup
 
-**Needed Files** 
+**Needed Files**
 
 Note: Releases of PingEquella and example properties files are stored in the openEQUELLA Tool Directory
 
-* PingEquella jar
-* ping-equella.properties (see Config Details for contents)
-* log4j2.xml
-* (Optional): start.sh (see Bitbucket repo)
+- PingEquella jar
+- ping-equella.properties (see Config Details for contents)
+- log4j2.xml
+- (Optional): start.sh (see Bitbucket repo)
 
-**Direct* modes**
+**Direct\* modes**
 This mode requires direct access to the database and the filestore of the openEQUELLA install.
 
 **Attachments mode**
-The mode requires REST authentication to be setup in the given institution (CCG / LTI). You will you need to provide the client ID / secret in the properties file. It's been shown that there are some false positives and not all system collections are exposed through the REST API. It's recommended to use the direct* modes.
+The mode requires REST authentication to be setup in the given institution (CCG / LTI). You will you need to provide the client ID / secret in the properties file. It's been shown that there are some false positives and not all system collections are exposed through the REST API. It's recommended to use the direct\* modes.
 
 **General**
 The utility outputs 3 files: A file with all the items / attachments and their statuses, a file with only the attachments which are considered missing, and the log4j file which details precisely when the utility decided the status of an item / attachment.
 
 To invoke, run this ping utility jar as follows:
-```
+
+```bash
 $ java -jar pingEquella_v[[latest version]].jar
-````
-You can also use this utility to compare reports, but the reports need to be in the format given by v1.4 or later (11 'columns' of data per row in the correct order). It's intended to compare two all_stat files or two error_stat files.
 ```
+
+You can also use this utility to compare reports, but the reports need to be in the format given by v1.4 or later (11 'columns' of data per row in the correct order). It's intended to compare two all_stat files or two error_stat files.
+
+```bash
 $ java -jar pingEquella_v[[latest version]].jar -compare filepath1.csv filepath2.csv
 ```
+
 The utility can be configured to automatically compare the last report and the current report to highlight attachments that are no longer missing and attachments that are now missing.
 
 The utility can be configured to email a report of the current run. The email will also include a list of any critical errors and the comparison results.
 
 ### Versions
+
 **V1**
-* Initial version
+
+- Initial version
 
 **V1.1**
-* Tied in log4j to see precisely when an attachment failed to be retrieved; added better error handling when the item xml could not be retrieved (was causing a SO error); better String management.
+
+- Tied in log4j to see precisely when an attachment failed to be retrieved; added better error handling when the item xml could not be retrieved (was causing a SO error); better String management.
 
 **V1.2**
-* Implemented a configurable retry scheme when a http request fails (Covers all requests - access key, search api, and files). For each failure of a
-given http request, the ping utility will sleep for an extra second before it tries again (so if a request fails 5 times, it'll sleep for 5 seconds before
-trying a 6th time).
+
+- Implemented a configurable retry scheme when a http request fails (Covers all requests - access key, search api, and files). For each failure of a
+  given http request, the ping utility will sleep for an extra second before it tries again (so if a request fails 5 times, it'll sleep for 5 seconds before
+  trying a 6th time).
 
 **V1.3**
-* Added ping.type = direct, and removed ping.type = items. Added JUnit test harness and test data.
-* Release notes:
+
+- Added ping.type = direct, and removed ping.type = items. Added JUnit test harness and test data.
+- Release notes:
+
 1. Upgraded to support a 'direct' approach using the filestore and DB. It will make roughly (n/100)+n DB calls, where n is the number of items in your DB.
 2. File manager files (and folders) that are not shown in the resource summary cannot be checked in the attachments or direct ping reports.
 3. Unzipped files that are not shown in the resource summary cannot be checked in the attachments or direct ping reports.
@@ -69,24 +80,26 @@ trying a 6th time).
 8. Running the report with ping.type as 'attachments' can give a false positive on inactive CAL/CLA item.
 
 **V1.4**
-* Added a direct single query mode to support SQL Server 2008. Provides the ability to run on openEQUELLA installs with multiple institutions and filter by
-an institution.
+
+- Added a direct single query mode to support SQL Server 2008. Provides the ability to run on openEQUELLA installs with multiple institutions and filter by
+  an institution.
 
 Release notes:
+
 1. Users can configure PingEquella via ping.type to handle batching or single-query for items and attachments - allowed ping.type values are 'attachments', 'direct-query-all-items-all-attachments', or 'direct-query-batched-items-attachments-per-item'.
 2. Users can configure PingEquella via direct.num.items.per.query on the number of items to query per batch. This only applies to direct-query-batched-items-attachments-per-item ping.type reports.
 3. Users can run PingEquella on institutions whose shortnames are different then their filestore handles. PingEquella will not run if it can't resolve all institutions shortnames as filestore directories. If an institution filestore was changed, the user needs to include the following
-line in the properties files for each different institution filestore:
-direct.filestore.institution.handle.institutionShortname=institutionFilestoreName. This is expected to only be needed for development /
-testing purposes. This only applies to direct* ping.type reports.
+   line in the properties files for each different institution filestore:
+   direct.filestore.institution.handle.institutionShortname=institutionFilestoreName. This is expected to only be needed for development /
+   testing purposes. This only applies to direct\* ping.type reports.
 4. Users can filter PingEquella coverage by an institution shortname - filter.by.institution is the 'short_name of the institution (The 'Filestore'
-value in the server admin pages)'. This only applies to direct* ping.type reports.
+   value in the server admin pages)'. This only applies to direct\* ping.type reports.
 5. Users can see on reports which institution an item belongs to.
 
-For direct* ping.types, this is automatic.
+For direct\* ping.types, this is automatic.
 
 For the attachments ping.type, this needs to be specified via a new configuration key 'attachments.institution.shortname'. This
-will allow attachments reports to match the format of direct* reports. Default value is 'DEFAULT'.
+will allow attachments reports to match the format of direct\* reports. Default value is 'DEFAULT'.
 
 6. Users can run PingEquella on openEQUELLA clusters that have multiple institutions
 7. Users have enhanced filtering-by-collection ability.
@@ -100,7 +113,8 @@ available.
 A manual comparison feature is included. The reports to compare need to be in the format given by v1.4 (11 'columns' of data per row in the correct order). It's intended to compare two all_stat files or two error_stat files.
 
 **V1.5**
-* Bug fix.
+
+- Bug fix.
 
 Release notes:
 
@@ -111,16 +125,18 @@ The reporting feature of PingEquella would fail if an item / attachment had a pe
 Feature enhancements of auto comparison of last run and current run, and the ability to email a summary of the report.
 
 Release notes:
+
 1. Auto comparison: To configure, add compare.missing.attachments to the properties file and set it to true. The utility will look for the latest error report with the same client.name.
 2. Email reports: The configure, add email.report to the properties file and set it to NORMAL or ONLY_NEW_MISSING_ATTACHMENTS_OR_ERRORS. Setting it to NONE or omitting the configuration will turn off email.
 
 a) If email.report is configured and not set to NONE, the following properties need to be configured:
-* email.smtp.server.port (The port for the email smtp server - Google's is 587)
-* email.smtp.server (The email smtp server - Google's is smtp.gmail.com
-* email.sender.display.name (Freeform - the name will appear as the sender of the email report)
-* email.sender.username (The username of the email account used to send the email report from the specified smtp server)
-* email.sender.password (The password of the email account used to send the email report from the specified smtp server)
-* email.recipients (A semi-colon separated list of email addresses the report will be sent to)
+
+- `email.smtp.server.port` (The port for the email smtp server - Google's is 587)
+- `email.smtp.server` (The email smtp server - Google's is smtp.gmail.com
+- `email.sender.display.name` (Freeform - the name will appear as the sender of the email report)
+- `email.sender.username` (The username of the email account used to send the email report from the specified smtp server)
+- `email.sender.password` (The password of the email account used to send the email report from the specified smtp server)
+- `email.recipients` (A semi-colon separated list of email addresses the report will be sent to)
 
 b) In the case of a critical error (such as the utility cannot connect to the database), and if email is configured, the utility will send an email notification with the critical errors it captured.
 c) The utility uses simple authentication for smtp servers. For example, if you choose to use a Google account for the smtp server,
@@ -136,7 +152,8 @@ The "-compare file1 file2" invocation of PingEquella now sets the 'Attachment fi
 ### Config Details
 
 Reflects version 1.6.
-```
+
+```properties
 # General note - If you're on Windows, you'll need to slash escape the slashes for any
 directories.
 # e.g. [E:\logs\here] should be [E:\\logs\\here]

@@ -17,16 +17,18 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 
 ## Getting Started
 * [Installing openEquella - Quick Start Guide](gettingstarted/InstallingEquella.md)
+* [Known Working Supporting Software](server-administration/KnownWorkingSupportingSoftware.md)
 
 ## Tutorials
 
 * [Reporting wiki space](tutorials/reporting/README.md)
 
 ## Optional Functionality
-* [Kaltura](https://github.com/equella/Equella-Kaltura)
+* [Kaltura](https://github.com/openequella/Equella-Kaltura)
 * Oracle DB
 
 ## Administrative and User Guides
+* [Administration Console Package Guide](guides/AdministrationConsole/openEQUELLA2019.1-AdministrationConsolePackageGuide.md)
 * [Installation and Administration Guide](guides/InstallationAdminGuide.md)
     * [openEquella Schema Info](guides/equella_schema.zip)
     * [Additional General Info and Help](guides/AdditionalGeneralInfoHelp.md)
@@ -62,12 +64,23 @@ With over 15 years of history, openEQUELLA is a mature solution written for the 
 * [Searching User Guide](guides/SearchingUserGuide.md)
 * [Advanced Search Configuration](guides/AdvancedSearchConfiguration.md)
 * [Glossary of Terms](guides/GlossaryOfTerms.md)
+* [REST API Guide](guides/RestAPIGuide.md)
+* [Java SOAP Tutorial](guides/JavaSOAPTutorial.md)
+* [Advanced Scripting Guide](guides/AdvancedScriptingGuide.md)
 
-## 2018.2 Feature Guide
+## 2019.2 Features Guide
+
+* [Features Guide](/guides/featureGuides/FeaturesGuide2019.2/openEQUELLA-2019.2-FeaturesGuide.md)
+
+## 2019.1 Features Guide
+
+* [Features Guide](/guides/featureGuides/featureGuide2019.1/openEQUELLA-2019.1-FeaturesGuide.md)
+
+## 2018.2 Features Guide
 
 * [Features Guide](guides/openEQUELLA-2018.2-FeaturesGuide.md)
 
-## 6.6 Feature Guide
+## 6.6 Features Guide
 
 * [Features Guide](guides/EQUELLA%206.6%20Features%20Guide.pdf)
 

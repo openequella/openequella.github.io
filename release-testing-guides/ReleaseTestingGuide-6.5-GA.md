@@ -2,7 +2,7 @@
 
 *_DRAFT_*
 
-Please refer to the [6.5-Stable Release Notes](https://github.com/equella/equella.github.io/blob/master/release-notes/ReleaseNotes-6.5-GA.md) for more details.
+Please refer to the [6.5-Stable Release Notes](https://github.com/openequella/openequella.github.io/blob/master/release-notes/ReleaseNotes-6.5-GA.md) for more details.
 
 ### #104 Scripting pack
 
@@ -10,7 +10,7 @@ Now in the master docs repo.  Self-creation of the javadoc in issues #105 and #1
 
 __Testing:__
 * TestLink: eqos-1936
-* Ensure the [documentation](https://github.com/equella/equella.github.io/tree/master/example-scripts) is available and makes sense.
+* Ensure the [documentation](https://github.com/openequella/openequella.github.io/tree/master/example-scripts) is available and makes sense.
 
 ### #98 / #102 Office Integration
 
@@ -18,14 +18,14 @@ Equella has the ability integrate with Microsoft Office products to enable a smo
 
 __Testing:__
 * TestLink: eqos-1937, eqos-1938
-* Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/guides/OfficeIntegrationGuide.md) is available and makes sense.
+* Ensure the [documentation](https://github.com/openequella/openequella.github.io/blob/master/guides/OfficeIntegrationGuide.md) is available and makes sense.
 * Ensure the download link has been removed from the Scrapbook > Upload files > 'blue pulldown' screen, and the new language makes sense.
 
 ### #101 / Documentation / example files moved to the master docs repo
 
 __Testing:__
 * TestLink eqos-1939, eqos-1940
-* Ensure the [documentation](https://github.com/equella/equella.github.io/blob/master/README.md) is linked in the main readme guides and makes sense.
+* Ensure the [documentation](https://github.com/openequella/openequella.github.io/blob/master/README.md) is linked in the main readme guides and makes sense.
 
 ### #100 HTML Editor Plugins
 
@@ -33,7 +33,7 @@ Another documentation shift to the main docs repo.
 
 __Testing:__
 * TestLink eqos-1941 + regression tests flagged
-* Ensure the HTML plugins below are documented [here](https://github.com/equella/equella.github.io/tree/master/example-scripts/HTML-editor-plugin).
+* Ensure the HTML plugins below are documented [here](https://github.com/openequella/openequella.github.io/tree/master/example-scripts/HTML-editor-plugin).
   * after the deadline
   * ice
   * wiris
@@ -132,11 +132,11 @@ Regression tests tagged in TestLink
 The Kaltura Java client API is not Apache-license-friendly.  It was moved into it's own repo, but can be integrated back into Equella per client by building the Equella and Kaltura source repos together into an upgrade binary.
 
 __Functional testing:__
-* Follow the tests here for Equella with and without Kaltura:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
+* Follow the tests here for Equella with and without Kaltura:  https://openequella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
   * Note:  You'll need to rebuild Equella with the Kaltura code included
 
 __Regression testing:__
-* Start with Equella 6.4-QA3 (which has Kaltura enabled), upgrade to Equella without Kaltura, and then upgrade to Equella with Kaltura, following the guide here:  https://equella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
+* Start with Equella 6.4-QA3 (which has Kaltura enabled), upgrade to Equella without Kaltura, and then upgrade to Equella with Kaltura, following the guide here:  https://openequella.github.io/tests/migration/64QA3-to-OS/TestEnablingKaltura.html
 
 ### #54 ( Make Oracle DB driver optional )
 Regression test flagged
@@ -186,7 +186,7 @@ TestLink eqos-5340
 
 ### Fixes arising from cherry pick
 
-https://github.com/equella/Equella/commit/64e85c2b4560580e517474c302b3d543ce79c34f
+https://github.com/openequella/openEQUELLA/commit/64e85c2b4560580e517474c302b3d543ce79c34f
 
 __Regression testing:__
 * Ensure Course and Activation REST endpoints are available and a simple request works on either.
@@ -194,7 +194,7 @@ __Regression testing:__
 
 ### Upgrade javax.servlet, flickr, datatools, sqlserver jdbc, kalturaclient
 
-https://github.com/equella/Equella/commit/2b18a3707c31a5c643803560570073db445e8d3c
+https://github.com/openequella/openEQUELLA/commit/2b18a3707c31a5c643803560570073db445e8d3c
 
 __Regression testing:__
 TestLink: Regression tests flagged
@@ -202,14 +202,14 @@ TestLink: Regression tests flagged
 
 ### Upgrade srw servlet
 
-https://github.com/equella/Equella/commit/e2ab5bd7a6574b77b3abddd91b2802574dd9ad71
+https://github.com/openequella/openEQUELLA/commit/e2ab5bd7a6574b77b3abddd91b2802574dd9ad71
 
 __Regression testing:__
 TestLink: Regression Tests flagged
-* There is a known issue with SRW - https://github.com/equella/Equella/issues/115
+* There is a known issue with SRW - https://github.com/openequella/openEQUELLA/issues/115
 
 ### Use latest jna
-https://github.com/equella/Equella/commit/be29f0e80e8db106216301aac21b7563e8ddbaa1
+https://github.com/openequella/openEQUELLA/commit/be29f0e80e8db106216301aac21b7563e8ddbaa1
 
 __Regression testing:__
 TestLink: Regression Tests flagged
@@ -217,7 +217,7 @@ TestLink: Regression Tests flagged
 
 ### Option to self-generate a keystore when building or use a previously
 
-https://github.com/equella/Equella/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888d7
+https://github.com/openequella/openEQUELLA/commit/8f1201bf561bfbf340dbedcfa2f1c88d3f0888d7
 
 __Regression testing:__
 * Ensure you can use the existing keystore to sign jars

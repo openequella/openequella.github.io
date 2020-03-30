@@ -1,4 +1,4 @@
-[Home](https://equella.github.io/)
+[Home](https://openequella.github.io/)
 
 # Open Source EQUELLA® Installation and Administration Guide
 
@@ -250,7 +250,7 @@ This procedure describes installing openEQUELLA using a graphical interface. The
 
 Note: It is possible to install without requiring a GUI.  While not widespread as a production installation method, it's consistently used in the docker logic; see https://groups.google.com/a/apereo.org/d/msg/equella-users/v-MMOuoa7mk/UDbmSkKRAwAJ for discussion if this is important to you.
 
-1. Obtain an openEQUELLA installer. You can either download a demo installer from https://github.com/equella/Equella/releases or build a production installer via sbt. Demo installers do not contain Kaltura integration or Oracle DB drivers, and use a self-signed Java signing certificate. The file format is equella-installer-x.y.zip (substitute x for the current major version, and y for the current minor version)
+1. Obtain an openEQUELLA installer. You can either download a demo installer from https://github.com/openequella/openEQUELLA/releases or build a production installer via sbt. Demo installers do not contain Kaltura integration or Oracle DB drivers, and use a self-signed Java signing certificate. The file format is equella-installer-x.y.zip (substitute x for the current major version, and y for the current minor version)
 2. Extract the equella-installer-x.x.zip file to a temporary directory.
 3. Navigate to the installer temporary directory and double-click on the enterprise-install file to start the installation. 
 4. Click Next to display the Java Development Kit selection screen.
@@ -346,10 +346,12 @@ Once the server has been started, the success of the installation can be checked
 
 ## openEQUELLA Server Administration Account
 
-The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL created from the server’s base URL. The exception to this is the 'first run' configuration page, for which no login is required.
+The openEQUELLA Server administration account is hidden from casual users and is displayed by entering a special URL. This URL is configured in `learningedge-config/mandatory-config.properties`
+as `admin.url` and defaults to '/'. It is recommended `admin.url` be set to a different hostname or IP address to the domains used by institutions accessed by users.
 
 ### To open the Server administration account page
-1. Open a browser and enter the openEQUELLA address of the hosting server with
+1. Open a browser and enter openEQUELLA's `admin.url` with
+
 ‘/institutions.do?method=admin’ appended to the URL. (e.g. ‘http://equella.myinstitution.edu/logon.do’ would become ‘http://equella.myinstitute.edu/institutions.do?method=admin’).
 2. The Server administration - Welcome page displays
 2. Enter Email addresses, SMTP, No reply mail, User, SMTP password, and Confirm SMTP password.
@@ -361,21 +363,23 @@ The openEQUELLA Server administration account is hidden from casual users and is
 ## Import a New Institution
 1. Select Import institution from the navigation menu to display the Import new institution page
 2. Click Browse to select the institution zip file to import (e.g. institution-....tgz)
-Note: If there is no current institution (for example on a test/demo server) download a vanilla reference institution from https://github.com/equella/equella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz
+Note: If there is no current institution (for example on a test/demo server) download a vanilla reference institution from https://github.com/openequella/openequella.github.io/blob/master/guides/6.4VanillaReferenceInstitution.tgz
 3. Click to start the import. The Import new institution page displays.
 The Import New Institution page allows for arbitrary base URLs and the renaming of the institution.
 4. To continue the import, if multiple databases have been configured, click Select Database and select the required database in the Target database field. Otherwise the system defaults to the database set up during installation.
 5. Enter an Institution name for the institution. The institution name must be unique for the openEQUELLA server.
-6. Enter an Institution URL for the institution.
-Server administrators are able to give institutions an arbitrary base URL. This URL may contain a base URL context. For example, the following base URLs would be valid for institutions on the same server:
-  * http://some.host.com/
-  * http://another.host.com/
-  * http://another.host.com/with/a/context/
-  * http://another.host.com/with/another/context/
-  * http://on.a.different.port:8080/
+6. Enter an Institution URL for the institution.  Server administrators are able to give institutions an arbitrary base URL but it is suggested that they contain a context (`/something/` after the address) and be fully qualified (including both host and domain name).
+For example, the following base URLs would be valid for institutions on the same server: 
+  * http://some.host.com/  	(See note below)
+  * http://another.host.com/ 	(See note below)
+  * http://another.host.com/with/a/context/ 
+  * http://another.host.com/with/another/context/ 
+  * http://on.a.different.port:8080/ 
 
-The arbitrary base URL can be entered in the Institution URL edit box. The Institution URL should be fully qualified. It is not possible to overwrite the other institution’s URL space, for example: ‘http://equella.myinstitution:4012/doco/qa2/’ will conflict with  ‘http://equella.myinstitution:4012/doco/’. This will be disallowed and will result in the following message:
-**‘URL must not 'overwrite' an existing institution's URL space, in this case http://equella.myinstitution:4012/doco/qa2/. This may cause this institution to work incorrectly’.**
+It is not possible to overwrite another institution’s URL space, for example: ‘http://equella.myinstitution:4012/doco/qa2/’ will conflict with  ‘http://equella.myinstitution:4012/doco/’. This will be disallowed and will result in the following message:
+**‘URL must not 'overwrite' an existing institution's URL space, in this case http://equella.myinstitution:4012/doco/qa2/. This may cause this institution to work incorrectly’.**. 
+
+Like institutions, the location specified by `admin.url` should be in its own context and not sit under an institution.
 
 7. Enter a unique Filestore folder name. This is optional; if a name is not entered a folder with a randomly generated name will be automatically generated for the institution in the path-to-equella\filestore\Institutions folder.
 8. Enter a new Admin password for the institution administrator. If left blank, the institution will inherit the password from the imported institution. (NOTE: This password is used to log in to the Institution using the TLE_ADMINISTRATOR login.)
@@ -555,16 +559,20 @@ An example directive is:
 ```
 
 ### Configure openEQUELLA with SSL
-1. Open mandatory-config.properties and ensure the https.port is enabled (uncommented).
-2. Ensure the Apache modules mod_proxy and mod_proxy_http have been installed.
-3. Open the Apache httpd.conf file and add a ‘ProxyPass’ directive to the VirtualHost element, and the additional SSL directives:
 
+1. Open **mandatory-config.properties** and ensure the https.port is enabled (uncommented).
+2. Open **optional-config.properties** and ensure the *userService.useXForwardedFor* is set to **true**.
+3. Ensure the Apache *modules mod_proxy, mod_proxy_http, ssl and headers* have been installed and enabled.
+4. Open the Apache **httpd.conf file** and add a **‘ProxyPass'** directive to the VirtualHost element, and the additional SSL directives:
+​
 ```apache
 <VirtualHost *:443>
   ServerName {external-server-name}
   ProxyPass / http://{equella-host}:{http-port}/ nocanon
   ProxyPreserveHost On
-
+​
+  RequestHeader set "X-Forwarded-Proto" "https"
+​
   ## SSL
   SSLEngine on
   SSLProxyEngine on
@@ -572,32 +580,36 @@ An example directive is:
   SSLCertificateKeyFile {path-to-cert.key}
 </VirtualHost>
 ```
-
+​
 Where:
-*‘external-server-name’ must be either the hostname of an institution, or the hostname in mandatory-config.properties.
+* ‘external-server-name’ must be either the hostname of an institution, or the hostname in mandatory-config.properties.
 * ‘equellahost’ is the host with the openEQUELLA installation (if it is on the same machine as the apache server, this would normally be localhost).
 * ‘https.port’ is the property specified in mandatory-config.properties (defaults to port 8443).
 * ‘nocanon’ ensures URLs are passed through to the host without processing.
-
+​
 An example directive is:
-
+​
 ```apache
 <VirtualHost *:443>
-  ServerName {external-server-name}
-  ProxyPass / http://{equella-host}:{http-port}/ nocanon
+  ServerName equella.example.com
+  ProxyPass / http://equella.example.com:8443/ nocanon
   ProxyPreserveHost On
-
+​
+  RequestHeader set "X-Forwarded-Proto" "https"
+​
   ## SSL
   SSLEngine on
   SSLProxyEngine on
-  SSLCertificateFile    {path-to-cert.pem}
-  SSLCertificateKeyFile {path-to-cert.key}
+  SSLCertificateFile    /etc/ssl/mycert.crt
+  SSLCertificateKeyFile /etc/ssl/mycert.key
 </VirtualHost>
 ```
-
+​
 5. Update the institution URL for https://... (e.g. https://equella.com).
 
+​
 NOTE: The above examples are for Apache HTTPD, but hardware SSL terminators (e.g. F5 load balancer) or other software terminators (e.g. Nginx) may be used.
+
 
 ## Customize the openEQUELLA Digital Repository
 
