@@ -362,46 +362,8 @@ Installation of the openEQUELLA server is now complete. Login to the institution
 
 Note: When using openEQUELLA on Windows and changing the equellaserver or equellaserver-config properties, you'll need to reinstall the service.
 
-### Available openEQUELLA Configs
+The list of possible openEQUELLA server configurations is [here](server-administration/ServerConfigurations.md).
 
-* Config: freetextIndex.defaultOperator = AND
-  * Release(s) Valid: 5.2? - 6.3+
-  * Location: optional.properties in /plugins/com.tle.core.freetext
-  * Comments: Indicates if default search terms should be performed with an implicit AND or OR. Defaults to AND
-
-* Config: can.access.internet = true
-  * Release(s) Valid: 6.1-QA2 - 6.3+
-  * Location: optional-config.properties
-  * Comments: Allows the URL checker to run. Defaults to true.
-
-* Config: com.tle.core.tasks.RemoveOldAuditLogs.daysBeforeRemoval = 120
-  * Release(s) Valid: At least 6.0-QA3,6.1-QA2, 6.2-GA+
-  * Location: optional-config.properties
-  * Comments: Set the number of days to keep audit logs in openEQUELLA before the scheduled task truncates them. Default is 120 days (~4 months).
-
-* Config: com.tle.core.tasks.RemoveDeletedItems.daysBeforeRemoval = 7
-  * Release(s) Valid: At least 6.4-QA3+
-  * Location: optional-config.properties
-  * Comments: Set the number of days to keep deleted items in openEQUELLA before the scheduled task purges them. Default is 7 days.
-
-### Internal openEQUELLA Configs
-
-These configurations should be used only with the utmost care.  
-
-* Config: tomcat.useBio = false
-  * Release(s) Valid: 6.4-GA +
-  * Location: optional-config
-  * Comments: Default is false (Tomcat will by default use the NIO connectors).
-
-* Config: tomcat.maxThreads = 100
-  * Release(s) 6.2-GA +
-  * Location: optional-config
-  * Comments: Default is 100.
-
-* Config: sessions.neverPersist = false
-  * Release(s) Valid: 6.3-GA +, 6.2-QA1 +
-  * Location: optional-config
-  * Comments: Default is 'false'. In 6.2-QA1 that setting this config to true will stop openEQUELLA from inserting data into tomcat_sessions.
 
 ### openEQUELLA URLs
 
