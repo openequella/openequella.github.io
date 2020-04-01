@@ -1,4 +1,9 @@
-# Documentation Guidelines
-There are several repositories that support the openEquella project besides the core 'openEquella' repository.  Documentation that is specific to that repository's build and setup process should be in the given repository's README.md (or linked from the README.md to a documentation file in the same repository).
+---
+hide_footer: true
+---
 
-Further documentation, how-to guides, FAQs, System Admin guides, etc should be in the equella.github.io repo and linked from the given repository's README.md
+# Documentation Guidelines
+
+There are several repositories that support the openEquella project besides the core 'openEquella' repository.  Documentation that is specific to that repository's build and setup process should be in the given repository's `README.md` (or linked from the `README.md` to a documentation file in the same repository).
+
+Further documentation, how-to guides, FAQs, System Admin guides, etc should be in the [openequella.github.io repo](https://github.com/openequella/openequella.github.io/) and linked from the given repository's `README.md`.

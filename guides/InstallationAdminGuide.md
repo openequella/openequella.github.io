@@ -1,44 +1,13 @@
-[Home](https://openequella.github.io/)
+---
+toc: true
+hide_hero: false
+---
 
-# Open Source EQUELLA® Installation and Administration Guide
+# openEQUELLA Installation and Administration Guide
 
-[Installation Prerequisities](#installation-prerequisites)
+## Introduction
 
-[Install a Database](#install-a-database)
-
-[Install the Oracle Java SDK](#install-the-oracle-java-sdk)
-
-[Install ImageMagick](#install-imagemagick)
-
-[Install Libav](#install-libav)
-
-[Install openEQUELLA](#install-openequella)
-
-[Stop the openEQUELLA server](#stop-the-openequella-server)
-
-[openEQUELLA Server Adminstration Account](#openequella-server-administration-account)
-
-[Import a New Institution ](#import-a-new-institution)
-
-[Manage Databases](#manage-databases)
-
-[openEQUELLA Configs](#openequella-configs)
-
-[Use a reverse proxy server](#use-a-reverse-proxy-server)
-
-[Customize the openEQUELLA Digital Repository](#customize-the-openequella-digital-repository)
-
-[Use Log Files](#use-log-files)
-
-[Thread Dump](#thread-dump)
-
-[Health Check](#health-check)
-
-[Uninstall openEQUELLA](#uninstall-openequella)
-
-
-
-openEQUELLA has a step-by-step wizard that guides administrators through the installation process. To run the installation wizard successfully, some preparatory work is required. openEQUELLA requires a server license, a graphical user interface, ImageMagick™ for images, Libav for video files, a database for storing information and Oracle Java JDK™ to provide the low level structure on which openEQUELLA runs.
+openEQUELLA has a step-by-step wizard that guides administrators through the installation process. To run the installation wizard successfully, some preparatory work is required. openEQUELLA requires a graphical user interface, ImageMagick™ for images, Libav for video files, a database for storing information and Oracle Java JDK™ to provide the low level structure on which openEQUELLA runs.
 
 ## Installation prerequisites
 openEQUELLA installation involves the following steps:

@@ -1,0 +1,20 @@
+- name: Quick Start
+  link: /gettingstarted/InstallingEquella.html
+- name: Documentation
+  dropdown:
+    - name: Guides
+      link: /guides/index.html
+    - name: Reporting Tutorials
+      link: /tutorials/reporting/index.html
+    - name: Integrations
+      link: /integrations/Integrations.html
+    - name: Server Administration
+      link: /server-administration/
+    - name: Historical Training Materials
+      link: /guides/trainingmaterials/
+    - name: Testing Guides
+      link: /release-testing-guides/
+- name: Downloads
+  link: /download.html
+- name: GitHub
+  link: https://github.com/openequella/
