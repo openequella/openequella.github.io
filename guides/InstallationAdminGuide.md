@@ -362,7 +362,7 @@ Installation of the openEQUELLA server is now complete. Login to the institution
 
 Note: When using openEQUELLA on Windows and changing the equellaserver or equellaserver-config properties, you'll need to reinstall the service.
 
-The list of possible openEQUELLA server configurations is [here](server-administration/ServerConfigurations.md).
+The list of possible openEQUELLA server configurations is [here](/server-administration/ServerConfigurations.md).
 
 
 ### openEQUELLA URLs
