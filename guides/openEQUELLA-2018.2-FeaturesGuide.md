@@ -1,5 +1,3 @@
-[Home](https://openequella.github.io/)
-
 # openEQUELLA 2018.2 Features Guide
 
 Table of Contents

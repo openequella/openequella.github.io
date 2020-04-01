@@ -1,4 +1,4 @@
-theme: jekyll-theme-slate
+remote_theme: chrisrhymes/bulma-clean-theme
 title: openEQUELLA
 description: A digital repository providing a single platform to house your teaching and learning, research, media, and library content.
 
@@ -9,3 +9,10 @@ plugins:
 twitter:
   username: equella
   card: summary
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      hide_hero: true

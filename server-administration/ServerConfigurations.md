@@ -1,17 +1,14 @@
-[Home](https://openequella.github.io/)
-
 # openEQUELLA Server Configurations
 
-* [Primary Mandatory Config](#primary-mandatory-config)
-
-* [Primary Optional Config](#primary-optional-config)
-
-* [Lucene Optional Config](#lucene-optional-config)
+- [Primary Mandatory Config](#primary-mandatory-config)
+- [Primary Optional Config](#primary-optional-config)
+- [Lucene Optional Config](#lucene-optional-config)
 
 
 Unless otherwise noted:
-* Configuration 'versions' with a `~` means 'at least', so, `~6.4-QA3` means the config is at least in versions 6.4-QA3, but could be in versions earlier than 6.4-QA3
-* Blank max versions means it's still an active configuration in `develop`
+
+- Configuration 'versions' with a `~` means 'at least', so, `~6.4-QA3` means the config is at least in versions 6.4-QA3, but could be in versions earlier than 6.4-QA3
+- Blank max versions means it's still an active configuration in `develop`
 
 ## Primary Mandatory Config
 **Location:**  `{oeq-install-dir}/learningedge-config/mandatory-config.properties`

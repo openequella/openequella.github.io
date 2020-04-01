@@ -2,7 +2,7 @@
 
 *_DRAFT_*
 
-Please refer to the [6.5-Stable Release Notes](https://github.com/openequella/openequella.github.io/blob/master/release-notes/ReleaseNotes-6.5-GA.md) for more details.
+Please refer to the [6.5-Stable Release Notes](../release-notes/ReleaseNotes-6.5-GA.md) for more details.
 
 ### #104 Scripting pack
 

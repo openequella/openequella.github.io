@@ -1,16 +1,8 @@
+---
+toc: true
+---
+
 # Zookeeper / openEquella Cluster Diagnostics
-
-Table of Contents
-
-* [Introduction](#introduction)
-* [openEquella Network Failure](#equella-network-failure) 
-* [Unique IDs for openEquella Nodes](#unique-ids-for-equella-nodes)
-* [openEquella Session Failover](#equella-session-failover)
-* [Failure to Connect to Zookeeper on Startup](#failure-to-connect-to-zookeeper-on-startup)
-* [Rolling Restart of openEquella](#rolling-restart-of-equella)
-* [Rolling Restart of Zookeeper](#rolling-restart-of-zookeeper)
-* [Running Zookeeper in a Degraded State](#running-zookeeper-in-a-degraded-state)
-* [Appendix: Healthy Cluster State](#appendix-healthy-cluster-state)
 
 ## Introduction
 **Zookeeper failover:**  Zookeeper requires a majority of its quorum nodes to be responsive in order to be available to openEquella. For the following scenarios, we’ll assume the Zookeeper quorum has 3 nodes.

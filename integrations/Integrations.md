@@ -1,5 +1,3 @@
-[Home](https://openequella.github.io/)
-
 # Integrations
 openEquella has a number of ways to integrate with 3rd party systems
 
