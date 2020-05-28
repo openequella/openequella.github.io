@@ -26,7 +26,7 @@ To ensure all existing attachment files can be detected as duplicates during con
 
    **Figure 1 Manual data fixes page - Attachment hashing (MD5)**
 
-2.  In the Attachment hashing (MD5) section, click **START HASH**. The job will run in the background and calculate any missing MD5 hashes
+2.  In the **Attachment hashing (MD5)** section, click **START HASH**. The job will run in the background and calculate any missing MD5 hashes.
 
 ## Configuring duplicate checking
 
