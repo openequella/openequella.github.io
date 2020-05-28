@@ -13,6 +13,21 @@ Table of Contents
 openEQUELLA 2019.2 sees the introduction of attachment duplicate checking, as
 well as enhancements to the existing edit box duplicate checking functionality.
 
+## Prerequisite task - create attachment MD5 hashes
+
+To ensure all existing attachment files can be detected as duplicates during contribution, a one-off manual data fix needs to be run to create any missing MD5 hashes.
+
+#### To run the Attachment hashing task
+
+1.  From **Settings, Diagnostics**, select **Manual data fixes**. The Manual data fixes page displays, as
+    shown in Figure 1
+
+   ![](manualdatafixes.png)
+
+   **Figure 1 Manual data fixes page - Attachment hashing (MD5)**
+
+2.  In the Attachment hashing (MD5) section, click **START HASH**. The job will run in the background and calculate any missing MD5 hashes
+
 ## Configuring duplicate checking
 
 Duplicate checking is configured from the attachment or edit box wizard control
@@ -25,7 +40,7 @@ existing items that have the same attachments. This includes *Files* and *URL
 Links* attachment types. For example, if duplicate checking is enabled for
 ‘Files’ in an attachment control in a contribution wizard, the contributor sees
 a **Duplicate warning** message if a file a contributor uploads is an exact
-match to a file that has been uploaded in one or more existing items in the same
+match to a file or URL that has been uploaded in one or more existing items in the same
 collection. A link is provided to those items so they can be viewed before
 proceeding.
 
@@ -133,6 +148,8 @@ the same collection.
 
 **NOTE: File duplicate checking works using MD5 hashes, so the same files with
 different names are still identified as duplicates if uploaded.**
+
+**NOTE: URL duplicate checking works on an exact name match, so entries must be identical (for example, https://www.edalex.com/openequella and https://www.edalex.com/openequella/ would not be detected as duplicates because of the / at the end of one.
 
 **NOTE: Attachment duplicate checking does not search for matches in items with
 the status of Deleted, Suspended, Archived or Rejected.**
