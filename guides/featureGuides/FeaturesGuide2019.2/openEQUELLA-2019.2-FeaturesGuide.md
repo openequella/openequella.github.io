@@ -146,10 +146,10 @@ A duplicate warning message displays as soon as a file has completed uploading
 or a URL Link is added if an exact match is identified in one or more items in
 the same collection.
 
-**NOTE: File duplicate checking works using MD5 hashes, so the same files with
-different names are still identified as duplicates if uploaded.**
+File duplicate checking works using MD5 hashes, so the same files with
+different names are still identified as duplicates if uploaded.
 
-**NOTE: URL duplicate checking works on an exact name match, so entries must be identical (for example, https://www.edalex.com/openequella and https://www.edalex.com/openequella/ would not be detected as duplicates because of the / at the end of one.
+URL duplicate checking works on an exact name match, so entries must be identical (for example, https://www.edalex.com/openequella and https://www.edalex.com/openequella/ would not be detected as duplicates because of the / at the end of one.
 
 **NOTE: Attachment duplicate checking does not search for matches in items with
 the status of Deleted, Suspended, Archived or Rejected.**
