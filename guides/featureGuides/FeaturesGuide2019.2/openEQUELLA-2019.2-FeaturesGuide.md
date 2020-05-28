@@ -143,7 +143,7 @@ Duplicate checking occurs during the contribution and editing of items.
 ### Attachment duplicate checking
 
 A duplicate warning message displays as soon as a file has completed uploading
-or a URL Link is added if an exact match is identified in one or more items in
+or a URL Link is added if an exact match is identified in one or more existing items in
 the same collection.
 
 File duplicate checking works using MD5 hashes, so the same files with
