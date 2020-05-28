@@ -22,7 +22,7 @@ To ensure all existing attachment files can be detected as duplicates during con
 1.  From **Settings, Diagnostics**, select **Manual data fixes**. The Manual data fixes page displays, as
     shown in Figure 1
 
-   ![](manualdatafixes.png)
+   ![](ManualDataFixes.png)
 
    **Figure 1 Manual data fixes page - Attachment hashing (MD5)**
 
