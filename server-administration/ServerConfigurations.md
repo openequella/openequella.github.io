@@ -31,7 +31,8 @@ Unless otherwise noted:
 | com.tle.core.tasks.RemoveOldAuditLogs.daysBeforeRemoval | 120 | ~6.0-QA3 | | Set the number of days to keep audit logs in openEQUELLA before the scheduled task truncates them. |
 | com.tle.core.tasks.RemoveDeletedItems.daysBeforeRemoval | 7 | ~6.4-QA3 | | Set the number of days to keep deleted items in openEQUELLA before the scheduled task purges them. | 
 | tomcat.internalProxies | N/A | 2019.1.3 / 2019.2.0 | | Sets the Tomcat RemoteIpValve > InternalProxies.  This is needed when uploading files in the modern UI in some environments | 
-| filestore.zipExtractCharset | UTF-8 | 2020.2.0 |  | When supplied, sets the encoding for inputted zip files. This can be useful if the default UTF-8 encoding causes uploaded zips not to be detected as content packages. |
+| filestore.zipExtractCharset | UTF-8 | 2020.2.0 | | When supplied, sets the encoding for inputted zip files. This can be useful if the default UTF-8 encoding causes uploaded zips not to be detected as content packages. |
+
 ## Lucene Optional Config
 **Location:** `{oeq-install-dir}/plugins/com.tle.core.freetext/optional.properties`
 
