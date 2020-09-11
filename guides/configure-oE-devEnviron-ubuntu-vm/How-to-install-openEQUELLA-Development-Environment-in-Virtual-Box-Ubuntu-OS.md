@@ -22,11 +22,11 @@
 
 ***
 	
-### <a name="ubuntu">Download Ubuntu Desktop Software</a>
+### Download Ubuntu Desktop Software
 
 1. Click here to download Ubuntu
 
-[[images/13 Download Ubuntu.PNG]]
+![download ubuntu](images/13 Download Ubuntu.PNG)
 
 2. Save the file to a location you will remember. You will need the install package later when you create the VM.
 
