@@ -81,106 +81,106 @@ Now you can download Oracle Virtual Box
 
 11. Select “Dynamically allocated”
 
-![Dynamic Allocation](images/09.7 Dynamic Allocation.PNG)
+![Dynamic Allocation](images/09.7%20Dynamic%20Allocation.PNG)
 
 12. Set disk size to at least 25 gigabytes.
 
-![Set disk size](images/10 Set disk size.PNG)
+![Set disk size](images/10%20Set%20disk%20size.PNG)
 
 13. The disk creation will take a few minutes to complete.
 
-![Creating Disk](images/11 Creating Disk.PNG)
+![Creating Disk](images/11%20Creating%20Disk.PNG)
 
 14. Now that the VM has been created, click on Start -> Normal Start.
 
-![Start vm](images/12 Start vm.PNG)
+![Start vm](images/12%20Start%20vm.PNG)
 
 15. Add a Ubuntu Image.
 
-![Add Ubuntu Image](images/14 Add Ubuntu Image.PNG)
+![Add Ubuntu Image](images/14%20Add%20Ubuntu%20Image.PNG)
 
 15. Browse to and select the Ubuntu install you downloaded earlier.
 
 
-![choose ubuntu](images/15 choose ubuntu.PNG)
+![choose ubuntu](images/15%20choose%20ubuntu.PNG)
 
 16. Install Ubuntu
 
-![install ubuntu](images/16 install ubuntu.PNG)
+![install ubuntu](images/16%20install%20ubuntu.PNG)
 
 17. Select the appropriate language.
 
-![Select English](images/17 Select English.PNG)
+![Select English](images/17%20Select%20English.PNG)
 
 18. Select Normal Installation
 
-![Normal Install](images/18 Normal Install.PNG)
+![Normal Install](images/18%20Normal%20Install.PNG)
 
 19. Select Erase disk and install Ubuntu. Note, this will not erase the hard disk of the host computer. It will simply use allocated disk space on the host computer.
 
-![Install Type](images/19 Install Type.PNG)
+![Install Type](images/19%20Install%20Type.PNG)
 
 20. Press Continue.
 
-![Continue install](images/20 Continue install.PNG)
+![Continue install](images/20%20Continue%20install.PNG)
 
 21. Select the appropriate time zone.
 
-![Time Zone](images/21 Time Zone.PNG)
+![Time Zone](images/21%20Time%20Zone.PNG)
 
 22. Set the name, computer name, username, and select an easy password you can remember. Require the password to login.
 
-![ who are you](images/22 who are you.PNG)
+![ who are you](images/22%20who%20are%20you.PNG)
 
 23. Let the installation run which will take a few minutes to complete.
 
-![installing](images/23 installing.PNG)
+![installing](images/23%20installing.PNG)
 
 24. When prompted select Restart Now
 
-![ Installation complete](images/24 Installation complete.PNG)
+![ Installation complete](images/24%20Installation%20complete.PNG)
 
 25. At this screen, just click enter.
 
-![Click enter](images/25 Click enter.PNG)
+![Click enter](images/25%20Click%20enter.PNG)
 
 26. Click on the account you created to login.
 
-![Login](images/26 Login.PNG)
+![Login](images/26%20Login.PNG)
 
 27. Enter the password you created.
 
-![Enter Pasword](images/27 Enter Pasword.PNG)
+![Enter Pasword](images/27%20Enter%20Pasword.PNG)
 
 27. The installation is now complete.
 
-![Installation complete](images/28 Installation complete.PNG)
+![Installation complete](images/28%20Installation%20complete.PNG)
 
 28. Modify the display by clicking on the applications waffle menu
 
-![Show applications](images/29 Show applications.png)
+![Show applications](images/29%20Show%20applications.png)
 
 29. Type displays in the applications search box. 
 
-![Type displays](images/30 Type displays.png)
+![Type displays](images/30%20Type%20displays.png)
 
 30. Change the display to 1280 x 800
 
-![Change display to 1280 x 800](images/32 Change display to 1280 x 800.png)
+![Change display to 1280 x 800](images/32%20Change%20display%20to%201280%20x%20800.png)
 
 ### Install sdkman to Run and Manage Java 8
 
 1. From the applications waffle menu type “terminal” in the search box. 
 
-![get terminal2](images/34 get terminal2.PNG)
+![get terminal2](images/34%20get%20terminal2.PNG)
 
 2. Right click on the terminal icon and select “Add to Favorites”
 
-![Add to favorites](images/35 Add to favorites.PNG)
+![Add to favorites](images/35%20Add%20to%20favorites.PNG)
 
 3. Click on the terminal icon.
 
-![Open terminal](images/36 Open terminal.PNG)
+![Open terminal](images/36%20Open%20terminal.PNG)
 
 4. Now that the terminal is launched, open up a browser window and [Click here to download sdkman](https://sdkman.io/install).
 
@@ -190,25 +190,25 @@ Now you can download Oracle Virtual Box
 
 `$ curl -s "https://get.sdkman.io" | bash`
 
-![get curl](images/37 get curl.PNG)
+![get curl](images/37%20get%20curl.PNG)
 
 7. You will get an error that curl is not install, but you can install it as prompted with the command. When prompted you will need to enter the administrator password you setup when you installed Ubuntu.
 
 `$ sudo apt install curl`
 
-![run curl install](images/38 run curl install.PNG)
+![run curl install](images/38%20run%20curl%20install.PNG)
 
 8. Curl will be installed. Now you can rerun the command below to install sdkman. When installed the output will look like the screen below.
 
 `$ curl -s "https://get.sdkman.io" | bash`
 
-![Install sdkman](images/39 Install sdkman.PNG)
+![Install sdkman](images/39%20Install%20sdkman.PNG)
 
 9. Now issue the command below.
 
 `$ source "$HOME/.sdkman/bin/sdkman-init.sh"`
 
-![configure sdkman](images/40 configure sdkman.PNG)
+![configure sdkman](images/40%20configure%20sdkman.PNG)
 
 10. Now run the command below. If it returns an sdkman version number, the installation and configuration were successful.
 
@@ -216,29 +216,29 @@ Now you can download Oracle Virtual Box
 
 11. If sdkman was correctly installed, the output will look like the screen below.
 
-![sdkman version](images/41 sdkman version.PNG)
+![sdkman version](images/41%20sdkman%20version.PNG)
 
 12. Now it’s time to install Java 8 using sdkman. In order to do this you will want to list the Java versions available in sdkman by typing the command below. From the output of the screen we want the Java 8 version from java.net. You will need to scroll up a little bit to see the correct Java version highlighted below.
 
 `$ sdk list java`
 
-![SDK list java](images/42 SDK list java.PNG)
+![SDK list java](images/42%20SDK%20list%20java.PNG)
 
 13. Now that we have the correct version, we type the command as follows.
 
 `$ sdk install java 8.0.265-open`
 
-![Install SDK java 8](images/44 Install SDK java 8.PNG)
+![Install SDK java 8](images/44%20Install%20SDK java 8.PNG)
 
 14. Below is the output after installing the jdk.
 
-![Install output](images/45 Install output.PNG)
+![Install output](images/45%20Install%20output.PNG)
 
 15. Now type the command below to verify installation
 
 `$ java -version`
 
-![Java version](images/46 Java version.PNG)
+![Java version](images/46%20Java%20version.PNG)
 
 ### Install Postgresql
 
@@ -267,7 +267,7 @@ Now you can download Oracle Virtual Box
 
 `$ sudo -u postgres psql -c "SELECT version();"`
 
-![check version](images/pg 01 check version.png)
+![check version](images/pg%2001%20check%20version.png)
 
 7. Set the password for the use postgres. To do this follow the commands below.
 
@@ -276,7 +276,7 @@ Now you can download Oracle Virtual Box
 
 The output will look like this.
 
-![change postgres password](images/postgresql/01 change postgres password.png)
+![change postgres password](images/postgresql/01%20change%20postgres%20password.png)
 
 8. Type “exit” to escape root.
 
@@ -325,43 +325,43 @@ The output will look like this.
 
 7. Login with the email address and password you previously created in step 9.
 
-![change postgres password](images/pgadmin 01-1 change postgres password.PNG)
+![change postgres password](images/pgadmin%2001-1%20change%20postgres%20password.PNG)
 
 8. Right click on Servers -> Create -> Server
 
-![server add](images/pgadmin 02 server add.PNG)
+![server add](images/pgadmin%2002%20server%20add.PNG)
 
 9. Add name to General tab.
 
-![Add Name](images/pgadmin 03 Add Name.PNG)
+![Add Name](images/pgadmin%2003%20Add%20Name.PNG)
 
 10. Fill out the fields in the Connection tab.
 
-![Add Connection](images/pgadmin 04 Add Connection.PNG)
+![Add Connection](images/pgadmin%2004%20Add%20Connection.PNG)
 
 11. Right click on the Login/Group Roles icon.
 
-![Add User](images/pgadmin 05 Add User.PNG)
+![Add User](images/pgadmin%2005%20Add%20User.PNG)
 
 12. On the General tab type “equellauser” for the Name field.
 
-![Add User Name gen](images/pgadmin 05 Add User Name gen.PNG)
+![Add User Name gen](images/pgadmin%2005%20Add%20User%20Name%20gen.PNG)
 
 13. On the Definition tab enter the password.
 
-![Add password](images/pgadmin 05 Add password.PNG)
+![Add password](images/pgadmin%2005%20Add%20password.PNG)
 
 14. On the Privileges tab make sure and enable login.
 
-![Add Role](images/pgadmin 05 Add Role.PNG)
+![Add Role](images/pgadmin%2005%20Add%20Role.PNG)
 
 15. Right click on the Databases icon => Create => Database.
 
-![Add Database](images/pgadmin 06 Add Database.PNG)
+![Add Database](images/pgadmin%2006%20Add%20Database.PNG)
 
 16. On the General tab type “equella” for Database field and select “equellauser” from the owner dropdown. Then click save.
 
-![Add Database name](images/pgadmin 07 Add Database name.PNG)
+![Add Database name](images/pgadmin%2007%20Add%20Database%20name.PNG)
 
 ### Install libtinfo5
 
@@ -389,7 +389,7 @@ Nodejs is necessary for the project
 
 `$ whereis convert`
 
-![install imagemagick](images/im 01 magick.png)
+![install imagemagick](images/im%2001%20magick.png)
 
 ### Install Git
 
@@ -437,33 +437,33 @@ output: `Generating public/private rsa key pair.`
 
 `$ cat id_rsa.pub`
 
-![copy key](images/github/02 copy key.png)
+![copy key](images/github/02%20copy%20key.png)
 
 2. Highlight the ssh key, right click and select “copy”.
 
-![copy key2](images/github/03 copy key2.png)
+![copy key2](images/github/03%20copy%20key2.png)
 
 3. Login to your GitHub account and go to the openEQUELLA GitHub repository. Then right click on the profile icon in the upper right hand corner of the screen and select “Settings”
 
-![settings](images/github/01 settings.png)
+![settings](images/github/01%20settings.png)
 
 4. Click on SSH and GPG keys.
 
-![copy key2](images/github/04 copy key2.png)
+![copy key2](images/github/04%20copy%20key2.png)
 
 5. Click on the “New SSH Key” button.
 
-![new key](images/github/06 new key.png)
+![new key](images/github/06%20new%20key.png)
 
 6. Give the ssh key a name, and past the key into the Key field. Then click the “Add SSH key” button.
 
-![paste key](images/github/07 paste key.png)
+![paste key](images/github/07%20paste%20key.png)
 
 ### Clone the openEQUELLA Repository
 
 1. Navigate to the home page of the openEQUELLA repository and click on the green “Code” button. Then copy the git command to “Clone with SSH”.
 
-![get code](images/clone/01 get code.png)
+![get code](images/clone/01%20get%20code.png)
 
 2. From the command line:
 a. Navigate to your home directory.
@@ -477,7 +477,7 @@ d. Clone the openEquella repository
 `$ git config --global user.email matjmiles@gmail.com`
 `$ git clone git@github.com:matjmiles/openEQUELLA.git `
 
-![clone2](images/clone/03 clone2.png)
+![clone2](images/clone/03%20clone2.png)
 
 ### Install SBT
 
@@ -493,7 +493,7 @@ Verify you are on currently on the develop branch.
 
 `$ git branch --show-current`
 
-![git ssh](images/clone/05 git ssh.png)
+![git ssh](images/clone/05%20git%20ssh.png)
 
 2. Associate the originating openEQUELLA repo with your fork.
 
@@ -503,7 +503,7 @@ Verify you are on currently on the develop branch.
 
 `$ git remote -v`
 
-![git ssh](images/clone/05 git ssh.png)
+![git ssh](images/clone/05%20git%20ssh.png)
 
 4. Make sure your develop branch is up to date.
 
@@ -514,7 +514,7 @@ Verify you are on currently on the develop branch.
 
 `git checkout -b enhancement1`
 
-![git new branch](images/clone/06 git new branch.png)
+![git new branch](images/clone/06%20git%20new branch.png)
 
 `git remote set-url origin git@github.com:matjmiles/openEQUELLA.git`
 
@@ -522,15 +522,15 @@ Verify you are on currently on the develop branch.
 
 1. An easy way to make sure your dependencies are updated is to open the openEquella Respository as an sbt project. Intellij will prompt you to update your dependencies. To do this launch Intellij and click on “Open or Import.”
 
-![import proj](images/intellij/01 import proj.png)
+![import proj](images/intellij/01%20import%20proj.png)
 
 2. Navigate to build.sbt and click ok.
 
-![sbt file](images/intellij/02 sbt file.png)
+![sbt file](images/intellij/02%20sbt%20file.png)
 
 3. Click “Open as Project”
 
-![open as project](images/intellij/03 open as project.png)
+![open as project](images/intellij/03%20open%20as%20project.png)
 
 4. If you have messages in the Event Log prompting you to update dependencies, go ahead and update them.
 
@@ -540,11 +540,11 @@ Verify you are on currently on the develop branch.
 
 NOTE:  You cannot see **.sbtopts** from the file manager. You must access the file from a terminal windows. Navigate to the openEquella directory and type the command below.
 
-![sbtopts](images/intellij/04 sbtopts.png)
+![sbtopts](images/intellij/04%20sbtopts.png)
 
 2. Change the value of –mem to 2048 then cntr + o to save changes to the file. Then cntr + x to close the file.
 
-![set mem](images/intellij/05 set mem.png)
+![set mem](images/intellij/05%20set%20mem.png)
 
 3. cd to the {Equella repo} directory then run the command below.
 
@@ -558,10 +558,10 @@ NOTE:  You cannot see **.sbtopts** from the file manager. You must access the fi
 5. (not in the sbt shell) access the Dev/learningedge-config folder using the file manager, and update **hibernate.properties** and **mandatory-config.properties** to match your environment (postgresql database and admin.url. You can edit the files by right clicking on each one and selected “Open With Text Editor.”
 
 **hibernate.properties**
-![hibernate config](images/intellij/07 hibernate config.png)
+![hibernate config](images/intellij/07%20hibernate%20config.png)
 
 **mandatory-config.properties**
-![mand config](images/intellij/08 mand config.png)
+![mand config](images/intellij/08%20mand%20config.png)
 
 6. Go back to a terminal window and navigate to the root directory of the repository and type the command below.
 
@@ -569,51 +569,51 @@ NOTE:  You cannot see **.sbtopts** from the file manager. You must access the fi
 
 7. The Equella server has successfully started when the output from the terminal looks like the screen below.
 
-![equella server start](images/intellij/09 equella server start.png)
+![equella server start](images/intellij/09 equella%20server%20start.png)
 
 8. Access the URL you set for the admin.url in mandatory-config.properties in the browser. In this case I have set the admin.url to http://localhost:8080. Complete the setup screen (arbitrary values for email / smtp servers are ok).
 
-![install](images/postgresql/eq 01 install.png)
+![install](images/postgresql/eq%2001%20install.png)
 
 9. You may have to wait a few minutes at this screen. If the screen does not refresh after 30 minutes, you may need to manually refresh.
 
-![install continued](images/postgresql/eq 02 install.png)
+![install continued](images/postgresql/eq%2002%20install.png)
 
 10. On this screen click on the “Initialize Database” button.
 
-![initialize](images/postgresql/eq 03 initialize.png)
+![initialize](images/postgresql/eq%2003%20initialize.png)
 
 11. You may have to wait 15 minutes or more on this screen. If after 30 minutes the screen does not change, shutdown the equellaserver process from the terminal and restart.
 
-![initialize2](images/postgresql/eq 04 initialize.png)
+![initialize2](images/postgresql/eq%2004%20initialize.png)
 
 12. Download the sample institution file to your local machine. [Click here to download Sample Institution File](https://raw.githubusercontent.com/wiki/matjmiles/openEQUELLA/vanilla-scrubbed-institution.tgz)
 
 13. Navigate to the location where you downloaded the institution file and import the file. Do not unzip or untar the file.
 
-![add institution](images/postgresql/add institution.png)
+![add institution](images/postgresql/add%20institution.png)
 
 14. Configure the institution. I have chosen port 8080 as to not conflict with port 80 which is the default port for http protocol. Add a password Click “Import new Institution.”
  
-![install](images/postgresql/eq 01 install.png)
+![install](images/postgresql/eq%2001%20install.png)
 
 15. Enter the password you created previously when configuring the institution.
 
-![authenticate](images/postgresql/eq 10 authenticate.png)
+![authenticate](images/postgresql/eq%2010%20authenticate.png)
 
 16. Confirm password
 
-![confirm password](images/postgresql/eq 10 confirm password.png)
+![confirm password](images/postgresql/eq%2010%20confirm password.png)
 
 17. Institution will be imported. When completed scroll to the bottom of the screen and press “Return to System Management.”
 
-![return](images/postgresql/eq 11 return.png)
+![return](images/postgresql/eq%2011%20return.png)
 
 18. Login
 
-![login](images/postgresql/eq 12 login.png)
+![login](images/postgresql/eq%2012%20login.png)
 
 19. Use the login TLE_ADMINISTRATOR with the institution password you created previously.
 
-![TLE](images/postgresql/eq 13 TLE.png)
+![TLE](images/postgresql/eq%2013%20TLE.png)
 
