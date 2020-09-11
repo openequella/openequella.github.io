@@ -26,7 +26,7 @@
 
 1. Click here to download Ubuntu
 
-![download ubuntu](images/13 Download Ubuntu.PNG)
+![download ubuntu](images/13%20Download%20Ubuntu.PNG)
 
 2. Save the file to a location you will remember. You will need the install package later when you create the VM.
 
@@ -37,11 +37,11 @@ Before installing Virtual Box on Windows 10 you must change turn of the Containe
 1. To do this click on the Windows Start Menu and type “Turn Windows” which should bring up the option you see below.
 2. Click on “Open.
 
-[[images/01 turn windows features off.jpg]]
+![turn off windows features](images/01%20turn%20windows%20features%20off.jpg)
 
 3. Now uncheck Containers and Hyper-V.
 
-[[images/02 turn off hyperV and containers.jpg]]
+![turn off hyperv and containers](images/02%20turn%20off%20hyperV%20and%20containers.jpg)
 
 Now you can download Oracle Virtual Box
 
@@ -49,59 +49,59 @@ Now you can download Oracle Virtual Box
 
 5. Download the version for Windows hosts
 
-[[images/03 Download Virtual Box for Windows.jpg]]
+![download virtual box](images/03%20Download%20Virtual%20Box%20for%20Windows.jpg)
 
 6. Once downloaded click on and run the installation file.
 
-[[images/04 Run VB install.PNG]]
+![run vb install](images/04%20Run%20VB%20install.PNG)
 
 7. Complete the VirtualBox installation and start VirtualBox.
 
-[[images/05 finish install.PNG]]
+![finish install](images/05%20finish%20install.PNG)
 
 8. Click the “New” button to create a new VM.
 
-[[images/06 Add New VM.PNG]]
+![add new vm](images/06%20Add%20New%20VM.PNG)
 
 9. Name the VM “ubu_equella”, type should be “Linux”, and version should be “Ubuntu (64-bit)”
 
-[[images/07 Name VM.PNG]]
+![name vm](images/07%20Name%20VM.PNG)
 
 10. Set the memory size to at least 4 gigabytes. **Depending on your computer, it may not be able to handle more than this and will have to decrease the size**. Optimally 6 gigabytes would be better. If your VM fails to create, try lowering the amount of memory you allocate.
 
-[[images/08 Set Memory.PNG]]
+![set memory](images/08%20Set%20Memory.PNG)
 
 11. Select “Create a virtual hard disk now”
 
-[[images/09 Create Virtual Hard Disk.PNG]]
+![Create Virtual Hard Disk](images/09%20Create%20Virtual%20Hard%20Disk.PNG)
 
 12. Select VDI (VirtualBox Disk Image)
 
-[[images/09.5 Create Virtual Hard Disk2.PNG]]
+![Create Virtual Hard Disk2](images/09.5%20Create%20Virtual%20Hard%20Disk2.PNG)
 
 11. Select “Dynamically allocated”
 
-[[images/09.7 Dynamic Allocation.PNG]]
+![Dynamic Allocation](images/09.7 Dynamic Allocation.PNG)
 
 12. Set disk size to at least 25 gigabytes.
 
-[[images/10 Set disk size.PNG]]
+![Set disk size](images/10 Set disk size.PNG)
 
 13. The disk creation will take a few minutes to complete.
 
-[[images/11 Creating Disk.PNG]]
+![Creating Disk](images/11 Creating Disk.PNG)
 
 14. Now that the VM has been created, click on Start -> Normal Start.
 
-[[images/12 Start vm.PNG]]
+![Start vm](images/12 Start vm.PNG)
 
 15. Add a Ubuntu Image.
 
-[[images/14 Add Ubuntu Image.PNG]]
+![Add Ubuntu Image](images/14 Add Ubuntu Image.PNG)
 
 15. Browse to and select the Ubuntu install you downloaded earlier.
 
-[[images/15 choose ubuntu.PNG]]
+[[images/15 choose ubuntu.PNG)
 
 16. Install Ubuntu
 
