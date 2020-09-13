@@ -13,7 +13,7 @@ XPath query on that.
 
 This tutorial will show how you can retrieve and filter on data contained in the Item 
 XML using XPath queries, in particular we will be querying the `/item/cars/car` path 
-from our [Reporting tutorial schema](ReportingTutorialSchema.md), filtering our results 
+from our [Reporting tutorial schema](../ReportingTutorialSchema.md), filtering our results 
 based on the number of car's entered.
 
 ### Using an XPATH query

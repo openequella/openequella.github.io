@@ -10,7 +10,7 @@
 
 [CSV FILE FORMAT](#csv-file-format)
 
-[RUNNING THE IMPORT](running-the-import)
+[RUNNING THE IMPORT](#running-the-import)
 
 [APPENDICES](#appendices)
 
@@ -274,7 +274,7 @@ For example, you might specify in this field an attachments base path of /Users/
 
 #### Specifying URLs to Import
 
-The previous example showed how to attach a file such as an image or a document. You can also upload references to other web pages. In the example in Figure 3 the fifth column is exactly that. The URLs must include the “http://” or “https://” text on the front of them (e.g. “http://www.python.org” not “www.python.org”).
+The previous example showed how to attach a file such as an image or a document. You can also upload references to other web pages. In the example in Figure 3 the fifth column is exactly that. The URLs must include the “http://” or “https://” text on the front of them (e.g. “<http://www.python.org>” not “www.python.org”).
 
 As with file attachments, the column heading for this column should be the metadata target of the openEQUELLA wizard Attachments control that manages the URLs. If metadata targets are not required (e.g. when using EQUELLA 4.1 or earlier) then either leave the column heading blank or prefix the column heading with # (e.g. “#urls”).
 To allow the EBI to identify which column has URLs in it specify a Column Data Type of “URLs” for the corresponding column in the columns grid.

@@ -2,7 +2,7 @@
 
 Table of Content
 
-[Attachment control restrictions](#attaching-control-restrictions)
+[Attachment control restrictions](#attachment-control-restrictions)
 
 [Attachment control display options](#attachment-control-display-options)
 
@@ -28,9 +28,9 @@ Table of Content
 
 [Term Selector](#term-selector)
 
-[View attachment privilege](view-attachment-privilege)
+[View attachment privilege](#view-attachment-privilege)
 
-[Z39.50 configuration enhancements](#z39.50-configuration-enhancements)
+[Z39.50 configuration enhancements](#z3950-configuration-enhancements)
 
 ## Features overview
 

@@ -3,7 +3,7 @@
 # Integration Interface Guide
 
 - [Integration overview](#integration-overview)
-- [Single sign-on authentication](#single-sign-on-authenication)
+- [Single sign-on authentication](#single-sign-on-authentication)
 - [Integration hook URL](#integration-hook-url)
 - [Integration hook actions](#integration-hook-actions)
 

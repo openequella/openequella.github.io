@@ -34,7 +34,7 @@ The client relies directly on the following third-party libraries:
 
 - Apache HTTP Client 4 (<http://hc.apache.org/httpcomponents-client-ga/>) to make HTTP requests and read responses from the openEQUELLA server.
 - Apache Commons FileUpload (<http://commons.apache.org/fileupload/>) for reading multipart requests
-- Jackson (<http://jackson.codehaus.org/>) to parse JSON responses and manipulate JSON objects.
+- Jackson (<https://github.com/FasterXML/jackson>) to parse JSON responses and manipulate JSON objects.
 - Freemarker (<http://freemarker.sourceforge.net/>) to render web pages
 
 ## Login

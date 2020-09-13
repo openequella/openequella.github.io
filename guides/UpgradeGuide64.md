@@ -6,11 +6,11 @@ Table of Contents
 
 [Upgrade preparation](#upgrade-preparation)
 
-[Test server](test-server)
+[Test server](#test-server)
 
 [Upgrade Java](#upgrade-java)
 
-[Install Libav](#instal-libav)
+[Install Libav](#install-libav)
 
 [Upgrade EQUELLA](#upgrade-equella)
 

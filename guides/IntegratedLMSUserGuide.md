@@ -570,5 +570,5 @@ To save selections
 
 ## LMS Specific User Guides
 
-[Blackboard Learn User Guide](blackboardlearnuserguide.md)
-[Brightspace User Guide](brightuserguide.md)
+[Blackboard Learn User Guide](BlackboardLearnUserGuide.md)
+[Brightspace User Guide](BrightspaceUserGuide.md)
