@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "check-links": "remark -q -f -u remark-validate-links -u remark-lint-no-dead-urls ."
+    "check-links": "remark -qf ."
   },
   "devDependencies": {
     "remark-cli": "^8.0.1",
