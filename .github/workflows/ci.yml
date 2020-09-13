@@ -1,0 +1,24 @@
+name: check links are valid
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    # every monday
+    - cron: '0 0 * * 1'
+jobs:
+  check-links-are-valid:
+    name: check links are valid
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 14
+      - name: Install
+        run: npm ci
+      - name: Check Links
+        run: npm run check-links
