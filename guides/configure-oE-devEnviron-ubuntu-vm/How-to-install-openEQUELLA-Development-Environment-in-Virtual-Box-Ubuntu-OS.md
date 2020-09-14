@@ -17,7 +17,7 @@
 * <a href="#install-sbt">Install SBT</a>	
 * <a href="#create-branch">Create a New Branch of openEQUELLA in Git</a>	
 * <a href="#import-sbt">Import sbt project into Intellij</a>	
-* <a href="#compile-run>Compile and Run openEQUELLA Server</a>
+* <a href="#compile-run">Compile and Run openEQUELLA Server</a>
 
 
 ***
