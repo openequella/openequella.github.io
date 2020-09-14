@@ -617,3 +617,5 @@ NOTE:  You cannot see **.sbtopts** from the file manager. You must access the fi
 
 ![TLE](images/postgresql/eq%2013%20TLE.png)
 
+20. You 
+
