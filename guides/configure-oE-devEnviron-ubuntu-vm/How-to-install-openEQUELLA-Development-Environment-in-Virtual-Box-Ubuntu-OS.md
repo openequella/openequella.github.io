@@ -522,15 +522,15 @@ Verify you are on currently on the develop branch.
 
 1. An easy way to make sure your dependencies are updated is to open the openEquella Respository as an sbt project. Intellij will prompt you to update your dependencies. To do this launch Intellij and click on “Open or Import.”
 
-![import proj](images/intellij/01%20import%20proj.png)
+![import proj](images/Intellij/01%29import%20proj.png)
 
 2. Navigate to build.sbt and click ok.
 
-![sbt file](images/intellij/02%20sbt%20file.png)
+![sbt file](images/Intellij/02%20sbt%20file.png)
 
 3. Click “Open as Project”
 
-![open as project](images/intellij/03%20open%20as%20project.png)
+![open as project](images/Intellij/03%20open%20as%20project.png)
 
 4. If you have messages in the Event Log prompting you to update dependencies, go ahead and update them.
 
@@ -540,11 +540,11 @@ Verify you are on currently on the develop branch.
 
 NOTE:  You cannot see **.sbtopts** from the file manager. You must access the file from a terminal windows. Navigate to the openEquella directory and type the command below.
 
-![sbtopts](images/intellij/04%20sbtopts.png)
+![sbtopts](images/Intellij/04%20sbtopts.png)
 
 2. Change the value of –mem to 2048 then cntr + o to save changes to the file. Then cntr + x to close the file.
 
-![set mem](images/intellij/05%20set%20mem.png)
+![set mem](images/Intellij/05%20set%20mem.png)
 
 3. cd to the {Equella repo} directory then run the command below.
 
@@ -558,10 +558,10 @@ NOTE:  You cannot see **.sbtopts** from the file manager. You must access the fi
 5. (not in the sbt shell) access the Dev/learningedge-config folder using the file manager, and update **hibernate.properties** and **mandatory-config.properties** to match your environment (postgresql database and admin.url. You can edit the files by right clicking on each one and selected “Open With Text Editor.”
 
 **hibernate.properties**
-![hibernate config](images/intellij/07%20hibernate%20config.png)
+![hibernate config](images/Intellij/07%20hibernate%20config.png)
 
 **mandatory-config.properties**
-![mand config](images/intellij/08%20mand%20config.png)
+![mand config](images/Intellij/08%20mand%20config.png)
 
 6. Go back to a terminal window and navigate to the root directory of the repository and type the command below.
 
@@ -569,7 +569,7 @@ NOTE:  You cannot see **.sbtopts** from the file manager. You must access the fi
 
 7. The Equella server has successfully started when the output from the terminal looks like the screen below.
 
-![equella server start](images/intellij/09 equella%20server%20start.png)
+![equella server start](images/Intellij/09 equella%20server%20start.png)
 
 8. Access the URL you set for the admin.url in mandatory-config.properties in the browser. In this case I have set the admin.url to http://localhost:8080. Complete the setup screen (arbitrary values for email / smtp servers are ok).
 
@@ -617,5 +617,7 @@ NOTE:  You cannot see **.sbtopts** from the file manager. You must access the fi
 
 ![TLE](images/postgresql/eq%2013%20TLE.png)
 
-20. You 
+20. You have now successfully created the openEQUELLA dev environment.
+
+![dev complete](images/postgresql/eq%2013%20welcome.png)
 
