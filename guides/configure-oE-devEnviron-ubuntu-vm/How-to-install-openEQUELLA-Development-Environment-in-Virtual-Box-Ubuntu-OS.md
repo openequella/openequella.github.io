@@ -1,37 +1,37 @@
 ### Contents
 
 * <a href="#download-ubuntu">Download Ubuntu Desktop Software</a>
-* Install Oracle Virtual Box VM Software
-* Install sdkman to Run and Manage Java 8	
-* Install Postgresql	
-* Install Pgadmin4	
-* Install libtinfo5	
-* Install npm	
-* Install Nodejs	
-* Install ImageMagick	
-* Install Git	
-* Install Intellij	
-* Generate an SSH key and Add it to the ssh-agent	
-* Add the ssh key to your openEQUELLA GitHub Repository	
-* Clone the openEQUELLA Repository	
-* Install SBT	
-* Create a New Branch of openEQUELLA in Git	
-* Import sbt project into Intellij	
-* Compile and Run openEQUELLA Server
+* <a href="#install-oracle">Install Oracle Virtual Box VM Software</a>
+* <a href="#install-sdkman">Install sdkman to Run and Manage Java 8</a>	
+* <a href="#install-postgres">Install Postgresql</a>	
+* <a href="#install-pgadmin">Install Pgadmin4</a>	
+* <a href="#install-libinfo5">Install libtinfo5</a>	
+* <a href="#install-nmp">Install npm</a>	
+* <a href="#install-node">Install Nodejs</a>	
+* <a href="#install-imagemagick">Install ImageMagick</a>	
+* <a href="#install-git">Install Git</a>	
+* <a href="#install-intellij">Install Intellij</a>	
+* <a href="#install-ssh">Generate an SSH key and Add it to the ssh-agent</a>	
+* <a href="#add-key">Add the ssh key to your openEQUELLA GitHub Repository</a>	
+* <a href="#clone-repo">Clone the openEQUELLA Repository</a>	
+* <a href="#install-sbt">Install SBT</a>	
+* <a href="#create-branch">Create a New Branch of openEQUELLA in Git</a>	
+* <a href="#import-sbt">Import sbt project into Intellij</a>	
+* <a href="#compile-run>Compile and Run openEQUELLA Server</a>
 
 
 ***
-	<a name="Content"></a>Content
-### <a name="ubunto"></a> Download Ubuntu Desktop Software
+
+### <a id="user-content-download-ubuntu" class="anchor" aria-hidden="true" href="#download-ubuntu"></a> Download Ubuntu Desktop Software
 
 
-<a id="user-content-download-ubuntu" class="anchor" aria-hidden="true" href="#download-ubuntu"></a>1. Click here to download Ubuntu
+1. Click here to download Ubuntu
 
 ![download ubuntu](images/13%20Download%20Ubuntu.PNG)
 
 2. Save the file to a location you will remember. You will need the install package later when you create the VM.
 
-### Install Oracle Virtual Box VM Software
+### <a id="user-content-install-oracle" class="anchor" aria-hidden="true" href="#install-oracle"></a> Install Oracle Virtual Box VM Software
 
 Before installing Virtual Box on Windows 10 you must change turn of the Containers and Hyper-V features.
 
@@ -169,7 +169,7 @@ Now you can download Oracle Virtual Box
 
 ![Change display to 1280 x 800](images/32%20Change%20display%20to%201280%20x%20800.png)
 
-### Install sdkman to Run and Manage Java 8
+### <a id="user-content-install-sdkman" class="anchor" aria-hidden="true" href="#install-sdkman"></a>Install sdkman to Run and Manage Java 8
 
 1. From the applications waffle menu type “terminal” in the search box. 
 
@@ -241,7 +241,7 @@ Now you can download Oracle Virtual Box
 
 ![Java version](images/46%20Java%20version.PNG)
 
-### Install Postgresql
+### <a id="user-content-install-postgress" class="anchor" aria-hidden="true" href="#install-postgres"></a>Install Postgresql
 
 1. You can install PostgreSQL in a variety of ways. I will provide a set of instructions that can be referenced here:[Click to view PostgreSQL instructions from computing for geeks.](https://computingforgeeks.com/install-postgresql-12-on-ubuntu/)
 
@@ -281,7 +281,7 @@ The output will look like this.
 
 8. Type “exit” to escape root.
 
-### Install Pgadmin4
+### <a id="user-content-install-pgadmin" class="anchor" aria-hidden="true" href="#install-pgadmin"></a>Install Pgadmin4
 
 1. Now install the PostgreSQL admin tool. All of the command will be provided below. The website from where these commands were taken is found here:  [Click here to view Pgadmin Install for Ubuntu 20.40.4](https://yallalabs.com/linux/how-to-install-pgadmin4-ubuntu-20-04/)
 
@@ -364,23 +364,23 @@ The output will look like this.
 
 ![Add Database name](images/pgadmin%2007%20Add%20Database%20name.PNG)
 
-### Install libtinfo5
+### <a id="user-content-install-libinfo5" class="anchor" aria-hidden="true" href="#install-libinfo5"></a>Install libtinfo5
 
 1. Libtinfo5 is sometimes missing from the build.
 
 `$ sudo apt install libtinfo5`
 
-### Install npm
+### <a id="user-content-install-npm" class="anchor" aria-hidden="true" href="#install-npm"></a>Install npm
 
 `$ sudo apt install npm`
 
-### Install Nodejs
+### <a id="user-content-install-node" class="anchor" aria-hidden="true" href="#install-node"></a>Install Nodejs
 
 Nodejs is necessary for the project
 
 `$ sudo apt install nodejs`
 
-### Install ImageMagick
+### <a id="user-content-install-imagemagick" class="anchor" aria-hidden="true" href="#install-imagemagick"></a>Install ImageMagick
 
 1. Open a terminal window and type the following.
 
@@ -392,18 +392,18 @@ Nodejs is necessary for the project
 
 ![install imagemagick](images/im%2001%20magick.png)
 
-### Install Git
+### <a id="user-content-install-git" class="anchor" aria-hidden="true" href="#install-git"></a>Install Git
 
 Run the command. (Some of these instructions were copied directly from GitHub Docs.)
 [Click here for Github docs](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 `$ sudo apt-get install git`
 
-### Install Intellij
+### <a id="user-content-install-intellij" class="anchor" aria-hidden="true" href="#install-intellij"></a>Install Intellij
 
 `$ sudo snap install intellij-idea-educational --classic`
 
-### Generate an SSH key and Add it to the ssh-agent
+### <a id="user-content-install-ssh" class="anchor" aria-hidden="true" href="#install-ssh"></a>Generate an SSH key and Add it to the ssh-agent
 
 1. Ask for access to the BYUI openEquella repository in GitHub or fork your own branch.
 
@@ -432,7 +432,7 @@ output: `Generating public/private rsa key pair.`
 `$ ssh-add ~/.ssh/id_rsa`
 `> Enter passphrase for /home/developer/.ssh/id_rsa`
 
-### Add the ssh key to your openEQUELLA GitHub Repository
+### <a id="user-content-add-key" class="anchor" aria-hidden="true" href="#add-key"></a>Add the ssh key to your openEQUELLA GitHub Repository
 
 1. Navigate to your .ssh directory and type the following:
 
@@ -460,7 +460,7 @@ output: `Generating public/private rsa key pair.`
 
 ![paste key](images/github/07%20paste%20key.png)
 
-### Clone the openEQUELLA Repository
+### <a id="user-content-clone-repo" class="anchor" aria-hidden="true" href="#clone-repo"></a>Clone the openEQUELLA Repository
 
 1. Navigate to the home page of the openEQUELLA repository and click on the green “Code” button. Then copy the git command to “Clone with SSH”.
 
@@ -480,13 +480,13 @@ d. Clone the openEquella repository
 
 ![clone2](images/clone/03%20clone2.png)
 
-### Install SBT
+### <a id="user-content-install-sbt" class="anchor" aria-hidden="true" href="#install-sbt"></a>Install SBT
 
 SBT is used to make the project. Because we installed sdkman to install Java, we can also use sdkman to install SBT, follow the commands below.
 
 `$ sdkman install sbt`
 
-###Create a New Branch of openEQUELLA in Git
+### <a id="user-content-create-branch" class="anchor" aria-hidden="true" href="#create-branch"></a>Create a New Branch of openEQUELLA in Git
 
 1. It’s best not to make changes directly to the develop branch. So create a new branch in Git.
 
@@ -519,7 +519,7 @@ Verify you are on currently on the develop branch.
 
 `git remote set-url origin git@github.com:matjmiles/openEQUELLA.git`
 
-### Import sbt project into Intellij
+### <a id="user-content-import-sbt" class="anchor" aria-hidden="true" href="#import-sbt"></a>Import sbt project into Intellij
 
 1. An easy way to make sure your dependencies are updated is to open the openEquella Respository as an sbt project. Intellij will prompt you to update your dependencies. To do this launch Intellij and click on “Open or Import.”
 
@@ -535,7 +535,7 @@ Verify you are on currently on the develop branch.
 
 4. If you have messages in the Event Log prompting you to update dependencies, go ahead and update them.
 
-### Compile and Run openEQUELLA Server
+### <a id="user-content-compile-run" class="anchor" aria-hidden="true" href="#compile-run"></a>Compile and Run openEQUELLA Server
 
 1. In order to compile you will probably. If you don't have enough RAM on your host OS, please bring your max heap config down to 3G ( 3072 via the -mem in **.sbtopts** ). 
 
