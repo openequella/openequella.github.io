@@ -1,6 +1,6 @@
 ### Contents
-<a href="#Content">Content</a>
-* [Download Ubuntu Desktop Software](#ubuntu)
+
+* <a href="#download-ubuntu">Download Ubuntu Desktop Software</a>
 * Install Oracle Virtual Box VM Software
 * Install sdkman to Run and Manage Java 8	
 * Install Postgresql	
@@ -25,7 +25,7 @@
 ### <a name="ubunto"></a> Download Ubuntu Desktop Software
 
 
-1. Click here to download Ubuntu
+<a id="user-content-download-ubuntu" class="anchor" aria-hidden="true" href="#download-ubuntu"></a>1. Click here to download Ubuntu
 
 ![download ubuntu](images/13%20Download%20Ubuntu.PNG)
 
