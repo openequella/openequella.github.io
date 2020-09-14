@@ -515,15 +515,16 @@ Verify you are on currently on the develop branch.
 
 `git checkout -b enhancement1`
 
-![git new branch](images/clone/06%20git%20new branch.png)
+![git new branch](images/clone/06%20git%20new%20branch.png)
 
-`git remote set-url origin git@github.com:matjmiles/openEQUELLA.git`
+`git remote set-url origin'
+ 'git@github.com:matjmiles/openEQUELLA.git`
 
 ### <a id="user-content-import-sbt" class="anchor" aria-hidden="true" href="#import-sbt"></a>Import sbt project into Intellij
 
 1. An easy way to make sure your dependencies are updated is to open the openEquella Respository as an sbt project. Intellij will prompt you to update your dependencies. To do this launch Intellij and click on “Open or Import.”
 
-![import proj](images/Intellij/01%29import%20proj.png)
+![import proj](images/Intellij/01%20import%20proj.png)
 
 2. Navigate to build.sbt and click ok.
 
