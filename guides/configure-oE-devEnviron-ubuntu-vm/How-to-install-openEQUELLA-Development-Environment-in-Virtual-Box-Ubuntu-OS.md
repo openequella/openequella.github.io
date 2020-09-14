@@ -1,6 +1,6 @@
 ### Contents
 
-* [Download Ubuntu Desktop Software](#markdown-header-download-ubuntu-desktop-software)
+* [Download Ubuntu Desktop Software](#ubuntu)
 * Install Oracle Virtual Box VM Software
 * Install sdkman to Run and Manage Java 8	
 * Install Postgresql	
@@ -22,7 +22,8 @@
 
 ***
 	
-### Download Ubuntu Desktop Software
+### <a name="ubunto"></a> Download Ubuntu Desktop Software
+
 
 1. Click here to download Ubuntu
 
