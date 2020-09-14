@@ -6,7 +6,7 @@
 * <a href="#install-postgres">Install Postgresql</a>	
 * <a href="#install-pgadmin">Install Pgadmin4</a>	
 * <a href="#install-libinfo5">Install libtinfo5</a>	
-* <a href="#install-nmp">Install npm</a>	
+* <a href="#install-npm">Install npm</a>	
 * <a href="#install-node">Install Nodejs</a>	
 * <a href="#install-imagemagick">Install ImageMagick</a>	
 * <a href="#install-git">Install Git</a>	
@@ -241,7 +241,7 @@ Now you can download Oracle Virtual Box
 
 ![Java version](images/46%20Java%20version.PNG)
 
-### <a id="user-content-install-postgress" class="anchor" aria-hidden="true" href="#install-postgres"></a>Install Postgresql
+### <a id="user-content-install-postgres" class="anchor" aria-hidden="true" href="#install-postgres"></a>Install Postgresql
 
 1. You can install PostgreSQL in a variety of ways. I will provide a set of instructions that can be referenced here:[Click to view PostgreSQL instructions from computing for geeks.](https://computingforgeeks.com/install-postgresql-12-on-ubuntu/)
 
