@@ -569,7 +569,7 @@ NOTE:  You cannot see **.sbtopts** from the file manager. You must access the fi
 
 7. The Equella server has successfully started when the output from the terminal looks like the screen below.
 
-![equella server start](images/Intellij/09 equella%20server%20start.png)
+![equella server start](images/Intellij/09%20equella%20server%20start.png)
 
 8. Access the URL you set for the admin.url in mandatory-config.properties in the browser. In this case I have set the admin.url to http://localhost:8080. Complete the setup screen (arbitrary values for email / smtp servers are ok).
 
