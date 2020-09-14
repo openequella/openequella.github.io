@@ -167,7 +167,7 @@ Now you can download Oracle Virtual Box
 
 30. Change the display to 1280 x 800
 
-![Change display to 1280 x 800](images/32%20Change%20display%20to%201280%20x%20800.png)
+![Change display to 1280 x 800](images/32%20Change%20displayto%201280%20x%20800.png)
 
 ### <a id="user-content-install-sdkman" class="anchor" aria-hidden="true" href="#install-sdkman"></a>Install sdkman to Run and Manage Java 8
 
@@ -326,7 +326,7 @@ The output will look like this.
 
 7. Login with the email address and password you previously created in step 9.
 
-![change postgres password](images/pgadmin%2001-1%20change%20postgres%20password.PNG)
+![change postgres password](images/pgadmin%2001-1%20login.PNG)
 
 8. Right click on Servers -> Create -> Server
 
