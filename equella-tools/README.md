@@ -1,6 +1,6 @@
 # openEquella Tools
 
-The openEquella Tools are stored [here](https://github.com/openequella/Equella-Tools/) in github.
+The openEquella Tools are stored [here](https://github.com/openequella/openEquella-Tools) in github.
 
 * [Performance Benchmarks / General Guide](https://github.com/openequella/openequella.github.io/blob/master/equella-tools/performance-benchmarks-general.md)
 * [Performance Benchmarks / REST Item Life Cycle](https://github.com/openequella/openequella.github.io/blob/master/equella-tools/performance-benchmarks-rest-item-lifecycle.md)

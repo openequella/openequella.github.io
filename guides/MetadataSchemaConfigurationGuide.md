@@ -4,7 +4,7 @@ Table of Contents
 * [Metadata schema overview](#metadata-schema-overview)
 * [Metadata schemas](#metadata-schemas)
 * [Schema Editor](#schema-editor) 
-* [Associate a schema to a collection](#associaate-a-schema-to-a-collection)
+* [Associate a schema to a collection](#associate-a-schema-to-a-collection)
 * [Close the Administration Console](#close-the-administration-console)
 * [Using metadata schemas](#using-metadata-schemas)
 * [XSLT template data](#xslt-template-data)

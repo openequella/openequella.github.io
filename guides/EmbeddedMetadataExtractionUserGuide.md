@@ -2,9 +2,9 @@
 
 - [Overview](#overview)
 - [Install ExifTool](#install-exiftool)
-- [Create metadata schema](#create-metadata-schema)
+- [Create metadata schema](#create-metadata-schema-nodes)
 - [Add a Save script](#add-a-save-script)
-- [View custom display data](#view-customer-display-data)
+- [View custom display data](#view-custom-display-data)
 
 ## Overview
 

@@ -4,7 +4,7 @@ Table of Contents
 
 [Push to LMS overview](#push-to-lms-overview)
 
-[Prerequisites](#prerequisities)
+[Prerequisites](#prerequisites)
 
 [Push to LMS configuration procedure](#push-to-lms-configuration-procedure)
 

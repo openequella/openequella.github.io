@@ -18,7 +18,7 @@ Table of Contents
 1. Select the Advanced Searches option from the Administration Console.
 2. Select the Add link. The Advanced Search Editor—Details tab displays. 
 
-### Details page
+### Details tab
 The Details tab is where the metaschema and related collection to be associated with the advanced search are selected.
 
 The configurable Details page elements are:

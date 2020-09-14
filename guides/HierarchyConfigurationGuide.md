@@ -8,7 +8,7 @@ Table of Contents
 
 [Hierarchy Editor](#hierarchy-editor)
 
-[Accessing hierarchical browsing](#accessing-hierarchial-browsing)
+[Accessing hierarchical browsing](#accessing-hierarchical-browsing)
 
 [Displaying subtopics and results](#displaying-subtopics-and-results)
 

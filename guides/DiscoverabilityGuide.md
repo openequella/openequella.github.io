@@ -94,7 +94,7 @@ b. openEQUELLA provides a URL located at http://your.equella.com/harvest.do whic
 c. After a short wait the Fetch Status will change to Success, and there will be a Submit to index link. Click this then select the ‘URL and all linked pages’ option to submit the URLs. Google will now use the harvest.do page as a starting point, and from there it will be able to find all of the available content in your openEQUELLA repository.
 
 - The search rankings for your site are influenced by how many other websites are promoting or linking to it (called backlinks). Increasing these will ensure more people know about your site and can help increase search rankings. Blog postings, social media links, and other well-renowned sites pointing to your site will help direct people to your site and improve your search rankings.
-- You can submit your site to the Open Directory Project (<http://www.dmoz.org/>), which is the largest free directory of sites on the internet. It is run by volunteers and provides people with an excellent way of discovering sites that they are interested in.
+- You can submit your site to the Open Directory Project (<https://www.dmoz-odp.org/>), which is the largest free directory of sites on the internet. It is run by volunteers and provides people with an excellent way of discovering sites that they are interested in.
 
 These are just a few basic guidelines to help you start getting your openEQUELLA instance discoverable on the web, but are by no means an exhaustive or guaranteed method of driving traffic to your site. The references listed below contain further information and suggestions for optimizing your site for search engines and increasing discoverability.
 

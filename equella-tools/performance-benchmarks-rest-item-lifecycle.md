@@ -1,5 +1,5 @@
 # Performance Benchmarks > REST Item Lifecycle
-Github repo [Rest Item Lifecycle](https://github.com/openequella/Equella-Tools/tree/master/performance-benchmarks/scripts/rest-item-life-cycle)
+Github repo [Rest Item Lifecycle](https://github.com/openequella/openEquella-Tools/tree/master/performance-benchmarks/scripts/rest-item-life-cycle)
 
 This script is part of a suite of performance tests that can be used as a basis for developing a benchmark suite for Equella.  For more general information on this suite and how to run them in JMeter, please review the [general guide](https://github.com/openequella/openequella.github.io/blob/master/equella-tools/performance-benchmarks-general.md).
 

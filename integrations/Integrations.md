@@ -51,15 +51,15 @@ Download the openEquella Building Block for Blackboard Learn 9.1 SP14 and higher
 ## Moodle Module
 Moodle is a course management system (CMS) - a free, Open Source software package designed using sound pedagogical principles, to help educators create effective online learning communities. openEquella provides extensions to Moodle that allows users to search for content in openEquella and easily link it back to a course.
 #### Moodle 2.7 and above
-* [openEquella Module](https://github.com/openequella/moodle-mod_equella) to add openEquella content as resources or activities - Moodle 2.7 and higher. 
+* [openEquella Module](https://github.com/openequella/moodle-mod_openEQUELLA) to add openEquella content as resources or activities - Moodle 2.7 and higher. 
 
-* [Search Block](https://github.com/openequella/moodle-block_equella_search) for users to search openEquella directly. Requires the Module to also be installed.
+* [Search Block](https://github.com/openequella/moodle-block_openEQUELLA_search) for users to search openEquella directly. Requires the Module to also be installed.
 
-* [Task Block](https://github.com/openequella/moodle-block_equella_tasks) for users to view their openEquella tasks and notifications. Requires the Module to also be installed.
+* [Task Block](https://github.com/openequella/moodle-block_openEQUELLA_tasks) for users to view their openEquella tasks and notifications. Requires the Module to also be installed.
 
-* [List Block](https://github.com/openequella/moodle-block_equella_links) for users to create links into openEquella. Requires the Module to also be installed.
+* [List Block](https://github.com/openequella/moodle-block_openEQUELLA_links) for users to create links into openEquella. Requires the Module to also be installed.
 
-* [Diagnostics Block](https://github.com/openequella/moodle-mod_equella-tools) for users to run extra openEquella diagnostics. Requires the Module to also be installed.
+* [Diagnostics Block](https://github.com/openequella/moodle-mod_openEQUELLA-tools) for users to run extra openEquella diagnostics. Requires the Module to also be installed.
 
 # Custom Tools
 

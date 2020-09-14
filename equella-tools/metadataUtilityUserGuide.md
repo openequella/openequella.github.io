@@ -6,9 +6,9 @@ Table of Contents
 
 [Installing and Uninstalling EMU](#installing-and-uninstalling-emu)
 
-[Connecting to openEQUELLA](#connecting-to-equella)
+[Connecting to openEQUELLA](#connecting-to-openequella)
 
-[Searching openEQUELLA](#searching-equella)
+[Searching openEQUELLA](#searching-openequella)
 
 [Bulk Modifying Item Metadata](#bulk-modifying-item-metadata)
 

@@ -9,7 +9,7 @@ While not a recommendation for production use, the following are tips for sandbo
 
 [Integrations](#integrations)
 
-[Authentication](#authenication)
+[Authentication](#authentication)
 
 [Attachments](#attachments)
 

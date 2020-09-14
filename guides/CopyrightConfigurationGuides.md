@@ -14,11 +14,11 @@ Table of Contents
 
 [Courses](#courses)
 
-[Copyright privileges](#copyright-priviledges)
+[Copyright privileges](#copyright-privileges)
 
 [Manage activations](#manage-activations)
 
-[Reporting](reporting)
+[Reporting](#reporting)
 
 [Remote repositories](#remote-repositories)
 

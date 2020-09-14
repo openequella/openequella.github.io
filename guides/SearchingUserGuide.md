@@ -29,7 +29,7 @@ Table of Contents
 
 [My tasks](#my-tasks)
 
-[Notifications](#notifiactions)
+[Notifications](#notifications)
 
 [Manage external resources](#manage-external-resources)
 
