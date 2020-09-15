@@ -475,8 +475,8 @@ d. Clone the openEquella repository
 `$ cd /home/developer`</br>
 `$ mkdir git_proj`</br>
 `$ git config --global user.name “mjm”`</br>
-`$ git config --global user.email matjmiles@gmail.com`</br>
-`$ git clone git@github.com:matjmiles/openEQUELLA.git `
+`$ git config --global user.email someones@gmail.com`</br>
+`$ git clone git@github.com:someone/openEQUELLA.git `
 
 ![clone2](images/clone/03%20clone2.png)
 
@@ -518,7 +518,7 @@ Verify you are on currently on the develop branch.
 ![git new branch](images/clone/06%20git%20new%20branch.png)
 
 `git remote set-url origin'</br>
- 'git@github.com:matjmiles/openEQUELLA.git`
+ 'git@github.com:someone/openEQUELLA.git`
 
 ### <a id="user-content-import-sbt" class="anchor" aria-hidden="true" href="#import-sbt"></a>Import sbt project into Intellij
 
@@ -538,13 +538,14 @@ Verify you are on currently on the develop branch.
 
 ### <a id="user-content-compile-run" class="anchor" aria-hidden="true" href="#compile-run"></a>Compile and Run openEQUELLA Server
 
-1. In order to compile you will probably. If you don't have enough RAM on your host OS, please bring your max heap config down to 3G ( 3072 via the -mem in **.sbtopts** ). 
+1. f you don't have enough RAM on your host OS, please bring your max heap config down to 3072 or even lower to 2048 if sbt fails ( via the -mem in **.sbtopts** ). 
 
-NOTE:  You cannot see **.sbtopts** from the file manager. You must access the file from a terminal windows. Navigate to the openEquella directory and type the command below.
+NOTE:  If you cannot cannot see **.sbtopts** from the file manager you can type cntr +H which will reveal hidden files. The other options is to
+ access the file from a terminal windows. Navigate to the openEquella directory and type the command below.
 
 ![sbtopts](images/Intellij/04%20sbtopts.png)
 
-2. Change the value of –mem to 2048 then cntr + o to save changes to the file. Then cntr + x to close the file.
+2. Either way change the value of –mem to 3072 or 2048 then cntr + o to save changes to the file. Then cntr + x to close the file.
 
 ![set mem](images/Intellij/05%20set%20mem.png)
 
