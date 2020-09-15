@@ -261,8 +261,7 @@ Now you can download Oracle Virtual Box
 
 5. Install postgresql
 
-`$ sudo apt update`
-<div style="page-break-after: always"></div>
+`$ sudo apt update`</br>
 `$ sudo apt -y install postgresql-12 postgresql-client-12 postgresql-contrib-12`
 
 6. Check to see that you can connect to postgresql using psql.
