@@ -247,9 +247,9 @@ Now you can download Oracle Virtual Box
 
 2. Run the following command below from a command prompt. You will be prompted for your administrator password.
 
-`$ sudo apt update`
-`$ sudo apt -y install vim bash-completion wget`
-`$ sudo apt -y upgrade`
+`$ sudo apt update`</br>
+`$ sudo apt -y install vim bash-completion wget`</br>
+`$ sudo apt -y upgrade`</br>
 
 3. You must reboot whenever you upgrade.
 
@@ -272,7 +272,7 @@ Now you can download Oracle Virtual Box
 
 7. Set the password for the use postgres. To do this follow the commands below.
 
-`$ sudo -u postgres psql postgres`
+`$ sudo -u postgres psql postgres`</br>
 `# \password postgres`
 
 The output will look like this.
@@ -429,7 +429,7 @@ output: `Generating public/private rsa key pair.`
 
 6. Now add the SSH private key to the ssh-agent. Use the same name that you specified in step four (id_rsa)
 
-`$ ssh-add ~/.ssh/id_rsa`
+`$ ssh-add ~/.ssh/id_rsa`</br>
 `> Enter passphrase for /home/developer/.ssh/id_rsa`
 
 ### <a id="user-content-add-key" class="anchor" aria-hidden="true" href="#add-key"></a>Add the ssh key to your openEQUELLA GitHub Repository
@@ -472,10 +472,10 @@ b. Create a directory where you will store your git repositories
 c. Configure your git name and email
 d. Clone the openEquella repository
 
-`$ cd /home/developer`
-`$ mkdir git_proj`
-`$ git config --global user.name “mjm”`
-`$ git config --global user.email matjmiles@gmail.com`
+`$ cd /home/developer`</br>
+`$ mkdir git_proj`</br>
+`$ git config --global user.name “mjm”`</br>
+`$ git config --global user.email matjmiles@gmail.com`</br>
 `$ git clone git@github.com:matjmiles/openEQUELLA.git `
 
 ![clone2](images/clone/03%20clone2.png)
@@ -508,7 +508,7 @@ Verify you are on currently on the develop branch.
 
 4. Make sure your develop branch is up to date.
 
-`$ git pull`
+`$ git pull`</br>
 `$ git push`
 
 5. Create the new branch and switch to the new branch in a single command.
@@ -517,7 +517,7 @@ Verify you are on currently on the develop branch.
 
 ![git new branch](images/clone/06%20git%20new%20branch.png)
 
-`git remote set-url origin'
+`git remote set-url origin'</br>
  'git@github.com:matjmiles/openEQUELLA.git`
 
 ### <a id="user-content-import-sbt" class="anchor" aria-hidden="true" href="#import-sbt"></a>Import sbt project into Intellij
@@ -554,7 +554,7 @@ NOTE:  You cannot see **.sbtopts** from the file manager. You must access the fi
 
 4. Run the commands in the following order. 
 
-`Sbt:Equella> compile`
+`Sbt:Equella> compile`</br>
 `Sbt:Equella> prepareDevConfig`
 
 5. (not in the sbt shell) access the Dev/learningedge-config folder using the file manager, and update **hibernate.properties** and **mandatory-config.properties** to match your environment (postgresql database and admin.url. You can edit the files by right clicking on each one and selected “Open With Text Editor.”
