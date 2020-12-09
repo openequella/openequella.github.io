@@ -33,7 +33,7 @@ To successfully complete this installation the system administrator will require
 * Sufficient privileges to access the Blackboard system integration functionality
 * Sufficient privileges to access the openEQUELLA user management, LTI Consumers, and External System Connector functionality 
 
-In order to make REST calls into a Blackboard site, adopters will need to obtain a REST Application ID via <https://developer.blackboard.com>. This REST Application ID will then be used (via the same site), to create a REST Application key and secret that is tied to your Blackboard site URL. You will need this key and secret when configuring the integration in Blackboard. Please read this [post](https://docs.blackboard.com/learn/REST/Developer%20Groups,%20Site%20Quotas,%20and%20Rate%20Limits.html) for more information on how Blackboard handles REST Application IDs.
+In order to make REST calls into a Blackboard site, administrators will need to obtain a REST Application ID via <https://developer.blackboard.com>. This REST Application ID will then be used (via the same site), to create a REST Application key and secret that is tied to your Blackboard site URL. You will need this key and secret when configuring the integration in Blackboard. Please read this [post](https://docs.blackboard.com/learn/REST/Developer%20Groups,%20Site%20Quotas,%20and%20Rate%20Limits.html) for more information on how Blackboard handles REST Application IDs.
 
 System prerequisites for integration
 * openEQUELLA version 2020.1.0+ (or the latest hotfix for 2019.1)
