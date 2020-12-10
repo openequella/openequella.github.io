@@ -107,14 +107,26 @@ _Note: openEQUELLA prepends a unique value (by **LTI Consumer**) to the user ID.
 7. Under **Tool Provider Information**, set the **Tool Provider URL** to `{https://your.oE.domain.xyz/demo/}ltisignon.do`.
 8. The **Tool Provider Key** and **Tool Provider Secret** will be preconfigured (and readonly).
 
+#### Alternative configuration
+New in oEQ 2020.2.0+, the LTI integration now supports leveraging the course folder structure in the selection session.
+
+To enable, use the steps above with the following changes.  Note this will require you to configure a REST integration flow (as described in this document) as well.
+
+1. For the URL, add the following parameters:  `{https://your.oE.domain.xyz/demo/}ltisignon.do?action=structured&connector_uuid={backing-oeq-external-system-connector}`
+2. In the `Custom Parameters` field, add:
+```
+course_id=@X@course.pk_string@X@
+content_id=@X@content.id@X@
+````
+
 ### Configure a REST Application in Blackboard
-___TODO - this needs to be updated with the REST MVP logic___
 
 1. Under **System Admin > REST API Integrations**, select **Create Integration**.
 2. Configure the Application ID from your registration on https://developer.blackboard.com/ .
 3. Select a 'Learn User' that has sufficient permissions.
-4. Leave **End User Access** as the default **Yes**.
-5. Leave the **Authorized To Act As User** as the default **Service Default (No)**.
+4. **Available** should be **Yes**
+4. **End User Access** should be **Yes**.
+5. **Authorized To Act As User** should be **Yes**.
 
 ## Usage
 
@@ -160,5 +172,4 @@ https://my.blackboard.com/ultra/courses/_1234_1/cl/outline
 7. Tick the checkbox to allow the migration to run
 8. Click 'Submit'.  To refresh for updated status, click 'Submit'.
 9. Once the migration completes (or errors), you can reset the migration utility (and logs) by ticking the checkbox under the 'RESET' section. 
-
 
