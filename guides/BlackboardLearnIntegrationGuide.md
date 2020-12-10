@@ -112,7 +112,7 @@ New in oEQ 2020.2.0+, the LTI integration now supports leveraging the course fol
 
 To enable, use the steps above with the following changes.  Note this will require you to configure a REST integration flow (as described in this document) as well.
 
-1. For the URL, add the following parameters:  `{https://your.oE.domain.xyz/demo/}ltisignon.do??action=structured&connector_uuid={backing-oeq-external-system-connector}
+1. For the URL, add the following parameters:  `{https://your.oE.domain.xyz/demo/}ltisignon.do?action=structured&connector_uuid={backing-oeq-external-system-connector}`
 2. In the `Custom Parameters` field, add:
 ```
 course_id=@X@course.pk_string@X@
@@ -172,5 +172,4 @@ https://my.blackboard.com/ultra/courses/_1234_1/cl/outline
 7. Tick the checkbox to allow the migration to run
 8. Click 'Submit'.  To refresh for updated status, click 'Submit'.
 9. Once the migration completes (or errors), you can reset the migration utility (and logs) by ticking the checkbox under the 'RESET' section. 
-
 
