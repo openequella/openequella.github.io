@@ -4,6 +4,8 @@ Table of Contents
 * [New UI Settings pages](#new-ui-settings-pages)
 * [Search settings](#search-settings)
 * [New UI Search page](#new-ui-search-page)
+* [Major Upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
+* [Blackboard LTI And REST Enhancements](#blackboard-lti-and-rest-enhancements)
 
 
 
@@ -572,4 +574,56 @@ HikariCP Dependency upgrade (PLACEHOLDER)
 https://github.com/openequella/openEQUELLA/pull/1905
 ----------------------------------------------------
 
-Need to include doco around this PR (doco can come out of the PR text)
+Need to include doco around this PR (doco can come out of the PR text
+
+Major Upgrades to Spring and Hibernate
+======================================
+Spring and Hibernate were upgraded to the latest versions of their respective 5.x series.  Both dependencies were years behind their current versions, and especially due to the core nature of the dependencies, were creating security and maintenance concerns.  While these dependency upgrades are largely behind the scenes, some modifications to the configuration files are recommended.
+
+The following configurations will be automatically added to the `Hibernate.properties` file during the upgrade.  These configurations force Hibernate to provide consistent behavior with the previous versions of Hibernate used in openEQUELLA.
+
+```
+# Keeps the legacy generator in place. 
+hibernate.id.new_generator_mappings=false
+# Due to @Inheritance(strategy = InheritanceType.JOINED)
+hibernate.query.omit_join_of_superclass_tables=false
+```
+
+Likewise, the following configurations will be added to the `learningedge-config.properties` file. Certain legacy configurations and usages of Hibernate are now logged as warnings.  These are known tech-debt issues, so the recommendation is to leave these filters in place, especially in Production environments.
+```
+# Chatty deprecation warning suppression.
+log4j.appender.FILE.filter.1=org.apache.log4j.varia.StringMatchFilter
+log4j.appender.FILE.filter.1.StringToMatch=HHH90000022
+log4j.appender.FILE.filter.1.AcceptOnMatch=false
+
+log4j.appender.FILE.filter.2=org.apache.log4j.varia.StringMatchFilter
+log4j.appender.FILE.filter.2.StringToMatch=HHH90000014
+log4j.appender.FILE.filter.2.AcceptOnMatch=false
+```
+
+Adopters running openEQUELLA on Oracle may notice a slower startup / migration.  This can be resolved by running the Oracle command found in the comment [here](https://github.com/openequella/openEQUELLA/pull/2344#issuecomment-728432011).
+
+
+
+Blackboard LTI And REST Enhancements
+====================================
+The integration between openEQUELLA and Blackboard has been enhanced to support a subset of functionality of the 'Push to LMS' features, and an enhanced LTI selection session flow.
+
+These changes stem from the deprecation of the openEQUELLA building block and web service integration flows, and a phased effort to replace the deprecated functionality with modern technologies. It is highly recommended to migrate from the building block and web service flows to the LTI and REST flows.
+
+To migrate your building block links, a migration building block has been developed and can be reviewed [here](https://github.com/openequella/openequella.github.io/blob/master/guides/BlackboardLearnIntegrationGuide.md#migration-from-b2-to-lti-links).
+
+The openEQUELLA 'Push to LMS' features for the Blackboard integration, allow users in openEQUELLA to access the Blackboard REST API, enabling a variety of openEQUELLA functions:
+* Add to External System
+* Find Uses
+* Manage External Resources
+* BIRT Reporting on External Connectors
+* Course folders in selection sessions
+
+For this release, the `Add to External System` and `Course folders in selection sessions` functions have been implemented. The rest of the functions above can be implemented in future releases. 
+
+`Add to External System` allows a user in openEQUELLA, from an item summary page, to 'push' content (summary page and/or attachments) as LTI links, into Blackboard courses / folders.
+
+`Course folders in selection sessions` enables the LTI integration to be configured to display the course's folder structure on the right hand side of the selection session. This enables multiple selections to be specificed in several course folders inside the same selection session.
+
+Details on how to configure the openEQUELLA / Blackboard LTI (include the course folder structure) and REST (Push to LMS) can be found [here](https://github.com/openequella/openequella.github.io/blob/master/guides/BlackboardLearnIntegrationGuide.md).
