@@ -200,8 +200,8 @@ example with the Owner filter disabled is shown in Figure 13.
 
 ### Attachment MIME type filter
 
-NOTE: Attachment MIME type filters are not included in the new Search UI for
-2020.2. They will be added to the Refine search panel in 2021.1.
+**NOTE: Attachment MIME type filters are not included in the new Search UI for
+2020.2. They will be added to the Refine search panel in 2021.1.**
 
 Attachment MIME type filter configuration as not changed for 2020.2.
 
@@ -373,7 +373,7 @@ in Figure 24.
 
 Figure 24 Access Advanced searches drop-down
 
-NOTE: On selection of an Advanced search in openEQUELLA 2020.2, the user is
+**NOTE: On selection of an Advanced search in openEQUELLA 2020.2, the user is
 taken to the selected Advanced search using the legacy Search UI page.
 Application of the new UI technologies to Advanced searches will be included in
 a future release.
@@ -394,7 +394,7 @@ shown in Figure 26.
 
 Figure 26 Access Remote repositories drop-down
 
-NOTE: On selection of a Remote repository in openEQUELLA 2020.2, the user is
+**NOTE: On selection of a Remote repository in openEQUELLA 2020.2, the user is
 taken to the selected Advanced search using the legacy Search UI page.
 Application of the new UI technologies to Advanced searches will be included in
 a future release.
@@ -412,7 +412,7 @@ include **quick options** as well as date ranges. The quick options are enabled
 by default, and allow users to select common values from the drop-down list to
 discover matching content. An example is shown in Figure 28.
 
-NOTE: The Date modified filter can be disabled in Search settings. When
+**NOTE: The Date modified filter can be disabled in Search settings. When
 disabled, this filter will not appear in the Refine search panel. See Filter
 visibility options.
 
@@ -437,7 +437,7 @@ functionality has not changed. Use the **SELECT** button to open the User
 selector and search and select the required Owner. An example is shown in Figure
 30.
 
-NOTE: The Date modified filter can be disabled in Search settings. When
+**NOTE: The Owner filter can be disabled in Search settings. When
 disabled, this filter will not appear in the Refine search panel. See Filter
 visibility options.
 
