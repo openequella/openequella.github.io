@@ -423,8 +423,8 @@ by default, and allow users to select common values from the drop-down list to
 discover matching content. An example is shown in Figure 28.
 
 **NOTE: The Date modified filter can be disabled in Search settings. When
-disabled, this filter will not appear in the Refine search panel. See Filter
-visibility options.**
+disabled, this filter will not appear in the Refine search panel. See [Filter
+visibility options](###filter-visibility-options).**
 
 ![](media/fe189fddaace1b86c11f761b98ef79d6.png)
 
