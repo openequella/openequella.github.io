@@ -1,3 +1,13 @@
+# openEQUELLA 2020.2 Features Guide
+
+Table of Contents
+* [New UI Settings pages](#new-ui-settings-pages)
+* [Search settings](#search-settings)
+* [New UI Search page](#new-ui-search-page)
+
+
+
+
 
 New UI Settings pages
 =====================
