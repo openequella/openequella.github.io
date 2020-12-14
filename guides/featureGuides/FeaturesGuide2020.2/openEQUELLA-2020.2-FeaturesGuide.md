@@ -1,12 +1,12 @@
 # New UI Settings pages
 
->   A number of pages within Settings have been updated with new Material UI
->   components. A consistent template has been applied to these pages, which
->   includes a panel with the configuration settings on the left, and a Save
->   panel on the right. The Save button is only enabled if a change has been
->   made to at least one configuration setting.
+   A number of pages within Settings have been updated with new Material UI
+   components. A consistent template has been applied to these pages, which
+   includes a panel with the configuration settings on the left, and a Save
+   panel on the right. The Save button is only enabled if a change has been
+   made to at least one configuration setting.
 
->   Settings pages with new UI include:
+   Settings pages with new UI include:
 
 -   General - Login notice editor
 
@@ -25,17 +25,17 @@
 
 ![](media/e2faa7391d27a621873115cc1e223769.png)
 
->   Figure 1 Content indexing page with SAVE button disabled
+   Figure 1 Content indexing page with SAVE button disabled
 
->   An example of Content index page with changes (**SAVE** button enabled) is
->   shown in Figure 2.
+   An example of Content index page with changes (**SAVE** button enabled) is
+   shown in Figure 2.
 
 ![](media/1707ddac957abfc4af763ba19e718502.png)
 
->   Figure 2 Content indexing page with SAVE button enabled
+   Figure 2 Content indexing page with SAVE button enabled
 
->   If a user navigates away from one of these settings pages without saving
->   changes, a confirmation dialog displays. An example is shown in Figure 3.
+   If a user navigates away from one of these settings pages without saving
+   changes, a confirmation dialog displays. An example is shown in Figure 3.
 
 ![](media/96f52f338d8400465d41dfeee9cc1646.png)
 
