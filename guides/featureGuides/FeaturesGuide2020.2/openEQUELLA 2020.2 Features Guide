@@ -1,17 +1,5 @@
 # New UI Settings pages
 
-A number of pages within Settings have been updated with new Material UI
-components. A consistent template has been applied to these pages, which
-includes a panel with the configuration settings on the left, and a Save
-panel on the right. The Save button is only enabled if a change has been
-made to at least one configuration setting.
-
-
-
-
-
-# New UI Settings pages
-
 >   A number of pages within Settings have been updated with new Material UI
 >   components. A consistent template has been applied to these pages, which
 >   includes a panel with the configuration settings on the left, and a Save
@@ -63,7 +51,7 @@ made to at least one configuration setting.
 
 >   Figure 4 Settings - Search category
 
-##  Content indexing
+## Content indexing
 
 >   **Content indexing** contains the existing settings for web-page content
 >   indexing and search term boosting.
@@ -566,3 +554,4 @@ Both search types support the use of the Apache Lucene search syntax.
 ## <https://github.com/openequella/openEQUELLA/pull/1905>
 
 >   Need to include doco around this PR (doco can come out of the PR text)
+
