@@ -1,3 +1,10 @@
+# New UI Settings pages
+
+A number of pages within Settings have been updated with new Material UI
+components. A consistent template has been applied to these pages, which
+includes a panel with the configuration settings on the left, and a Save
+panel on the right. The Save button is only enabled if a change has been
+made to at least one configuration setting.
 
 
 
