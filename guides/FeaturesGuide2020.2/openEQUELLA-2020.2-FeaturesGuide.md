@@ -25,23 +25,23 @@ Eventually all Settings pages will use this template.
 An example of the **Content indexing** page with no changes (**SAVE** button
 disabled) is shown in Figure 1.
 
-![](media/e2faa7391d27a621873115cc1e223769.png)
+   ![](media/e2faa7391d27a621873115cc1e223769.png)
 
-Figure 1 Content indexing page with SAVE button disabled
+   Figure 1 Content indexing page with SAVE button disabled
 
 An example of Content index page with changes (**SAVE** button enabled) is shown
 in Figure 2.
 
-![](media/1707ddac957abfc4af763ba19e718502.png)
+   ![](media/1707ddac957abfc4af763ba19e718502.png)
 
-Figure 2 Content indexing page with SAVE button enabled
+   Figure 2 Content indexing page with SAVE button enabled
 
 If a user navigates away from one of these settings pages without saving
 changes, a confirmation dialog displays. An example is shown in Figure 3.
 
-![](media/96f52f338d8400465d41dfeee9cc1646.png)
+   ![](media/96f52f338d8400465d41dfeee9cc1646.png)
 
-Figure 3 Confirmation dialog
+   Figure 3 Confirmation dialog
 
 Search settings
 ===============
@@ -110,43 +110,43 @@ Figure 6 Classification with default and expanded views
 1.  From the Settings, Search category, select **Faceted search**. The **Faceted
     search settings** page displays. An example is shown in Figure 7.
 
-![](media/9af57ac91c793e154e8d9303436176a9.png)
+    ![](media/9af57ac91c793e154e8d9303436176a9.png)
 
-Figure 7 Faceted search settings page
+    Figure 7 Faceted search settings page
 
-1.  Select the **Add** button (or the pencil icon to edit an existing
+2.  Select the **Add** button (or the pencil icon to edit an existing
     Classification). The **Create classification** dialog displays. An example
     is shown in Figure 8.
 
-![](media/360206784cea3bc26709c0395cd16294.png)
+    ![](media/360206784cea3bc26709c0395cd16294.png)
 
-Figure 8 Create classification with example classification
+    Figure 8 Create classification with example classification
 
-1.  Enter a **Classification name**. This displays as the Classification title
+3.  Enter a **Classification name**. This displays as the Classification title
     in the Refine search panel.
 
-2.  Enter the **Default number of categories** to display in the Refine search
+4.  Enter the **Default number of categories** to display in the Refine search
     panel. A SHOW MORE link displays if there are a greater number of categories
     with results. Leave this field blank to display all categories with results.
 
-3.  Select a **Schema node**:
+5.  Select a **Schema node**:
 
-4.  **Select a schema** from the drop-down list. Note that the user must have
+6.  **Select a schema** from the drop-down list. Note that the user must have
     the LIST_SCHEMA privilege granted for schemas to display in the list.
 
-5.  Navigate to and select the required schema node by either expanding the tree
+7.  Navigate to and select the required schema node by either expanding the tree
     manually or using the EXPAND ALL option.  
     *NOTE: The selected schema node must have Index for Advanced Searches
     enabled in the schema.*
 
-6.  Select **ADD**.
+8.  Select **ADD**.
 
-7.  Click **SAVE**. The Classification now displays in the Refine search panel
+9.  Click **SAVE**. The Classification now displays in the Refine search panel
     on the Search page. An example is shown in Figure 9.
 
-![](media/064bf41deb4ab6394e83059ad3002144.png)
+    ![](media/064bf41deb4ab6394e83059ad3002144.png)
 
-Figure 9 Search page with new Classification
+    Figure 9 Search page with new Classification
 
 ### Reordering classifications
 
