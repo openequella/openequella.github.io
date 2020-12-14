@@ -25,16 +25,16 @@ Eventually all Settings pages will use this template.
 An example of the **Content indexing** page with no changes (**SAVE** button
 disabled) is shown in Figure 1.
 
-    ![](media/e2faa7391d27a621873115cc1e223769.png)
+   ![](media/e2faa7391d27a621873115cc1e223769.png)
 
-    Figure 1 Content indexing page with SAVE button disabled
+   Figure 1 Content indexing page with SAVE button disabled
 
 An example of Content index page with changes (**SAVE** button enabled) is shown
 in Figure 2.
 
-    ![](media/1707ddac957abfc4af763ba19e718502.png)
+   ![](media/1707ddac957abfc4af763ba19e718502.png)
 
-    Figure 2 Content indexing page with SAVE button enabled
+   Figure 2 Content indexing page with SAVE button enabled
 
 If a user navigates away from one of these settings pages without saving
 changes, a confirmation dialog displays. An example is shown in Figure 3.
@@ -50,9 +50,9 @@ In openEQUELLA 2020.2 a new **Settings** category has been created called
 **Search** which is made up of sub-categories containing all existing and new
 configuration options relevant to the openEQUELLA Search page.
 
-    ![](media/38a88d8c1c69b7b7c2b639ba5056dcc4.png)
+   ![](media/38a88d8c1c69b7b7c2b639ba5056dcc4.png)
 
-    Figure 4 Settings - Search category
+   Figure 4 Settings - Search category
 
 Content indexing
 ----------------
@@ -176,9 +176,9 @@ The **Search filters settings** page contains new filter visibility options as
 well as the legacy Attachment MIME type filters configuration. An example is
 shown in Figure 11.
 
-    ![](media/191c45997022365b33491ac8cb853a8c.png)
+   ![](media/191c45997022365b33491ac8cb853a8c.png)
 
-    Figure 11 Search filter settings page
+   Figure 11 Search filter settings page
 
 ### Filter visibility options
 
@@ -186,17 +186,17 @@ The new **Filter visibility** options allow administrators to hide the **Owner**
 and **Date modified** filters from the Refine search panel if required. These
 filters show by default on the Search page. An example is shown in Figure 12.
 
-    ![](media/1258c039ddbefce75da4deb5f101bf50.png)
+   ![](media/1258c039ddbefce75da4deb5f101bf50.png)
 
-    Figure 12 Refine search panel with Owner and Date modified filters visible
+   Figure 12 Refine search panel with Owner and Date modified filters visible
 
 Click on the switch beside the required visibility setting to toggle the switch
 to on. When selected, the filter will not display in the Refine search panel. An
 example with the Owner filter disabled is shown in Figure 13.
 
-    ![](media/986a14d059632f8dcadcfe15fbee53bb.png)
+   ![](media/986a14d059632f8dcadcfe15fbee53bb.png)
 
-    Figure 13 Refine search panel with Owner filter disabled
+   Figure 13 Refine search panel with Owner filter disabled
 
 ### Attachment MIME type filter
 
