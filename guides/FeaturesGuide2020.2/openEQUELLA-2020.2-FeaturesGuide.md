@@ -146,8 +146,8 @@ Figure 6 Classification with default and expanded views
 
 7.  Navigate to and select the required schema node by either expanding the tree
     manually or using the EXPAND ALL option.  
-    *NOTE: The selected schema node must have Index for Advanced Searches
-    enabled in the schema.*
+    **NOTE: The selected schema node must have Index for Advanced Searches
+    enabled in the schema.**
 
 8.  Select **ADD**.
 
