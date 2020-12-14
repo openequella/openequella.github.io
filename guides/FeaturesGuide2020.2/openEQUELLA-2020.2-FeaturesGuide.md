@@ -566,7 +566,7 @@ Figure 36 Example Moodle Selection session
 6.  **Drag and drop handles**- use these to drag and drop item summary pages or
     specific attachments to any LMS course section.
 
-HikariCP Dependency upgrade
+HikariCP Dependency upgrade (PLACEHOLDER)
 ===========================
 
 https://github.com/openequella/openEQUELLA/pull/1905
