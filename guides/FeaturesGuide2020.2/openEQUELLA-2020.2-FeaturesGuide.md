@@ -448,8 +448,8 @@ selector and search and select the required Owner. An example is shown in Figure
 30.
 
 **NOTE: The Owner filter can be disabled in Search settings. When
-disabled, this filter will not appear in the Refine search panel. See Filter
-visibility options.**
+disabled, this filter will not appear in the Refine search panel. See [Filter
+visibility options](#filter-visibility-options).**
 
 ![](media/3c7a3f73f37d386bc6bdaefe94497e78.png)
 
@@ -494,7 +494,7 @@ Classifications panel
 The **Classifications** panel displays any Classifications and associated
 categories that have been configured and are relevant to the current search
 results, based on values stored in a specified schema metadata node. See
-Classifications for further configuration information.
+[Classifications](#classifications) for further configuration information.
 
 NOTE: The Classifications panel does not display if there are no configured
 Classifications or if the search criteria eliminates the relevance of a
