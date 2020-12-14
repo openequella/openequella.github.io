@@ -29,7 +29,7 @@ disabled) is shown in Figure 1.
 
    Figure 1 Content indexing page with SAVE button disabled
 
-An example of Content index page with changes (**SAVE** button enabled) is shown
+An example of Content indexing page with changes (**SAVE** button enabled) is shown
 in Figure 2.
 
    ![](media/1707ddac957abfc4af763ba19e718502.png)
