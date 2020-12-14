@@ -376,7 +376,7 @@ Figure 24 Access Advanced searches drop-down
 **NOTE: On selection of an Advanced search in openEQUELLA 2020.2, the user is
 taken to the selected Advanced search using the legacy Search UI page.
 Application of the new UI technologies to Advanced searches will be included in
-a future release.
+a future release.**
 
 An example is shown in Figure 25.
 
@@ -397,7 +397,7 @@ Figure 26 Access Remote repositories drop-down
 **NOTE: On selection of a Remote repository in openEQUELLA 2020.2, the user is
 taken to the selected Advanced search using the legacy Search UI page.
 Application of the new UI technologies to Advanced searches will be included in
-a future release.
+a future release.**
 
 An example is shown in Figure 27.
 
@@ -414,7 +414,7 @@ discover matching content. An example is shown in Figure 28.
 
 **NOTE: The Date modified filter can be disabled in Search settings. When
 disabled, this filter will not appear in the Refine search panel. See Filter
-visibility options.
+visibility options.**
 
 ![](media/fe189fddaace1b86c11f761b98ef79d6.png)
 
@@ -439,7 +439,7 @@ selector and search and select the required Owner. An example is shown in Figure
 
 **NOTE: The Owner filter can be disabled in Search settings. When
 disabled, this filter will not appear in the Refine search panel. See Filter
-visibility options.
+visibility options.**
 
 ![](media/3c7a3f73f37d386bc6bdaefe94497e78.png)
 
