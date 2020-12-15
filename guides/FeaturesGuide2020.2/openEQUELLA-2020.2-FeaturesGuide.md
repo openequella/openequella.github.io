@@ -32,6 +32,8 @@ Settings pages with new UI include:
 
 -   Search – Search page
 
+-   UI - Theme editor
+
 Eventually all Settings pages will use this template.
 
 An example of the **Content indexing** page with no changes (**SAVE** button
@@ -91,8 +93,7 @@ search panel is shown below.
 ### Classifications
 
 **Classifications** are configured, edited and deleted from the **Faceted
-search** setting page. Multiple classifications can be configured across
-multiple schema nodes. Note the following:
+search** setting page. Multiple classifications can be configured. Note the following:
 
 -   Only relevant classifications display on the Search page based on filters
     selected, such as Collections. For example, if a search is filtered with a
@@ -143,15 +144,15 @@ Figure 6 Classification with default and expanded views
 
 5.  Select a **Schema node**:
 
-6.  **Select a schema** from the drop-down list. Note that the user must have
+    a.  **Select a schema** from the drop-down list. Note that the user must have
     the LIST_SCHEMA privilege granted for schemas to display in the list.
 
-7.  Navigate to and select the required schema node by either expanding the tree
+    b.   Navigate to and select the required schema node by either expanding the tree
     manually or using the EXPAND ALL option.  
     **NOTE: The selected schema node must have Index for Advanced Searches
     enabled in the schema.**
 
-8.  Select **ADD**.
+    c.  Select **ADD**.
 
 9.  Click **SAVE**. The Classification now displays in the Refine search panel
     on the Search page. An example is shown in Figure 9.
@@ -215,7 +216,7 @@ example with the Owner filter disabled is shown in Figure 13.
 **NOTE: Attachment MIME type filters are not included in the new Search UI for
 2020.2. They will be added to the Refine search panel in 2021.1.**
 
-Attachment MIME type filter configuration as not changed for 2020.2.
+Attachment MIME type filter configuration has not changed for 2020.2.
 
 Search page
 -----------
@@ -249,15 +250,15 @@ Figure 15 New UI Search page
 
 The new Search page consists of four main panels:
 
-1.  **Search criteria** – enter search criteria such as key words to display
+A.  **Search query** – enter search criteria such as key words to display
     matching results
 
-2.  **Search results** – displays results
+B.  **Search results** – displays results
 
-3.  **Refine search** – allows users to configure filters to refine search
+C.  **Refine search** – allows users to configure filters to refine search
     results
 
-4.  **Classifications** – displays faceted search categories to allow a
+D.  **Classifications** – displays faceted search categories to allow a
     concentrated level of refinement. This panel does not display if no faceted
     search classifications have been configured.
 
@@ -276,7 +277,7 @@ to ‘kelp\*’ by default. An example is shown in Figure 16.
 Figure 16 Default 'wildcard' search
 
 Users can switch off the default wildcard search by selecting the Raw search
-option, which returns exact matches. An example is shown in Figure 17.
+option, which returns exact matches. Raw search also supports stemming and stop words. An example is shown in Figure 17.
 
 ![](media/42f0448014da6dba5b22e434d1707b3b.png)
 
@@ -300,24 +301,24 @@ some notable changes marked in the following example and explained below:
 
 Figure 18 Results panel with notable changes
 
-1.  **Sort order** – can be easily accessed to change to another option in the
+A.  **Sort order** – can be easily accessed to change to another option in the
     drop-down list.
 
-2.  **New search** – this button clears any existing search criteria text and
+B.  **New search** – this button clears all existing search criteria text and
     filters ready to start a new search
 
-3.  **Share** – copies the current search URL for the purpose of sharing. Any
+C.  **Share** – copies the current search URL for the purpose of sharing. Any
     search criteria and filters existing at the time the Share button is
     selected will persist when the URL is used.
 
-4.  **Keyword highlights** – any words containing the typed search criteria are
+D.  **Keyword highlights** – any words containing the typed search criteria are
     highlighted for each item.
 
-5.  **Attachment results indicator** – the magnifying glass icon displayed with
+E.  **Attachment results indicator** – the magnifying glass icon displayed with
     the attachment icon indicates that matches with the entered search criteria
     have been found within the item’s attachments.
 
-6.  **Thumbnails** – the new Search UI displays the thumbnail of the first
+F.  **Thumbnails** – the new Search UI displays the thumbnail of the first
     attachment in the attachment list for an item. If no thumbnail is available,
     a default MIME type thumbnail displays. If there are no attachments, the
     text thumbnail (as shown in the figure above) displays, denoting only
