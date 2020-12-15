@@ -551,22 +551,22 @@ An example of a Selection session opened from a Moodle course is shown in Figure
 
 Figure 36 Example Moodle Selection session
 
-1.  **Refine search panel** – allows filtering and accessing of Advanced and
+A.  **Refine search panel** – allows filtering and accessing of Advanced and
     Remote repository searches.
 
-2.  **LMS** panel – displays as it always has, and stays visible when scrolling.
+B.  **LMS** panel – displays as it always has, and stays visible when scrolling.
 
-3.  **Select summary page** - use the select icon beside the item title to add
+C.  **Select summary page** - use the select icon beside the item title to add
     the item summary page to the highlighted LMS course section.
 
-4.  **Select all attachments** – click the select icon beside the item’s
+D.  **Select all attachments** – click the select icon beside the item’s
     Attachments label to add all attachments to the highlighted LMS course
     section.
 
-5.  **Select attachment** – click the select icon beside a specific attachment
+E.  **Select attachment** – click the select icon beside a specific attachment
     to add that attachment to the highlighted LMS course section.
 
-6.  **Drag and drop handles**- use these to drag and drop item summary pages or
+F.  **Drag and drop handles**- use these to drag and drop item summary pages or
     specific attachments to any LMS course section.
 
 HikariCP Dependency upgrade (PLACEHOLDER)
