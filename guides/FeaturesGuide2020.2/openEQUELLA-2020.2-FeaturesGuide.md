@@ -3,7 +3,15 @@
 Table of Contents
 * [New UI Settings pages](#new-ui-settings-pages)
 * [Search settings](#search-settings)
+  * [Content indexing](#content-indexing)
+  * [Faceted search](#faceted-search)
+  * [Search filters](#search-filters)
+  * [Search page](#search-page)
 * [New UI Search page](#new-ui-search-page)
+  * [Search query panel](#search-query-panel)
+  * [Search results panel](#search-results-panel)
+  * [Refine search panel](#refine-search-panel)
+  * [Classifications pane](#classifications-panel)
 * [Major Upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
 * [Blackboard LTI And REST Enhancements](#blackboard-lti-and-rest-enhancements)
 
@@ -262,10 +270,10 @@ D.  **Classifications** – displays faceted search categories to allow a
     concentrated level of refinement. This panel does not display if no faceted
     search classifications have been configured.
 
-Search criteria panel
+Search query panel
 ---------------------
 
-The **Search criteria** panel enables users to enter search terms.
+The **Search query** panel enables users to enter search terms.
 
 By default, typed text is appended with a wildcard (\*), so results are based on
 anything starting with the entered term. The example below shows a search term
