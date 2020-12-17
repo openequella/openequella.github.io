@@ -12,7 +12,10 @@
   * [Search results panel](#search-results-panel)
   * [Refine search panel](#refine-search-panel)
   * [Classifications pane](#classifications-panel)
-* [Major Upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
+* [Dependency upgrades](#dependency-upgrades)
+  * [Major upgrades](#major-upgrades)
+  * [Minor upgrades](#minor-upgrades)
+  * [Major Upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
 * [Blackboard LTI And REST Enhancements](#blackboard-lti-and-rest-enhancements)
 
 
