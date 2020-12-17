@@ -577,16 +577,39 @@ E.  **Select attachment** – click the select icon beside a specific attachment
 F.  **Drag and drop handles**- use these to drag and drop item summary pages or
     specific attachments to any LMS course section.
 
-HikariCP Dependency upgrade (PLACEHOLDER)
+Dependency upgrades
 ===========================
 
-https://github.com/openequella/openEQUELLA/pull/1905
-----------------------------------------------------
+## Major upgrades
 
-Need to include doco around this PR (doco can come out of the PR text
+-   **Hibernate** - see [Major upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
 
-Major Upgrades to Spring and Hibernate
-======================================
+-   **Hikari Connection Pool (version 3)** - manages the pool of database
+    connections, ensuring stable access to the database at a high level of
+    performance
+
+-   **Tomcat (version 9)** - provides the HTTP(S) implementation, as well as acts as
+    a (java servlet) container to run openEQUELLA
+
+-   **Spring** - see [Major upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
+
+## Minor upgrades
+
+Ones of significant note:
+
+-   **Google GSON** - a JSON parsing library. (Previous version was 9 years out of
+    date.)
+
+-   **Mozilla Rhino** - Javascript engine for executing server side (e.g. Save)
+    scripts. (Previous version was eight years out of date.)
+
+-   **PostgreSQL JDBC Driver** - used when running openEQUELLA against an PostgreSQL
+    DB
+
+There were also *many* others.
+
+## Major Upgrades to Spring and Hibernate
+
 Spring and Hibernate were upgraded to the latest versions of their respective 5.x series.  Both dependencies were years behind their current versions, and especially due to the core nature of the dependencies, were creating security and maintenance concerns.  While these dependency upgrades are largely behind the scenes, some modifications to the configuration files are recommended.
 
 The following configurations will be automatically added to the `Hibernate.properties` file during the upgrade.  These configurations force Hibernate to provide consistent behavior with the previous versions of Hibernate used in openEQUELLA.
