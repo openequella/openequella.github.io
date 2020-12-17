@@ -15,7 +15,7 @@
 * [Dependency upgrades](#dependency-upgrades)
   * [Major upgrades](#major-upgrades)
   * [Minor upgrades](#minor-upgrades)
-  * [Major Upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
+  * [Spring and Hibernate upgrades](#spring-and-hibernate-upgrades)
 * [Blackboard LTI And REST Enhancements](#blackboard-lti-and-rest-enhancements)
 
 
@@ -585,7 +585,7 @@ Dependency upgrades
 
 ## Major upgrades
 
--   **Hibernate** - see [Major upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
+-   **Hibernate** - see [Spring and Hibernate upgrades](#spring-and-hibernate-upgrades)
 
 -   **Hikari Connection Pool (version 3)** - manages the pool of database
     connections, ensuring stable access to the database at a high level of
@@ -594,7 +594,7 @@ Dependency upgrades
 -   **Tomcat (version 9)** - provides the HTTP(S) implementation, as well as acts as
     a (java servlet) container to run openEQUELLA
 
--   **Spring** - see [Major upgrades to Spring and Hibernate](#major-upgrades-to-spring-and-hibernate)
+-   **Spring** - see [Spring and Hibernate upgrades](#spring-and-hibernate-upgrades)
 
 ## Minor upgrades
 
@@ -611,7 +611,7 @@ Ones of significant note:
 
 There were also *many* others.
 
-## Major Upgrades to Spring and Hibernate
+## Spring and Hibernate upgrades
 
 Spring and Hibernate were upgraded to the latest versions of their respective 5.x series.  Both dependencies were years behind their current versions, and especially due to the core nature of the dependencies, were creating security and maintenance concerns.  While these dependency upgrades are largely behind the scenes, some modifications to the configuration files are recommended.
 
