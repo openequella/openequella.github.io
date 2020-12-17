@@ -12,7 +12,7 @@
   * [Search results panel](#search-results-panel)
   * [Refine search panel](#refine-search-panel)
   * [Classifications panel](#classifications-panel)
-  * [Outstanding new Search UI features to be included in 2021.1](outstanding-new-search-ui-features-to-be-included-in-2021.1)
+  * [Outstanding new Search UI features to be included in 2021.1](#outstanding-new-search-ui-features-to-be-included-in-2021.1)
 * [Dependency upgrades](#dependency-upgrades)
   * [Major upgrades](#major-upgrades)
   * [Minor upgrades](#minor-upgrades)
