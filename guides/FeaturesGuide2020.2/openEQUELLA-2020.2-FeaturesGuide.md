@@ -11,7 +11,8 @@
   * [Search query panel](#search-query-panel)
   * [Search results panel](#search-results-panel)
   * [Refine search panel](#refine-search-panel)
-  * [Classifications pane](#classifications-panel)
+  * [Classifications panel](#classifications-panel)
+  * [Outstanding new Search UI features to be included in 2021.1](outstanding-new-search-ui-features-to-be-included-in-2021.1)
 * [Dependency upgrades](#dependency-upgrades)
   * [Major upgrades](#major-upgrades)
   * [Minor upgrades](#minor-upgrades)
@@ -593,6 +594,19 @@ E.  **Select attachment** – click the select icon beside a specific attachment
 
 F.  **Drag and drop handles**- use these to drag and drop item summary pages or
     specific attachments to any LMS course section.
+    
+    
+## Outstanding new Search UI features to be included in 2021.1  
+
+-   **Gallery views** - Image and video views
+
+-   **Add to favourites** - for each search result. Can still Add to favourites from the Summary page
+
+-   **Add search to favourites**
+
+-   **Display of MIME type filters** - MIME type filters will be added to the Refine search panel.
+
+To view known issues for openEQUELLA, go to [https://github.com/openequella/openEQUELLA/issues](https://github.com/openequella/openEQUELLA/issues)
 
 
 
