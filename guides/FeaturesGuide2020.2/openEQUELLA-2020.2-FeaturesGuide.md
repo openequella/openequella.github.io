@@ -12,7 +12,7 @@
   * [Search results panel](#search-results-panel)
   * [Refine search panel](#refine-search-panel)
   * [Classifications panel](#classifications-panel)
-  * [Outstanding new Search UI features to be included in next release](#outstanding-new-search-ui-features-to-be-included-in-next-release)
+  * [Remaining Search UI features planned for next release](#remaining-search-ui-features-planned-for-next-release)
 * [Dependency upgrades](#dependency-upgrades)
   * [Major upgrades](#major-upgrades)
   * [Minor upgrades](#minor-upgrades)
@@ -596,11 +596,11 @@ F.  **Drag and drop handles**- use these to drag and drop item summary pages or
     specific attachments to any LMS course section.
     
     
-## Outstanding new Search UI features to be included in next release  
+## Remaining Search UI features planned for next release 
 
--   **Gallery views** - Image and video views
+-   **Gallery views** - Image and video views.
 
--   **Add to favourites** - for each search result. Can still Add to favourites from the Summary page
+-   **Add to favourites** - the ability to add an item to your favourites from the list of search results. Can still do this from the Summary page.
 
 -   **Add search to favourites**
 
