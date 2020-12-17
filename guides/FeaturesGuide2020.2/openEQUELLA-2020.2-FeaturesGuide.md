@@ -68,6 +68,8 @@ changes, a confirmation dialog displays. An example is shown in Figure 3.
 
    Figure 3 Confirmation dialog
 
+
+
 Search settings
 ===============
 
@@ -79,6 +81,7 @@ configuration options relevant to the openEQUELLA Search page.
 
    Figure 4 Settings - Search category
 
+
 Content indexing
 ----------------
 
@@ -88,6 +91,7 @@ indexing and search term boosting.
 ![](media/ff1ae43e5f8ce869c37cad7a3fa99eb2.png)
 
 Figure 5 Content indexing and Search terms boosting
+
 
 Faceted search
 --------------
@@ -100,6 +104,7 @@ Classification Categories.
 
 An example of a Faceted search Classification and its Categories in the Refine
 search panel is shown below.
+
 
 ### Classifications
 
@@ -193,6 +198,7 @@ Search page can be changed.
 3.  Click **SAVE**. The Classifications display in the defined order in the
     Classifications panel on the Search page.
 
+
 Search filters
 --------------
 
@@ -229,6 +235,7 @@ example with the Owner filter disabled is shown in Figure 13.
 
 Attachment MIME type filter configuration has not changed for 2020.2.
 
+
 Search page
 -----------
 
@@ -243,6 +250,8 @@ An example is shown in Figure 14.
 ![](media/f76ae768915354ca26d15fc8dbd57819.png)
 
 Figure 14 Search page settings
+
+
 
 New UI Search page
 ==================
@@ -273,6 +282,7 @@ D.  **Classifications** – displays faceted search categories to allow a
     concentrated level of refinement. This panel does not display if no faceted
     search classifications have been configured.
 
+
 Search query panel
 ---------------------
 
@@ -295,6 +305,7 @@ option, which returns exact matches. Raw search also supports stemming and stop 
 Figure 17 Raw search
 
 Both search types support the use of the Apache Lucene search syntax.
+
 
 Search results panel
 --------------------
@@ -334,6 +345,7 @@ F.  **Thumbnails** – the new Search UI displays the thumbnail of the first
     a default MIME type thumbnail displays. If there are no attachments, the
     text thumbnail (as shown in the figure above) displays, denoting only
     metadata.
+
 
 Refine search panel
 -------------------
@@ -502,6 +514,7 @@ attachments* checkbox). An example is shown in Figure 33.
 
 Figure 33 Search attachments filter
 
+
 Classifications panel
 ---------------------
 
@@ -538,6 +551,7 @@ Figure 34 New Search UI Classifications panel
 ![](media/530440b1ab352adf20c473ab1fba6e5a.png)
 
 Figure 35 Classifications with selections
+
 
 New UI Selection session
 ========================
@@ -579,6 +593,8 @@ E.  **Select attachment** – click the select icon beside a specific attachment
 
 F.  **Drag and drop handles**- use these to drag and drop item summary pages or
     specific attachments to any LMS course section.
+
+
 
 Dependency upgrades
 ===========================
