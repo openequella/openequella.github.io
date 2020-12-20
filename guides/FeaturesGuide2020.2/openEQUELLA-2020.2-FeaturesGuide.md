@@ -51,21 +51,21 @@ Eventually all Settings pages will use this template.
 An example of the **Content indexing** page with no changes (**SAVE** button
 disabled) is shown in Figure 1.
 
-   ![](media/e2faa7391d27a621873115cc1e223769.png)
+   ![Content indexing page with SAVE button disabled](media/e2faa7391d27a621873115cc1e223769.png)
 
    Figure 1 Content indexing page with SAVE button disabled
 
 An example of Content indexing page with changes (**SAVE** button enabled) is shown
 in Figure 2.
 
-   ![](media/1707ddac957abfc4af763ba19e718502.png)
+   ![Content indexing page with SAVE button enabled](media/1707ddac957abfc4af763ba19e718502.png)
 
    Figure 2 Content indexing page with SAVE button enabled
 
 If a user navigates away from one of these settings pages without saving
 changes, a confirmation dialog displays. An example is shown in Figure 3.
 
-   ![](media/96f52f338d8400465d41dfeee9cc1646.png)
+   ![Confirmation dialog](media/96f52f338d8400465d41dfeee9cc1646.png)
 
    Figure 3 Confirmation dialog
 
@@ -78,7 +78,7 @@ In openEQUELLA 2020.2 a new **Settings** category has been created called
 **Search** which is made up of sub-categories containing all existing and new
 configuration options relevant to the openEQUELLA Search page.
 
-   ![](media/38a88d8c1c69b7b7c2b639ba5056dcc4.png)
+   ![Search category](media/38a88d8c1c69b7b7c2b639ba5056dcc4.png)
 
    Figure 4 Settings - Search category
 
@@ -89,7 +89,7 @@ Content indexing
 **Content indexing** contains the existing settings for web-page content
 indexing and search term boosting.
 
-![](media/ff1ae43e5f8ce869c37cad7a3fa99eb2.png)
+![Content indexing and Search terms boosting](media/ff1ae43e5f8ce869c37cad7a3fa99eb2.png)
 
 Figure 5 Content indexing and Search terms boosting
 
@@ -131,7 +131,7 @@ search** setting page. Multiple classifications can be configured. Note the foll
     displays at the bottom of the list. Once expanded, a ‘**SHOW LESS**’ option
     displays. An example is shown in Figure 6.
 
-![](media/c75f921996fa8f58973ac21c1d9bbf96.png)
+![Classification with default and expanded views](media/c75f921996fa8f58973ac21c1d9bbf96.png)
 
 Figure 6 Classification with default and expanded views
 
@@ -140,7 +140,7 @@ Figure 6 Classification with default and expanded views
 1.  From the Settings, Search category, select **Faceted search**. The **Faceted
     search settings** page displays. An example is shown in Figure 7.
 
-    ![](media/9af57ac91c793e154e8d9303436176a9.png)
+    ![Faceted search settings page](media/9af57ac91c793e154e8d9303436176a9.png)
 
     Figure 7 Faceted search settings page
 
@@ -148,7 +148,7 @@ Figure 6 Classification with default and expanded views
     Classification). The **Create classification** dialog displays. An example
     is shown in Figure 8.
 
-    ![](media/360206784cea3bc26709c0395cd16294.png)
+    ![Create classification with example classification](media/360206784cea3bc26709c0395cd16294.png)
 
     Figure 8 Create classification with example classification
 
@@ -174,7 +174,7 @@ Figure 6 Classification with default and expanded views
 9.  Click **SAVE**. The Classification now displays in the Refine search panel
     on the Search page. An example is shown in Figure 9.
 
-    ![](media/064bf41deb4ab6394e83059ad3002144.png)
+    ![Search page with new Classification](media/064bf41deb4ab6394e83059ad3002144.png)
 
     Figure 9 Search page with new Classification
 
@@ -189,7 +189,7 @@ Search page can be changed.
     search settings** page displays listing existing Classifications. An example
     is shown in Figure 10.
 
-    ![](media/c8f4fd13f7da48ace53c8e9d9faa9cca.png)
+    ![Faceted search settings page](media/c8f4fd13f7da48ace53c8e9d9faa9cca.png)
 
     Figure 10 Faceted search settings page
 
@@ -207,7 +207,7 @@ The **Search filters settings** page contains new filter visibility options as
 well as the legacy Attachment MIME type filters configuration. An example is
 shown in Figure 11.
 
-   ![](media/191c45997022365b33491ac8cb853a8c.png)
+   ![Search filter settings page](media/191c45997022365b33491ac8cb853a8c.png)
 
    Figure 11 Search filter settings page
 
@@ -217,7 +217,7 @@ The new **Filter visibility** options allow administrators to hide the **Owner**
 and **Date modified** filters from the Refine search panel if required. These
 filters show by default on the Search page. An example is shown in Figure 12.
 
-   ![](media/1258c039ddbefce75da4deb5f101bf50.png)
+   ![Refine search panel with Owner and Date modified filters visible](media/1258c039ddbefce75da4deb5f101bf50.png)
 
    Figure 12 Refine search panel with Owner and Date modified filters visible
 
@@ -225,7 +225,7 @@ Click on the switch beside the required visibility setting to toggle the switch
 to on. When selected, the filter will not display in the Refine search panel. An
 example with the Owner filter disabled is shown in Figure 13.
 
-   ![](media/986a14d059632f8dcadcfe15fbee53bb.png)
+   ![Refine search panel with Owner filter disabled](media/986a14d059632f8dcadcfe15fbee53bb.png)
 
    Figure 13 Refine search panel with Owner filter disabled
 
@@ -248,7 +248,7 @@ NOTE: openEQUELLA 2020.2 new Search UI does not include Gallery views.
 
 An example is shown in Figure 14.
 
-![](media/f76ae768915354ca26d15fc8dbd57819.png)
+![Search page settings](media/f76ae768915354ca26d15fc8dbd57819.png)
 
 Figure 14 Search page settings
 
@@ -265,7 +265,7 @@ and viewing favourite searches, will be implemented in openEQUELLA 2021.1.
 
 An example of the new Search page is shown in Figure 15.
 
-![](media/b4de3c4a2a5cb03e49f907452786350b.png)
+![New UI Search page](media/b4de3c4a2a5cb03e49f907452786350b.png)
 
 Figure 15 New UI Search page
 
@@ -294,14 +294,14 @@ anything starting with the entered term. The example below shows a search term
 of ‘kelp’ has been typed, which the default search method effectively converts
 to ‘kelp\*’ by default. An example is shown in Figure 16.
 
-![](media/6260c9e8c80ab78a5842857dd9e587cb.png)
+![Default 'wildcard' search](media/6260c9e8c80ab78a5842857dd9e587cb.png)
 
 Figure 16 Default 'wildcard' search
 
 Users can switch off the default wildcard search by selecting the Raw search
 option, which returns exact matches. Raw search also supports stemming and stop words. An example is shown in Figure 17.
 
-![](media/42f0448014da6dba5b22e434d1707b3b.png)
+![Raw search](media/42f0448014da6dba5b22e434d1707b3b.png)
 
 Figure 17 Raw search
 
@@ -320,7 +320,7 @@ entered.
 The details for each item display in a similar fashion to the legacy UI, with
 some notable changes marked in the following example and explained below:
 
-![](media/b1432862018cf1b1710606024926bfdb.png)
+![Results panel with notable changes](media/b1432862018cf1b1710606024926bfdb.png)
 
 Figure 18 Results panel with notable changes
 
@@ -358,7 +358,7 @@ The Refine search panel defaults to showing the Collections and Advanced search
 filters, but selecting the **SHOW MORE** link displays further filtering
 options.
 
-![](media/66555c4598677a55fbb3c06f39a6657e.png)
+![Refine search panel](media/66555c4598677a55fbb3c06f39a6657e.png)
 
 Figure 19 Refine search panel
 
@@ -370,7 +370,7 @@ filter. Collections can be discovered and selected by:
 -   Opening the drop-down and selecting one or more from the scrollable list. An
     example is shown in Figure 20.
 
-![](media/eb1828388ae7422c10f6a493c7090061.png)
+![Collection drop-down](media/eb1828388ae7422c10f6a493c7090061.png)
 
 Figure 20 Collection drop-down
 
@@ -379,7 +379,7 @@ Or,
 -   enter part of a Collection name in the Collection box to view and select
     matching results. An example is shown in Figure 21.
 
-![](media/adf23c4b661811a8d3491ad679f439eb.png)
+![Search for collections](media/adf23c4b661811a8d3491ad679f439eb.png)
 
 Figure 21 Search for collections
 
@@ -388,7 +388,7 @@ two selected, **+x** displays, where x equals the number of additional
 collections selected, and the down arrow to the right can be used to expand the
 view. An example is shown in Figure 22.
 
-![](media/8a678a88547f85637c85a54e23a8b588.png)
+![Collections filter with more than two collections selected](media/8a678a88547f85637c85a54e23a8b588.png)
 
 Figure 22 Collections filter with more than two collections selected
 
@@ -396,7 +396,7 @@ A selected collection can be cleared from the filter by clicking the **X**
 beside the collection name. To clear all selected collections, click the **X**
 to the right of the selected list. An example is shown in Figure 23.
 
-![](media/d35d103c230767e6230f3dc852d8cad6.png)
+![Clear all selected collections](media/d35d103c230767e6230f3dc852d8cad6.png)
 
 Figure 23 Clear all selected collections
 
@@ -406,7 +406,7 @@ The **Access Advanced searches** control enables users to select an Advanced
 search from a list of Advanced searches they have access to. An example is shown
 in Figure 24.
 
-![](media/309e777ea82ca403cecfa66066316396.png)
+![Access Advanced searches drop-down](media/309e777ea82ca403cecfa66066316396.png)
 
 Figure 24 Access Advanced searches drop-down
 
@@ -417,7 +417,7 @@ a future release.**
 
 An example is shown in Figure 25.
 
-![](media/b79e07fb2983accfb97f895ddee71f87.png)
+![A selected Advanced search displayed in the old Search UI](media/b79e07fb2983accfb97f895ddee71f87.png)
 
 Figure 25 A selected Advanced search displayed in the old Search UI
 
@@ -427,7 +427,7 @@ The **Access Remote repositories** control enables users to select a Remote
 repository from a list of Remote repositories they have access to. An example is
 shown in Figure 26.
 
-![](media/c41dfd2339e42cbd1d636700a0b15514.png)
+![Access Remote repositories drop-down](media/c41dfd2339e42cbd1d636700a0b15514.png)
 
 Figure 26 Access Remote repositories drop-down
 
@@ -438,7 +438,7 @@ a future release.**
 
 An example is shown in Figure 27.
 
-![](media/51a2ec1a25f183e3ea78f7553cd7877e.png)
+![A selected Remote repository search displayed in the old Search UI](media/51a2ec1a25f183e3ea78f7553cd7877e.png)
 
 Figure 27 A selected Remote repository search displayed in the old Search UI
 
@@ -453,7 +453,7 @@ discover matching content. An example is shown in Figure 28.
 disabled, this filter will not appear in the Refine search panel. See [Filter
 visibility options](#filter-visibility-options).**
 
-![](media/fe189fddaace1b86c11f761b98ef79d6.png)
+![Date modified filter - quick options](media/fe189fddaace1b86c11f761b98ef79d6.png)
 
 Figure 28 Date modified filter - quick options
 
@@ -463,7 +463,7 @@ A date range can be selected or the **From** date only can be selected, which
 will return items that have been modified from the selected date until the
 current date. An example is shown in Figure 29.
 
-![](media/8805cc642f3487f661b1c05f016832c8.png)
+![Date modified filter](media/8805cc642f3487f661b1c05f016832c8.png)
 
 Figure 29 Date modified filter
 
@@ -478,14 +478,14 @@ selector and search and select the required Owner. An example is shown in Figure
 disabled, this filter will not appear in the Refine search panel. See [Filter
 visibility options](#filter-visibility-options).**
 
-![](media/3c7a3f73f37d386bc6bdaefe94497e78.png)
+![Owner selector](media/3c7a3f73f37d386bc6bdaefe94497e78.png)
 
 Figure 30 Owner selector
 
 The selected Owner displays in the Owner filter, and can be cleared by clicking
 the Delete icon (rubbish bin). An example is shown in Figure 31.
 
-![](media/08228a8d89ca99fbc4f1e19e6163ce8b.png)
+![Owner filter with selection](media/08228a8d89ca99fbc4f1e19e6163ce8b.png)
 
 Figure 31 Owner filter with selection
 
@@ -500,7 +500,7 @@ If **ALL** is selected, items with statuses other than Live (e.g. Deleted,
 Moderating etc.) will also display in the search results. An example is shown in
 Figure 32.
 
-![](media/8a13f918594a29ac65c077e43e84371d.png)
+![Status filter](media/8a13f918594a29ac65c077e43e84371d.png)
 
 Figure 32 Status filter
 
@@ -511,7 +511,7 @@ attachments and searching only item metadata (e.g. Name, Description etc.). In
 the old UI, this option was accessed from the search Page options (*Search
 attachments* checkbox). An example is shown in Figure 33.
 
-![](media/bd42a118c220c7c3fb78aefade3165c3.png)
+![Search attachments filter](media/bd42a118c220c7c3fb78aefade3165c3.png)
 
 Figure 33 Search attachments filter
 
@@ -545,11 +545,11 @@ Classification.
 
 Examples are shown in Figure 34 and Figure 35.
 
-![](media/0b0bddabf0fd66dfd6db6924640d816d.png)
+![New Search UI Classifications panel](media/0b0bddabf0fd66dfd6db6924640d816d.png)
 
 Figure 34 New Search UI Classifications panel
 
-![](media/530440b1ab352adf20c473ab1fba6e5a.png)
+![Classifications with selections](media/530440b1ab352adf20c473ab1fba6e5a.png)
 
 Figure 35 Classifications with selections
 
@@ -573,7 +573,7 @@ in future releases.
 An example of a Selection session opened from a Moodle course is shown in Figure
 36.
 
-![](media/6dc076747d0f30ad662b5c6743a625c1.png)
+![Example Moodle Selection session](media/6dc076747d0f30ad662b5c6743a625c1.png)
 
 Figure 36 Example Moodle Selection session
 
@@ -647,7 +647,7 @@ Spring and Hibernate were upgraded to the latest versions of their respective 5.
 
 The following configurations will be automatically added to the `Hibernate.properties` file during the upgrade.  These configurations force Hibernate to provide consistent behavior with the previous versions of Hibernate used in openEQUELLA.
 
-```
+```properties
 # Keeps the legacy generator in place. 
 hibernate.id.new_generator_mappings=false
 # Due to @Inheritance(strategy = InheritanceType.JOINED)
@@ -655,7 +655,7 @@ hibernate.query.omit_join_of_superclass_tables=false
 ```
 
 Likewise, the following configurations will be added to the `learningedge-config.properties` file. Certain legacy configurations and usages of Hibernate are now logged as warnings.  These are known tech-debt issues, so the recommendation is to leave these filters in place, especially in Production environments.
-```
+```properties
 # Chatty deprecation warning suppression.
 log4j.appender.FILE.filter.1=org.apache.log4j.varia.StringMatchFilter
 log4j.appender.FILE.filter.1.StringToMatch=HHH90000022
