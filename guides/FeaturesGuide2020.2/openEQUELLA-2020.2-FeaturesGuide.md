@@ -269,6 +269,10 @@ An example of the new Search page is shown in Figure 15.
 
 Figure 15 New UI Search page
 
+To switch to the new Search page, go to **Settings**, **UI** and select **Enable new search page**.
+
+**NOTE: The new Search UI is not supported using legacy browsers such as IE11. It is designed to be used with modern browsers such as Chrome, FireFox, Edge and Safari.**
+
 The new Search page consists of four main panels:
 
 A.  **Search query** – enter search criteria such as key words to display
