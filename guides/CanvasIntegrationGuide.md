@@ -241,16 +241,18 @@ NOTE: Matching user records must exist in both Canvas and openEQUELLA. An error 
 
 #### To use Canvas login for openEQUELLA
 
-NOTE: A Canvas Dev Key is required to successfully configure this functionality. Go to <http://instructure.github.io/> and follow the instructions in the Dev Key Signup section to apply for one.
+NOTE: A Canvas Dev Key is required to successfully configure this functionality. Go to <https://community.canvaslms.com/t5/Admin-Guide/How-do-I-add-a-developer-key-for-an-account/ta-p/259> and follow the instructions from the Canvas administrator account to generate one. Your Redirect URIs are your openEQUELLA domains.
 
 1.  From the openEQUELLA navigation menu, go the Settings, Administration Console. The Administration console displays.
 2.  Select User management to display user management options.
 3.  Highlight Canvas then click Configure. The Canvas configuration dialog displays. 
-4.  Enter the institution’s Canvas URL (e.g. <https://mystitution.canvas.com>).
-5.  Enter the Dev Key ID as supplied by Canvas.
-6.  Enter the Key as supplied by Canvas.
+4.  Enter the institution’s Canvas URL (e.g. <https://myinstitution.canvas.com>).
+5.  Enter the Dev Key ID as supplied by Canvas (above the Show Key button from the Developer Keys page in Canvas).
+6.  Enter the Key as supplied by Canvas (Click Show Key in the Developer Keys page in Canvas).
 7.  Select the Bypass the openEQUELLA logon page. I.e. don’t show link to login to Canvas to go straight to the Canvas login page when openEQUELLA is accessed (or straight into openEQUELLA if the user has previously logged in to Canvas).
 8.  Click Save. Once the save confirmation displays, click Close. The Canvas plug-in now needs to be enabled to start working.
+
+NOTE: Canvas now mandates that developer key Redirect URIs are SSL enabled, so this plugin will only work if your openEQUELLA uses HTTPS.
 
 #### To enable the Canvas plug-in
 1.  From the Administration Console, User Management page, select the Canvas Enabled checkbox. The Enable Plugin? confirmation dialog displays. 
