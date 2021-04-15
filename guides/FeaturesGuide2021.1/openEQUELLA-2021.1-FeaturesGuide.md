@@ -49,16 +49,7 @@
 
    Figure 3 Open in new tab button
 
-   When an image is opened in a new tab, the cursor displays as a magnifying
-   glass with a plus sign, allowing the user to click on an area of the image
-   to zoom in. Scroll bars display to navigate the zoomed in image, and the
-   magnifying glass cursor displays a minus sign. Clicking again zooms the
-   image back out. An example is shown below.
-
-![](media/c36293ba536fabfdb09b43c71aba868f.png)
-
-   Figure 4 Image displaying in new tab and zoomed in
-
+  
 # Favourite items and searches 
 
    The ability to add and remove favourite items from the search results page
@@ -76,7 +67,7 @@
 
 ![](media/33d7a4e36c6f1fe42344d7d5bb78d407.png)
 
-   Figure 5 Search results - Favourites icons
+   Figure 4 Search results - Favourites icons
 
 ####  To add an item to Favourites
 
@@ -85,8 +76,8 @@
 
     ![](media/05f55026d0b75d6618aaeb561e938495.png)
 
-   Figure 6 Add to favourites dialog
-
+   Figure 5 Add to favourites dialog
+   
 2.  Enter any relevant **Tags**, using Enter to separate. Single tags can be
     deleted using the **X** beside that tag or all tags can be removed using the
     **X** to the right of all tags.
@@ -115,7 +106,7 @@
 
     ![](media/3ce620f8af5b04dbb2f6b090e7fefa40.png)
 
-   Figure 7 Add search to favourites dialog
+   Figure 6 Add search to favourites dialog
 
 2.  Enter a name for the search. This is the name that displays on the
     Favourites, Searches page.
@@ -125,7 +116,7 @@
 
     ![](media/8a3a45b8c17a687a6f0c6ed269eea0e4.png)
 
-   Figure 8 Favourites - Searches page
+   Figure 7 Favourites - Searches page
 
 # MIME type filters
 
@@ -135,7 +126,7 @@
 
 ![](media/3abe4ac03a8263756247deed574fd36a.png)
 
-   Figure 9 Settings, Search filters page
+   Figure 8 Settings, Search filters page
 
    Attachment MIME type filters are accessed by selecting the **Show more**
    option in the Refine search panel on the new search UI page. Any configured
@@ -144,7 +135,7 @@
 
 ![](media/2d893023475c28c1dfab15989758edc1.png)
 
-   Figure 10 Search page - Filter by Attachment type filter
+   Figure 9 Search page - Filter by Attachment type filter
 
 # Gallery modes
 
@@ -160,7 +151,7 @@
 
 ![](media/8fc4026c06eeaf1a222fb5f4dc6106fa.png)
 
-   Figure 11 Display mode control
+   Figure 10 Display mode control
 
 ## Image mode
 
@@ -173,26 +164,26 @@
 
 ![](media/1a93c55b887f72474f21f7a9cb31317c.png)
 
-   Figure 12 Display mode - Image
+   Figure 11 Display mode - Image
 
 An example is shown below.
 
 ![](media/b677b615f1e791f578a030d89e0e8562.png)
 
-   Figure 13 Search results in image mode
+   Figure 12 Search results in image mode
 
    Clicking the **View item** button opens the Resource summary page.
 
 ![](media/924c4912987d95613e745581b5635fa1.png)
 
-   Figure 14 View item button
+   Figure 13 View item button
 
    Clicking anywhere on the image opens the image in a lightbox. An example is
    shown below.
 
 ![](media/1f37b5416560c445adba4a86608445fd.png)
 
-   Figure 15 Image preview in lightbox
+   Figure 14 Image preview in lightbox
 
    Clicking away from the image window closes the lightbox.
 
@@ -201,18 +192,9 @@ An example is shown below.
 
 ![](media/d9cdcc3e1a992c874e16d0b578c92569.png)
 
-   Figure 16 Open in new tab button
+   Figure 15 Open in new tab button
 
-   When an image is opened in a new tab, the cursor displays as a magnifying
-   glass with a plus sign, allowing the user to click on an area of the image
-   to zoom in. Scroll bars display to navigate the zoomed in image, and the
-   magnifying glass cursor displays a minus sign. Clicking again zooms the
-   image back out. An example is shown below.
-
-![](media/504ff14460ed4cd9de4017a159b1d3a8.png)
-
-   Figure 17 Image displaying in new tab and zoomed in
-
+  
 ## Video mode
 
    The new Video mode displays all video attachments for items in openEQUELLA
@@ -224,19 +206,19 @@ An example is shown below.
 
 ![](media/3e25f077ed4ae3ad8ef825ff3236c55a.png)
 
-   Figure 18 Display mode - Video
+   Figure 16 Display mode - Video
 
    An example is shown below.
 
 ![](media/97acc740492ab4ebbf759f70dcaf1f02.png)
 
-   Figure 19 Search results in video mode
+   Figure 17 Search results in video mode
 
    Clicking the **View item** button opens the Resource summary page.
 
 ![](media/f398580d98303406e8f81cc70befe7d6.png)
 
-   Figure 20 View item button
+   Figure 18 View item button
 
 ### Local videos
 
@@ -245,7 +227,7 @@ An example is shown below.
 
 ![](media/f433dba9bc34a8e74d50103a5ce3bfee.png)
 
-   Figure 21 Video preview in lightbox
+   Figure 19 Video preview in lightbox
 
    Clicking away from the video window closes the lightbox.
 
@@ -254,7 +236,7 @@ An example is shown below.
 
 ![](media/d9cdcc3e1a992c874e16d0b578c92569.png)
 
-   Figure 22 Open in new tab button
+   Figure 20 Open in new tab button
 
    Additional controls are browser dependant and may include:
     
@@ -283,7 +265,7 @@ An example is shown below.
 
 ![](media/b070ecc65180588c961a38eead867a6e.png)
 
-   Figure 25 YouTube video in lightbox
+   Figure 21 YouTube video in lightbox
 
    Clicking away from the video window closes the lightbox.
 
@@ -292,7 +274,7 @@ An example is shown below.
 
 ![](media/d9cdcc3e1a992c874e16d0b578c92569.png)
 
-   Figure 26 Open in new tab button
+   Figure 22 Open in new tab button
 
    Clicking **Open in new tab** opens the YouTube page for the video.
 
@@ -354,7 +336,7 @@ An example is shown below.
 
 ![](media/0aac7abe985ee90bbaeb4820b73ed57d.png)
 
-   Figure 29 Download search results to CSV file
+   Figure 23 Download search results to CSV file
 
    The CSV file is downloaded to your local hard drive, and the Download to CSV
    button displays as an orange tick until the search query has been changed.
@@ -363,4 +345,4 @@ An example is shown below.
 
 ![](media/710afb91d25443de4f5aed5600f159f8.png)
 
-   Figure 30 CSV file download
+   Figure 24 CSV file download
