@@ -21,7 +21,9 @@
    Search UI page. This enables users to easily see how many attachments are
    available for an item without having to open the attachment list. The count
    includes all attachment types, including files and links. Items with no
-   attachments show no count icon.
+   attachments show no count icon. 
+   
+   **Note: Items with restricted attachments show the count of attachments the user has permission to view.**
 
 ![](media/10410cb217d611cbfb7b68f4fac1dafd.png)
 
@@ -29,10 +31,10 @@
 
 # Next and previous attachment previewing
 
-   The new UI Search page now supports the previewing of multiple images and
-   videos for an item from the results panel using Lightbox technology which
-   includes being able to move through previews using Next and Previous arrows.
-   Lightbox is a JavaScript library that displays images and videos by filling
+   The new Search UI page now supports the previewing of multiple images and
+   videos for an item from the results panel using a Lightbox component which
+   includes being able to move through previews using Next and Previous arrows or keyboard left and right arrows.
+   The Lightbox displays images and videos by filling
    the screen, and dimming out the rest of the web page. An example is shown
    below.
 
@@ -41,7 +43,7 @@
    Figure 2 Image and video previewing with Next and Previous arrows
 
    The file name displays in the top left of the box, and **Open in new tab**
-   and **Close** buttons display in the top right.
+   and **Close** buttons display in the top right. The Lightbox can also be close by clicking Esc on the keyboard.
 
 ![](media/d9cdcc3e1a992c874e16d0b578c92569.png)
 
@@ -60,12 +62,12 @@
 # Favourite items and searches 
 
    The ability to add and remove favourite items from the search results page
-   and saving favourite searches has been added to the new search UI page in
+   and saving favourite searches has been added to the new Search UI page in
    2021.1.
 
 ## Adding and removing items from Favourites
 
-   Items can be added to or removed from a user’s favourite items list
+   Items can be added to or removed from a user’s Favourite items list
    (accessed from the Favourites menu item) by clicking the heart icon
    displayed for each item in the search results panel. An outlined heart can
    be clicked to add the item to Favourites, and a solid heart indicates that
@@ -103,12 +105,11 @@
 ## Saving searches to Favourites
 
 >   openEQUELLA 2021.1 supports saving searches to Favourites in the new Search
->   UI. This includes saving any criteria set with the search, including key
->   words, search mode and any filters.
+>   UI. This includes saving any criteria set with the search, including search terms, search mode and any filters.
 
 #### To save a search to Favourites
 
-1.  Enter the required search criteria, including key words and filters then
+1.  Enter the required search criteria, including search terms and filters then
     click the heart icon in the top right of the search results panel. The **Add
     search to favourites** dialog displays.
 
@@ -128,7 +129,7 @@
 
 # MIME type filters
 
-   The openEQUELLA 2021.1 new search UI page now supports MIME type filters.
+   The openEQUELLA 2021.1 new Search UI page now supports MIME type filters.
    MIME type filters are configured from **Settings**, **Search**, **Search
    filters.**
 
@@ -148,10 +149,8 @@
 # Gallery modes
 
    openEQUELLA 2021.1 introduces new Image and Video gallery modes to the new
-   search UI page, using Lightbox technology. Lightbox is a JavaScript library
-   that displays images and videos by filling the screen, and dimming out the
-   rest of the web page.
-
+   search UI page. Images and videos are displayed using a lightbox component which fills the screen while dimming out the rest of the web page. 
+   
    Search terms, filters and classifications can be used from gallery views and
    the results returned are the images or videos attached to the items matching
    the search criteria.
@@ -257,14 +256,8 @@ An example is shown below.
 
    Figure 22 Open in new tab button
 
-   A number of controls display at the bottom of the video window, as shown
-   below.
-
-![](media/c0bba9c7a086ccf73eef83eada659b9b.png)
-
-   Figure 23 Video controls
-
-   Controls include:
+   Additional controls are browser dependant and may include:
+    
 
 -   **Play (and Pause) button** – click to play or pause video.
 
@@ -276,19 +269,12 @@ An example is shown below.
 
 -   **Options** – the options menu includes:
 
-    -   **Download** – downloads the video to a local drive
+-   **Download** – downloads the video to a local drive
 
-    -   **Picture-in-picture** – select to open a video window which persists across
+-   **Picture-in-picture** – select to open a video window which persists across
     your computer. This allows for the watching of videos while looking at other
     things, for example, instructional videos on how to carry out a
-    configuration task in the operating system etc. Once selected, this option
-    becomes Exit from picture-in-picture. The picture-in-picture video window
-    can be closed at any time. An example with picture-in-picture mode enabled
-    is shown below.
-
-![](media/09f8d7faa86bcc1f2cc36b6ace98bc5d.png)
-
-   Figure 24 Video mode - picture-in-picture
+    configuration task in the operating system etc. 
 
 ### YouTube video links
 
@@ -310,23 +296,13 @@ An example is shown below.
 
    Clicking **Open in new tab** opens the YouTube page for the video.
 
-   Controls include:
+   Additional controls are browser dependant and may include:
 
 -   **Copy link** – click to copy the YouTube video link.
 
 -   **Play (and Pause) button** – click to play or pause video.
 
 -   **Watch on YouTube** – click to open video in YouTube.
-
-    Once the video is playing, more controls display. An example is shown below.
-
-![](media/99c34b7bbf2e9a2e5307ba3b3f186191.png)
-
-   Figure 27 YouTube video (playing)
-
-   Controls include:
-
--   **Play (and Pause) button** – click to play or pause video.
 
 -   **Volume** – click to change volume or mute.
 
@@ -338,13 +314,6 @@ An example is shown below.
 
 -   **Full screen** – click to change to full screen mode.
 
-When a video is paused, a **More videos** feature displays in the video window,
-showing videos related to the current video topic. Click on a video to open it
-in YouTube.
-
-![](media/780692ffd991c47d9a8f94f558372b6f.png)
-
-   Figure 28 Paused video - More videos feature
 
 # Download search results to CSV
 
