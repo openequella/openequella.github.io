@@ -10,6 +10,10 @@ patches to older versions of 2018.2, 6.6 and 6.5 you can check on
 As well as the list of issues etc. which can be found on the GitHub releases pages, additional
 detail can also be found below.
 
+- 2021.1
+  - [Features Guide](guides/FeaturesGuide2021.1/openEQUELLA-2021.1-FeaturesGuide.md)
+- 2020.2
+  - [Features Guide](guides/FeaturesGuide2020.2/openEQUELLA-2020.2-FeaturesGuide.md)
 - 2019.2
   - [Features Guide](/guides/featureGuides/FeaturesGuide2019.2/openEQUELLA-2019.2-FeaturesGuide.md)
 - 2019.1
