@@ -91,10 +91,10 @@
 
 3.  Select the required Version option.
 
-4.  **Always use latest version** – will always link to the latest version
+    - **Always use latest version** – will always link to the latest version
     available from Favourites
 
-5.  **This version** – will always link to this specific version of the item
+    - **This version** – will always link to this specific version of the item
     from Favourites.
 
 6.  Click **OK**. The item is added to Favourites and the icon displays as a
@@ -266,19 +266,19 @@ An example is shown below.
 
    Controls include:
 
--   Play (and Pause) button – click to play or pause video.
+-   **Play (and Pause) button** – click to play or pause video.
 
--   Time – Current time in video and total video time.
+-   **Time** – Current time in video and total video time.
 
--   Volume – click to change volume or mute.
+-   **Volume** – click to change volume or mute.
 
--   Full screen – click to change to full screen mode.
+-   **Full screen** – click to change to full screen mode.
 
--   Options – the options menu includes:
+-   **Options** – the options menu includes:
 
--   Download – downloads the video to a local drive
+    -   **Download** – downloads the video to a local drive
 
--   Picture-in-picture – select to open a video window which persists across
+    -   **Picture-in-picture** – select to open a video window which persists across
     your computer. This allows for the watching of videos while looking at other
     things, for example, instructional videos on how to carry out a
     configuration task in the operating system etc. Once selected, this option
@@ -312,11 +312,11 @@ An example is shown below.
 
    Controls include:
 
--   Copy link – click to copy the YouTube video link.
+-   **Copy link** – click to copy the YouTube video link.
 
--   Play (and Pause) button – click to play or pause video.
+-   **Play (and Pause) button** – click to play or pause video.
 
--   Watch on YouTube – click to open video in YouTube.
+-   **Watch on YouTube** – click to open video in YouTube.
 
     Once the video is playing, more controls display. An example is shown below.
 
@@ -326,17 +326,17 @@ An example is shown below.
 
    Controls include:
 
--   Play (and Pause) button – click to play or pause video.
+-   **Play (and Pause) button** – click to play or pause video.
 
--   Volume – click to change volume or mute.
+-   **Volume** – click to change volume or mute.
 
--   Time – current time in video and total video time.
+-   **Time** – current time in video and total video time.
 
--   Settings – click to set Playback speed and Quality options.
+-   **Settings** – click to set Playback speed and Quality options.
 
--   YouTube – click to open video in YouTube.
+-   **YouTube** – click to open video in YouTube.
 
--   Full screen – click to change to full screen mode.
+-   **Full screen** – click to change to full screen mode.
 
 When a video is paused, a **More videos** feature displays in the video window,
 showing videos related to the current video topic. Click on a video to open it
