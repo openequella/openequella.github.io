@@ -1,3 +1,18 @@
+# openEQUELLA 2021.1 Features Guide
+
+## Table of Contents
+* [Attachment counts](#attachment-counts)
+* [Next and Previous Attachment previewing](#next-and-previous-attachment-previewing)
+* [Favourite items and searches](favourite-items-and-searches)
+  * [Adding and removing items from favourites](#adding-and-removing-items-from-favourites)
+  * [Saving searches to favourites](#saving-searches-to-favourites)
+* [MIME type filters](#mime-type-filters)
+* [Gallery modes](gallery-modes)
+  * [Image mode](#image-mode)
+  * [Video mode](#video-mode)
+* [Download search results to CSV](#download-search-results-to-csv)
+  * [EXPORT_SEARCH_RESULTS ACL](export-search-results-acl)
+  * [Downloading results to CSV](downloading-results-to-csv)
 
 
 # Attachment counts
@@ -12,7 +27,7 @@
 
 >   Figure 1 New Search UI page - attachment counts
 
-# Attachment previewing – Next and Previous
+# Next and previous attachment previewing
 
 >   The new UI Search page now supports the previewing of multiple images and
 >   videos for an item from the results panel using Lightbox technology which
@@ -199,7 +214,7 @@ An example is shown below.
 
 >   Figure 17 Image displaying in new tab and zoomed in
 
-## Video gallery
+## Video mode
 
 >   The new Video mode displays all video attachments for items in openEQUELLA
 >   (as opposed to the legacy UI, which displays only the first video attachment
@@ -331,7 +346,7 @@ in YouTube.
 
 >   Figure 28 Paused video - More videos feature
 
-# Download Search results to CSV
+# Download search results to CSV
 
 >   A new feature has been introduced in the new Search UI for openEQUELLA
 >   2021.1 enabling suitably privileged users to download search results to a
@@ -352,7 +367,7 @@ in YouTube.
 >   NOTE: The Download to CSV button displays for all users, but will only work
 >   for suitably privileged users.
 
-## Downloading result to CSV
+## Downloading results to CSV
 
 >   A new **Download to CSV** button displays at the top of the Results panel on
 >   the new Search UI page.
