@@ -104,8 +104,8 @@
 
 ## Saving searches to Favourites
 
->   openEQUELLA 2021.1 supports saving searches to Favourites in the new Search
->   UI. This includes saving any criteria set with the search, including search terms, search mode and any filters.
+   openEQUELLA 2021.1 supports saving searches to Favourites in the new Search
+   UI. This includes saving any criteria set with the search, including search terms, search mode and any filters.
 
 #### To save a search to Favourites
 
