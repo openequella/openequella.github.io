@@ -68,6 +68,12 @@ It is required that Microsoft SQL Server databases have READ_COMMITTED_SNAPSHOT 
 ALTER DATABASE MyEquellaDatabase SET READ_COMMITTED_SNAPSHOT ON;
 ```
 
+It is now possible to install Microsoft SQL Server for Linux, or as a Docker image. 
+
+[Follow these steps to get it running on Ubuntu.](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15)
+
+[Follow these steps to get it running in a Docker Image.](ttps://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-cmd)
+
 ### Create a PostgreSQL database instance for openEQUELLA
 
 Installations using a PostgreSQL (8.0 or higher) database must create an openEQUELLA database before installing openEQUELLA. The openEQUELLA user (in the default install this is ‘equellauser’) must have the following:
