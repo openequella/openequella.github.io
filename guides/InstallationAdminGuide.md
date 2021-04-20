@@ -72,7 +72,7 @@ It is now possible to install Microsoft SQL Server for Linux, or as a Docker ima
 
 [Follow these steps to get it running on Ubuntu.](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15)
 
-[Follow these steps to get it running in a Docker Image.](ttps://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-cmd)
+[Follow these steps to get it running in a Docker Image.](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-cmd)
 
 ### Create a PostgreSQL database instance for openEQUELLA
 
