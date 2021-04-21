@@ -11,7 +11,7 @@
   * [Image mode](#image-mode)
   * [Video mode](#video-mode)
 * [Download search results to CSV](#download-search-results-to-csv)
-  * [EXPORT_SEARCH_RESULTS ACL](export-search-results-acl)
+  * [EXPORT_SEARCH_RESULTS ACL](export-_-search-_-results-acl)
   * [Downloading results to CSV](downloading-results-to-csv)
 
 
