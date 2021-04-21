@@ -315,8 +315,7 @@ An example is shown below.
    every collection, or at a specific collection level to grant access only to
    the selected collection.
 
-   NOTE: The Download to CSV button displays for all users, but will only work
-   for suitably privileged users.
+   **NOTE: The Download to CSV button displays only for users who have the EXPORT_SEARCH_RESULTS permission granted for at least one collection.**
 
 ## Downloading results to CSV
 
