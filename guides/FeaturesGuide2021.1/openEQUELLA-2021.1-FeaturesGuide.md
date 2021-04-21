@@ -11,7 +11,7 @@
   * [Image mode](#image-mode)
   * [Video mode](#video-mode)
 * [Download search results to CSV](#download-search-results-to-csv)
-  * [EXPORT_SEARCH_RESULTS ACL](export-_-search-_-results-acl)
+  * [Export Search Results ACL](export-search-results-acl)
   * [Downloading results to CSV](downloading-results-to-csv)
 
 
@@ -306,7 +306,7 @@ An example is shown below.
    All data stored in the item XML is included in the download, and multiple
    values are separated using a double pipe (\|\|).
 
-## EXPORT_SEARCH_RESULTS ACL
+## Export Search Results ACL
 
    A new ACL, EXPORT_SEARCH_RESULTS is available to control access to the
    Download to CSV file function. It is available from the Collection level in
