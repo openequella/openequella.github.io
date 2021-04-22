@@ -65,7 +65,7 @@
    the item is a current favourite. Click on a solid heart to remove from
    Favourites.
 
-![](media/33d7a4e36c6f1fe42344d7d5bb78d407.png)
+![](media/favourites.png)
 
    Figure 4 Search results - Favourites icons
 
