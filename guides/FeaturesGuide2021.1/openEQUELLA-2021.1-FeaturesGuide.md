@@ -78,7 +78,7 @@
 
    Figure 5 Add to favourites dialog
    
-2.  Enter any relevant **Tags**, using Enter to separate. Single tags can be
+2.  Enter any relevant **Tags**, using Enter to separate multiple tags, and **Enter** to save the tags. Single tags can be
     deleted using the **X** beside that tag or all tags can be removed using the
     **X** to the right of all tags.
 
