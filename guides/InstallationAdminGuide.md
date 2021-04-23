@@ -68,11 +68,18 @@ It is required that Microsoft SQL Server databases have READ_COMMITTED_SNAPSHOT 
 ALTER DATABASE MyEquellaDatabase SET READ_COMMITTED_SNAPSHOT ON;
 ```
 
-It is now possible to install Microsoft SQL Server for Linux, or as a Docker image. 
-
-[Follow these steps to get it running on Ubuntu.](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15)
-
-[Follow these steps to get it running in a Docker Image.](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-cmd)
+#### Microsoft SQL Server on Linux
+Historically, installing Microsoft SQL Server was limited to Windows. However it is now possible to
+run it on Linux, either directly or with official Docker images. Microsoft provide the [SQL Server on
+Linux documentation](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-overview) which
+includes quick start guides for:
+* Installing on
+  [RedHat](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat?view=sql-server-ver15),
+  [SUSE](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-suse?view=sql-server-ver15)
+  or
+  [Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15);
+  and
+* Running as a [Docker Image](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash).
 
 ### Create a PostgreSQL database instance for openEQUELLA
 
