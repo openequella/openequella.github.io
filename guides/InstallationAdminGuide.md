@@ -47,15 +47,39 @@ openEQUELLA uses the default Users Tablespace that must have an <unlimited> Quot
 
 ### Create a Microsoft SQL Server database instance for openEQUELLA
 
-If you are using Microsoft SQL Server 2008, 2012 or 2014, please ensure that the TCP/IP protocol has been enabled. The openEQUELLA user (the installer default value is ‘equellauser’) must have the following:
+If you are using Microsoft SQL Server 2008, 2012 or 2014 for Windows, please ensure that the TCP/IP protocol has been enabled. 
+You can achieve this by following these steps:
+
+1. Open SQL Server Configuration Manager.
+2. Expand “SQL Server Network Configuration” and click on “Protocols for MSSQLSERVER”.
+3. Right click on “TCP/IP” and choose “Enable”.
+4. Click “OK” on the Warning that the service will have to be restarted.
+5. Click on “SQL Server Services”.
+6. Right click on “SQL Server (MSSQLSERVER)” and choose “Restart”.
+
+The person installing openEQUELLA must have access to the following information:
+
 * Database Name: the installer default name is ‘equella’.
-* Database Role: the database user must be the database owner. For the openEQUELLA user login select ‘db_owner’.
+* Database User: the database user must be the database owner. For the openEQUELLA user login select ‘db_owner’.
 
 It is required that Microsoft SQL Server databases have READ_COMMITTED_SNAPSHOT enabled to avoid possible deadlocks. See http://msdn.microsoft.com/en-us/library/ms173763.aspx for more information. The following statement will enable this setting for a given database:
 
 ```sql
 ALTER DATABASE MyEquellaDatabase SET READ_COMMITTED_SNAPSHOT ON;
 ```
+
+#### Microsoft SQL Server on Linux
+Historically, installing Microsoft SQL Server was limited to Windows. However it is now possible to
+run it on Linux, either directly or with official Docker images. Microsoft provide the [SQL Server on
+Linux documentation](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-overview) which
+includes quick start guides for:
+* Installing on
+  [RedHat](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat?view=sql-server-ver15),
+  [SUSE](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-suse?view=sql-server-ver15)
+  or
+  [Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15);
+  and
+* Running as a [Docker Image](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash).
 
 ### Create a PostgreSQL database instance for openEQUELLA
 
