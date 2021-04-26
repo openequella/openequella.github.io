@@ -13,6 +13,7 @@
 * [Download search results to CSV](#download-search-results-to-csv)
   * [Export Search Results ACL](#export-search-results-acl)
   * [Downloading results to CSV](#downloading-results-to-csv)
+  * [Depracation of File Manager and In place Editor](#deprecation_of_file-manager_and_in_place_editor)
 
 
 # Attachment counts
@@ -345,3 +346,8 @@ An example is shown below.
 ![](media/710afb91d25443de4f5aed5600f159f8.png)
 
    Figure 24 CSV file download
+   
+## Deprecation of File Manager and In place editor
+
+   Most browsers no longer support the Java applets for security reasons. openEQUELLA File Manager and In-place Editor functions were implemented as Java applets, and in recent    times have seen limited use across the adopter base. As per communications over the last 18 months, these features will be deprecated in openEQUELLA 2021.1 and removed in openEQUELLA 2021.2.
+
