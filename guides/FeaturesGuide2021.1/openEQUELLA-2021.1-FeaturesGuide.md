@@ -13,7 +13,7 @@
 * [Download search results to CSV](#download-search-results-to-csv)
   * [Export Search Results ACL](#export-search-results-acl)
   * [Downloading results to CSV](#downloading-results-to-csv)
-* [Deprecation of File Manager and In place Editor](#deprecation_of_file_manager_and_in_place_editor)
+* [Deprecation of File Manager and In place Editor](#deprecation-of-file-manager-and-in-place-editor)
 
 
 # Attachment counts
