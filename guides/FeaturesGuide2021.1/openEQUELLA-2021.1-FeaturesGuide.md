@@ -349,5 +349,5 @@ An example is shown below.
    
 ## Deprecation of File Manager and In place editor
 
-   Most browsers no longer support the Java applets for security reasons. openEQUELLA File Manager and In-place Editor functions were implemented as Java applets, and in recent    times have seen limited use across the adopter base. As per communications over the last 18 months, these features will be deprecated in openEQUELLA 2021.1 and removed in openEQUELLA 2021.2.
+   Most browsers no longer support Java applets for security reasons. openEQUELLA File Manager and In-place Editor functions were implemented as Java applets, and in recent    times have seen limited use across the adopter base. As per communications over the last 18 months, these features will be deprecated in openEQUELLA 2021.1 and removed in openEQUELLA 2021.2.
 
