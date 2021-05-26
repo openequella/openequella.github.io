@@ -45,7 +45,7 @@ openEQUELLA Blackboard integration comprises the following steps:
 2. Configure an External System Connector in openEQUELLA
 3. Configure REST Application in Blackboard
 4. Configure LTI Provider Domain in Blackboard
-5. Configure Course Content Tool Placement in Blackboard
+5. Configure Deep Linking Content Tool Placement in Blackboard
 6. Test the installation
 
 ## Configure openEQUELLA
@@ -96,14 +96,14 @@ _Note: openEQUELLA prepends a unique value (by **LTI Consumer**) to the user ID.
 8. Set **User Fields to Send** to **Role in Course, Name, and Email Address**.
 9. Set **Allow Membership Service Access** to **Yes**.
 
-### Configure a Course Content Tool Placement
+### Configure a Deep Linking Content Tool Placement
 
 1. Under the newly registered provider domain, select **Manage Placements**.
 2. Select **Create Placement**.
 3. Configure the label and description.
 4. Configure the handle (this cannot change after the placement is created).
 5. Leave **Availability** set to **Yes**.
-6. Set **Type** to **Course content tool**, and then select **Supports deep linking**.
+6. Set **Type** to **Deep Linking content tool**.
 7. Under **Tool Provider Information**, set the **Tool Provider URL** to `{https://your.oE.domain.xyz/demo/}ltisignon.do`.
 8. The **Tool Provider Key** and **Tool Provider Secret** will be preconfigured (and readonly).
 
@@ -130,7 +130,7 @@ content_id=@X@content.id@X@
 
 ## Usage
 
-### Add an openEQUELLA content link with the Course Content Tool Placement
+### Add an openEQUELLA content link with the Deep Linking Content Tool Placement
 
 In an original Blackboard course, navigate into **{your course} > Information > Build Content > your-oEQ-CCT-placement** .  This is known as 'Pull to LMS'.
 
