@@ -122,7 +122,7 @@
 >   Figure 10 Advanced search page with Advanced search criteria panel
 >   displaying as default
 
->   NOTE: All results display by default when an Advanced search is opened.
+>   **NOTE: All results display by default when an Advanced search is opened.**
 
 >   Setting advanced search criteria then clicking **SEARCH** applies the
 >   criteria to the search results and closes the Advanced search criteria
@@ -231,6 +231,6 @@
 >   The Edalex team is working on a fix for this, and will provide a hotfix for
 >   supported versions, most likely in January 2022.
 
->   NOTE: It is standard for web application buttons to begin their action as
+>   **NOTE: It is standard for web application buttons to begin their action as
 >   soon as a single click occurs. Double clicking on buttons in web
->   applications such as openEQUELLA is not recommended.
+>   applications such as openEQUELLA is not recommended.**
