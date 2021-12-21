@@ -1,3 +1,16 @@
+# openEQUELLA Advanced Search Configuration Guide
+
+## Table of Contents
+* [Advanced search overview](#advanced-search-overview)
+  * [Advanced search configuration](#advanced-search-configuration)
+  * [Administration console elements](#administration-console-elements)
+* [Metadata targets](#metadata-targets)
+* [Create an Advanced search](#create-an-advanced-search)
+  * [Details tab](#details-tab)
+  * [Editor tab](#editor-tab)
+  * [Access control tab](#access-control-tab)
+
+
 # Advanced search overview 
 
 The openEQUELLA **Advanced search** function provides a means of searching
