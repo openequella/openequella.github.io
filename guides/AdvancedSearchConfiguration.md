@@ -427,10 +427,8 @@ in Figure 26.
 ![](media/63497bc0083eedd3151a7dbd83511cad.png)
    
 Figure 26 Completed access control configuration
-    
-
-    
-    
+   
+  
 12.  Select **edit this advanced search** from the **Who can?** drop-down list
     and configure access to the option by repeating steps 3 to11.
 
