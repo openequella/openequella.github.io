@@ -424,9 +424,12 @@ privileges to the system administrator and viewer roles.
 The delete privilege has now been granted to the system administrator, as shown
 in Figure 26.
 
-    ![](media/63497bc0083eedd3151a7dbd83511cad.png)
+![](media/63497bc0083eedd3151a7dbd83511cad.png)
+   
+Figure 26 Completed access control configuration
+    
 
-    Figure 26 Completed access control configuration
+    
     
 12.  Select **edit this advanced search** from the **Who can?** drop-down list
     and configure access to the option by repeating steps 3 to11.
@@ -447,3 +450,4 @@ When all elements have been configured for a search:
 1.  Click **Save** to save the search details.
 
 2.  Click **Close** to close the Advanced Search Editor.
+
