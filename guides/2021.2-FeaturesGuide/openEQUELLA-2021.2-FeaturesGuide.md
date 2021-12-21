@@ -102,8 +102,8 @@ into other resources to embed the content.
 has been embedded in a page.**
 
 This is a basic initial implementation of this feature, and Edalex welcomes
-feedback on how this feature can be enhanced. Please send your ideas to
-[product\@edalex.com](https://d.docs.live.net/d8ab697291ee0f3d/Documents/Equella/2021.2/product@edalex.com).
+feedback on how this feature can be enhanced. Please send your ideas to <product@edalex.com>. 
+
 
 ![](media/f38cc251e40864bba6bb99cc0c858378.png)
 
