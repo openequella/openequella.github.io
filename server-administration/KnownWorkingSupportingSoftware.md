@@ -8,8 +8,8 @@ summary in the community.
 | ImageMagick        | TBD             | 6.9.8 Q8                     |
 | Java (server side) | OpenJDK 8       | OpenJDK 8                    |
 | LibAV (1)          | 11.3            | 11.7                         |
-| MS SQL             | TBD             | 2008+                        |
-| Oracle             | TBD             | 11g+                         |
+| MS SQL             | TBD             | 2019+                        |
+| Oracle             | TBD             | 12c+                         |
 | Postgres           | 9.4.X           | 9.6.11                       |
 
 ## Notes
