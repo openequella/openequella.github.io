@@ -1,3 +1,14 @@
+# openEQUELLA 2022.1 Features Guide
+
+## Table of Contents
+* [Consolidate logging layer (log4j/slf4j)](#consolidate-logging-layer-(log4j/slf4j))
+* [MS SQL Server JDBC driver update](#ms-sql-server-jdbc-driver-update)
+* [New Search UI performance updates](#new-search-ui-performance-updates)
+* [Dependency upgrades](dependency-upgrades)
+* [Deprecation notices](#deprecation-notices)
+
+
+
 # Consolidate logging layer (log4j/slf4j)
 
    Log4J has been updated to v2.17.1.As part of the update the upgrader will
