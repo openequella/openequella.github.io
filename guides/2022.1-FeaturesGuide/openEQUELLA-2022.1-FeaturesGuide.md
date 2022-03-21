@@ -31,13 +31,12 @@
 
    For example, currently the hibernate properties might look something like:
 
-   1hibernate.connection.url =
-   jdbc:sqlserver://localhost:1433;databaseName=equella
+       1hibernate.connection.url = jdbc:sqlserver://localhost:1433;databaseName=equella
+ 
 
    Whereas now it would need:
 
-   1hibernate.connection.url =
-   jdbc:sqlserver://localhost:1433;databaseName=equella;trustServerCertificate=tru
+       1hibernate.connection.url = jdbc:sqlserver://localhost:1433;databaseName=equella;trustServerCertificate=tru
 
    If the file is not updated with trust certificate reference, on server
    restart a stack trace with messages around PKIX path building failed will
