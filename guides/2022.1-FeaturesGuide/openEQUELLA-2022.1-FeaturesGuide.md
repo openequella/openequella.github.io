@@ -81,8 +81,6 @@
     versions behind on this dependency. As a result, after upgrading several
     areas of the codebase also had to be updated.
 
--   openjdk docker image
-
 -   XStream - A key dependency in the reading and storage of XML data. This has
     undergone a significant change in its security philosophy and as a result
     was a very important upgrade.
