@@ -36,7 +36,7 @@
 
    Whereas now it would need:
 
-       1hibernate.connection.url = jdbc:sqlserver://localhost:1433;databaseName=equella;trustServerCertificate=tru
+       hibernate.connection.url = jdbc:sqlserver://localhost:1433;databaseName=equella;trustServerCertificate=true
 
    If the file is not updated with trust certificate reference, on server
    restart a stack trace with messages around PKIX path building failed will
