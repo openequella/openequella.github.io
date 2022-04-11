@@ -31,7 +31,7 @@
 
    For example, currently the hibernate properties might look something like:
 
-       1hibernate.connection.url = jdbc:sqlserver://localhost:1433;databaseName=equella
+       hibernate.connection.url = jdbc:sqlserver://localhost:1433;databaseName=equella
  
 
    Whereas now it would need:
