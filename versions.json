@@ -1,0 +1,152 @@
+[
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/64077183",
+		"version": "2022.1.0",
+		"release_date": "2022-04-12"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/59558325",
+		"version": "2021.2.3",
+		"release_date": "2022-02-15"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/59557630",
+		"version": "2021.1.5",
+		"release_date": "2022-02-15"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/58145442",
+		"version": "2021.2.2",
+		"release_date": "2022-01-28"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/58145431",
+		"version": "2021.1.4",
+		"release_date": "2022-01-28"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/58145416",
+		"version": "2020.2.2",
+		"release_date": "2022-01-28"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/56705304",
+		"version": "2021.1.3",
+		"release_date": "2022-01-11"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/56705287",
+		"version": "2020.2.1",
+		"release_date": "2022-01-11"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/56705328",
+		"version": "2021.2.1",
+		"release_date": "2022-01-11"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/55785704",
+		"version": "2021.2.0",
+		"release_date": "2021-12-22"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/53215098",
+		"version": "2021.1.2",
+		"release_date": "2021-11-14"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/45333452",
+		"version": "2021.1.1",
+		"release_date": "2021-06-28"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/42048397",
+		"version": "2021.1.0",
+		"release_date": "2021-04-28"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/41688873",
+		"version": "2021.1.0-RC2",
+		"release_date": "2021-04-20"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/41458374",
+		"version": "2021.1.0-RC1",
+		"release_date": "2021-04-15"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/35552621",
+		"version": "2020.2.0",
+		"release_date": "2020-12-22"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/33438112",
+		"version": "2020.1.6",
+		"release_date": "2020-11-05"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/33437271",
+		"version": "2019.2.6",
+		"release_date": "2020-11-05"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/33437559",
+		"version": "2019.1.8",
+		"release_date": "2020-11-05"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/33428241",
+		"version": "2020.1.5",
+		"release_date": "2020-11-03"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/33428668",
+		"version": "2019.2.5",
+		"release_date": "2020-11-03"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/33428839",
+		"version": "2019.1.7",
+		"release_date": "2020-11-03"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/31022100",
+		"version": "2020.1.4",
+		"release_date": "2020-09-10"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/28136475",
+		"version": "2020.1.3",
+		"release_date": "2020-07-01"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/28136582",
+		"version": "2019.2.4",
+		"release_date": "2020-07-01"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/27015133",
+		"version": "2020.1.2",
+		"release_date": "2020-05-29"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/27016193",
+		"version": "2019.2.3",
+		"release_date": "2020-05-29"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/27016709",
+		"version": "2019.1.6",
+		"release_date": "2020-05-29"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/25220011",
+		"version": "2020.1.1",
+		"release_date": "2020-04-06"
+	},
+	{
+		"url": "https://api.github.com/repos/openequella/openEQUELLA/releases/25220607",
+		"version": "2019.2.2",
+		"release_date": "2020-04-06"
+	}
+]
