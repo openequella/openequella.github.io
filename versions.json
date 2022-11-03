@@ -1,5 +1,11 @@
 [
 	{
+		"version": "2022.2.0",
+		"html_url": "https://github.com/openequella/openEQUELLA/releases/tag/2022.2.0",
+		"release_date": "2022-11-03",
+		"ref": "1d39cdb5d0f6db6a69a65ff662fe58bbc01971bf"
+	},
+	{
 		"version": "2022.1.0",
 		"html_url": "https://github.com/openequella/openEQUELLA/releases/tag/2022.1.0",
 		"release_date": "2022-04-12",
