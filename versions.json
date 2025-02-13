@@ -1,5 +1,17 @@
 [
 	{
+		"version": "2024.2.0",
+		"html_url": "https://github.com/openequella/openEQUELLA/releases/tag/2024.2.0",
+		"release_date": "2024-12-20",
+		"ref": "c95b9150ddd2e0b650733af5ff8724fb8b27a2ed"
+	},
+	{
+		"version": "2024.1.0",
+		"html_url": "https://github.com/openequella/openEQUELLA/releases/tag/2024.1.0",
+		"release_date": "2024-06-24",
+		"ref": "3001c04a37c96fb81059290ea530fff468ed247d"
+	},
+	{
 		"version": "2023.2.0",
 		"html_url": "https://github.com/openequella/openEQUELLA/releases/tag/2023.2.0",
 		"release_date": "2023-12-12",
