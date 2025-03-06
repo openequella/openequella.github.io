@@ -11,7 +11,7 @@
     - name: Server Administration
       link: /server-administration/
     - name: Historical Training Materials
-      link: /guides/trainingmaterials/
+      link: /guides/trainingmaterials.html
     - name: Testing Guides
       link: /release-testing-guides/
 - name: Downloads
